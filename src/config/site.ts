@@ -11,8 +11,8 @@ export type Verifiable<T> = { value: T; verified: boolean };
 const v = <T,>(value: T, verified = false): Verifiable<T> => ({ value, verified });
 
 export const site = {
-  brandName: 'Temple Appliance Repair',
-  shortName: 'Temple Appliance',
+  brandName: 'Appliance Repair Temple',
+  shortName: 'Appliance Repair Temple',
   domain: 'appliancerepairtemple.com',
   url: (process.env.NEXT_PUBLIC_SITE_URL || 'https://appliancerepairtemple.com').replace(/\/$/, ''),
 

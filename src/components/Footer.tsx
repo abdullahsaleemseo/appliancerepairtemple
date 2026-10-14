@@ -17,7 +17,7 @@ export function Footer() {
       <div className="relative mx-auto max-w-site px-4 pt-16 lg:px-6">
         <div className="grid gap-12 lg:grid-cols-[1.3fr_1fr_1fr_1fr]">
           <div>
-            <Logo light />
+            <Logo variant="full" className="-ml-1 h-[112px] lg:h-[128px]" />
             <p className="mt-5 max-w-xs text-[15px] leading-relaxed">{site.footerAreaLine}</p>
             <PhoneLink location="footer" showTag className="mt-6 inline-block font-display text-3xl font-bold tracking-[-0.03em] text-white hover:text-flame-glow" />
             <div className="mt-3 space-y-1 text-[15px]">
@@ -87,8 +87,8 @@ export function Footer() {
           </div>
         </div>
 
-        <p aria-hidden="true" className="pointer-events-none mt-16 select-none whitespace-nowrap font-display text-[9.5vw] font-extrabold leading-[0.85] tracking-[-0.06em] text-white/[0.05] lg:text-[124px]">
-          {site.city} Appliance
+        <p aria-hidden="true" className="pointer-events-none mt-16 select-none whitespace-nowrap font-display text-[24vw] font-extrabold leading-[0.85] tracking-[-0.06em] text-white/[0.05] lg:text-[300px]">
+          {site.city.toUpperCase()}
         </p>
       </div>
 

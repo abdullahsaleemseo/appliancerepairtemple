@@ -8,7 +8,7 @@ export const brands: Brand[] = [
     key: 'whirlpool',
     slug: `whirlpool-appliance-repair-${loc}`,
     name: 'Whirlpool',
-    metaTitle: 'Whirlpool Appliance Repair in Temple, TX | Temple Appliance Repair',
+    metaTitle: 'Whirlpool Appliance Repair in Temple, TX | Appliance Repair Temple',
     metaDescription:
       'Whirlpool washer, dryer, refrigerator, dishwasher or range acting up in Temple, TX? Request a diagnostic visit and a written repair price.',
     intro: [
@@ -61,7 +61,7 @@ export const brands: Brand[] = [
     key: 'ge',
     slug: `ge-appliance-repair-${loc}`,
     name: 'GE',
-    metaTitle: 'GE Appliance Repair in Temple, TX | Temple Appliance Repair',
+    metaTitle: 'GE Appliance Repair in Temple, TX | Appliance Repair Temple',
     metaDescription:
       'GE refrigerator, range, dishwasher, washer or dryer problems in Temple, TX? Request a diagnostic visit and a written price before any repair.',
     intro: [
@@ -114,7 +114,7 @@ export const brands: Brand[] = [
     key: 'samsung',
     slug: `samsung-appliance-repair-${loc}`,
     name: 'Samsung',
-    metaTitle: 'Samsung Appliance Repair in Temple, TX | Temple Appliance Repair',
+    metaTitle: 'Samsung Appliance Repair in Temple, TX | Appliance Repair Temple',
     metaDescription:
       'Samsung refrigerator ice maker, washer error code or dryer not heating in Temple, TX? Request a diagnostic visit and a written price.',
     intro: [

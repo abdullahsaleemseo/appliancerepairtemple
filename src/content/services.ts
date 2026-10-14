@@ -11,7 +11,7 @@ export const services: Service[] = [
     navLabel: 'Refrigerator Repair',
     icon: 'refrigerator',
     card: 'Not cooling, leaking, noisy, or the ice maker quit.',
-    metaTitle: 'Refrigerator Repair in Temple, TX | Temple Appliance Repair',
+    metaTitle: 'Refrigerator Repair in Temple, TX | Appliance Repair Temple',
     metaDescription:
       'Refrigerator not cooling, leaking or icing up in Temple, TX? Request a diagnostic visit for top-freezer, side-by-side and French door models. Call today.',
     h1: 'Refrigerator Repair in Temple, TX',
@@ -126,7 +126,7 @@ export const services: Service[] = [
     navLabel: 'Washer Repair',
     icon: 'washer',
     card: 'Won’t drain, won’t spin, leaking or shaking hard.',
-    metaTitle: 'Washer Repair in Temple, TX | Temple Appliance Repair',
+    metaTitle: 'Washer Repair in Temple, TX | Appliance Repair Temple',
     metaDescription:
       'Washing machine not draining, not spinning or leaking in Temple, TX? Request service for top-load and front-load washers. Call or book online.',
     h1: 'Washer Repair in Temple, TX',
@@ -239,7 +239,7 @@ export const services: Service[] = [
     navLabel: 'Dryer Repair',
     icon: 'dryer',
     card: 'No heat, long dry times, squealing or won’t turn.',
-    metaTitle: 'Dryer Repair in Temple, TX | Temple Appliance Repair',
+    metaTitle: 'Dryer Repair in Temple, TX | Appliance Repair Temple',
     metaDescription:
       'Dryer not heating, taking too long or making noise in Temple, TX? Request service for electric and gas dryers. Call today or request service online.',
     h1: 'Dryer Repair in Temple, TX',
@@ -352,7 +352,7 @@ export const services: Service[] = [
     navLabel: 'Dishwasher Repair',
     icon: 'dishwasher',
     card: 'Not draining, not cleaning, leaking or won’t start.',
-    metaTitle: 'Dishwasher Repair in Temple, TX | Temple Appliance Repair',
+    metaTitle: 'Dishwasher Repair in Temple, TX | Appliance Repair Temple',
     metaDescription:
       'Dishwasher not draining, leaking or leaving dishes dirty in Temple, TX? Request service for built-in dishwashers. Call or request service online.',
     h1: 'Dishwasher Repair in Temple, TX',
@@ -465,7 +465,7 @@ export const services: Service[] = [
     navLabel: 'Oven & Stove Repair',
     icon: 'oven',
     card: 'Oven won’t heat, burner out, igniter clicking.',
-    metaTitle: 'Oven & Stove Repair in Temple, TX | Temple Appliance Repair',
+    metaTitle: 'Oven & Stove Repair in Temple, TX | Appliance Repair Temple',
     metaDescription:
       'Oven not heating or stove burner not working in Temple, TX? Request service for electric and gas ranges, wall ovens and cooktops. Call today.',
     h1: 'Oven & Stove Repair in Temple, TX',
@@ -578,7 +578,7 @@ export const services: Service[] = [
     navLabel: 'Freezer Repair',
     icon: 'freezer',
     card: 'Upright or chest freezer not freezing or frosting up.',
-    metaTitle: 'Freezer Repair in Temple, TX | Temple Appliance Repair',
+    metaTitle: 'Freezer Repair in Temple, TX | Appliance Repair Temple',
     metaDescription:
       'Upright or chest freezer not freezing in Temple, TX? Request a diagnostic visit for frost buildup, warm temperatures and noisy freezers. Call today.',
     h1: 'Freezer Repair in Temple, TX',
@@ -687,7 +687,7 @@ export const services: Service[] = [
     navLabel: 'Microwave Repair',
     icon: 'microwave',
     card: 'Over-the-range and built-in microwaves not heating.',
-    metaTitle: 'Microwave Repair in Temple, TX | Temple Appliance Repair',
+    metaTitle: 'Microwave Repair in Temple, TX | Appliance Repair Temple',
     metaDescription:
       'Over-the-range or built-in microwave not heating in Temple, TX? Request a diagnostic visit for door switches, turntables, fans and controls.',
     h1: 'Microwave Repair in Temple, TX',

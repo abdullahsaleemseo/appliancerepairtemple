@@ -51,7 +51,7 @@ export function Header() {
     >
       <div className={`mx-auto flex max-w-site items-center justify-between gap-4 px-4 transition-[padding] lg:px-6 ${scrolled ? 'py-2.5' : 'py-4'}`}>
         <Link href="/" className="shrink-0 rounded-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-white" aria-label={`${site.brandName} home`}>
-          <Logo light />
+          <Logo className="h-11 sm:h-[52px]" />
         </Link>
 
         <nav aria-label="Main" className="hidden lg:block">

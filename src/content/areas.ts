@@ -9,7 +9,7 @@ export const areas: Area[] = [
   {
     slug: 'belton-tx',
     name: 'Belton',
-    metaTitle: 'Appliance Repair in Belton, TX | Temple Appliance Repair',
+    metaTitle: 'Appliance Repair in Belton, TX | Appliance Repair Temple',
     metaDescription:
       'Appliance repair in Belton, TX for refrigerators, washers, dryers, dishwashers and ovens. Request service or call to check today’s availability.',
     h1: 'Appliance Repair in Belton, TX',
@@ -57,7 +57,7 @@ export const areas: Area[] = [
   {
     slug: 'killeen-tx',
     name: 'Killeen',
-    metaTitle: 'Appliance Repair in Killeen, TX | Temple Appliance Repair',
+    metaTitle: 'Appliance Repair in Killeen, TX | Appliance Repair Temple',
     metaDescription:
       'Appliance repair in Killeen, TX for refrigerators, washers, dryers, dishwashers and ranges. Request service online or call to check availability.',
     h1: 'Appliance Repair in Killeen, TX',
@@ -105,7 +105,7 @@ export const areas: Area[] = [
   {
     slug: 'harker-heights-tx',
     name: 'Harker Heights',
-    metaTitle: 'Appliance Repair in Harker Heights, TX | Temple Appliance Repair',
+    metaTitle: 'Appliance Repair in Harker Heights, TX | Appliance Repair Temple',
     metaDescription:
       'Appliance repair in Harker Heights, TX for refrigerators, washers, dryers, dishwashers and ovens. Request service or call to check availability.',
     h1: 'Appliance Repair in Harker Heights, TX',
@@ -149,7 +149,7 @@ export const areas: Area[] = [
   {
     slug: 'salado-tx',
     name: 'Salado',
-    metaTitle: 'Appliance Repair in Salado, TX | Temple Appliance Repair',
+    metaTitle: 'Appliance Repair in Salado, TX | Appliance Repair Temple',
     metaDescription:
       'Appliance repair in Salado, TX for refrigerators, freezers, washers, dryers, dishwashers and ranges. Call to check availability or request service.',
     h1: 'Appliance Repair in Salado, TX',

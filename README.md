@@ -1,4 +1,4 @@
-# Temple Appliance Repair (appliancerepairtemple.com)
+# Appliance Repair Temple (appliancerepairtemple.com)
 
 Lead generation site for in-home appliance repair in Temple, TX. Next.js 15 (App Router), TypeScript, Tailwind CSS.
 Everything is statically generated except the lead API.
