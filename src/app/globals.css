@@ -1,0 +1,68 @@
+@import '@fontsource-variable/plus-jakarta-sans/wght.css';
+@import '@fontsource-variable/inter/wght.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-padding-top: 96px;
+  }
+  body {
+    @apply bg-white font-sans text-base leading-relaxed text-ink-body antialiased;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply text-ink;
+    text-wrap: balance;
+  }
+  :focus-visible {
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  .prose-copy p {
+    @apply mt-4 text-[17px] leading-relaxed text-ink-body;
+  }
+  .prose-copy p:first-child {
+    @apply mt-0;
+  }
+  .prose-copy ul {
+    @apply mt-4 space-y-2;
+  }
+  .prose-copy li {
+    @apply relative pl-6 text-[17px] text-ink-body;
+  }
+  .prose-copy li::before {
+    content: '';
+    @apply absolute left-1 top-[0.7em] h-1.5 w-1.5 rounded-full bg-brand;
+  }
+  .prose-copy a {
+    @apply font-semibold text-navy underline underline-offset-2;
+  }
+}
+
+/* Scroll reveal only applies once JS has confirmed it can run, so content is never hidden without it. */
+.js-reveal .reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition:
+    opacity 0.5s ease,
+    transform 0.5s ease;
+}
+.js-reveal .reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .js-reveal .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
