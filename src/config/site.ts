@@ -80,7 +80,7 @@ export const claims = {
   backgroundChecked: v('Background-checked technicians'),
   rating: v({ value: '4.9', count: '[REVIEW COUNT]', source: 'Google' }),
   repairsCompleted: v('1,200+'),
-  yearsServing: v('[YEARS IN BUSINESS]'),
+  yearsServing: v('[YEARS]'),
   responseTime: v('60-min response'),
   callbackMinutes: v(15),
   diagnosticFee: v({ amount: '[DIAGNOSTIC FEE]', waivedWithRepair: true }),

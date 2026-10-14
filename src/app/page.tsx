@@ -1,27 +1,27 @@
 import Link from 'next/link';
 import { canShow, claims, isProduction, phoneDisplay, routes, site } from '@/config/site';
+import { brands, otherBrands } from '@/content/brands';
 import { homeFaqs } from '@/content/faqs';
-import { otherBrands, brands } from '@/content/brands';
-import { primaryServiceKeys } from '@/content/services';
+import { primaryServiceKeys, serviceHref, services } from '@/content/services';
 import { AreaBlock } from '@/components/AreaList';
-import { BrandChips } from '@/components/BrandChips';
+import { BrandMarquee } from '@/components/BrandChips';
 import { CallButton, RequestButton } from '@/components/Buttons';
 import { ComparisonTable } from '@/components/ComparisonTable';
 import { FaqList } from '@/components/FaqList';
 import { FinalCta } from '@/components/FinalCta';
-import { HeroVisual } from '@/components/HeroVisual';
 import { HowItWorks } from '@/components/HowItWorks';
 import { Icon } from '@/components/Icon';
 import { JsonLd } from '@/components/JsonLd';
 import { PaymentStrip, PricingCards } from '@/components/PricingBlock';
+import { ProblemPicker } from '@/components/ProblemPicker';
 import { ReviewsBlock, hasVerifiedReviews } from '@/components/ReviewsBlock';
 import { Section, SectionHeading } from '@/components/Section';
 import { ServicesGrid } from '@/components/ServicesGrid';
 import { StatsStrip } from '@/components/StatsStrip';
 import { TrustBadges } from '@/components/TrustBadges';
 import { VerifyTag } from '@/components/Verify';
-import { pageMetadata } from '@/lib/seo';
 import { websiteSchema } from '@/lib/schema';
+import { pageMetadata } from '@/lib/seo';
 
 export const metadata = pageMetadata({
   title: `Appliance Repair in ${site.city}, ${site.stateAbbr} | ${site.brandName}`,
@@ -33,148 +33,152 @@ const benefits = [
   {
     icon: 'tag' as const,
     title: 'A price before any work',
-    text: 'The technician finds the problem, tells you what failed and what the repair costs. Nothing gets replaced until you say yes.',
+    text: 'The technician finds the problem and tells you what the repair costs. Nothing gets replaced until you say yes.',
   },
   {
     icon: 'tool' as const,
-    title: 'The brands in your kitchen',
-    text: 'Whirlpool, GE, Samsung, LG, Frigidaire, Maytag, Bosch and more. Give us the model number and we can check parts before the visit.',
+    title: 'Tested, not guessed',
+    text: 'Parts are checked with a meter before anything is ordered, so you pay for the part that failed and nothing else.',
   },
   {
     icon: 'calendar' as const,
-    title: 'Scheduling that fits your day',
-    text: 'We confirm a visit window by phone and call ahead before the technician arrives.',
+    title: 'A time that fits your day',
+    text: 'We confirm a visit window by phone and call ahead before the technician pulls up.',
   },
   {
     icon: 'pin' as const,
     title: 'Local to Bell County',
-    text: 'Temple is the center of our route, with regular visits to Belton, Killeen, Harker Heights and Salado.',
+    text: `${site.city} is the center of our route, with regular visits to Belton, Killeen, Harker Heights and Salado.`,
   },
 ];
 
-export default function HomePage() {
-  const chips = [
-    canShow(claims.rating) ? { text: `★ ${claims.rating.value.value} rating`, v: claims.rating.verified } : null,
-    canShow(claims.repairsCompleted) ? { text: `${claims.repairsCompleted.value} repairs`, v: claims.repairsCompleted.verified } : null,
-    canShow(claims.responseTime) ? { text: claims.responseTime.value, v: claims.responseTime.verified } : null,
-  ].filter(Boolean) as { text: string; v: boolean }[];
+const pickerItems = services.map((s) => ({
+  key: s.key,
+  name: s.name,
+  icon: s.icon,
+  href: serviceHref(s.key),
+  symptoms: s.symptoms.slice(0, 3).map((x) => x.title),
+}));
 
+export default function HomePage() {
   return (
     <>
       <JsonLd data={websiteSchema()} />
 
       {/* Hero */}
-      <section className="relative overflow-hidden bg-white">
-        <div aria-hidden="true" className="pointer-events-none absolute -right-40 -top-40 h-[560px] w-[560px] rounded-full bg-gradient-to-br from-navy-50 to-[#d5e4f3] blur-2xl" />
-        <div className="relative mx-auto grid max-w-site items-center gap-12 px-4 pb-16 pt-8 md:pt-14 lg:grid-cols-[1.1fr_1fr] lg:gap-16 lg:px-6 lg:pb-24">
+      <section className="grain relative overflow-hidden bg-ink">
+        <div aria-hidden="true" className="dot-grid pointer-events-none absolute inset-0 [mask-image:radial-gradient(ellipse_at_30%_20%,black,transparent_70%)]" />
+        <div aria-hidden="true" className="pointer-events-none absolute -left-40 -top-40 h-[620px] w-[620px] rounded-full bg-flame/30 blur-[150px]" />
+        <div aria-hidden="true" className="pointer-events-none absolute -bottom-40 right-[-10%] h-[520px] w-[520px] rounded-full bg-frost/15 blur-[140px]" />
+
+        <div className="relative mx-auto grid max-w-site items-center gap-14 px-4 pb-20 pt-12 md:pt-16 lg:grid-cols-[1.12fr_1fr] lg:gap-16 lg:px-6 lg:pb-28 lg:pt-20">
           <div>
-            <p className="mb-3 text-sm font-bold uppercase tracking-[0.12em] text-brand-dark">
-              Local repair you can count on
+            <p className="inline-flex items-center gap-2.5 rounded-full border border-white/10 bg-white/[0.05] py-1.5 pl-2 pr-4 text-[13px] font-medium text-white/80 backdrop-blur">
+              <span className="flex h-6 items-center gap-1.5 rounded-full bg-mint-bright/15 px-2 text-[12px] font-semibold text-mint-bright">
+                <span className="h-1.5 w-1.5 animate-pulseDot rounded-full bg-mint-bright" />
+                Booking now
+              </span>
+              In-home repair across {site.county}
             </p>
-            <h1 className="font-heading text-[2.4rem] font-extrabold leading-[1.08] tracking-tight text-navy sm:text-5xl lg:text-[3.6rem]">
+            <h1 className="h-display mt-7 text-[2.9rem] text-white sm:text-[4.2rem] lg:text-[5rem]">
               Appliance Repair in {site.city}, {site.state}
+              <span className="accent mt-1 block text-[0.92em] text-flame-glow">without the guesswork.</span>
             </h1>
-            <p className="mt-5 max-w-xl text-lg text-ink-body md:text-xl">
-              Refrigerators, washers, dryers, dishwashers, ovens and freezers, repaired in your home across {site.city} and{' '}
-              {site.county}. You get the diagnosis and the price before any work starts.
+            <p className="mt-7 max-w-xl text-lg leading-relaxed text-white/65 md:text-xl">
+              Fridge warm, washer full of water, dryer blowing cold? A technician comes to your home, finds the failed part and
+              gives you the price before any work starts.
             </p>
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <CallButton location="hero" className="text-lg" />
-              <RequestButton location="hero" label="Get a Free Quote" />
+            <div className="mt-9 flex flex-col gap-3 sm:flex-row">
+              <CallButton location="hero" className="text-[17px]" />
+              <RequestButton location="hero" label="Get a Free Quote" variant="onDarkSecondary" />
             </div>
-            {chips.length ? (
-              <ul className="mt-7 flex flex-wrap items-center gap-2.5">
-                {chips.map((c) => (
-                  <li key={c.text} className="rounded-full bg-surface px-3.5 py-1.5 text-sm font-semibold text-navy">
-                    {c.text}
-                  </li>
-                ))}
-                {chips.some((c) => !c.v) ? <VerifyTag label="REAL NUMBERS ONLY" /> : null}
-              </ul>
-            ) : null}
+            <div className="mt-10 border-t border-white/10 pt-6">
+              <TrustBadges dark />
+            </div>
           </div>
-          <HeroVisual />
+          <ProblemPicker items={pickerItems} />
         </div>
       </section>
 
-      <TrustBadges tone="surface" />
-      <StatsStrip />
+      {/* Brands */}
+      <section aria-labelledby="brands-heading" className="border-b border-sand bg-canvas py-10">
+        <div className="mx-auto max-w-site px-4 lg:px-6">
+          <h2 id="brands-heading" className="mb-5 text-center text-[13px] font-semibold uppercase tracking-[0.18em] text-ink-muted">
+            We repair the brands already in your kitchen
+          </h2>
+          <BrandMarquee names={[...brands.map((b) => b.name), ...otherBrands]} />
+        </div>
+      </section>
 
       {/* Services */}
       <Section id="services" labelledBy="services-heading">
-        <SectionHeading
-          id="services-heading"
-          eyebrow="What we fix"
-          title="Pick your appliance"
-          intro="Tap the one that’s giving you trouble to see common problems, what the repair involves and how to book."
-        />
-        <ServicesGrid keys={primaryServiceKeys} />
+        <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
+          <SectionHeading
+            id="services-heading"
+            eyebrow="What we fix"
+            title="Pick the appliance."
+            accent="We’ll handle the rest."
+            intro="Each page lists the problems we see most, what usually causes them and what the repair involves."
+            className="!mb-0"
+          />
+          <Link href={routes.cityPage} className="link-arrow shrink-0">
+            All repairs in {site.city}
+            <Icon name="arrow" className="h-4 w-4" />
+          </Link>
+        </div>
+        <div className="mt-12">
+          <ServicesGrid keys={primaryServiceKeys} />
+        </div>
         <p className="mt-6 text-ink-body">
-          Also: <Link href="/microwave-repair-temple-tx/" className="font-semibold text-navy underline">over-the-range microwave repair</Link>. Or
-          read about <Link href={routes.cityPage} className="font-semibold text-navy underline">appliance repair in {site.city}</Link> in more detail.
+          Also:{' '}
+          <Link href={serviceHref('microwave')} className="font-semibold text-ink underline decoration-flame underline-offset-4">
+            over-the-range microwave repair
+          </Link>
+          .
         </p>
       </Section>
 
-      {/* Why choose us */}
-      <Section tone="surface" labelledBy="why-heading">
-        <SectionHeading id="why-heading" eyebrow="Why call us" title="Straight answers, fair prices, work done right" />
-        <div className="grid gap-10 lg:grid-cols-2">
-          <ul className="grid gap-5 sm:grid-cols-2">
+      {/* Why us */}
+      <Section tone="ink" labelledBy="why-heading">
+        <div aria-hidden="true" className="pointer-events-none absolute -right-40 top-10 h-[480px] w-[480px] rounded-full bg-flame/20 blur-[140px]" />
+        <SectionHeading id="why-heading" eyebrow="Why call us" title="Straight answers." accent="Fair prices." dark />
+        <div className="grid gap-6 lg:grid-cols-[1.2fr_1fr]">
+          <ul className="grid gap-4 sm:grid-cols-2">
             {benefits.map((b) => (
-              <li key={b.title} className="rounded-card bg-white p-6 shadow-card">
-                <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-brand-light text-brand-dark">
+              <li key={b.title} className="card-dark p-7">
+                <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-flame/15 text-flame-glow">
                   <Icon name={b.icon} className="h-6 w-6" />
                 </span>
-                <h3 className="mt-4 font-heading text-lg font-extrabold text-navy">{b.title}</h3>
-                <p className="mt-2 text-[15px] text-ink-body">{b.text}</p>
+                <h3 className="mt-6 font-display text-[21px] font-bold tracking-[-0.025em] text-white">{b.title}</h3>
+                <p className="mt-2 text-[15px] text-white/60">{b.text}</p>
               </li>
             ))}
           </ul>
           <ComparisonTable />
         </div>
+        <div className="mt-6">
+          <StatsStrip />
+        </div>
       </Section>
 
       {/* How it works */}
       <Section labelledBy="how-heading">
-        <SectionHeading id="how-heading" eyebrow="How it works" title="Three steps to a working appliance" center />
+        <SectionHeading id="how-heading" eyebrow="How it works" title="Three steps to a" accent="working appliance." center />
         <HowItWorks />
-      </Section>
-
-      {/* Brands */}
-      <Section tone="surface" labelledBy="brands-heading">
-        <SectionHeading
-          id="brands-heading"
-          eyebrow="Brands"
-          title="Brands we service"
-          intro="We work on most major household brands. Not on the list? Call and ask."
-        />
-        <BrandChips names={[...brands.map((b) => b.name), ...otherBrands]} />
-        <p className="mt-6">
-          <Link href={routes.brands} className="inline-flex items-center gap-1 font-bold text-brand-dark hover:underline">
-            See all brands <Icon name="arrow" className="h-4 w-4" />
-          </Link>
-        </p>
-      </Section>
-
-      {/* Service area */}
-      <Section labelledBy="area-heading">
-        <SectionHeading
-          id="area-heading"
-          eyebrow="Service area"
-          title={`${site.city} and the towns around it`}
-          intro={`Based around ${site.city}, covering ${site.county} and nearby ${site.region}.`}
-        />
-        <AreaBlock />
+        <div className="mt-12 flex flex-col items-center justify-center gap-3 sm:flex-row">
+          <CallButton location="how_it_works" />
+          <RequestButton location="how_it_works" />
+        </div>
       </Section>
 
       {/* Reviews */}
       {hasVerifiedReviews() || !isProduction ? (
-        <Section tone="surface" labelledBy="reviews-heading">
-          <SectionHeading id="reviews-heading" eyebrow="Reviews" title="What Temple customers say" />
+        <Section tone="white" labelledBy="reviews-heading">
+          <SectionHeading id="reviews-heading" eyebrow="Reviews" title="What neighbors in" accent={`${site.city} say.`} />
           <ReviewsBlock />
           {hasVerifiedReviews() ? (
-            <p className="mt-6">
-              <Link href={routes.reviews} className="inline-flex items-center gap-1 font-bold text-brand-dark hover:underline">
+            <p className="mt-8">
+              <Link href={routes.reviews} className="link-arrow">
                 Read all reviews <Icon name="arrow" className="h-4 w-4" />
               </Link>
             </p>
@@ -188,22 +192,35 @@ export default function HomePage() {
           <SectionHeading
             id="pricing-heading"
             eyebrow="Pricing"
-            title="Know the price before we start"
+            title="Know the price"
+            accent="before we start."
             intro="Every repair starts with a diagnosis. You get the full price before any part is replaced."
           />
           <PricingCards />
-          <div className="mt-8">
+          <div className="mt-6">
             <PaymentStrip />
           </div>
         </Section>
       ) : null}
 
+      {/* Service area */}
+      <Section tone="white" labelledBy="area-heading">
+        <SectionHeading
+          id="area-heading"
+          eyebrow="Service area"
+          title={`${site.city} and the towns`}
+          accent="around it."
+          intro={`Based in ${site.city}, covering ${site.county} and nearby ${site.region}. Technicians come to you.`}
+        />
+        <AreaBlock />
+      </Section>
+
       {/* FAQ */}
-      <Section tone="surface" labelledBy="faq-heading">
-        <div className="grid gap-10 lg:grid-cols-[1fr_1.6fr]">
-          <div>
-            <SectionHeading id="faq-heading" eyebrow="FAQ" title="Questions we hear a lot" />
-            <Link href={routes.faq} className="inline-flex items-center gap-1 font-bold text-brand-dark hover:underline">
+      <Section labelledBy="faq-heading">
+        <div className="grid gap-12 lg:grid-cols-[1fr_1.5fr]">
+          <div className="lg:sticky lg:top-32 lg:self-start">
+            <SectionHeading id="faq-heading" eyebrow="FAQ" title="Questions we" accent="hear a lot." />
+            <Link href={routes.faq} className="link-arrow -mt-6">
               All frequently asked questions <Icon name="arrow" className="h-4 w-4" />
             </Link>
           </div>
@@ -211,7 +228,12 @@ export default function HomePage() {
         </div>
       </Section>
 
-      <FinalCta title="Appliance broken? Let’s get it fixed." formId="home_final" />
+      <FinalCta formId="home_final" />
+      {!isProduction ? (
+        <p className="bg-canvas pb-6 text-center">
+          <VerifyTag label="DRAFT MODE: YELLOW TAGS DISAPPEAR IN PRODUCTION" />
+        </p>
+      ) : null}
     </>
   );
 }

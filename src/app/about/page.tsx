@@ -1,5 +1,5 @@
 import { canShow, claims, routes, site } from '@/config/site';
-import { Breadcrumbs } from '@/components/Breadcrumbs';
+import { PageHero } from '@/components/PageHero';
 import { CtaRow } from '@/components/Buttons';
 import { FinalCta } from '@/components/FinalCta';
 import { Icon } from '@/components/Icon';
@@ -30,46 +30,54 @@ export default function AboutPage() {
 
   return (
     <>
-      <section className="bg-surface">
-        <div className="mx-auto max-w-site px-4 pb-12 pt-6 lg:px-6">
-          <Breadcrumbs items={[{ name: 'About', path: routes.about }]} />
-          <h1 className="mt-6 font-heading text-4xl font-extrabold tracking-tight text-navy md:text-5xl">About {site.brandName}</h1>
-          <div className="prose-copy mt-6 max-w-3xl">
-            <p>
-              {site.brandName} is an in-home appliance repair service for {site.city} and the surrounding {site.region} towns. We
-              fix the appliances people depend on every day: refrigerators, freezers, washers, dryers, dishwashers and ranges.
-            </p>
-            <p>
-              We keep the work simple. Find the actual problem, explain it in plain words, give you the price, and fix it only once
-              you agree. Most repairs come down to one failed part, and a careful diagnosis keeps you from paying for parts you did
-              not need.
-            </p>
-            <p>
-              We focus on {site.county} because staying close means shorter drive times and more realistic scheduling for the
-              people who call us.
-            </p>
-          </div>
-          <DraftBlock show={false} label="OWNER STORY: REPLACE BEFORE LAUNCH">
-            <p className="mt-6 max-w-3xl rounded-card bg-white p-5 text-ink-body">
-              Add the real business story here: who runs it, how long they have repaired appliances, and why {site.city}.
-            </p>
-          </DraftBlock>
-          <div className="mt-8">
-            <CtaRow location="about_hero" />
+      <PageHero crumbs={[{ name: 'About', path: routes.about }]} title={`About ${site.brandName}`}>
+        <div className="prose-copy prose-dark">
+          <p>
+            {site.brandName} is an in-home appliance repair service for {site.city} and the surrounding {site.region} towns. We
+            fix the appliances people depend on every day: refrigerators, freezers, washers, dryers, dishwashers and ranges.
+          </p>
+        </div>
+        <div className="mt-8">
+          <CtaRow location="about_hero" dark />
+        </div>
+      </PageHero>
+
+      <Section labelledBy="story-heading">
+        <div className="grid gap-12 lg:grid-cols-[1fr_1.3fr]">
+          <SectionHeading id="story-heading" eyebrow="How we think" title="Find the real problem." accent="Fix only that." />
+          <div>
+            <div className="prose-copy">
+              <p>
+                We keep the work simple. Find the actual problem, explain it in plain words, give you the price, and fix it only
+                once you agree. Most repairs come down to one failed part, and a careful diagnosis keeps you from paying for parts
+                you did not need.
+              </p>
+              <p>
+                We focus on {site.county} because staying close means shorter drive times and more realistic scheduling for the
+                people who call us.
+              </p>
+            </div>
+            <div className="mt-8">
+              <DraftBlock show={false} label="OWNER STORY: REPLACE BEFORE LAUNCH">
+                <p className="rounded-card bg-white p-6 text-ink-body">
+                  Add the real business story here: who runs it, how long they have repaired appliances, and why {site.city}.
+                </p>
+              </DraftBlock>
+            </div>
           </div>
         </div>
-      </section>
+      </Section>
 
       {credentials.length ? (
-        <Section labelledBy="cred-heading">
-          <SectionHeading id="cred-heading" title="Credentials" />
+        <Section tone="ink" labelledBy="cred-heading">
+          <SectionHeading id="cred-heading" eyebrow="Credentials" title="What stands" accent="behind the work." dark />
           <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {credentials.map((c) => (
-              <li key={c.text} className="flex items-start gap-3 rounded-card bg-white p-5 shadow-card ring-1 ring-slate-100">
-                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-trust-light text-trust-dark">
+              <li key={c.text} className="card-dark flex items-start gap-3 p-6">
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-mint-bright/15 text-mint-bright">
                   <Icon name="check" className="h-5 w-5" strokeWidth={2.5} />
                 </span>
-                <span className="font-semibold text-ink">
+                <span className="font-medium text-white">
                   <Claim item={c.item}>{c.text}</Claim>
                 </span>
               </li>
@@ -79,10 +87,10 @@ export default function AboutPage() {
       ) : null}
 
       <DraftBlock show={false} label="REAL PHOTOS ONLY: TEAM, VAN, UNIFORM">
-        <section aria-label="Photos" className="mx-auto max-w-site px-4 py-6 lg:px-6">
+        <section aria-label="Photos" className="mx-auto max-w-site px-4 py-10 lg:px-6">
           <ul className="grid grid-cols-3 gap-4">
             {['Team photo', 'Service van', 'Technician at work'].map((t) => (
-              <li key={t} className="flex aspect-[4/3] items-center justify-center rounded-card bg-surface text-sm font-semibold text-ink-muted">
+              <li key={t} className="flex aspect-[4/3] items-center justify-center rounded-card bg-canvas-2 text-sm font-semibold text-ink-muted">
                 {t}
               </li>
             ))}
@@ -90,15 +98,15 @@ export default function AboutPage() {
         </section>
       </DraftBlock>
 
-      <Section tone="surface" labelledBy="values-heading">
-        <SectionHeading id="values-heading" title="How we work" />
-        <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+      <Section tone="white" labelledBy="values-heading">
+        <SectionHeading id="values-heading" eyebrow="Our standards" title="How we" accent="work." />
+        <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {values.map((v) => (
-            <li key={v.title} className="rounded-card bg-white p-6 shadow-card">
-              <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-brand-light text-brand-dark">
+            <li key={v.title} className="card p-7">
+              <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-flame-soft text-flame">
                 <Icon name={v.icon} className="h-6 w-6" />
               </span>
-              <h3 className="mt-4 font-heading text-lg font-extrabold text-navy">{v.title}</h3>
+              <h3 className="mt-6 font-display text-[21px] font-bold tracking-[-0.025em] text-ink">{v.title}</h3>
               <p className="mt-2 text-[15px] text-ink-body">{v.text}</p>
             </li>
           ))}

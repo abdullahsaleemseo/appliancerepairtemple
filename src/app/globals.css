@@ -1,5 +1,6 @@
-@import '@fontsource-variable/plus-jakarta-sans/wght.css';
-@import '@fontsource-variable/inter/wght.css';
+@import '@fontsource-variable/bricolage-grotesque/opsz.css';
+@import '@fontsource-variable/geist/wght.css';
+@import '@fontsource/instrument-serif/latin-400-italic.css';
 
 @tailwind base;
 @tailwind components;
@@ -11,49 +12,95 @@
     scroll-padding-top: 96px;
   }
   body {
-    @apply bg-white font-sans text-base leading-relaxed text-ink-body antialiased;
+    @apply bg-canvas font-sans text-[16px] leading-relaxed text-ink-body antialiased;
+    font-feature-settings: 'ss01', 'cv11';
   }
   h1,
   h2,
   h3,
   h4 {
-    @apply text-ink;
+    @apply font-display text-ink;
     text-wrap: balance;
+    font-optical-sizing: auto;
   }
-  :focus-visible {
-    outline-offset: 2px;
+  ::selection {
+    background: #ff9a5c;
+    color: #0a0f1c;
   }
 }
 
 @layer components {
+  /* Display headings: tight, heavy, large. */
+  .h-display {
+    @apply font-display font-extrabold tracking-[-0.035em] leading-[0.98];
+  }
+  .h-section {
+    @apply font-display text-[2.1rem] font-bold leading-[1.05] tracking-[-0.03em] md:text-5xl;
+  }
+  /* The italic serif accent word inside a heading. */
+  .accent {
+    @apply font-serif font-normal italic tracking-normal;
+  }
+  .eyebrow {
+    @apply inline-flex items-center gap-2 text-[13px] font-semibold uppercase tracking-[0.16em];
+  }
+  .card {
+    @apply rounded-card border border-sand/70 bg-white shadow-card;
+  }
+  .card-dark {
+    @apply rounded-card border border-white/[0.08] bg-white/[0.04] backdrop-blur;
+  }
+  .grain {
+    position: relative;
+    isolation: isolate;
+  }
+  .grain::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0.07;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  .dot-grid {
+    background-image: radial-gradient(rgba(255, 255, 255, 0.09) 1px, transparent 1px);
+    background-size: 22px 22px;
+  }
   .prose-copy p {
-    @apply mt-4 text-[17px] leading-relaxed text-ink-body;
+    @apply mt-4 text-[17px] leading-[1.75] text-ink-body;
   }
   .prose-copy p:first-child {
     @apply mt-0;
   }
   .prose-copy ul {
-    @apply mt-4 space-y-2;
+    @apply mt-4 space-y-2.5;
   }
   .prose-copy li {
-    @apply relative pl-6 text-[17px] text-ink-body;
+    @apply relative pl-7 text-[17px] text-ink-body;
   }
   .prose-copy li::before {
     content: '';
-    @apply absolute left-1 top-[0.7em] h-1.5 w-1.5 rounded-full bg-brand;
+    @apply absolute left-1 top-[0.62em] h-2 w-2 rotate-45 rounded-[2px] bg-flame;
   }
   .prose-copy a {
-    @apply font-semibold text-navy underline underline-offset-2;
+    @apply font-semibold text-ink underline decoration-flame decoration-2 underline-offset-4;
+  }
+  .prose-dark p {
+    @apply text-white/75;
+  }
+  .link-arrow {
+    @apply inline-flex items-center gap-1.5 font-semibold text-ink underline decoration-flame/60 decoration-2 underline-offset-[5px] transition hover:decoration-flame;
   }
 }
 
 /* Scroll reveal only applies once JS has confirmed it can run, so content is never hidden without it. */
 .js-reveal .reveal {
   opacity: 0;
-  transform: translateY(16px);
+  transform: translateY(18px);
   transition:
-    opacity 0.5s ease,
-    transform 0.5s ease;
+    opacity 0.7s cubic-bezier(0.2, 0.7, 0.2, 1),
+    transform 0.7s cubic-bezier(0.2, 0.7, 0.2, 1);
 }
 .js-reveal .reveal.is-visible {
   opacity: 1;
@@ -64,5 +111,9 @@
     opacity: 1;
     transform: none;
     transition: none;
+  }
+  .animate-marquee,
+  .animate-pulseDot {
+    animation: none;
   }
 }

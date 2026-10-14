@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { routes, site } from '@/config/site';
 import { serviceHref, services } from '@/content/services';
 import { CallButton } from '@/components/Buttons';
+import { Icon } from '@/components/Icon';
 
 export const metadata = {
   title: { absolute: `Page Not Found | ${site.brandName}` },
@@ -10,44 +11,38 @@ export const metadata = {
 
 export default function NotFound() {
   return (
-    <div className="bg-surface">
-      <div className="mx-auto max-w-3xl px-4 py-16 text-center md:py-24">
-        <p className="font-heading text-6xl font-extrabold text-brand-dark">404</p>
-        <h1 className="mt-4 font-heading text-4xl font-extrabold tracking-tight text-navy">This page isn’t here</h1>
-        <p className="mt-4 text-lg text-ink-body">
+    <div className="grain relative overflow-hidden bg-ink">
+      <div aria-hidden="true" className="pointer-events-none absolute left-1/2 top-0 h-[500px] w-[700px] -translate-x-1/2 rounded-full bg-flame/25 blur-[140px]" />
+      <div className="relative mx-auto max-w-4xl px-4 py-20 text-center md:py-28">
+        <p className="font-serif text-[120px] italic leading-none text-flame-glow md:text-[180px]">404</p>
+        <h1 className="h-display mt-4 text-4xl text-white md:text-6xl">This page isn’t here.</h1>
+        <p className="mx-auto mt-5 max-w-xl text-lg text-white/65">
           The link may be old or mistyped. If your appliance needs fixing, we can still help. Pick it below or give us a call.
         </p>
-        <div className="mt-8 flex justify-center">
+        <div className="mt-9 flex justify-center">
           <CallButton location="404" label="Call us" />
         </div>
-        <ul className="mt-12 grid gap-3 text-left sm:grid-cols-2">
+        <ul className="mt-14 grid gap-3 text-left sm:grid-cols-2">
           {services.map((s) => (
             <li key={s.key}>
-              <Link href={serviceHref(s.key)} className="block rounded-card bg-white px-5 py-4 font-semibold text-navy shadow-card hover:shadow-lift">
+              <Link href={serviceHref(s.key)} className="card-dark flex items-center gap-3 px-5 py-4 font-medium text-white transition hover:bg-white/[0.08]">
+                <Icon name={s.icon} className="h-5 w-5 text-flame-glow" />
                 {s.navLabel}
               </Link>
             </li>
           ))}
           <li>
-            <Link href={routes.request} className="block rounded-card bg-navy px-5 py-4 font-semibold text-white shadow-card">
+            <Link href={routes.request} className="flex items-center justify-between rounded-card bg-white px-5 py-4 font-semibold text-ink">
               Request service online
+              <Icon name="arrow" className="h-4 w-4" />
             </Link>
           </li>
         </ul>
-        <p className="mt-10 text-ink-body">
+        <p className="mt-10 text-white/60">
           Or go to the{' '}
-          <Link href="/" className="font-semibold text-navy underline">
-            home page
-          </Link>
-          ,{' '}
-          <Link href={routes.areas} className="font-semibold text-navy underline">
-            service areas
-          </Link>{' '}
-          or{' '}
-          <Link href={routes.faq} className="font-semibold text-navy underline">
-            FAQs
-          </Link>
-          .
+          <Link href="/" className="font-semibold text-white underline decoration-flame underline-offset-4">home page</Link>,{' '}
+          <Link href={routes.areas} className="font-semibold text-white underline decoration-flame underline-offset-4">service areas</Link> or{' '}
+          <Link href={routes.faq} className="font-semibold text-white underline decoration-flame underline-offset-4">FAQs</Link>.
         </p>
       </div>
     </div>

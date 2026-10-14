@@ -3,13 +3,13 @@ import { phoneDisplay, routes, tel } from '@/config/site';
 import { Icon } from './Icon';
 
 const base =
-  'inline-flex min-h-[48px] items-center justify-center gap-2 rounded-full px-6 py-3 text-base font-bold transition focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2';
+  'inline-flex min-h-[52px] items-center justify-center gap-2.5 rounded-full px-7 py-3 text-[16px] font-semibold tracking-[-0.01em] transition duration-200 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 active:scale-[0.98]';
 
 export const btn = {
-  primary: `${base} bg-brand-dark text-white shadow-sm hover:bg-[#A9440A] focus-visible:outline-brand`,
-  secondary: `${base} border-2 border-navy bg-white text-navy hover:bg-navy hover:text-white focus-visible:outline-navy`,
-  navy: `${base} bg-navy text-white hover:bg-navy-700 focus-visible:outline-navy`,
-  onDarkSecondary: `${base} border-2 border-white/80 text-white hover:bg-white hover:text-navy focus-visible:outline-white`,
+  primary: `${base} bg-flame text-white shadow-cta hover:-translate-y-0.5 hover:bg-flame-hover focus-visible:outline-flame-bright`,
+  secondary: `${base} border border-ink/15 bg-white text-ink hover:border-ink/40 hover:-translate-y-0.5 focus-visible:outline-ink`,
+  navy: `${base} bg-ink text-white hover:bg-ink-700 hover:-translate-y-0.5 focus-visible:outline-ink`,
+  onDarkSecondary: `${base} border border-white/20 bg-white/[0.06] text-white backdrop-blur hover:bg-white/[0.12] hover:-translate-y-0.5 focus-visible:outline-white`,
 };
 
 export function CallButton({
@@ -25,8 +25,10 @@ export function CallButton({
 }) {
   return (
     <a href={tel} data-call-location={location} className={`${btn[variant]} ${className}`}>
-      <Icon name="phone" className="h-5 w-5" strokeWidth={2} />
-      <span>
+      <span className="relative flex h-6 w-6 items-center justify-center rounded-full bg-white/20">
+        <Icon name="phone" className="h-4 w-4" strokeWidth={2.2} />
+      </span>
+      <span className="whitespace-nowrap">
         {label} {phoneDisplay}
       </span>
     </a>
@@ -45,8 +47,9 @@ export function RequestButton({
   location: string;
 }) {
   return (
-    <Link href={routes.request} data-cta={location} className={`${btn[variant]} ${className}`}>
+    <Link href={routes.request} data-cta={location} className={`${btn[variant]} group ${className}`}>
       {label}
+      <Icon name="arrow" className="h-4 w-4 transition group-hover:translate-x-1" strokeWidth={2.2} />
     </Link>
   );
 }

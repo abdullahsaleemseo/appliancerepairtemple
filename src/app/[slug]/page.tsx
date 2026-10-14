@@ -5,16 +5,17 @@ import { areas, areaHref } from '@/content/areas';
 import { brands, brandHref } from '@/content/brands';
 import { serviceByKey, serviceHref, services } from '@/content/services';
 import { BrandChips } from '@/components/BrandChips';
-import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { CtaRow } from '@/components/Buttons';
 import { FaqList } from '@/components/FaqList';
 import { FinalCta } from '@/components/FinalCta';
 import { HowItWorks } from '@/components/HowItWorks';
 import { Icon } from '@/components/Icon';
 import { JsonLd } from '@/components/JsonLd';
+import { PageHero } from '@/components/PageHero';
 import { PricingTable } from '@/components/PricingBlock';
 import { ReviewsBlock, hasVerifiedReviews } from '@/components/ReviewsBlock';
 import { ServicePageView } from '@/components/SiteClient';
+import { TrustBadges } from '@/components/TrustBadges';
 import { VerifyTag } from '@/components/Verify';
 import { QuickLeadForm } from '@/components/forms/QuickLeadForm';
 import { serviceSchema } from '@/lib/schema';
@@ -43,71 +44,68 @@ const processSteps = [
   { title: 'Repair and test', text: 'The part is replaced and the appliance is run to confirm the fix.' },
 ];
 
+const h2 = 'h-section text-[2rem] md:text-[2.6rem]';
+
 export default async function ServicePage({ params }: Params) {
   const s = find((await params).slug);
   if (!s) notFound();
   const path = `/${s.slug}/`;
   const relatedBrands = brands.filter((b) => b.appliances.some((a) => a.key === s.key));
+  const [lead, ...rest] = s.intro;
 
   return (
     <>
       <ServicePageView service={s.key} />
-      <JsonLd
-        data={serviceSchema({
-          name: s.h1,
-          description: s.metaDescription,
-          path,
-          serviceType: `${s.name} repair`,
-        })}
-      />
+      <JsonLd data={serviceSchema({ name: s.h1, description: s.metaDescription, path, serviceType: `${s.name} repair` })} />
 
-      <section className="bg-surface">
-        <div className="mx-auto max-w-site px-4 pb-12 pt-6 lg:px-6 lg:pb-16">
-          <Breadcrumbs
-            items={[
-              { name: `Appliance Repair ${site.city}`, path: routes.cityPage },
-              { name: s.navLabel, path },
-            ]}
-          />
-          <div className="mt-6 flex items-start gap-4">
-            <span className="hidden h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-white text-navy shadow-card sm:flex">
-              <Icon name={s.icon} className="h-9 w-9" />
-            </span>
-            <h1 className="font-heading text-4xl font-extrabold tracking-tight text-navy md:text-5xl">{s.h1}</h1>
-          </div>
-          {!s.offeredVerified ? (
-            <p className="mt-2">
-              <VerifyTag label="CONFIRM THIS SERVICE IS OFFERED BEFORE PUBLISHING" />
-            </p>
-          ) : null}
-          <div className="prose-copy mt-6 max-w-3xl">
-            {s.intro.map((p) => (
-              <p key={p.slice(0, 24)}>{p}</p>
-            ))}
-          </div>
-          <div className="mt-8">
-            <CtaRow location={`service_${s.key}_hero`} />
-          </div>
+      <PageHero
+        crumbs={[
+          { name: `Appliance Repair ${site.city}`, path: routes.cityPage },
+          { name: s.navLabel, path },
+        ]}
+        title={s.h1}
+        icon={<Icon name={s.icon} className="h-8 w-8" strokeWidth={1.6} />}
+      >
+        {!s.offeredVerified ? <VerifyTag label="CONFIRM THIS SERVICE IS OFFERED BEFORE PUBLISHING" /> : null}
+        <p className="mt-3 text-lg leading-relaxed text-white/70 md:text-xl">{lead}</p>
+        <div className="mt-8">
+          <CtaRow location={`service_${s.key}_hero`} dark />
         </div>
-      </section>
+        <div className="mt-8 border-t border-white/10 pt-6">
+          <TrustBadges dark />
+        </div>
+      </PageHero>
 
-      <div className="mx-auto grid max-w-site gap-12 px-4 py-14 lg:grid-cols-[1fr_360px] lg:px-6">
-        <div className="min-w-0 space-y-16">
-          <section aria-labelledby="symptoms-heading">
-            <h2 id="symptoms-heading" className="font-heading text-3xl font-extrabold tracking-tight text-navy">
+      <div className="mx-auto grid max-w-site gap-14 px-4 py-20 lg:grid-cols-[1fr_380px] lg:px-6">
+        <div className="min-w-0 space-y-24">
+          {rest.length ? (
+            <div className="prose-copy max-w-3xl">
+              {rest.map((p) => (
+                <p key={p.slice(0, 24)}>{p}</p>
+              ))}
+            </div>
+          ) : null}
+
+          <section aria-labelledby="symptoms-heading" className="reveal">
+            <p className="eyebrow mb-4 text-flame">
+              <span className="h-px w-6 bg-flame" aria-hidden="true" />
+              Symptom checker
+            </p>
+            <h2 id="symptoms-heading" className={h2}>
               {s.symptomsHeading}
             </h2>
-            <p className="mt-3 text-ink-body">Tap a symptom to see the usual cause.</p>
-            <div className="mt-6 grid gap-3 md:grid-cols-2">
-              {s.symptoms.map((sym) => (
-                <details key={sym.title} className="group rounded-card bg-white shadow-card ring-1 ring-slate-100 open:ring-navy/20">
-                  <summary className="flex min-h-[64px] cursor-pointer list-none items-center justify-between gap-3 px-5 py-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-navy [&::-webkit-details-marker]:hidden">
-                    <h3 className="font-heading text-[17px] font-bold text-navy">{sym.title}</h3>
-                    <Icon name="chevron" className="h-5 w-5 shrink-0 text-brand-dark transition group-open:rotate-180" />
+            <p className="mt-4 text-ink-body">Tap the one that sounds like yours to see the usual cause.</p>
+            <div className="mt-8 grid gap-3 md:grid-cols-2">
+              {s.symptoms.map((sym, i) => (
+                <details key={sym.title} className="group rounded-2xl border border-sand bg-white transition open:border-ink/20 open:shadow-card">
+                  <summary className="flex min-h-[72px] cursor-pointer list-none items-center gap-4 px-5 py-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-flame [&::-webkit-details-marker]:hidden">
+                    <span className="font-serif text-2xl italic text-flame">{String(i + 1).padStart(2, '0')}</span>
+                    <h3 className="flex-1 font-display text-[17px] font-semibold tracking-[-0.015em] text-ink">{sym.title}</h3>
+                    <Icon name="chevron" className="h-5 w-5 shrink-0 text-ink-muted transition group-open:rotate-180" />
                   </summary>
                   <div className="px-5 pb-5">
                     <p className="text-[15px] text-ink-body">{sym.cause}</p>
-                    <p className="mt-3 flex items-start gap-2 rounded-lg bg-trust-light px-3 py-2 text-sm font-semibold text-trust-dark">
+                    <p className="mt-4 flex items-start gap-2 rounded-xl bg-mint-soft px-3.5 py-2.5 text-[14px] font-medium text-mint">
                       <Icon name="check" className="mt-0.5 h-4 w-4 shrink-0" strokeWidth={2.5} />
                       {sym.fixable}
                     </p>
@@ -118,127 +116,118 @@ export default async function ServicePage({ params }: Params) {
           </section>
 
           <div className="lg:hidden">
-            <QuickLeadForm formId={`service_${s.key}_inline`} title={`Get a ${s.name.toLowerCase()} repair quote`} defaultAppliance={s.key} />
+            <QuickLeadForm formId={`service_${s.key}_inline`} title={`Get a ${s.name.toLowerCase()} quote`} defaultAppliance={s.key} />
           </div>
 
-          <section aria-labelledby="diag-heading">
-            <h2 id="diag-heading" className="font-heading text-3xl font-extrabold tracking-tight text-navy">
+          <section aria-labelledby="diag-heading" className="reveal grain relative overflow-hidden rounded-xl2 bg-ink p-8 md:p-12">
+            <div aria-hidden="true" className="pointer-events-none absolute -right-20 -top-20 h-72 w-72 rounded-full bg-flame/25 blur-[100px]" />
+            <h2 id="diag-heading" className={`${h2} relative text-white`}>
               {s.diagnostic.heading}
             </h2>
-            <div className="prose-copy mt-4">
+            <div className="prose-copy prose-dark relative mt-5">
               {s.diagnostic.paragraphs.map((p) => (
                 <p key={p.slice(0, 24)}>{p}</p>
               ))}
             </div>
-            <ul className="mt-6 grid gap-3 sm:grid-cols-2">
+            <ul className="relative mt-8 grid gap-3 sm:grid-cols-2">
               {s.diagnostic.covers.map((c) => (
-                <li key={c} className="flex items-start gap-2.5 text-ink">
-                  <Icon name="check" className="mt-1 h-5 w-5 shrink-0 text-trust" strokeWidth={2.5} />
+                <li key={c} className="flex items-start gap-3 rounded-2xl border border-white/[0.08] bg-white/[0.04] p-4 text-[15px] text-white/85">
+                  <Icon name="check" className="mt-0.5 h-5 w-5 shrink-0 text-mint-bright" strokeWidth={2.5} />
                   {c}
                 </li>
               ))}
             </ul>
           </section>
 
-          <section aria-labelledby="pricing-heading">
-            <h2 id="pricing-heading" className="font-heading text-3xl font-extrabold tracking-tight text-navy">
-              {s.name} repair pricing
+          <section aria-labelledby="pricing-heading" className="reveal">
+            <h2 id="pricing-heading" className={h2}>
+              {s.name} repair <span className="accent text-flame">pricing</span>
             </h2>
-            <p className="mt-3 mb-6 text-ink-body">Typical ranges for common jobs. Your exact price comes after the diagnosis.</p>
+            <p className="mb-8 mt-4 text-ink-body">Typical ranges for common jobs. Your exact price comes after the diagnosis.</p>
             <PricingTable rows={s.pricingRows} />
           </section>
 
-          <section aria-labelledby="process-heading">
-            <h2 id="process-heading" className="mb-8 font-heading text-3xl font-extrabold tracking-tight text-navy">
-              How the repair works
+          <section aria-labelledby="process-heading" className="reveal">
+            <h2 id="process-heading" className={`${h2} mb-10`}>
+              How the repair <span className="accent text-flame">works</span>
             </h2>
-            <HowItWorks steps={processSteps} compact />
+            <HowItWorks steps={processSteps} />
           </section>
 
-          <section aria-labelledby="ror-heading">
-            <h2 id="ror-heading" className="font-heading text-3xl font-extrabold tracking-tight text-navy">
+          <section aria-labelledby="ror-heading" className="reveal">
+            <h2 id="ror-heading" className={h2}>
               {s.repairOrReplace.heading}
             </h2>
-            <div className="prose-copy mt-4">
+            <div className="prose-copy mt-6">
               {s.repairOrReplace.paragraphs.map((p) => (
                 <p key={p.slice(0, 24)}>{p}</p>
               ))}
-              <ul>
-                {s.repairOrReplace.points.map((p) => (
-                  <li key={p}>{p}</li>
-                ))}
-              </ul>
             </div>
-            <aside className="mt-6 flex gap-3 rounded-card border-l-4 border-brand bg-brand-light/60 p-5">
-              <Icon name="shield" className="h-6 w-6 shrink-0 text-brand-dark" />
+            <ul className="mt-8 grid gap-3 md:grid-cols-3">
+              {s.repairOrReplace.points.map((p) => (
+                <li key={p} className="card p-5 text-[15px] font-medium text-ink">
+                  {p}
+                </li>
+              ))}
+            </ul>
+            <aside className="mt-6 flex gap-4 rounded-2xl border border-flame/20 bg-flame-soft p-5">
+              <Icon name="shield" className="h-6 w-6 shrink-0 text-flame" />
               <p className="text-[15px] text-ink">
-                <strong className="font-bold">Safety first:</strong> {s.safety}
+                <strong className="font-semibold">Safety first:</strong> {s.safety}
               </p>
             </aside>
           </section>
 
-          <section aria-labelledby="brands-heading">
-            <h2 id="brands-heading" className="font-heading text-3xl font-extrabold tracking-tight text-navy">
-              {s.name} brands we service
+          <section aria-labelledby="brands-heading" className="reveal">
+            <h2 id="brands-heading" className={h2}>
+              {s.name} brands <span className="accent text-flame">we service</span>
             </h2>
-            <p className="mt-3 mb-5 text-ink-body">
+            <p className="mb-6 mt-4 text-ink-body">
               Don’t see yours? Call and ask. Have the model number ready if you can.
               <VerifyTag label="CONFIRM BRAND LIST WITH PROVIDER" />
             </p>
             <BrandChips names={s.brands} />
           </section>
 
-          <section aria-labelledby="faq-heading">
-            <h2 id="faq-heading" className="mb-6 font-heading text-3xl font-extrabold tracking-tight text-navy">
-              {s.name} repair questions
+          <section aria-labelledby="faq-heading" className="reveal">
+            <h2 id="faq-heading" className={`${h2} mb-8`}>
+              {s.name} repair <span className="accent text-flame">questions</span>
             </h2>
             <FaqList faqs={s.faqs} />
           </section>
 
           {hasVerifiedReviews(s.key) ? (
             <section aria-labelledby="reviews-heading">
-              <h2 id="reviews-heading" className="mb-6 font-heading text-3xl font-extrabold tracking-tight text-navy">
+              <h2 id="reviews-heading" className={`${h2} mb-8`}>
                 {s.name} repair reviews
               </h2>
               <ReviewsBlock service={s.key} />
             </section>
           ) : null}
 
-          <nav aria-labelledby="related-heading" className="rounded-card bg-surface p-6 md:p-8">
-            <h2 id="related-heading" className="font-heading text-xl font-extrabold text-navy">
+          <nav aria-labelledby="related-heading" className="rounded-xl2 border border-sand bg-white p-7 md:p-9">
+            <h2 id="related-heading" className="font-display text-2xl font-bold tracking-[-0.02em] text-ink">
               Related repairs and areas
             </h2>
-            <div className="mt-5 grid gap-6 sm:grid-cols-2">
-              <ul className="space-y-2">
-                {s.related.map((k) => (
-                  <li key={k}>
-                    <Link href={serviceHref(k)} className="font-semibold text-navy hover:underline">
-                      {serviceByKey[k].name.toLowerCase()} repair in {site.city}
-                    </Link>
-                  </li>
-                ))}
-                <li>
-                  <Link href={routes.cityPage} className="font-semibold text-navy hover:underline">
-                    all appliance repair in {site.city}
-                  </Link>
-                </li>
-              </ul>
-              <ul className="space-y-2">
-                {relatedBrands.map((b) => (
-                  <li key={b.key}>
-                    <Link href={brandHref(b)} className="font-semibold text-navy hover:underline">
-                      {b.name} {s.name.toLowerCase()} repair
-                    </Link>
-                  </li>
-                ))}
-                {areas.slice(0, 2).map((a) => (
-                  <li key={a.slug}>
-                    <Link href={areaHref(a)} className="font-semibold text-navy hover:underline">
-                      appliance repair in {a.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
+            <div className="mt-6 grid gap-x-8 gap-y-3 sm:grid-cols-2">
+              {s.related.map((k) => (
+                <Link key={k} href={serviceHref(k)} className="link-arrow">
+                  {serviceByKey[k].name.toLowerCase()} repair in {site.city}
+                </Link>
+              ))}
+              <Link href={routes.cityPage} className="link-arrow">
+                all appliance repair in {site.city}
+              </Link>
+              {relatedBrands.map((b) => (
+                <Link key={b.key} href={brandHref(b)} className="link-arrow">
+                  {b.name} {s.name.toLowerCase()} repair
+                </Link>
+              ))}
+              {areas.slice(0, 2).map((a) => (
+                <Link key={a.slug} href={areaHref(a)} className="link-arrow">
+                  appliance repair in {a.name}
+                </Link>
+              ))}
             </div>
           </nav>
         </div>
@@ -250,11 +239,7 @@ export default async function ServicePage({ params }: Params) {
         </aside>
       </div>
 
-      <FinalCta
-        title={`${s.name} acting up? Let’s take a look.`}
-        appliance={s.key}
-        formId={`service_${s.key}_final`}
-      />
+      <FinalCta title={`${s.name} acting up?`} accent="Let’s take a look." appliance={s.key} formId={`service_${s.key}_final`} />
     </>
   );
 }

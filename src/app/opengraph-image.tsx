@@ -16,11 +16,11 @@ export default function OgImage() {
           flexDirection: 'column',
           justifyContent: 'center',
           padding: '80px',
-          background: '#0B2B4C',
+          background: '#0A0F1C',
           color: '#FFFFFF',
         }}
       >
-        <div style={{ fontSize: 34, fontWeight: 700, color: '#F26A1B', letterSpacing: 2 }}>{site.brandName.toUpperCase()}</div>
+        <div style={{ fontSize: 34, fontWeight: 700, color: '#FF9A5C', letterSpacing: 2 }}>{site.brandName.toUpperCase()}</div>
         <div style={{ fontSize: 76, fontWeight: 800, marginTop: 24, lineHeight: 1.05 }}>
           {`Appliance Repair in ${site.city}, ${site.state}`}
         </div>

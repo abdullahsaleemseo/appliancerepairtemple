@@ -3,11 +3,11 @@ import { routes, site } from '@/config/site';
 import { brands, brandHref, otherBrands } from '@/content/brands';
 import { serviceByKey } from '@/content/services';
 import { BrandChips } from '@/components/BrandChips';
-import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { CtaRow } from '@/components/Buttons';
 import { FinalCta } from '@/components/FinalCta';
 import { Icon } from '@/components/Icon';
-import { Section } from '@/components/Section';
+import { PageHero } from '@/components/PageHero';
+import { Section, SectionHeading } from '@/components/Section';
 import { VerifyTag } from '@/components/Verify';
 import { pageMetadata } from '@/lib/seo';
 
@@ -20,43 +20,37 @@ export const metadata = pageMetadata({
 export default function BrandsPage() {
   return (
     <>
-      <section className="bg-surface">
-        <div className="mx-auto max-w-site px-4 pb-12 pt-6 lg:px-6">
-          <Breadcrumbs items={[{ name: 'Brands', path: routes.brands }]} />
-          <h1 className="mt-6 font-heading text-4xl font-extrabold tracking-tight text-navy md:text-5xl">
-            Appliance Brands We Service in {site.city}
-          </h1>
-          <p className="mt-5 max-w-3xl text-lg text-ink-body">
-            Most homes in {site.city} have a mix of brands, often whatever came with the house plus a newer washer or fridge. We
-            repair the common household brands below. If yours is not listed, call and ask. The model number helps us confirm
-            parts before the visit.
-            <VerifyTag label="CONFIRM BRANDS WITH PROVIDER" />
-          </p>
-          <div className="mt-8">
-            <CtaRow location="brands_hero" />
-          </div>
+      <PageHero crumbs={[{ name: 'Brands', path: routes.brands }]} title={`Appliance Brands We Service in ${site.city}`}>
+        <p className="text-lg leading-relaxed text-white/70">
+          Most homes in {site.city} have a mix of brands, often whatever came with the house plus a newer washer or fridge. We
+          repair the common household brands below. The model number helps us confirm parts before the visit.
+          <VerifyTag label="CONFIRM BRANDS WITH PROVIDER" />
+        </p>
+        <div className="mt-8">
+          <CtaRow location="brands_hero" dark />
         </div>
-      </section>
+      </PageHero>
 
       <Section labelledBy="brand-pages-heading">
-        <h2 id="brand-pages-heading" className="font-heading text-3xl font-extrabold text-navy">
-          Brand repair guides
-        </h2>
-        <ul className="mt-8 grid gap-5 md:grid-cols-3">
+        <SectionHeading id="brand-pages-heading" eyebrow="Repair guides" title="Brand-by-brand" accent="repair notes." />
+        <ul className="grid gap-4 md:grid-cols-3">
           {brands
             .filter((b) => b.hasPage)
-            .map((b) => (
+            .map((b, i) => (
               <li key={b.key}>
                 <Link
                   href={brandHref(b)}
-                  className="group flex h-full flex-col rounded-card bg-white p-6 shadow-card ring-1 ring-slate-100 transition hover:-translate-y-1 hover:shadow-lift"
+                  className={`group relative flex h-full min-h-[260px] flex-col overflow-hidden rounded-card p-8 transition duration-300 hover:-translate-y-1 hover:shadow-lift ${
+                    i === 0 ? 'grain bg-ink text-white' : 'card'
+                  }`}
                 >
-                  <h3 className="font-heading text-2xl font-extrabold text-navy">{b.name}</h3>
-                  <p className="mt-2 flex-1 text-[15px] text-ink-body">
+                  <span className={`font-display text-5xl font-extrabold tracking-[-0.04em] ${i === 0 ? 'text-white' : 'text-ink'}`}>{b.name}</span>
+                  <span className={`mt-4 flex-1 text-[15px] ${i === 0 ? 'text-white/60' : 'text-ink-body'}`}>
                     {b.appliances.map((a) => serviceByKey[a.key].name.toLowerCase()).join(', ')}
-                  </p>
-                  <span className="mt-4 inline-flex items-center gap-1 font-bold text-brand-dark">
-                    {b.name} repair in {site.city} <Icon name="arrow" className="h-4 w-4 transition group-hover:translate-x-1" />
+                  </span>
+                  <span className={`mt-6 inline-flex items-center gap-1.5 font-semibold ${i === 0 ? 'text-flame-glow' : 'text-ink'}`}>
+                    {b.name} repair in {site.city}
+                    <Icon name="arrow" className="h-4 w-4 transition group-hover:translate-x-1" />
                   </span>
                 </Link>
               </li>
@@ -64,13 +58,10 @@ export default function BrandsPage() {
         </ul>
       </Section>
 
-      <Section tone="surface" labelledBy="other-heading">
-        <h2 id="other-heading" className="font-heading text-3xl font-extrabold text-navy">
-          Other brands we work on
-        </h2>
-        <p className="mt-3 mb-6 text-ink-body">No dedicated page yet, but we see these regularly.</p>
+      <Section tone="white" labelledBy="other-heading">
+        <SectionHeading id="other-heading" eyebrow="Also" title="Other brands" accent="we work on." intro="No dedicated page yet, but we see these regularly." />
         <BrandChips names={otherBrands} />
-        <p className="mt-10 max-w-3xl text-sm text-ink-muted">
+        <p className="mt-12 max-w-3xl text-sm text-ink-muted">
           All brand names are trademarks of their respective owners. {site.brandName} is an independent repair service. We are not
           affiliated with, authorized by or endorsed by any manufacturer listed here. If your appliance is still under a
           manufacturer’s warranty, contact the manufacturer first.

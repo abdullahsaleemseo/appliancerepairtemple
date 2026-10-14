@@ -4,21 +4,21 @@ import { JsonLd } from './JsonLd';
 
 export type Crumb = { name: string; path: string };
 
-export function Breadcrumbs({ items }: { items: Crumb[] }) {
+export function Breadcrumbs({ items, dark = false }: { items: Crumb[]; dark?: boolean }) {
   const all = [{ name: 'Home', path: '/' }, ...items];
   return (
     <>
-      <nav aria-label="Breadcrumb" className="text-sm text-ink-muted">
-        <ol className="flex flex-wrap items-center gap-1.5">
+      <nav aria-label="Breadcrumb" className={`text-[13px] ${dark ? 'text-white/50' : 'text-ink-muted'}`}>
+        <ol className="flex flex-wrap items-center gap-2">
           {all.map((c, i) => (
-            <li key={c.path} className="flex items-center gap-1.5">
-              {i > 0 ? <span aria-hidden="true">/</span> : null}
+            <li key={c.path} className="flex items-center gap-2">
+              {i > 0 ? <span aria-hidden="true" className="opacity-50">/</span> : null}
               {i === all.length - 1 ? (
-                <span aria-current="page" className="font-medium text-ink">
+                <span aria-current="page" className={dark ? 'text-white/85' : 'text-ink'}>
                   {c.name}
                 </span>
               ) : (
-                <Link href={c.path} className="hover:text-navy hover:underline">
+                <Link href={c.path} className={dark ? 'hover:text-white' : 'hover:text-ink'}>
                   {c.name}
                 </Link>
               )}

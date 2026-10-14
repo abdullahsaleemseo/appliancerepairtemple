@@ -6,7 +6,7 @@ import { cityFaqs } from '@/content/faqs';
 import { serviceHref, services } from '@/content/services';
 import { AreaBlock } from '@/components/AreaList';
 import { BrandChips } from '@/components/BrandChips';
-import { Breadcrumbs } from '@/components/Breadcrumbs';
+import { PageHero } from '@/components/PageHero';
 import { CtaRow } from '@/components/Buttons';
 import { FaqList } from '@/components/FaqList';
 import { FinalCta } from '@/components/FinalCta';
@@ -89,22 +89,27 @@ export default function CityPage() {
         })}
       />
 
-      <section className="bg-surface">
-        <div className="mx-auto max-w-site px-4 pb-12 pt-6 lg:px-6 lg:pb-16">
-          <Breadcrumbs items={[{ name: `Appliance Repair ${site.city}`, path }]} />
-          <h1 className="mt-6 max-w-3xl font-heading text-4xl font-extrabold tracking-tight text-navy md:text-5xl">
-            Appliance Repair in {site.city}, {site.state}
-          </h1>
-          <div className="prose-copy mt-6 max-w-3xl">
+      <PageHero crumbs={[{ name: `Appliance Repair ${site.city}`, path }]} title={`Appliance Repair in ${site.city}, ${site.state}`}>
+        <p className="text-lg leading-relaxed text-white/70 md:text-xl">
+          Most breakdowns in {site.city} come down to a handful of parts: a fan motor, a pump, a heating element, a switch or a
+          valve. We find the one that failed, replace only that, and tell you the price before starting.
+        </p>
+        <div className="mt-8">
+          <CtaRow location="city_hero" dark />
+        </div>
+        <div className="mt-8 border-t border-white/10 pt-6">
+          <TrustBadges dark />
+        </div>
+      </PageHero>
+
+      <Section labelledBy="intro-heading">
+        <div className="grid gap-12 lg:grid-cols-[1fr_1.3fr]">
+          <SectionHeading id="intro-heading" eyebrow="Local repair" title="Built around" accent={`${site.city} homes.`} />
+          <div className="prose-copy">
             <p>
-              Most appliance breakdowns in {site.city} come down to a handful of parts: a fan motor, a pump, a heating element, a
-              switch or a valve. A good technician finds the one that failed, replaces only that, and tells you the price before
-              starting. That is how we work.
-            </p>
-            <p>
-              We repair refrigerators, freezers, washers, dryers, dishwashers, ranges and over-the-range microwaves in homes across
-              {' '}{site.city}, from older houses near downtown to newer neighborhoods on the west and south sides. We also cover
-              Belton, Killeen, Harker Heights, Salado and other {site.county} communities.
+              We repair refrigerators, freezers, washers, dryers, dishwashers, ranges and over-the-range microwaves in homes across{' '}
+              {site.city}, from older houses near downtown to newer neighborhoods on the west and south sides. We also cover Belton,
+              Killeen, Harker Heights, Salado and other {site.county} communities.
             </p>
             <p>
               Central Texas puts its own kind of wear on appliances. Long, hot summers keep refrigerators and garage freezers running
@@ -112,31 +117,33 @@ export default function CityPage() {
               in mind when we diagnose a problem, because fixing the part without fixing the cause just means another call later.
             </p>
           </div>
-          <div className="mt-8">
-            <CtaRow location="city_hero" />
-          </div>
         </div>
-      </section>
+      </Section>
 
-      <Section labelledBy="help-heading">
-        <SectionHeading id="help-heading" eyebrow="We help with" title="Appliances we repair in Temple" />
+      <Section tone="white" labelledBy="help-heading">
+        <SectionHeading id="help-heading" eyebrow="We help with" title="Appliances we repair" accent={`in ${site.city}.`} />
         <ServicesGrid keys={services.map((s) => s.key)} showOther />
       </Section>
 
-      <Section tone="surface" labelledBy="problems-heading">
+      <Section tone="ink" labelledBy="problems-heading">
         <SectionHeading
           id="problems-heading"
           eyebrow="Common problems"
-          title="What usually goes wrong, and what fixes it"
-          intro="These are the calls we get most often in Temple. Each links to more detail on that appliance."
+          title="What usually goes wrong,"
+          accent="and what fixes it."
+          intro={`The calls we get most often in ${site.city}. Each links to more detail on that appliance.`}
+          dark
         />
         <ul className="grid gap-4 md:grid-cols-2">
           {problems.map((p) => (
-            <li key={p.title} className="rounded-card bg-white p-6 shadow-card">
-              <h3 className="font-heading text-lg font-extrabold text-navy">{p.title}</h3>
-              <p className="mt-2 text-[15px] text-ink-body">{p.text}</p>
-              <Link href={serviceHref(p.key)} className="mt-3 inline-flex items-center gap-1 text-[15px] font-bold text-brand-dark hover:underline">
-                More on {p.key === 'oven' ? 'oven and stove' : p.key} repair <Icon name="arrow" className="h-4 w-4" />
+            <li key={p.title}>
+              <Link href={serviceHref(p.key)} className="card-dark group flex h-full flex-col p-7 transition hover:bg-white/[0.07]">
+                <h3 className="font-display text-[21px] font-bold tracking-[-0.025em] text-white">{p.title}</h3>
+                <p className="mt-2 flex-1 text-[15px] text-white/60">{p.text}</p>
+                <span className="mt-5 inline-flex items-center gap-1.5 text-[15px] font-semibold text-flame-glow">
+                  More on {p.key === 'oven' ? 'oven and stove' : p.key} repair
+                  <Icon name="arrow" className="h-4 w-4 transition group-hover:translate-x-1" />
+                </span>
               </Link>
             </li>
           ))}
@@ -144,10 +151,10 @@ export default function CityPage() {
       </Section>
 
       <Section labelledBy="expect-heading">
-        <SectionHeading id="expect-heading" eyebrow="What to expect" title="How a repair visit goes" center />
+        <SectionHeading id="expect-heading" eyebrow="What to expect" title="How a repair" accent="visit goes." center />
         <HowItWorks steps={expectSteps} />
-        <div className="mx-auto mt-12 max-w-3xl rounded-card bg-surface p-6 md:p-8">
-          <h3 className="font-heading text-lg font-extrabold text-navy">Before the technician arrives</h3>
+        <div className="mx-auto mt-10 max-w-3xl rounded-xl2 border border-sand bg-white p-7 md:p-9">
+          <h3 className="font-display text-xl font-bold tracking-[-0.02em] text-ink">Before the technician arrives</h3>
           <ul className="prose-copy">
             <li>Find the model number. It is on a label inside the door, under the lid or on the back.</li>
             <li>Write down any error code on the display.</li>
@@ -157,77 +164,70 @@ export default function CityPage() {
         </div>
       </Section>
 
-      <TrustBadges tone="surface" />
-
-      <Section labelledBy="coverage-heading">
+      <Section tone="white" labelledBy="coverage-heading">
         <SectionHeading
           id="coverage-heading"
           eyebrow="Coverage"
-          title={`Where we work in and around ${site.city}`}
+          title={`Where we work in and around`}
+          accent={`${site.city}.`}
           intro="This is a service area, not a storefront. Technicians come to your home."
         />
         <AreaBlock />
         <ul className="mt-10 flex flex-wrap gap-3">
           {areas.map((a) => (
             <li key={a.slug}>
-              <Link
-                href={areaHref(a)}
-                className="inline-flex min-h-[44px] items-center rounded-full bg-navy px-5 font-semibold text-white hover:bg-navy-700"
-              >
+              <Link href={areaHref(a)} className="inline-flex min-h-[46px] items-center gap-2 rounded-full bg-ink px-5 font-semibold text-white transition hover:bg-ink-700">
                 Appliance repair in {a.name}
+                <Icon name="arrow" className="h-4 w-4" />
               </Link>
             </li>
           ))}
         </ul>
       </Section>
 
-      <Section tone="surface" labelledBy="brands-heading">
-        <SectionHeading id="brands-heading" eyebrow="Brands" title="Brands we see every week" />
+      <Section labelledBy="brands-heading">
+        <SectionHeading id="brands-heading" eyebrow="Brands" title="Brands we see" accent="every week." />
         <BrandChips names={[...brands.map((b) => b.name), ...otherBrands]} />
-        <p className="mt-6">
-          <Link href={routes.brands} className="font-bold text-brand-dark hover:underline">
-            Appliance brands we service in {site.city}
+        <p className="mt-8">
+          <Link href={routes.brands} className="link-arrow">
+            Appliance brands we service in {site.city} <Icon name="arrow" className="h-4 w-4" />
           </Link>
         </p>
       </Section>
 
       {hasVerifiedReviews() ? (
-        <Section labelledBy="reviews-heading">
-          <SectionHeading id="reviews-heading" eyebrow="Reviews" title={`From customers in ${site.city}`} />
+        <Section tone="white" labelledBy="reviews-heading">
+          <SectionHeading id="reviews-heading" eyebrow="Reviews" title="From customers in" accent={`${site.city}.`} />
           <ReviewsBlock />
         </Section>
       ) : null}
 
-      <Section labelledBy="faq-heading">
-        <div className="grid gap-10 lg:grid-cols-[1fr_1.6fr]">
-          <SectionHeading id="faq-heading" eyebrow="FAQ" title={`Appliance repair in ${site.city}: common questions`} />
+      <Section tone="white" labelledBy="faq-heading">
+        <div className="grid gap-12 lg:grid-cols-[1fr_1.5fr]">
+          <div className="lg:sticky lg:top-32 lg:self-start">
+            <SectionHeading id="faq-heading" eyebrow="FAQ" title={`Appliance repair in ${site.city}:`} accent="common questions." />
+          </div>
           <FaqList faqs={cityFaqs} />
         </div>
       </Section>
 
-      <Section tone="surface" labelledBy="links-heading">
-        <h2 id="links-heading" className="font-heading text-2xl font-extrabold text-navy">
+      <Section labelledBy="links-heading">
+        <h2 id="links-heading" className="font-display text-2xl font-bold tracking-[-0.02em] text-ink">
           Keep reading
         </h2>
-        <ul className="mt-5 grid gap-x-8 gap-y-2 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-6 grid gap-x-8 gap-y-3 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((s) => (
-            <li key={s.key}>
-              <Link href={serviceHref(s.key)} className="font-semibold text-navy hover:underline">
-                {s.name.toLowerCase()} repair in {site.city}
-              </Link>
-            </li>
+            <Link key={s.key} href={serviceHref(s.key)} className="link-arrow">
+              {s.name.toLowerCase()} repair in {site.city}
+            </Link>
           ))}
-          <li>
-            <Link href={routes.faq} className="font-semibold text-navy hover:underline">
-              appliance repair FAQs
-            </Link>
-          </li>
-          <li>
-            <Link href={routes.request} className="font-semibold text-navy hover:underline">
-              request appliance repair online
-            </Link>
-          </li>
-        </ul>
+          <Link href={routes.faq} className="link-arrow">
+            appliance repair FAQs
+          </Link>
+          <Link href={routes.request} className="link-arrow">
+            request appliance repair online
+          </Link>
+        </div>
       </Section>
 
       <FinalCta formId="city_final" />

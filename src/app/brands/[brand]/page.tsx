@@ -3,7 +3,8 @@ import { notFound } from 'next/navigation';
 import { routes, site } from '@/config/site';
 import { brands, brandHref } from '@/content/brands';
 import { serviceByKey, serviceHref } from '@/content/services';
-import { Breadcrumbs } from '@/components/Breadcrumbs';
+import { PageHero } from '@/components/PageHero';
+import { TrustBadges } from '@/components/TrustBadges';
 import { CtaRow } from '@/components/Buttons';
 import { FaqList } from '@/components/FaqList';
 import { FinalCta } from '@/components/FinalCta';
@@ -44,42 +45,40 @@ export default async function BrandPage({ params }: Params) {
           serviceType: `${b.name} appliance repair`,
         })}
       />
-      <section className="bg-surface">
-        <div className="mx-auto max-w-site px-4 pb-12 pt-6 lg:px-6">
-          <Breadcrumbs
-            items={[
-              { name: 'Brands', path: routes.brands },
-              { name: b.name, path },
-            ]}
-          />
-          <h1 className="mt-6 font-heading text-4xl font-extrabold tracking-tight text-navy md:text-5xl">
-            {b.name} Appliance Repair in {site.city}, {site.state}
-          </h1>
-          <div className="prose-copy mt-6 max-w-3xl">
-            {b.intro.map((p) => (
-              <p key={p.slice(0, 24)}>{p}</p>
-            ))}
-          </div>
-          <p className="mt-2">
-            <VerifyTag label={`CONFIRM PROVIDER SERVICES ${b.name.toUpperCase()}`} />
-          </p>
-          <div className="mt-8">
-            <CtaRow location={`brand_${b.key}_hero`} />
-          </div>
+      <PageHero
+        crumbs={[
+          { name: 'Brands', path: routes.brands },
+          { name: b.name, path },
+        ]}
+        title={`${b.name} Appliance Repair in ${site.city}, ${site.state}`}
+      >
+        <div className="prose-copy prose-dark">
+          {b.intro.map((p) => (
+            <p key={p.slice(0, 24)}>{p}</p>
+          ))}
         </div>
-      </section>
+        <VerifyTag label={`CONFIRM PROVIDER SERVICES ${b.name.toUpperCase()}`} />
+        <div className="mt-8">
+          <CtaRow location={`brand_${b.key}_hero`} dark />
+        </div>
+        <div className="mt-8 border-t border-white/10 pt-6">
+          <TrustBadges dark />
+        </div>
+      </PageHero>
 
       <Section labelledBy="types-heading">
-        <SectionHeading id="types-heading" title={`${b.name} appliances we repair`} />
+        <SectionHeading id="types-heading" eyebrow="Appliances" title={`${b.name} appliances`} accent="we repair." />
         <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {b.appliances.map((a) => {
             const s = serviceByKey[a.key];
             return (
               <li key={a.key}>
-                <Link href={serviceHref(a.key)} className="flex h-full items-start gap-4 rounded-card bg-white p-5 shadow-card ring-1 ring-slate-100 hover:shadow-lift">
-                  <Icon name={s.icon} className="h-8 w-8 shrink-0 text-navy" />
+                <Link href={serviceHref(a.key)} className="card group flex h-full items-start gap-4 p-6 transition hover:-translate-y-1 hover:shadow-lift">
+                  <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-canvas text-ink transition group-hover:bg-flame group-hover:text-white">
+                    <Icon name={s.icon} className="h-6 w-6" />
+                  </span>
                   <span>
-                    <span className="block font-heading font-extrabold text-navy">
+                    <span className="block font-display text-lg font-bold tracking-[-0.02em] text-ink">
                       {b.name} {s.name.toLowerCase()}
                     </span>
                     <span className="mt-1 block text-[15px] text-ink-body">{a.note}</span>
@@ -91,43 +90,42 @@ export default async function BrandPage({ params }: Params) {
         </ul>
       </Section>
 
-      <Section tone="surface" labelledBy="issues-heading">
-        <SectionHeading id="issues-heading" title={`Common ${b.name} problems we see`} intro="Every appliance brand has its usual failures. These are the ones we run into most." />
+      <Section tone="ink" labelledBy="issues-heading">
+        <SectionHeading id="issues-heading" eyebrow="What breaks" title={`Common ${b.name} problems`} accent="we see." dark />
         <ul className="grid gap-4 md:grid-cols-2">
           {b.issues.map((i) => (
-            <li key={i.title} className="rounded-card bg-white p-6 shadow-card">
-              <h3 className="font-heading text-lg font-extrabold text-navy">{i.title}</h3>
-              <p className="mt-2 text-[15px] text-ink-body">{i.text}</p>
+            <li key={i.title} className="card-dark p-7">
+              <h3 className="font-display text-[21px] font-bold tracking-[-0.025em] text-white">{i.title}</h3>
+              <p className="mt-2 text-[15px] text-white/60">{i.text}</p>
             </li>
           ))}
         </ul>
       </Section>
 
       <Section labelledBy="process-heading">
-        <SectionHeading id="process-heading" title="How service works" center />
+        <SectionHeading id="process-heading" eyebrow="Process" title="How service" accent="works." center />
         <HowItWorks />
       </Section>
 
-      <Section tone="surface" labelledBy="faq-heading">
-        <div className="grid gap-10 lg:grid-cols-[1fr_1.6fr]">
-          <SectionHeading id="faq-heading" title={`${b.name} repair questions`} />
+      <Section tone="white" labelledBy="faq-heading">
+        <div className="grid gap-12 lg:grid-cols-[1fr_1.5fr]">
+          <SectionHeading id="faq-heading" eyebrow="FAQ" title={`${b.name} repair`} accent="questions." />
           <FaqList faqs={b.faqs} />
         </div>
-        <p className="mt-10 max-w-3xl text-sm text-ink-muted">
+        <p className="mt-12 max-w-3xl text-sm text-ink-muted">
           {b.name} is a trademark of its respective owner. {site.brandName} is not affiliated with or endorsed by {b.name}.
         </p>
-        <p className="mt-4">
-          <Link href={routes.cityPage} className="font-semibold text-navy underline">
+        <div className="mt-5 flex flex-wrap gap-6">
+          <Link href={routes.cityPage} className="link-arrow">
             Appliance repair in {site.city}
-          </Link>{' '}
-          ·{' '}
-          <Link href={routes.brands} className="font-semibold text-navy underline">
+          </Link>
+          <Link href={routes.brands} className="link-arrow">
             All brands
           </Link>
-        </p>
+        </div>
       </Section>
 
-      <FinalCta formId={`brand_${b.key}_final`} title={`${b.name} appliance acting up?`} />
+      <FinalCta formId={`brand_${b.key}_final`} title={`${b.name} acting up?`} accent="We can help." />
     </>
   );
 }

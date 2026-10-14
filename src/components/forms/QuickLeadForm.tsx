@@ -41,13 +41,19 @@ export function QuickLeadForm({ formId, title, defaultAppliance, showIssue = tru
         e.preventDefault();
         void submit(f);
       }}
-      className={`relative space-y-4 rounded-card p-6 shadow-card ${dark ? 'bg-white text-ink' : 'bg-white ring-1 ring-slate-100'}`}
+      className={`relative space-y-4 rounded-xl2 bg-white p-6 sm:p-7 ${dark ? 'shadow-glow' : 'border border-sand shadow-card'}`}
       aria-labelledby={title ? `${uid}-title` : undefined}
     >
       {title ? (
-        <h2 id={`${uid}-title`} className="font-heading text-xl font-extrabold text-navy">
-          {title}
-        </h2>
+        <div className="flex items-center justify-between gap-3">
+          <h2 id={`${uid}-title`} className="font-display text-2xl font-bold tracking-[-0.025em] text-ink">
+            {title}
+          </h2>
+          <span className="inline-flex shrink-0 items-center gap-1.5 rounded-full bg-mint-soft px-2.5 py-1 text-[12px] font-semibold text-mint">
+            <span className="h-1.5 w-1.5 animate-pulseDot rounded-full bg-mint" />
+            Free quote
+          </span>
+        </div>
       ) : null}
       <TextField id={`${uid}-name`} label="Name" autoComplete="name" value={f.name} onChange={(e) => set('name', e.target.value)} error={errors.name} />
       <TextField
@@ -98,7 +104,7 @@ export function QuickLeadForm({ formId, title, defaultAppliance, showIssue = tru
       <button type="submit" className={`${btn.primary} w-full`} disabled={status === 'sending'}>
         {status === 'sending' ? 'Sending…' : 'Request a Callback'}
       </button>
-      <p className="text-center text-sm text-ink-muted">{callbackNote}</p>
+      <p className="text-center text-[13px] text-ink-muted">{callbackNote}</p>
       {message ? (
         <p className="rounded-lg bg-red-50 px-3 py-2 text-sm font-medium text-red-800" role="alert">
           {message}
