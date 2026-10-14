@@ -39,6 +39,7 @@ Nothing below may be invented. Each item needs confirmation from the business ow
 
 ## Technical
 - [ ] `NEXT_PUBLIC_SITE_MODE=production` and `NEXT_PUBLIC_SITE_URL` set on the host
+- [ ] Launch day only: `NEXT_PUBLIC_ALLOW_INDEXING=true`, redeploy, then check robots.txt allows crawling on the real domain
 - [ ] `LEAD_WEBHOOK_URL` set, and a test lead received at the destination
 - [ ] Turnstile keys set, and a test submission passes
 - [ ] `NEXT_PUBLIC_GA_ID` set; check `click_to_call`, `form_start` and `generate_lead` in GA4 DebugView

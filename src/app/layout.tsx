@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from 'next';
 import './globals.css';
-import { isProduction, site } from '@/config/site';
+import { indexingAllowed, site } from '@/config/site';
 import { Analytics } from '@/components/Analytics';
 import { Footer } from '@/components/Footer';
 import { Header } from '@/components/Header';
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: { default: `Appliance Repair in ${site.city}, ${site.stateAbbr} | ${site.brandName}`, template: `%s | ${site.brandName}` },
   applicationName: site.brandName,
-  robots: isProduction ? undefined : { index: false, follow: false },
+  robots: indexingAllowed ? undefined : { index: false, follow: false },
   formatDetection: { telephone: false },
 };
 

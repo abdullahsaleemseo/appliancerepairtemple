@@ -21,10 +21,17 @@ npm run build && npm start
 |---|---|---|
 | Unverified claims (ratings, years, warranty, prices, same-day) | Shown with a yellow `[VERIFY ...]` / `[REPLACE ...]` tag | Removed |
 | Placeholder review cards, photo frames, owner story | Shown, outlined in yellow | Removed |
-| robots.txt and meta robots | `Disallow: /` and `noindex` | Indexable, with sitemap |
+| robots.txt and meta robots | `Disallow: /` and `noindex` | Still `noindex` unless `NEXT_PUBLIC_ALLOW_INDEXING=true` |
 | `/reviews/` | Placeholder page | 404 until real reviews exist |
 
 A claim only appears in production after you set `verified: true` on it.
+
+## Staging and indexing
+
+The site is staging by default. Every page sends `noindex, nofollow` (meta tag and `X-Robots-Tag` header) and
+robots.txt blocks all crawlers. Indexing turns on only when both `NEXT_PUBLIC_SITE_MODE=production` and
+`NEXT_PUBLIC_ALLOW_INDEXING=true` are set at build time. `*.vercel.app` URLs stay `noindex` even then, so only the real
+domain can be indexed. On Vercel, set these in Project Settings > Environment Variables and redeploy.
 
 ## Where things live
 

@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { isProduction, site } from '@/config/site';
+import { indexingAllowed, site } from '@/config/site';
 
 type MetaInput = {
   title: string;
@@ -13,15 +13,15 @@ export function absoluteUrl(path: string) {
   return `${site.url}${path.startsWith('/') ? path : `/${path}`}`;
 }
 
-/** Page metadata with a self-referencing canonical and Open Graph tags. Draft builds are never indexable. */
+/** Page metadata with a self-referencing canonical and Open Graph tags. Staging and draft builds are never indexable. */
 export function pageMetadata({ title, description, path, noindex, type = 'website' }: MetaInput): Metadata {
   const url = absoluteUrl(path);
-  const index = isProduction && !noindex;
+  const index = indexingAllowed && !noindex;
   return {
     title: { absolute: title },
     description,
     alternates: { canonical: url },
-    robots: index ? { index: true, follow: true } : { index: false, follow: !noindex },
+    robots: index ? { index: true, follow: true } : { index: false, follow: false },
     openGraph: {
       title,
       description,

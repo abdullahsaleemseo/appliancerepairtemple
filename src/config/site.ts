@@ -90,6 +90,13 @@ export const claims = {
 
 export const isProduction = process.env.NEXT_PUBLIC_SITE_MODE === 'production';
 
+/**
+ * Search engine indexing is a separate switch from production mode, so a staging
+ * deployment can preview the launch version while staying out of Google.
+ * Both must be set before the site can be indexed.
+ */
+export const indexingAllowed = isProduction && process.env.NEXT_PUBLIC_ALLOW_INDEXING === 'true';
+
 /** True when a value may be rendered: always in draft, only when verified in production. */
 export function canShow(item: Verifiable<unknown>): boolean {
   return item.verified || !isProduction;
