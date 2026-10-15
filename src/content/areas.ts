@@ -702,6 +702,104 @@ export const areas: Area[] = [
     ],
     featuredServices: ['refrigerator', 'washer', 'dryer', 'freezer'],
   },
+  {
+    slug: 'little-river-academy-tx',
+    name: 'Little River-Academy',
+    metaTitle: 'Appliance Repair Little River-Academy TX | Near Temple',
+    metaDescription:
+      'Appliance repair in Little River-Academy, TX for refrigerators, freezers, washers, dryers, dishwashers and ovens, in town and out on Highway 95. Call us.',
+    h1: 'Home Appliance Repair in Little River-Academy, TX',
+    intro: [
+      'Appliance Repair Temple repairs refrigerators, freezers, washers, dryers, dishwashers, ovens and ranges in homes across Little River-Academy, TX. Same-day service is available, subject to technician availability, location, and current demand.',
+      'Little River-Academy is a small city of about 2,000 people roughly 10 miles south of Temple. It grew out of two older communities, Little River and Academy, and the Academy side centers on Main Street where it meets State Highway 95. Around town, the 76554 ZIP code takes in country homes and acreage along the farm roads.',
+      'Wherever you are in it, the visit works the same way. The technician tests the appliance, tells you what failed and what the repair involves, and starts only after your OK. If a repair does not make sense for your appliance, you will hear that too.',
+    ],
+    travelNote:
+      'Little River-Academy visits are usually grouped with our south and east Temple routes along Highway 95. Call to confirm the earliest open time for your address.',
+    localPoints: [
+      {
+        heading: 'Family homes near the schools',
+        text: 'Much of town revolves around the Academy schools, and family households run the washer, dryer and dishwasher hard. Thumping, squealing and long dry times are early warnings. A call at that stage often means a smaller repair than waiting for a breakdown.',
+      },
+      {
+        heading: 'Country homes on acreage',
+        text: 'Homes outside town often have long driveways, gates and a spare refrigerator or chest freezer in a shop. Tell us about gates, dogs and where the appliance is when you book.',
+      },
+      {
+        heading: 'Older homes in town',
+        text: 'Older houses near the center of each community can have small kitchens, original water shutoffs and long dryer vent runs. On laundry calls the technician checks the vent and the hookups, because they cause many repeat failures.',
+      },
+      {
+        heading: 'Appliances that outlast their parts',
+        text: 'Plenty of homes here keep a reliable appliance going for years. Belts, door gaskets, relays and heating elements wear out long before the machine itself, and replacing them is usually worth it.',
+      },
+    ],
+    sections: [
+      {
+        heading: 'Stop using it',
+        accent: 'if you notice this.',
+        paragraphs: [
+          'Most appliance problems can wait for a visit. A few cannot. Unplug the appliance or switch off its breaker, and do not use it again until it has been checked, if you see sparks, smell burning plastic or hot wiring, see scorch marks on a cord or outlet, or find water pooling near an outlet or under a machine.',
+          'If you smell gas near a range, dryer or water heater, do not switch anything on or off. Leave the house and call your gas provider or 911 from outside. A dryer that feels hot on the outside or smells scorched is also a reason to stop and call, since lint buildup in the vent is a known fire risk.',
+        ],
+      },
+      {
+        heading: 'What to tell us',
+        accent: 'when you call.',
+        paragraphs: [
+          'A few details help the technician arrive ready. The brand and model number, usually on a label inside the door, under the lid or on the frame. What the appliance is doing, or not doing, and when it started. Any error code, noise or smell. Anything that happened just before, like a storm, a move or a power outage, and what you have already tried.',
+          'You do not need to know what is wrong. A plain description is enough, and the technician will take it from there.',
+        ],
+      },
+      {
+        heading: 'How scheduling works',
+        accent: 'for Little River-Academy.',
+        paragraphs: [
+          'Call or send a request with your address, the appliance, the brand and what it is doing. We confirm the details by phone and set a visit window. We are open Monday to Saturday, 8:00 AM to 8:00 PM.',
+          'Our typical response is about 60 minutes during business hours. That is a typical figure, subject to technician availability, location, and current demand, not a guaranteed arrival time. Calling earlier in the day gives you a better shot at a same-day visit.',
+          'Most calls here are refrigerators and freezers that stop cooling, washers that will not drain or spin, dryers that run without heat, dishwashers that leave dishes dirty and ovens that will not heat. On every dryer call we check the vent as well.',
+        ],
+      },
+    ],
+    zips: ['76554'],
+    zipsVerified: true,
+    nearby: ['Holland', 'Rogers', 'Troy', 'Belton', 'Salado'],
+    faqs: [
+      {
+        q: 'Do you cover homes outside Little River-Academy city limits?',
+        a: 'Yes, across the 76554 ZIP code, including country homes along the farm roads. Give us your address and we will confirm.',
+      },
+      {
+        q: 'Can you come to Little River-Academy the same day?',
+        a: 'Often. Same-day service is available, subject to technician availability, location, and current demand. We will give you the earliest open time when you call.',
+      },
+      {
+        q: 'My dryer smells hot. Should I keep using it?',
+        a: 'No. Turn it off, clean the lint screen and check that the outside vent flap opens when the dryer runs. If the smell or heat continues, do not use it until it has been checked.',
+      },
+      {
+        q: 'Do you repair freezers and fridges in shops?',
+        a: 'Yes. Make sure the technician can reach the back of the unit and the outlet, and let us know about any gates.',
+      },
+      {
+        q: 'My appliance is still under warranty. Should I call you?',
+        a: 'Contact the manufacturer first, since independent repair may not be covered by a factory warranty. If the warranty has expired or you are not sure, call us with the model number.',
+      },
+      {
+        q: 'Which appliances do you repair in Little River-Academy?',
+        a: 'Refrigerators, freezers, washers, dryers, dishwashers, ovens, ranges, cooktops and over-the-range microwaves, across the major brands.',
+      },
+      {
+        q: 'What happens if a part has to be ordered?',
+        a: 'Many common parts can be replaced on the first visit. Some are model-specific and have to be ordered. The technician will tell you if that is the case and what happens next.',
+      },
+      {
+        q: 'How much does appliance repair in Little River-Academy cost?',
+        a: 'It depends on the appliance and the part, so we do not list prices online. Call to discuss your repair needs with the brand and model number ready.',
+      },
+    ],
+    featuredServices: ['washer', 'dryer', 'refrigerator', 'dishwasher'],
+  },
 ];
 
 export const areaHref = (a: Area) => `/service-areas/${a.slug}/`;
