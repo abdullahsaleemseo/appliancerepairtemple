@@ -127,4 +127,10 @@ export type Brand = {
   issues: { title: string; text: string }[];
   faqs: Faq[];
   hasPage: boolean;
+  /** Page H1 with a modifier. Falls back to "[Brand] Appliance Repair in [City], [State]". */
+  h1?: string;
+  /** Where the model and serial tag usually sits, per the manufacturer's support pages. */
+  modelLocations?: { appliance: string; where: string }[];
+  modelSource?: { name: string; url: string };
+  haveReady?: string[];
 };
