@@ -333,9 +333,93 @@ export const brands: Brand[] = [
     ],
     hasPage: true,
   },
+  {
+    key: 'frigidaire',
+    slug: `frigidaire-appliance-repair-${loc}`,
+    name: 'Frigidaire',
+    h1: 'Frigidaire Appliance Repair in Temple, TX, for Every Room',
+    metaTitle: 'Frigidaire Appliance Repair Temple TX | Fridges & Ranges',
+    metaDescription:
+      'Frigidaire fridge, freezer, range, dishwasher or laundry acting up? Independent Frigidaire appliance repair in Temple, TX. Same-day service available.',
+    intro: [
+      'Frigidaire freezer warming up, range not heating or dishwasher leaving water behind? Appliance Repair Temple repairs Frigidaire refrigerators, freezers, ranges, dishwashers, washers, dryers and microwaves in homes across Temple, TX. Same-day service is available, subject to technician availability, location, and current demand.',
+      'Frigidaire, part of the Electrolux group, is one of the most common brands we see in Temple. It shows up in rentals, in starter homes and in garages, where a Frigidaire chest or upright freezer often holds the extra food. Models range from basic units to the Gallery and Professional lines, and many share parts and designs across the family.',
+      'The approach is the same for all of them. The technician tests the appliance, finds the part that failed and explains what the repair involves before any work starts.',
+    ],
+    appliances: [
+      { key: 'refrigerator', note: 'Top-freezer, side-by-side and French door, including Gallery and Professional models' },
+      { key: 'freezer', note: 'Chest and upright freezers, including garage-ready models' },
+      { key: 'oven', note: 'Electric and gas ranges, smoothtop and coil, and wall ovens' },
+      { key: 'dishwasher', note: 'Built-in dishwashers' },
+      { key: 'washer', note: 'Top-load and front-load washers' },
+      { key: 'dryer', note: 'Electric and gas dryers' },
+      { key: 'microwave', note: 'Over-the-range microwaves' },
+    ],
+    issues: [
+      {
+        title: 'Freezer or fridge running warm',
+        text: 'Frost buildup from a defrost problem, a failed evaporator or condenser fan, or a start relay are common causes. On garage freezers, heat and dusty coils make it worse. The technician checks airflow and the defrost system before looking at the sealed system.',
+      },
+      {
+        title: 'Ice maker not making ice',
+        text: 'Often a water inlet valve, a frozen fill tube, a freezer that is not cold enough or the ice maker assembly. Some Frigidaire ice makers have been part of safety recalls, so check your model first (see below).',
+      },
+      {
+        title: 'Range or oven not heating',
+        text: 'A burned bake or broil element on electric models, a weak igniter on gas models, or a temperature sensor that has drifted. Smoothtop burners that will not heat are often a switch or the element itself.',
+      },
+      {
+        title: 'Dishwasher not draining or cleaning',
+        text: 'A clogged filter, a blocked drain hose, a worn drain pump or a weak wash motor. The filter is checked first, since it causes many of these calls.',
+      },
+    ],
+    haveReady: [
+      'The model and serial number from the label. A photo is the easiest way to share it.',
+      'Whether it is a Gallery, Professional or standard model, if you know.',
+      'Gas or electric, for ranges and dryers.',
+      'Any error code on the display.',
+      'Whether you have already checked the model against recall notices at cpsc.gov.',
+    ],
+    modelLocations: [
+      { appliance: 'Top-freezer refrigerator', where: 'On the upper left wall inside the fresh-food section' },
+      { appliance: 'Side-by-side and French door refrigerator', where: 'On the upper right wall inside the fresh-food section' },
+      { appliance: 'Range', where: 'On the side trim inside the oven door opening, on the left side panel when the door is open, or on the storage drawer frame' },
+      { appliance: 'Dishwasher', where: 'On the inside edge of the door or the right side of the tub, visible with the door open' },
+      { appliance: 'Front-load washer', where: 'On the trim around the door opening' },
+      { appliance: 'Top-load washer', where: 'At the back of the tub opening, under the lid' },
+    ],
+    modelSource: { name: 'Frigidaire support: where can I find my model and serial number?', url: 'https://owner.frigidaire.com/support-articles/article/1858491-where-can-i-find-my-model-and-serial-number-' },
+    faqs: [
+      {
+        q: 'Are you an authorized Frigidaire service provider?',
+        a: 'No. Appliance Repair Temple is an independent repair service and is not affiliated with or authorized by Frigidaire or Electrolux. If your appliance is under the manufacturer’s warranty, contact Frigidaire first.',
+      },
+      {
+        q: 'Has my Frigidaire been recalled?',
+        a: 'Some Frigidaire refrigerators, ice makers and ranges have been part of safety recalls. Look up your model and serial number at cpsc.gov or with Frigidaire before paying for a repair, since a recall remedy is handled by the manufacturer.',
+      },
+      {
+        q: 'Do you repair Frigidaire chest and upright freezers?',
+        a: 'Yes, including freezers in garages and shops. Make sure the technician can reach the back of the unit and the outlet.',
+      },
+      {
+        q: 'Do you work on Frigidaire Gallery and Professional models?',
+        a: 'Yes. Give us the full model number so we can check parts, since some Gallery and Professional parts are model-specific.',
+      },
+      {
+        q: 'Do you repair Kenmore appliances made by Frigidaire?',
+        a: 'Yes. Many Kenmore models were built by Frigidaire. Give us the full Kenmore model number and we will check the parts.',
+      },
+      {
+        q: 'How much does Frigidaire appliance repair cost?',
+        a: 'It depends on the appliance and the part, so we do not list prices online. Call to discuss your repair needs with the model number ready.',
+      },
+    ],
+    hasPage: true,
+  },
 ];
 
 /** Other brands commonly serviced. Listed on the hub, no dedicated page yet. */
-export const otherBrands = ['Frigidaire', 'Maytag', 'KitchenAid', 'Bosch', 'Kenmore', 'Electrolux', 'Amana', 'Speed Queen'];
+export const otherBrands = ['Maytag', 'KitchenAid', 'Bosch', 'Kenmore', 'Electrolux', 'Amana', 'Speed Queen'];
 
 export const brandHref = (b: Brand) => `/brands/${b.slug}/`;
