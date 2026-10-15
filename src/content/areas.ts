@@ -383,7 +383,7 @@ export const areas: Area[] = [
       },
       {
         q: 'Do you repair propane ranges and dryers?',
-        a: 'Mention propane when you book. We will confirm whether we can take the job before scheduling the visit.',
+        a: 'Yes. Tell us the appliance runs on propane when you book, since propane appliances use different settings and parts than natural gas, and the technician will come prepared.',
       },
       {
         q: 'My appliance stopped after a storm. What should I check?',

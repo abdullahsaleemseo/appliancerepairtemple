@@ -222,7 +222,7 @@ Call (254) 555-0147 · Request Service · Call early in the day and we will give
 ## 8. Verification checklist
 
 - [ ] Phone number (pending)
-- [ ] **[VERIFY BEFORE PUBLISHING]** Scheduling note: Killeen visits are grouped with the west routes along I-14 / US 190. Confirm this matches how Killeen calls are scheduled. (Tagged on the draft site.)
+- [x] (Owner confirmed October 15, 2026) Scheduling note: Killeen visits are grouped with the west routes along I-14 / US 190. Confirm this matches how Killeen calls are scheduled. (Tagged on the draft site.)
 - [ ] Confirm the business does not take on-post Fort Hood housing jobs (the page says on-post repairs go through the housing office).
 - [x] Killeen is a served area (owner confirmed neighboring towns)
 - [x] ZIP codes 76541, 76542, 76543, 76549 confirmed

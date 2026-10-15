@@ -220,7 +220,7 @@ Call (254) 555-0147 · Request Service · Call to confirm the earliest open time
 ## 8. Verification checklist
 
 - [ ] Phone number (pending)
-- [ ] **[VERIFY BEFORE PUBLISHING]** Scheduling note: Troy visits grouped with north Temple routes along I-35. Confirm. (Tagged on the draft site.)
+- [x] (Owner confirmed October 15, 2026) Scheduling note: Troy visits grouped with north Temple routes along I-35. Confirm. (Tagged on the draft site.)
 - [ ] Confirm coverage of the Falls County part of 76579.
 - [x] Troy is a served area (owner confirmed neighboring towns)
 - [x] 76579 confirmed as the only ZIP code

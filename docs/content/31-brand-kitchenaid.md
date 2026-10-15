@@ -202,7 +202,7 @@ Call (254) 555-0147 · Request Service · Call to discuss your repair needs
 ## 8. Verification checklist
 
 - [ ] Phone number (pending)
-- [ ] Gas range work
+- [x] Gas range work (owner confirmed October 15, 2026)
 - [ ] Confirm the business does not repair stand mixers or countertop appliances (stated in the intro and an FAQ)
 - [x] KitchenAid serviced (owner confirmed)
 - [x] Non-affiliation and trademark notice shown

@@ -202,7 +202,7 @@ Call (254) 555-0147 · Request Service · Call to discuss your repair needs
 ## 8. Verification checklist
 
 - [ ] Phone number (pending)
-- [ ] Gas dryer work
+- [x] Gas dryer work (owner confirmed October 15, 2026)
 - [ ] Commercial or coin-operated machines: the FAQ says work is residential and asks the caller to check
 - [x] Speed Queen serviced (owner confirmed)
 - [x] Non-affiliation and trademark notice shown

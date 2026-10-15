@@ -60,7 +60,6 @@ export default async function AreaPage({ params }: Params) {
           <Icon name="calendar" className="mt-0.5 h-5 w-5 shrink-0 text-flame-glow" />
           <span>
             {a.travelNote}
-            <VerifyTag label="CONFIRM SCHEDULING" />
           </span>
         </p>
         <div className="mt-8">

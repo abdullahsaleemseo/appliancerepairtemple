@@ -217,7 +217,7 @@ Call (254) 555-0147 · Request Service · Call early and we will give you the ea
 ## 8. Verification checklist
 
 - [ ] Phone number (pending)
-- [ ] **[VERIFY BEFORE PUBLISHING]** Scheduling note: Moody visits planned around north routes along Highway 317. Confirm. (Tagged on the draft site.)
+- [x] (Owner confirmed October 15, 2026) Scheduling note: Moody visits planned around north routes along Highway 317. Confirm. (Tagged on the draft site.)
 - [ ] Confirm coverage of the Coryell County part of 76557.
 - [x] Moody is a served area (owner confirmed neighboring towns)
 - [x] 76557 confirmed as the only ZIP code

@@ -208,7 +208,7 @@ Call (254) 555-0147 · Request Service · Call to discuss your repair needs
 ## 8. Verification checklist
 
 - [ ] Phone number (pending)
-- [ ] Gas range and gas dryer work (mentioned in the appliance list and issues)
+- [x] Gas range and gas dryer work (mentioned in the appliance list and issues) (owner confirmed October 15, 2026)
 - [x] Frigidaire serviced (owner confirmed)
 - [x] Non-affiliation and trademark notice shown
 

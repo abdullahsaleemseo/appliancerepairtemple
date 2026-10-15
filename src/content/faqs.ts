@@ -98,7 +98,7 @@ export const faqGroups: { id: string; title: string; accent: string; faqs: Faq[]
       },
       {
         q: 'Do you repair gas appliances?',
-        a: 'Tell us it is a gas range, oven or dryer when you book so we can confirm before the visit. If you smell gas, leave the house and call your gas provider or 911 from outside first.',
+        a: 'Yes. We repair gas ranges, ovens, cooktops and dryers. Tell us it is a gas appliance when you book so the technician comes prepared. If you smell gas, leave the house and call your gas provider or 911 from outside first.',
       },
       {
         q: 'Which areas do you serve?',

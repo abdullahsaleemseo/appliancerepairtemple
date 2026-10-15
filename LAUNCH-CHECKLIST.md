@@ -17,13 +17,13 @@ Verified by the owner on Oct 15, 2026: Licensed & Insured, Same-Day Service, 4+ 
 - [ ] Platform and review count behind the 4.9 rating (needed before showing a source or adding review markup)
 - [ ] Brand list (`claims.brandsServiced`)
 - [ ] Callback time shown on the thank-you page
-- [ ] Gas appliance service
+- [x] Gas appliance service (owner confirmed October 15, 2026, including propane)
 - [x] Pricing policy: no prices, fees, ranges, coupons or financing terms anywhere on the site
 
 ## Content
 - [ ] Confirm each service is offered, then set `offeredVerified: true` in `services.ts` (microwave especially)
 - [ ] Confirm the brand lists on service pages and the brand pages (Whirlpool, GE, Samsung)
-- [ ] Confirm each nearby city is really served, and the travel and scheduling notes in `areas.ts`
+- [x] Confirm each nearby city is really served, and the travel and scheduling notes in `areas.ts` (owner confirmed October 15, 2026)
 - [ ] Check the Belton, Killeen, Harker Heights and Salado ZIP lists against USPS
 - [ ] Real prices in `pricingRows` for every service
 - [ ] Real reviews in `src/content/reviews.ts`, copied exactly, with source and date

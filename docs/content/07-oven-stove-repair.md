@@ -304,7 +304,7 @@ Call (254) 555-0147 · Request Service · Request oven & stove repair · Speak w
 ## 8. Verification checklist
 
 - [ ] Phone number (pending)
-- [ ] **Gas ovens, ranges and cooktops:** please confirm these are serviced (also asked on the dryer page). If not, gas content will be removed.
+- [x] (Owner confirmed October 15, 2026) **Gas ovens, ranges and cooktops:** please confirm these are serviced (also asked on the dryer page). If not, gas content will be removed.
 - [ ] Confirm wall ovens and cooktops are serviced (mentioned in the intro and FAQ)
 - [ ] Confirm technicians can check the anti-tip bracket during a visit ("We can check it during a visit")
 - [x] Brands and process wording confirmed by the owner

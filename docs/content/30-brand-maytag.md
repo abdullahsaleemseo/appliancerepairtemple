@@ -205,7 +205,7 @@ Call (254) 555-0147 · Request Service · Call to discuss your repair needs
 ## 8. Verification checklist
 
 - [ ] Phone number (pending)
-- [ ] Gas dryer and gas range work
+- [x] Gas dryer and gas range work (owner confirmed October 15, 2026)
 - [x] Maytag serviced (owner confirmed)
 - [x] Non-affiliation and trademark notice shown
 

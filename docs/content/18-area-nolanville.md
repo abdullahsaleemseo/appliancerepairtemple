@@ -220,7 +220,7 @@ Call (254) 555-0147 · Request Service · Call to confirm the earliest open time
 ## 8. Verification checklist
 
 - [ ] Phone number (pending)
-- [ ] **[VERIFY BEFORE PUBLISHING]** Scheduling note: Nolanville visits are grouped with Belton and Harker Heights routes. Confirm. (Tagged on the draft site.)
+- [x] (Owner confirmed October 15, 2026) Scheduling note: Nolanville visits are grouped with Belton and Harker Heights routes. Confirm. (Tagged on the draft site.)
 - [ ] Confirm the technician checks installation issues (drain hose loop, water line, leveling) as part of the visit.
 - [x] Nolanville is a served area (owner confirmed neighboring towns)
 - [x] 76559 confirmed as the only ZIP code

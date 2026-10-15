@@ -216,7 +216,7 @@ Call (254) 555-0147 · Request Service · Call early and we will give you the ea
 ## 8. Verification checklist
 
 - [ ] Phone number (pending)
-- [ ] **[VERIFY BEFORE PUBLISHING]** Scheduling note: Rogers visits planned around the east routes along US 190. Confirm. (Tagged on the draft site.)
+- [x] (Owner confirmed October 15, 2026) Scheduling note: Rogers visits planned around the east routes along US 190. Confirm. (Tagged on the draft site.)
 - [ ] Confirm coverage of the Milam County part of 76569.
 - [ ] Confirm the technician can look at two appliances on one visit.
 - [x] Rogers is a served area (owner confirmed neighboring towns)

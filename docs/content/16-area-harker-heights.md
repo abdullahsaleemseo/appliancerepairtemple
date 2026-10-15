@@ -218,7 +218,7 @@ Call (254) 555-0147 · Request Service · Call to confirm the earliest open time
 ## 8. Verification checklist
 
 - [ ] Phone number (pending)
-- [ ] **[VERIFY BEFORE PUBLISHING]** Scheduling note: Harker Heights visits are grouped with Killeen and Belton routes. Confirm. (Tagged on the draft site.)
+- [x] (Owner confirmed October 15, 2026) Scheduling note: Harker Heights visits are grouped with Killeen and Belton routes. Confirm. (Tagged on the draft site.)
 - [x] Harker Heights is a served area (owner confirmed neighboring towns)
 - [x] 76548 confirmed as the only ZIP code
 

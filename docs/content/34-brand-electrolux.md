@@ -204,7 +204,7 @@ Call (254) 555-0147 · Request Service · Call to discuss your repair needs
 ## 8. Verification checklist
 
 - [ ] Phone number (pending)
-- [ ] Gas dryer, gas range and induction range work
+- [x] Gas dryer, gas range and induction range work (owner confirmed October 15, 2026)
 - [ ] Stacked laundry and wall ovens (listed in the appliance notes)
 - [x] Electrolux serviced (owner confirmed)
 - [x] Non-affiliation and trademark notice shown

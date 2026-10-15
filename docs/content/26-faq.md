@@ -192,7 +192,7 @@ Call (254) 555-0147 · Request Service · If yours is not here, call and ask · 
 ## 8. Verification checklist
 
 - [ ] Phone number (pending)
-- [ ] Gas range, oven and dryer work (answer currently says we confirm before the visit)
+- [x] Gas range, oven and dryer work (answer currently says we confirm before the visit) (owner confirmed October 15, 2026)
 - [x] Same-day, typical response about 60 minutes, hours, licensed and insured, flexible payment
 - [x] Area list matches the 11 area pages
 

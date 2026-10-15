@@ -220,7 +220,7 @@ Call (254) 555-0147 · Request Service · Call to confirm the earliest open time
 ## 8. Verification checklist
 
 - [ ] Phone number (pending)
-- [ ] **[VERIFY BEFORE PUBLISHING]** Scheduling note: visits grouped with Belton and west Temple routes. Confirm. (Tagged on the draft site.)
+- [x] (Owner confirmed October 15, 2026) Scheduling note: visits grouped with Belton and west Temple routes. Confirm. (Tagged on the draft site.)
 - [ ] Confirm the business works on appliances in manufactured homes.
 - [x] Morgan's Point Resort is a served area (owner confirmed neighboring towns)
 - [x] ZIP 76513 (shared with Belton) confirmed

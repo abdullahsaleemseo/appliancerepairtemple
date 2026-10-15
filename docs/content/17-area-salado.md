@@ -219,8 +219,8 @@ Call (254) 555-0147 · Request Service · Call early and we will give you the ea
 ## 8. Verification checklist
 
 - [ ] Phone number (pending)
-- [ ] **[VERIFY BEFORE PUBLISHING]** Scheduling note: Salado visits are planned around the south routes. Confirm. (Tagged on the draft site.)
-- [ ] Propane range and dryer work: confirm yes or no. The FAQ currently says "we will confirm before scheduling".
+- [x] (Owner confirmed October 15, 2026) Scheduling note: Salado visits are planned around the south routes. Confirm. (Tagged on the draft site.)
+- [x] Propane range and dryer work (owner confirmed October 15, 2026; FAQ now says yes)
 - [x] Salado is a served area (owner confirmed neighboring towns)
 - [x] 76571 confirmed as the only ZIP code
 

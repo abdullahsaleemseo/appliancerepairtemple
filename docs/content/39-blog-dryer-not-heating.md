@@ -159,5 +159,5 @@ Need a technician? Dryer repair in Temple · Request service online · Call
 
 ## 8. Verification checklist
 
-- [ ] Gas dryer work (the article gives gas safety guidance; it does not promise gas repair)
+- [x] Gas dryer work (the article gives gas safety guidance; it does not promise gas repair) (owner confirmed October 15, 2026)
 - [x] Breaker, gas valve and vent guidance matches Whirlpool and USFA

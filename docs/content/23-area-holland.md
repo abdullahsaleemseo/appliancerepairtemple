@@ -217,7 +217,7 @@ Call (254) 555-0147 · Request Service · Call early and we will give you the ea
 ## 8. Verification checklist
 
 - [ ] Phone number (pending)
-- [ ] **[VERIFY BEFORE PUBLISHING]** Scheduling note: Holland visits grouped with south routes along Highway 95. Confirm. (Tagged on the draft site.)
+- [x] (Owner confirmed October 15, 2026) Scheduling note: Holland visits grouped with south routes along Highway 95. Confirm. (Tagged on the draft site.)
 - [ ] Confirm coverage of the Milam County part of 76534.
 - [x] Holland is a served area (owner confirmed neighboring towns)
 - [x] 76534 confirmed as the only ZIP code

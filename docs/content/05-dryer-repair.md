@@ -307,7 +307,7 @@ Call (254) 555-0147 · Request Service · Request dryer repair · Speak with our
 ## 8. Verification checklist
 
 - [ ] Phone number (pending)
-- [ ] **Gas dryer repair:** the H1, title and copy say "Electric & Gas". Please confirm gas dryers are serviced. If not, the H1 becomes "Electric Dryer Repair in Temple, TX" and the gas sections come out.
+- [x] (Owner confirmed October 15, 2026) **Gas dryer repair:** the H1, title and copy say "Electric & Gas". Please confirm gas dryers are serviced. If not, the H1 becomes "Electric Dryer Repair in Temple, TX" and the gas sections come out.
 - [ ] Confirm stacked laundry centers are serviced
 - [x] Brands and process wording confirmed by the owner
 

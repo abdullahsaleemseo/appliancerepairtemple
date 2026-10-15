@@ -217,7 +217,7 @@ Call (254) 555-0147 · Request Service · Call to confirm the earliest open time
 ## 8. Verification checklist
 
 - [ ] Phone number (pending)
-- [ ] **[VERIFY BEFORE PUBLISHING]** Scheduling note: "Belton visits are usually scheduled alongside our south and west Temple routes, so availability tends to track Temple's." Confirm this matches how Belton calls are scheduled. (Tagged on the draft site.)
+- [x] (Owner confirmed October 15, 2026) Scheduling note: "Belton visits are usually scheduled alongside our south and west Temple routes, so availability tends to track Temple's." Confirm this matches how Belton calls are scheduled. (Tagged on the draft site.)
 - [x] Belton is a served area (owner confirmed neighboring towns)
 - [x] 76513 confirmed as Belton's only ZIP code
 
