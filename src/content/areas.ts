@@ -9,47 +9,100 @@ export const areas: Area[] = [
   {
     slug: 'belton-tx',
     name: 'Belton',
-    metaTitle: 'Appliance Repair in Belton, TX | Appliance Repair Temple',
+    metaTitle: 'Appliance Repair Belton TX | Next Door to Temple',
     metaDescription:
-      'Appliance repair in Belton, TX for refrigerators, washers, dryers, dishwashers and ovens. Request service or call to check today’s availability.',
-    h1: 'Appliance Repair in Belton, TX',
+      'Appliance repair in Belton, TX for fridges, washers, dryers, dishwashers and ovens, from a team based next door in Temple. Same-day service available.',
+    h1: 'Appliance Repair in Belton, TX, Right Next Door to Temple',
     intro: [
-      'Belton is the Bell County seat and sits right next to Temple, so it is one of the shortest drives on our route. Calls here range from older homes near downtown and the University of Mary Hardin-Baylor to newer subdivisions on the west side toward Lake Belton.',
-      'We handle the same work in Belton that we do in Temple: refrigerators that stop cooling, washers that will not drain, dryers with no heat, dishwashers that leave dishes dirty and ovens that will not hold temperature. The technician diagnoses the problem and explains the repair before starting.',
+      'Need appliance repair in Belton? Appliance Repair Temple fixes refrigerators, freezers, washers, dryers, dishwashers, ovens and ranges in homes across Belton, TX, from the older streets north of Nolan Creek to the newer subdivisions on the edge of town. Same-day service is available, subject to technician availability, location, and current demand.',
+      'Belton is the Bell County seat and sits right beside Temple, so it is one of the shortest drives on our routes. That makes Belton visits easier to fit into the day than towns farther out.',
+      'The work is the same as anywhere else we go. The technician finds the part that failed, explains what the repair involves, and starts only after your OK. If an appliance is not worth fixing, you will hear that too.',
     ],
     travelNote:
-      'Belton calls are usually scheduled on the same routes as south and west Temple, so availability tends to match Temple’s.',
+      'Belton visits are usually scheduled alongside our south and west Temple routes, so availability tends to track Temple’s. Call to confirm the earliest open time for your address.',
     localPoints: [
       {
-        heading: 'Older homes, older hookups',
-        text: 'Homes in the older parts of Belton sometimes have tight laundry closets, older dryer vent runs and original shutoff valves. The technician checks the vent and water connections as part of a laundry call, because they cause a lot of repeat failures.',
+        heading: 'Older homes north of Nolan Creek',
+        text: 'Much of Belton’s older housing sits north of the Nolan Creek corridor. Tight laundry closets, long dryer vent runs and original water shutoff valves are common there. On laundry calls, the technician checks the vent and the hookups too, because they cause a lot of repeat failures.',
       },
       {
-        heading: 'Student rentals and move-outs',
-        text: 'Rentals near campus see heavy appliance use and turnover. If you manage a rental, tell us who should approve the repair and who will let the technician in.',
+        heading: 'Newer subdivisions and newer appliances',
+        text: 'Newer master-planned neighborhoods often came with French door refrigerators, front-load laundry and electronic controls that report error codes. Write the code down before you call, and check whether the manufacturer’s warranty still applies.',
       },
       {
-        heading: 'Lake-area homes',
-        text: 'Second refrigerators and chest freezers in garages and shops near the lake work hard in summer. Clean coils and good airflow around the unit make a big difference.',
+        heading: 'Rentals near UMHB',
+        text: 'Homes and apartments near the University of Mary Hardin-Baylor turn over every school year, and appliances that sit empty over the summer can come back with stuck pumps or dried-out seals. If you manage a rental, tell us who approves the repair and who will let the technician in.',
+      },
+      {
+        heading: 'Lake homes, garages and second freezers',
+        text: 'With Belton Lake and Stillhouse Hollow Lake close by, plenty of Belton homes keep a second refrigerator or chest freezer in a garage or shop. In summer heat those units run hard. Clean coils and a little space around them make a real difference.',
+      },
+    ],
+    sections: [
+      {
+        heading: 'Repairs we handle',
+        accent: 'in Belton homes.',
+        paragraphs: [
+          'Refrigerators and freezers are the most urgent calls, especially in July and August, when a weak start relay or a dusty condenser coil finally gives out. If the fridge side is warm but the freezer is cold, it is usually a fan or a defrost problem, both of which are common repairs.',
+          'Laundry is the other big one. Washers that will not drain or spin usually have a clogged pump, a worn lid lock or a broken belt. Dryers that run without heat usually have a failed heating part, and a restricted vent is often the reason it failed in the first place, so we check airflow on every dryer call.',
+          'Dishwashers in hard water homes collect mineral scale in the spray arms and inlet screens, which shows up as cloudy glasses and dishes that are not quite clean. Ovens and ranges round out the list: burned bake elements, weak gas igniters and temperature sensors that have drifted.',
+        ],
+      },
+      {
+        heading: 'How scheduling works',
+        accent: 'for Belton.',
+        paragraphs: [
+          'Call or send a request with your address, the appliance, the brand and what it is doing. We confirm the details by phone and set a visit window. We are open Monday to Saturday, 8:00 AM to 8:00 PM.',
+          'Our typical response is about 60 minutes during business hours. That is a typical figure, subject to technician availability, location, and current demand, not a guaranteed arrival time. Calling earlier in the day gives you a better shot at a same-day visit in Belton.',
+        ],
+      },
+      {
+        heading: 'Before the technician',
+        accent: 'arrives.',
+        paragraphs: [
+          'Find the model number on the appliance, usually on a label inside the door, under the lid or on the frame. Write down any error code. Clear a path and, if you can, empty the washer or dishwasher. If you rent, let your landlord know first, since many leases make the landlord responsible for appliances they provide.',
+        ],
       },
     ],
     zips: ['76513'],
+    zipsVerified: true,
+    nearby: ["Morgan's Point Resort", 'Harker Heights', 'Salado', 'Killeen', 'Nolanville'],
     faqs: [
       {
-        q: 'How do I book a repair in Belton?',
-        a: 'Call, or send the request form with your ZIP code, appliance and the problem. We confirm the details and a visit window with you by phone.',
+        q: 'Do you cover all of Belton?',
+        a: 'Yes. We serve Belton’s 76513 ZIP code, including the older neighborhoods near downtown and Nolan Creek and the newer subdivisions around town. If you are outside city limits, give us your address and we will confirm.',
       },
       {
         q: 'Can you come to Belton the same day?',
-        a: 'Sometimes. It depends on the day’s schedule and how early you call. We will tell you the earliest open time when you reach us.',
+        a: 'Often. Same-day service is available, subject to technician availability, location, and current demand. Belton is close to Temple, which helps. We will give you the earliest open time when you call.',
       },
       {
-        q: 'Do you repair appliances in rental homes near UMHB?',
-        a: 'Yes. Tenants and landlords both call us. We need the property manager or owner to approve the repair if they are paying.',
+        q: 'Do you repair appliances in rentals near UMHB?',
+        a: 'Yes. Tenants and landlords both call us. If the landlord or property manager is paying, we need them to approve the repair, and someone needs to let the technician in.',
+      },
+      {
+        q: 'Do you work on garage and shop freezers around Belton Lake?',
+        a: 'Yes. Garage refrigerators and chest freezers are a common call. Make sure the technician can reach the back of the unit and the outlet.',
       },
       {
         q: 'Which appliances do you repair in Belton?',
-        a: 'Refrigerators, freezers, washers, dryers, dishwashers, ovens, stoves and over-the-range microwaves.',
+        a: 'Refrigerators, freezers, washers, dryers, dishwashers, ovens, ranges, cooktops and over-the-range microwaves, across the major brands.',
+      },
+      {
+        q: 'My appliance is still under warranty. Should I call you?',
+        a: 'Check with the manufacturer first, since independent repair may not be covered by a factory warranty. If the warranty has expired or you are not sure, call us with the model number.',
+      },
+      {
+        q: 'What happens if a part has to be ordered?',
+        a: 'Many common parts can be replaced on the first visit. Some are model-specific and have to be ordered. The technician will tell you if that is the case and what happens next.',
+      },
+      {
+        q: 'Do you also cover towns around Belton?',
+        a: 'Yes. Along with Belton and Temple, we cover Morgan’s Point Resort, Harker Heights, Nolanville, Killeen, Salado and other nearby towns. Give us your address and we will confirm.',
+      },
+      {
+        q: 'How much does appliance repair in Belton cost?',
+        a: 'It depends on the appliance and the part, so we do not list prices online. Call to discuss your repair needs with the brand and model number ready.',
       },
     ],
     featuredServices: ['washer', 'dryer', 'refrigerator', 'freezer'],

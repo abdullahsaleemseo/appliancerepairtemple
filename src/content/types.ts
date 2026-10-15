@@ -114,6 +114,12 @@ export type Area = {
   zips: string[];
   faqs: Faq[];
   featuredServices: ApplianceKey[];
+  /** ZIP list confirmed against a reliable source, so no verification tag is needed. */
+  zipsVerified?: boolean;
+  /** Extra page sections, rendered after the local notes. */
+  sections?: { heading: string; accent?: string; paragraphs: string[] }[];
+  /** Nearby towns to link from this page (names from site.nearbyTowns or Temple). */
+  nearby?: string[];
 };
 
 export type Brand = {

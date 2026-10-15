@@ -55,11 +55,7 @@ export default async function AreaPage({ params }: Params) {
         ]}
         title={a.h1}
       >
-        <div className="prose-copy prose-dark">
-          {a.intro.map((p) => (
-            <p key={p.slice(0, 24)}>{p}</p>
-          ))}
-        </div>
+        <p className="text-lg leading-relaxed text-white/75 md:text-xl">{a.intro[0]}</p>
         <p className="mt-6 flex items-start gap-3 rounded-2xl border border-white/10 bg-white/[0.05] px-5 py-4 text-[15px] text-white/80">
           <Icon name="calendar" className="mt-0.5 h-5 w-5 shrink-0 text-flame-glow" />
           <span>
@@ -74,6 +70,19 @@ export default async function AreaPage({ params }: Params) {
           <TrustBadges dark />
         </div>
       </PageHero>
+
+      {a.intro.length > 1 ? (
+        <Section labelledBy="intro-heading">
+          <div className="grid gap-10 lg:grid-cols-[1fr_1.4fr]">
+            <SectionHeading id="intro-heading" eyebrow={`${a.name}, ${site.stateAbbr}`} title="Appliance service" accent={`in ${a.name}.`} />
+            <div className="prose-copy">
+              {a.intro.slice(1).map((p) => (
+                <p key={p.slice(0, 24)}>{p}</p>
+              ))}
+            </div>
+          </div>
+        </Section>
+      ) : null}
 
       {hasVerifiedReviews() ? (
         <Section labelledBy="proof-heading">
@@ -95,7 +104,7 @@ export default async function AreaPage({ params }: Params) {
 
       <Section tone="ink" labelledBy="local-heading">
         <SectionHeading id="local-heading" eyebrow="Local notes" title="What we see in" accent={`${a.name}.`} dark />
-        <ul className="grid gap-4 md:grid-cols-3">
+        <ul className={`grid gap-4 ${a.localPoints.length % 2 === 0 ? 'md:grid-cols-2' : 'md:grid-cols-3'}`}>
           {a.localPoints.map((p) => (
             <li key={p.heading} className="card-dark p-7">
               <h3 className="font-display text-[21px] font-bold tracking-[-0.025em] text-white">{p.heading}</h3>
@@ -104,6 +113,19 @@ export default async function AreaPage({ params }: Params) {
           ))}
         </ul>
       </Section>
+
+      {a.sections?.map((sec, i) => (
+        <Section key={sec.heading} tone={i % 2 ? 'white' : 'canvas'} labelledBy={`sec-${i}`}>
+          <div className="grid gap-10 lg:grid-cols-[1fr_1.4fr]">
+            <SectionHeading id={`sec-${i}`} title={sec.heading} accent={sec.accent} />
+            <div className="prose-copy">
+              {sec.paragraphs.map((p) => (
+                <p key={p.slice(0, 24)}>{p}</p>
+              ))}
+            </div>
+          </div>
+        </Section>
+      ))}
 
       <Section labelledBy="svc-heading">
         <SectionHeading id="svc-heading" eyebrow="Repairs" title="What we fix in" accent={`${a.name}.`} />
@@ -141,18 +163,27 @@ export default async function AreaPage({ params }: Params) {
             </li>
           ))}
         </ul>
-        <p className="mt-2">
-          <VerifyTag label="CHECK ZIP LIST AGAINST USPS" />
-        </p>
+        {a.zipsVerified ? null : (
+          <p className="mt-2">
+            <VerifyTag label="CHECK ZIP LIST AGAINST USPS" />
+          </p>
+        )}
         <div className="mt-10 flex flex-wrap gap-x-8 gap-y-3">
           <Link href={routes.cityPage} className="link-arrow">
             Appliance repair in {site.city}
           </Link>
-          {others.map((o) => (
-            <Link key={o.slug} href={areaHref(o)} className="link-arrow">
-              Appliance repair in {o.name}
-            </Link>
-          ))}
+          {(a.nearby ?? others.map((o) => o.name)).map((name) => {
+            const o = areas.find((x) => x.name === name);
+            return o ? (
+              <Link key={name} href={areaHref(o)} className="link-arrow">
+                Appliance repair in {o.name}
+              </Link>
+            ) : (
+              <span key={name} className="text-ink-body">
+                {name}
+              </span>
+            );
+          })}
           <Link href={routes.request} className="link-arrow">
             Request service
           </Link>
