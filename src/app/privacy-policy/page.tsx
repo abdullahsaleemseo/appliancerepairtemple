@@ -5,13 +5,13 @@ import { pageMetadata } from '@/lib/seo';
 
 export const metadata = pageMetadata({
   title: `Privacy Policy | ${site.brandName}`,
-  description: `How ${site.brandName} collects, uses and shares information submitted through ${site.domain}.`,
+  description: `How ${site.brandName} collects, uses, shares and protects the information you submit through ${site.domain}, and the choices you have about it.`,
   path: routes.privacy,
 });
 
 export default function PrivacyPage() {
   return (
-    <LegalPage title="Privacy Policy" path={routes.privacy} updated="October 14, 2026">
+    <LegalPage title="Privacy Policy" path={routes.privacy} updated="October 15, 2026">
       <p>
         This policy explains what information {site.brandName} (“we”, “us”) collects through this website, how we use it, and who
         we share it with. We only collect what we need to respond to a repair request.
@@ -56,6 +56,21 @@ export default function PrivacyPage() {
         By checking the consent box on a form, you agree that we and the repair provider may call or text the number you provided
         about your request. Consent is not a condition of purchase. Message and data rates may apply. Reply STOP to any text to opt
         out.
+      </p>
+
+      <h2>Cookies</h2>
+      <p>
+        The site uses a small number of cookies and similar browser storage. Google Analytics uses cookies to count visits and
+        see how pages are used. We also keep campaign tags from the link you arrived on for the length of your visit, so a request
+        can be matched to the ad or page that brought you here. You can block or delete cookies in your browser settings; the site
+        will still work.
+      </p>
+
+      <h2>How we protect it</h2>
+      <p>
+        The site uses an encrypted (HTTPS) connection, and form submissions are sent over that connection. We limit access to
+        request details to the people who need them to respond to you. No method of transmission or storage is completely secure,
+        so please do not send sensitive information through the form.
       </p>
 
       <h2>How long we keep it</h2>

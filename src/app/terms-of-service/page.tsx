@@ -1,17 +1,17 @@
-import { routes, site } from '@/config/site';
+import { claims, routes, site } from '@/config/site';
 import { LegalPage } from '@/components/LegalPage';
 import { PhoneLink } from '@/components/PhoneLink';
 import { pageMetadata } from '@/lib/seo';
 
 export const metadata = pageMetadata({
   title: `Terms of Service | ${site.brandName}`,
-  description: `Terms that apply to using ${site.domain} and requesting appliance repair service.`,
+  description: `The terms that apply when you use ${site.domain} or request appliance repair service, including scheduling, repair work, trademarks and liability.`,
   path: routes.terms,
 });
 
 export default function TermsPage() {
   return (
-    <LegalPage title="Terms of Service" path={routes.terms} updated="October 14, 2026">
+    <LegalPage title="Terms of Service" path={routes.terms} updated="October 15, 2026">
       <p>
         By using {site.domain} you agree to these terms. If you do not agree, please do not use the site.
       </p>
@@ -21,6 +21,12 @@ export default function TermsPage() {
         This site provides information about appliance repair and lets you request a callback. Submitting a form requests a call
         back. It does not book an appointment or create a contract for repair. Appointments, prices and repair terms are agreed
         directly with the technician or repair provider before any work begins.
+      </p>
+
+      <h2>Scheduling and availability</h2>
+      <p>
+        Same-day service is available, {claims.availabilityQualifier}. Response times shown on this site are typical figures, not
+        guaranteed arrival times. A visit is confirmed only when a time is agreed with you by phone.
       </p>
 
       <h2>Repair work</h2>
@@ -51,6 +57,9 @@ export default function TermsPage() {
         The site is provided as is. To the extent allowed by law, we are not liable for indirect or consequential damages arising
         from use of the site.
       </p>
+
+      <h2>Changes to these terms</h2>
+      <p>We may update these terms from time to time. The date at the top of this page shows when they last changed.</p>
 
       <h2>Governing law</h2>
       <p>These terms are governed by the laws of the State of {site.state}.</p>
