@@ -741,9 +741,91 @@ export const brands: Brand[] = [
     ],
     hasPage: true,
   },
+  {
+    key: 'electrolux',
+    slug: `electrolux-appliance-repair-${loc}`,
+    name: 'Electrolux',
+    h1: 'Electrolux Laundry & Kitchen Appliance Repair in Temple, TX',
+    metaTitle: 'Electrolux Appliance Repair Temple TX | Laundry & Kitchen',
+    metaDescription:
+      'Electrolux front-load washer, dryer, fridge or range acting up? Independent Electrolux appliance repair in Temple, TX. Same-day service available. Call us.',
+    intro: [
+      'Electrolux washer stopping with a code, dryer taking too long or refrigerator warming up? Appliance Repair Temple repairs Electrolux front-load washers, dryers, refrigerators, freezers, ranges and dishwashers in homes across Temple, TX. Same-day service is available, subject to technician availability, location, and current demand.',
+      'Electrolux is the parent company of Frigidaire and sells its own Electrolux-branded line, usually higher up the range: front-load laundry with steam cycles, counter-depth refrigerators and ranges with convection and air fry. Underneath, many Electrolux appliances share platforms and parts with Frigidaire models, which helps when a part is needed.',
+      'Electrolux labels often show three numbers: the model number, a product number code (PNC) used for parts on some models, and the serial number. A photo of the full label is the easiest way to make sure we order the right part.',
+    ],
+    appliances: [
+      { key: 'washer', note: 'Front-load washers, including steam and stacked laundry models' },
+      { key: 'dryer', note: 'Electric and gas dryers' },
+      { key: 'refrigerator', note: 'French door, side-by-side and counter-depth' },
+      { key: 'freezer', note: 'Upright and chest freezers' },
+      { key: 'oven', note: 'Electric, gas and induction ranges, and wall ovens' },
+      { key: 'dishwasher', note: 'Built-in dishwashers' },
+    ],
+    issues: [
+      {
+        title: 'Front-load washer will not drain or unlock',
+        text: 'A clogged pump filter behind the small front access door is the most common cause, followed by a failed drain pump or door lock. Clean the filter first; if the washer still will not drain or release the door, call us.',
+      },
+      {
+        title: 'Washer smells or leaves residue',
+        text: 'Front-loaders hold moisture in the door gasket and dispenser. Too much detergent, or the wrong kind, makes it worse. Wipe the gasket, leave the door open after loads and run a cleaning cycle. If water is leaking, the gasket or a hose may need replacing.',
+      },
+      {
+        title: 'Dryer takes too long or runs cold',
+        text: 'A restricted vent is the first suspect, then the heating element, thermal fuse or thermostats on electric models, or the igniter and gas valve coils on gas models. Moisture sensors that are coated with residue can also end cycles early or late.',
+      },
+      {
+        title: 'Refrigerator or freezer running warm',
+        text: 'Fans, the defrost system and dusty condenser coils come before the compressor. Electrolux was part of a 2022 ice maker recall alongside Frigidaire, so check your model at cpsc.gov if the ice maker is involved.',
+      },
+    ],
+    haveReady: [
+      'A photo of the full label: model number, PNC and serial number.',
+      'Any error code on the display.',
+      'For washers: whether you have cleaned the pump filter, and which detergent you use.',
+      'Gas or electric, for dryers and ranges.',
+      'Whether the appliance is still under Electrolux’s warranty.',
+    ],
+    modelLocations: [
+      { appliance: 'Refrigerator', where: 'Inside the fresh-food section on the wall, visible when the door is open' },
+      { appliance: 'Chest freezer', where: 'On the left outside wall, above the access panel' },
+      { appliance: 'Range', where: 'On the side trim inside the oven door opening, the left side panel, or the storage drawer frame' },
+      { appliance: 'Dishwasher', where: 'On the inside edge of the door or the side of the tub' },
+      { appliance: 'Front-load washer', where: 'On the trim around the door opening, or behind the pump filter door on some models' },
+    ],
+    modelSource: { name: 'Electrolux support: where can I find my model and serial number?', url: 'https://owner.electrolux.com/support-articles/article/1858491-where-can-i-find-my-model-and-serial-number-' },
+    faqs: [
+      {
+        q: 'Are you an authorized Electrolux service provider?',
+        a: 'No. Appliance Repair Temple is an independent repair service and is not affiliated with or authorized by Electrolux or Frigidaire. If your appliance is under Electrolux’s warranty, contact Electrolux first.',
+      },
+      {
+        q: 'Are Electrolux and Frigidaire parts the same?',
+        a: 'Many are, since Electrolux owns Frigidaire and the two share platforms. Some trim, controls and features are Electrolux-specific. The full model number tells us exactly which parts fit.',
+      },
+      {
+        q: 'My Electrolux front-load washer will not drain. What can I check?',
+        a: 'Switch it off, put a towel down and open the small access door at the bottom front. Drain the water through the hose if there is one, then clean the pump filter. If it still will not drain, the pump or a hose needs a closer look.',
+      },
+      {
+        q: 'What is the PNC on my Electrolux label?',
+        a: 'The product number code is an identifier Electrolux uses for some models and their parts. If your label has one, include it with the model and serial number when you call.',
+      },
+      {
+        q: 'Can you repair my Electrolux the same day?',
+        a: 'Same-day service is available, subject to technician availability, location, and current demand. Some Electrolux parts are model-specific and may need to be ordered.',
+      },
+      {
+        q: 'How much does Electrolux appliance repair cost?',
+        a: 'It depends on the appliance and the part, so we do not list prices online. Call to discuss your repair needs with the model number ready.',
+      },
+    ],
+    hasPage: true,
+  },
 ];
 
 /** Other brands commonly serviced. Listed on the hub, no dedicated page yet. */
-export const otherBrands = ['Electrolux', 'Amana', 'Speed Queen'];
+export const otherBrands = ['Amana', 'Speed Queen'];
 
 export const brandHref = (b: Brand) => `/brands/${b.slug}/`;
