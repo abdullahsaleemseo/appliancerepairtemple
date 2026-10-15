@@ -404,6 +404,105 @@ export const areas: Area[] = [
     ],
     featuredServices: ['freezer', 'refrigerator', 'washer', 'dryer'],
   },
+  {
+    slug: 'nolanville-tx',
+    name: 'Nolanville',
+    metaTitle: 'Appliance Repair Nolanville TX | New & Older Homes',
+    metaDescription:
+      'Appliance repair in Nolanville, TX for refrigerators, washers, dryers, dishwashers and ovens, including first-year problems in newly built homes. Call us.',
+    h1: 'Appliance Repair in Nolanville, TX, for Growing Neighborhoods',
+    intro: [
+      'Appliance Repair Temple repairs refrigerators, freezers, washers, dryers, dishwashers, ovens and ranges in homes across Nolanville, TX. Same-day service is available, subject to technician availability, location, and current demand.',
+      'Nolanville has grown fast. It was incorporated in 1961 with about 200 residents and counted 5,917 at the 2020 census, and new subdivisions are still going up on the east side near I-14. That mix gives us two kinds of calls: older appliances in established homes, and brand-new appliances that were not hooked up quite right.',
+      'Either way, the visit works the same. The technician tests the appliance, tells you what failed and what the repair involves, and starts only after your OK. If the problem turns out to be an installation issue rather than a broken part, you will hear that too.',
+    ],
+    travelNote:
+      'Nolanville sits on I-14 between Belton and Harker Heights, so visits are usually grouped with those routes. Call to confirm the earliest open time for your address.',
+    localPoints: [
+      {
+        heading: 'Newer subdivisions on the east side',
+        text: 'Much of Nolanville’s newest building sits along the east side near I-14, with homes built from the 2010s on. Those kitchens and laundry rooms often have the appliance package that came with the house, and the first year or two is when installation problems tend to show.',
+      },
+      {
+        heading: 'Established homes in town',
+        text: 'Older homes closer to the center of town often have appliances well past their first decade. Worn belts, tired door gaskets, failing start relays and clogged dryer vents are the usual repairs here, and most are worth doing.',
+      },
+      {
+        heading: 'Military families and rentals',
+        text: 'Nolanville is a short drive from Fort Hood, and many homes here are rented or change hands on military orders. If you rent, check your lease and talk to your landlord before booking, since many leases make the landlord responsible for the appliances they supply.',
+      },
+      {
+        heading: 'Laundry rooms that get daily use',
+        text: 'Families with kids run the washer and dryer every day. That wears out dryer rollers, belts and washer suspension parts faster. A thumping, squealing or walking machine is worth a call before a small problem damages something bigger.',
+      },
+    ],
+    sections: [
+      {
+        heading: 'New home,',
+        accent: 'new appliance problems.',
+        paragraphs: [
+          'Some of the most common calls from newly built homes are not broken parts at all. A dishwasher drain hose without a high loop can let dirty water flow back into the tub. A refrigerator water line pinched behind the unit can stop the ice maker. A washer that was never leveled will shake and walk across the floor on the spin cycle.',
+          'Before you book, check your paperwork. In many new homes, appliance coverage comes from the manufacturer’s warranty, not the builder’s. If the appliance is still covered, contact the manufacturer first, since independent repair may not be covered. If coverage has run out, or the problem is in the hookup rather than the appliance, call us.',
+        ],
+      },
+      {
+        heading: 'Repairs we handle',
+        accent: 'in Nolanville.',
+        paragraphs: [
+          'Refrigerators that run warm, freezers that frost up and ice makers that quit come first in summer. Fan motors, defrost parts and water valves are frequent fixes.',
+          'Washers that will not drain or spin and dryers that run without heat are close behind. On every dryer call we check the vent, because a crushed or clogged vent is one of the most common reasons a dryer stops heating.',
+          'Dishwashers that leave dishes dirty or water in the tub, and ovens with a burned bake element, a weak igniter or a temperature that has drifted, round out the list.',
+        ],
+      },
+      {
+        heading: 'How scheduling works',
+        accent: 'for Nolanville.',
+        paragraphs: [
+          'Call or send a request with your address, the appliance, the brand and what it is doing. We confirm the details by phone and set a visit window. We are open Monday to Saturday, 8:00 AM to 8:00 PM.',
+          'Our typical response is about 60 minutes during business hours. That is a typical figure, subject to technician availability, location, and current demand, not a guaranteed arrival time. Calling earlier in the day gives you a better shot at a same-day visit.',
+          'Before the visit, find the model number, usually on a label inside the door, under the lid or on the frame, and write down any error code. Clear a path to the appliance and, if you can, empty the washer or dishwasher.',
+        ],
+      },
+    ],
+    zips: ['76559'],
+    zipsVerified: true,
+    nearby: ['Harker Heights', 'Belton', 'Killeen', "Morgan's Point Resort", 'Salado'],
+    faqs: [
+      {
+        q: 'Do you cover all of Nolanville?',
+        a: 'Yes. We serve Nolanville’s 76559 ZIP code, from the older streets in town to the newer subdivisions near I-14. If you are outside city limits, give us your address and we will confirm.',
+      },
+      {
+        q: 'Can you come to Nolanville the same day?',
+        a: 'Often. Same-day service is available, subject to technician availability, location, and current demand. We will give you the earliest open time when you call.',
+      },
+      {
+        q: 'My new home’s dishwasher smells and leaves water behind. Is it broken?',
+        a: 'Not always. Check the filter at the bottom of the tub first. If the drain hose was installed without a high loop, dirty water can flow back in. The technician can check the hookup as well as the dishwasher.',
+      },
+      {
+        q: 'My appliance is still under warranty. Should I call you?',
+        a: 'Contact the manufacturer first, since independent repair may not be covered by a factory warranty. If the warranty has expired or you are not sure, call us with the model number.',
+      },
+      {
+        q: 'Do you repair appliances in rental homes?',
+        a: 'Yes. Tenants and landlords both call us. If the landlord or property manager is paying, we need them to approve the repair, and someone needs to let the technician in.',
+      },
+      {
+        q: 'Which appliances do you repair in Nolanville?',
+        a: 'Refrigerators, freezers, washers, dryers, dishwashers, ovens, ranges, cooktops and over-the-range microwaves, across the major brands.',
+      },
+      {
+        q: 'What happens if a part has to be ordered?',
+        a: 'Many common parts can be replaced on the first visit. Some are model-specific and have to be ordered. The technician will tell you if that is the case and what happens next.',
+      },
+      {
+        q: 'How much does appliance repair in Nolanville cost?',
+        a: 'It depends on the appliance and the part, so we do not list prices online. Call to discuss your repair needs with the brand and model number ready.',
+      },
+    ],
+    featuredServices: ['dishwasher', 'refrigerator', 'washer', 'dryer'],
+  },
 ];
 
 export const areaHref = (a: Area) => `/service-areas/${a.slug}/`;
