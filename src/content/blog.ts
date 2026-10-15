@@ -211,60 +211,105 @@ export const posts: Post[] = [
   },
   {
     slug: 'dryer-not-heating',
-    title: 'Dryer Not Heating: When to Call an Appliance Technician',
+    title: 'Dryer Not Heating? Safe Checks and When to Call a Technician',
+    metaTitle: 'Dryer Not Heating? Safe Checks and Causes | Temple, TX',
     metaDescription:
-      'Dryer runs but no heat? What you can safely check, why vents matter, the parts that usually fail, and when to call a technician in Temple, TX.',
+      'Dryer runs but no heat? Safe checks for electric and gas dryers, why the vent matters, the parts that usually fail, and when to call a technician.',
     excerpt:
-      'Most no-heat dryers come down to airflow or one failed heating part. Here is how to tell which, and what is safe to check yourself.',
+      'Most no-heat dryers come down to power, airflow or one failed heating part. Here is how to tell which, what is safe to check yourself, and when to stop and call.',
     published: '2026-10-14',
-    updated: '2026-10-14',
+    updated: '2026-10-15',
     service: 'dryer',
     sections: [
       {
-        id: 'quick-checks',
-        heading: 'Quick checks',
+        id: 'short-version',
+        heading: 'The short version',
         list: [
-          'Electric dryers use a double breaker. One half can trip while the drum still turns and the light works, leaving you with no heat. Flip it fully off and back on.',
-          'Make sure the cycle is not set to air fluff or a no-heat setting.',
-          'Clean the lint screen and look into the screen housing with a flashlight. Lint packed below the screen restricts airflow.',
-          'Go outside and run the dryer. You should feel strong, warm air at the vent hood. Weak airflow means a clogged vent.',
+          'Electric dryer: check both halves of the double breaker. One can trip and leave the drum turning with no heat.',
+          'Gas dryer: make sure the gas shutoff valve behind the dryer is open.',
+          'Check the cycle setting, clean the lint screen and feel for strong warm air at the outside vent.',
+          'A clogged vent often causes the no-heat problem, so clear it before replacing parts.',
+          'If power, gas and airflow are fine and there is still no heat, a heating part has failed and a technician should test it.',
+        ],
+      },
+      {
+        id: 'quick-checks',
+        heading: 'Quick checks you can do safely',
+        list: [
+          'Breakers (electric dryers). An electric dryer runs on a 240-volt circuit with a double breaker. One half runs the motor and the other the heat, so one half can trip while the drum still turns and the light works. Switch the breaker fully off, then back on. If you have fuses, check both.',
+          'Gas supply (gas dryers). A gas dryer will tumble but not heat if the gas valve is closed. The valve is open when its handle is parallel to the gas pipe. If other gas appliances are not working either, call your gas provider.',
+          'Cycle and settings. Make sure the dryer is not on air fluff, a no-heat setting or a delicate cycle that runs very low heat.',
+          'Lint screen and housing. Clean the screen, then shine a flashlight into the slot it sits in. Lint packed below the screen restricts airflow.',
+          'Outside vent. Run the dryer and go outside. You should feel strong, warm air at the vent hood, and the flap should open fully. Weak airflow means the vent is restricted.',
         ],
       },
       {
         id: 'why-vents-matter',
-        heading: 'Why vents matter',
+        heading: 'Why the vent matters so much',
         paragraphs: [
-          'A dryer has safety devices that cut the heat when it runs too hot. A clogged vent makes it run too hot. So a vent problem often shows up as a no-heat problem, and replacing the heating part without clearing the vent means it will fail again.',
-          'Long vent runs, crushed foil transition hoses and bird nests in the outside hood are the usual culprits.',
+          'A dryer has safety devices that cut the heat when it gets too hot inside. A clogged vent traps hot air, so the dryer overheats and those devices shut the heat off. On many electric dryers, repeated overheating eventually blows a one-time thermal fuse, and the dryer stops heating altogether.',
+          'That is why a vent problem so often shows up as a no-heat problem. Replacing the fuse or heating part without clearing the vent usually means it fails again.',
+          'Long vent runs, crushed foil or plastic transition hoses behind the dryer, and bird nests or lint in the outside hood are the usual culprits. The U.S. Fire Administration recommends rigid or flexible metal venting and warns against plastic or foil vents, which can sag and trap lint.',
         ],
       },
       {
         id: 'parts',
         heading: 'The parts that usually fail',
         paragraphs: [
-          'On electric dryers: the heating element, thermal fuse, high-limit thermostat or cycling thermostat. On gas dryers: the igniter, flame sensor or gas valve coils.',
-          'Each one can be tested with a meter. A technician tests them in order and replaces only what failed.',
+          'Electric dryers: the heating element, the thermal fuse, the high-limit thermostat or the cycling thermostat. A broken element coil is common. A blown thermal fuse often means the dryer overheated, which points back to the vent.',
+          'Gas dryers: the igniter, the flame sensor or the gas valve coils. A common pattern is a dryer that heats for a while, then goes cold mid-cycle as the valve coils weaken. If the igniter glows but the burner never lights, the coils or the flame sensor are likely suspects.',
+          'Each part can be tested with a meter. A technician tests them in order and replaces only what failed, then checks airflow so the new part is not the next to go.',
+        ],
+      },
+      {
+        id: 'takes-too-long',
+        heading: 'If it heats but takes too long',
+        paragraphs: [
+          'A dryer that is warm but needs two cycles almost always has an airflow problem. Clean the lint screen, check the hose behind the dryer for kinks and have the vent run cleaned.',
+          'Other causes are overloading the drum, clothes coming out of the washer too wet because it is not spinning fully, or a moisture sensor coated with residue from dryer sheets that ends cycles early. You can clean the sensor bars inside the drum with a little rubbing alcohol on a cloth.',
         ],
       },
       {
         id: 'when-to-call',
         heading: 'When to call',
         paragraphs: [
-          'Call when the breaker and airflow are fine and there is still no heat, or right away if the dryer smells like burning or the cabinet feels very hot.',
+          'Call when the breakers, gas supply and airflow are fine and there is still no heat, or when it heats for a while and then goes cold.',
+          'Stop using the dryer and call right away if it smells like burning, the top or sides feel very hot, or you see scorch marks on clothes. If you smell gas, do not switch anything on or off. Leave the house and call your gas provider or 911 from outside.',
+        ],
+        after: [
+          'When you call, have the brand, the model number, whether it is gas or electric, and what you have already checked.',
         ],
       },
     ],
     safety:
-      'Unplug electric dryers before removing any panel. For gas dryers, if you smell gas, leave the house and call your gas utility from outside.',
+      'Unplug an electric dryer before removing any panel. For a gas dryer, close the gas valve before moving it. If you smell gas, leave the house and call your gas provider from outside.',
     faqs: [
       {
+        q: 'Why does my dryer spin but not heat?',
+        a: 'On electric dryers, a tripped half of the double breaker is common, followed by a failed heating element or thermal fuse. On gas dryers, a closed gas valve, the igniter or the gas valve coils. A clogged vent often causes the failure in the first place.',
+      },
+      {
         q: 'How long should a normal load take to dry?',
-        a: 'Around 40 to 60 minutes for a typical mixed load. If it is taking two cycles, check the vent first.',
+        a: 'Around 40 to 60 minutes for a typical mixed load. If it regularly takes two cycles, check the vent first.',
+      },
+      {
+        q: 'Can a clogged vent stop a dryer from heating?',
+        a: 'Yes. A clogged vent makes the dryer overheat, and its safety devices shut off the heat. Repeated overheating can blow the thermal fuse.',
+      },
+      {
+        q: 'My gas dryer heats, then goes cold. What is wrong?',
+        a: 'That pattern often points to the gas valve coils or the flame sensor. A technician can test them and confirm which part failed.',
       },
       {
         q: 'Can a dryer vent catch fire?',
-        a: 'Yes. Lint is very flammable, which is why the U.S. Fire Administration recommends cleaning the lint filter every load and having the vent cleaned regularly.',
+        a: 'Yes. Lint is very flammable, and failure to clean is a leading cause of home dryer fires according to the U.S. Fire Administration. Clean the lint filter every load and keep the vent clear.',
       },
+    ],
+    sources: [
+      { name: 'Whirlpool Product Help: dryer is not heating', url: 'https://producthelp.whirlpool.com/Laundry/Dryers/Product_Info/Dryer_Product_Assistance/Dryer_is_Not_Heating' },
+      { name: 'Whirlpool Product Help: not heating, gas dryer', url: 'https://producthelp.whirlpool.com/Laundry/Dryers/Dryer/Operation/Not_Heating/Not_Heating_-_Gas_Dryer' },
+      { name: 'U.S. Fire Administration: clothes dryer fire safety', url: 'https://www.usfa.fema.gov/downloads/pdf/publications/clothes_dryer_fire_safety_flyer.pdf' },
+      { name: 'U.S. Fire Administration: clothes dryer fires in residential buildings', url: 'https://www.usfa.fema.gov/downloads/pdf/statistics/v13i7.pdf' },
     ],
   },
   {
