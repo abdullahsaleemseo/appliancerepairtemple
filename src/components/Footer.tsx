@@ -87,9 +87,28 @@ export function Footer() {
           </div>
         </div>
 
-        <p aria-hidden="true" className="pointer-events-none mt-16 select-none whitespace-nowrap font-display text-[24vw] font-extrabold leading-[0.85] tracking-[-0.06em] text-white/[0.05] lg:text-[300px]">
-          {site.city.toUpperCase()}
-        </p>
+      </div>
+
+      {/* Decorative logo band: low-opacity lockups drifting right to left. Hidden from assistive tech; stops for reduced motion. */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none relative mt-14 select-none overflow-hidden py-6 [mask-image:linear-gradient(to_right,transparent,black_12%,black_88%,transparent)] lg:mt-20 lg:py-10"
+      >
+        <div className="flex w-max animate-marquee opacity-[0.07]" style={{ animationDuration: '60s' }}>
+          {Array.from({ length: 12 }, (_, i) => (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img
+              key={i}
+              src="/brand/logo-compact.svg"
+              alt=""
+              width={1083}
+              height={316}
+              loading="lazy"
+              decoding="async"
+              className="mx-8 h-16 w-auto shrink-0 sm:mx-12 sm:h-24 lg:mx-16 lg:h-36"
+            />
+          ))}
+        </div>
       </div>
 
       <div className="relative border-t border-white/[0.08]">
