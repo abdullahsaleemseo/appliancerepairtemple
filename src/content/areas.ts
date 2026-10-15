@@ -209,46 +209,101 @@ export const areas: Area[] = [
   {
     slug: 'harker-heights-tx',
     name: 'Harker Heights',
-    metaTitle: 'Appliance Repair in Harker Heights, TX | Appliance Repair Temple',
+    metaTitle: 'Appliance Repair Harker Heights TX | Same-Day Help',
     metaDescription:
-      'Appliance repair in Harker Heights, TX for refrigerators, washers, dryers, dishwashers and ovens. Request service or call to check availability.',
-    h1: 'Appliance Repair in Harker Heights, TX',
+      'Appliance repair in Harker Heights, TX for refrigerators, washers, dryers, dishwashers and ranges, including newer models with error codes. Call to book.',
+    h1: 'Appliance Repair in Harker Heights, TX, Between Killeen and Belton',
     intro: [
-      'Harker Heights sits between Killeen and Belton along I-14, with a lot of newer construction and homes near Stillhouse Hollow Lake. Many homes here have built-in French door refrigerators, front-load laundry and gas or dual-fuel ranges.',
-      'We repair all of those. The technician diagnoses the fault, explains it in plain terms, and gets your OK before starting.',
+      'Appliance Repair Temple repairs refrigerators, freezers, washers, dryers, dishwashers, ovens and ranges in homes across Harker Heights, TX. Same-day service is available, subject to technician availability, location, and current demand.',
+      'Harker Heights roughly doubled in size between 2000 and 2020, so a large share of its homes, and the appliances in them, are fairly new. That changes the kind of calls we get here. Fewer worn-out machines, more electronic controls, error codes, sensors and questions about whether a factory warranty still applies.',
+      'Older or newer, the visit works the same way. The technician tests the appliance, tells you which part failed and what the repair involves, and waits for your OK before starting. If a repair is not worth the money on your model, you will hear that too.',
     ],
     travelNote:
-      'Harker Heights appointments are usually grouped with Killeen and Belton routes on the same day.',
+      'Harker Heights sits between Killeen and Belton along I-14, so visits are usually grouped with those routes on the same day. Call to confirm the earliest open time for your address.',
     localPoints: [
       {
-        heading: 'Newer appliances, newer problems',
-        text: 'Feature-heavy refrigerators and washers report faults as codes. Write down the code before you call. It helps the technician bring the right part on the first trip.',
+        heading: 'Newer homes, newer appliances',
+        text: 'Many Harker Heights homes came with French door refrigerators, front-load laundry pairs and ranges with touch controls. These report problems as error codes. Write the code down, along with the model number, before you call. It helps the technician come prepared.',
       },
       {
-        heading: 'Front-load washer care',
-        text: 'Front-loaders are common here. Wiping the door seal and leaving the door open after a load prevents most smell and mold complaints.',
+        heading: 'Warranty check first',
+        text: 'If your appliance is less than a year old, or you bought an extended plan, check that coverage before you book. Independent repair may not be covered by a factory warranty. If the warranty has run out or you are not sure, call us with the model number.',
       },
       {
-        heading: 'Factory warranty first',
-        text: 'If your appliance is less than a year old, check the manufacturer warranty before booking. Independent repair may not be covered by it.',
+        heading: 'Larger homes toward the lake',
+        text: 'Homes on the south side, toward Stillhouse Hollow Lake and Dana Peak Park, tend to be larger, often with a second refrigerator or a freezer in the garage. A garage unit works harder in summer heat, so clean coils and room to breathe matter more there.',
+      },
+      {
+        heading: 'Rentals and military moves',
+        text: 'Being close to Fort Hood, Harker Heights also has plenty of rentals and families on PCS moves. If you rent, check your lease and talk to your landlord before booking, since many leases make the landlord responsible for the appliances they supply.',
+      },
+    ],
+    sections: [
+      {
+        heading: 'Error codes',
+        accent: 'and what to do with them.',
+        paragraphs: [
+          'An error code points to the system that tripped, not always to the part that failed. A drain code on a front-load washer can mean a clogged pump filter, a kinked hose or a failed pump. A code on a refrigerator display can come from a sensor, a fan or a defrost problem.',
+          'Before you call, try the simple steps in your owner’s manual, like clearing the washer’s pump filter or switching the appliance off at the breaker for a minute. If the code comes back, stop resetting it and book a visit. Repeated resets can hide a fault that keeps getting worse.',
+        ],
+      },
+      {
+        heading: 'Repairs we handle',
+        accent: 'in Harker Heights.',
+        paragraphs: [
+          'Refrigerator calls lead in summer: warm fresh food sections, frost on the back wall of the freezer, ice makers that stop and water dispensers that leak. Fan motors, defrost parts and water valves are frequent fixes.',
+          'Front-load washers bring drain errors, door locks that will not release and musty smells from the door seal. Dryers that run without heat or take two cycles to dry often have a failed heating part or a restricted vent, so we check the airflow on every dryer call.',
+          'Dishwashers that leave a film on glasses or water in the tub, and ranges with a dead bake element, a weak igniter or a touch panel that stopped responding, round out the list.',
+        ],
+      },
+      {
+        heading: 'How scheduling works',
+        accent: 'for Harker Heights.',
+        paragraphs: [
+          'Call or send a request with your address, the appliance, the brand and what it is doing. We confirm the details by phone and set a visit window. We are open Monday to Saturday, 8:00 AM to 8:00 PM.',
+          'Our typical response is about 60 minutes during business hours. That is a typical figure, subject to technician availability, location, and current demand, not a guaranteed arrival time. Calling earlier in the day gives you a better shot at a same-day visit.',
+          'Before the visit, find the model number on the appliance, usually on a label inside the door, under the lid or on the frame. Clear a path to the appliance and, if you can, empty the washer or dishwasher.',
+        ],
       },
     ],
     zips: ['76548'],
+    zipsVerified: true,
+    nearby: ['Killeen', 'Nolanville', 'Belton', "Morgan's Point Resort", 'Salado'],
     faqs: [
       {
-        q: 'Do you repair built-in refrigerators in Harker Heights?',
-        a: 'Tell us the brand and model when you call so we can confirm parts and the right technician.',
+        q: 'Do you cover all of Harker Heights?',
+        a: 'Yes. We serve the 76548 ZIP code, from the neighborhoods along I-14 to the homes on the south side toward Stillhouse Hollow Lake. Some nearby addresses carry a Killeen or Belton mailing city, so give us your address and we will confirm.',
+      },
+      {
+        q: 'Can you come to Harker Heights the same day?',
+        a: 'Often. Same-day service is available, subject to technician availability, location, and current demand. We will give you the earliest open time when you call.',
       },
       {
         q: 'My new washer shows an error code. Can you help?',
-        a: 'Yes. If the washer is still under factory warranty, call the manufacturer first. If not, we can diagnose it.',
+        a: 'Yes. If the washer is still under factory warranty, contact the manufacturer first. If not, write down the code and the model number and call us.',
       },
       {
-        q: 'How do I book service in Harker Heights?',
-        a: 'Call, or use the request form with your ZIP code and a short description of the problem.',
+        q: 'Do you work on French door and side-by-side refrigerators?',
+        a: 'Yes. Tell us the brand and model when you call so we can check parts before the visit.',
+      },
+      {
+        q: 'Do you repair appliances in rental homes?',
+        a: 'Yes. Tenants and landlords both call us. If the landlord or property manager is paying, we need them to approve the repair, and someone needs to let the technician in.',
+      },
+      {
+        q: 'Which appliances do you repair in Harker Heights?',
+        a: 'Refrigerators, freezers, washers, dryers, dishwashers, ovens, ranges, cooktops and over-the-range microwaves, across the major brands.',
+      },
+      {
+        q: 'What happens if a part has to be ordered?',
+        a: 'Many common parts can be replaced on the first visit. Some are model-specific and have to be ordered. The technician will tell you if that is the case and what happens next.',
+      },
+      {
+        q: 'How much does appliance repair in Harker Heights cost?',
+        a: 'It depends on the appliance and the part, so we do not list prices online. Call to discuss your repair needs with the brand and model number ready.',
       },
     ],
-    featuredServices: ['refrigerator', 'washer', 'oven', 'dishwasher'],
+    featuredServices: ['refrigerator', 'washer', 'dryer', 'dishwasher'],
   },
   {
     slug: 'salado-tx',
