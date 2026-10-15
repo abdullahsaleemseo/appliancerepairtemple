@@ -580,9 +580,86 @@ export const brands: Brand[] = [
     ],
     hasPage: true,
   },
+  {
+    key: 'bosch',
+    slug: `bosch-appliance-repair-${loc}`,
+    name: 'Bosch',
+    h1: 'Bosch Dishwasher & Appliance Repair in Temple, TX',
+    metaTitle: 'Bosch Appliance Repair Temple TX | Dishwashers & More',
+    metaDescription:
+      'Bosch dishwasher showing E15 or E24, not draining or not drying? Independent Bosch appliance repair in Temple, TX, for dishwashers, fridges and ranges.',
+    intro: [
+      'Bosch dishwasher showing an error code, leaving water in the tub or not drying? Appliance Repair Temple repairs Bosch dishwashers, refrigerators and ranges in homes across Temple, TX. Same-day service is available, subject to technician availability, location, and current demand.',
+      'Dishwashers are by far the Bosch appliance we see most. They run quietly, often with no lights on the front at all, and they protect themselves: when something goes wrong they stop and show a code instead of carrying on. That is good for your floor, but it means a Bosch that has quit is usually telling you exactly which system needs attention.',
+      'Bosch identifies its appliances with an E-Nr (the model number) and an FD number (the production number), both printed on the rating label. Having both ready makes it much easier to find the right part the first time.',
+    ],
+    appliances: [
+      { key: 'dishwasher', note: 'Built-in dishwashers, including 100, 300, 500, 800 and Benchmark series' },
+      { key: 'refrigerator', note: 'French door and bottom-freezer refrigerators, including counter-depth' },
+      { key: 'oven', note: 'Electric, gas and induction ranges, including slide-in models' },
+    ],
+    issues: [
+      {
+        title: 'E15: water in the base',
+        text: 'Bosch says E15 means the safety switch has found water in the base and the leak protection has turned on. Turn off the water supply and switch the dishwasher off. The leak usually comes from a hose, a seal, the pump or the door gasket, and it needs to be found and fixed before the unit will run normally.',
+      },
+      {
+        title: 'E24 or E25: not draining',
+        text: 'Drain codes usually point to a blocked filter, a kinked or clogged drain hose, a disposal connection that is blocked, or a jammed or failed drain pump. Clean the filter first. If the code comes back, the pump and hose need to be checked.',
+      },
+      {
+        title: 'Dishes come out wet',
+        text: 'Most Bosch dishwashers dry by condensation rather than with a heated element, so rinse aid matters. If dishes stay wet with rinse aid filled, the technician checks the settings, the rinse aid dispenser and the water heating.',
+      },
+      {
+        title: 'Refrigerator or range problems',
+        text: 'Refrigerators that run warm usually have a fan, defrost or sensor problem. Ranges that will not heat often have a failed element, igniter or control. On induction ranges, the cookware is checked too, since a pan that is not magnetic will not heat.',
+      },
+    ],
+    haveReady: [
+      'The E-Nr (model number) and FD number from the rating label. A photo is the easiest way to share them.',
+      'The exact error code, such as E15, E24 or E25.',
+      'Whether water is leaking onto the floor or only standing in the tub.',
+      'For ranges: gas, electric or induction.',
+      'Whether the appliance is still under Bosch’s warranty.',
+    ],
+    modelLocations: [
+      { appliance: 'Dishwasher', where: 'On a label or engraved on the top or side edge of the door, visible when the door is open' },
+      { appliance: 'Range', where: 'On the frame behind the bottom drawer, or above the knobs on some models' },
+      { appliance: 'Refrigerator', where: 'On the rating label inside the fresh-food section. Bosch’s model number finder shows the exact spot by model' },
+    ],
+    modelSource: { name: 'Bosch: how to find your model number', url: 'https://www.bosch-home.com/us/owner-support/how-to-find-your-model-number' },
+    faqs: [
+      {
+        q: 'Are you an authorized Bosch service provider?',
+        a: 'No. Appliance Repair Temple is an independent repair service and is not affiliated with or authorized by Bosch. If your appliance is under Bosch’s warranty, contact Bosch first.',
+      },
+      {
+        q: 'What does E15 mean on my Bosch dishwasher?',
+        a: 'According to Bosch, E15 means water has been detected in the base and the leak protection system has turned on. Turn off the water supply, switch the dishwasher off and call us. The source of the leak has to be found and fixed.',
+      },
+      {
+        q: 'My Bosch dishwasher shows E24. What can I check?',
+        a: 'Switch it off, then clean the filter at the bottom of the tub and check that the drain hose is not kinked. If the dishwasher drains to a garbage disposal, run the disposal. If the code comes back, the drain pump or hose needs a closer look.',
+      },
+      {
+        q: 'What are the E-Nr and FD numbers?',
+        a: 'The E-Nr is Bosch’s model number and the FD is the production number. Both are on the rating label. Bosch parts often depend on both, so have them ready when you call.',
+      },
+      {
+        q: 'Can you repair my Bosch the same day?',
+        a: 'Same-day service is available, subject to technician availability, location, and current demand. Some Bosch parts are model-specific and may need to be ordered.',
+      },
+      {
+        q: 'How much does Bosch appliance repair cost?',
+        a: 'It depends on the appliance and the part, so we do not list prices online. Call to discuss your repair needs with the E-Nr and FD numbers ready.',
+      },
+    ],
+    hasPage: true,
+  },
 ];
 
 /** Other brands commonly serviced. Listed on the hub, no dedicated page yet. */
-export const otherBrands = ['Bosch', 'Kenmore', 'Electrolux', 'Amana', 'Speed Queen'];
+export const otherBrands = ['Kenmore', 'Electrolux', 'Amana', 'Speed Queen'];
 
 export const brandHref = (b: Brand) => `/brands/${b.slug}/`;
