@@ -314,67 +314,117 @@ export const posts: Post[] = [
   },
   {
     slug: 'repair-or-replace-appliance',
-    title: 'How to Decide Whether to Repair or Replace an Appliance',
+    title: 'Repair or Replace an Appliance? A Practical Way to Decide',
+    metaTitle: 'Repair or Replace an Appliance? How to Decide | Temple, TX',
     metaDescription:
-      'Repair or replace? A simple way to decide using appliance age, repair cost and condition, with typical lifespans for common appliances.',
+      'Repair or replace? A practical way to decide using age, what failed and the repair cost, with typical lifespans and the repairs usually worth doing.',
     excerpt:
-      'A plain rule of thumb, typical lifespans for each appliance, and the questions to ask the technician before you decide.',
+      'Two questions settle most repair-or-replace decisions: how old is the appliance, and what exactly failed? Here is how to weigh them, appliance by appliance.',
     published: '2026-10-14',
-    updated: '2026-10-14',
+    updated: '2026-10-15',
     service: 'general',
     sections: [
       {
+        id: 'short-version',
+        heading: 'The short version',
+        list: [
+          'Find out exactly what failed before deciding anything. A diagnosis turns a guess into a real choice.',
+          'Compare the appliance’s age with its typical lifespan.',
+          'Use the 50 percent rule as a starting point: if the repair costs more than half of a comparable new appliance and the unit is past the middle of its life, replacement deserves a serious look.',
+          'Common wear parts such as pumps, belts, fans, relays and heating elements are usually worth replacing at almost any age.',
+          'Sealed system failures, transmissions and cracked tubs on older appliances are the usual tipping points toward replacement.',
+        ],
+      },
+      {
         id: 'rule',
-        heading: 'The 50 percent rule',
+        heading: 'The 50 percent rule, and its limits',
         paragraphs: [
-          'If a repair costs more than half the price of a comparable new appliance, and the appliance is past the middle of its expected life, replacement is usually the better use of money. If either of those is not true, repair usually wins.',
-          'It is a rule of thumb, not a law. A built-in refrigerator or a pro-style range costs so much to replace that repair almost always makes sense.',
+          'The rule is simple. If a repair costs more than half the price of a comparable new appliance, and the appliance is past the middle of its expected life, replacement is usually the better use of money. If either of those is not true, repair usually wins.',
+          'It is a rule of thumb, not a law. A high-end refrigerator, a pro-style range or a matched laundry pair can cost so much to replace that repair makes sense well past the halfway mark. On the other hand, a basic appliance near the end of its life with a second major problem coming may not be worth even a moderate repair.',
+          'The most important input is the diagnosis. Until you know which part failed, any decision is a guess.',
         ],
       },
       {
         id: 'lifespans',
         heading: 'Typical lifespans',
         list: [
-          'Refrigerator: 10 to 15 years',
-          'Freezer: 10 to 20 years',
-          'Washer: 10 to 13 years',
-          'Dryer: 10 to 13 years',
-          'Dishwasher: 9 to 12 years',
-          'Range or oven: 13 to 15 years',
-          'Over-the-range microwave: 7 to 10 years',
+          'Refrigerator: about 10 to 15 years',
+          'Freezer: about 10 to 20 years',
+          'Washer: about 10 to 13 years',
+          'Dryer: about 10 to 13 years',
+          'Dishwasher: about 9 to 12 years',
+          'Range or oven: about 13 to 15 years',
+          'Over-the-range microwave: about 7 to 10 years',
         ],
-        after: ['These vary with brand, use and maintenance. A well-kept appliance can go well past them.'],
+        after: [
+          'These ranges line up with estimates published by the National Association of Home Builders, which put refrigerators and dryers around 13 years, ranges around 15, washers around 10 and dishwashers around 9. Use, maintenance, installation and climate all move the numbers. A well-kept appliance can go well past them.',
+        ],
       },
       {
-        id: 'questions',
-        heading: 'Questions to ask the technician',
-        list: [
-          'What exactly failed, and why?',
-          'What does the repair involve, start to finish?',
-          'Is anything else close to failing?',
-          'Are parts still available for this model?',
-          'Would you repair this one if it were yours?',
+        id: 'by-appliance',
+        heading: 'Usually worth fixing, and closer calls',
+        paragraphs: [
+          'Refrigerators and freezers. Usually worth fixing: fans, start relays, defrost heaters and thermostats, sensors, water valves and ice makers. Closer call: a failed compressor or a refrigerant leak on a unit past about 10 years old.',
+          'Washers. Usually worth fixing: drain pumps, lid locks and switches, belts, couplers and suspension parts. Closer call: a failed transmission or worn tub bearings on an older machine.',
+          'Dryers. Usually worth fixing: heating elements, thermal fuses, thermostats, igniters, belts, rollers and idler pulleys. Dryers are simple machines, and most repairs make sense. Closer call: a worn drum and a failed motor and control at the same time.',
+          'Dishwashers. Usually worth fixing: drain pumps, inlet valves, door latches, seals and heating elements. Closer call: a rusted tub, broken racks and a failed control board together.',
+          'Ranges and ovens. Usually worth fixing: bake and broil elements, igniters, temperature sensors, surface elements and switches. Closer call: a cracked glass cooktop or a discontinued control board on an older range.',
         ],
       },
       {
         id: 'other',
         heading: 'Other things to weigh',
-        paragraphs: [
-          'Energy use matters for refrigerators and freezers, which run around the clock. A very old refrigerator may cost noticeably more to run than a new one.',
-          'Installation costs matter too. Replacing a built-in dishwasher or an over-the-range microwave adds installation and haul-away on top of the price tag.',
+        list: [
+          'Parts availability. For older or less common models, ask whether the part is still made. A discontinued part can decide the question for you.',
+          'Warranty. Check the manufacturer’s warranty and any extended plan first. Some brands cover certain parts, like compressors or washer motors, for much longer than the standard warranty.',
+          'Recalls. Look up the model and serial number at cpsc.gov. A recall remedy is handled by the manufacturer.',
+          'Energy use. Refrigerators and freezers run around the clock, so a very old unit can cost noticeably more to run than a newer one.',
+          'Installation. Replacing a built-in dishwasher, an over-the-range microwave or a gas appliance adds installation and haul-away on top of the purchase.',
+          'Timing. A repair is often faster than ordering, delivering and installing a new appliance, which matters when the refrigerator is full of food.',
+        ],
+      },
+      {
+        id: 'questions',
+        heading: 'Questions to ask the technician',
+        list: [
+          'What exactly failed, and why did it fail?',
+          'What does the repair involve, start to finish?',
+          'Is anything else close to failing?',
+          'Are parts still available for this model?',
+          'Would you repair this one if it were yours?',
+        ],
+        after: [
+          'A good technician will answer all five plainly, including telling you when a repair does not make sense.',
         ],
       },
     ],
-    safety: 'Leave sealed refrigeration, gas and high-voltage microwave work to a qualified technician.',
+    safety: 'Leave sealed refrigeration, gas and high-voltage microwave work to a qualified technician. Unplug any appliance before looking inside it.',
     faqs: [
       {
         q: 'Is it worth repairing a 10-year-old washer?',
-        a: 'If it is a pump, switch, belt or suspension part, usually yes. A failed transmission or tub bearing at that age is a closer call.',
+        a: 'If it is a pump, lid lock, belt or suspension part, usually yes. A failed transmission or tub bearings at that age is a closer call.',
+      },
+      {
+        q: 'Is it worth repairing a refrigerator compressor?',
+        a: 'On a newer refrigerator, often yes, and check the warranty first since some brands cover compressors for many years. On a refrigerator past about 10 years old, replacement usually makes more sense.',
       },
       {
         q: 'Do new appliances last as long as old ones?',
-        a: 'Newer appliances have more electronics, and control boards can be costly. On the other hand, they use less energy and water.',
+        a: 'Published estimates suggest some appliances last a little less than they used to. Newer models have more electronics, but they also use less energy and water.',
       },
+      {
+        q: 'Should I repair or replace a dryer?',
+        a: 'Usually repair. Most dryer failures are heating parts, fuses, belts or rollers, which are reasonable repairs on most dryers.',
+      },
+      {
+        q: 'What if I am not sure the repair is worth it?',
+        a: 'Ask for the diagnosis and the answers to the questions above, then decide. You do not have to approve a repair on the spot.',
+      },
+    ],
+    sources: [
+      { name: 'ConsumerAffairs: appliances really don’t last as long as they used to (NAHB estimates)', url: 'https://www.consumeraffairs.com/news/appliances-really-dont-last-as-long-as-they-used-to-021715.html' },
+      { name: '2-10 Home Buyers Warranty: why appliances don’t last', url: 'https://www.2-10.com/helpcenter/why-appliances-dont-last/' },
+      { name: 'U.S. Consumer Product Safety Commission: recalls', url: 'https://www.cpsc.gov/Recalls' },
     ],
   },
   {
