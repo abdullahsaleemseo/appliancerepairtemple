@@ -386,6 +386,22 @@ function Block({ block, s, index }: { block: ServiceBlock; s: Service; index: nu
         </section>
       );
 
+    case 'factCallout':
+      return (
+        <aside className="reveal grid gap-6 rounded-xl2 border border-sand bg-white p-7 md:grid-cols-[auto_1fr] md:items-center md:p-9">
+          <p className="font-display text-6xl font-extrabold tracking-[-0.04em] text-flame md:text-7xl">{block.stat}</p>
+          <div>
+            <p className="text-[16.5px] leading-relaxed text-ink">{block.text}</p>
+            <p className="mt-3 text-[13px] text-ink-muted">
+              Source:{' '}
+              <a href={block.source.url} rel="noopener" className="underline underline-offset-2 hover:text-ink">
+                {block.source.name}
+              </a>
+            </p>
+          </div>
+        </aside>
+      );
+
     case 'faq':
       return (
         <section aria-labelledby={id} className="reveal">
