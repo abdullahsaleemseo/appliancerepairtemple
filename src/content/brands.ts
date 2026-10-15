@@ -417,9 +417,92 @@ export const brands: Brand[] = [
     ],
     hasPage: true,
   },
+  {
+    key: 'maytag',
+    slug: `maytag-appliance-repair-${loc}`,
+    name: 'Maytag',
+    h1: 'Maytag Washer, Dryer & Appliance Repair in Temple, TX',
+    metaTitle: 'Maytag Appliance Repair Temple TX | Washers, Dryers & More',
+    metaDescription:
+      'Maytag washer not spinning, dryer not heating or fridge running warm? Independent Maytag appliance repair in Temple, TX. Same-day service available.',
+    intro: [
+      'Maytag washer stuck mid-cycle, dryer running cold or refrigerator warming up? Appliance Repair Temple repairs Maytag washers, dryers, refrigerators, dishwashers, ranges and microwaves in homes across Temple, TX. Same-day service is available, subject to technician availability, location, and current demand.',
+      'Laundry is where we see Maytag most, from older top-loaders that have run for years to newer high-efficiency pairs. Maytag is part of Whirlpool Corporation, and many current Maytag models share designs and parts with Whirlpool appliances. That helps when a part is needed, because common parts are widely available.',
+      'Before any repair, check the warranty. Maytag offers a 10-year limited parts warranty on certain parts of many newer appliances, such as the washer drive motor and wash basket and some refrigerator compressors. Labor is often not included in the later years, so a covered part can still mean a repair visit. Check your model’s warranty paperwork or contact Maytag, then call us for the rest.',
+    ],
+    appliances: [
+      { key: 'washer', note: 'Top-load and front-load washers, including high-efficiency and agitator models' },
+      { key: 'dryer', note: 'Electric and gas dryers' },
+      { key: 'refrigerator', note: 'Top-freezer, side-by-side, bottom-freezer and French door' },
+      { key: 'dishwasher', note: 'Built-in dishwashers' },
+      { key: 'oven', note: 'Electric and gas ranges and wall ovens' },
+      { key: 'microwave', note: 'Over-the-range microwaves' },
+    ],
+    issues: [
+      {
+        title: 'Washer will not spin or drain',
+        text: 'A clogged drain pump, a worn lid lock or door latch, a broken drive belt or a failed shifter on top-loaders are common causes. The technician checks the drain path and lock before looking at the motor or transmission.',
+      },
+      {
+        title: 'Dryer runs but no heat',
+        text: 'A failed heating element, thermal fuse or high-limit thermostat on electric models, or an igniter or gas valve coils on gas models. A restricted vent is often the root cause, so airflow is checked on every dryer call.',
+      },
+      {
+        title: 'Refrigerator not cooling',
+        text: 'Dusty condenser coils, a failed condenser or evaporator fan, a defrost problem or a start relay come before the compressor. If the compressor has failed, check Maytag’s parts coverage for your model first.',
+      },
+      {
+        title: 'Dishwasher leaves dishes dirty',
+        text: 'A clogged filter, scale in the spray arms, a weak wash pump or an inlet valve that is not letting in enough water. The filter is the first stop.',
+      },
+    ],
+    haveReady: [
+      'The model and serial number from the label. A photo is the easiest way to share it.',
+      'The purchase date, so you can check which parts the Maytag warranty still covers.',
+      'Top-load or front-load, and gas or electric for dryers and ranges.',
+      'Any error code on the display, and what the washer or dryer was doing when it stopped.',
+      'Whether the problem started after a move or a power outage.',
+    ],
+    modelLocations: [
+      { appliance: 'Refrigerator', where: 'Inside the fresh-food section, usually on the upper left wall, the top front of the compartment or on the liner above the crisper drawers' },
+      { appliance: 'Top-load washer', where: 'Under the lid on the tub rim or the lower right corner of the lid opening, or on the back of the washer' },
+      { appliance: 'Front-load washer', where: 'On the rim around the door opening' },
+      { appliance: 'Dryer', where: 'Inside the door opening on the frame, on the inside of the door, or on the upper back of the cabinet' },
+      { appliance: 'Dishwasher', where: 'On the upper left edge of the tub frame or the underside of the control panel' },
+      { appliance: 'Range', where: 'Inside the storage drawer area or on the frame behind the oven door' },
+    ],
+    modelSource: { name: 'Maytag Product Help: where is my model and serial number located?', url: 'https://producthelp.maytag.com/FAQ/Where_is_my_Model_and_Serial_Number_Located%3F' },
+    faqs: [
+      {
+        q: 'Are you an authorized Maytag service provider?',
+        a: 'No. Appliance Repair Temple is an independent repair service and is not affiliated with or authorized by Maytag or Whirlpool Corporation. If your appliance is under Maytag’s warranty, contact Maytag first.',
+      },
+      {
+        q: 'Does the Maytag 10-year warranty cover my repair?',
+        a: 'It depends on the model and the part. The 10-year limited coverage applies to specific parts, such as the washer drive motor and wash basket and some refrigerator compressors, and labor is often not included in the later years. Check your warranty paperwork or ask Maytag.',
+      },
+      {
+        q: 'Is my older Maytag washer worth repairing?',
+        a: 'Often, yes. Pumps, lid locks, belts and suspension parts are reasonable repairs on an older washer. A failed transmission or worn tub bearings usually tip the balance toward replacing it.',
+      },
+      {
+        q: 'Do Maytag and Whirlpool use the same parts?',
+        a: 'Many current models share designs and parts, since both brands belong to Whirlpool Corporation. The full model number tells us exactly which parts fit.',
+      },
+      {
+        q: 'Can you repair my Maytag the same day?',
+        a: 'Same-day service is available, subject to technician availability, location, and current demand. Some parts are model-specific and may need to be ordered.',
+      },
+      {
+        q: 'How much does Maytag appliance repair cost?',
+        a: 'It depends on the appliance and the part, so we do not list prices online. Call to discuss your repair needs with the model number ready.',
+      },
+    ],
+    hasPage: true,
+  },
 ];
 
 /** Other brands commonly serviced. Listed on the hub, no dedicated page yet. */
-export const otherBrands = ['Maytag', 'KitchenAid', 'Bosch', 'Kenmore', 'Electrolux', 'Amana', 'Speed Queen'];
+export const otherBrands = ['KitchenAid', 'Bosch', 'Kenmore', 'Electrolux', 'Amana', 'Speed Queen'];
 
 export const brandHref = (b: Brand) => `/brands/${b.slug}/`;
