@@ -115,52 +115,98 @@ export const posts: Post[] = [
   },
   {
     slug: 'washer-not-draining',
-    title: 'Why a Washer Will Not Drain: Safe Checks Before Booking Repair',
+    title: 'Washer Not Draining? Safe Checks Before You Book a Repair',
+    metaTitle: 'Washer Not Draining? Safe Checks First | Temple, TX',
     metaDescription:
-      'Washer full of water and won’t drain? Safe checks for top-load and front-load washers, the common causes, and when to call for repair.',
+      'Washer full of water and won’t drain? Safe checks for top-load and front-load washers, what the sounds and codes mean, and when to call a technician.',
     excerpt:
-      'A drum full of water is usually a clog, a kinked hose or a pump. Here is how to check each one without making a mess or a bigger problem.',
+      'A drum full of water is usually a clog, a kinked hose, too many suds or a worn pump. Here is how to check each one safely, in the right order, without making a bigger mess.',
     published: '2026-10-14',
-    updated: '2026-10-14',
+    updated: '2026-10-15',
     service: 'washer',
     sections: [
+      {
+        id: 'short-version',
+        heading: 'The short version',
+        list: [
+          'Unplug the washer and get towels, a shallow pan and a bucket ready before you open anything.',
+          'Check the drain hose for kinks and the drain or laundry sink for a backup.',
+          'On front-loaders and some top-loaders, clean the pump filter at the bottom front.',
+          'Rule out too many suds, a common cause on high-efficiency washers.',
+          'If it hums but does not drain, or is silent, the pump, lid lock or control may need a technician.',
+        ],
+      },
       {
         id: 'before-you-start',
         heading: 'Before you start',
         paragraphs: [
-          'Turn the washer off and unplug it. Have towels, a shallow pan and a bucket nearby. On a front-loader, the water will come out of the filter access at the bottom front, and there can be a lot of it.',
+          'Turn the washer off and unplug it. If you will be moving it or touching hoses, close the hot and cold water valves behind it too.',
+          'Expect water. On a front-loader, a drum full of water drains out through the small access door at the bottom front, often a gallon or more, so put down towels and a shallow pan. On a top-loader, you can bail water out of the tub with a cup and a bucket before you start looking at the drain.',
+          'Take the clothes out, wring them into the tub or a sink, and set them aside. A heavy wet load makes every other step harder.',
         ],
       },
       {
         id: 'checks',
-        heading: 'Checks in order',
+        heading: 'Checks, in order',
         list: [
-          'Drain hose: pull the washer out a few inches and look for kinks or a hose pushed too far into the standpipe.',
-          'Pump filter (most front-loaders and some top-loaders): open the small door at the bottom front, drain the water through the small hose if there is one, then unscrew the filter slowly. Socks, coins and hair ties are common finds.',
-          'Standpipe or laundry sink: if water backs up there, the clog is in the house drain, not the washer.',
-          'Lid switch or door lock: some washers will not drain or spin if they cannot confirm the lid is locked. Listen for a click when the cycle starts.',
+          'Drain hose. Pull the washer out a few inches and look behind it. A hose that is kinked, crushed against the wall or clogged will stop drainage. Straighten it and check that water can flow through it.',
+          'How the hose sits in the drain. The hose should hook into the standpipe or laundry sink without being pushed too far in or taped tight. Whirlpool’s guidance, for example, calls for an air gap around the hose and limits on how deep it goes into the standpipe. Your installation manual gives the numbers for your model.',
+          'The house drain. If water backs up out of the standpipe or the laundry sink is slow, the clog is in the house plumbing, not the washer. That is a job for a plumber.',
+          'Pump filter. Most front-loaders and some top-loaders have a filter behind a small door at the bottom front. Drain the water through the small hose if there is one, then unscrew the filter slowly. Socks, coins, hair ties and lint are common finds. Clean it, put it back hand tight and check that it does not drip.',
+          'Suds. Too much detergent, or regular detergent in a high-efficiency washer, makes suds the washer cannot pump out. Many machines pause, add rinses or show a code such as SUD or Sd. Run a rinse and spin with no detergent, and use only measured HE detergent from then on.',
+          'Lid or door lock. Many washers will not drain or spin unless they can confirm the lid or door is locked. Listen for a click when the cycle starts. If there is no click, the lock or its switch may have failed.',
         ],
       },
       {
-        id: 'common-causes',
-        heading: 'If it still won’t drain',
+        id: 'sounds-and-codes',
+        heading: 'What the sounds and codes tell you',
         paragraphs: [
-          'A humming sound with no water moving usually means the pump is jammed or its motor failed. Silence usually points to the pump not getting power, which can be a lock, a control or wiring problem.',
-          'Drain pump replacement is one of the most common washer repairs and is usually done in one visit.',
+          'Humming with no water moving usually means the drain pump is jammed or its motor has failed. Something caught in the pump, like a sock or a coin, is common. Stop the cycle; running a jammed pump can burn out the motor.',
+          'Silence when it should be draining often means the pump is not getting power. That points to the lid lock, the control board or the wiring between them.',
+          'A drain error code, such as F21, OE, 5E or a code with “drain” in its description, is the washer telling you it timed out waiting for the water to leave. The exact code depends on the brand and model, so check your manual or the manufacturer’s support site. A code narrows the search, and testing confirms which part failed.',
+          'Water drains but clothes are still soaking wet. The washer may not be reaching full spin. An unbalanced load, an unlevel washer, a worn belt or drive part, or a lid lock that will not stay engaged can all cause it.',
+        ],
+      },
+      {
+        id: 'when-to-call',
+        heading: 'When to call a technician',
+        paragraphs: [
+          'Call if the hose, the house drain and the filter are all clear and the washer still will not drain, if it hums or stays silent at the drain step, or if the lid or door will not lock. Those point to the pump, the lock, the control or the wiring, and they need testing with a meter.',
+          'A washer that will not drain is usually worth repairing. Drain pumps, lid locks and lid switches are common parts, and replacing one is a much smaller job than replacing the washer. On an older machine, a failed transmission or worn tub bearings are the main cases where replacement starts to make more sense.',
+        ],
+        after: [
+          'When you call, have the brand, the model number, whether it is a top-load or front-load washer, and any code on the display.',
         ],
       },
     ],
     safety:
-      'Always unplug the washer before opening the filter access or moving it. Shut off the water valves if you disconnect hoses.',
+      'Always unplug the washer before opening the filter access, moving it or reaching into the tub. Close the water valves before disconnecting any hose. Do not reach into the drain pump opening with the power on.',
     faqs: [
       {
         q: 'Can I run another cycle to get the water out?',
         a: 'Try a drain and spin cycle once. If it hums and does nothing, stop. Running a jammed pump can burn out the motor.',
       },
       {
-        q: 'Is a washer that won’t drain worth repairing?',
-        a: 'Usually yes. Pumps and lid switches are common parts, and replacing one is a much smaller job than replacing the washer.',
+        q: 'Why does my front-load washer have a little door at the bottom?',
+        a: 'That is the pump filter access. It catches coins, socks and lint before they reach the drain pump. Cleaning it every few months helps prevent drain problems.',
       },
+      {
+        q: 'Can too much detergent stop a washer from draining?',
+        a: 'Yes. Excess suds can stop a high-efficiency washer from pumping out water. Run a rinse and spin with no detergent and measure HE detergent carefully going forward.',
+      },
+      {
+        q: 'Why will my top-load washer not drain until I lift the lid?',
+        a: 'Many top-loaders lock the lid before draining and spinning. If the lock or lid switch is failing, the washer may stop at the drain step. It is a common part to replace.',
+      },
+      {
+        q: 'Is a washer that won’t drain worth repairing?',
+        a: 'Usually, yes. Drain pumps and lid locks are common parts. Replacement makes more sense mainly when an older washer also has a failed transmission or worn tub bearings.',
+      },
+    ],
+    sources: [
+      { name: 'Whirlpool Product Help: washer not draining or spinning troubleshooting guide', url: 'https://producthelp.whirlpool.com/Laundry/Washers/Product_Info/Washer_Product_Assistance/Washer_Not_Draining_or_Spinning%3F_Troubleshooting_Guide' },
+      { name: 'Whirlpool Product Help: not draining, front load washer', url: 'https://producthelp.whirlpool.com/Laundry/Washers/Front_Load_Washers/Cycle_Concerns/Not_Draining/Not_Draining_-_Front_Load_Washer' },
+      { name: 'Whirlpool Product Help: excessive suds in a front load washer', url: 'https://producthelp.whirlpool.com/Laundry/Washers/Washer_Tips_and_Tricks/Excessive_Suds_in_a_Front_Load_Washer' },
     ],
   },
   {
