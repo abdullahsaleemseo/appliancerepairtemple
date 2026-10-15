@@ -823,9 +823,91 @@ export const brands: Brand[] = [
     ],
     hasPage: true,
   },
+  {
+    key: 'amana',
+    slug: `amana-appliance-repair-${loc}`,
+    name: 'Amana',
+    h1: 'Amana Appliance Repair in Temple, TX, for Homes and Rentals',
+    metaTitle: 'Amana Appliance Repair Temple TX | Washers, Dryers, Fridges',
+    metaDescription:
+      'Amana washer, dryer, fridge or range not working? Independent Amana appliance repair in Temple, TX, for homes and rentals. Same-day service available.',
+    intro: [
+      'Amana washer not agitating, dryer running cold or refrigerator warming up? Appliance Repair Temple repairs Amana washers, dryers, refrigerators, ranges, dishwashers and microwaves in homes across Temple, TX. Same-day service is available, subject to technician availability, location, and current demand.',
+      'Amana is a Whirlpool Corporation brand built around straightforward, value-priced appliances: top-load agitator washers, top-freezer refrigerators, coil and smoothtop ranges. That makes it a common sight in rental homes, apartments and starter houses around Temple, often bought as a set by a landlord or builder.',
+      'Simple designs are usually good news for repair. Many Amana appliances share parts with Whirlpool and Maytag models, so common parts are easy to find and repairs tend to be practical. If you rent, check with your landlord before booking, since they may be responsible for the appliances they supply.',
+    ],
+    appliances: [
+      { key: 'washer', note: 'Top-load agitator and high-efficiency washers' },
+      { key: 'dryer', note: 'Electric and gas dryers' },
+      { key: 'refrigerator', note: 'Top-freezer, bottom-freezer, side-by-side and French door' },
+      { key: 'oven', note: 'Electric and gas ranges, coil and smoothtop' },
+      { key: 'dishwasher', note: 'Built-in dishwashers' },
+      { key: 'microwave', note: 'Over-the-range microwaves' },
+    ],
+    issues: [
+      {
+        title: 'Washer will not agitate or spin',
+        text: 'On top-load agitator washers, a worn lid switch or lid lock, a failed drive coupler, worn agitator dogs or a broken belt are common, and most are reasonable repairs. A washer that hums but does not move often has a jammed pump or a failed motor coupling.',
+      },
+      {
+        title: 'Dryer runs but no heat',
+        text: 'A failed heating element, thermal fuse or thermostat on electric models, or an igniter or gas valve coils on gas models. Clogged vents are a common root cause, especially in apartments with long vent runs.',
+      },
+      {
+        title: 'Top-freezer refrigerator warm',
+        text: 'If the freezer is cold but the fresh-food section is warm, the evaporator fan or the defrost system is the usual suspect. If both are warm, the technician checks the condenser fan, the coils and the start relay.',
+      },
+      {
+        title: 'Range burner or oven not heating',
+        text: 'A burned coil element or a loose receptacle on coil tops, a failed surface element or switch on smoothtops, and a bake element or igniter in the oven. These are common parts on most Amana ranges.',
+      },
+    ],
+    haveReady: [
+      'The model and serial number from the tag. A photo is the easiest way to share it.',
+      'Whether you own the home or rent it, and who approves repairs.',
+      'Gas or electric, for dryers and ranges.',
+      'What the appliance is doing, or not doing, and when it started.',
+      'Whether the appliance is still under Amana’s warranty.',
+    ],
+    modelLocations: [
+      { appliance: 'Refrigerator', where: 'Inside the fresh-food section, usually on an upper side wall' },
+      { appliance: 'Top-load washer', where: 'Under the lid near the tub opening, or on the back of the console' },
+      { appliance: 'Dryer', where: 'Inside the door opening on the frame, or on the back of the cabinet' },
+      { appliance: 'Range', where: 'On the frame behind the storage drawer or behind the oven door' },
+      { appliance: 'Dishwasher', where: 'On the edge of the tub or door, visible when the door is open' },
+    ],
+    modelSource: { name: 'Amana Product Help: where is my model and serial number located?', url: 'https://producthelp.amana.com/FAQ/Where_is_my_Model_and_Serial_Number_Located%3F' },
+    faqs: [
+      {
+        q: 'Are you an authorized Amana service provider?',
+        a: 'No. Appliance Repair Temple is an independent repair service and is not affiliated with or authorized by Amana or Whirlpool Corporation. If your appliance is under Amana’s warranty, contact Amana first.',
+      },
+      {
+        q: 'Do you repair Amana air conditioners or furnaces?',
+        a: 'No. Amana heating and air conditioning equipment is a separate business from Amana home appliances, and we do not work on HVAC. We repair Amana washers, dryers, refrigerators, ranges, dishwashers and microwaves.',
+      },
+      {
+        q: 'Is my Amana washer worth repairing?',
+        a: 'Usually, yes. Lid switches, couplers, belts and pumps are common, reasonable repairs. A failed transmission on an older washer is the main case where replacing it makes more sense.',
+      },
+      {
+        q: 'I rent. Can I book the repair myself?',
+        a: 'Check your lease first. Many leases make the landlord responsible for the appliances they supply. If your landlord asks you to arrange the visit, let us know who is approving the work.',
+      },
+      {
+        q: 'Can you repair my Amana the same day?',
+        a: 'Same-day service is available, subject to technician availability, location, and current demand. Common Amana parts are often available quickly; some may need to be ordered.',
+      },
+      {
+        q: 'How much does Amana appliance repair cost?',
+        a: 'It depends on the appliance and the part, so we do not list prices online. Call to discuss your repair needs with the model number ready.',
+      },
+    ],
+    hasPage: true,
+  },
 ];
 
 /** Other brands commonly serviced. Listed on the hub, no dedicated page yet. */
-export const otherBrands = ['Amana', 'Speed Queen'];
+export const otherBrands = ['Speed Queen'];
 
 export const brandHref = (b: Brand) => `/brands/${b.slug}/`;
