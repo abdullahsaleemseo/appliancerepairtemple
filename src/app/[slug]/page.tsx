@@ -147,9 +147,9 @@ function Block({ block, s, index }: { block: ServiceBlock; s: Service; index: nu
               <caption className="sr-only">{block.heading}</caption>
               <thead className="border-b border-sand text-[12px] uppercase tracking-[0.14em] text-ink-muted">
                 <tr>
-                  <th scope="col" className="px-5 py-4 font-semibold md:px-6">Part</th>
-                  <th scope="col" className="hidden px-5 py-4 font-semibold md:table-cell">What it does</th>
-                  <th scope="col" className="px-5 py-4 font-semibold">Signs it is failing</th>
+                  <th scope="col" className="px-5 py-4 font-semibold md:px-6">{block.columns?.[0] ?? 'Part'}</th>
+                  <th scope="col" className="hidden px-5 py-4 font-semibold md:table-cell">{block.columns?.[1] ?? 'What it does'}</th>
+                  <th scope="col" className="px-5 py-4 font-semibold">{block.columns?.[2] ?? 'Signs it is failing'}</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-sand/70">
@@ -157,7 +157,10 @@ function Block({ block, s, index }: { block: ServiceBlock; s: Service; index: nu
                   <tr key={r.part} className="align-top">
                     <th scope="row" className="px-5 py-4 font-semibold text-ink md:px-6">
                       {r.part}
-                      <span className="mt-1 block text-[13.5px] font-normal text-ink-muted md:hidden">{r.job}</span>
+                      <span className="mt-1 block text-[13.5px] font-normal text-ink-muted md:hidden">
+                        {block.columns ? <span className="font-semibold text-ink">{block.columns[1]}: </span> : null}
+                        {r.job}
+                      </span>
                     </th>
                     <td className="hidden px-5 py-4 text-ink-body md:table-cell">{r.job}</td>
                     <td className="px-5 py-4 text-ink-body">{r.signs}</td>
@@ -166,6 +169,7 @@ function Block({ block, s, index }: { block: ServiceBlock; s: Service; index: nu
               </tbody>
             </table>
           </div>
+          {block.note ? <p className="mt-4 text-[13.5px] text-ink-muted">{block.note}</p> : null}
         </section>
       );
 

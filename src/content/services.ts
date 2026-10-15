@@ -978,101 +978,202 @@ export const services: Service[] = [
     navLabel: 'Freezer Repair',
     icon: 'freezer',
     card: 'Upright or chest freezer not freezing or frosting up.',
-    metaTitle: 'Freezer Repair in Temple, TX | Appliance Repair Temple',
+    metaTitle: 'Freezer Repair Temple TX | Chest & Upright Freezers',
     metaDescription:
-      'Upright or chest freezer not freezing in Temple, TX? Request a diagnostic visit for frost buildup, warm temperatures and noisy freezers. Call today.',
-    h1: 'Freezer Repair in Temple, TX',
+      'Freezer not freezing, frosting up or running nonstop? Chest and upright freezer repair in Temple, TX. Same-day service available. Call (254) 555-0147.',
+    h1: 'Chest & Upright Freezer Repair in Temple, TX',
     intro: [
-      'A full freezer can hold hundreds of dollars of meat and food, so a freezer that starts to warm up deserves a fast look. Keep the lid or door shut. A full freezer holds a safe temperature for about 48 hours if it stays closed.',
-      'We repair standalone upright and chest freezers in Temple and the surrounding area. Garage freezers are a big part of the work here, because Texas summer heat pushes them hard. The technician tests the compressor, fans, defrost system and thermostat, and explains the repair before any work.',
+      'Freezer warming up, frosting over or running and never shutting off? Appliance Repair Temple repairs standalone chest and upright freezers in homes, garages and shops across Temple, TX. Same-day service is available, subject to technician availability, location, and current demand.',
+      'A full freezer can hold a lot of meat, game and meals, so speed matters. Most freezer failures come down to a start relay, a thermostat, a fan, a defrost part on frost-free uprights or a worn lid or door seal. The technician tests those first, explains what failed and what the repair involves, and starts only after your OK. If a small or older chest freezer is not worth fixing, we will tell you.',
     ],
-    symptomsHeading: 'Freezer problems we diagnose',
+    symptomsHeading: 'Freezer problems and their usual causes',
     symptoms: [
       {
         title: 'Not freezing',
         cause:
-          'Dirty condenser coils, a failed condenser fan, a bad start relay or thermostat, or a compressor problem. Upright frost-free models can also fail in the defrost system.',
+          'Dirty condenser coils, a failed condenser fan, a bad start relay or thermostat, or a compressor problem. Frost-free uprights can also fail in the defrost system.',
         fixable: 'Relays, thermostats and fans are routine repairs.',
       },
       {
-        title: 'Heavy frost buildup',
+        title: 'Heavy frost or ice buildup',
         cause:
-          'On chest and manual-defrost freezers, frost is normal over time but builds fast with a bad lid seal. On frost-free uprights, heavy frost means the defrost heater, thermostat or timer has failed.',
+          'On chest and manual-defrost freezers, frost builds slowly by design but piles up fast with a bad lid seal. On frost-free uprights, heavy frost means the defrost heater, thermostat or control has failed.',
         fixable: 'Gaskets and defrost parts are replaceable.',
       },
       {
         title: 'Running all the time',
         cause:
-          'A hot garage, blocked airflow around the coils, a leaking door seal or a low refrigerant charge.',
-        fixable: 'Many causes are fixed by cleaning, airflow or a new seal.',
+          'A hot garage, blocked airflow around the coils, a leaking seal or a low refrigerant charge. A freezer packed tight against the walls can run longer too.',
+        fixable: 'Many causes are fixed by cleaning, better airflow or a new seal.',
       },
       {
-        title: 'Clicking and not running',
+        title: 'Clicking but not running',
         cause:
-          'The compressor is trying to start and failing. Often the start relay or overload, sometimes the compressor.',
+          'The compressor is trying to start and failing. Often it is the start relay or overload, and sometimes the compressor itself.',
         fixable: 'Relay replacement is quick.',
       },
       {
-        title: 'Water under a chest freezer',
+        title: 'Water under or around the freezer',
         cause:
-          'Condensation from a poor lid seal, or melt water from a defrost cycle that the drain did not handle.',
+          'Condensation from a poor lid or door seal, a clogged defrost drain on an upright, or melt water a chest freezer drain plug did not hold.',
         fixable: 'Seal replacement or drain clearing.',
       },
       {
-        title: 'Alarm going off',
+        title: 'Temperature alarm going off',
         cause:
-          'Many freezers alarm when the inside temperature rises or the door is open. The cause is a cooling problem or a seal problem.',
+          'Many freezers alarm when the inside temperature climbs or the door is left ajar. The cause is either a cooling problem or a seal problem.',
         fixable: 'The technician traces why the temperature climbed.',
       },
+      {
+        title: 'Loud buzzing or rattling',
+        cause:
+          'A fan blade hitting ice, a failing fan motor, or a compressor that is struggling. Rattles can also come from a freezer that is not level.',
+        fixable: 'Fan motors and leveling are simple fixes.',
+      },
     ],
-    diagnostic: {
-      heading: 'What the diagnostic visit covers',
-      paragraphs: [
-        'The technician measures temperature, checks the compressor, relay and fans, inspects the door or lid seal, and tests defrost parts on frost-free models. You hear what failed before any work starts.',
-      ],
-      covers: [
-        'Temperature readings',
-        'Compressor, relay and overload checks',
-        'Condenser fan and coil condition',
-        'Door or lid gasket inspection',
-        'Defrost system tests on frost-free uprights',
-        'Placement and airflow review',
-      ],
-    },
+    diagnostic: { heading: 'What the visit covers', paragraphs: [], covers: [] },
     repairOrReplace: {
-      heading: 'Repair or replace your freezer?',
+      heading: 'Is your freezer worth repairing?',
       paragraphs: [
-        'Freezers usually last 10 to 20 years. Relays, thermostats, fans and seals are worth fixing. A sealed system failure on an older, basic chest freezer usually is not, and the technician will say so.',
+        'Freezers often last 10 to 20 years, longer than most appliances. Relays, thermostats, fans, defrost parts and seals are worth fixing at almost any age.',
+        'A sealed system failure (compressor or refrigerant leak) is different. On a small or older chest freezer, replacement usually makes more sense. On a large upright or a built-in freezer column, repair often still wins. The technician will give you an honest read.',
       ],
       points: [
-        'Relay, fan, thermostat or seal: repair',
+        'Relay, fan, thermostat, defrost part or seal: repair',
         'Compressor failure on a small or older chest freezer: replacement usually makes more sense',
-        'Large uprights and built-in columns: repair usually pays',
+        'Large uprights and built-in columns: repair usually pays off',
       ],
     },
     safety:
       'Unplug before cleaning coils. Do not chip ice with sharp tools, because puncturing a cooling line ends the life of the freezer.',
-    brands: ['Frigidaire', 'GE', 'Whirlpool', 'Kenmore', 'Maytag', 'Amana', 'Samsung', 'LG'],
+    brands: ['Frigidaire', 'GE', 'Whirlpool', 'Kenmore', 'Maytag', 'Amana', 'Samsung', 'LG', 'Electrolux'],
     faqs: [
       {
         q: 'How long will food stay frozen if my freezer stops?',
-        a: 'About 48 hours for a full freezer and 24 hours for a half-full one, as long as the door stays closed.',
+        a: 'About 48 hours for a full freezer and about 24 hours for a half-full one, as long as the door or lid stays closed.',
       },
       {
-        q: 'Is my garage too hot for a freezer?',
-        a: 'Many freezers are rated for a room range that tops out around 110°F. Garage temperatures in a Central Texas summer can get close to that. Give the freezer space for airflow and keep the coils clean.',
+        q: 'Can I refreeze food that started to thaw?',
+        a: 'If the food still has ice crystals or has stayed at 40°F or below, it can generally be refrozen, though quality may drop. Throw out partly thawed ice cream, and anything that sat above 40°F for more than two hours.',
       },
       {
         q: 'Do you repair chest freezers?',
-        a: 'Yes, along with upright freezers. Tell us the type and brand when you call.',
+        a: 'Yes, along with upright freezers. Tell us which type and brand you have when you call.',
       },
       {
         q: 'Why is my freezer covered in frost?',
-        a: 'On a frost-free model, heavy frost means a defrost part failed. On a manual-defrost model, it often points to a worn seal letting in humid air.',
+        a: 'On a frost-free upright, heavy frost means a defrost part failed. On a chest or manual-defrost freezer, it usually points to a worn seal letting humid air in, or the lid being opened often.',
+      },
+      {
+        q: 'Do you come out to freezers in garages and shops?',
+        a: 'Yes. Garage and shop freezers are a common call in Temple. Make sure there is room around the unit for the technician to reach the back and the coils.',
+      },
+      {
+        q: 'Should I defrost my chest freezer before the technician comes?',
+        a: 'No. Leave it as it is unless we ask. The frost pattern and the temperature help the technician see what is going on. Just clear a path to the freezer and make room around it.',
+      },
+      {
+        q: 'Where is the model number on my freezer?',
+        a: 'On chest freezers, look on the back or the side near the bottom, or under the lid. On uprights, check the inside wall near the top or the door frame. A photo of the label works.',
+      },
+      {
+        q: 'How much does freezer repair cost?',
+        a: 'It depends on the freezer and the part, so we do not list prices online. Call to discuss your repair needs, with the brand, model number and type of freezer ready.',
       },
     ],
     related: ['refrigerator', 'washer', 'dryer'],
-    offeredVerified: false,
+    offeredVerified: true,
+    blocks: [
+      {
+        type: 'quickAnswer',
+        heading: 'Freezer warming up? Protect the food first',
+        steps: [
+          'Keep the door or lid shut. A full freezer holds a safe temperature for about 48 hours, a half-full one about 24.',
+          'Put an appliance thermometer inside. A working freezer should read 0°F.',
+          'If it is climbing fast, move the most valuable items to a cooler with ice or to another freezer.',
+          'Check that the plug is in, the breaker is on and nothing is blocking the coils or vents.',
+          'Call us with the brand, the model number and whether it is a chest or an upright.',
+        ],
+        note: 'Do not try to speed up a defrost with a knife, ice pick or heat gun. Puncturing a cooling line ruins the freezer.',
+      },
+      {
+        type: 'partsTable',
+        heading: 'Can I refreeze it?',
+        intro: 'Food safety guidance from the USDA and university extension services, for food from a freezer that warmed up.',
+        columns: ['Food', 'Safe to refreeze when', 'Throw it out when'],
+        rows: [
+          { part: 'Meat and poultry', job: 'It still has ice crystals or has stayed at 40°F or below', signs: 'It sat above 40°F for more than two hours' },
+          { part: 'Vegetables and fruit', job: 'Ice crystals are still present', signs: 'It warmed above 40°F, or shows mold or a sour smell' },
+          { part: 'Shellfish and cooked dishes', job: 'Ice crystals are still present', signs: 'It warmed above 40°F' },
+          { part: 'Ice cream and frozen desserts', job: 'Still frozen solid', signs: 'It partly thawed, even if it is cold' },
+        ],
+        note: 'Refreezing can lower the quality of some foods, but it stays safe under these conditions. Appearance and smell are not reliable tests. When in doubt, throw it out.',
+      },
+      {
+        type: 'compare',
+        heading: 'Chest and upright freezers fail differently',
+        intro: 'The type of freezer you have changes what usually goes wrong.',
+        columns: [
+          {
+            title: 'Chest freezers',
+            items: [
+              'Usually manual defrost, so frost builds up over time',
+              'Lid gaskets that crack or no longer seal at the corners',
+              'Start relays and overloads on the compressor',
+              'Condenser coils inside the walls, so airflow around the cabinet matters',
+              'Drain plugs that leak melt water during defrosting',
+            ],
+          },
+          {
+            title: 'Upright freezers',
+            items: [
+              'Often frost-free, with a defrost heater, thermostat and control',
+              'Evaporator fan motors that stop or freeze up',
+              'Door gaskets and door alignment',
+              'Defrost drains that clog and leak',
+              'Thermostats and temperature sensors that drift',
+            ],
+          },
+        ],
+      },
+      { type: 'symptoms' },
+      { type: 'inlineForm' },
+      {
+        type: 'prose',
+        heading: 'Garage freezers in a Texas summer',
+        paragraphs: [
+          'Plenty of Temple households keep a second freezer in the garage. Every freezer is designed for a certain room temperature range, listed in the owner’s manual. Garage-ready models are built for wider swings. Some manufacturers rate them for rooms from 0°F to 110°F, while many standard freezers are made for indoor temperatures. A closed Central Texas garage in July can reach the top of that range.',
+          'If yours lives in the garage, give it a few inches of space on every side, keep it out of direct afternoon sun, and vacuum the coils or vents a couple of times a year. A freezer that runs nonstop every summer is wearing out its compressor faster.',
+          'Before a visit, move anything stacked on top of or against the freezer, and make sure the technician can reach the outlet and the back of the unit. In a shop or barn, clear a dry spot to work.',
+        ],
+      },
+      {
+        type: 'stopUsing',
+        heading: 'Unplug it and call if',
+        items: [
+          'You smell burning or see scorch marks near the compressor area.',
+          'The freezer trips the breaker or the outlet feels hot.',
+          'Water is pooling near the plug or the outlet.',
+          'The compressor clicks every few minutes and never runs.',
+          'You see oily residue on the tubing, which can point to a refrigerant leak.',
+        ],
+        note: 'Refrigerant work requires EPA Section 608 certification. Never cut or puncture freezer tubing.',
+      },
+      {
+        type: 'process',
+        heading: 'How a freezer repair visit works',
+        steps: [
+          { title: 'Temperature and sound', text: 'The technician checks the inside temperature and listens to the compressor and fans.' },
+          { title: 'Relay, fan and seal', text: 'The start relay, fans, thermostat and gasket are checked first, since they fail most.' },
+          { title: 'Explain and approve', text: 'You hear what failed and whether the repair makes sense for your freezer. Work starts after your OK.' },
+          { title: 'Repair and confirm', text: 'After the repair, the technician confirms it is cooling. A freezer can take several hours to get back down to 0°F.' },
+        ],
+      },
+      { type: 'repairOrReplace' },
+      { type: 'brands', heading: 'Freezer brands and types we repair', intro: 'We repair the major freezer brands found in Temple homes and garages. Tell us the brand, model number and type when you book.', styles: ['Chest freezers', 'Upright freezers', 'Frost-free', 'Manual defrost'] },
+      { type: 'faq' },
+      { type: 'payment' },
+    ],
   },
   {
     key: 'microwave',
