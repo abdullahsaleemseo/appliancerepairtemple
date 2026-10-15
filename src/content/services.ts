@@ -776,21 +776,27 @@ export const services: Service[] = [
     navLabel: 'Oven & Stove Repair',
     icon: 'oven',
     card: 'Oven won’t heat, burner out, igniter clicking.',
-    metaTitle: 'Oven & Stove Repair in Temple, TX | Appliance Repair Temple',
+    metaTitle: 'Oven & Stove Repair Temple TX | Ranges & Cooktops',
     metaDescription:
-      'Oven not heating or stove burner not working in Temple, TX? Request service for electric and gas ranges, wall ovens and cooktops. Call today.',
-    h1: 'Oven & Stove Repair in Temple, TX',
+      'Oven not heating or a burner won’t light? Electric and gas oven, stove and range repair in Temple, TX. Same-day service available. Call (254) 555-0147.',
+    h1: 'Oven, Stove & Range Repair in Temple, TX',
     intro: [
-      'An oven that will not heat, or heats 50 degrees off, usually has a failed bake or broil element, a weak igniter on a gas model, or a temperature sensor that has drifted. Stovetop problems tend to be a burner element, an infinite switch or a dirty igniter.',
-      'We repair electric and gas ranges, wall ovens and cooktops in Temple and nearby. The technician tests the parts, checks the actual oven temperature against the setting, and explains the repair before starting.',
+      'Oven will not heat, bakes unevenly or a burner will not light? Appliance Repair Temple repairs ovens, stoves, ranges, wall ovens and cooktops in homes across Temple, TX, electric and gas. Same-day service is available, subject to technician availability, location, and current demand.',
+      'The usual causes are a short list: a burned-out bake or broil element, a weak gas igniter, a temperature sensor that has drifted, a failed surface element or infinite switch, or a door lock stuck after a self-clean. The technician tests the part before replacing it, explains what failed and what the repair involves, and starts only after your OK.',
     ],
-    symptomsHeading: 'Oven and stove problems we diagnose',
+    symptomsHeading: 'Oven and stove problems we fix',
     symptoms: [
       {
         title: 'Oven won’t heat',
         cause:
-          'Electric ovens: a burned bake element (you can often see a break or blister on it), a failed relay or a control board fault. Gas ovens: a weak igniter is the most common cause. It glows but does not get hot enough to open the gas valve.',
+          'Electric ovens: a burned bake element (you can often see a break or blister on it), a failed relay or a control board fault. Gas ovens: a weak igniter is the most common cause. It glows, but not hot enough to open the gas valve.',
         fixable: 'Bake elements and igniters are some of the most common oven parts.',
+      },
+      {
+        title: 'Takes forever to preheat',
+        cause:
+          'On gas ovens, a weakening igniter opens the valve late, so the burner lights slowly or cycles badly. On electric ovens, a failing bake element or a broil element that has quit can stretch preheat times.',
+        fixable: 'An igniter or element replacement usually brings preheat back to normal.',
       },
       {
         title: 'Wrong temperature or uneven baking',
@@ -801,80 +807,169 @@ export const services: Service[] = [
       {
         title: 'Gas burner clicks but won’t light',
         cause:
-          'A spill on the igniter, a burner cap out of place, a wet spark module or a cracked igniter. Continuous clicking after the burner lights usually means moisture or a bad switch.',
+          'A spill on the igniter, a burner cap out of place, a wet spark module or a cracked igniter. Clicking that continues after the burner lights usually means moisture or a bad switch.',
         fixable: 'Cleaning, igniter or switch replacement.',
       },
       {
-        title: 'Electric burner not heating, or stuck on high',
+        title: 'Electric burner not heating or stuck on high',
         cause:
-          'A bad coil element or a loose receptacle on coil tops. On glass tops, a failed radiant element or an infinite switch that is stuck.',
-        fixable: 'Elements and switches are standard parts.',
+          'A bad coil element or a burned receptacle on coil tops. On glass tops, a failed radiant element or an infinite switch that is stuck.',
+        fixable: 'Elements, receptacles and switches are standard parts.',
       },
       {
-        title: 'Self-clean won’t unlock',
+        title: 'Door locked after self-clean',
         cause:
-          'The door lock motor or switch has failed, or the control board did not see the oven cool down. This often shows up right after a self-clean cycle.',
+          'The door lock motor or switch has failed, or the control did not detect that the oven cooled down. It often shows up right after a self-clean cycle.',
         fixable: 'Door lock assemblies are replaceable.',
       },
       {
         title: 'Error code or dead display',
         cause:
-          'Codes often point to a sensor or lock fault. A completely dead display can be a blown fuse, a power supply issue or a board failure.',
+          'Codes often point to a sensor or door lock fault. A completely dead display can be a tripped breaker, a blown fuse, a power supply problem or a control board failure.',
         fixable: 'The technician tests before replacing a control board.',
       },
     ],
-    diagnostic: {
-      heading: 'What the diagnostic visit covers',
-      paragraphs: [
-        'The technician checks power or gas supply, tests elements or the igniter, compares actual oven temperature to the setting, checks the sensor, door lock and controls, and explains what the repair involves.',
-      ],
-      covers: [
-        'Bake and broil element or igniter test',
-        'Oven temperature check against the set point',
-        'Temperature sensor resistance test',
-        'Surface burner, element and switch check',
-        'Door lock and hinge inspection',
-        'Control board and error code review',
-      ],
-    },
+    diagnostic: { heading: 'What the visit covers', paragraphs: [], covers: [] },
     repairOrReplace: {
       heading: 'Repair or replace your range?',
       paragraphs: [
-        'Ranges last a long time, often 13 to 15 years. Elements, igniters, sensors and switches are straightforward to replace. A cracked glass cooktop or a discontinued control board is the main reason to weigh replacement.',
+        'Ranges and ovens last a long time, often 13 to 15 years. Elements, igniters, sensors, switches and door locks are straightforward to replace. A cracked glass cooktop or a control board that is no longer made are the main reasons to weigh replacement.',
+        'Wall ovens and slide-in ranges deserve extra thought, because replacing them can mean cabinet changes. In most cases, repair is the simpler path for those.',
       ],
       points: [
-        'Element, igniter or sensor failure: repair',
-        'Cracked glass top on an older range: compare against replacement',
-        'Wall ovens and pro-style ranges: repair nearly always pays',
+        'Element, igniter, sensor or switch failure: repair',
+        'Cracked glass top on an older range: compare against a new range',
+        'Wall ovens and slide-in ranges: repair usually makes more sense',
       ],
     },
     safety:
       'If you smell gas, do not turn on lights or the stove. Leave the house and call your gas company from outside. Do not try to adjust gas valves or regulators yourself.',
-    brands: ['GE', 'Whirlpool', 'Frigidaire', 'Samsung', 'LG', 'KitchenAid', 'Maytag', 'Bosch', 'Kenmore'],
+    brands: ['GE', 'Whirlpool', 'Frigidaire', 'Samsung', 'LG', 'KitchenAid', 'Maytag', 'Bosch', 'Kenmore', 'Electrolux', 'Amana'],
     faqs: [
       {
-        q: 'Why does my gas oven take forever to heat?',
-        a: 'A weak igniter is the usual cause. It still glows, but it does not get hot enough to open the gas valve quickly, so the oven heats slowly or not at all.',
+        q: 'Why does my gas oven take so long to heat?',
+        a: 'A weak igniter is the usual cause. It still glows, but it does not draw enough current to open the gas safety valve quickly, so the oven heats slowly or not at all.',
       },
       {
-        q: 'My oven is 25 degrees off. Can that be fixed?',
-        a: 'Often it can be calibrated. If the sensor has drifted too far, replacing it brings the oven back to the right temperature.',
+        q: 'My oven runs 25 degrees off. Can that be fixed?',
+        a: 'Often it can be calibrated from the control panel. If the temperature sensor has drifted too far, replacing it brings the oven back in line.',
       },
       {
         q: 'Do you repair glass-top stoves?',
-        a: 'Yes, including radiant elements and switches. A cracked glass top can be replaced on many models, though on older ranges a new range may make more sense.',
+        a: 'Yes, including radiant elements and infinite switches. A cracked glass top can be replaced on many models, though on an older range a new range may make more sense.',
       },
       {
-        q: 'Is it safe to use my stove while the oven is broken?',
-        a: 'Usually, if the problem is limited to the oven. If anything smells like gas or burning wiring, stop using it and call.',
+        q: 'Is it safe to use the stovetop while the oven is broken?',
+        a: 'Usually, if the problem is limited to the oven. If anything smells like gas or burning wiring, stop using the whole range and call.',
       },
       {
-        q: 'Do you work on gas ranges?',
-        a: 'Gas range repair depends on the technician scheduled. Mention it is gas when you book so we can confirm.',
+        q: 'Do you repair wall ovens and cooktops?',
+        a: 'Yes. Built-in wall ovens and drop-in cooktops are part of the work. Give us the model number when you book so the technician can plan for the access.',
+      },
+      {
+        q: 'How much does oven or stove repair cost?',
+        a: 'It depends on the model and the part, so we do not list prices online. Call to discuss your repair needs. Have the brand, the model number and whether it is gas or electric ready.',
+      },
+      {
+        q: 'Where is the model number on my range?',
+        a: 'Pull out the storage drawer or open the oven door and look along the frame. On wall ovens and cooktops, check the frame edge or the underside. A photo of the label works.',
       },
     ],
     related: ['microwave', 'dishwasher', 'refrigerator'],
-    offeredVerified: false,
+    offeredVerified: true,
+    blocks: [
+      {
+        type: 'stopUsing',
+        heading: 'Smell gas or see sparks? Stop here first',
+        intro: 'Most oven and stove problems are an inconvenience. These are not.',
+        items: [
+          'You smell gas: do not turn anything on or off. Leave the house and call your gas utility from outside.',
+          'Sparks, arcing or a flash from a burner, element or the back of the range.',
+          'A burning plastic or electrical smell that is not food.',
+          'A glass cooktop that is cracked through. Stop using that surface.',
+          'The breaker trips when the oven or a burner turns on.',
+        ],
+        note: 'Gas valves, regulators and gas line connections are not do-it-yourself jobs.',
+      },
+      {
+        type: 'compare',
+        heading: 'Oven problems and cooktop problems come from different parts',
+        intro: 'Tell us which part of the range is acting up. It changes what the technician brings.',
+        columns: [
+          {
+            title: 'Inside the oven',
+            items: [
+              'Bake and broil elements on electric ovens',
+              'Hot surface igniter and gas safety valve on gas ovens',
+              'Temperature sensor and control board',
+              'Convection fan and its motor',
+              'Door lock assembly on self-clean ovens',
+            ],
+          },
+          {
+            title: 'On the cooktop',
+            items: [
+              'Coil elements and their receptacles',
+              'Radiant elements under a glass top',
+              'Infinite switches behind the knobs',
+              'Spark igniters and the spark module on gas burners',
+              'Burner caps and heads that sit out of place',
+            ],
+          },
+        ],
+      },
+      { type: 'symptoms' },
+      { type: 'inlineForm' },
+      {
+        type: 'quickAnswer',
+        heading: 'Is your oven running hot or cold? A simple test',
+        intro: 'Oven dials are often off by a little. Here is how to see by how much.',
+        steps: [
+          'Put an oven thermometer in the center of the middle rack.',
+          'Set the oven to 350°F and let it run for about 20 minutes after it says it is preheated.',
+          'Read the thermometer without opening the door if you can. Ovens swing a few degrees above and below the setting as they cycle, which is normal.',
+          'Take two or three readings a few minutes apart and average them.',
+          'If the average is more than about 25 degrees off, call us. It may be a calibration setting, a sensor or a heating part.',
+        ],
+      },
+      {
+        type: 'prose',
+        heading: 'Why a glowing igniter can still be the problem',
+        paragraphs: [
+          'Most gas ovens use a hot surface igniter wired in line with the gas safety valve. The valve only opens when enough current flows through the igniter. As an igniter ages, it can still glow orange while drawing too little current to open the valve, so the oven never lights or lights late.',
+          'That is why we test the igniter with a meter before blaming the valve or the control board. It is usually the less involved repair.',
+        ],
+      },
+      {
+        type: 'prose',
+        heading: 'Self-clean cycles: what to know before you press the button',
+        paragraphs: [
+          'A self-clean cycle heats the oven far above normal baking temperatures for a few hours to burn off spills. That heat is hard on parts that are already worn. Door locks, temperature sensors, thermal fuses and control boards often fail during or right after a self-clean, which is why so many oven calls start with "it was fine until I cleaned it."',
+          'If your oven is older or already acting up, wipe out loose spills by hand and skip the self-clean for now. Remove the racks unless your manual says they can stay, keep the kitchen ventilated, and do not try to force the door open while it is locked. If the lock does not release after the oven has cooled for a few hours, call us.',
+        ],
+      },
+      {
+        type: 'prose',
+        heading: 'Check your anti-tip bracket',
+        paragraphs: [
+          'Freestanding ranges are built to be secured with an anti-tip bracket at the back foot. Without it, the weight of a child standing on an open oven door can tip the range forward, along with whatever is cooking on top. If your range has been moved for cleaning or flooring, the bracket may no longer be engaged. We can check it during a visit.',
+        ],
+      },
+      {
+        type: 'process',
+        heading: 'How an oven or stove repair visit works',
+        steps: [
+          { title: 'Check power or gas', text: 'The technician confirms the range has power or gas supply before testing parts.' },
+          { title: 'Test the heat source', text: 'Elements, igniters, switches and the temperature sensor are tested with a meter.' },
+          { title: 'Explain and approve', text: 'You hear what failed and what the repair involves. Work starts after your OK.' },
+          { title: 'Repair and verify', text: 'After the repair, the oven or burner is run to confirm it heats correctly.' },
+        ],
+      },
+      { type: 'repairOrReplace' },
+      { type: 'brands', heading: 'Oven and range brands we repair', intro: 'We repair the major range, oven and cooktop brands found in Temple kitchens. Tell us the brand, model number and whether it is gas or electric when you book.', styles: ['Freestanding ranges', 'Slide-in ranges', 'Wall ovens', 'Cooktops', 'Electric and gas'] },
+      { type: 'payment' },
+      { type: 'faq' },
+    ],
   },
   {
     key: 'freezer',

@@ -458,7 +458,6 @@ export default async function ServicePage({ params }: Params) {
           { name: s.navLabel, path },
         ]}
         title={s.h1}
-        icon={<Icon name={s.icon} className="h-8 w-8" strokeWidth={1.6} />}
       >
         {!s.offeredVerified ? <VerifyTag label="CONFIRM THIS SERVICE IS OFFERED BEFORE PUBLISHING" /> : null}
         <p className="mt-3 text-lg leading-relaxed text-white/75 md:text-xl">{lead}</p>
