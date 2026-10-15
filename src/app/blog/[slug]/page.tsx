@@ -23,7 +23,7 @@ const find = (slug: string) => posts.find((p) => p.slug === slug);
 export async function generateMetadata({ params }: Params) {
   const p = find((await params).slug);
   if (!p) return {};
-  return pageMetadata({ title: `${p.title} | ${site.shortName}`, description: p.metaDescription, path: postHref(p), type: 'article' });
+  return pageMetadata({ title: p.metaTitle ?? `${p.title} | ${site.shortName}`, description: p.metaDescription, path: postHref(p), type: 'article' });
 }
 
 const fmt = (d: string) => new Date(`${d}T12:00:00`).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
@@ -137,6 +137,23 @@ export default async function PostPage({ params }: Params) {
                   Questions
                 </h2>
                 <FaqList faqs={p.faqs} />
+              </section>
+            ) : null}
+
+            {p.sources?.length ? (
+              <section aria-labelledby="post-sources" className="mt-14">
+                <h2 id="post-sources" className="text-[13px] font-semibold uppercase tracking-[0.14em] text-ink-muted">
+                  Sources
+                </h2>
+                <ul className="mt-4 space-y-2 text-[15px]">
+                  {p.sources.map((src) => (
+                    <li key={src.url}>
+                      <a href={src.url} className="text-ink underline decoration-flame/50 underline-offset-4 hover:decoration-flame" rel="noopener">
+                        {src.name}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
               </section>
             ) : null}
 

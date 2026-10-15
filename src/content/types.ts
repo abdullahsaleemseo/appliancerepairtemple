@@ -92,6 +92,8 @@ export type Section = {
 export type Post = {
   slug: string;
   title: string;
+  /** Title tag (60 characters or fewer). Falls back to "[title] | [short name]". */
+  metaTitle?: string;
   metaDescription: string;
   excerpt: string;
   published: string;
@@ -100,6 +102,8 @@ export type Post = {
   sections: Section[];
   safety: string;
   faqs: Faq[];
+  /** Public sources behind the facts in the article, listed at the end. */
+  sources?: { name: string; url: string }[];
 };
 
 export type Area = {

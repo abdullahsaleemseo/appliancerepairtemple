@@ -3,66 +3,114 @@ import type { Post } from './types';
 export const posts: Post[] = [
   {
     slug: 'refrigerator-not-cooling',
-    title: 'What to Do When Your Refrigerator Is Not Cooling',
+    title: 'Refrigerator Not Cooling? What to Check First and When to Call',
+    metaTitle: 'Refrigerator Not Cooling? What to Check First | Temple, TX',
     metaDescription:
-      'Refrigerator not cooling? Safe checks you can do in ten minutes, what the common causes are, and when to call a technician in Temple, TX.',
+      'Refrigerator not cooling? How to protect your food, safe checks to try first, what the symptoms point to, and when to call a technician in Temple, TX.',
     excerpt:
-      'Ten minutes of safe checks can tell you whether it is a quick fix or a service call. Here is what to look at first, and how to protect your food meanwhile.',
+      'A warm refrigerator is usually a fan, a defrost problem or dusty coils, not a dead compressor. Here is how to protect your food, what to check first and what the symptoms tell you.',
     published: '2026-10-14',
-    updated: '2026-10-14',
+    updated: '2026-10-15',
     service: 'refrigerator',
     sections: [
+      {
+        id: 'short-version',
+        heading: 'The short version',
+        list: [
+          'Keep the doors closed. A closed refrigerator keeps food safe for about 4 hours without cooling.',
+          'Check the temperature setting, the power and whether the doors are sealing.',
+          'Clean the condenser coils and make sure nothing blocks the vents inside.',
+          'Notice the pattern: freezer cold and fridge warm, both warm, or clicking. Each points to different parts.',
+          'If it is still warm after these checks, call a technician. Most causes are common, repairable parts.',
+        ],
+      },
       {
         id: 'protect-food',
         heading: 'First, protect the food',
         paragraphs: [
-          'Keep the doors closed as much as you can. A closed refrigerator stays at a safe temperature for about four hours. A full freezer holds for about 48 hours.',
-          'Put an appliance thermometer on a middle shelf. The fresh food side should be at or below 40°F and the freezer at 0°F. If the fridge has been above 40°F for more than two hours, perishables like milk, meat and leftovers should be thrown out.',
+          'Keep the doors shut as much as you can. According to USDA food safety guidance, a refrigerator that stays closed keeps food safe for about 4 hours. A full freezer holds its temperature for about 48 hours, or about 24 hours if it is half full.',
+          'Put an appliance thermometer on a middle shelf. The fresh-food section should be at or below 40°F and the freezer at or near 0°F. Perishable foods like meat, poultry, seafood, milk, eggs and leftovers that have been above 40°F for more than 2 hours should be thrown out. When in doubt, throw it out, and never taste food to decide whether it is safe.',
+          'If you have a cooler, move the most perishable items into it with ice. Frozen food that still has ice crystals or is at 40°F or below can be refrozen or cooked.',
         ],
       },
       {
         id: 'safe-checks',
-        heading: 'Safe checks you can do yourself',
+        heading: 'Safe checks to try first',
+        paragraphs: [
+          'Many warm-refrigerator calls turn out to have a simple cause. These checks take about fifteen minutes and need no tools beyond a vacuum.',
+        ],
         list: [
-          'Check the thermostat or control panel. Kids, cleaning and bumped dials all change settings.',
-          'Make sure the doors close fully. A tall item on a shelf or a drawer out of place can hold the door open just enough.',
-          'Run a dollar bill along the door seal. If it slides out with no resistance, the gasket may not be sealing.',
-          'Look at the vents inside the fridge and freezer. Packed food blocking them stops cold air from moving.',
-          'Unplug the fridge and vacuum the condenser coils, usually behind the bottom grille or on the back. Dusty coils make the compressor work harder.',
-          'Listen. Is the compressor humming? Is the fan inside the freezer running when the door switch is pressed?',
+          'Check the setting. Dials and touch controls get bumped during cleaning or by kids. Some models also have a showroom or demo mode that turns cooling off while the lights stay on.',
+          'Confirm power. If the light is off too, check the outlet and the breaker. A GFCI outlet in a garage or kitchen may have tripped.',
+          'Close the doors properly. A tall bottle, a drawer out of its track or a full door bin can hold a door open just enough to let warm air in.',
+          'Test the door seal. Close the door on a dollar bill. If it slides out with no resistance at several points, the gasket may not be sealing.',
+          'Clear the vents. Inside the fridge and freezer there are small vents that move cold air between the sections. Packed food in front of them stops the airflow.',
+          'Clean the condenser coils. Unplug the refrigerator, then vacuum the coils behind the bottom grille or on the back. Dusty coils make the system work harder and cool less.',
+          'Give it room. A refrigerator pushed tight into a cabinet or against a wall needs space to release heat. Check the clearance in your owner’s manual.',
+        ],
+        after: [
+          'If you changed a setting or cleaned the coils, give the refrigerator up to 24 hours to settle before deciding it still has a problem.',
         ],
       },
       {
-        id: 'common-causes',
-        heading: 'The usual causes',
+        id: 'what-it-means',
+        heading: 'What the symptoms point to',
         paragraphs: [
-          'If the freezer is cold and the fridge is warm, the evaporator coil has probably frosted over or the evaporator fan stopped. Both point to the defrost system or the fan motor.',
-          'If both sides are warm and you hear clicking every few minutes, the compressor is trying to start and failing. That is often the start relay, a small and common part.',
-          'If both sides are warm and the back of the fridge is quiet, the condenser fan, control board or compressor may be the problem.',
+          'Freezer cold, fridge warm. This is the most common pattern. Cold air for the fresh-food section usually comes from the freezer, so if it stops flowing, the fridge warms first. Common causes are a failed evaporator fan, a damper that is stuck closed, or a defrost problem that has let frost build up on the evaporator coil. Heavy frost on the back wall of the freezer is a strong clue that the defrost system has failed.',
+          'Both sections warm, with a click every few minutes. The compressor is trying to start and shutting off. That is often the start relay or overload, a small and common part, though it can also be the compressor itself.',
+          'Both sections warm and quiet at the back. Check whether the condenser fan near the compressor is turning. A failed condenser fan, a control board or a temperature sensor can stop cooling without much noise.',
+          'Runs all the time but never gets cold enough. Dirty coils, a weak fan, a bad door seal or an overloaded fridge are common causes. Less often, a sealed system problem such as a refrigerant leak.',
+          'Water under the crisper drawers or ice in the bottom of the freezer. A clogged defrost drain usually causes this, and it often comes with cooling problems because the same defrost system is involved.',
+        ],
+      },
+      {
+        id: 'temple-heat',
+        heading: 'Central Texas heat and garage refrigerators',
+        paragraphs: [
+          'In Temple, summer is when refrigerator calls peak. Higher kitchen temperatures and dusty coils add up, and a refrigerator that was barely keeping up in spring can fall behind in July.',
+          'Garage refrigerators and freezers have it harder. Many standard refrigerators are not designed to run in a space that gets very hot or close to freezing, and some will warm up or stop cycling properly in those conditions. If yours only misbehaves on the hottest or coldest days, that is useful information for the technician. Some manufacturers sell garage-ready models built for wider temperature ranges.',
         ],
       },
       {
         id: 'when-to-call',
         heading: 'When to call a technician',
         paragraphs: [
-          'Call if the checks above do not help, if you see heavy frost on the back wall of the freezer, or if the fridge is clicking but not running. These repairs need parts testing with a meter.',
+          'Call if the refrigerator is still warm after the checks above, if there is heavy frost on the back wall of the freezer, if it clicks but does not run, or if you see water collecting inside. These repairs need parts testing with a meter, and some need panels removed that are best left to a technician.',
+          'Most of the parts behind these problems, such as fans, relays, defrost heaters, sensors and thermostats, are common and reasonable to replace. A failed compressor or a refrigerant leak is a bigger repair. On a refrigerator past about 10 to 15 years old, the technician will help you weigh repair against replacement.',
         ],
         after: [
-          'Tell us the brand, model number and what you have already tried. It saves time on the visit.',
+          'When you call, have the brand, the model number from the label inside the fresh-food section, and a short description of what you have already tried. It saves time on the visit.',
         ],
       },
     ],
     safety:
-      'Unplug the refrigerator before cleaning coils or removing any panel. Do not cut or puncture tubing. Refrigerant work requires EPA certification.',
+      'Unplug the refrigerator before cleaning the coils or removing any panel. Do not chip at ice with sharp tools, and do not cut or puncture any tubing. Refrigerant work requires EPA certification.',
     faqs: [
       {
-        q: 'Should I turn my refrigerator off and back on?',
-        a: 'Unplugging it for a few minutes can reset an electronic control, but if the cause is frost or a failed part, it will warm up again.',
+        q: 'Should I unplug my refrigerator and plug it back in?',
+        a: 'Unplugging it for a few minutes can reset an electronic control. If the cause is frost or a failed part, it will warm up again, so watch the temperature over the next day.',
       },
       {
-        q: 'Can I manually defrost my refrigerator?',
-        a: 'You can, by emptying it, unplugging it and leaving the doors open for a day with towels down. It helps short term, but if the defrost system failed, the frost will come back.',
+        q: 'Can I defrost my refrigerator myself?',
+        a: 'You can, by moving the food, unplugging it and leaving the doors open with towels down for most of a day. It may restore cooling for a while, but if the defrost system failed, the frost will come back.',
       },
+      {
+        q: 'Why is my freezer cold but my fridge warm?',
+        a: 'Cold air for the fresh-food side usually comes from the freezer. A stopped evaporator fan, a stuck damper or frost blocking the coil cuts off that air. These are common repairs.',
+      },
+      {
+        q: 'How long does a refrigerator take to cool down after it is fixed?',
+        a: 'Often a few hours to start feeling cold, and up to 24 hours to reach a steady temperature, especially if it is full of warm food.',
+      },
+      {
+        q: 'Is it worth repairing an old refrigerator?',
+        a: 'Usually, if it is a fan, relay, defrost part or sensor. If the compressor or sealed system has failed on a refrigerator past about 10 to 15 years old, replacement often makes more sense.',
+      },
+    ],
+    sources: [
+      { name: 'USDA FSIS: Keep your food safe during emergencies', url: 'https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/emergencies/keep-your-food-safe-during-emergencies' },
+      { name: 'FoodSafety.gov: Food safety during a power outage', url: 'https://www.foodsafety.gov/food-safety-charts/food-safety-during-power-outage' },
+      { name: 'USDA FSIS: Refrigeration and food safety', url: 'https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/refrigeration' },
     ],
   },
   {
