@@ -602,6 +602,106 @@ export const areas: Area[] = [
     ],
     featuredServices: ['freezer', 'refrigerator', 'washer', 'dryer'],
   },
+  {
+    slug: 'troy-tx',
+    name: 'Troy',
+    metaTitle: 'Appliance Repair Troy TX | 8 Miles North of Temple',
+    metaDescription:
+      'Appliance repair in Troy, TX for refrigerators, freezers, washers, dryers, dishwashers and ovens, in town and on rural roads in the 76579 area. Call us.',
+    h1: 'Appliance Repair in Troy, TX, Just Up I-35 from Temple',
+    intro: [
+      'Appliance Repair Temple repairs refrigerators, freezers, washers, dryers, dishwashers, ovens and ranges in homes in and around Troy, TX. Same-day service is available, subject to technician availability, location, and current demand.',
+      'Troy sits beside I-35 about 8 miles north of Temple, which makes it one of the shorter drives on our routes. The town has been growing quickly. It counted 1,645 residents in 2010 and 2,375 in 2020, and the 76579 ZIP code reaches well past city limits into the farm and ranch country around it, even crossing into Falls County.',
+      'So a Troy call might be a newer home in a fresh subdivision or an older farmhouse a few miles down a county road. The visit works the same either way. The technician tests the appliance, tells you what failed and what the repair involves, and starts only after your OK.',
+    ],
+    travelNote:
+      'Troy visits are usually grouped with our north Temple routes along I-35. Call to confirm the earliest open time for your address.',
+    localPoints: [
+      {
+        heading: 'Newer homes in town',
+        text: 'With the population growing, Troy has added newer houses with the appliance package that came with the build. If an appliance is less than a year or two old, check the manufacturer’s warranty before you book, since independent repair may not be covered.',
+      },
+      {
+        heading: 'Farm and ranch properties',
+        text: 'Homes outside town often have a long driveway, a gate and a shop or barn with a spare refrigerator or a chest freezer. Tell us about gates, dogs and where the appliance is when you book. It saves time when the technician arrives.',
+      },
+      {
+        heading: 'Older farmhouses',
+        text: 'Older homes can have small kitchens, original water shutoffs and long dryer vent runs. On laundry calls the technician checks the vent and the hookups as well, because they cause many repeat failures.',
+      },
+      {
+        heading: 'Heavy-use laundry',
+        text: 'Work clothes, mud and dust are hard on a washer and dryer. Shake off dirt before a load, clean the lint screen every time and do not overload the drum. Those habits keep belts, pumps and bearings going longer.',
+      },
+    ],
+    sections: [
+      {
+        heading: 'Repair or replace?',
+        accent: 'How to decide.',
+        paragraphs: [
+          'Start with age. Most refrigerators, washers, dryers and ranges are built to last around 10 to 15 years, and dishwashers a little less. A failed part on a five-year-old appliance is almost always worth fixing. On an appliance near the end of that range, it depends on what failed.',
+          'Small parts like a belt, a relay, a fan motor, a door switch or a heating element are usually reasonable repairs at any age. A failed sealed system on an old refrigerator or a cracked tub on an old washer usually is not. A common rule of thumb: if the repair would cost more than half of what a comparable new appliance costs, replacement deserves a serious look.',
+          'The technician will tell you plainly which side of that line your appliance is on. You make the call.',
+        ],
+      },
+      {
+        heading: 'Repairs we handle',
+        accent: 'in and around Troy.',
+        paragraphs: [
+          'Refrigerators that run but do not cool, frost on the freezer wall and ice makers that quit are the most common kitchen calls. Fan motors, defrost parts and water valves are frequent fixes. Chest freezers that hum and click off often have a bad start relay.',
+          'Washers that will not drain or spin and dryers that run without heat come next. On every dryer call we check the vent, since a long or clogged vent is one of the most common reasons a dryer stops heating.',
+          'Dishwashers that leave dishes dirty or water in the tub, and ovens with a burned bake element or a temperature that has drifted, round out the list.',
+        ],
+      },
+      {
+        heading: 'How scheduling works',
+        accent: 'for Troy.',
+        paragraphs: [
+          'Call or send a request with your address, the appliance, the brand and what it is doing. We confirm the details by phone and set a visit window. We are open Monday to Saturday, 8:00 AM to 8:00 PM.',
+          'Our typical response is about 60 minutes during business hours. That is a typical figure, subject to technician availability, location, and current demand, not a guaranteed arrival time. Calling earlier in the day gives you a better shot at a same-day visit.',
+          'Before the visit, find the model number, usually on a label inside the door, under the lid or on the frame, and write down any error code. If the appliance is in a shop or barn, make sure the technician can reach it and the outlet behind it.',
+        ],
+      },
+    ],
+    zips: ['76579'],
+    zipsVerified: true,
+    nearby: ['Moody', 'Holland', 'Little River-Academy', 'Belton', "Morgan's Point Resort"],
+    faqs: [
+      {
+        q: 'Do you cover homes outside Troy city limits?',
+        a: 'Yes, across the 76579 ZIP code, which includes rural roads around town. Give us your address and we will confirm.',
+      },
+      {
+        q: 'Can you come to Troy the same day?',
+        a: 'Often. Troy is a short drive from Temple. Same-day service is available, subject to technician availability, location, and current demand.',
+      },
+      {
+        q: 'Is my 12-year-old refrigerator worth fixing?',
+        a: 'It depends on what failed. A fan, relay or defrost part is usually worth it. A sealed system failure on an older refrigerator usually is not. The technician will explain the options.',
+      },
+      {
+        q: 'Do you repair freezers and fridges in shops and barns?',
+        a: 'Yes. Make sure the technician can reach the back of the unit and the outlet, and let us know about any gates.',
+      },
+      {
+        q: 'My appliance is still under warranty. Should I call you?',
+        a: 'Contact the manufacturer first, since independent repair may not be covered by a factory warranty. If the warranty has expired or you are not sure, call us with the model number.',
+      },
+      {
+        q: 'Which appliances do you repair in Troy?',
+        a: 'Refrigerators, freezers, washers, dryers, dishwashers, ovens, ranges, cooktops and over-the-range microwaves, across the major brands.',
+      },
+      {
+        q: 'What happens if a part has to be ordered?',
+        a: 'Many common parts can be replaced on the first visit. Some are model-specific and have to be ordered. The technician will tell you if that is the case and what happens next.',
+      },
+      {
+        q: 'How much does appliance repair in Troy cost?',
+        a: 'It depends on the appliance and the part, so we do not list prices online. Call to discuss your repair needs with the brand and model number ready.',
+      },
+    ],
+    featuredServices: ['refrigerator', 'washer', 'dryer', 'freezer'],
+  },
 ];
 
 export const areaHref = (a: Area) => `/service-areas/${a.slug}/`;
