@@ -308,46 +308,101 @@ export const areas: Area[] = [
   {
     slug: 'salado-tx',
     name: 'Salado',
-    metaTitle: 'Appliance Repair in Salado, TX | Appliance Repair Temple',
+    metaTitle: 'Appliance Repair Salado TX | Village & Rural Homes',
     metaDescription:
-      'Appliance repair in Salado, TX for refrigerators, freezers, washers, dryers, dishwashers and ranges. Call to check availability or request service.',
-    h1: 'Appliance Repair in Salado, TX',
+      'Appliance repair in Salado, TX and the 76571 area for refrigerators, freezers, washers, dryers, dishwashers and ranges, in town or out on acreage. Call us.',
+    h1: 'Appliance Repair in Salado, TX, for Village Homes and Acreage',
     intro: [
-      'Salado is a small village south of Belton on I-35, along Salado Creek. Homes range from historic houses near Main Street to larger properties on acreage outside town. Those larger properties often have second refrigerators, chest freezers and shop appliances that get heavy use.',
-      'We repair refrigerators, freezers, washers, dryers, dishwashers and ranges in and around Salado. The technician explains the repair and gets your OK before starting.',
+      'Appliance Repair Temple repairs refrigerators, freezers, washers, dryers, dishwashers, ovens and ranges in Salado, TX and the countryside around it. Same-day service is available, subject to technician availability, location, and current demand.',
+      'Salado itself is small, with about 2,400 residents at the 2020 census, but the 76571 ZIP code covers roughly 125 square miles. Many of the calls we get from Salado come from homes on acreage outside the village, not from the streets near Main Street.',
+      'That shapes what we see. More chest freezers and second refrigerators in garages, shops and barns, longer drives between stops, and appliances that work hard through a Central Texas summer. The visit itself is the same anywhere: the technician finds what failed, explains the repair, and starts only after your OK.',
     ],
     travelNote:
-      'Salado is at the south edge of our area, so appointments are scheduled on specific days. Call to find the next open slot.',
+      'Salado is at the south end of our area, south of Belton along I-35, so visits are planned around our south routes. Call early and we will give you the earliest open time for your address.',
     localPoints: [
       {
-        heading: 'Rural property appliances',
-        text: 'Freezers and spare refrigerators in barns and shops face heat, dust and pests. Keeping the condenser area clean is the simplest thing you can do for them.',
+        heading: 'Freezers and fridges in barns and shops',
+        text: 'Spare refrigerators and chest freezers out in a barn or shop deal with heat, dust and the occasional mouse nest in the condenser area. Keep a few inches of clearance around the unit, vacuum the coils a couple of times a year and keep the floor around it clear.',
       },
       {
-        heading: 'Propane appliances',
-        text: 'Some homes outside town use propane for ranges and dryers. Tell us when you book, because propane appliances use different orifices and settings than natural gas.',
+        heading: 'Historic homes in the village',
+        text: 'Salado has nineteen sites on the National Register of Historic Places, and some of the older homes near the village center have tight kitchens and older wiring. If the technician sees anything electrical that should go to an electrician, you will be told plainly.',
       },
       {
-        heading: 'Older homes',
-        text: 'Historic homes can have tight kitchens and older wiring. The technician will flag anything on the electrical side that should go to an electrician.',
+        heading: 'Long driveways and gates',
+        text: 'For homes on acreage, tell us about gates, gate codes, dogs and where to park when you book. If the appliance is in an outbuilding, let us know which one. It saves time on arrival.',
+      },
+      {
+        heading: 'Power blips and surges',
+        text: 'Rural power lines see more outages and flickers during storms. If an appliance stopped after the power went out, check the breaker and any GFCI outlet first, then unplug it for a minute and plug it back in before you call.',
+      },
+    ],
+    sections: [
+      {
+        heading: 'Is that barn freezer',
+        accent: 'worth fixing?',
+        paragraphs: [
+          'Often, yes. Many freezer failures come down to a start relay, a thermostat or a fan motor, and those are reasonable repairs. If the freezer hums, clicks and shuts off every few minutes, that pattern often points to the start relay or the compressor.',
+          'A failed compressor on an older, small chest freezer is usually a different story, and the technician will tell you when a repair costs too much relative to the unit. While you wait, keep the lid closed. A full chest freezer holds its temperature longer than a half-empty one.',
+        ],
+      },
+      {
+        heading: 'Repairs we handle',
+        accent: 'around Salado.',
+        paragraphs: [
+          'Refrigerators that run but do not cool, frost on the freezer wall, ice makers that quit and water leaking under the crisper drawers are the most common kitchen calls. Fan motors, defrost parts and water valves are frequent fixes.',
+          'Washers that will not drain or spin and dryers that run without heat come next. On every dryer call we check the vent, since a long or crushed vent run is one of the most common reasons a dryer stops heating.',
+          'Dishwashers that leave a film or do not drain, and ovens with a burned bake element or a temperature that has drifted, round out the list.',
+        ],
+      },
+      {
+        heading: 'How scheduling works',
+        accent: 'for Salado.',
+        paragraphs: [
+          'Call or send a request with your address, the appliance, the brand and what it is doing. We confirm the details by phone and set a visit window. We are open Monday to Saturday, 8:00 AM to 8:00 PM.',
+          'Our typical response is about 60 minutes during business hours. That is a typical figure, subject to technician availability, location, and current demand, not a guaranteed arrival time. Salado is one of our longer drives, so calling earlier in the day gives you a better shot at a same-day visit.',
+          'Before the visit, find the model number, usually on a label inside the door, under the lid or on the frame, and write down any error code.',
+        ],
       },
     ],
     zips: ['76571'],
+    zipsVerified: true,
+    nearby: ['Belton', "Morgan's Point Resort", 'Harker Heights', 'Killeen', 'Nolanville'],
     faqs: [
       {
-        q: 'Do you come out to properties outside Salado?',
-        a: 'Give us the address or ZIP and we will confirm whether it is in range.',
+        q: 'Do you come out to properties outside the village?',
+        a: 'Yes. We serve the 76571 ZIP code, which reaches well beyond the village itself. Give us your address and we will confirm.',
       },
       {
-        q: 'Can you repair a propane range?',
-        a: 'Mention propane when you book so we can confirm the technician and parts before the visit.',
+        q: 'Can you come to Salado the same day?',
+        a: 'Sometimes. Same-day service is available, subject to technician availability, location, and current demand. Salado is at the south end of our routes, so calling early helps.',
       },
       {
         q: 'My chest freezer in the barn stopped. Is it worth repairing?',
-        a: 'If it is a relay, thermostat or fan, usually yes. A failed compressor on an older, small chest freezer is usually not worth repairing.',
+        a: 'If it is a relay, thermostat or fan, usually yes. A failed compressor on an older, small chest freezer is usually not worth repairing. The technician will tell you which it is.',
+      },
+      {
+        q: 'Do you repair propane ranges and dryers?',
+        a: 'Mention propane when you book. We will confirm whether we can take the job before scheduling the visit.',
+      },
+      {
+        q: 'My appliance stopped after a storm. What should I check?',
+        a: 'Check the breaker and any GFCI outlet, then unplug the appliance for a minute and plug it back in. If it still does not work, call us.',
+      },
+      {
+        q: 'Which appliances do you repair in Salado?',
+        a: 'Refrigerators, freezers, washers, dryers, dishwashers, ovens, ranges, cooktops and over-the-range microwaves, across the major brands.',
+      },
+      {
+        q: 'What happens if a part has to be ordered?',
+        a: 'Many common parts can be replaced on the first visit. Some are model-specific and have to be ordered. The technician will tell you if that is the case and what happens next.',
+      },
+      {
+        q: 'How much does appliance repair in Salado cost?',
+        a: 'It depends on the appliance and the part, so we do not list prices online. Call to discuss your repair needs with the brand and model number ready.',
       },
     ],
-    featuredServices: ['freezer', 'refrigerator', 'oven', 'dryer'],
+    featuredServices: ['freezer', 'refrigerator', 'washer', 'dryer'],
   },
 ];
 
