@@ -36,6 +36,22 @@ export type ApplianceKey =
 
 export type Symptom = { title: string; cause: string; fixable: string };
 
+/** Ordered page sections for a service page. Each appliance can use its own mix and order. */
+export type ServiceBlock =
+  | { type: 'quickAnswer'; heading: string; intro?: string; steps: string[]; note?: string }
+  | { type: 'symptoms' }
+  | { type: 'inlineForm' }
+  | { type: 'partsTable'; heading: string; intro?: string; rows: { part: string; job: string; signs: string }[] }
+  | { type: 'stopUsing'; heading: string; intro?: string; items: string[]; note?: string }
+  | { type: 'diyVsPro'; heading: string; intro?: string; diy: string[]; pro: string[] }
+  | { type: 'process'; heading: string; intro?: string; steps: { title: string; text: string }[] }
+  | { type: 'repairOrReplace' }
+  | { type: 'brands'; heading?: string; intro?: string; styles?: string[] }
+  | { type: 'prose'; heading: string; paragraphs: string[] }
+  | { type: 'payment' }
+  | { type: 'diagnostic' }
+  | { type: 'faq' };
+
 export type Service = {
   key: ApplianceKey;
   slug: string;
@@ -57,6 +73,8 @@ export type Service = {
   related: ApplianceKey[];
   /** Spec: only publish if the service is genuinely offered. */
   offeredVerified: boolean;
+  /** Page-specific section order. Services without it use the default layout. */
+  blocks?: ServiceBlock[];
 };
 
 export type Section = {
