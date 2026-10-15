@@ -8,7 +8,7 @@ import { JsonLd } from '@/components/JsonLd';
 import { MobileCallBar } from '@/components/MobileCallBar';
 import { SiteClient } from '@/components/SiteClient';
 import { EmergencyBanner, UtilityBar } from '@/components/UtilityBar';
-import { localBusinessSchema } from '@/lib/schema';
+import { localBusinessReady, localBusinessSchema, organizationSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
@@ -44,7 +44,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <MobileCallBar />
         <SiteClient />
         <Analytics />
-        <JsonLd data={localBusinessSchema()} />
+        <JsonLd data={localBusinessReady ? localBusinessSchema() : organizationSchema()} />
       </body>
     </html>
   );

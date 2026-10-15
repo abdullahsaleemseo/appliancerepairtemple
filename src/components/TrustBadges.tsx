@@ -5,11 +5,11 @@ import { VerifyTag } from './Verify';
 const items = [
   { claim: claims.licensedInsured, text: claims.licensedInsured.value, icon: 'shield' as const },
   { claim: claims.sameDayShort, text: claims.sameDayShort.value, icon: 'clock' as const },
-  { claim: claims.upfrontPricing, text: claims.upfrontPricing.value, icon: 'tag' as const },
-  { claim: claims.warranty, text: claims.warranty.value.short, icon: 'check' as const },
+  { claim: claims.yearsExperience, text: claims.yearsExperience.value.short, icon: 'calendar' as const },
+  { claim: claims.rating, text: `${claims.rating.value.value} Average Rating`, icon: 'star' as const },
 ];
 
-/** Inline trust row. Only claims that may be shown appear; draft builds tag unverified ones. */
+/** Inline trust row built only from verified business facts. */
 export function TrustBadges({ dark = false }: { dark?: boolean; tone?: string }) {
   const visible = items.filter((i) => canShow(i.claim));
   if (!visible.length) return null;
@@ -25,7 +25,7 @@ export function TrustBadges({ dark = false }: { dark?: boolean; tone?: string })
       </ul>
       {visible.some((i) => !i.claim.verified) ? (
         <p className="mt-2">
-          <VerifyTag label="USE OWNER'S REAL CREDENTIAL AND WARRANTY WORDING" />
+          <VerifyTag />
         </p>
       ) : null}
     </div>

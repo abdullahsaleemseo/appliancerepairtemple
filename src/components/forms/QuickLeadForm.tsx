@@ -51,7 +51,7 @@ export function QuickLeadForm({ formId, title, defaultAppliance, showIssue = tru
           </h2>
           <span className="inline-flex shrink-0 items-center gap-1.5 rounded-full bg-mint-soft px-2.5 py-1 text-[12px] font-semibold text-mint">
             <span className="h-1.5 w-1.5 animate-pulseDot rounded-full bg-mint" />
-            Free quote
+            Quick request
           </span>
         </div>
       ) : null}

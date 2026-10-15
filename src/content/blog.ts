@@ -37,7 +37,7 @@ export const posts: Post[] = [
         heading: 'The usual causes',
         paragraphs: [
           'If the freezer is cold and the fridge is warm, the evaporator coil has probably frosted over or the evaporator fan stopped. Both point to the defrost system or the fan motor.',
-          'If both sides are warm and you hear clicking every few minutes, the compressor is trying to start and failing. That is often the start relay, which is an inexpensive part.',
+          'If both sides are warm and you hear clicking every few minutes, the compressor is trying to start and failing. That is often the start relay, a small and common part.',
           'If both sides are warm and the back of the fridge is quiet, the condenser fan, control board or compressor may be the problem.',
         ],
       },
@@ -111,7 +111,7 @@ export const posts: Post[] = [
       },
       {
         q: 'Is a washer that won’t drain worth repairing?',
-        a: 'Usually yes. Pumps and lid switches are inexpensive compared to a new washer.',
+        a: 'Usually yes. Pumps and lid switches are common parts, and replacing one is a much smaller job than replacing the washer.',
       },
     ],
   },
@@ -211,7 +211,7 @@ export const posts: Post[] = [
         heading: 'Questions to ask the technician',
         list: [
           'What exactly failed, and why?',
-          'What does the repair cost, all in?',
+          'What does the repair involve, start to finish?',
           'Is anything else close to failing?',
           'Are parts still available for this model?',
           'Would you repair this one if it were yours?',

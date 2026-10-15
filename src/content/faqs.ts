@@ -15,11 +15,11 @@ export const generalFaqs: Faq[] = [
   },
   {
     q: 'What happens during a diagnostic visit?',
-    a: 'The technician checks the appliance, tests the parts most likely to have failed, explains what is wrong and gives you a price for the repair. Nothing is replaced until you approve the price.',
+    a: 'The technician checks the appliance, tests the parts most likely to have failed, explains what is wrong and what the repair involves. Nothing is replaced until you approve it.',
   },
   {
-    q: 'How much does a diagnostic visit cost?',
-    a: 'The diagnostic fee is quoted on the phone before the appointment is booked, so there are no surprises when the technician arrives.',
+    q: 'Can you tell me what the repair will involve before the visit?',
+    a: 'Repair needs vary by appliance, part and problem, so the technician confirms the cause on site. Call to discuss your appliance and we can talk through what to expect.',
   },
   {
     q: 'Is it worth repairing my appliance or should I replace it?',
@@ -47,7 +47,7 @@ export const generalFaqs: Faq[] = [
   },
   {
     q: 'Do I need to be home for the repair?',
-    a: 'An adult needs to be there to let the technician in and approve the repair price. Landlords can authorize a repair for a tenant if that is arranged when booking.',
+    a: 'An adult needs to be there to let the technician in and approve the repair. Landlords can authorize a repair for a tenant if that is arranged when booking.',
   },
   {
     q: 'What should I do before the technician arrives?',
@@ -59,18 +59,51 @@ export const generalFaqs: Faq[] = [
   },
 ];
 
-/** Homepage preview: four questions, linked to the full FAQ page. */
-export const homeFaqs: Faq[] = [generalFaqs[2], generalFaqs[3], generalFaqs[5], generalFaqs[9]];
+/** Homepage FAQs: the questions people ask before they call. Shown with FAQPage markup on the homepage. */
+export const homeFaqs: Faq[] = [
+  {
+    q: 'What appliances do you repair in Temple?',
+    a: 'Refrigerators, freezers, washers, dryers, dishwashers, ovens, ranges, cooktops and over-the-range microwaves. If yours is not on that list, call and ask before you rule it out.',
+  },
+  {
+    q: 'Do you offer same-day appliance repair?',
+    a: 'Yes. Same-day service is available, subject to technician availability, location, and current demand. Calling earlier in the day gives you a better shot at a same-day visit.',
+  },
+  {
+    q: 'How fast do you respond?',
+    a: 'Our typical response is about 60 minutes during business hours. It depends on technician availability, your location and how busy the day is, so treat it as a typical figure, not a guaranteed arrival time.',
+  },
+  {
+    q: 'What are your hours?',
+    a: 'Monday through Saturday, 8:00 AM to 8:00 PM. Requests sent outside those hours are answered when we reopen.',
+  },
+  {
+    q: 'How much will my repair cost?',
+    a: 'We do not list prices online because every repair depends on the appliance, the brand, the failed part and the problem. Call to discuss your repair needs. Having the model number and a short description of the problem ready makes that call more useful.',
+  },
+  {
+    q: 'Do you offer payment options?',
+    a: 'Yes. Flexible payment options are available. Call for service details and we will walk you through them.',
+  },
+  {
+    q: 'Are you licensed and insured?',
+    a: 'Yes. Appliance Repair Temple is licensed and insured.',
+  },
+  {
+    q: 'Should I repair my appliance or replace it?',
+    a: 'Look at age and condition. A newer appliance with one failed part, such as a fan, pump, igniter or valve, is usually worth repairing. An older unit with a major failure, such as a compressor or transmission, deserves a closer look. The technician will explain the options so you can decide.',
+  },
+];
 
-/** Main city page FAQs, focused on response times, fees, brands, areas and repair vs replace. */
+/** Main city page FAQs, focused on response times, brands, areas and repair vs replace. */
 export const cityFaqs: Faq[] = [
   {
     q: 'How fast can a technician get to my home in Temple?',
     a: 'It depends on the day. Temple is the center of our service area, so it usually has the most open slots. Call and we will give you the earliest time available.',
   },
   {
-    q: 'Is there a fee just to come out?',
-    a: 'There is a diagnostic fee for the visit. We tell you the amount on the phone before booking, along with whether it is credited toward the repair.',
+    q: 'What happens during the visit?',
+    a: 'The technician checks the appliance, tests the parts most likely to have failed and explains what is wrong. Call for service details before you book.',
   },
   {
     q: 'Do you repair the brand I have?',
@@ -82,10 +115,10 @@ export const cityFaqs: Faq[] = [
   },
   {
     q: 'Should I repair or replace an older appliance?',
-    a: 'If the repair is under half the cost of a new unit and the appliance has a few good years left, repair usually wins. The technician will give you the price and an honest opinion.',
+    a: 'If the repair is under half the cost of a new unit and the appliance has a few good years left, repair usually wins. The technician will explain the options and give you an honest opinion.',
   },
   {
     q: 'Can you work with my landlord or property manager?',
-    a: 'Yes. Let us know who approves the repair price and who will provide access, and we will coordinate with them.',
+    a: 'Yes. Let us know who approves the repair and who will provide access, and we will coordinate with them.',
   },
 ];

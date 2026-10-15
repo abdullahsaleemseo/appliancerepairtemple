@@ -26,7 +26,7 @@ export default function ReviewsPage() {
             <span>
               <Stars rating={Math.round(Number(claims.rating.value.value))} />
               <span className="mt-1 block text-white/60">
-                {claims.rating.value.count} reviews on {claims.rating.value.source}
+                Average customer rating
               </span>
             </span>
           </div>

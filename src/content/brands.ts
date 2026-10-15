@@ -10,10 +10,10 @@ export const brands: Brand[] = [
     name: 'Whirlpool',
     metaTitle: 'Whirlpool Appliance Repair in Temple, TX | Appliance Repair Temple',
     metaDescription:
-      'Whirlpool washer, dryer, refrigerator, dishwasher or range acting up in Temple, TX? Request a diagnostic visit and a written repair price.',
+      'Whirlpool washer, dryer, refrigerator, dishwasher or range acting up in Temple, TX? Request a diagnostic visit or call to discuss the repair.',
     intro: [
-      'Whirlpool is one of the most common appliance brands in Temple homes and rentals, and the company also makes Maytag, KitchenAid and Amana. That matters for repair: many parts are shared across those brands, so they are easy to find and usually reasonably priced.',
-      'We see Whirlpool laundry pairs, top-freezer and French door refrigerators, dishwashers and ranges every week. The technician diagnoses the problem, explains it, and gives you a price before starting.',
+      'Whirlpool is one of the most common appliance brands in Temple homes and rentals, and the company also makes Maytag, KitchenAid and Amana. That matters for repair: many parts are shared across those brands, so they are usually easy to find.',
+      'We see Whirlpool laundry pairs, top-freezer and French door refrigerators, dishwashers and ranges every week. The technician diagnoses the problem, explains it in plain terms, and gets your OK before starting the repair.',
     ],
     appliances: [
       { key: 'washer', note: 'Top-load (including Cabrio and agitator models) and front-load' },
@@ -26,11 +26,11 @@ export const brands: Brand[] = [
     issues: [
       {
         title: 'Top-load washer won’t spin or shows a lid lock code',
-        text: 'Newer top-loaders lock the lid before spinning. A worn lid lock or a broken strike on the lid stops the cycle. It is a common, inexpensive repair.',
+        text: 'Newer top-loaders lock the lid before spinning. A worn lid lock or a broken strike on the lid stops the cycle. It is a common repair.',
       },
       {
         title: 'Dryer runs but no heat',
-        text: 'Whirlpool dryers use a thermal fuse that blows when airflow is poor. The fuse is cheap, but the vent needs checking or it will happen again.',
+        text: 'Whirlpool dryers use a thermal fuse that blows when airflow is poor. The fuse is a small part, but the vent needs checking or it will happen again.',
       },
       {
         title: 'Refrigerator ice maker stops',
@@ -63,10 +63,10 @@ export const brands: Brand[] = [
     name: 'GE',
     metaTitle: 'GE Appliance Repair in Temple, TX | Appliance Repair Temple',
     metaDescription:
-      'GE refrigerator, range, dishwasher, washer or dryer problems in Temple, TX? Request a diagnostic visit and a written price before any repair.',
+      'GE refrigerator, range, dishwasher, washer or dryer problems in Temple, TX? Request a diagnostic visit or call to discuss the repair.',
     intro: [
       'GE appliances show up in a lot of Temple kitchens, especially ranges, refrigerators and dishwashers that came with the house. GE Appliances also sells the Profile, Café and Monogram lines, which share much of the same engineering.',
-      'The technician diagnoses the fault, explains what failed, and gives you a price before any work starts.',
+      'The technician diagnoses the fault, explains what failed, and gets your OK before any work starts.',
     ],
     appliances: [
       { key: 'oven', note: 'Electric and gas ranges, wall ovens, cooktops' },
@@ -116,10 +116,10 @@ export const brands: Brand[] = [
     name: 'Samsung',
     metaTitle: 'Samsung Appliance Repair in Temple, TX | Appliance Repair Temple',
     metaDescription:
-      'Samsung refrigerator ice maker, washer error code or dryer not heating in Temple, TX? Request a diagnostic visit and a written price.',
+      'Samsung refrigerator ice maker, washer error code or dryer not heating in Temple, TX? Request a diagnostic visit or call to discuss the repair.',
     intro: [
       'Samsung refrigerators and laundry are popular in newer homes around Temple. They are feature-heavy, and they report most faults as error codes, which helps narrow down the problem quickly.',
-      'The technician reads the code, confirms the failed part with testing, and gives you a price before any repair.',
+      'The technician reads the code, confirms the failed part with testing, and explains the repair before any work starts.',
     ],
     appliances: [
       { key: 'refrigerator', note: 'French door, side-by-side, bottom-freezer' },

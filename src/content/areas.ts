@@ -15,7 +15,7 @@ export const areas: Area[] = [
     h1: 'Appliance Repair in Belton, TX',
     intro: [
       'Belton is the Bell County seat and sits right next to Temple, so it is one of the shortest drives on our route. Calls here range from older homes near downtown and the University of Mary Hardin-Baylor to newer subdivisions on the west side toward Lake Belton.',
-      'We handle the same work in Belton that we do in Temple: refrigerators that stop cooling, washers that will not drain, dryers with no heat, dishwashers that leave dishes dirty and ovens that will not hold temperature. The technician diagnoses the problem and gives you a price before starting.',
+      'We handle the same work in Belton that we do in Temple: refrigerators that stop cooling, washers that will not drain, dryers with no heat, dishwashers that leave dishes dirty and ovens that will not hold temperature. The technician diagnoses the problem and explains the repair before starting.',
     ],
     travelNote:
       'Belton calls are usually scheduled on the same routes as south and west Temple, so availability tends to match Temple’s.',
@@ -26,7 +26,7 @@ export const areas: Area[] = [
       },
       {
         heading: 'Student rentals and move-outs',
-        text: 'Rentals near campus see heavy appliance use and turnover. If you manage a rental, tell us who should approve the repair price and who will let the technician in.',
+        text: 'Rentals near campus see heavy appliance use and turnover. If you manage a rental, tell us who should approve the repair and who will let the technician in.',
       },
       {
         heading: 'Lake-area homes',
@@ -36,8 +36,8 @@ export const areas: Area[] = [
     zips: ['76513'],
     faqs: [
       {
-        q: 'Do you charge extra to come to Belton?',
-        a: 'Ask when you call. Trip and diagnostic fees are explained before the appointment is booked.',
+        q: 'How do I book a repair in Belton?',
+        a: 'Call, or send the request form with your ZIP code, appliance and the problem. We confirm the details and a visit window with you by phone.',
       },
       {
         q: 'Can you come to Belton the same day?',
@@ -45,7 +45,7 @@ export const areas: Area[] = [
       },
       {
         q: 'Do you repair appliances in rental homes near UMHB?',
-        a: 'Yes. Tenants and landlords both call us. We need the property manager or owner to approve the repair price if they are paying.',
+        a: 'Yes. Tenants and landlords both call us. We need the property manager or owner to approve the repair if they are paying.',
       },
       {
         q: 'Which appliances do you repair in Belton?',
@@ -63,7 +63,7 @@ export const areas: Area[] = [
     h1: 'Appliance Repair in Killeen, TX',
     intro: [
       'Killeen is the largest city in Bell County and the home of Fort Hood, which means a lot of households move in and out on military orders. Many of our Killeen calls come from renters, landlords and families who just moved in and found that an appliance did not survive the last tenant.',
-      'The technician repairs refrigerators, washers, dryers, dishwashers and ranges across Killeen, tells you what failed, and gives you a price before starting.',
+      'The technician repairs refrigerators, washers, dryers, dishwashers and ranges across Killeen, tells you what failed, and gets your OK before starting.',
     ],
     travelNote:
       'Killeen is farther west than our Temple routes, so appointments are grouped by day. Calling early gives you a better shot at a same-week slot.',
@@ -74,11 +74,11 @@ export const areas: Area[] = [
       },
       {
         heading: 'Landlord and property manager calls',
-        text: 'We can work with the property manager directly. Have the authorization and payment details ready so the technician can start once the price is approved.',
+        text: 'We can work with the property manager directly. Have the authorization and payment details ready so the technician can start once the repair is approved.',
       },
       {
         heading: 'Laundry that runs every day',
-        text: 'Large households wear out dryer belts, rollers and washer suspension faster. These are inexpensive parts and usually worth fixing.',
+        text: 'Large households wear out dryer belts, rollers and washer suspension faster. These are common parts and usually worth fixing.',
       },
     ],
     zips: ['76541', '76542', '76543', '76549'],
@@ -111,7 +111,7 @@ export const areas: Area[] = [
     h1: 'Appliance Repair in Harker Heights, TX',
     intro: [
       'Harker Heights sits between Killeen and Belton along I-14, with a lot of newer construction and homes near Stillhouse Hollow Lake. Many homes here have built-in French door refrigerators, front-load laundry and gas or dual-fuel ranges.',
-      'We repair all of those. The technician diagnoses the fault, explains it in plain terms, and gives you a price before starting.',
+      'We repair all of those. The technician diagnoses the fault, explains it in plain terms, and gets your OK before starting.',
     ],
     travelNote:
       'Harker Heights appointments are usually grouped with Killeen and Belton routes on the same day.',
@@ -155,14 +155,14 @@ export const areas: Area[] = [
     h1: 'Appliance Repair in Salado, TX',
     intro: [
       'Salado is a small village south of Belton on I-35, along Salado Creek. Homes range from historic houses near Main Street to larger properties on acreage outside town. Those larger properties often have second refrigerators, chest freezers and shop appliances that get heavy use.',
-      'We repair refrigerators, freezers, washers, dryers, dishwashers and ranges in and around Salado. The technician gives you a price before starting any repair.',
+      'We repair refrigerators, freezers, washers, dryers, dishwashers and ranges in and around Salado. The technician explains the repair and gets your OK before starting.',
     ],
     travelNote:
       'Salado is at the south edge of our area, so appointments are scheduled on specific days. Call to find the next open slot.',
     localPoints: [
       {
         heading: 'Rural property appliances',
-        text: 'Freezers and spare refrigerators in barns and shops face heat, dust and pests. Keeping the condenser area clean is the cheapest thing you can do for them.',
+        text: 'Freezers and spare refrigerators in barns and shops face heat, dust and pests. Keeping the condenser area clean is the simplest thing you can do for them.',
       },
       {
         heading: 'Propane appliances',
@@ -185,7 +185,7 @@ export const areas: Area[] = [
       },
       {
         q: 'My chest freezer in the barn stopped. Is it worth repairing?',
-        a: 'If it is a relay, thermostat or fan, usually yes. A failed compressor on an older, small chest freezer is usually not worth the cost.',
+        a: 'If it is a relay, thermostat or fan, usually yes. A failed compressor on an older, small chest freezer is usually not worth repairing.',
       },
     ],
     featuredServices: ['freezer', 'refrigerator', 'oven', 'dryer'],

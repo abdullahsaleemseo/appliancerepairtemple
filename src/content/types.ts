@@ -53,7 +53,6 @@ export type Service = {
   repairOrReplace: { heading: string; paragraphs: string[]; points: string[] };
   safety: string;
   brands: string[];
-  pricingRows: { label: string; note: string }[];
   faqs: Faq[];
   related: ApplianceKey[];
   /** Spec: only publish if the service is genuinely offered. */

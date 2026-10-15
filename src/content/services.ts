@@ -17,7 +17,7 @@ export const services: Service[] = [
     h1: 'Refrigerator Repair in Temple, TX',
     intro: [
       'A warm refrigerator is a problem with a clock on it. Food safety guidance says perishables should not sit above 40°F for more than about two hours, so the sooner a technician looks at it, the more groceries you keep.',
-      'We repair top-freezer, bottom-freezer, side-by-side and French door refrigerators in Temple and the surrounding Bell County towns. Most calls come down to a short list of parts: a fan motor, a defrost component, a start relay, a water valve or a control board. A technician tests each one, tells you which part failed and what the repair costs, and only then starts work.',
+      'We repair top-freezer, bottom-freezer, side-by-side and French door refrigerators in Temple and the surrounding Bell County towns. Most calls come down to a short list of parts: a fan motor, a defrost component, a start relay, a water valve or a control board. A technician tests each one, tells you which part failed and what the repair involves, and only then starts work.',
       'Temple summers make this worse. A fridge that is already struggling will often give out in July and August, especially one in a hot garage.',
     ],
     symptomsHeading: 'Refrigerator problems we diagnose',
@@ -26,13 +26,13 @@ export const services: Service[] = [
         title: 'Not cooling, or only partly cooling',
         cause:
           'If the freezer is cold but the fridge side is warm, the usual suspects are a frosted-over evaporator coil (a defrost failure) or an evaporator fan that stopped. If both sides are warm, look at the condenser fan, dirty condenser coils, the start relay or the compressor itself.',
-        fixable: 'Fan motors, defrost parts and relays are common, affordable repairs.',
+        fixable: 'Fan motors, defrost parts and relays are common repairs.',
       },
       {
         title: 'Freezer warm or soft ice cream',
         cause:
           'Frost buildup on the back panel points to the defrost heater, defrost thermostat or defrost timer/control. A clicking sound every few minutes with no cooling usually means the compressor is trying to start and the relay or compressor is failing.',
-        fixable: 'Defrost system repairs are routine. Compressor work is a bigger decision, and we will tell you the cost up front.',
+        fixable: 'Defrost system repairs are routine. Compressor work is a bigger decision, and we will talk it through with you before anything is done.',
       },
       {
         title: 'Leaking water on the floor',
@@ -62,7 +62,7 @@ export const services: Service[] = [
     diagnostic: {
       heading: 'What the diagnostic visit covers',
       paragraphs: [
-        'The technician checks temperatures on both sides, listens to the compressor and fans, looks for frost patterns on the evaporator, and tests the suspect parts with a meter. You get a clear explanation of what failed and a price before any repair starts.',
+        'The technician checks temperatures on both sides, listens to the compressor and fans, looks for frost patterns on the evaporator, and tests the suspect parts with a meter. You get a clear explanation of what failed before any repair starts.',
       ],
       covers: [
         'Temperature readings in the fresh food and freezer sections',
@@ -70,7 +70,7 @@ export const services: Service[] = [
         'Defrost heater, sensor and control testing',
         'Door gasket and leveling check',
         'Water valve, filter housing and ice maker inspection',
-        'A written price for the repair before work begins',
+        'A clear explanation of the repair before work begins',
       ],
     },
     repairOrReplace: {
@@ -81,19 +81,13 @@ export const services: Service[] = [
       ],
       points: [
         'Under 8 years old: repair is usually the right call',
-        'Sealed system failure on a 12+ year old unit: get a replacement price too',
-        'Built-in and high-end models: repair almost always beats replacement cost',
+        'Sealed system failure on a 12+ year old unit: compare against a new unit too',
+        'Built-in and high-end models: repair usually makes more sense than replacement',
       ],
     },
     safety:
       'Unplug the refrigerator before cleaning the condenser coils, and do not open sealed system lines. Refrigerant work requires EPA Section 608 certification.',
     brands: ['Samsung', 'LG', 'Whirlpool', 'GE', 'Frigidaire', 'Maytag', 'KitchenAid', 'Kenmore', 'Amana'],
-    pricingRows: [
-      { label: 'Diagnostic visit', note: 'Testing and a written repair price' },
-      { label: 'Fan motor replacement', note: 'Evaporator or condenser fan' },
-      { label: 'Defrost system repair', note: 'Heater, thermostat, sensor or control' },
-      { label: 'Ice maker or water valve', note: 'Part plus labor' },
-    ],
     faqs: [
       {
         q: 'How long can food stay in a refrigerator that stopped cooling?',
@@ -109,7 +103,7 @@ export const services: Service[] = [
       },
       {
         q: 'Do you repair refrigerator compressors?',
-        a: 'Compressor and sealed system repairs are possible on many models, but they cost more. The technician will confirm the diagnosis, give you a price, and tell you plainly whether it is worth it for your unit.',
+        a: 'Compressor and sealed system repairs are possible on many models, but they cost more. The technician will confirm the diagnosis, explain what the repair involves, and tell you plainly whether it is worth it for your unit.',
       },
       {
         q: 'Should I keep a refrigerator in my garage in Temple?',
@@ -132,7 +126,7 @@ export const services: Service[] = [
     h1: 'Washer Repair in Temple, TX',
     intro: [
       'A washer that stops mid-cycle leaves you with a drum full of water and a pile of wet clothes. Most of the time the fix is a drain pump, a lid switch, a door lock or a worn belt, and it can be done in one visit.',
-      'We repair top-load and front-load washers in Temple and nearby Bell County communities, including direct-drive and belt-drive models and newer machines with electronic controls. The technician runs the machine, reads any error codes, finds the failed part and gives you a price before any work begins.',
+      'We repair top-load and front-load washers in Temple and nearby Bell County communities, including direct-drive and belt-drive models and newer machines with electronic controls. The technician runs the machine, reads any error codes, finds the failed part and explains the repair before any work begins.',
     ],
     symptomsHeading: 'Washer problems we diagnose',
     symptoms: [
@@ -146,7 +140,7 @@ export const services: Service[] = [
         title: 'Won’t spin',
         cause:
           'A washer will refuse to spin if it cannot confirm the lid or door is locked, so a bad lid switch or door lock is a frequent cause. Worn drive belts, a failed motor coupling or a bad shift actuator are next on the list.',
-        fixable: 'Switches, locks, belts and couplers are inexpensive parts.',
+        fixable: 'Switches, locks, belts and couplers are common parts.',
       },
       {
         title: 'Leaking water',
@@ -176,7 +170,7 @@ export const services: Service[] = [
     diagnostic: {
       heading: 'What the diagnostic visit covers',
       paragraphs: [
-        'The technician runs a test cycle, checks fill, agitation, drain and spin, pulls error codes where the model stores them, and tests the suspect parts. You get the diagnosis and the repair price before any work starts.',
+        'The technician runs a test cycle, checks fill, agitation, drain and spin, pulls error codes where the model stores them, and tests the suspect parts. You get the diagnosis and an explanation of the repair before any work starts.',
       ],
       covers: [
         'Fill, wash, drain and spin test',
@@ -195,18 +189,12 @@ export const services: Service[] = [
       points: [
         'Drain, lock and belt repairs: almost always worth it',
         'Bearing or transmission failure on a 10+ year old washer: compare against replacement',
-        'High-efficiency front-loaders: repair usually wins over the price of a new one',
+        'High-efficiency front-loaders: repair is usually the better choice',
       ],
     },
     safety:
       'Unplug the washer and shut off both water valves before checking hoses. Water left in a front-loader will spill when the drain filter is opened, so have towels and a shallow pan ready.',
     brands: ['Whirlpool', 'Maytag', 'Samsung', 'LG', 'GE', 'Kenmore', 'Speed Queen', 'Electrolux', 'Frigidaire'],
-    pricingRows: [
-      { label: 'Diagnostic visit', note: 'Testing and a written repair price' },
-      { label: 'Drain pump replacement', note: 'Part plus labor' },
-      { label: 'Lid switch or door lock', note: 'Part plus labor' },
-      { label: 'Suspension or shock replacement', note: 'Set of rods or shocks' },
-    ],
     faqs: [
       {
         q: 'My washer is full of water and won’t drain. What should I do?',
@@ -218,7 +206,7 @@ export const services: Service[] = [
       },
       {
         q: 'Is it worth fixing a front-load washer?',
-        a: 'Usually yes. Door boots, pumps and locks are common fixes. Tub bearing failure is the expensive one, and the technician will tell you the cost before you decide.',
+        a: 'Usually yes. Door boots, pumps and locks are common fixes. Tub bearing failure is the big one, and the technician will explain what it involves before you decide.',
       },
       {
         q: 'Do you repair stackable washer and dryer units?',
@@ -245,7 +233,7 @@ export const services: Service[] = [
     h1: 'Dryer Repair in Temple, TX',
     intro: [
       'When a dryer runs but the clothes come out damp, the cause is usually a heating element, a thermal fuse, a gas valve coil or a vent so clogged the dryer protects itself by shutting off the heat.',
-      'We repair electric and gas dryers in Temple and the surrounding area. The technician checks airflow first, because a restricted vent causes or contributes to a large share of dryer failures. Then the heating parts get tested one at a time, and you get a price before any repair.',
+      'We repair electric and gas dryers in Temple and the surrounding area. The technician checks airflow first, because a restricted vent causes or contributes to a large share of dryer failures. Then the heating parts get tested one at a time, and you hear what failed before any repair.',
     ],
     symptomsHeading: 'Dryer problems we diagnose',
     symptoms: [
@@ -289,7 +277,7 @@ export const services: Service[] = [
     diagnostic: {
       heading: 'What the diagnostic visit covers',
       paragraphs: [
-        'The technician measures airflow at the vent, checks the heating circuit with a meter, inspects the belt, rollers and idler, and on gas models watches the ignition sequence. You get the cause and the price before anything is replaced.',
+        'The technician measures airflow at the vent, checks the heating circuit with a meter, inspects the belt, rollers and idler, and on gas models watches the ignition sequence. You hear the cause before anything is replaced.',
       ],
       covers: [
         'Exhaust airflow and vent restriction check',
@@ -303,23 +291,17 @@ export const services: Service[] = [
     repairOrReplace: {
       heading: 'Repair or replace your dryer?',
       paragraphs: [
-        'Dryers are simple machines and most parts are inexpensive. Heating, belt and roller repairs usually make sense even on an older dryer. Replacement only tends to win when the drum, motor and control board are all worn out at once.',
+        'Dryers are simple machines and most parts are easy to replace. Heating, belt and roller repairs usually make sense even on an older dryer. Replacement only tends to win when the drum, motor and control board are all worn out at once.',
       ],
       points: [
         'No heat or broken belt: almost always worth repairing',
-        'Control board failure on a basic 12+ year old dryer: compare prices',
+        'Control board failure on a basic 12+ year old dryer: compare against a new dryer',
         'Clean the vent at least once a year to protect the parts you paid for',
       ],
     },
     safety:
       'Lint buildup is a fire risk. Clean the lint screen every load. If you smell gas near a gas dryer, leave the house and call your gas utility from outside before calling for repair.',
     brands: ['Whirlpool', 'Maytag', 'Samsung', 'LG', 'GE', 'Kenmore', 'Speed Queen', 'Electrolux', 'Frigidaire'],
-    pricingRows: [
-      { label: 'Diagnostic visit', note: 'Testing and a written repair price' },
-      { label: 'Heating element or igniter', note: 'Part plus labor' },
-      { label: 'Belt and idler pulley', note: 'Part plus labor' },
-      { label: 'Drum roller kit', note: 'Part plus labor' },
-    ],
     faqs: [
       {
         q: 'Why does my dryer keep blowing thermal fuses?',
@@ -358,7 +340,7 @@ export const services: Service[] = [
     h1: 'Dishwasher Repair in Temple, TX',
     intro: [
       'Standing water in the bottom of the tub, dishes that come out gritty, or a puddle under the door. Those three account for most dishwasher calls, and most of them come back to a clogged filter, a drain pump, an inlet valve or a worn door seal.',
-      'We repair built-in dishwashers in Temple and nearby towns. Central Texas water tends to leave mineral scale, which clogs spray arms and inlet screens over time, so the technician checks for that on every call. You get the diagnosis and the repair price before anything is replaced.',
+      'We repair built-in dishwashers in Temple and nearby towns. Central Texas water tends to leave mineral scale, which clogs spray arms and inlet screens over time, so the technician checks for that on every call. You get the diagnosis and an explanation of the repair before anything is replaced.',
     ],
     symptomsHeading: 'Dishwasher problems we diagnose',
     symptoms: [
@@ -372,7 +354,7 @@ export const services: Service[] = [
         title: 'Dishes not getting clean',
         cause:
           'Clogged spray arms, a dirty filter, low water fill from a bad inlet valve, or a wash motor losing power. Hard water scale on the spray arm holes is common in this area.',
-        fixable: 'Most cleaning problems are solved with parts under $100 plus labor.',
+        fixable: 'Most cleaning problems are solved with small parts or a thorough cleaning.',
       },
       {
         title: 'Leaking under the door',
@@ -402,7 +384,7 @@ export const services: Service[] = [
     diagnostic: {
       heading: 'What the diagnostic visit covers',
       paragraphs: [
-        'The technician runs a short cycle, checks fill level and drain, inspects the filter and spray arms, tests the inlet valve, pump and heating element, and looks underneath for leaks. You get the cause and the price first.',
+        'The technician runs a short cycle, checks fill level and drain, inspects the filter and spray arms, tests the inlet valve, pump and heating element, and looks underneath for leaks. You hear the cause first.',
       ],
       covers: [
         'Fill and drain test',
@@ -427,12 +409,6 @@ export const services: Service[] = [
     safety:
       'Turn off the dishwasher circuit breaker before working near the wiring under the kitchen sink or behind the toe kick, and shut the hot water supply valve before disconnecting any line.',
     brands: ['Bosch', 'Whirlpool', 'KitchenAid', 'GE', 'Samsung', 'LG', 'Frigidaire', 'Maytag', 'Kenmore'],
-    pricingRows: [
-      { label: 'Diagnostic visit', note: 'Testing and a written repair price' },
-      { label: 'Drain pump replacement', note: 'Part plus labor' },
-      { label: 'Water inlet valve', note: 'Part plus labor' },
-      { label: 'Door latch or gasket', note: 'Part plus labor' },
-    ],
     faqs: [
       {
         q: 'Why is there water in the bottom of my dishwasher?',
@@ -471,7 +447,7 @@ export const services: Service[] = [
     h1: 'Oven & Stove Repair in Temple, TX',
     intro: [
       'An oven that will not heat, or heats 50 degrees off, usually has a failed bake or broil element, a weak igniter on a gas model, or a temperature sensor that has drifted. Stovetop problems tend to be a burner element, an infinite switch or a dirty igniter.',
-      'We repair electric and gas ranges, wall ovens and cooktops in Temple and nearby. The technician tests the parts, checks the actual oven temperature against the setting, and gives you a price before starting.',
+      'We repair electric and gas ranges, wall ovens and cooktops in Temple and nearby. The technician tests the parts, checks the actual oven temperature against the setting, and explains the repair before starting.',
     ],
     symptomsHeading: 'Oven and stove problems we diagnose',
     symptoms: [
@@ -515,7 +491,7 @@ export const services: Service[] = [
     diagnostic: {
       heading: 'What the diagnostic visit covers',
       paragraphs: [
-        'The technician checks power or gas supply, tests elements or the igniter, compares actual oven temperature to the setting, checks the sensor, door lock and controls, and gives you a written price.',
+        'The technician checks power or gas supply, tests elements or the igniter, compares actual oven temperature to the setting, checks the sensor, door lock and controls, and explains what the repair involves.',
       ],
       covers: [
         'Bake and broil element or igniter test',
@@ -529,7 +505,7 @@ export const services: Service[] = [
     repairOrReplace: {
       heading: 'Repair or replace your range?',
       paragraphs: [
-        'Ranges last a long time, often 13 to 15 years. Elements, igniters, sensors and switches are inexpensive to replace. A cracked glass cooktop or a discontinued control board is the main reason to weigh replacement.',
+        'Ranges last a long time, often 13 to 15 years. Elements, igniters, sensors and switches are straightforward to replace. A cracked glass cooktop or a discontinued control board is the main reason to weigh replacement.',
       ],
       points: [
         'Element, igniter or sensor failure: repair',
@@ -540,12 +516,6 @@ export const services: Service[] = [
     safety:
       'If you smell gas, do not turn on lights or the stove. Leave the house and call your gas company from outside. Do not try to adjust gas valves or regulators yourself.',
     brands: ['GE', 'Whirlpool', 'Frigidaire', 'Samsung', 'LG', 'KitchenAid', 'Maytag', 'Bosch', 'Kenmore'],
-    pricingRows: [
-      { label: 'Diagnostic visit', note: 'Testing and a written repair price' },
-      { label: 'Bake or broil element', note: 'Part plus labor' },
-      { label: 'Gas oven igniter', note: 'Part plus labor' },
-      { label: 'Temperature sensor', note: 'Part plus labor' },
-    ],
     faqs: [
       {
         q: 'Why does my gas oven take forever to heat?',
@@ -557,7 +527,7 @@ export const services: Service[] = [
       },
       {
         q: 'Do you repair glass-top stoves?',
-        a: 'Yes, including radiant elements and switches. A cracked glass top can be replaced on many models, though on older ranges the cost may push you toward a new one.',
+        a: 'Yes, including radiant elements and switches. A cracked glass top can be replaced on many models, though on older ranges a new range may make more sense.',
       },
       {
         q: 'Is it safe to use my stove while the oven is broken?',
@@ -584,7 +554,7 @@ export const services: Service[] = [
     h1: 'Freezer Repair in Temple, TX',
     intro: [
       'A full freezer can hold hundreds of dollars of meat and food, so a freezer that starts to warm up deserves a fast look. Keep the lid or door shut. A full freezer holds a safe temperature for about 48 hours if it stays closed.',
-      'We repair standalone upright and chest freezers in Temple and the surrounding area. Garage freezers are a big part of the work here, because Texas summer heat pushes them hard. The technician tests the compressor, fans, defrost system and thermostat, and gives you a price before any repair.',
+      'We repair standalone upright and chest freezers in Temple and the surrounding area. Garage freezers are a big part of the work here, because Texas summer heat pushes them hard. The technician tests the compressor, fans, defrost system and thermostat, and explains the repair before any work.',
     ],
     symptomsHeading: 'Freezer problems we diagnose',
     symptoms: [
@@ -610,7 +580,7 @@ export const services: Service[] = [
         title: 'Clicking and not running',
         cause:
           'The compressor is trying to start and failing. Often the start relay or overload, sometimes the compressor.',
-        fixable: 'Relay replacement is quick and inexpensive.',
+        fixable: 'Relay replacement is quick.',
       },
       {
         title: 'Water under a chest freezer',
@@ -628,7 +598,7 @@ export const services: Service[] = [
     diagnostic: {
       heading: 'What the diagnostic visit covers',
       paragraphs: [
-        'The technician measures temperature, checks the compressor, relay and fans, inspects the door or lid seal, and tests defrost parts on frost-free models. You get a written price before any work.',
+        'The technician measures temperature, checks the compressor, relay and fans, inspects the door or lid seal, and tests defrost parts on frost-free models. You hear what failed before any work starts.',
       ],
       covers: [
         'Temperature readings',
@@ -642,23 +612,17 @@ export const services: Service[] = [
     repairOrReplace: {
       heading: 'Repair or replace your freezer?',
       paragraphs: [
-        'Freezers usually last 10 to 20 years. Relays, thermostats, fans and seals are worth fixing. A sealed system failure on an older, inexpensive chest freezer usually is not, and the technician will say so.',
+        'Freezers usually last 10 to 20 years. Relays, thermostats, fans and seals are worth fixing. A sealed system failure on an older, basic chest freezer usually is not, and the technician will say so.',
       ],
       points: [
         'Relay, fan, thermostat or seal: repair',
-        'Compressor failure on a small or older chest freezer: replacement is usually cheaper',
+        'Compressor failure on a small or older chest freezer: replacement usually makes more sense',
         'Large uprights and built-in columns: repair usually pays',
       ],
     },
     safety:
       'Unplug before cleaning coils. Do not chip ice with sharp tools, because puncturing a cooling line ends the life of the freezer.',
     brands: ['Frigidaire', 'GE', 'Whirlpool', 'Kenmore', 'Maytag', 'Amana', 'Samsung', 'LG'],
-    pricingRows: [
-      { label: 'Diagnostic visit', note: 'Testing and a written repair price' },
-      { label: 'Start relay or overload', note: 'Part plus labor' },
-      { label: 'Door or lid gasket', note: 'Part plus labor' },
-      { label: 'Defrost system repair', note: 'Frost-free uprights' },
-    ],
     faqs: [
       {
         q: 'How long will food stay frozen if my freezer stops?',
@@ -692,8 +656,8 @@ export const services: Service[] = [
       'Over-the-range or built-in microwave not heating in Temple, TX? Request a diagnostic visit for door switches, turntables, fans and controls.',
     h1: 'Microwave Repair in Temple, TX',
     intro: [
-      'Repair makes the most sense on over-the-range and built-in microwaves, where replacement means extra installation work. Countertop microwaves are usually cheaper to replace than repair.',
-      'In Temple and nearby towns, the common microwave calls are no heat, a dead keypad, a turntable that stopped, or a vent fan or light that failed. The technician tests parts with the unit safely discharged, then gives you a price.',
+      'Repair makes the most sense on over-the-range and built-in microwaves, where replacement means extra installation work. Countertop microwaves are usually better replaced than repaired.',
+      'In Temple and nearby towns, the common microwave calls are no heat, a dead keypad, a turntable that stopped, or a vent fan or light that failed. The technician tests parts with the unit safely discharged, then explains what the repair involves.',
     ],
     symptomsHeading: 'Microwave problems we diagnose',
     symptoms: [
@@ -716,7 +680,7 @@ export const services: Service[] = [
       {
         title: 'Turntable not turning',
         cause: 'A failed turntable motor or a worn coupler under the glass tray.',
-        fixable: 'Inexpensive motor or coupler replacement.',
+        fixable: 'Motor or coupler replacement.',
       },
       {
         title: 'Vent fan or light not working',
@@ -726,7 +690,7 @@ export const services: Service[] = [
       {
         title: 'Sparking inside',
         cause: 'Metal in the cavity, a burned waveguide cover or damaged interior paint. Stop using it.',
-        fixable: 'Waveguide covers are cheap. Paint damage may mean replacement.',
+        fixable: 'Waveguide covers are simple to replace. Paint damage may mean replacement.',
       },
     ],
     diagnostic: {
@@ -746,7 +710,7 @@ export const services: Service[] = [
     repairOrReplace: {
       heading: 'Repair or replace your microwave?',
       paragraphs: [
-        'For countertop units, replacing is usually cheaper. For over-the-range and built-in units, a door switch, fuse or turntable repair is worth doing. Magnetron replacement depends on the age and the price of the part.',
+        'For countertop units, replacing usually makes more sense. For over-the-range and built-in units, a door switch, fuse or turntable repair is worth doing. Magnetron replacement depends on the age of the unit and whether the part is still available.',
       ],
       points: [
         'Countertop microwave: replace',
@@ -757,15 +721,10 @@ export const services: Service[] = [
     safety:
       'Do not open a microwave cabinet. The high-voltage capacitor can hold a dangerous charge long after the unit is unplugged.',
     brands: ['GE', 'Whirlpool', 'Samsung', 'LG', 'KitchenAid', 'Frigidaire', 'Maytag', 'Bosch'],
-    pricingRows: [
-      { label: 'Diagnostic visit', note: 'Testing and a written repair price' },
-      { label: 'Door switch and fuse', note: 'Part plus labor' },
-      { label: 'Turntable motor', note: 'Part plus labor' },
-    ],
     faqs: [
       {
         q: 'Is it worth repairing a microwave?',
-        a: 'For over-the-range and built-in models, often yes. For countertop units, usually no, because a new one costs less than a service visit.',
+        a: 'For over-the-range and built-in models, often yes. For countertop units, usually no. Replacement is normally the simpler choice.',
       },
       {
         q: 'Why does my microwave run but not heat?',

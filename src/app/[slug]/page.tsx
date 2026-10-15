@@ -12,7 +12,7 @@ import { HowItWorks } from '@/components/HowItWorks';
 import { Icon } from '@/components/Icon';
 import { JsonLd } from '@/components/JsonLd';
 import { PageHero } from '@/components/PageHero';
-import { PricingTable } from '@/components/PricingBlock';
+import { PaymentNote } from '@/components/PaymentNote';
 import { ReviewsBlock, hasVerifiedReviews } from '@/components/ReviewsBlock';
 import { ServicePageView } from '@/components/SiteClient';
 import { TrustBadges } from '@/components/TrustBadges';
@@ -40,7 +40,7 @@ export async function generateMetadata({ params }: Params) {
 const processSteps = [
   { title: 'Book', text: 'Call or send a request. We confirm a visit window.' },
   { title: 'Diagnose', text: 'The technician tests the parts and finds the fault.' },
-  { title: 'Approve', text: 'You get the price. Work starts only after you say yes.' },
+  { title: 'Approve', text: 'You hear what failed and what the fix involves. Work starts only after you say yes.' },
   { title: 'Repair and test', text: 'The part is replaced and the appliance is run to confirm the fix.' },
 ];
 
@@ -139,13 +139,9 @@ export default async function ServicePage({ params }: Params) {
             </ul>
           </section>
 
-          <section aria-labelledby="pricing-heading" className="reveal">
-            <h2 id="pricing-heading" className={h2}>
-              {s.name} repair <span className="accent text-flame">pricing</span>
-            </h2>
-            <p className="mb-8 mt-4 text-ink-body">Typical ranges for common jobs. Your exact price comes after the diagnosis.</p>
-            <PricingTable rows={s.pricingRows} />
-          </section>
+          <div className="reveal">
+            <PaymentNote />
+          </div>
 
           <section aria-labelledby="process-heading" className="reveal">
             <h2 id="process-heading" className={`${h2} mb-10`}>
@@ -234,7 +230,7 @@ export default async function ServicePage({ params }: Params) {
 
         <aside className="hidden lg:block" aria-label="Request a quote">
           <div className="sticky top-28">
-            <QuickLeadForm formId={`service_${s.key}_sidebar`} title="Get my free quote" defaultAppliance={s.key} />
+            <QuickLeadForm formId={`service_${s.key}_sidebar`} title="Request service" defaultAppliance={s.key} />
           </div>
         </aside>
       </div>

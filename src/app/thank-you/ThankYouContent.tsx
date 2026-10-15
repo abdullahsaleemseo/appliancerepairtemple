@@ -38,7 +38,7 @@ export function ThankYouContent() {
   const steps = [
     { title: 'We review your request', text: 'We look at the appliance, the problem and your ZIP code.' },
     { title: 'We call to schedule', text: 'You get a visit window that fits your day.' },
-    { title: 'The technician visits', text: 'Diagnosis first, then a price. Work starts after you say yes.' },
+    { title: 'The technician visits', text: 'Diagnosis first, then an explanation of the repair. Work starts after you say yes.' },
   ];
 
   return (

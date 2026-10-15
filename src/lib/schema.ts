@@ -1,4 +1,4 @@
-import { canShow, claims, site } from '@/config/site';
+import { canShow, site } from '@/config/site';
 import type { Faq } from '@/content/types';
 import { absoluteUrl } from './seo';
 
@@ -9,9 +9,24 @@ const areaServed = [
   ...['Belton', 'Killeen', 'Harker Heights', 'Salado'].map((name) => ({ '@type': 'City', name: `${name}, ${site.stateAbbr}` })),
 ];
 
+/** Minimal organization identity: name, URL and logo only, no unverified business facts. */
+export function organizationSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    '@id': businessId,
+    name: site.brandName,
+    url: site.url,
+    logo: `${site.url}/brand/logo-on-light.svg`,
+  };
+}
+
+/** LocalBusiness markup is only emitted once the phone number and business details are verified. */
+export const localBusinessReady = site.phone.verified;
+
 /**
  * Service-area business: no address property, per Google's guidance for businesses
- * without a customer-facing location. Unverified phone and hours are left out in production.
+ * without a customer-facing location.
  */
 export function localBusinessSchema() {
   const data: Record<string, unknown> = {
@@ -94,5 +109,3 @@ export function articleSchema(opts: { title: string; description: string; path: 
   };
 }
 
-/** Review markup is only allowed once real reviews are displayed on the page. */
-export const reviewSchemaAllowed = claims.rating.verified;

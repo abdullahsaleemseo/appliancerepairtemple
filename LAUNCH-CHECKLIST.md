@@ -6,24 +6,19 @@ Nothing below may be invented. Each item needs confirmation from the business ow
 - [ ] `site.phone`: real number (or call tracking number that keeps NAP consistent), then `verified: true`.
       The phone shows in production even when unverified, because the site needs a number to work. Replace the 555 number before launch.
 - [ ] `site.email`, then `verified: true`
-- [ ] `site.hours`: real hours (the brief says Mon-Sat 8am-8pm, the spec says 8am-6pm; confirm which), then `verified: true`
+- [x] `site.hours`: Monday to Saturday, 8:00 AM to 8:00 PM (verified)
 - [ ] `site.spanishSpoken`: only if the owner confirms
 - [ ] `site.social`: real profiles only
 - [ ] `site.emergencyBanner.enabled`: switch on only on days with open same-day slots
 
 ## Claims (`claims` in `src/config/site.ts`)
-- [ ] Licensed & insured wording (Texas has no general appliance repair license; use the owner's actual credentials,
-      such as insurance and EPA Section 608 certification)
-- [ ] Same-day service
-- [ ] Upfront pricing
-- [ ] Warranty: real length and terms
-- [ ] Background-checked technicians
-- [ ] Rating, review count and platform
-- [ ] Repairs completed, years in business, response time
+Verified by the owner on Oct 15, 2026: Licensed & Insured, Same-Day Service, 4+ Years of Experience, 100+ Repairs Completed,
+4.9 Average Rating, Typical Response about 60 minutes, Flexible Payment Options Available, Mon-Sat 8 AM to 8 PM.
+- [ ] Platform and review count behind the 4.9 rating (needed before showing a source or adding review markup)
+- [ ] Brand list (`claims.brandsServiced`)
 - [ ] Callback time shown on the thank-you page
-- [ ] Diagnostic fee and whether it is credited toward the repair
-- [ ] Payment and financing options
 - [ ] Gas appliance service
+- [x] Pricing policy: no prices, fees, ranges, coupons or financing terms anywhere on the site
 
 ## Content
 - [ ] Confirm each service is offered, then set `offeredVerified: true` in `services.ts` (microwave especially)

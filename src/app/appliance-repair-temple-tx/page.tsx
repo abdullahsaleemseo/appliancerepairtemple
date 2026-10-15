@@ -66,7 +66,7 @@ const problems = [
   },
   {
     title: 'Washer shaking across the floor',
-    text: 'An unlevel machine or worn suspension rods and shocks. The parts are inexpensive.',
+    text: 'An unlevel machine or worn suspension rods and shocks. These are common parts.',
     key: 'washer' as const,
   },
 ];
@@ -74,7 +74,7 @@ const problems = [
 const expectSteps = [
   { title: 'You call or send a request', text: 'Tell us the appliance, the brand and what it is doing. We confirm a visit window.' },
   { title: 'The technician diagnoses it', text: 'Parts get tested with a meter, not guessed at. You hear what failed and why.' },
-  { title: 'You approve the price', text: 'You get the repair price before any work starts. If it is not worth fixing, we say so.' },
+  { title: 'You approve the repair', text: 'You hear what failed and what the fix involves before any work starts. If it is not worth fixing, we say so.' },
 ];
 
 export default function CityPage() {
@@ -92,7 +92,7 @@ export default function CityPage() {
       <PageHero crumbs={[{ name: `Appliance Repair ${site.city}`, path }]} title={`Appliance Repair in ${site.city}, ${site.state}`}>
         <p className="text-lg leading-relaxed text-white/70 md:text-xl">
           Most breakdowns in {site.city} come down to a handful of parts: a fan motor, a pump, a heating element, a switch or a
-          valve. We find the one that failed, replace only that, and tell you the price before starting.
+          valve. We find the one that failed, replace only that, and explain the repair before starting.
         </p>
         <div className="mt-8">
           <CtaRow location="city_hero" dark />

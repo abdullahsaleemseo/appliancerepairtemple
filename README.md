@@ -38,7 +38,7 @@ domain can be indexed. On Vercel, set these in Project Settings > Environment Va
 | What | File |
 |---|---|
 | Brand name, phone, email, hours, ZIPs, nearby towns, banner toggle | `src/config/site.ts` (`site`) |
-| Trust claims, stats, warranty, diagnostic fee, payment options | `src/config/site.ts` (`claims`) |
+| Verified business facts (licensed, same-day, experience, repairs, rating, response time, payment options) | `src/config/site.ts` (`claims`) |
 | Service pages (7 appliances) | `src/content/services.ts` |
 | Brand pages | `src/content/brands.ts` |
 | Nearby-city pages | `src/content/areas.ts` |
@@ -46,7 +46,6 @@ domain can be indexed. On Vercel, set these in Project Settings > Environment Va
 | Blog posts | `src/content/blog.ts` |
 | Reviews and review platform links | `src/content/reviews.ts` |
 | Hero photo | `heroPhoto` in `src/components/HeroVisual.tsx` (put the file in `public/images/`) |
-| Service pricing | `pricingRows[].price` in `services.ts` (rows without a price keep the table in draft) |
 
 To clone for another market, change `site` (city, slugs, ZIPs), rewrite the content files with real local copy, and
 rename `src/app/appliance-repair-temple-tx/` to match the new `routes.cityPage`.
@@ -75,6 +74,10 @@ A successful submission redirects to `/thank-you/`, which fires `generate_lead` 
 Set `NEXT_PUBLIC_GA_ID` to load GA4 (after the page is interactive). Events:
 `click_to_call` (every `tel:` link, with its location), `form_start`, `generate_lead`, `cta_click`, `service_page_view`.
 UTM parameters and click IDs from the first page of a visit are stored for the session and sent with the lead.
+
+## Pricing policy
+
+No prices, diagnostic fees, price ranges, coupons, financing terms or cost estimates anywhere on the site. Use non-price CTAs such as "Call for service details".
 
 ## Content rules
 

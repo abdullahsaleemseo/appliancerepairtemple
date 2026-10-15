@@ -8,8 +8,8 @@ const defaultSteps = [
     text: 'We call you back, check the schedule and confirm a visit window that works for you.',
   },
   {
-    title: 'Diagnosis and a price first',
-    text: 'The technician finds the problem and tells you the repair price. Work starts only after you say yes.',
+    title: 'Diagnosis before repair',
+    text: 'The technician finds the problem and explains what the repair involves. Work starts only after you say yes.',
   },
 ];
 
