@@ -200,105 +200,198 @@ export const services: Service[] = [
     navLabel: 'Washer Repair',
     icon: 'washer',
     card: 'Won’t drain, won’t spin, leaking or shaking hard.',
-    metaTitle: 'Washer Repair in Temple, TX | Appliance Repair Temple',
+    metaTitle: 'Washer Repair Temple TX | Top-Load & Front-Load',
     metaDescription:
-      'Washing machine not draining, not spinning or leaking in Temple, TX? Request service for top-load and front-load washers. Call or book online.',
-    h1: 'Washer Repair in Temple, TX',
+      'Washer won’t drain, spin or stop leaking? Washer repair in Temple, TX for top-load and front-load machines. Same-day service available. Call (254) 555-0147.',
+    h1: 'Top-Load & Front-Load Washer Repair in Temple, TX',
     intro: [
-      'A washer that stops mid-cycle leaves you with a drum full of water and a pile of wet clothes. Most of the time the fix is a drain pump, a lid switch, a door lock or a worn belt, and it can be done in one visit.',
-      'We repair top-load and front-load washers in Temple and nearby Bell County communities, including direct-drive and belt-drive models and newer machines with electronic controls. The technician runs the machine, reads any error codes, finds the failed part and explains the repair before any work begins.',
+      'Washer stuck full of water, refusing to spin or leaking across the laundry room floor? Appliance Repair Temple repairs top-load and front-load washing machines in homes across Temple, TX, including stacked laundry centers and high-efficiency models. Same-day service is available, subject to technician availability, location, and current demand.',
+      'Most washer breakdowns trace back to a handful of parts: the lid or door lock, the drain pump, a water inlet valve, the drive belt or coupler, or the suspension. Where the cycle stops tells you a lot about which one failed, so that is where the technician starts. You hear what failed and what the repair involves before any work begins.',
     ],
-    symptomsHeading: 'Washer problems we diagnose',
+    symptomsHeading: 'Washer problems we fix most',
     symptoms: [
       {
         title: 'Won’t drain',
         cause:
-          'The most common cause is a clogged drain pump filter or a sock caught in the pump. After that, check for a kinked drain hose or a pump motor that has failed. On front-loaders, a hum with no draining usually means the pump is jammed.',
+          'The most common cause is a sock, coin or hair tie caught in the drain pump or its filter. After that, look for a kinked drain hose, a clogged house drain or a pump motor that has failed. A hum with no water moving usually means the pump is jammed.',
         fixable: 'Pump clearing and pump replacement are among the most common washer repairs.',
       },
       {
-        title: 'Won’t spin',
+        title: 'Won’t spin, clothes come out soaked',
         cause:
-          'A washer will refuse to spin if it cannot confirm the lid or door is locked, so a bad lid switch or door lock is a frequent cause. Worn drive belts, a failed motor coupling or a bad shift actuator are next on the list.',
-        fixable: 'Switches, locks, belts and couplers are common parts.',
+          'A washer will not spin until it confirms the lid or door is locked and the drum has drained. A bad lid lock, a broken lid strike, a drain problem, a worn belt or a failed shift actuator on top-loaders are the usual reasons.',
+        fixable: 'Locks, strikes, belts and actuators are standard replacement parts.',
       },
       {
         title: 'Leaking water',
         cause:
-          'Front-loaders often leak from a torn door boot seal. Other sources: fill hoses, the pump, a cracked tub or worn tub seal. Where the puddle forms usually tells the technician where to look.',
+          'Front-loaders often leak from a torn door boot seal. Other sources are the fill hoses, the drain pump, a loose drain hose or, less often, a worn tub seal. Where the puddle forms usually points to the source.',
         fixable: 'Door boots, hoses and pumps are replaceable. Tub seal leaks take more labor.',
       },
       {
-        title: 'Shaking, walking or banging during spin',
+        title: 'Shaking, banging or walking across the floor',
         cause:
-          'Start with an unbalanced load and an unlevel machine. If it still bangs, top-loaders often have worn suspension rods and front-loaders have worn shock absorbers or springs.',
+          'Start with an uneven load and an unlevel machine. If it still bangs with a balanced load, top-loaders usually have worn suspension rods and front-loaders have worn shock absorbers or springs.',
         fixable: 'Suspension rods and shocks are routine replacements.',
       },
       {
         title: 'Won’t start or stops mid-cycle',
         cause:
-          'Check the outlet and breaker first. Beyond that, a failed door lock, lid switch, water level sensor or control board can stop a cycle.',
-        fixable: 'The technician checks each part in order and replaces only what failed.',
+          'Check the outlet and the breaker first. Past that, a door lock that will not engage, a lid switch, the water level sensor or the control board can stop a cycle cold.',
+        fixable: 'The technician tests each part in order and replaces only what failed.',
       },
       {
-        title: 'Bad smell or mildew',
+        title: 'Won’t fill or fills slowly',
         cause:
-          'Front-load washers trap moisture in the door seal and drain filter. Detergent overuse and a slow-draining pump make it worse.',
-        fixable: 'Usually a cleaning and maintenance issue. We will show you what to clean and how often.',
+          'Both water valves behind the machine should be fully open. A slow or uneven fill usually means clogged inlet screens or a failing water inlet valve. Hard water makes screen clogs more likely.',
+        fixable: 'Screen cleaning or inlet valve replacement fixes most fill problems.',
+      },
+      {
+        title: 'Bad smell or residue on clothes',
+        cause:
+          'Front-load washers trap moisture in the door seal and the pump filter. Too much detergent, non-HE detergent and a slow drain make it worse.',
+        fixable: 'Usually a cleaning issue. We will show you what to clean and how often.',
       },
     ],
-    diagnostic: {
-      heading: 'What the diagnostic visit covers',
-      paragraphs: [
-        'The technician runs a test cycle, checks fill, agitation, drain and spin, pulls error codes where the model stores them, and tests the suspect parts. You get the diagnosis and an explanation of the repair before any work starts.',
-      ],
-      covers: [
-        'Fill, wash, drain and spin test',
-        'Error code readout on electronic models',
-        'Drain pump and filter inspection',
-        'Lid switch or door lock test',
-        'Belt, coupler and suspension check',
-        'Hose and door seal inspection for leaks',
-      ],
-    },
+    diagnostic: { heading: 'What the visit covers', paragraphs: [], covers: [] },
     repairOrReplace: {
       heading: 'Repair or replace your washer?',
       paragraphs: [
-        'Most washers last 10 to 13 years. Pumps, switches, belts, locks and suspension parts are almost always worth fixing. A failed transmission or tub bearing on an older top-loader is a closer call, because the labor is heavy.',
+        'Most washers last 10 to 13 years. Locks, pumps, valves, belts and suspension parts are almost always worth fixing, even on an older machine. A failed transmission or worn tub bearings on a 10-year-old top-loader is a closer call, because those jobs take far more labor.',
+        'High-efficiency front-loaders are usually worth repairing unless the bearings or the drum have failed. The technician will tell you plainly which side of that line your washer is on.',
       ],
       points: [
-        'Drain, lock and belt repairs: almost always worth it',
-        'Bearing or transmission failure on a 10+ year old washer: compare against replacement',
-        'High-efficiency front-loaders: repair is usually the better choice',
+        'Lock, pump, valve, belt or suspension: repair',
+        'Bearings or transmission on a 10+ year old washer: compare against a new one',
+        'Stacked laundry centers: repair usually beats replacing both machines',
       ],
     },
     safety:
-      'Unplug the washer and shut off both water valves before checking hoses. Water left in a front-loader will spill when the drain filter is opened, so have towels and a shallow pan ready.',
-    brands: ['Whirlpool', 'Maytag', 'Samsung', 'LG', 'GE', 'Kenmore', 'Speed Queen', 'Electrolux', 'Frigidaire'],
+      'Unplug the washer and shut off both water valves before checking hoses. Water left in a front-loader will spill when the filter is opened, so have towels and a shallow pan ready.',
+    brands: ['Whirlpool', 'Maytag', 'Samsung', 'LG', 'GE', 'Kenmore', 'Speed Queen', 'Electrolux', 'Frigidaire', 'Amana'],
     faqs: [
       {
         q: 'My washer is full of water and won’t drain. What should I do?',
-        a: 'Turn it off and unplug it. On a front-loader you can drain it through the small access door at the bottom front, which holds the pump filter. Have towels ready. If the filter is clear and it still won’t drain, the pump likely needs replacement.',
+        a: 'Turn it off, unplug it and shut the water valves. On a front-loader, drain it through the small access panel at the bottom front, with towels and a pan ready. If the pump filter is clear and it still will not drain, the pump has likely failed and it is time to call.',
       },
       {
-        q: 'Why does my washer shake so much?',
-        a: 'Most of the time it is an uneven load or the washer is not level. If it still shakes with a balanced load, the suspension rods or shock absorbers are probably worn.',
+        q: 'Why does my washer shake so hard during the spin cycle?',
+        a: 'Usually an uneven load or a machine that is not level. If it still shakes with a balanced load, the suspension rods on a top-loader or the shock absorbers on a front-loader are probably worn.',
       },
       {
-        q: 'Is it worth fixing a front-load washer?',
-        a: 'Usually yes. Door boots, pumps and locks are common fixes. Tub bearing failure is the big one, and the technician will explain what it involves before you decide.',
+        q: 'Why does my front-load washer smell?',
+        a: 'Moisture and detergent residue collect in the door seal and pump filter. Wipe the seal after the last load, leave the door open to dry, clean the filter every few months and use HE detergent in the right amount.',
       },
       {
-        q: 'Do you repair stackable washer and dryer units?',
-        a: 'Stacked and all-in-one laundry centers are serviceable. Tell us the model when you book so the technician can plan for the extra access work.',
+        q: 'What does the error code on my washer mean?',
+        a: 'Codes point to a system, such as draining, the door lock or water level, and the exact meaning varies by brand and model. Write the code down and tell us when you call. It helps the technician bring the likely parts.',
       },
       {
-        q: 'What does an error code on my washer mean?',
-        a: 'Codes point to a system, like draining or the door lock, not always a single part. Write the code down and tell us when you call. It helps the technician bring the likely parts.',
+        q: 'Do you repair stacked washer and dryer units?',
+        a: 'Yes. Stacked laundry centers take more access work, so mention it when you book and the technician can plan for it.',
+      },
+      {
+        q: 'How much does washer repair cost?',
+        a: 'It depends on the machine and the failed part, so we do not list prices online. Call to discuss your repair needs. Have the brand, model number and a short description of what the washer is doing ready.',
+      },
+      {
+        q: 'Where is the model number on my washer?',
+        a: 'On top-loaders, look under the lid or on the back of the control panel. On front-loaders, check the door frame or the inside of the door. A photo of the label works.',
       },
     ],
     related: ['dryer', 'dishwasher', 'refrigerator'],
-    offeredVerified: false,
+    offeredVerified: true,
+    blocks: [
+      {
+        type: 'cycleStages',
+        heading: 'Where in the cycle does your washer stop?',
+        intro: 'Notice the point where things go wrong. It narrows the problem down fast.',
+        rows: [
+          { stage: 'Start', what: 'Nothing happens, or it beeps and stops', parts: 'Door or lid lock, lid switch, control board, power' },
+          { stage: 'Fill', what: 'No water, a slow fill or the wrong temperature', parts: 'Water inlet valve, clogged inlet screens, kinked hoses' },
+          { stage: 'Wash', what: 'Hums but does not agitate or tumble', parts: 'Drive belt, motor coupler, shift actuator, motor' },
+          { stage: 'Drain', what: 'Water stays in the drum', parts: 'Drain pump, pump filter, drain hose' },
+          { stage: 'Spin', what: 'Clothes come out soaking wet', parts: 'Lid lock, drain problem, belt, actuator, suspension' },
+          { stage: 'Any time', what: 'Water under the machine', parts: 'Door boot seal, fill hoses, pump, tub seal' },
+        ],
+      },
+      { type: 'symptoms' },
+      { type: 'inlineForm' },
+      {
+        type: 'compare',
+        heading: 'Top-load and front-load washers fail differently',
+        intro: 'Both wash clothes. They wear out in different places, which is why the brand and style matter when you book.',
+        columns: [
+          {
+            title: 'Top-load washers',
+            items: [
+              'Lid lock or lid switch failures that stop the spin',
+              'Shift actuator: agitates but will not switch to spin',
+              'Worn motor coupler or drive belt',
+              'Suspension rods that let the tub bang during spin',
+              'Inlet valves clogged by hard water grit',
+            ],
+          },
+          {
+            title: 'Front-load washers',
+            items: [
+              'Door lock faults and door lock error codes',
+              'Torn or moldy door boot seal, often the source of leaks',
+              'Pump filter clogged by socks, coins and hair ties',
+              'Worn shock absorbers and springs',
+              'Tub bearings that roar during spin, the biggest repair',
+            ],
+          },
+        ],
+      },
+      {
+        type: 'quickAnswer',
+        heading: 'Washer full of water? How to drain it safely',
+        steps: [
+          'Turn the washer off, unplug it and close both water valves behind it.',
+          'Front-load: open the small panel at the bottom front, lay down towels and a shallow pan, drain through the little hose if there is one, then unscrew the filter slowly.',
+          'Top-load: bail the water out with a container, or lower the drain hose into a bucket below the level of the tub.',
+          'Check the pump filter and drain hose for socks, coins, hair ties and kinks.',
+          'Plug it back in and run a drain and spin. If it hums and nothing moves, stop and call us. Running a jammed pump can burn out its motor.',
+        ],
+        note: 'Never open a front-load door while the drum is full. The water will pour straight onto the floor.',
+      },
+      {
+        type: 'stopUsing',
+        heading: 'Stop the cycle and call if you notice this',
+        items: [
+          'Water has reached the outlet, the power cord or the floor near wiring.',
+          'You smell burning or see smoke coming from the bottom of the machine.',
+          'The washer bangs hard enough to move across the floor, even with a balanced load.',
+          'A loud grinding or roaring sound during spin, which can mean failing tub bearings.',
+          'The breaker trips when the washer starts or switches to spin.',
+        ],
+        note: 'If water reached the outlet or wiring, switch off the breaker before you touch the washer or the cord.',
+      },
+      {
+        type: 'prose',
+        heading: 'Keep your washer out of trouble',
+        paragraphs: [
+          'Replace the fill hoses every three to five years, which many manufacturers recommend. Look for bulges, cracks or rust at the fittings. Braided stainless hoses resist bursting better than plain rubber, but they still wear out.',
+          'Hard water is common in Central Texas. Mineral grit collects in the small screens where the hoses connect and slows the fill. Front-loaders also trap moisture in the door seal, so wipe it, leave the door open after the last load and clean the pump filter every few months.',
+          'Use HE detergent in HE machines and do not overload the drum. Too many suds and too much weight are behind a lot of drain and spin calls.',
+        ],
+      },
+      {
+        type: 'process',
+        heading: 'What happens on a washer repair visit',
+        steps: [
+          { title: 'Run a test cycle', text: 'The technician runs the washer to see exactly where it stops: fill, wash, drain or spin.' },
+          { title: 'Read the codes', text: 'On electronic models, stored error codes are pulled to narrow the search.' },
+          { title: 'Test the parts', text: 'The lock, pump, valve or drive parts are tested before anything is replaced. You hear what failed and what the fix involves.' },
+          { title: 'Repair and spin', text: 'After your OK, the repair is made and a full drain and spin confirms it works.' },
+        ],
+      },
+      { type: 'repairOrReplace' },
+      { type: 'brands', heading: 'Washer brands and types we repair', intro: 'We repair the major washer brands found in Temple laundry rooms. Tell us the brand and model number when you book so the technician can check parts ahead of time.', styles: ['Top-load', 'Front-load', 'High-efficiency (HE)', 'Stacked laundry centers'] },
+      { type: 'faq' },
+      { type: 'payment' },
+    ],
   },
   {
     key: 'dryer',

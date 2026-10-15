@@ -336,6 +336,56 @@ function Block({ block, s, index }: { block: ServiceBlock; s: Service; index: nu
         </div>
       );
 
+    case 'cycleStages':
+      return (
+        <section aria-labelledby={id} className="reveal">
+          <p className="eyebrow mb-4 text-flame">
+            <span className="h-px w-6 bg-flame" aria-hidden="true" />
+            Where it stops
+          </p>
+          <Heading id={id}>{block.heading}</Heading>
+          {block.intro ? <p className="mt-4 text-ink-body">{block.intro}</p> : null}
+          <ol className="mt-8 space-y-3">
+            {block.rows.map((r, i) => (
+              <li key={r.stage} className="card grid gap-3 p-5 md:grid-cols-[150px_1fr_1fr] md:items-center md:gap-6 md:p-6">
+                <span className="flex items-center gap-3">
+                  <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-ink font-display text-[15px] font-bold text-white">{i + 1}</span>
+                  <span className="font-display text-lg font-bold tracking-[-0.02em] text-ink">{r.stage}</span>
+                </span>
+                <span className="text-[15px] text-ink">{r.what}</span>
+                <span className="text-[14.5px] text-ink-body">
+                  <span className="mr-1.5 text-[12px] font-semibold uppercase tracking-[0.12em] text-flame">Check</span>
+                  {r.parts}
+                </span>
+              </li>
+            ))}
+          </ol>
+        </section>
+      );
+
+    case 'compare':
+      return (
+        <section aria-labelledby={id} className="reveal">
+          <Heading id={id}>{block.heading}</Heading>
+          {block.intro ? <p className="mt-4 text-ink-body">{block.intro}</p> : null}
+          <div className="mt-8 grid gap-4 md:grid-cols-2">
+            {block.columns.map((c, i) => (
+              <div key={c.title} className={i === 0 ? 'card p-7' : 'grain rounded-card bg-ink p-7'}>
+                <h3 className={`flex items-center gap-2 font-display text-xl font-bold tracking-[-0.02em] ${i === 0 ? 'text-ink' : 'text-white'}`}>
+                  <Icon name={s.icon} className={`h-5 w-5 ${i === 0 ? 'text-flame' : 'text-flame-glow'}`} />
+                  {c.title}
+                </h3>
+                <ul className={`prose-copy ${i === 0 ? '' : '[&_li]:text-white/75'}`}>
+                  {c.items.map((t) => (
+                    <li key={t.slice(0, 24)}>{t}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </section>
+      );
+
     case 'faq':
       return (
         <section aria-labelledby={id} className="reveal">
