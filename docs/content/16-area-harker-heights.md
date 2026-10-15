@@ -229,3 +229,4 @@ Call (254) 555-0147 · Request Service · Call to confirm the earliest open time
 - [Redfin: Harker Heights listings](https://www.redfin.com/city/8256/TX/Harker-Heights/mls-listings)
 - [Islands: Harker Heights, lake and dining](https://www.islands.com/2246811/harker-heights-texas-sandwiched-between-austin-lake-fun-tasty-eats/)
 - [Neuhaus Realty: Lakecliff Dr listing (Dana Peak Park note)](https://neuhausre.com/properties/harker-heights/4017-lakecliff-dr-1484/)
+- [10 Federal Storage: Best neighborhoods in Harker Heights (home sizes and prices rise toward the lake)](https://10federalstorage.com/blog/best-neighborhoods-in-harker-heights-tx)
