@@ -251,9 +251,91 @@ export const brands: Brand[] = [
     ],
     hasPage: true,
   },
+  {
+    key: 'lg',
+    slug: `lg-appliance-repair-${loc}`,
+    name: 'LG',
+    h1: 'Independent LG Appliance Repair in Temple, TX',
+    metaTitle: 'LG Appliance Repair Temple TX | Fridges, Washers, Dryers',
+    metaDescription:
+      'LG fridge not cooling, washer error code or dryer not heating? Independent LG appliance repair in Temple, TX. Same-day service available. Call (254) 555-0147.',
+    intro: [
+      'LG refrigerator warming up, washer stopping with a code or dryer running cold? Appliance Repair Temple repairs LG refrigerators, washers, dryers, ranges, dishwashers and over-the-range microwaves in homes across Temple, TX. Same-day service is available, subject to technician availability, location, and current demand.',
+      'LG appliances are common in newer Temple homes, especially French door refrigerators, front-load laundry pairs and smart ranges. Most LG models report faults as codes on the display or through the LG app. A code points the technician to the right system, then testing confirms which part actually failed.',
+      'If your LG refrigerator has stopped cooling, check the purchase date and your paperwork before you decide anything. LG offers longer compressor coverage on many refrigerator models than its standard warranty, so a compressor problem may be a warranty matter first. If it is not covered, or the problem is something else, call us.',
+    ],
+    appliances: [
+      { key: 'refrigerator', note: 'French door, side-by-side, bottom-freezer and InstaView-style models' },
+      { key: 'washer', note: 'Front-load and top-load washers, including stacked and WashTower-style units' },
+      { key: 'dryer', note: 'Electric and gas dryers' },
+      { key: 'oven', note: 'Electric and gas ranges and wall ovens' },
+      { key: 'dishwasher', note: 'Built-in dishwashers' },
+      { key: 'microwave', note: 'Over-the-range microwaves' },
+    ],
+    issues: [
+      {
+        title: 'Refrigerator not cooling',
+        text: 'Many LG refrigerators use inverter or linear compressors. Before blaming the compressor, the technician checks the fans, defrost system, sensors and control board, which fail more simply. If it is the compressor, we tell you so you can check the warranty.',
+      },
+      {
+        title: 'Ice maker slow or frozen',
+        text: 'Often a fill tube that has frozen, a water inlet valve, an old filter or the ice maker module. The technician checks each before ordering a part.',
+      },
+      {
+        title: 'Front-load washer stops with a code',
+        text: 'Drain, door lock and unbalanced-load codes are the most common. The pump filter, the lock and the suspension are tested before anything is replaced.',
+      },
+      {
+        title: 'Dryer runs but no heat',
+        text: 'A heating element or thermal fuse on electric models, an igniter or gas valve on gas models. A clogged vent is a common root cause, so airflow is checked too.',
+      },
+    ],
+    haveReady: [
+      'The model and serial number from the label. A photo is the easiest way to share it.',
+      'The exact error code, and whether it shows on the display or in the LG app.',
+      'For refrigerators: the purchase date, so you can check LG’s compressor coverage.',
+      'Gas or electric, for dryers and ranges.',
+      'Whether the appliance is still under any LG warranty.',
+    ],
+    modelLocations: [
+      { appliance: 'Refrigerator', where: 'Inside the fresh-food section on the side liner, on the right on most models and on the left on newer ones' },
+      { appliance: 'Front-load washer and dryer', where: 'On a silver label on the panel just inside the door opening, usually near the top' },
+      { appliance: 'Top-load washer', where: 'On the back or the right side of the washer' },
+      { appliance: 'Range', where: 'On the left side of the oven door or drawer frame when open, or on the back of the control panel' },
+      { appliance: 'Wall oven', where: 'On the underside of the control panel' },
+    ],
+    modelSource: { name: 'LG support: how to find my LG model and serial number', url: 'https://www.lg.com/us/support/help-library/how-to-find-my-lg-model-and-serial-number--20152254906058' },
+    faqs: [
+      {
+        q: 'Are you an authorized LG service provider?',
+        a: 'No. Appliance Repair Temple is an independent repair service and is not affiliated with or authorized by LG. If your appliance is under LG’s warranty, contact LG first.',
+      },
+      {
+        q: 'My LG refrigerator stopped cooling. Is it the compressor?',
+        a: 'Not always. Fans, the defrost system, sensors and the control board can all stop a refrigerator from cooling. The technician tests those first. If the compressor has failed, check whether LG’s compressor coverage applies to your model before paying for that repair.',
+      },
+      {
+        q: 'Do you repair Kenmore appliances made by LG?',
+        a: 'Yes. Some Kenmore models were built by LG. Give us the full Kenmore model number and we will check the parts.',
+      },
+      {
+        q: 'What does the error code on my LG washer mean?',
+        a: 'Codes point to a system, such as draining, the door lock or an unbalanced load. Their meaning varies by model. Note the code and give it to us when you call.',
+      },
+      {
+        q: 'Can you repair my LG the same day?',
+        a: 'Same-day service is available, subject to technician availability, location, and current demand. Some LG parts are model-specific and may need to be ordered.',
+      },
+      {
+        q: 'How much does LG appliance repair cost?',
+        a: 'It depends on the appliance and the part, so we do not list prices online. Call to discuss your repair needs with the model number and any error code ready.',
+      },
+    ],
+    hasPage: true,
+  },
 ];
 
 /** Other brands commonly serviced. Listed on the hub, no dedicated page yet. */
-export const otherBrands = ['LG', 'Frigidaire', 'Maytag', 'KitchenAid', 'Bosch', 'Kenmore', 'Electrolux', 'Amana', 'Speed Queen'];
+export const otherBrands = ['Frigidaire', 'Maytag', 'KitchenAid', 'Bosch', 'Kenmore', 'Electrolux', 'Amana', 'Speed Queen'];
 
 export const brandHref = (b: Brand) => `/brands/${b.slug}/`;

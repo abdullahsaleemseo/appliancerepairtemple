@@ -32,7 +32,7 @@ export default function BrandsPage() {
 
       <Section labelledBy="brand-pages-heading">
         <SectionHeading id="brand-pages-heading" eyebrow="Repair guides" title="Brand-by-brand" accent="repair notes." />
-        <ul className="grid gap-4 md:grid-cols-3">
+        <ul className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
           {brands
             .filter((b) => b.hasPage)
             .map((b, i) => (
