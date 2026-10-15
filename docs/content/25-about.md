@@ -220,7 +220,7 @@ BreadcrumbList and FAQPage (6 visible FAQs). Organization schema comes from the 
 | Placement | Photo | Alt text |
 |---|---|---|
 | Story section | Owner or lead technician (real photo only) | [Name], owner of Appliance Repair Temple |
-| Photo row | Team, service vehicle, technician at work (real photos only) | Appliance Repair Temple technician repairing a washer in a Temple home |
+| "The people behind the work" (live) | `team.webp`, `technician-refrigerator.webp`, `service-van.webp` | The Appliance Repair Temple team · Appliance Repair Temple technician checking a refrigerator in a Temple home · Appliance Repair Temple service van parked at a home in Temple |
 
 ## 7. CTA copy
 
@@ -230,6 +230,6 @@ Call (254) 555-0147 · Request Service · Call to discuss your repair needs
 
 - [ ] Phone number (pending)
 - [ ] Owner story: name, background, why Temple (hidden draft block)
-- [ ] Real team, vehicle and technician photos (hidden draft block)
+- [x] Team, service van and technician photos (owner-confirmed images, added October 15, 2026 in `public/images/about/`)
 - [ ] **[CONFIRM]** Each standard: call ahead if late, floors covered, old parts taken away, appliance tested before leaving (tagged on the draft site)
 - [x] Licensed & Insured, Same-Day, 4+ years, 100+ repairs, 4.9 rating, about 60 minute typical response, flexible payment, hours

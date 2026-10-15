@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { canShow, claims, routes, site } from '@/config/site';
 import { PageHero } from '@/components/PageHero';
@@ -151,17 +152,44 @@ export default function AboutPage() {
         </Section>
       ) : null}
 
-      <DraftBlock show={false} label="REAL PHOTOS ONLY: TEAM, VAN, UNIFORM">
-        <section aria-label="Photos" className="mx-auto max-w-site px-4 py-10 lg:px-6">
-          <ul className="grid grid-cols-3 gap-4">
-            {['Team photo', 'Service van', 'Technician at work'].map((t) => (
-              <li key={t} className="flex aspect-[4/3] items-center justify-center rounded-card bg-canvas-2 text-sm font-semibold text-ink-muted">
-                {t}
-              </li>
-            ))}
-          </ul>
-        </section>
-      </DraftBlock>
+      <Section labelledBy="team-heading">
+        <SectionHeading id="team-heading" eyebrow="The team" title="The people" accent="behind the work." />
+        <div className="grid gap-4 lg:grid-cols-[1.5fr_1fr]">
+          <figure className="overflow-hidden rounded-card bg-canvas-2">
+            <Image
+              src="/images/about/team.webp"
+              alt={`The ${site.brandName} team`}
+              width={1536}
+              height={1024}
+              sizes="(min-width: 1024px) 60vw, 100vw"
+              className="h-full w-full object-cover"
+              priority
+            />
+          </figure>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-1">
+            <figure className="overflow-hidden rounded-card bg-canvas-2">
+              <Image
+                src="/images/about/technician-refrigerator.webp"
+                alt={`${site.brandName} technician checking a refrigerator in a ${site.city} home`}
+                width={1536}
+                height={1024}
+                sizes="(min-width: 1024px) 40vw, (min-width: 640px) 50vw, 100vw"
+                className="h-full w-full object-cover"
+              />
+            </figure>
+            <figure className="overflow-hidden rounded-card bg-canvas-2">
+              <Image
+                src="/images/about/service-van.webp"
+                alt={`${site.brandName} service van parked at a home in ${site.city}`}
+                width={1536}
+                height={1024}
+                sizes="(min-width: 1024px) 40vw, (min-width: 640px) 50vw, 100vw"
+                className="h-full w-full object-cover"
+              />
+            </figure>
+          </div>
+        </div>
+      </Section>
 
       <Section tone="white" labelledBy="visit-heading">
         <SectionHeading id="visit-heading" eyebrow="A typical visit" title="What happens" accent="when you call." />
