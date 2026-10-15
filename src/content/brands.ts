@@ -500,9 +500,89 @@ export const brands: Brand[] = [
     ],
     hasPage: true,
   },
+  {
+    key: 'kitchenaid',
+    slug: `kitchenaid-appliance-repair-${loc}`,
+    name: 'KitchenAid',
+    h1: 'KitchenAid Kitchen Appliance Repair in Temple, TX',
+    metaTitle: 'KitchenAid Appliance Repair Temple TX | Dishwasher & Fridge',
+    metaDescription:
+      'KitchenAid dishwasher not cleaning, fridge running warm or range not heating? Independent KitchenAid appliance repair in Temple, TX. Same-day service available.',
+    intro: [
+      'KitchenAid dishwasher leaving a film, refrigerator warming up or range slow to heat? Appliance Repair Temple repairs KitchenAid dishwashers, refrigerators, ranges and over-the-range microwaves in homes across Temple, TX. Same-day service is available, subject to technician availability, location, and current demand.',
+      'KitchenAid major appliances are a Whirlpool Corporation brand, built mostly for the kitchen. In Temple homes we see them most as quiet third-rack dishwashers, counter-depth French door refrigerators and slide-in ranges in remodeled or higher-end kitchens. Many share core parts with Whirlpool and Maytag models, while trim, panels and some controls are specific to KitchenAid.',
+      'The process is the same as for any brand. The technician tests the appliance, finds the part that failed and explains the repair before any work starts. This page covers major appliances. For a stand mixer or countertop appliance, contact KitchenAid.',
+    ],
+    appliances: [
+      { key: 'dishwasher', note: 'Built-in dishwashers, including third-rack and top-control models' },
+      { key: 'refrigerator', note: 'French door, counter-depth, side-by-side and bottom-freezer' },
+      { key: 'oven', note: 'Electric and gas ranges, including slide-in models' },
+      { key: 'microwave', note: 'Over-the-range microwaves' },
+    ],
+    issues: [
+      {
+        title: 'Dishwasher not cleaning or drying',
+        text: 'A clogged filter, mineral scale in the spray arms or third-rack jets, a weak wash pump or a failed heating element. Hard water makes scale worse, so the technician checks the filter and spray arms first.',
+      },
+      {
+        title: 'Dishwasher not draining',
+        text: 'Usually a blocked filter, a kinked or clogged drain hose, a garbage disposal knockout plug that was never removed, or a failed drain pump. Each is checked before a part is ordered.',
+      },
+      {
+        title: 'Refrigerator warm, freezer cold',
+        text: 'Often an evaporator fan, a damper or a defrost problem blocking airflow to the fresh-food side. Counter-depth models have tighter spaces, so clean coils and clear vents matter.',
+      },
+      {
+        title: 'Range slow to heat or uneven',
+        text: 'A bake element or igniter on its way out, a temperature sensor that has drifted, or a convection fan that is not running. The technician checks each against the model’s specifications.',
+      },
+    ],
+    haveReady: [
+      'The model and serial number from the silver label. A photo is the easiest way to share it.',
+      'Any error code or flashing light pattern on the control panel.',
+      'Gas or electric, for ranges.',
+      'For dishwashers: when the filter was last cleaned and whether you have hard water.',
+      'Whether the appliance is still under KitchenAid’s warranty.',
+    ],
+    modelLocations: [
+      { appliance: 'Dishwasher', where: 'On the left edge of the door or tub, visible when the door is open' },
+      { appliance: 'French door and bottom-freezer refrigerator', where: 'Inside the fresh-food section on the left wall' },
+      { appliance: 'Side-by-side refrigerator', where: 'Inside the fresh-food section on the right wall' },
+      { appliance: 'Range', where: 'On the oven frame behind the door, or on the storage drawer frame' },
+      { appliance: 'Over-the-range microwave', where: 'On the frame behind the door, visible when the door is open' },
+    ],
+    modelSource: { name: 'KitchenAid: how to find your model number', url: 'https://www.kitchenaid.com/resources/locate-model-number.html' },
+    faqs: [
+      {
+        q: 'Are you an authorized KitchenAid service provider?',
+        a: 'No. Appliance Repair Temple is an independent repair service and is not affiliated with or authorized by KitchenAid or Whirlpool Corporation. If your appliance is under KitchenAid’s warranty, contact KitchenAid first.',
+      },
+      {
+        q: 'Why does my KitchenAid dishwasher leave a white film?',
+        a: 'Usually hard water scale or too much detergent. Clean the filter, run a cleaning cycle and check the rinse aid. If the film stays, or dishes come out dirty too, the spray arms or wash pump may need attention.',
+      },
+      {
+        q: 'Do KitchenAid and Whirlpool use the same parts?',
+        a: 'Many core parts are shared, since both brands belong to Whirlpool Corporation. Panels, trim and some controls are KitchenAid-specific. The full model number tells us exactly which parts fit.',
+      },
+      {
+        q: 'Do you repair KitchenAid stand mixers?',
+        a: 'No. We repair major home appliances. For a stand mixer or other countertop appliance, contact KitchenAid.',
+      },
+      {
+        q: 'Can you repair my KitchenAid the same day?',
+        a: 'Same-day service is available, subject to technician availability, location, and current demand. Some KitchenAid parts are model-specific and may need to be ordered.',
+      },
+      {
+        q: 'How much does KitchenAid appliance repair cost?',
+        a: 'It depends on the appliance and the part, so we do not list prices online. Call to discuss your repair needs with the model number ready.',
+      },
+    ],
+    hasPage: true,
+  },
 ];
 
 /** Other brands commonly serviced. Listed on the hub, no dedicated page yet. */
-export const otherBrands = ['KitchenAid', 'Bosch', 'Kenmore', 'Electrolux', 'Amana', 'Speed Queen'];
+export const otherBrands = ['Bosch', 'Kenmore', 'Electrolux', 'Amana', 'Speed Queen'];
 
 export const brandHref = (b: Brand) => `/brands/${b.slug}/`;
