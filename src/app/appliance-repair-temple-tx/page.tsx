@@ -27,7 +27,7 @@ const path = routes.cityPage;
 
 export const metadata = pageMetadata({
   title: `Appliance Repair Temple, Texas | In-Home Service`,
-  description: `In-home appliance repair in Temple, Texas for fridges, washers, dryers, dishwashers, ovens and freezers. Every Temple ZIP code, Mon-Sat 8am-8pm.`,
+  description: `In-home appliance repair in Temple, Texas for fridges, washers, dryers, dishwashers, ovens and freezers. Every Temple ZIP code, Mon-Sat 8am-8pm. Call us.`,
   path,
 });
 

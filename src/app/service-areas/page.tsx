@@ -11,8 +11,8 @@ import { VerifyTag } from '@/components/Verify';
 import { pageMetadata } from '@/lib/seo';
 
 export const metadata = pageMetadata({
-  title: `Appliance Repair Service Areas Near ${site.city}, ${site.stateAbbr} | ${site.brandName}`,
-  description: `Appliance repair in ${site.city}, Belton, Killeen, Harker Heights, Salado and nearby ${site.region} towns. See ZIP codes and how scheduling works.`,
+  title: `Appliance Repair Service Areas Near ${site.city}, ${site.stateAbbr}`,
+  description: `Appliance repair in ${site.city} and ${areas.length} nearby towns, including Belton, Killeen, Harker Heights and Salado. See each town’s ZIP codes and how scheduling works.`,
   path: routes.areas,
 });
 
@@ -22,8 +22,8 @@ export default function AreasPage() {
       <PageHero crumbs={[{ name: 'Service Areas', path: routes.areas }]} title={`Appliance Repair Service Areas Near ${site.city}`}>
         <div className="prose-copy prose-dark">
           <p>
-            {site.city} is the center of our route. From there we cover most of {site.county} and a few towns just outside it. We
-            do not have a storefront. Technicians drive to you.
+            {site.city} is the center of our route. From there we cover most of {site.county} and a few towns just outside it.
+            Repairs happen in your home; the technician comes to you.
           </p>
           <p>
             When you call or send a request, we check the schedule for your ZIP code and give you the earliest open visit window.

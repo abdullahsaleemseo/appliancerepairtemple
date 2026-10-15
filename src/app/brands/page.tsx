@@ -12,8 +12,8 @@ import { VerifyTag } from '@/components/Verify';
 import { pageMetadata } from '@/lib/seo';
 
 export const metadata = pageMetadata({
-  title: `Appliance Brands We Service in ${site.city}, ${site.stateAbbr} | ${site.brandName}`,
-  description: `Whirlpool, GE, Samsung, LG, Frigidaire, Maytag, Bosch and more. See which appliance brands we repair in ${site.city}, ${site.stateAbbr}.`,
+  title: `Appliance Brands We Repair in ${site.city}, ${site.stateAbbr} | 12 Brands`,
+  description: `Whirlpool, GE, Samsung, LG, Frigidaire, Maytag, KitchenAid, Bosch, Kenmore, Electrolux, Amana and Speed Queen appliance repair in ${site.city}, ${site.stateAbbr}. Pick your brand.`,
   path: routes.brands,
 });
 
