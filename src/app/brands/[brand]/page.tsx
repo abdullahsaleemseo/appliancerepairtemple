@@ -57,7 +57,6 @@ export default async function BrandPage({ params }: Params) {
             <p key={p.slice(0, 24)}>{p}</p>
           ))}
         </div>
-        <VerifyTag label={`CONFIRM PROVIDER SERVICES ${b.name.toUpperCase()}`} />
         <div className="mt-8">
           <CtaRow location={`brand_${b.key}_hero`} dark />
         </div>

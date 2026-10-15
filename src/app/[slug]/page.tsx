@@ -180,7 +180,6 @@ export default async function ServicePage({ params }: Params) {
             </h2>
             <p className="mb-6 mt-4 text-ink-body">
               Don’t see yours? Call and ask. Have the model number ready if you can.
-              <VerifyTag label="CONFIRM BRAND LIST WITH PROVIDER" />
             </p>
             <BrandChips names={s.brands} />
           </section>

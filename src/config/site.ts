@@ -49,14 +49,14 @@ export const site = {
     'Belton',
     'Killeen',
     'Harker Heights',
-    'Copperas Cove',
+    'Nolanville',
+    "Morgan's Point Resort",
     'Salado',
-    'Rogers',
     'Troy',
-    'Moody',
-    'Holland',
     'Little River-Academy',
-    'Waco',
+    'Rogers',
+    'Holland',
+    'Moody',
   ],
 
   // Toggle for the slim same-day banner above the header. Only switch on when slots are really open.
@@ -87,7 +87,7 @@ export const claims = {
   paymentOptions: v('Flexible Payment Options Available', true),
   callbackMinutes: v(15),
   gasAppliances: v('Gas range and gas dryer repair'),
-  brandsServiced: v('Brands listed on the site are serviced by the provider'),
+  brandsServiced: v('Brands listed on the site are serviced by the provider', true),
 } as const;
 
 export const isProduction = process.env.NEXT_PUBLIC_SITE_MODE === 'production';

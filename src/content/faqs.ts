@@ -95,30 +95,34 @@ export const homeFaqs: Faq[] = [
   },
 ];
 
-/** Main city page FAQs, focused on response times, brands, areas and repair vs replace. */
+/** Main city page FAQs: local questions about coverage, timing, rentals, warranty and repair decisions in Temple. */
 export const cityFaqs: Faq[] = [
   {
-    q: 'How fast can a technician get to my home in Temple?',
-    a: 'It depends on the day. Temple is the center of our service area, so it usually has the most open slots. Call and we will give you the earliest time available.',
+    q: 'Do you cover all of Temple, Texas?',
+    a: 'Yes. We serve every Temple ZIP code: 76501, 76502, 76503, 76504 and 76508. That includes central Temple, the Historic District, West Temple along West Adams Avenue and Highway 317, and the south side of town.',
   },
   {
-    q: 'What happens during the visit?',
-    a: 'The technician checks the appliance, tests the parts most likely to have failed and explains what is wrong. Call for service details before you book.',
+    q: 'Can a technician come out today?',
+    a: 'Often, yes. Same-day appointments are available, subject to technician availability, location, and current demand. Our typical response is about 60 minutes during business hours, which is a typical figure, not a guaranteed arrival time.',
   },
   {
-    q: 'Do you repair the brand I have?',
-    a: 'Most likely. We see Whirlpool, GE, Samsung, LG, Frigidaire, Maytag, KitchenAid, Bosch and Kenmore every week. Tell us the model and we will confirm.',
+    q: 'What should I do while I wait for the technician?',
+    a: 'For a warm refrigerator or freezer, keep the doors closed. For a washer or dishwasher full of water, turn it off and unplug it. For a dryer that smells hot, stop using it. If you smell gas, leave the house and call your gas utility from outside before anything else.',
   },
   {
-    q: 'Which parts of Temple do you cover?',
-    a: 'All of Temple, ZIP codes 76501, 76502, 76503, 76504 and 76508, plus Belton, Killeen, Harker Heights, Salado and other nearby towns.',
+    q: 'Do you repair appliances in rental homes and apartments?',
+    a: 'Yes. Tenants should check the lease and tell the landlord first, since the landlord is often responsible for appliances they provide. Landlords and property managers can book directly. Just let us know who approves the repair and who will let the technician in.',
   },
   {
-    q: 'Should I repair or replace an older appliance?',
-    a: 'If the repair is under half the cost of a new unit and the appliance has a few good years left, repair usually wins. The technician will explain the options and give you an honest opinion.',
+    q: 'My appliance is still under warranty. Should I call you?',
+    a: 'Check with the manufacturer first. Independent repair may not be covered by a factory warranty. If the warranty has run out, or you are not sure, call us with the model number and we can talk it through.',
   },
   {
-    q: 'Can you work with my landlord or property manager?',
-    a: 'Yes. Let us know who approves the repair and who will provide access, and we will coordinate with them.',
+    q: 'Do you work on refrigerators and freezers in the garage?',
+    a: 'Yes. Garage units work hard in a Temple summer, and they are a common call. Give the unit some space for airflow and keep the condenser coils clean between visits.',
+  },
+  {
+    q: 'How do I know if a repair is worth it?',
+    a: 'Look at the age of the appliance, the condition of the rest of it and whether the part is still available. The technician will explain what failed and whether the repair makes sense, and you make the call.',
   },
 ];

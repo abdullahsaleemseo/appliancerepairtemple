@@ -26,7 +26,7 @@ import { pageMetadata } from '@/lib/seo';
 
 export const metadata = pageMetadata({
   title: `Appliance Repair Temple TX | Same-Day Service`,
-  description: `Appliance repair in Temple, TX for refrigerators, washers, dryers, dishwashers, ovens and freezers. Same-day service, subject to availability. Call ${phoneDisplay}.`,
+  description: `Appliance repair in Temple, TX for fridges, washers, dryers, dishwashers, ovens and freezers. Same-day service, subject to availability. Call ${phoneDisplay}.`,
   path: '/',
 });
 
@@ -141,14 +141,14 @@ export default function HomePage() {
         <div className="relative mx-auto grid max-w-site items-center gap-14 px-4 pb-20 pt-12 md:pt-16 lg:grid-cols-[1.12fr_1fr] lg:gap-16 lg:px-6 lg:pb-28 lg:pt-20">
           <div>
             <p className="inline-flex items-center gap-2.5 rounded-full border border-white/10 bg-white/[0.05] py-1.5 pl-2 pr-4 text-[13px] font-medium text-white/80 backdrop-blur">
-              <span className="flex h-6 items-center gap-1.5 rounded-full bg-mint-bright/15 px-2 text-[12px] font-semibold text-mint-bright">
+              <span className="flex h-6 shrink-0 items-center gap-1.5 whitespace-nowrap rounded-full bg-mint-bright/15 px-2 text-[12px] font-semibold text-mint-bright">
                 <span className="h-1.5 w-1.5 rounded-full bg-mint-bright" />
                 {site.hours.value.display}
               </span>
               In-home repair across {site.city} &amp; {site.county}
             </p>
             <h1 className="h-display mt-7 text-[2.9rem] text-white sm:text-[4.2rem] lg:text-[5rem]">
-              Appliance Repair in {site.city}, {site.stateAbbr}
+              Same-Day Appliance Repair in {site.city}, {site.stateAbbr}
             </h1>
             <p aria-hidden="true" className="accent mt-1 font-serif text-[2.7rem] leading-none text-flame-glow sm:text-[3.9rem] lg:text-[4.6rem]">
               without the guesswork.

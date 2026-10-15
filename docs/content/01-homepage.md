@@ -1,6 +1,6 @@
 # Page 1: Homepage
 
-Status: **live on the staging site, awaiting approval**
+Status: **live on the staging site. Owner answers received Oct 15, 2026.**
 Source file: `src/app/page.tsx` (FAQs in `src/content/faqs.ts`, `homeFaqs`)
 
 ---
@@ -44,9 +44,9 @@ Source file: `src/app/page.tsx` (FAQs in `src/content/faqs.ts`, `homeFaqs`)
 | Field | Value |
 |---|---|
 | Title tag (45 chars) | Appliance Repair Temple TX \| Same-Day Service |
-| Meta description (156 chars) | Appliance repair in Temple, TX for refrigerators, washers, dryers, dishwashers, ovens and freezers. Same-day service, subject to availability. Call (254) 555-0147. |
+| Meta description (157 chars) | Appliance repair in Temple, TX for fridges, washers, dryers, dishwashers, ovens and freezers. Same-day service, subject to availability. Call (254) 555-0147. |
 | URL slug | `/` |
-| H1 (one only) | Appliance Repair in Temple, TX |
+| H1 (one only) | Same-Day Appliance Repair in Temple, TX |
 | Primary keyword placement | Title, H1, meta description, first paragraph, H2 "Common appliance problems we fix in Temple", H2 "Temple and nearby service areas" |
 
 The phone number in the meta description updates automatically from `site.ts` when the real number is added.
@@ -59,7 +59,7 @@ The phone number in the meta description updates automatically from `site.ts` wh
 
 ### Hero
 
-**H1: Appliance Repair in Temple, TX**
+**H1: Same-Day Appliance Repair in Temple, TX**
 
 Appliance Repair Temple fixes refrigerators, washers, dryers, dishwashers, ovens and freezers in homes across Temple, TX and nearby Bell County towns. A technician comes to you, tests the parts most likely to have failed, and explains the repair before any work starts. Same-day service is available, subject to technician availability, location, and current demand.
 
@@ -126,8 +126,6 @@ Four steps from the first call to an appliance that runs again.
 
 ### H2: Brands we service.
 
-*(Shown in draft only until the brand list is confirmed with the provider.)*
-
 We work on the major household brands found in Temple homes. Give us the brand and model number when you book so the technician can check parts ahead of time.
 
 Whirlpool · GE · Samsung · LG · Frigidaire · Maytag · KitchenAid · Bosch · Kenmore · Electrolux · Amana · Speed Queen
@@ -138,7 +136,7 @@ Appliance Repair Temple is an independent repair service. We are not affiliated 
 
 We are based around Temple and serve homes across Bell County and nearby Central Texas towns. In Temple, that covers ZIP codes 76501, 76502, 76503, 76504, 76508. Availability in towns farther out depends on the day's schedule, so call to confirm your address.
 
-Nearby towns: Belton, Killeen, Harker Heights, Copperas Cove, Salado, Rogers, Troy, Moody, Holland, Little River-Academy, Waco.
+Nearby towns: Belton, Killeen, Harker Heights, Nolanville, Morgan's Point Resort, Salado, Troy, Little River-Academy, Rogers, Holland, Moody.
 
 Don't see your town? Call or see the full area.
 
@@ -152,7 +150,7 @@ See section 5. Followed by: "Still not sure? Call and speak with our team about 
 Call to discuss your repair needs, or send a request and we will call you back. We are open Monday to Saturday, 8:00 AM to 8:00 PM.
 Button: Call (254) 555-0147 · Form: Request a callback (name, phone, ZIP, appliance, consent)
 
-**Measured length:** about 1,600 words of visible copy in production mode.
+**Measured length:** about 1,700 words of visible copy in production mode.
 
 ---
 
@@ -225,15 +223,13 @@ Format: WebP or AVIF, under 200 KB each, descriptive file names such as `technic
 
 ## 9. Verification checklist
 
-- [ ] **Phone number:** (254) 555-0147 is still a placeholder. Real number needed before launch.
-- [ ] **4.9 average rating:** which platform is it from, and how many reviews? Needed before showing review stars with a source or adding review markup.
-- [ ] **Brand list:** confirm the brands the technicians service. The brand section stays hidden in production until confirmed.
-- [ ] **Process wording:** confirm that technicians explain the repair and get approval before starting work. This appears in the intro and in step 3 and step 4.
-- [ ] **Nearby towns:** confirm every town in the list is served, especially Waco, Rogers, Holland and Little River-Academy.
+- [ ] **Phone number:** still a placeholder. Pending from the owner.
+- [x] **4.9 average rating:** owner confirmed it reflects ratings across the internet. Shown as "4.9 average rating" with no platform named and no review markup.
+- [x] **Brand list:** owner confirmed all brands on the site are serviced.
+- [x] **Process wording:** owner confirmed technicians explain the repair and get approval before starting.
+- [x] **Nearby towns:** owner confirmed neighboring towns are served. Waco (about 34 miles away) and Copperas Cove were removed as not neighboring. Nolanville and Morgan's Point Resort were added.
 - [ ] **Microwaves, cooktops, wall ovens:** confirm these are offered.
 - [ ] **"Requests sent outside hours are answered when we reopen":** confirm this matches how leads are handled.
-- [ ] **Licensed & Insured:** keep the license and insurance details on file for customers who ask.
-- [ ] **Brand name:** the logo and site use "Appliance Repair Temple." A separate business called "Temple Appliance Repair" exists online, so keep the name, phone and website identical on every listing.
 
 ## Sources used in research
 

@@ -24,7 +24,6 @@ export default function BrandsPage() {
         <p className="text-lg leading-relaxed text-white/70">
           Most homes in {site.city} have a mix of brands, often whatever came with the house plus a newer washer or fridge. We
           repair the common household brands below. The model number helps us confirm parts before the visit.
-          <VerifyTag label="CONFIRM BRANDS WITH PROVIDER" />
         </p>
         <div className="mt-8">
           <CtaRow location="brands_hero" dark />
