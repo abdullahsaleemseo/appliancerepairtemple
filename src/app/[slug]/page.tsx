@@ -15,7 +15,7 @@ import { JsonLd } from '@/components/JsonLd';
 import { PageHero } from '@/components/PageHero';
 import { PaymentNote } from '@/components/PaymentNote';
 import { PhoneLink } from '@/components/PhoneLink';
-import { ReviewsBlock, hasVerifiedReviews } from '@/components/ReviewsBlock';
+import { ShareExperience } from '@/components/ShareExperience';
 import { ServicePageView } from '@/components/SiteClient';
 import { TrustBadges } from '@/components/TrustBadges';
 import { VerifyTag } from '@/components/Verify';
@@ -487,14 +487,7 @@ export default async function ServicePage({ params }: Params) {
             <Block key={`${b.type}-${i}`} block={b} s={s} index={i} />
           ))}
 
-          {hasVerifiedReviews(s.key) ? (
-            <section aria-labelledby="reviews-heading">
-              <h2 id="reviews-heading" className={`${h2} mb-8`}>
-                {s.name} repair reviews
-              </h2>
-              <ReviewsBlock service={s.key} />
-            </section>
-          ) : null}
+          <ShareExperience variant="card" />
 
           <nav aria-labelledby="related-heading" className="rounded-xl2 border border-sand bg-white p-7 md:p-9">
             <h2 id="related-heading" className="font-display text-2xl font-bold tracking-[-0.02em] text-ink">

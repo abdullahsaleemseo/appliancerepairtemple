@@ -16,7 +16,7 @@ import { JsonLd } from '@/components/JsonLd';
 import { PageHero } from '@/components/PageHero';
 import { PaymentNote } from '@/components/PaymentNote';
 import { PhoneLink } from '@/components/PhoneLink';
-import { ReviewsBlock, hasVerifiedReviews } from '@/components/ReviewsBlock';
+import { ShareExperience } from '@/components/ShareExperience';
 import { Section, SectionHeading } from '@/components/Section';
 import { ServicesGrid } from '@/components/ServicesGrid';
 import { TrustBadges } from '@/components/TrustBadges';
@@ -300,12 +300,7 @@ export default function CityPage() {
         </div>
       </Section>
 
-      {hasVerifiedReviews() ? (
-        <Section labelledBy="reviews-heading">
-          <SectionHeading id="reviews-heading" eyebrow="Reviews" title="From customers in" accent={`${site.city}.`} />
-          <ReviewsBlock />
-        </Section>
-      ) : null}
+      <ShareExperience place={site.city} />
 
       <Section labelledBy="faq-heading">
         <div className="grid gap-12 lg:grid-cols-[1fr_1.5fr]">

@@ -1,6 +1,6 @@
 'use client';
 
-export type AnalyticsEvent = 'click_to_call' | 'form_start' | 'generate_lead' | 'cta_click' | 'service_page_view';
+export type AnalyticsEvent = 'click_to_call' | 'form_start' | 'generate_lead' | 'cta_click' | 'service_page_view' | 'feedback_submit';
 
 type Gtag = (command: 'event', name: string, params?: Record<string, unknown>) => void;
 

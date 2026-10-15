@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { canShow, claims, isProduction, phoneDisplay, routes, site } from '@/config/site';
+import { canShow, claims, phoneDisplay, routes, site } from '@/config/site';
 import { brands, otherBrands } from '@/content/brands';
 import { homeFaqs } from '@/content/faqs';
 import { primaryServiceKeys, serviceHref, services } from '@/content/services';
@@ -15,7 +15,7 @@ import { JsonLd } from '@/components/JsonLd';
 import { PaymentNote } from '@/components/PaymentNote';
 import { PhoneLink } from '@/components/PhoneLink';
 import { ProblemPicker } from '@/components/ProblemPicker';
-import { ReviewsBlock, hasVerifiedReviews } from '@/components/ReviewsBlock';
+import { ShareExperience } from '@/components/ShareExperience';
 import { Section, SectionHeading } from '@/components/Section';
 import { ServicesGrid } from '@/components/ServicesGrid';
 import { StatsStrip } from '@/components/StatsStrip';
@@ -338,16 +338,11 @@ export default function HomePage() {
         <AreaBlock />
       </Section>
 
-      {/* Reviews */}
-      {hasVerifiedReviews() || !isProduction ? (
-        <Section tone="white" labelledBy="reviews-heading">
-          <SectionHeading id="reviews-heading" eyebrow="Reviews" title="What neighbors in" accent={`${site.city} say.`} />
-          <ReviewsBlock />
-        </Section>
-      ) : null}
+      {/* Share your experience */}
+      <ShareExperience />
 
       {/* FAQ */}
-      <Section tone={hasVerifiedReviews() || !isProduction ? 'canvas' : 'white'} labelledBy="faq-heading">
+      <Section labelledBy="faq-heading">
         <div className="grid gap-12 lg:grid-cols-[1fr_1.5fr]">
           <div className="lg:sticky lg:top-32 lg:self-start">
             <SectionHeading id="faq-heading" eyebrow="FAQ" title="Questions before" accent="you call." />

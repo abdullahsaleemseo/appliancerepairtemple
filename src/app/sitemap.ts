@@ -4,7 +4,6 @@ import { areas, areaHref } from '@/content/areas';
 import { brands, brandHref } from '@/content/brands';
 import { posts, postHref } from '@/content/blog';
 import { serviceHref, services } from '@/content/services';
-import { hasVerifiedReviews } from '@/components/ReviewsBlock';
 import { absoluteUrl } from '@/lib/seo';
 
 export const dynamic = 'force-static';
@@ -28,7 +27,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     entry(routes.contact, 0.5),
     entry(routes.request, 0.7),
     entry(routes.faq, 0.5),
-    ...(hasVerifiedReviews() ? [entry(routes.reviews, 0.5)] : []),
+    entry(routes.reviews, 0.5),
     entry(routes.blog, 0.4),
     ...posts.map((p) => entry(postHref(p), 0.4, new Date(`${p.updated}T12:00:00`))),
     entry(routes.privacy, 0.1),

@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { isProduction, routes, site } from '@/config/site';
+import { routes, site } from '@/config/site';
 import { areas, areaHref } from '@/content/areas';
 import { serviceByKey, serviceHref } from '@/content/services';
 import { PageHero } from '@/components/PageHero';
@@ -10,10 +10,10 @@ import { FaqList } from '@/components/FaqList';
 import { FinalCta } from '@/components/FinalCta';
 import { Icon } from '@/components/Icon';
 import { JsonLd } from '@/components/JsonLd';
-import { ReviewsBlock, hasVerifiedReviews } from '@/components/ReviewsBlock';
+import { ShareExperience } from '@/components/ShareExperience';
 import { Section, SectionHeading } from '@/components/Section';
 import { ServicesGrid } from '@/components/ServicesGrid';
-import { DraftBlock, VerifyTag } from '@/components/Verify';
+import { VerifyTag } from '@/components/Verify';
 import { serviceSchema } from '@/lib/schema';
 import { pageMetadata } from '@/lib/seo';
 
@@ -83,24 +83,6 @@ export default async function AreaPage({ params }: Params) {
         </Section>
       ) : null}
 
-      {hasVerifiedReviews() ? (
-        <Section labelledBy="proof-heading">
-          <SectionHeading id="proof-heading" eyebrow="Local proof" title="Recent work in" accent={`${a.name}.`} />
-          <ReviewsBlock limit={2} />
-        </Section>
-      ) : !isProduction ? (
-        <Section labelledBy="proof-heading">
-          <DraftBlock show={false} label="LOCAL PROOF: REAL REPAIR COUNT AND 2 LOCAL REVIEWS ONLY">
-            <div className="rounded-card bg-white p-7">
-              <h2 id="proof-heading" className="font-display text-2xl font-bold text-ink">
-                We’ve completed [N] repairs in {a.name}
-              </h2>
-              <p className="mt-2 text-ink-body">Add two verified reviews from {a.name} customers here.</p>
-            </div>
-          </DraftBlock>
-        </Section>
-      ) : null}
-
       <Section tone="ink" labelledBy="local-heading">
         <SectionHeading id="local-heading" eyebrow="Local notes" title="What we see in" accent={`${a.name}.`} dark />
         <ul className={`grid gap-4 ${a.localPoints.length % 2 === 0 ? 'md:grid-cols-2' : 'md:grid-cols-3'}`}>
@@ -144,14 +126,16 @@ export default async function AreaPage({ params }: Params) {
         </p>
       </Section>
 
-      <Section tone="white" labelledBy="faq-heading">
+      <ShareExperience place={a.name} />
+
+      <Section labelledBy="faq-heading">
         <div className="grid gap-12 lg:grid-cols-[1fr_1.5fr]">
           <SectionHeading id="faq-heading" eyebrow="FAQ" title={`Repair in ${a.name}:`} accent="questions." />
           <FaqList faqs={a.faqs} />
         </div>
       </Section>
 
-      <Section labelledBy="zip-heading">
+      <Section tone="white" labelledBy="zip-heading">
         <h2 id="zip-heading" className="font-display text-2xl font-bold tracking-[-0.02em] text-ink">
           {a.name} ZIP codes we serve
         </h2>
