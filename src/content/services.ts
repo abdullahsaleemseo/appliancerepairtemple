@@ -1182,92 +1182,200 @@ export const services: Service[] = [
     navLabel: 'Microwave Repair',
     icon: 'microwave',
     card: 'Over-the-range and built-in microwaves not heating.',
-    metaTitle: 'Microwave Repair in Temple, TX | Appliance Repair Temple',
+    metaTitle: 'Microwave Repair Temple TX | Over-the-Range & Built-In',
     metaDescription:
-      'Over-the-range or built-in microwave not heating in Temple, TX? Request a diagnostic visit for door switches, turntables, fans and controls.',
-    h1: 'Microwave Repair in Temple, TX',
+      'Over-the-range or built-in microwave not heating, sparking or dead? Microwave repair in Temple, TX. Same-day service available. Call (254) 555-0147.',
+    h1: 'Over-the-Range & Built-In Microwave Repair in Temple, TX',
     intro: [
-      'Repair makes the most sense on over-the-range and built-in microwaves, where replacement means extra installation work. Countertop microwaves are usually better replaced than repaired.',
-      'In Temple and nearby towns, the common microwave calls are no heat, a dead keypad, a turntable that stopped, or a vent fan or light that failed. The technician tests parts with the unit safely discharged, then explains what the repair involves.',
+      'Microwave running but not heating, sparking inside or completely dead? Appliance Repair Temple repairs over-the-range and built-in microwaves in homes across Temple, TX, including the vent fan and light on over-the-range models. Same-day service is available, subject to technician availability, location, and current demand.',
+      'Microwaves look simple, but inside they run on high voltage. A failed door switch, a blown fuse, a diode, a capacitor or the magnetron is behind most no-heat calls, and those parts can hold a dangerous charge even after the unit is unplugged. The technician discharges the circuit safely, tests the parts, explains what failed and what the repair involves, and starts only after your OK.',
     ],
-    symptomsHeading: 'Microwave problems we diagnose',
+    symptomsHeading: 'Microwave problems we repair',
     symptoms: [
       {
-        title: 'Runs but doesn’t heat',
+        title: 'Runs but does not heat',
         cause:
-          'A failed magnetron, high-voltage diode, capacitor or a door switch. These parts carry dangerous voltage, even unplugged.',
-        fixable: 'Fixable on most built-in units. Leave this one to a technician.',
+          'The turntable spins and the light is on, but food stays cold. The usual causes are a failed magnetron, high-voltage diode or capacitor, or a door switch that is not engaging correctly.',
+        fixable: 'Fixable on most over-the-range and built-in units. Leave this one to a technician.',
       },
       {
-        title: 'Dead, no display',
-        cause: 'A blown internal fuse, often caused by a failing door switch, or a control board fault.',
-        fixable: 'Fuse and door switch replacement are common.',
+        title: 'Completely dead, no display',
+        cause: 'A blown internal fuse is common, and a failing door switch is often what blew it. A control board fault can also leave the display dark.',
+        fixable: 'Fuse and door switch replacement are routine.',
+      },
+      {
+        title: 'Sparking or arcing inside',
+        cause: 'Metal in the cavity, a burned or greasy waveguide cover, or chipped interior paint that exposes bare metal. Stop using it until it is checked.',
+        fixable: 'Waveguide covers are simple to replace. Large areas of damaged paint may mean replacement.',
       },
       {
         title: 'Keypad not responding',
-        cause: 'A worn membrane keypad or a control board issue.',
-        fixable: 'Keypads are replaceable on many models.',
+        cause: 'A worn membrane keypad, moisture behind it from steam, or a control board problem.',
+        fixable: 'Keypads and boards are replaceable on many models.',
       },
       {
         title: 'Turntable not turning',
-        cause: 'A failed turntable motor or a worn coupler under the glass tray.',
+        cause: 'A failed turntable motor, a cracked coupler under the glass tray, or a tray that is not seated on its roller ring.',
         fixable: 'Motor or coupler replacement.',
       },
       {
         title: 'Vent fan or light not working',
-        cause: 'On over-the-range units: a failed fan motor, bulb, socket or switch.',
+        cause: 'On over-the-range units: a failed fan motor, a burned-out bulb or socket, or the switch for the fan or light.',
         fixable: 'Standard parts on most brands.',
       },
       {
-        title: 'Sparking inside',
-        cause: 'Metal in the cavity, a burned waveguide cover or damaged interior paint. Stop using it.',
-        fixable: 'Waveguide covers are simple to replace. Paint damage may mean replacement.',
+        title: 'Loud hum or buzzing while heating',
+        cause: 'Some hum is normal. A loud or changing buzz can come from a failing magnetron, a high-voltage diode or a cooling fan rubbing.',
+        fixable: 'The technician finds the source before replacing anything.',
       },
     ],
-    diagnostic: {
-      heading: 'What the diagnostic visit covers',
-      paragraphs: [
-        'The technician safely discharges the high-voltage capacitor, tests the door switches, fuse, magnetron circuit and controls, and checks the vent fan and light on over-the-range models.',
-      ],
-      covers: [
-        'Safe discharge of the high-voltage circuit',
-        'Door switch and fuse tests',
-        'Magnetron, diode and capacitor checks',
-        'Keypad and control board check',
-        'Turntable motor and coupler',
-        'Vent fan and light on over-the-range units',
-      ],
-    },
+    diagnostic: { heading: 'What the visit covers', paragraphs: [], covers: [] },
     repairOrReplace: {
       heading: 'Repair or replace your microwave?',
       paragraphs: [
-        'For countertop units, replacing usually makes more sense. For over-the-range and built-in units, a door switch, fuse or turntable repair is worth doing. Magnetron replacement depends on the age of the unit and whether the part is still available.',
+        'For countertop microwaves, replacing usually makes more sense than a service visit. For over-the-range and built-in units, the math changes: a replacement means removing the old unit, mounting the new one and sometimes matching the cabinet opening, so repairing a door switch, fuse, turntable or fan is usually worth it.',
+        'A magnetron failure on an older over-the-range unit is the closer call. It depends on the age of the microwave and whether the part is still available. The technician will tell you plainly.',
       ],
       points: [
-        'Countertop microwave: replace',
+        'Countertop microwave: replacement usually makes more sense',
         'Over-the-range or built-in, simple failure: repair',
-        'Magnetron failure on an older OTR unit: compare against replacement',
+        'Magnetron failure on an older over-the-range unit: compare against replacement',
       ],
     },
     safety:
       'Do not open a microwave cabinet. The high-voltage capacitor can hold a dangerous charge long after the unit is unplugged.',
-    brands: ['GE', 'Whirlpool', 'Samsung', 'LG', 'KitchenAid', 'Frigidaire', 'Maytag', 'Bosch'],
+    brands: ['GE', 'Whirlpool', 'Samsung', 'LG', 'KitchenAid', 'Frigidaire', 'Maytag', 'Bosch', 'Kenmore', 'Electrolux'],
     faqs: [
       {
         q: 'Is it worth repairing a microwave?',
-        a: 'For over-the-range and built-in models, often yes. For countertop units, usually no. Replacement is normally the simpler choice.',
+        a: 'For over-the-range and built-in models, often yes, because replacing them means removal and installation work too. For countertop units, replacement is usually the simpler choice.',
       },
       {
         q: 'Why does my microwave run but not heat?',
         a: 'The usual causes are a door switch, high-voltage diode, capacitor or magnetron. These are high-voltage parts and should only be tested by a technician.',
       },
       {
-        q: 'Can you replace the light or fan in my over-the-range microwave?',
-        a: 'Yes. Fan motors, bulbs and switches are standard parts on most models.',
+        q: 'Is it safe to use a microwave with a damaged door?',
+        a: 'No. If the door, hinges, latch or seal are damaged, or the door does not close properly, stop using it until it has been checked.',
+      },
+      {
+        q: 'Can you replace the light or vent fan in my over-the-range microwave?',
+        a: 'Yes. Fan motors, bulbs, sockets and switches are standard parts on most over-the-range models.',
+      },
+      {
+        q: 'Do you install over-the-range microwaves?',
+        a: 'Repair is our main service. Call and ask about installation for your situation.',
+      },
+      {
+        q: 'Why is my over-the-range microwave fan so loud?',
+        a: 'Grease-clogged filters make the fan work harder. Clean the filters first. If it still rattles, squeals or grinds, the fan motor or a blade may be failing, and both can be replaced.',
+      },
+      {
+        q: 'How much does microwave repair cost?',
+        a: 'It depends on the model and the part, so we do not list prices online. Call to discuss your repair needs with the brand and model number ready.',
+      },
+      {
+        q: 'Where is the model number on my microwave?',
+        a: 'Open the door and look on the frame around the opening or on the inside of the door. On over-the-range units it can also be behind the vent grille at the top front.',
       },
     ],
     related: ['oven', 'dishwasher', 'refrigerator'],
-    offeredVerified: false,
+    offeredVerified: true,
+    blocks: [
+      {
+        type: 'compare',
+        heading: 'First question: what kind of microwave is it?',
+        intro: 'It decides whether repair makes sense at all.',
+        columns: [
+          {
+            title: 'Countertop microwaves',
+            items: [
+              'Easy to unplug and swap out',
+              'Usually less expensive to replace than to repair',
+              'Worth a call only if it is a high-end or built-in-style model',
+              'Do not open the case to look inside',
+            ],
+          },
+          {
+            title: 'Over-the-range and built-in',
+            items: [
+              'Mounted to the wall and cabinet, or set into cabinetry',
+              'Replacement means removal, mounting and fit work',
+              'Door switches, fuses, fans, lights and turntables are common repairs',
+              'Usually worth repairing unless the unit is old and the magnetron failed',
+            ],
+          },
+        ],
+      },
+      {
+        type: 'stopUsing',
+        heading: 'Stop using the microwave if',
+        items: [
+          'It sparks, arcs or flashes inside with nothing metal in it.',
+          'The door, hinges, latch or seal are damaged, or the door does not close properly.',
+          'It keeps running after the door is opened.',
+          'You smell burning or see smoke from the vents or the cabinet.',
+          'The breaker trips when it starts heating.',
+        ],
+        note: 'Do not try to repair it yourself. A microwave’s high-voltage capacitor can hold a dangerous charge after the unit is unplugged.',
+      },
+      {
+        type: 'prose',
+        heading: 'Why microwave repair is not a do-it-yourself job',
+        paragraphs: [
+          'To make heat, a microwave steps household current up to thousands of volts and stores some of it in a high-voltage capacitor. Manufacturer service manuals tell technicians to unplug the unit, wait, and then discharge that capacitor with an insulated tool before touching anything inside. Repair guides warn the charge can linger well beyond that.',
+          'That is why the outer cabinet should stay closed unless you are trained to work on it. The checks below are safe. Anything past them is a job for a technician.',
+        ],
+      },
+      { type: 'symptoms' },
+      { type: 'inlineForm' },
+      {
+        type: 'quickAnswer',
+        heading: 'Safe checks before you call',
+        steps: [
+          'Check the outlet and the breaker. Over-the-range units are often on their own circuit.',
+          'Open and close the door firmly. If it does not latch cleanly, stop and call.',
+          'Heat a cup of water for one minute. If it is barely warm, the heating circuit has a problem.',
+          'On over-the-range models, check whether the vent fan and light still work. It helps narrow the fault.',
+          'Make sure the glass tray is seated on its roller ring and coupler.',
+        ],
+      },
+      {
+        type: 'partsTable',
+        heading: 'The microwave parts we test',
+        rows: [
+          { part: 'Door switches', job: 'Stop the microwave from heating when the door opens', signs: 'Dead unit, blown fuse, or a microwave that will not start' },
+          { part: 'Main fuse', job: 'Protects the circuit from a short', signs: 'Completely dead, often after a door switch fails' },
+          { part: 'Magnetron', job: 'Produces the microwaves that heat food', signs: 'Runs but does not heat, or a loud buzz while heating' },
+          { part: 'High-voltage diode and capacitor', job: 'Supply the magnetron', signs: 'No heat, or heat that comes and goes' },
+          { part: 'Turntable motor and coupler', job: 'Turn the glass tray', signs: 'Tray stops turning or wobbles' },
+          { part: 'Vent fan and light', job: 'Pull smoke and steam off the cooktop below', signs: 'Fan dead, noisy or stuck on, or the light out' },
+          { part: 'Keypad and control board', job: 'Run the controls and timer', signs: 'Buttons not responding or a blank display' },
+        ],
+      },
+      {
+        type: 'prose',
+        heading: 'Over-the-range extras: the vent fan, light and filters',
+        paragraphs: [
+          'An over-the-range microwave doubles as the range hood. Its grease filters sit under the unit and should be cleaned regularly, more often if you fry or sear a lot. Models that recirculate air instead of venting outside also use a charcoal filter that needs replacing from time to time. A clogged filter makes the fan work harder and can make it noisy.',
+          'Before a visit, clear the cooktop below the microwave and the cabinet shelf above it. Many over-the-range repairs mean taking the unit off its mounting plate, and the technician needs room to support it safely.',
+        ],
+      },
+      {
+        type: 'process',
+        heading: 'How a microwave repair visit works',
+        steps: [
+          { title: 'Safe discharge', text: 'The technician unplugs the unit and safely discharges the high-voltage circuit before opening it.' },
+          { title: 'Test the parts', text: 'Door switches, fuse, magnetron circuit, controls, fan and light are tested.' },
+          { title: 'Explain and approve', text: 'You hear what failed and whether the repair makes sense for your microwave. Work starts after your OK.' },
+          { title: 'Repair and test', text: 'After the repair, the microwave is run to confirm it heats, and the door is checked.' },
+        ],
+      },
+      { type: 'repairOrReplace' },
+      { type: 'brands', heading: 'Microwave brands we repair', intro: 'We repair the major microwave brands found in Temple kitchens. Tell us the brand and model number when you book.', styles: ['Over-the-range', 'Built-in', 'Wall oven combination'] },
+      { type: 'faq' },
+      { type: 'payment' },
+    ],
   },
 ];
 
