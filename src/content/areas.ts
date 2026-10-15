@@ -800,6 +800,104 @@ export const areas: Area[] = [
     ],
     featuredServices: ['washer', 'dryer', 'refrigerator', 'dishwasher'],
   },
+  {
+    slug: 'rogers-tx',
+    name: 'Rogers',
+    metaTitle: 'Appliance Repair Rogers TX | Southeast Bell County',
+    metaDescription:
+      'Appliance repair in Rogers, TX and the 76569 area for refrigerators, freezers, washers, dryers, dishwashers and ovens, in town and on rural roads. Call us.',
+    h1: 'Appliance Repair in Rogers, TX, Out on Highway 190',
+    intro: [
+      'Appliance Repair Temple repairs refrigerators, freezers, washers, dryers, dishwashers, ovens and ranges in homes in and around Rogers, TX. Same-day service is available, subject to technician availability, location, and current demand.',
+      'Rogers is a small town in southeastern Bell County, about 14 miles southeast of Temple on US 190. It has held close to the same size for more than a century, with 1,275 residents in 1910 and 1,113 at the 2020 census. The 76569 ZIP code reaches well beyond town into farm country and across the line into Milam County.',
+      'That makes Rogers one of the longer drives on our routes, so we try to make every visit count. The technician tests the appliance, tells you what failed and what the repair involves, and starts only after your OK. If a repair does not make sense for your appliance, you will hear that too.',
+    ],
+    travelNote:
+      'Rogers sits at the southeast end of our area, so visits are planned around our east routes along US 190. Call early and we will give you the earliest open time for your address.',
+    localPoints: [
+      {
+        heading: 'Long-established homes',
+        text: 'Many homes in town have been lived in for decades, with kitchens and laundry rooms that were fitted long before today’s appliances. Tight spaces, original shutoff valves and long dryer vent runs are common, so the technician checks the hookups as well as the appliance.',
+      },
+      {
+        heading: 'Farm and country properties',
+        text: 'Outside town, homes often have long driveways, gates and a shop or barn with a spare refrigerator or chest freezer. Tell us about gates, dogs and where the appliance is when you book.',
+      },
+      {
+        heading: 'Appliances kept for the long haul',
+        text: 'A lot of households here keep a dependable appliance running as long as it will go. That usually makes sense. Belts, gaskets, relays and heating elements wear out long before the machine does.',
+      },
+      {
+        heading: 'Rogers ISD families',
+        text: 'Family homes run the washer, dryer and dishwasher every day during the school year. Long dry times, thumping spins and dishes that come out gritty are early signs worth a call before they turn into a bigger repair.',
+      },
+    ],
+    sections: [
+      {
+        heading: 'Make the most',
+        accent: 'of one visit.',
+        paragraphs: [
+          'Because Rogers is a longer drive, a little preparation goes a long way. Take a photo of the model and serial tag before you call, usually inside the door, under the lid or on the frame, and have it handy when you talk to us. With the exact model, the technician can check common parts for that appliance before heading out.',
+          'If a second appliance is acting up, mention it when you book, even if it seems minor. Looking at both on the same trip is easier than scheduling two visits. And if anything changes before the appointment, like the appliance starting to work again or getting worse, give us a call.',
+        ],
+      },
+      {
+        heading: 'Keep an older appliance',
+        accent: 'running longer.',
+        paragraphs: [
+          'Refrigerators and freezers: vacuum the condenser coils once or twice a year, keep the door gaskets clean, and leave a few inches of space around units in a garage or shop. Dryers: clean the lint screen every load and check that the outside vent flap opens when the dryer runs.',
+          'Washers: do not overload the drum, use the right detergent for the machine, and clear the pump filter on front-loaders. Dishwashers: clean the filter at the bottom of the tub every month or so and scrape plates before loading. Small habits like these head off a lot of common repairs.',
+        ],
+      },
+      {
+        heading: 'How scheduling works',
+        accent: 'for Rogers.',
+        paragraphs: [
+          'Call or send a request with your address, the appliance, the brand and what it is doing. We confirm the details by phone and set a visit window. We are open Monday to Saturday, 8:00 AM to 8:00 PM.',
+          'Our typical response is about 60 minutes during business hours. That is a typical figure, subject to technician availability, location, and current demand, not a guaranteed arrival time. Rogers is at the edge of our routes, so calling earlier in the day gives you a better shot at a same-day visit.',
+          'Most calls here are refrigerators and freezers that stop cooling, washers that will not drain or spin, dryers that run without heat, dishwashers that leave dishes dirty and ovens that will not heat.',
+        ],
+      },
+    ],
+    zips: ['76569'],
+    zipsVerified: true,
+    nearby: ['Holland', 'Little River-Academy', 'Troy', 'Belton', 'Salado'],
+    faqs: [
+      {
+        q: 'Do you cover homes outside Rogers?',
+        a: 'Yes, across the 76569 ZIP code, including rural roads around town. Part of the ZIP crosses into Milam County, so give us your address and we will confirm.',
+      },
+      {
+        q: 'Can you come to Rogers the same day?',
+        a: 'Sometimes. Same-day service is available, subject to technician availability, location, and current demand. Rogers is at the east end of our routes, so calling early helps.',
+      },
+      {
+        q: 'Can the technician look at two appliances on one visit?',
+        a: 'Yes. Mention both when you book so we can plan enough time.',
+      },
+      {
+        q: 'Is my older washer worth repairing?',
+        a: 'Often. Pumps, lid locks, belts and suspension parts are reasonable repairs. A failed transmission or worn tub bearings on an older machine usually tip the balance toward replacing it. The technician will explain the options.',
+      },
+      {
+        q: 'Do you repair freezers and fridges in shops and barns?',
+        a: 'Yes. Make sure the technician can reach the back of the unit and the outlet, and let us know about any gates.',
+      },
+      {
+        q: 'Which appliances do you repair in Rogers?',
+        a: 'Refrigerators, freezers, washers, dryers, dishwashers, ovens, ranges, cooktops and over-the-range microwaves, across the major brands.',
+      },
+      {
+        q: 'What happens if a part has to be ordered?',
+        a: 'Many common parts can be replaced on the first visit. Some are model-specific and have to be ordered. The technician will tell you if that is the case and what happens next.',
+      },
+      {
+        q: 'How much does appliance repair in Rogers cost?',
+        a: 'It depends on the appliance and the part, so we do not list prices online. Call to discuss your repair needs with the brand and model number ready.',
+      },
+    ],
+    featuredServices: ['refrigerator', 'freezer', 'washer', 'dryer'],
+  },
 ];
 
 export const areaHref = (a: Area) => `/service-areas/${a.slug}/`;
