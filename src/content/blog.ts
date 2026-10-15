@@ -429,60 +429,111 @@ export const posts: Post[] = [
   },
   {
     slug: 'how-often-clean-dryer-vent',
-    title: 'How Often Should You Clean a Dryer Vent?',
+    title: 'How Often Should You Clean a Dryer Vent? Signs, Steps and Safety',
+    metaTitle: 'How Often Should You Clean a Dryer Vent? | Temple, TX',
     metaDescription:
-      'How often to clean a dryer vent, signs it is clogged, and what you can safely do yourself. Advice for homes in Temple and Bell County.',
+      'How often to clean a dryer vent, the signs it is clogged, what you can safely do yourself and what to leave to a pro. Practical advice for Temple homes.',
     excerpt:
-      'Once a year for most homes, more often for big households and long vent runs. Here are the warning signs and what you can safely do yourself.',
+      'At least once a year for most homes, sooner if drying is slowing down. Here are the warning signs, the safe steps you can take yourself and when to get help.',
     published: '2026-10-14',
-    updated: '2026-10-14',
+    updated: '2026-10-15',
     service: 'dryer',
     sections: [
       {
-        id: 'how-often',
-        heading: 'How often',
+        id: 'short-version',
+        heading: 'The short version',
+        list: [
+          'Clean the lint screen before or after every load.',
+          'Clean the vent at least once a year, or sooner if clothes are taking longer to dry.',
+          'Use rigid or flexible metal venting, not plastic or thin foil.',
+          'Check that the outside flap opens fully when the dryer runs.',
+          'Long runs through attics or to the roof are best left to a vent cleaning service.',
+        ],
+      },
+      {
+        id: 'why-it-matters',
+        heading: 'Why the vent matters',
         paragraphs: [
-          'For most homes, once a year. Large families, homes with pets and vents longer than about 25 feet or with several bends may need it every six months.',
-          'Clean the lint screen after every load. It takes five seconds and is the single most useful habit for dryer life and safety.',
+          'A dryer pushes hot, damp air and fine lint out through the vent. When lint builds up, the air cannot escape. The dryer runs longer, gets hotter and works harder, and lint is very flammable.',
+          'Fire safety agencies are blunt about it. The National Fire Protection Association and the U.S. Fire Administration both list failure to clean as the leading cause of home dryer fires.',
+          'A clogged vent is also hard on the dryer itself. It is one of the most common reasons a heating element, thermal fuse or thermostat fails, which is why a no-heat repair often starts with the vent.',
+        ],
+      },
+      {
+        id: 'how-often',
+        heading: 'How often to clean it',
+        paragraphs: [
+          'NFPA guidance is to clean lint out of the vent pipe at least once a year, or sooner if drying takes longer than usual. That is a good baseline for most Temple homes.',
+          'Some homes need it more often. Large households that run the dryer every day, homes with pets, and long vent runs with several bends collect lint faster. For those, checking every six months is reasonable.',
+          'The lint screen is a separate job. Clean it before or after every load. It takes seconds and is the most useful habit for both safety and dryer life.',
         ],
       },
       {
         id: 'signs',
         heading: 'Signs the vent is clogged',
         list: [
-          'Clothes take more than one cycle to dry',
-          'The dryer or the laundry room gets very hot',
-          'Clothes come out hot but damp',
-          'The outside vent flap barely opens when the dryer runs',
-          'You smell something hot or burning',
-          'The dryer has blown a thermal fuse',
+          'Clothes take more than one cycle to dry.',
+          'The dryer, the clothes or the laundry room gets very hot.',
+          'Clothes come out hot but still damp.',
+          'The outside vent flap barely opens, or you feel weak airflow outside.',
+          'There is lint around the outside vent hood or behind the dryer.',
+          'You notice a hot or burning smell.',
+          'The dryer has blown a thermal fuse or stopped heating.',
+        ],
+        after: [
+          'If you smell burning, stop the dryer, unplug it and do not use it again until the vent and dryer have been checked.',
         ],
       },
       {
         id: 'diy',
-        heading: 'What you can do yourself',
+        heading: 'What you can safely do yourself',
         list: [
-          'Unplug the dryer (and shut the gas valve on a gas dryer) before moving it.',
-          'Replace a white vinyl or thin foil transition hose with a semi-rigid or rigid metal one.',
-          'Disconnect the hose and clean it and the first few feet of the wall duct with a vent brush kit.',
-          'Clean out the outside vent hood and make sure the flap swings freely.',
+          'Unplug the dryer before moving it. On a gas dryer, also close the gas valve and be careful not to strain the gas line.',
+          'Pull the dryer out and disconnect the transition hose between the dryer and the wall.',
+          'Replace white plastic or thin foil accordion hoses with semi-rigid or rigid metal. Plastic and foil can sag, crush and trap lint.',
+          'Clean the hose and the first few feet of the wall duct with a dryer vent brush kit.',
+          'Go outside and clear lint, nests or debris from the vent hood. Make sure the flap swings freely.',
+          'Reconnect with metal clamps or foil tape made for ducts. Avoid sheet-metal screws through the duct, which catch lint.',
+          'Push the dryer back without crushing the hose, then run it and feel for strong airflow outside.',
         ],
-        after: [
-          'Long runs through attics or up to the roof are better left to a vent cleaning service with the right tools.',
+      },
+      {
+        id: 'call-a-pro',
+        heading: 'When to call a professional',
+        paragraphs: [
+          'Long vent runs through an attic, up to the roof or under a floor are hard to clean well with a household brush kit, and roof work has its own risks. A dryer vent cleaning service has longer rods, blowers and cameras for those runs.',
+          'Call an appliance technician if the vent is clear and the dryer still runs hot, takes too long or will not heat, or if you see lint inside the dryer cabinet near the heating element or burner. Those point to parts inside the dryer that need testing.',
         ],
       },
     ],
     safety:
-      'Never use a dryer without the lint screen in place. If you see lint inside the dryer cabinet near the burner or element, stop using it until it is cleaned.',
+      'Never run a dryer without the lint screen in place, and do not leave it running when you leave home or go to bed. If you see lint inside the cabinet near the burner or element, stop using the dryer until it is cleaned.',
     faqs: [
       {
+        q: 'How often should a dryer vent be cleaned?',
+        a: 'At least once a year for most homes, and sooner if drying takes longer than usual. Homes with heavy use, pets or long vent runs may need it every six months.',
+      },
+      {
         q: 'Does a clogged vent damage the dryer?',
-        a: 'Yes. It makes the dryer run hotter and longer, which wears out heating parts, thermal fuses and belts.',
+        a: 'Yes. It makes the dryer run hotter and longer, which wears out heating parts, thermal fuses, thermostats and belts.',
+      },
+      {
+        q: 'What kind of dryer vent hose should I use?',
+        a: 'Rigid or flexible metal. Avoid plastic and thin foil accordion hoses, which can sag, crush and trap lint.',
       },
       {
         q: 'Can I vent a dryer indoors?',
-        a: 'Not a gas dryer, ever. Electric dryers should also vent outside unless they are a ventless condenser or heat pump model.',
+        a: 'Not a gas dryer, ever. Electric dryers should also vent outside unless they are a ventless condenser or heat pump model designed for it.',
       },
+      {
+        q: 'Do dryer sheets clog the vent?',
+        a: 'They can leave a film on the lint screen that reduces airflow. Wash the screen with warm soapy water every so often and let it dry fully before putting it back.',
+      },
+    ],
+    sources: [
+      { name: 'NFPA clothes dryer safety tips (via Massachusetts)', url: 'https://www.mass.gov/doc/nfpa-clothes-dryer-safety-brochure/download' },
+      { name: 'U.S. Fire Administration: clothes dryer fire safety', url: 'https://www.usfa.fema.gov/downloads/pdf/publications/clothes_dryer_fire_safety_flyer.pdf' },
+      { name: 'Consumer Reports: how to prevent dryer fires', url: 'https://www.consumerreports.org/clothes-dryer/how-to-prevent-dryer-fires/' },
     ],
   },
   {
