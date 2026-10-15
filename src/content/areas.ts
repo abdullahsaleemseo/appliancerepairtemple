@@ -997,6 +997,104 @@ export const areas: Area[] = [
     ],
     featuredServices: ['refrigerator', 'washer', 'dryer', 'dishwasher'],
   },
+  {
+    slug: 'moody-tx',
+    name: 'Moody',
+    metaTitle: 'Appliance Repair Moody TX | Up Highway 317 from Temple',
+    metaDescription:
+      'Appliance repair in Moody, TX and the 76557 area for refrigerators, freezers, washers, dryers, dishwashers and ovens, from a team based in Temple. Call us.',
+    h1: 'Appliance Repair in Moody, TX, from Your Neighbors in Temple',
+    intro: [
+      'Appliance Repair Temple repairs refrigerators, freezers, washers, dryers, dishwashers, ovens and ranges in homes in and around Moody, TX. Same-day service is available, subject to technician availability, location, and current demand.',
+      'Moody is a small city of about 1,400 people in southern McLennan County, up State Highway 317 from the Temple area. It counts as part of the Waco metro, but for appliance service it sits closer to our Temple base. The 76557 ZIP code covers about 123 square miles of farm and ranch country and reaches into Bell and Coryell counties, out past Mother Neff State Park on the Leon River.',
+      'That means a Moody call might be a house in town or a home a few miles down a county road. The visit works the same either way. The technician tests the appliance, tells you what failed and what the repair involves, and starts only after your OK.',
+    ],
+    travelNote:
+      'Moody is at the north end of our area, so visits are planned around our north routes along Highway 317. Call early and we will give you the earliest open time for your address.',
+    localPoints: [
+      {
+        heading: 'Homes in town',
+        text: 'Moody has stayed between about 1,000 and 1,400 residents for roughly a century, so many houses in town are well established. Older kitchens and laundry rooms can be tight, with original shutoff valves and long dryer vent runs, and the technician checks those along with the appliance.',
+      },
+      {
+        heading: 'Farm and ranch properties',
+        text: 'Across the wider 76557 area, homes often have long driveways, gates and a shop or barn with a spare refrigerator or chest freezer. Tell us about gates, dogs and where the appliance is when you book.',
+      },
+      {
+        heading: 'Three counties, one ZIP',
+        text: 'Because 76557 crosses into Bell and Coryell counties, some addresses near Moody are not in McLennan County at all. Give us your full address when you call so we can confirm coverage and plan the route.',
+      },
+      {
+        heading: 'Moody ISD families',
+        text: 'Family homes run the washer, dryer and dishwasher every day. Long dry times, a washer that thumps on spin or dishes that come out gritty are early signs worth a call before they turn into a bigger repair.',
+      },
+    ],
+    sections: [
+      {
+        heading: 'Cold snaps are hard',
+        accent: 'on appliances too.',
+        paragraphs: [
+          'Central Texas freezes do not last long, but they catch appliances off guard. Water lines to refrigerator ice makers and washer hoses in unheated laundry rooms or garages can freeze and split. After a hard freeze, check behind the washer and the refrigerator for drips before you run them.',
+          'Garage refrigerators and freezers can also act up in the cold. Many standard refrigerators are not built to run in a garage that drops near freezing, and the fresh food side may warm up while the freezer thaws. If yours only misbehaves on cold nights, that is useful information for the technician.',
+        ],
+      },
+      {
+        heading: 'Ice maker stopped?',
+        accent: 'Check these first.',
+        paragraphs: [
+          'Make sure the ice maker is switched on and the shutoff arm or sensor is not stuck in the full position. Check that the freezer is cold enough, usually around 0°F, since many ice makers stop below a certain temperature. If you recently changed the water filter, reseat it, as a filter that is not fully locked in can block water flow.',
+          'If ice is still not forming, the problem is often a failed water inlet valve, a frozen fill tube or the ice maker assembly itself. Those are common repairs, so book a visit with the model number ready.',
+        ],
+      },
+      {
+        heading: 'How scheduling works',
+        accent: 'for Moody.',
+        paragraphs: [
+          'Call or send a request with your address, the appliance, the brand and what it is doing. We confirm the details by phone and set a visit window. We are open Monday to Saturday, 8:00 AM to 8:00 PM.',
+          'Our typical response is about 60 minutes during business hours. That is a typical figure, subject to technician availability, location, and current demand, not a guaranteed arrival time. Moody is one of our longer drives, so calling earlier in the day gives you a better shot at a same-day visit.',
+          'Most calls here are refrigerators and freezers that stop cooling, washers that will not drain or spin, dryers that run without heat, dishwashers that leave dishes dirty and ovens that will not heat. On every dryer call we check the vent too.',
+        ],
+      },
+    ],
+    zips: ['76557'],
+    zipsVerified: true,
+    nearby: ['Troy', 'Belton', "Morgan's Point Resort", 'Holland', 'Little River-Academy'],
+    faqs: [
+      {
+        q: 'Do you cover homes outside Moody city limits?',
+        a: 'Yes, across the 76557 ZIP code, which includes parts of McLennan, Bell and Coryell counties. Give us your address and we will confirm.',
+      },
+      {
+        q: 'Moody is in McLennan County. Do you really come out from Temple?',
+        a: 'Yes. Moody is on our north routes along Highway 317. Same-day service is available, subject to technician availability, location, and current demand.',
+      },
+      {
+        q: 'My washer hose split after a freeze. What should I do?',
+        a: 'Shut off the water supply valves behind the washer, unplug it and dry the area. Then call us. Do not run the washer until the hose and connections have been checked.',
+      },
+      {
+        q: 'My ice maker stopped. Is it worth repairing?',
+        a: 'Usually. Inlet valves, fill tubes and ice maker assemblies are common, reasonable repairs. Check that the ice maker is on and the filter is seated first.',
+      },
+      {
+        q: 'Do you repair freezers and fridges in shops and barns?',
+        a: 'Yes. Make sure the technician can reach the back of the unit and the outlet, and let us know about any gates.',
+      },
+      {
+        q: 'Which appliances do you repair in Moody?',
+        a: 'Refrigerators, freezers, washers, dryers, dishwashers, ovens, ranges, cooktops and over-the-range microwaves, across the major brands.',
+      },
+      {
+        q: 'What happens if a part has to be ordered?',
+        a: 'Many common parts can be replaced on the first visit. Some are model-specific and have to be ordered. The technician will tell you if that is the case and what happens next.',
+      },
+      {
+        q: 'How much does appliance repair in Moody cost?',
+        a: 'It depends on the appliance and the part, so we do not list prices online. Call to discuss your repair needs with the brand and model number ready.',
+      },
+    ],
+    featuredServices: ['refrigerator', 'washer', 'dryer', 'freezer'],
+  },
 ];
 
 export const areaHref = (a: Area) => `/service-areas/${a.slug}/`;

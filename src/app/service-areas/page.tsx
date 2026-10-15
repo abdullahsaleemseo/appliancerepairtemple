@@ -38,7 +38,7 @@ export default function AreasPage() {
 
       <Section labelledBy="pages-heading">
         <SectionHeading id="pages-heading" eyebrow="Local pages" title="Towns with their" accent="own page." />
-        <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+        <ul className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           <li>
             <Link href={routes.cityPage} className="grain group flex h-full min-h-[180px] flex-col rounded-card bg-ink p-6 text-white transition hover:-translate-y-1 hover:shadow-lift">
               <Icon name="pin" className="h-6 w-6 text-flame-glow" />

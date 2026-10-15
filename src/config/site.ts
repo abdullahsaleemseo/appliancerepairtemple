@@ -44,7 +44,7 @@ export const site = {
   // Temple ZIP codes supplied in the design brief as verified.
   templeZips: ['76501', '76502', '76503', '76504', '76508'],
 
-  // Towns covered without a dedicated page. Listed on the service-areas hub only.
+  // Nearby towns covered. Towns with an entry in content/areas.ts get their own page and are linked automatically.
   nearbyTowns: [
     'Belton',
     'Killeen',
