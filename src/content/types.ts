@@ -94,6 +94,8 @@ export type Post = {
   title: string;
   /** Title tag (60 characters or fewer). Falls back to "[title] | [short name]". */
   metaTitle?: string;
+  /** Thumbnail and social share image, a path under /public (16:9). */
+  image?: string;
   metaDescription: string;
   excerpt: string;
   published: string;

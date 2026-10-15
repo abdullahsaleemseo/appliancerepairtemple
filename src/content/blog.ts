@@ -3,6 +3,7 @@ import type { Post } from './types';
 export const posts: Post[] = [
   {
     slug: 'refrigerator-not-cooling',
+    image: '/images/blog/refrigerator-not-cooling.webp',
     title: 'Refrigerator Not Cooling? What to Check First and When to Call',
     metaTitle: 'Refrigerator Not Cooling? What to Check First | Temple, TX',
     metaDescription:
@@ -115,6 +116,7 @@ export const posts: Post[] = [
   },
   {
     slug: 'washer-not-draining',
+    image: '/images/blog/washer-not-draining.webp',
     title: 'Washer Not Draining? Safe Checks Before You Book a Repair',
     metaTitle: 'Washer Not Draining? Safe Checks First | Temple, TX',
     metaDescription:
@@ -211,6 +213,7 @@ export const posts: Post[] = [
   },
   {
     slug: 'dryer-not-heating',
+    image: '/images/blog/dryer-not-heating.webp',
     title: 'Dryer Not Heating? Safe Checks and When to Call a Technician',
     metaTitle: 'Dryer Not Heating? Safe Checks and Causes | Temple, TX',
     metaDescription:
@@ -314,6 +317,7 @@ export const posts: Post[] = [
   },
   {
     slug: 'repair-or-replace-appliance',
+    image: '/images/blog/repair-or-replace-appliance.webp',
     title: 'Repair or Replace an Appliance? A Practical Way to Decide',
     metaTitle: 'Repair or Replace an Appliance? How to Decide | Temple, TX',
     metaDescription:
@@ -538,6 +542,7 @@ export const posts: Post[] = [
   },
   {
     slug: 'dishwasher-drainage-problems',
+    image: '/images/blog/dishwasher-drainage-problems.webp',
     title: 'Dishwasher Not Draining? Common Causes and Safe Checks',
     metaTitle: 'Dishwasher Not Draining? Causes and Safe Checks | Temple, TX',
     metaDescription:

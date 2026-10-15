@@ -23,7 +23,7 @@ const find = (slug: string) => posts.find((p) => p.slug === slug);
 export async function generateMetadata({ params }: Params) {
   const p = find((await params).slug);
   if (!p) return {};
-  return pageMetadata({ title: p.metaTitle ?? `${p.title} | ${site.shortName}`, description: p.metaDescription, path: postHref(p), type: 'article' });
+  return pageMetadata({ title: p.metaTitle ?? `${p.title} | ${site.shortName}`, description: p.metaDescription, path: postHref(p), type: 'article', image: p.image });
 }
 
 const fmt = (d: string) => new Date(`${d}T12:00:00`).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
@@ -36,7 +36,7 @@ export default async function PostPage({ params }: Params) {
 
   return (
     <>
-      <JsonLd data={articleSchema({ title: p.title, description: p.metaDescription, path, published: p.published, updated: p.updated })} />
+      <JsonLd data={articleSchema({ title: p.title, description: p.metaDescription, path, published: p.published, updated: p.updated, image: p.image })} />
       <article>
         <PageHero
           crumbs={[

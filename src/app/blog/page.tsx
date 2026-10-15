@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { routes, site } from '@/config/site';
 import { posts, postHref } from '@/content/blog';
@@ -56,10 +57,23 @@ export default function BlogIndex() {
             return (
               <li key={p.slug}>
                 <Link href={postHref(p)} className="card group flex h-full flex-col overflow-hidden transition duration-300 hover:-translate-y-1 hover:shadow-lift">
-                  <span className={`grain relative flex h-44 items-center justify-center overflow-hidden ${i % 2 ? 'bg-ink-700' : 'bg-ink'}`} aria-hidden="true">
-                    <span className="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-flame/30 blur-[60px] transition duration-500 group-hover:bg-flame/50" />
-                    <Icon name={icon} className="relative h-16 w-16 text-white/85" strokeWidth={1.3} />
-                  </span>
+                  {p.image ? (
+                    <span className="relative block aspect-[16/9] overflow-hidden bg-ink">
+                      <Image
+                        src={p.image}
+                        alt=""
+                        fill
+                        sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                        className="object-cover transition duration-500 group-hover:scale-[1.03]"
+                        priority={i < 3}
+                      />
+                    </span>
+                  ) : (
+                    <span className={`grain relative flex aspect-[16/9] items-center justify-center overflow-hidden ${i % 2 ? 'bg-ink-700' : 'bg-ink'}`} aria-hidden="true">
+                      <span className="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-flame/30 blur-[60px] transition duration-500 group-hover:bg-flame/50" />
+                      <Icon name={icon} className="relative h-16 w-16 text-white/85" strokeWidth={1.3} />
+                    </span>
+                  )}
                   <span className="flex flex-1 flex-col p-7">
                     <time dateTime={p.updated} className="text-[13px] font-medium uppercase tracking-[0.12em] text-ink-muted">
                       Updated {fmt(p.updated)}

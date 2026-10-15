@@ -7,6 +7,8 @@ type MetaInput = {
   path: string;
   noindex?: boolean;
   type?: 'website' | 'article';
+  /** Share image path under /public. Pages without one use the generated site image. */
+  image?: string;
 };
 
 export function absoluteUrl(path: string) {
@@ -14,7 +16,7 @@ export function absoluteUrl(path: string) {
 }
 
 /** Page metadata with a self-referencing canonical and Open Graph tags. Staging and draft builds are never indexable. */
-export function pageMetadata({ title, description, path, noindex, type = 'website' }: MetaInput): Metadata {
+export function pageMetadata({ title, description, path, noindex, type = 'website', image }: MetaInput): Metadata {
   const url = absoluteUrl(path);
   const index = indexingAllowed && !noindex;
   return {
@@ -29,7 +31,8 @@ export function pageMetadata({ title, description, path, noindex, type = 'websit
       siteName: site.brandName,
       locale: 'en_US',
       type,
+      ...(image ? { images: [{ url: absoluteUrl(image), width: 1672, height: 941, alt: title }] } : {}),
     },
-    twitter: { card: 'summary_large_image', title, description },
+    twitter: { card: 'summary_large_image', title, description, ...(image ? { images: [absoluteUrl(image)] } : {}) },
   };
 }

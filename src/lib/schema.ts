@@ -95,7 +95,7 @@ export function serviceSchema(opts: { name: string; description: string; path: s
   };
 }
 
-export function articleSchema(opts: { title: string; description: string; path: string; published: string; updated: string }) {
+export function articleSchema(opts: { title: string; description: string; path: string; published: string; updated: string; image?: string }) {
   return {
     '@context': 'https://schema.org',
     '@type': 'Article',
@@ -104,6 +104,7 @@ export function articleSchema(opts: { title: string; description: string; path: 
     mainEntityOfPage: absoluteUrl(opts.path),
     datePublished: opts.published,
     dateModified: opts.updated,
+    ...(opts.image ? { image: absoluteUrl(opts.image) } : {}),
     author: { '@type': 'Organization', name: site.brandName, url: site.url },
     publisher: { '@id': businessId },
   };

@@ -73,9 +73,18 @@ All 6 guides, the Temple city page and request service.
 
 BreadcrumbList. Each guide carries its own Article and FAQPage schema.
 
-## 6. Image recommendations
+## 6. Images
 
-Card images are icon panels today. Real photos for each guide (coil cleaning, washer filter, dryer vent, dishwasher filter) could replace them later.
+Thumbnails added October 15, 2026 (owner-supplied, 1672 x 941, in `public/images/blog/`). Each one also becomes the article's Open Graph, Twitter and Article schema image.
+
+| Guide | File |
+|---|---|
+| Refrigerator not cooling | `refrigerator-not-cooling.webp` |
+| Washer not draining | `washer-not-draining.webp` |
+| Dryer not heating | `dryer-not-heating.webp` |
+| Repair or replace | `repair-or-replace-appliance.webp` |
+| Dishwasher not draining | `dishwasher-drainage-problems.webp` (image text still reads the old title "Common Dishwasher Drainage Problems") |
+| Dryer vent cleaning | no image yet, icon panel shown |
 
 ## 7. CTA copy
 
