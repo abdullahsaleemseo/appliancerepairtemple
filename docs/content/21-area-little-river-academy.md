@@ -225,4 +225,4 @@ Call (254) 555-0147 · Request Service · Call to confirm the earliest open time
 - [Little River-Academy, Texas (Wikipedia)](https://en.wikipedia.org/wiki/Little_River-Academy,_Texas)
 - [zip-codes.com: Little River Academy, TX](https://www.zip-codes.com/city/tx-little-river-academy.asp)
 - [zip-codes.com: ZIP 76554](https://www.zip-codes.com/zip-code/76554/zip-code-76554.asp)
-- [U.S. Fire Administration: clothes dryer fire safety](https://www.usfa.fema.gov/prevention/home-fires/prevent-fires/clothes-dryers/)
+- [U.S. Fire Administration: clothes dryer fire safety flyer](https://www.usfa.fema.gov/downloads/pdf/publications/clothes_dryer_fire_safety_flyer.pdf)
