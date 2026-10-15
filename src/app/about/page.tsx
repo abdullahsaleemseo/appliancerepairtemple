@@ -1,15 +1,22 @@
+import Link from 'next/link';
 import { canShow, claims, routes, site } from '@/config/site';
 import { PageHero } from '@/components/PageHero';
 import { CtaRow } from '@/components/Buttons';
 import { FinalCta } from '@/components/FinalCta';
+import { FaqList } from '@/components/FaqList';
+import { HowItWorks } from '@/components/HowItWorks';
 import { Icon } from '@/components/Icon';
 import { Section, SectionHeading } from '@/components/Section';
 import { Claim, DraftBlock, VerifyTag } from '@/components/Verify';
+import { services, serviceHref } from '@/content/services';
+import { brands, brandHref, otherBrands } from '@/content/brands';
+import { areas, areaHref } from '@/content/areas';
+import type { Faq } from '@/content/types';
 import { pageMetadata } from '@/lib/seo';
 
 export const metadata = pageMetadata({
-  title: `About ${site.brandName} | Appliance Repair in ${site.city}, ${site.stateAbbr}`,
-  description: `Who we are, how we work and the ${site.region} towns we serve. In-home appliance repair based in ${site.city}, ${site.stateAbbr}.`,
+  title: `About ${site.brandName} | Local Repair in ${site.city}, ${site.stateAbbr}`,
+  description: `${site.brandName} is a licensed and insured in-home appliance repair service based in ${site.city}, ${site.stateAbbr}. How we work, what we fix and the towns we cover.`,
   path: routes.about,
 });
 
@@ -20,6 +27,48 @@ const values = [
   { icon: 'shield' as const, title: 'Honest advice', text: 'If an appliance is not worth fixing, we tell you, even when that means no repair job.' },
 ];
 
+const visitSteps = [
+  { title: 'You call or send a request', text: 'Tell us the appliance, the brand and what it is doing. The model number helps if you have it.' },
+  { title: 'We confirm a visit window', text: 'We check the schedule for your address and confirm a time that works for you.' },
+  { title: 'Diagnosis in your home', text: 'The technician tests the appliance, finds the failed part and explains what the repair involves.' },
+  { title: 'Repair after your OK', text: 'Work starts only once you agree. Then the appliance is tested before the technician leaves.' },
+];
+
+const wontDo = [
+  'Start a repair before you have heard what it involves and said yes.',
+  'Replace parts by guesswork to see what sticks.',
+  'Push a repair on an appliance that is not worth fixing.',
+  'Claim to be a manufacturer’s authorized or factory service. We are independent.',
+  'Promise an exact arrival time we cannot keep.',
+];
+
+const aboutFaqs: Faq[] = [
+  {
+    q: `Is ${site.brandName} affiliated with any appliance brand?`,
+    a: 'No. We are an independent repair service, not affiliated with or authorized by any appliance manufacturer. Brand names on this site only describe the appliances we work on.',
+  },
+  {
+    q: 'Are you licensed and insured?',
+    a: 'Yes. We are licensed and insured.',
+  },
+  {
+    q: 'Where are you based?',
+    a: `In ${site.city}, ${site.stateAbbr}. Repairs happen in your home. We cover ${site.city} and nearby towns in ${site.county} and just beyond.`,
+  },
+  {
+    q: 'What are your hours?',
+    a: 'Monday to Saturday, 8:00 AM to 8:00 PM.',
+  },
+  {
+    q: 'How quickly can you come out?',
+    a: `Same-day service is available, ${claims.availabilityQualifier}. Our typical response is about 60 minutes during business hours, which is a typical figure and not a guaranteed arrival time.`,
+  },
+  {
+    q: 'Why are there no prices on the site?',
+    a: 'The cost depends on the appliance, the model and the part that failed, so a number on a web page would only be a guess. Call to discuss your repair needs. Flexible payment options are available.',
+  },
+];
+
 export default function AboutPage() {
   const credentials = [
     { item: claims.licensedInsured, text: claims.licensedInsured.value },
@@ -27,17 +76,21 @@ export default function AboutPage() {
     { item: claims.yearsExperience, text: claims.yearsExperience.value.short },
     { item: claims.repairsCompleted, text: `${claims.repairsCompleted.value.value} repairs completed` },
     { item: claims.rating, text: `${claims.rating.value.value} average rating` },
+    { item: claims.responseTime, text: claims.responseTime.value.long },
     { item: claims.paymentOptions, text: claims.paymentOptions.value },
     { item: site.hours, text: `Hours: ${site.hours.value.long}` },
   ].filter((c) => canShow(c.item));
 
+  const brandLinks = brands.filter((b) => b.hasPage);
+
   return (
     <>
-      <PageHero crumbs={[{ name: 'About', path: routes.about }]} title={`About ${site.brandName}`}>
+      <PageHero crumbs={[{ name: 'About', path: routes.about }]} title={`About ${site.brandName},`} accent="your local repair service.">
         <div className="prose-copy prose-dark">
           <p>
-            {site.brandName} is an in-home appliance repair service for {site.city} and the surrounding {site.region} towns. We
-            fix the appliances people depend on every day: refrigerators, freezers, washers, dryers, dishwashers and ranges.
+            {site.brandName} is an in-home appliance repair service based in {site.city}, {site.stateAbbr}. We fix the appliances
+            a household runs on every day: refrigerators, freezers, washers, dryers, dishwashers, ovens, ranges and microwaves,
+            in {site.city} and the {site.region} towns around it.
           </p>
         </div>
         <div className="mt-8">
@@ -51,19 +104,24 @@ export default function AboutPage() {
           <div>
             <div className="prose-copy">
               <p>
-                We keep the work simple. Find the actual problem, explain it in plain words, and fix it only
-                once you agree. Most repairs come down to one failed part, and a careful diagnosis keeps you from paying for parts
-                you did not need.
+                When an appliance quits, you want two things: someone who shows up when they said they would, and a straight answer
+                about what is wrong. That is the whole idea behind how we work.
               </p>
               <p>
-                We focus on {site.county} because staying close means shorter drive times and more realistic scheduling for the
-                people who call us.
+                Most repairs come down to one failed part. A careful diagnosis finds it, so you are not paying for parts you did not
+                need. The technician explains what failed in plain words, tells you what the repair involves, and starts only once
+                you agree. If the appliance is old enough, or the failure big enough, that a repair does not make sense, you will
+                hear that too.
+              </p>
+              <p>
+                We stay close to {site.city} on purpose. Working {site.county} and the towns just outside it keeps drive times
+                shorter and scheduling realistic, which matters when your fridge is warm or the washer is full of water.
               </p>
             </div>
             <div className="mt-8">
               <DraftBlock show={false} label="OWNER STORY: REPLACE BEFORE LAUNCH">
                 <p className="rounded-card bg-white p-6 text-ink-body">
-                  Add the real business story here: who runs it, how long they have repaired appliances, and why {site.city}.
+                  Add the real business story here: who runs it, how they got into appliance repair, and why {site.city}.
                 </p>
               </DraftBlock>
             </div>
@@ -86,6 +144,10 @@ export default function AboutPage() {
               </li>
             ))}
           </ul>
+          <p className="mt-6 max-w-3xl text-[15px] text-white/60">
+            The {claims.rating.value.value} average rating reflects customer reviews across the internet. Same-day service and response times are{' '}
+            {claims.availabilityQualifier}.
+          </p>
         </Section>
       ) : null}
 
@@ -101,7 +163,12 @@ export default function AboutPage() {
         </section>
       </DraftBlock>
 
-      <Section tone="white" labelledBy="values-heading">
+      <Section tone="white" labelledBy="visit-heading">
+        <SectionHeading id="visit-heading" eyebrow="A typical visit" title="What happens" accent="when you call." />
+        <HowItWorks steps={visitSteps} />
+      </Section>
+
+      <Section labelledBy="values-heading">
         <SectionHeading id="values-heading" eyebrow="Our standards" title="How we" accent="work." />
         <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {values.map((v) => (
@@ -117,6 +184,78 @@ export default function AboutPage() {
         <p className="mt-6">
           <VerifyTag label="CONFIRM EACH PROMISE MATCHES HOW THE PROVIDER WORKS" />
         </p>
+      </Section>
+
+      <Section tone="white" labelledBy="wont-heading">
+        <div className="grid gap-12 lg:grid-cols-[1fr_1.3fr]">
+          <SectionHeading id="wont-heading" eyebrow="Straight answers" title="What we" accent="will not do." />
+          <ul className="space-y-3">
+            {wontDo.map((w) => (
+              <li key={w} className="flex items-start gap-3 rounded-2xl border border-sand bg-canvas px-5 py-4 text-ink-body">
+                <span aria-hidden="true" className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-ink text-white">
+                  <Icon name="close" className="h-3.5 w-3.5" strokeWidth={2.5} />
+                </span>
+                {w}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </Section>
+
+      <Section labelledBy="scope-heading">
+        <div className="grid gap-12 lg:grid-cols-2">
+          <div>
+            <SectionHeading id="scope-heading" eyebrow="What we fix" title="Appliances" accent="and brands." />
+            <ul className="flex flex-wrap gap-2">
+              {services.map((s) => (
+                <li key={s.key}>
+                  <Link href={serviceHref(s.key)} className="inline-flex rounded-full border border-sand bg-white px-4 py-2 text-[15px] font-medium text-ink transition hover:border-ink">
+                    {s.name} repair
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <p className="mt-6 text-ink-body">
+              We work on the major brands, including{' '}
+              {brandLinks.map((b, i) => (
+                <span key={b.slug}>
+                  <Link href={brandHref(b)} className="font-semibold text-ink underline decoration-flame/50 underline-offset-4 hover:decoration-flame">
+                    {b.name}
+                  </Link>
+                  {', '}
+                </span>
+              ))}
+              {otherBrands.join(', ')}. We are not affiliated with any of them.
+            </p>
+          </div>
+          <div>
+            <h2 className="font-display text-2xl font-bold tracking-[-0.02em] text-ink">Where we work</h2>
+            <p className="mt-3 text-ink-body">
+              {site.city} is home base. From here we cover these nearby towns, each with its own page:
+            </p>
+            <ul className="mt-5 flex flex-wrap gap-2">
+              <li>
+                <Link href={routes.cityPage} className="inline-flex rounded-full bg-ink px-4 py-2 text-[15px] font-medium text-white">
+                  {site.city}
+                </Link>
+              </li>
+              {areas.map((a) => (
+                <li key={a.slug}>
+                  <Link href={areaHref(a)} className="inline-flex rounded-full border border-sand bg-white px-4 py-2 text-[15px] font-medium text-ink transition hover:border-ink">
+                    {a.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </Section>
+
+      <Section tone="white" labelledBy="faq-heading">
+        <div className="grid gap-12 lg:grid-cols-[1fr_1.5fr]">
+          <SectionHeading id="faq-heading" eyebrow="FAQ" title="About us:" accent="questions." />
+          <FaqList faqs={aboutFaqs} />
+        </div>
       </Section>
 
       <FinalCta formId="about_final" />
