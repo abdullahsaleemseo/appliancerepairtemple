@@ -657,9 +657,93 @@ export const brands: Brand[] = [
     ],
     hasPage: true,
   },
+  {
+    key: 'kenmore',
+    slug: `kenmore-appliance-repair-${loc}`,
+    name: 'Kenmore',
+    h1: 'Kenmore Appliance Repair in Temple, TX, for New and Older Models',
+    metaTitle: 'Kenmore Appliance Repair Temple TX | Washers, Fridges & More',
+    metaDescription:
+      'Kenmore washer, dryer, fridge or range acting up? Independent Kenmore appliance repair in Temple, TX, for newer and older models. Same-day service available.',
+    intro: [
+      'Kenmore washer that will not spin, dryer running cold or refrigerator warming up? Appliance Repair Temple repairs Kenmore washers, dryers, refrigerators, freezers, dishwashers, ranges and microwaves in homes across Temple, TX. Same-day service is available, subject to technician availability, location, and current demand.',
+      'Kenmore is a little different from other brands. For decades Kenmore appliances were sold through Sears but built by other manufacturers, including Whirlpool, LG, Frigidaire and others. That means two Kenmore refrigerators can have completely different parts inside, depending on who made them.',
+      'The good news is that the model number tells us who built it. The digits before the dot point to the manufacturer, and the full number tells us exactly which parts fit. Many Kenmore appliances in Temple homes are older units that still run well, and a lot of them are worth repairing.',
+    ],
+    appliances: [
+      { key: 'washer', note: 'Top-load and front-load washers, including older Elite models' },
+      { key: 'dryer', note: 'Electric and gas dryers' },
+      { key: 'refrigerator', note: 'Top-freezer, side-by-side, bottom-freezer and French door' },
+      { key: 'freezer', note: 'Chest and upright freezers' },
+      { key: 'dishwasher', note: 'Built-in dishwashers' },
+      { key: 'oven', note: 'Electric and gas ranges' },
+      { key: 'microwave', note: 'Over-the-range microwaves' },
+    ],
+    issues: [
+      {
+        title: 'Washer will not spin or drain',
+        text: 'On Whirlpool-built Kenmore top-loaders, a worn lid switch or lid lock, a broken belt, a failed drive coupler or a clogged pump are common. On LG-built front-loaders, the drain filter and door lock come first. The model number tells us which design you have.',
+      },
+      {
+        title: 'Dryer runs but no heat',
+        text: 'A heating element, thermal fuse or thermostat on electric dryers, an igniter or gas valve coils on gas dryers. Older dryers often have long vent runs packed with lint, so airflow is checked on every call.',
+      },
+      {
+        title: 'Refrigerator or freezer running warm',
+        text: 'Dusty condenser coils, a failed fan, a defrost problem or a start relay are the usual causes, especially on older units in garages. These are reasonable repairs on most models.',
+      },
+      {
+        title: 'Parts for older models',
+        text: 'Some older Kenmore parts have been discontinued. Because Kenmore shared designs with its manufacturers, a compatible part can often be found through the original builder. The technician will tell you plainly if a part is no longer available.',
+      },
+    ],
+    haveReady: [
+      'The full model number, including the digits before the dot. A photo of the tag is the easiest way to share it.',
+      'The serial number, which helps date the appliance.',
+      'Gas or electric, for dryers and ranges.',
+      'Roughly how old the appliance is, if you know.',
+      'Any error code or unusual noise.',
+    ],
+    modelLocations: [
+      { appliance: 'Refrigerator', where: 'Inside the fresh-food section, not the freezer: on a side wall near the top, on the ceiling or near the crisper drawers' },
+      { appliance: 'Top-load washer', where: 'Under the lid, near the tub opening or on the rim' },
+      { appliance: 'Front-load washer', where: 'On the cabinet, usually around the door opening' },
+      { appliance: 'Dryer', where: 'Inside the door opening on the frame, or on the back of the cabinet on some models' },
+      { appliance: 'Dishwasher', where: 'On the edge of the door or the side of the tub frame, visible when the door is open' },
+      { appliance: 'Range', where: 'On the frame behind the storage drawer or behind the oven door' },
+    ],
+    modelSource: { name: 'Sears PartsDirect: Kenmore model and serial plate locations', url: 'https://www.searspartsdirect.com/model/1k3ridit8b-000582/kenmore-25379252703-top-mount-refrigerator-parts' },
+    faqs: [
+      {
+        q: 'Are you affiliated with Kenmore or Sears?',
+        a: 'No. Appliance Repair Temple is an independent repair service and is not affiliated with or authorized by Kenmore, Sears or any manufacturer that built Kenmore appliances.',
+      },
+      {
+        q: 'Who made my Kenmore appliance?',
+        a: 'The digits before the dot in the model number identify the manufacturer. For example, 110 and 106 point to Whirlpool and 795 points to LG. Give us the full model number and we will look it up.',
+      },
+      {
+        q: 'Is my old Kenmore worth repairing?',
+        a: 'Often, yes. Many older Kenmore washers, dryers and refrigerators use simple, durable parts. If a key part has been discontinued or the repair is major on a very old unit, the technician will tell you.',
+      },
+      {
+        q: 'Can you still get parts for older Kenmore models?',
+        a: 'Many are still available, sometimes under the original manufacturer’s part number. Some have been discontinued. We check before ordering and tell you what we find.',
+      },
+      {
+        q: 'Can you repair my Kenmore the same day?',
+        a: 'Same-day service is available, subject to technician availability, location, and current demand. Some parts are model-specific and may need to be ordered.',
+      },
+      {
+        q: 'How much does Kenmore appliance repair cost?',
+        a: 'It depends on the appliance and the part, so we do not list prices online. Call to discuss your repair needs with the full model number ready.',
+      },
+    ],
+    hasPage: true,
+  },
 ];
 
 /** Other brands commonly serviced. Listed on the hub, no dedicated page yet. */
-export const otherBrands = ['Kenmore', 'Electrolux', 'Amana', 'Speed Queen'];
+export const otherBrands = ['Electrolux', 'Amana', 'Speed Queen'];
 
 export const brandHref = (b: Brand) => `/brands/${b.slug}/`;
