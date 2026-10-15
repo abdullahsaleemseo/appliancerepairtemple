@@ -538,58 +538,110 @@ export const posts: Post[] = [
   },
   {
     slug: 'dishwasher-drainage-problems',
-    title: 'Common Dishwasher Drainage Problems',
+    title: 'Dishwasher Not Draining? Common Causes and Safe Checks',
+    metaTitle: 'Dishwasher Not Draining? Causes and Safe Checks | Temple, TX',
     metaDescription:
-      'Standing water in your dishwasher? The common causes, what you can check safely, and when a drain pump replacement is needed.',
+      'Standing water in your dishwasher? The common causes, safe checks in the right order, what drain codes mean and when the drain pump needs a technician.',
     excerpt:
-      'Standing water usually comes down to a filter, a hose, the disposal or the pump. Here is how to check them in order.',
+      'Standing water usually comes down to the filter, the drain hose, the garbage disposal or the pump. Here is how to check them in order, and what to leave to a technician.',
     published: '2026-10-14',
-    updated: '2026-10-14',
+    updated: '2026-10-15',
     service: 'dishwasher',
     sections: [
       {
+        id: 'short-version',
+        heading: 'The short version',
+        list: [
+          'A little water under the filter is normal. A pool covering the tub floor is not.',
+          'Clean the filter first. It fixes a lot of drainage complaints.',
+          'Run the garbage disposal, and on a new disposal make sure the knockout plug was removed.',
+          'Check the drain hose under the sink for kinks and a proper high loop, and clear the air gap if you have one.',
+          'If it hums at the end of the cycle and still will not drain, the drain pump likely needs a technician.',
+        ],
+      },
+      {
         id: 'normal',
-        heading: 'Some water is normal',
+        heading: 'How much water is normal?',
         paragraphs: [
-          'Many dishwashers keep a small amount of water in the sump under the filter to keep seals wet. If you only see water down in that area, it may be fine. A pool covering the tub floor is not.',
+          'Many dishwashers keep a small amount of water in the sump, the low area under the filter, to keep seals from drying out. If you only see a little water down in that area, it may be normal.',
+          'Standing water across the floor of the tub, dirty water left after a cycle, or a sour smell are signs the dishwasher is not draining properly. If a cycle was interrupted by a power blip or someone opening the door, run a short cycle or a drain cycle once before troubleshooting.',
+        ],
+      },
+      {
+        id: 'before-you-start',
+        heading: 'Before you start',
+        paragraphs: [
+          'Turn off the dishwasher’s power at the breaker or unplug it under the sink. Lay towels on the floor in front of it.',
+          'Bail out standing water with a cup and a small bowl, then soak up the rest with a sponge or towel. Watch for broken glass in the bottom of the tub and in the filter.',
         ],
       },
       {
         id: 'checks',
-        heading: 'Checks in order',
+        heading: 'Checks, in order',
         list: [
-          'Filter: twist out the filter under the lower spray arm and rinse it. This fixes a lot of drainage complaints.',
-          'Garbage disposal: if the dishwasher drains into a disposal, run the disposal. A newly installed disposal may still have its knockout plug in place.',
-          'Drain hose: look under the sink for a kink or a sag. The hose should loop up high under the counter before connecting.',
-          'Air gap: if there is a small cap on the sink deck, pull it off and clear any debris.',
+          'Filter. Twist out the filter assembly under the lower spray arm and rinse it under the tap. Scrub mesh screens gently with a soft brush. Food, labels, seeds and glass collect here. Cleaning it about once a month is a good habit.',
+          'Garbage disposal. If the dishwasher drains into a disposal, run the disposal for a few seconds to clear it. On a newly installed disposal, the knockout plug inside the dishwasher inlet may still be in place. Whirlpool suggests pushing a pencil into the inlet: if it goes in about three inches, the plug is gone.',
+          'Sink drain. If the kitchen sink is slow or backs up, the clog is in the house plumbing, and the dishwasher cannot drain into it. Clear the sink drain first.',
+          'Drain hose. Look under the sink for a hose that is kinked, crushed by stored items or sagging below the drain connection. Most installations call for a high loop, with the hose secured up under the counter so sink water cannot flow back into the dishwasher.',
+          'Air gap. Some kitchens have a small cylinder on the sink deck next to the faucet. Pull or twist off the cap and clear any debris inside. Air gaps are required in some areas and optional in others.',
+        ],
+      },
+      {
+        id: 'codes-and-sounds',
+        heading: 'Drain codes and sounds',
+        paragraphs: [
+          'Many dishwashers show a code when water does not leave in the expected time. Bosch, for example, uses codes such as E24 and E25 for drain problems, and other brands use their own codes or flashing light patterns. Check your manual or the manufacturer’s support site for your model.',
+          'Humming at the drain step with no water moving usually means the drain pump is jammed, often by glass or a seed, or its motor has failed. Silence at the drain step can point to the pump not getting power, a control or a wiring issue. A grinding or rattling sound can mean something is caught in the pump impeller.',
         ],
       },
       {
         id: 'pump',
         heading: 'When it is the pump',
         paragraphs: [
-          'If the filter, hose and disposal are clear and the dishwasher hums at the end of the cycle without draining, the drain pump has likely failed or is jammed with glass or a seed. A technician can clear or replace it.',
+          'If the filter, disposal, sink drain, hose and air gap are all clear and the dishwasher still will not drain, the drain pump is the most likely cause. Some pumps can be cleared of debris; others need to be replaced. Either way, it involves removing panels and working near wiring and water, which is best left to a technician.',
+          'A failed drain pump is usually a reasonable repair. Replacement starts to make more sense mainly when an older dishwasher also has a rusted tub, broken racks or a failed control board.',
         ],
       },
       {
-        id: 'hard-water',
-        heading: 'Hard water and drainage',
-        paragraphs: [
-          'Mineral scale builds up in the sump and drain path over time. Using rinse aid and running a dishwasher cleaner every month or two keeps it under control.',
+        id: 'prevent',
+        heading: 'Preventing drainage problems',
+        list: [
+          'Scrape plates into the trash before loading. You do not need to rinse them, but large food scraps clog the filter.',
+          'Clean the filter about once a month, more often if you rarely scrape plates.',
+          'Run the garbage disposal before starting the dishwasher.',
+          'In homes with hard water, use rinse aid and run a dishwasher cleaner every month or two to keep mineral scale out of the sump and drain path.',
+          'Keep stored items under the sink from crushing the drain hose.',
         ],
       },
     ],
     safety:
-      'Turn off power at the breaker before reaching into the sump area or working under the sink. Watch for broken glass in the filter.',
+      'Turn off power at the breaker or unplug the dishwasher before reaching into the sump or working under the sink. Watch for broken glass in the filter and sump. Never pour chemical drain cleaner into a dishwasher.',
     faqs: [
       {
         q: 'Can I use drain cleaner in my dishwasher?',
-        a: 'No. Chemical drain cleaners can damage pump seals and plastic parts.',
+        a: 'No. Chemical drain cleaners can damage pump seals and plastic parts, and they are dangerous if they splash back. Clear the filter and check the hose instead.',
       },
       {
         q: 'Why does my dishwasher drain into the sink?',
-        a: 'A clog in the sink drain or disposal lets water back up. Clear the sink drain first.',
+        a: 'A clog in the sink drain or disposal lets water back up. A missing high loop in the drain hose can also let water flow the wrong way. Clear the sink drain first, then check the hose.',
       },
+      {
+        q: 'Why will my new dishwasher not drain?',
+        a: 'On a new installation, a common cause is a garbage disposal knockout plug that was never removed, or a kinked drain hose behind the dishwasher. Check both before calling.',
+      },
+      {
+        q: 'How often should I clean the dishwasher filter?',
+        a: 'About once a month for most households, and more often if you do not scrape plates before loading.',
+      },
+      {
+        q: 'Is a dishwasher that won’t drain worth repairing?',
+        a: 'Usually, yes. Drain pumps are common parts. Replacement makes more sense mainly when an older dishwasher has several problems at once.',
+      },
+    ],
+    sources: [
+      { name: 'Whirlpool Product Help: not draining, newly installed dishwasher', url: 'https://producthelp.whirlpool.com/Dishwashers/Dishwasher/Cycle_Concerns/Not_Draining%2F%2FWater_Remains/Not_Draining_-_Newly_Installed_-_Dishwasher' },
+      { name: 'Bosch: dishwasher error codes', url: 'https://www.bosch-home.com/us/owner-support/dishwashers/error-codes' },
+      { name: 'iFixit: dishwasher not draining', url: 'https://www.ifixit.com/Wiki/Dishwasher_Not_Draining' },
     ],
   },
 ];
