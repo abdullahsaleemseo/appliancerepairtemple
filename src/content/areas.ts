@@ -503,6 +503,105 @@ export const areas: Area[] = [
     ],
     featuredServices: ['dishwasher', 'refrigerator', 'washer', 'dryer'],
   },
+  {
+    slug: 'morgans-point-resort-tx',
+    name: "Morgan's Point Resort",
+    metaTitle: "Appliance Repair Morgan's Point Resort TX | Lake Homes",
+    metaDescription:
+      "Appliance repair in Morgan's Point Resort, TX for refrigerators, freezers, washers, dryers, dishwashers and ovens in homes along Belton Lake. Call to book.",
+    h1: "Appliance Repair in Morgan's Point Resort, TX, on Belton Lake",
+    intro: [
+      "Appliance Repair Temple repairs refrigerators, freezers, washers, dryers, dishwashers, ovens and ranges in homes across Morgan's Point Resort, TX. Same-day service is available, subject to technician availability, location, and current demand.",
+      "Morgan's Point Resort is a lakeside city of about 4,600 people on the east shore of Belton Lake, north of Belton and west of Temple. Homes here range from older lake houses to newer builds, plus manufactured homes, and many have a garage or shop that holds a second refrigerator or a chest freezer.",
+      'Whatever the house looks like, the visit works the same way. The technician tests the appliance, tells you what failed and what the repair involves, and starts only after your OK. If a repair does not make sense for an older unit, you will hear that too.',
+    ],
+    travelNote:
+      "Morgan's Point Resort shares the 76513 ZIP code with Belton, and visits are usually grouped with our Belton and west Temple routes. Call to confirm the earliest open time for your address.",
+    localPoints: [
+      {
+        heading: 'Same ZIP as Belton',
+        text: "Many addresses here use 76513 and some show Belton as the mailing city. When you book, tell us the street and that you are in Morgan's Point Resort. It helps the technician plan the route and find your home on the first try.",
+      },
+      {
+        heading: 'Garage fridges and lake freezers',
+        text: 'Lake living tends to mean a second refrigerator for drinks and a chest freezer for fish and game, often in a garage that runs hot in summer. Keep the coils clean, leave a few inches of space around the unit and avoid stacking boxes on top of a chest freezer.',
+      },
+      {
+        heading: 'Older lake houses',
+        text: 'Some homes near the water date back decades, with small kitchens, original hookups and long dryer vent runs. On laundry calls the technician checks the vent and the water connections too, because they cause many repeat failures.',
+      },
+      {
+        heading: 'Manufactured homes',
+        text: 'Manufactured homes often have apartment-size ranges, compact refrigerators and tight laundry closets with little room behind the machines. Let us know the layout when you book so the technician can plan for the space.',
+      },
+    ],
+    sections: [
+      {
+        heading: 'Before you call',
+        accent: 'try these first.',
+        paragraphs: [
+          'Power can flicker during storms. If an appliance stopped right after the power blinked, check the breaker and any GFCI outlet in the garage or kitchen first. Then unplug the appliance for a minute and plug it back in.',
+          'If a garage refrigerator is not cooling, look at where it sits. In a closed garage in July, many standard refrigerators struggle. Pull it a few inches from the wall and check that the condenser fan is running. If it still runs warm, or it clicks on and off every few minutes, book a visit.',
+        ],
+      },
+      {
+        heading: 'Repairs we handle',
+        accent: "in Morgan's Point Resort.",
+        paragraphs: [
+          'Refrigerators and freezers lead the list in summer: warm fresh food sections, frost on the freezer wall, ice makers that stop and chest freezers that will not start. Start relays, fan motors and defrost parts are frequent fixes.',
+          'Washers that will not drain or spin and dryers that run without heat come next. On every dryer call we check the vent, since a long or clogged vent is one of the most common reasons a dryer stops heating.',
+          'Dishwashers that leave dishes dirty or water in the tub, and ovens with a burned bake element or a temperature that has drifted, round out the list.',
+        ],
+      },
+      {
+        heading: 'How scheduling works',
+        accent: "for Morgan's Point.",
+        paragraphs: [
+          'Call or send a request with your address, the appliance, the brand and what it is doing. We confirm the details by phone and set a visit window. We are open Monday to Saturday, 8:00 AM to 8:00 PM.',
+          'Our typical response is about 60 minutes during business hours. That is a typical figure, subject to technician availability, location, and current demand, not a guaranteed arrival time. Calling earlier in the day gives you a better shot at a same-day visit.',
+          'Before the visit, find the model number, usually on a label inside the door, under the lid or on the frame, and write down any error code. If the appliance is in a garage or shop, make sure the technician can reach it and the outlet behind it.',
+        ],
+      },
+    ],
+    zips: ['76513'],
+    zipsVerified: true,
+    nearby: ['Belton', 'Harker Heights', 'Nolanville', 'Salado', 'Killeen'],
+    faqs: [
+      {
+        q: "Do you cover all of Morgan's Point Resort?",
+        a: "Yes. We serve homes throughout Morgan's Point Resort, which shares the 76513 ZIP code with Belton. Give us your street address and we will confirm.",
+      },
+      {
+        q: "Can you come to Morgan's Point Resort the same day?",
+        a: 'Often. Same-day service is available, subject to technician availability, location, and current demand. We will give you the earliest open time when you call.',
+      },
+      {
+        q: 'Do you repair garage refrigerators and chest freezers?',
+        a: 'Yes. They are one of our most common calls around the lake. Make sure the technician can reach the back of the unit and the outlet.',
+      },
+      {
+        q: 'Do you work on appliances in manufactured homes?',
+        a: 'Yes. Tell us the brand, the model and how much space there is around the appliance so the technician can plan the visit.',
+      },
+      {
+        q: 'Is an old chest freezer worth repairing?',
+        a: 'If it is a relay, thermostat or fan, usually yes. A failed compressor on an older, small chest freezer is usually not worth repairing. The technician will tell you which it is.',
+      },
+      {
+        q: "Which appliances do you repair in Morgan's Point Resort?",
+        a: 'Refrigerators, freezers, washers, dryers, dishwashers, ovens, ranges, cooktops and over-the-range microwaves, across the major brands.',
+      },
+      {
+        q: 'What happens if a part has to be ordered?',
+        a: 'Many common parts can be replaced on the first visit. Some are model-specific and have to be ordered. The technician will tell you if that is the case and what happens next.',
+      },
+      {
+        q: "How much does appliance repair in Morgan's Point Resort cost?",
+        a: 'It depends on the appliance and the part, so we do not list prices online. Call to discuss your repair needs with the brand and model number ready.',
+      },
+    ],
+    featuredServices: ['freezer', 'refrigerator', 'washer', 'dryer'],
+  },
 ];
 
 export const areaHref = (a: Area) => `/service-areas/${a.slug}/`;
