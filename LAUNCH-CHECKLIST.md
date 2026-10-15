@@ -1,6 +1,6 @@
 # Launch checklist
 
-Nothing below may be invented. Each item needs confirmation from the business owner or repair provider.
+Nothing below may be invented. Each item needs confirmation from the business owner.
 
 ## Business facts (`src/config/site.ts`)
 - [ ] `site.phone`: real number (or call tracking number that keeps NAP consistent), then `verified: true`.
@@ -28,7 +28,7 @@ Verified by the owner on Oct 15, 2026: Licensed & Insured, Same-Day Service, 4+ 
 - [ ] Real prices in `pricingRows` for every service
 - [ ] Real reviews in `src/content/reviews.ts`, copied exactly, with source and date
 - [ ] Owner story and real photos on the About page; real technician photo for the homepage hero
-- [ ] "How we work" promises on the About page match how the provider actually works
+- [ ] "How we work" promises on the About page match how the business actually works
 - [ ] Privacy Policy and Terms reviewed by the owner (and ideally a lawyer)
 - [ ] Read every page aloud. If it sounds like a chatbot, rewrite it.
 

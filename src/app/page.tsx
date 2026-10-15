@@ -310,7 +310,7 @@ export default function HomePage() {
               <>
                 We work on the major household brands found in Temple homes. Give us the brand and model number when you book so the
                 technician can check parts ahead of time.
-                {!claims.brandsServiced.verified ? <VerifyTag label="CONFIRM BRAND LIST WITH PROVIDER" /> : null}
+                {!claims.brandsServiced.verified ? <VerifyTag label="CONFIRM BRAND LIST WITH OWNER" /> : null}
               </>
             }
           />

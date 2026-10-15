@@ -28,7 +28,7 @@ export default function AreasPage() {
           <p>
             When you call or send a request, we check the schedule for your ZIP code and give you the earliest open visit window.
             Towns closer to {site.city} usually have more openings. Towns at the edge of the area are scheduled on set days.
-            <VerifyTag label="CONFIRM COVERAGE RADIUS AND SCHEDULING WITH PROVIDER" />
+            <VerifyTag label="CONFIRM COVERAGE RADIUS AND SCHEDULING WITH OWNER" />
           </p>
         </div>
         <div className="mt-8">

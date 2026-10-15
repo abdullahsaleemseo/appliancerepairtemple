@@ -132,8 +132,7 @@ export function Consent({
           className="mt-0.5 h-5 w-5 shrink-0 rounded accent-[#C2500C] focus:ring-2 focus:ring-flame/40"
         />
         <label htmlFor={id} className="text-[13px] leading-relaxed text-ink-muted">
-          I agree that {site.brandName} and the local repair provider it works with may call or text me at the number above about
-          this request. Consent is not a condition of purchase. Message and data rates may apply. See our{' '}
+          I agree that {site.brandName} may call or text me at the number above about this request. Consent is not a condition of purchase. Message and data rates may apply. See our{' '}
           <Link href={routes.privacy} className="font-semibold text-ink underline">
             Privacy Policy
           </Link>

@@ -38,22 +38,22 @@ export default function PrivacyPage() {
       <h2>How we use your information</h2>
       <ul>
         <li>To call or text you about your repair request and schedule a visit</li>
-        <li>To pass your request to the local appliance repair provider who will perform the service</li>
+        <li>To send a technician, perform the repair and follow up on it</li>
         <li>To understand which pages and campaigns bring in requests, so we can improve the site</li>
         <li>To prevent spam and abuse</li>
       </ul>
 
       <h2>Who we share it with</h2>
       <p>
-        Requests submitted on this site may be forwarded to an independent local appliance repair provider in the {site.city} area so
-        they can contact you and perform the repair. We also use service providers that host the site, process form submissions
-        and provide analytics. We do not sell your personal information, and we do not share it with unrelated third parties for
-        their own marketing.
+        {site.brandName} performs the repairs itself, so your request stays with us. We use a small number of service providers
+        that host the site, process form submissions and provide analytics, and they handle information only to provide those
+        services to us. We may also share information when the law requires it. We do not sell your personal information, and we
+        do not share it with unrelated third parties for their own marketing.
       </p>
 
       <h2>Calls and text messages</h2>
       <p>
-        By checking the consent box on a form, you agree that we and the repair provider may call or text the number you provided
+        By checking the consent box on a form, you agree that we may call or text the number you provided
         about your request. Consent is not a condition of purchase. Message and data rates may apply. Reply STOP to any text to opt
         out.
       </p>

@@ -20,7 +20,7 @@ export default function TermsPage() {
       <p>
         This site provides information about appliance repair and lets you request a callback. Submitting a form requests a call
         back. It does not book an appointment or create a contract for repair. Appointments, prices and repair terms are agreed
-        directly with the technician or repair provider before any work begins.
+        directly with us before any work begins.
       </p>
 
       <h2>Scheduling and availability</h2>
@@ -31,9 +31,9 @@ export default function TermsPage() {
 
       <h2>Repair work</h2>
       <p>
-        Repairs are performed by an independent local appliance repair provider. Pricing, warranty coverage and payment terms for
-        a repair are set by that provider and given to you before work starts. Any warranty applies only as stated in writing by
-        the provider.
+        Repairs are performed by {site.brandName}’s own technicians. The technician explains what failed and what the repair
+        involves, and work starts only after you approve it. Pricing, any warranty on the repair and payment terms are given to
+        you before work starts. Any warranty applies only as stated in writing by us.
       </p>
 
       <h2>Information on this site</h2>

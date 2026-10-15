@@ -210,7 +210,7 @@ export default function AboutPage() {
           ))}
         </ul>
         <p className="mt-6">
-          <VerifyTag label="CONFIRM EACH PROMISE MATCHES HOW THE PROVIDER WORKS" />
+          <VerifyTag label="CONFIRM EACH PROMISE MATCHES HOW WE WORK" />
         </p>
       </Section>
 

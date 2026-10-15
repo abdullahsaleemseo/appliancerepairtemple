@@ -34,7 +34,11 @@ This was a language and accuracy pass, not legal advice. A lawyer or the owner s
 
 ## Owner decisions needed
 
-- [ ] **Who performs the repairs.** The Privacy Policy, Terms and the form consent text say requests may be forwarded to "an independent local appliance repair provider" (the setup in the original spec). The rest of the site speaks as "we" repair. Confirm which is true so the legal pages and site copy match.
+- [x] **Who performs the repairs.** Owner confirmed (October 15, 2026): Appliance Repair Temple does the repairs itself. Updated to match:
+  - Privacy Policy: requests stay with us; no forwarding to an outside repair provider; consent covers calls and texts from us only.
+  - Terms of Service: repairs are performed by our own technicians; pricing, any repair warranty and payment terms are given before work starts.
+  - Form consent text (every form): "I agree that Appliance Repair Temple may call or text me at the number above about this request."
+  - Draft-only verification labels and LAUNCH-CHECKLIST.md no longer refer to a "provider".
 - [ ] Legal review of all three pages before launch.
 - [ ] Phone number and email (pending).
 
@@ -66,16 +70,16 @@ We may also use Cloudflare Turnstile to block automated spam. It processes limit
 ## How we use your information
 
 - To call or text you about your repair request and schedule a visit
-- To pass your request to the local appliance repair provider who will perform the service
+- To send a technician, perform the repair and follow up on it
 - To understand which pages and campaigns bring in requests, so we can improve the site
 - To prevent spam and abuse
 ## Who we share it with
 
-Requests submitted on this site may be forwarded to an independent local appliance repair provider in the Temple area so they can contact you and perform the repair. We also use service providers that host the site, process form submissions and provide analytics. We do not sell your personal information, and we do not share it with unrelated third parties for their own marketing.
+Appliance Repair Temple performs the repairs itself, so your request stays with us. We use a small number of service providers that host the site, process form submissions and provide analytics, and they handle information only to provide those services to us. We may also share information when the law requires it. We do not sell your personal information, and we do not share it with unrelated third parties for their own marketing.
 
 ## Calls and text messages
 
-By checking the consent box on a form, you agree that we and the repair provider may call or text the number you provided about your request. Consent is not a condition of purchase. Message and data rates may apply. Reply STOP to any text to opt out.
+By checking the consent box on a form, you agree that we may call or text the number you provided about your request. Consent is not a condition of purchase. Message and data rates may apply. Reply STOP to any text to opt out.
 
 ## Cookies
 
@@ -105,6 +109,7 @@ If we change this policy, we will update the date at the top of this page.
 
 Questions about this policy: call (254) 555-0147 or email service@appliancerepairtemple.com .
 
+
 ---
 
 ## Page copy: Terms of Service
@@ -117,7 +122,7 @@ By using appliancerepairtemple.com you agree to these terms. If you do not agree
 
 ## What this site does
 
-This site provides information about appliance repair and lets you request a callback. Submitting a form requests a call back. It does not book an appointment or create a contract for repair. Appointments, prices and repair terms are agreed directly with the technician or repair provider before any work begins.
+This site provides information about appliance repair and lets you request a callback. Submitting a form requests a call back. It does not book an appointment or create a contract for repair. Appointments, prices and repair terms are agreed directly with us before any work begins.
 
 ## Scheduling and availability
 
@@ -125,7 +130,7 @@ Same-day service is available, subject to technician availability, location, and
 
 ## Repair work
 
-Repairs are performed by an independent local appliance repair provider. Pricing, warranty coverage and payment terms for a repair are set by that provider and given to you before work starts. Any warranty applies only as stated in writing by the provider.
+Repairs are performed by Appliance Repair Temple’s own technicians. The technician explains what failed and what the repair involves, and work starts only after you approve it. Pricing, any warranty on the repair and payment terms are given to you before work starts. Any warranty applies only as stated in writing by us.
 
 ## Information on this site
 
@@ -154,6 +159,7 @@ These terms are governed by the laws of the State of Texas.
 ## Contact
 
 Questions about these terms: (254) 555-0147 .
+
 
 ---
 

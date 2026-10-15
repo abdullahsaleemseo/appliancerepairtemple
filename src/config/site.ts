@@ -87,7 +87,7 @@ export const claims = {
   paymentOptions: v('Flexible Payment Options Available', true),
   callbackMinutes: v(15),
   gasAppliances: v('Gas range and gas dryer repair'),
-  brandsServiced: v('Brands listed on the site are serviced by the provider', true),
+  brandsServiced: v('Brands listed on the site are serviced by Appliance Repair Temple', true),
 } as const;
 
 export const isProduction = process.env.NEXT_PUBLIC_SITE_MODE === 'production';
