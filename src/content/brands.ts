@@ -905,9 +905,85 @@ export const brands: Brand[] = [
     ],
     hasPage: true,
   },
+  {
+    key: 'speed-queen',
+    slug: `speed-queen-repair-${loc}`,
+    name: 'Speed Queen',
+    h1: 'Speed Queen Washer & Dryer Repair in Temple, TX',
+    metaTitle: 'Speed Queen Washer & Dryer Repair Temple TX | Local Service',
+    metaDescription:
+      'Speed Queen washer not draining or dryer not heating? Independent Speed Queen washer and dryer repair in Temple, TX. Check your warranty first, then call us.',
+    intro: [
+      'Speed Queen washer not draining, stuck on spin or dryer running cold? Appliance Repair Temple repairs Speed Queen top-load and front-load washers and electric and gas dryers in homes across Temple, TX. Same-day service is available, subject to technician availability, location, and current demand.',
+      'Speed Queen makes laundry and nothing else. It is built by Alliance Laundry Systems in Ripon, Wisconsin, the same company behind a lot of commercial laundromat equipment, and the home machines borrow from that heavy-duty design. Many owners bought one to keep for a long time, and with that build, repair is usually the sensible choice when something wears out.',
+      'Check the warranty before anything else. Many recent Speed Queen washers and dryers come with long coverage, often five years or more, and the exact terms depend on the model and serial number. If your machine is still covered, contact Speed Queen first. If coverage has ended, call us.',
+    ],
+    appliances: [
+      { key: 'washer', note: 'Top-load washers, including TC5 and TR series, and front-load washers' },
+      { key: 'dryer', note: 'Electric and gas dryers, including matching and stacked pairs' },
+    ],
+    issues: [
+      {
+        title: 'Top-load washer will not drain or spin',
+        text: 'A clogged drain pump or hose, a worn lid lock or lid switch, or a worn belt are the common causes. Something small like a sock in the pump can stop a cycle. The technician checks the drain path and lock before looking at the motor or transmission.',
+      },
+      {
+        title: 'Front-load washer stops or will not unlock',
+        text: 'A clogged drain pump, a door lock that is not engaging, or an unbalanced load the machine will not spin. Front-loaders also need the door gasket wiped and the door left open between loads to prevent odors.',
+      },
+      {
+        title: 'Loud washer on spin',
+        text: 'A loud thump usually means an unbalanced load or worn suspension parts. A roar or grinding that gets louder with speed often points to the tub bearings. Stop using it if it starts walking across the floor.',
+      },
+      {
+        title: 'Dryer runs but no heat',
+        text: 'A heating element, thermal fuse or high-limit thermostat on electric models, or an igniter or gas valve coils on gas models. A clogged vent is often the root cause, so airflow is checked on every dryer call.',
+      },
+    ],
+    haveReady: [
+      'The model and serial number from the serial plate. A photo is the easiest way to share it.',
+      'The purchase date and your warranty paperwork, since coverage depends on the serial number.',
+      'Top-load or front-load, and gas or electric for the dryer.',
+      'What the machine was doing when it stopped, and any code or flashing light.',
+      'Whether the machine is in a home or used commercially, such as in a rental property’s shared laundry.',
+    ],
+    modelLocations: [
+      { appliance: 'Washer and dryer', where: 'On the serial plate, usually found by opening the door or lid and checking the door opening and frame' },
+      { appliance: 'Top-load washer', where: 'If it is not around the lid opening, check the back of the cabinet or console' },
+      { appliance: 'Any model', where: 'If you cannot find the plate, the owner’s manual shows its location. Speed Queen’s manual library is searched by model number' },
+    ],
+    modelSource: { name: 'Speed Queen: manuals and downloads', url: 'https://speedqueen.com/support/manuals-downloads/' },
+    faqs: [
+      {
+        q: 'Are you an authorized Speed Queen service provider?',
+        a: 'No. Appliance Repair Temple is an independent repair service and is not affiliated with or authorized by Speed Queen or Alliance Laundry Systems. If your machine is under Speed Queen’s warranty, contact Speed Queen first.',
+      },
+      {
+        q: 'Is my Speed Queen still under warranty?',
+        a: 'Possibly. Many recent Speed Queen washers and dryers carry long warranties, and the exact coverage depends on the model and serial number. Check your paperwork or contact Speed Queen before booking a paid repair.',
+      },
+      {
+        q: 'Is an older Speed Queen worth repairing?',
+        a: 'Usually, yes. These machines are built to last, and pumps, lid locks, belts, switches and heating parts are reasonable repairs. Tub bearings or a transmission on a very old unit are the main cases where it gets closer.',
+      },
+      {
+        q: 'Do you repair commercial or coin-operated Speed Queen machines?',
+        a: 'Our work is residential. If your machine is in a shared laundry room or used commercially, tell us when you call and we will let you know whether we can help.',
+      },
+      {
+        q: 'Can you repair my Speed Queen the same day?',
+        a: 'Same-day service is available, subject to technician availability, location, and current demand. Some Speed Queen parts may need to be ordered.',
+      },
+      {
+        q: 'How much does Speed Queen repair cost?',
+        a: 'It depends on the machine and the part, so we do not list prices online. Call to discuss your repair needs with the model and serial number ready.',
+      },
+    ],
+    hasPage: true,
+  },
 ];
 
 /** Other brands commonly serviced. Listed on the hub, no dedicated page yet. */
-export const otherBrands = ['Speed Queen'];
+export const otherBrands: string[] = [];
 
 export const brandHref = (b: Brand) => `/brands/${b.slug}/`;

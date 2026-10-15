@@ -217,15 +217,21 @@ export default function AboutPage() {
             </ul>
             <p className="mt-6 text-ink-body">
               We work on the major brands, including{' '}
-              {brandLinks.map((b, i) => (
-                <span key={b.slug}>
-                  <Link href={brandHref(b)} className="font-semibold text-ink underline decoration-flame/50 underline-offset-4 hover:decoration-flame">
-                    {b.name}
-                  </Link>
-                  {', '}
-                </span>
-              ))}
-              {otherBrands.join(', ')}. We are not affiliated with any of them.
+              {[...brandLinks.map((b) => ({ name: b.name, href: brandHref(b) })), ...otherBrands.map((name) => ({ name, href: '' }))].map(
+                (b, i, all) => (
+                  <span key={b.name}>
+                    {i > 0 ? (i === all.length - 1 ? ' and ' : ', ') : null}
+                    {b.href ? (
+                      <Link href={b.href} className="font-semibold text-ink underline decoration-flame/50 underline-offset-4 hover:decoration-flame">
+                        {b.name}
+                      </Link>
+                    ) : (
+                      b.name
+                    )}
+                  </span>
+                ),
+              )}
+              . We are not affiliated with any of them.
             </p>
           </div>
           <div>

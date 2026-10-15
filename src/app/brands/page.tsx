@@ -58,8 +58,20 @@ export default function BrandsPage() {
       </Section>
 
       <Section tone="white" labelledBy="other-heading">
-        <SectionHeading id="other-heading" eyebrow="Also" title="Other brands" accent="we work on." intro="No dedicated page yet, but we see these regularly." />
-        <BrandChips names={otherBrands} />
+        {otherBrands.length ? (
+          <>
+            <SectionHeading id="other-heading" eyebrow="Also" title="Other brands" accent="we work on." intro="No dedicated page yet, but we see these regularly." />
+            <BrandChips names={otherBrands} />
+          </>
+        ) : (
+          <SectionHeading
+            id="other-heading"
+            eyebrow="Not listed?"
+            title="Your brand"
+            accent="is not here?"
+            intro="We work on most major household brands. If yours is not on this page, call with the brand and model number and we will tell you whether we can help."
+          />
+        )}
         <p className="mt-12 max-w-3xl text-sm text-ink-muted">
           All brand names are trademarks of their respective owners. {site.brandName} is an independent repair service. We are not
           affiliated with, authorized by or endorsed by any manufacturer listed here. If your appliance is still under a
