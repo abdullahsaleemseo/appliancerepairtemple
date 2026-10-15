@@ -603,105 +603,171 @@ export const services: Service[] = [
     navLabel: 'Dishwasher Repair',
     icon: 'dishwasher',
     card: 'Not draining, not cleaning, leaking or won’t start.',
-    metaTitle: 'Dishwasher Repair in Temple, TX | Appliance Repair Temple',
+    metaTitle: 'Dishwasher Repair Temple TX | Built-In Dishwashers',
     metaDescription:
-      'Dishwasher not draining, leaking or leaving dishes dirty in Temple, TX? Request service for built-in dishwashers. Call or request service online.',
-    h1: 'Dishwasher Repair in Temple, TX',
+      'Dishwasher not draining, leaking or leaving dishes dirty? Built-in dishwasher repair in Temple, TX. Same-day service available. Call (254) 555-0147.',
+    h1: 'Built-In Dishwasher Repair in Temple, TX',
     intro: [
-      'Standing water in the bottom of the tub, dishes that come out gritty, or a puddle under the door. Those three account for most dishwasher calls, and most of them come back to a clogged filter, a drain pump, an inlet valve or a worn door seal.',
-      'We repair built-in dishwashers in Temple and nearby towns. Central Texas water tends to leave mineral scale, which clogs spray arms and inlet screens over time, so the technician checks for that on every call. You get the diagnosis and an explanation of the repair before anything is replaced.',
+      'Standing water in the bottom, gritty dishes or a puddle under the door? Appliance Repair Temple repairs built-in dishwashers in homes across Temple, TX, from basic models to third-rack machines with front or hidden top controls. Same-day service is available, subject to technician availability, location, and current demand.',
+      'Most dishwasher calls come back to a clogged filter, a drain pump, a water inlet valve, a door seal or the heating element. Hard water is common in Central Texas, and mineral scale makes several of these worse over time, so the technician checks for it on every visit. You hear what failed and what the repair involves before anything is replaced.',
     ],
-    symptomsHeading: 'Dishwasher problems we diagnose',
+    symptomsHeading: 'Dishwasher problems we repair',
     symptoms: [
       {
         title: 'Water left in the bottom',
         cause:
-          'Start with the filter under the lower spray arm. If it is clean, the cause is usually a kinked drain hose, a clogged garbage disposal connection or a failed drain pump.',
+          'Start with the filter under the lower spray arm. If it is clean, look at the drain hose under the sink, the garbage disposal connection, the air gap if you have one, and the drain pump.',
         fixable: 'Filter cleaning, hose fixes and drain pump replacement are routine.',
       },
       {
         title: 'Dishes not getting clean',
         cause:
-          'Clogged spray arms, a dirty filter, low water fill from a bad inlet valve, or a wash motor losing power. Hard water scale on the spray arm holes is common in this area.',
-        fixable: 'Most cleaning problems are solved with small parts or a thorough cleaning.',
+          'Clogged spray arms, a dirty filter, a low fill from a weak inlet valve, or a wash motor losing strength. Scale on the spray arm holes is a common culprit in hard water homes.',
+        fixable: 'Most cleaning problems are solved with a thorough cleaning or a small part.',
       },
       {
-        title: 'Leaking under the door',
+        title: 'Leaking under the door or onto the floor',
         cause:
-          'A worn door gasket, a bent door, the wrong detergent (regular dish soap makes too many suds), or a leaking pump seal or water inlet connection underneath.',
-        fixable: 'Gaskets and inlet connections are simple repairs.',
+          'A worn door gasket, a door that no longer closes square, regular dish soap making too many suds, or a leaking pump seal or inlet connection underneath the tub.',
+        fixable: 'Gaskets and inlet connections are straightforward repairs.',
       },
       {
         title: 'Won’t start or won’t fill',
         cause:
-          'A door latch that does not register, a blown thermal fuse, a bad water inlet valve or a failed control board. Some models also have a float switch that stops filling if it senses a leak.',
+          'A door latch that does not register, a blown thermal fuse, a bad water inlet valve or a control board fault. Many models also have a float switch that stops the fill if it senses water in the base.',
         fixable: 'The technician tests each part before replacing anything.',
       },
       {
-        title: 'Dishes not drying',
+        title: 'Dishes come out wet',
         cause:
-          'A burned-out heating element or a failed vent fan, depending on the model. Empty rinse aid makes it worse, especially on newer models that use condensation drying.',
+          'A burned-out heating element or a failed vent fan, depending on the model. Newer dishwashers often dry by condensation and rely on rinse aid, so an empty dispenser makes a big difference.',
         fixable: 'Heating element replacement is a straightforward repair.',
       },
       {
-        title: 'Grinding or humming noise',
+        title: 'Grinding, humming or loud noise',
         cause:
-          'Broken glass or a seed in the chopper or drain pump, or a wash motor bearing that is wearing out.',
-        fixable: 'Clearing debris often fixes it; worn motors can be replaced.',
+          'Broken glass, a seed or a fruit pit in the chopper or drain pump, or a wash motor bearing wearing out.',
+        fixable: 'Clearing debris often fixes it. Worn motors can be replaced.',
       },
     ],
-    diagnostic: {
-      heading: 'What the diagnostic visit covers',
-      paragraphs: [
-        'The technician runs a short cycle, checks fill level and drain, inspects the filter and spray arms, tests the inlet valve, pump and heating element, and looks underneath for leaks. You hear the cause first.',
-      ],
-      covers: [
-        'Fill and drain test',
-        'Filter, spray arm and chopper inspection',
-        'Water inlet valve and float switch test',
-        'Drain and wash pump check',
-        'Heating element and thermal fuse test',
-        'Door latch and gasket inspection',
-      ],
-    },
+    diagnostic: { heading: 'What the visit covers', paragraphs: [], covers: [] },
     repairOrReplace: {
       heading: 'Repair or replace your dishwasher?',
       paragraphs: [
-        'Dishwashers usually last about 9 to 12 years. A drain pump, inlet valve or latch repair is almost always worth it. A failed control board plus a tired wash motor on an older, basic unit is where replacement starts to compete.',
+        'Dishwashers usually last about 9 to 12 years. A drain pump, inlet valve, latch, seal or heating element repair is almost always worth doing. A failed control board plus a tired wash motor on an older, basic unit is where replacement starts to compete.',
+        'Remember that replacing a built-in dishwasher also means removal, installation and plumbing and electrical hookups, which is part of why repair often wins.',
       ],
       points: [
-        'Clogs, valves, latches and seals: repair',
-        'Rusted tub or rack and multiple failures: consider replacement',
-        'Mid-range and premium models (Bosch, KitchenAid): repair usually pays',
+        'Clogs, valves, latches, seals and elements: repair',
+        'Rusted tub or racks plus a failed board: consider replacement',
+        'Mid-range and premium models: repair usually makes more sense',
       ],
     },
     safety:
-      'Turn off the dishwasher circuit breaker before working near the wiring under the kitchen sink or behind the toe kick, and shut the hot water supply valve before disconnecting any line.',
-    brands: ['Bosch', 'Whirlpool', 'KitchenAid', 'GE', 'Samsung', 'LG', 'Frigidaire', 'Maytag', 'Kenmore'],
+      'Turn off the dishwasher circuit breaker before working near the wiring under the sink or behind the toe kick, and shut the hot water supply valve before disconnecting any line.',
+    brands: ['Bosch', 'Whirlpool', 'KitchenAid', 'GE', 'Samsung', 'LG', 'Frigidaire', 'Maytag', 'Kenmore', 'Electrolux'],
     faqs: [
       {
-        q: 'Why is there water in the bottom of my dishwasher?',
-        a: 'A small amount of water near the filter is normal on some models. If it is more than that, the filter is clogged, the drain hose is kinked or the drain pump has failed.',
+        q: 'Is some water in the bottom of my dishwasher normal?',
+        a: 'A small amount of water down in the sump, under the filter, is normal on many models. It keeps the seals from drying out. Water covering the tub floor after a cycle is not normal.',
       },
       {
         q: 'Does hard water damage dishwashers?',
-        a: 'Mineral scale builds up on spray arms, the inlet valve screen and the heating element over time. Using rinse aid and running a dishwasher cleaner every month or two helps.',
+        a: 'Over time, yes. Mineral scale builds up on spray arms, the inlet valve screen and the heating element. Rinse aid and a dishwasher cleaner every month or two help keep it under control.',
       },
       {
-        q: 'Can you fix a dishwasher that leaks only sometimes?',
-        a: 'Yes. Intermittent leaks are often a door gasket, suds from the wrong detergent or a pump seal. The technician runs it and watches where the water appears.',
+        q: 'My dishwasher only leaks sometimes. Can you find the cause?',
+        a: 'Yes. Intermittent leaks are often a door gasket, suds from the wrong detergent, or a pump seal that leaks only during part of the cycle. The technician runs it and watches where the water appears.',
       },
       {
-        q: 'Do I need to empty my dishwasher before you arrive?',
-        a: 'Please do. An empty tub lets the technician reach the filter and spray arms right away and saves time on the visit.',
+        q: 'Do I need to empty the dishwasher before the technician arrives?',
+        a: 'Please do, and clear out the cabinet under the sink. It lets the technician reach the filter, spray arms and drain connections right away.',
       },
       {
-        q: 'Do you install new dishwashers?',
-        a: 'Call and ask. Repair is the main service, and installation depends on the provider’s current schedule.',
+        q: 'Can I use drain cleaner in my dishwasher?',
+        a: 'No. Chemical drain cleaners can damage the pump seals and plastic parts. If the dishwasher will not drain, clean the filter and check the hose and disposal, then call.',
+      },
+      {
+        q: 'How much does dishwasher repair cost?',
+        a: 'It depends on the model and the part, so we do not list prices online. Call to discuss your repair needs, with the brand and model number ready.',
+      },
+      {
+        q: 'Where is the model number on my dishwasher?',
+        a: 'Open the door and look along the top or side edge of the door, or on the tub frame just inside. A photo of the label works.',
       },
     ],
     related: ['washer', 'refrigerator', 'oven'],
-    offeredVerified: false,
+    offeredVerified: true,
+    blocks: [
+      {
+        type: 'resultsGrid',
+        heading: 'What your dishes are telling you',
+        intro: 'Take a look at the last load before you call. What you see points to where the problem is.',
+        rows: [
+          { see: 'Gritty residue or food bits', means: 'Water is recirculating dirty. The filter is clogged, or spray arm holes are blocked.', fix: 'Clean the filter and rinse the spray arms. If it keeps happening, the wash pump may be weak.' },
+          { see: 'Top rack dirty, bottom rack clean', means: 'Water is not reaching the upper spray arm, often from a low fill or a cracked or clogged arm.', fix: 'Check that nothing blocks the arms. A low fill points to the inlet valve.' },
+          { see: 'White, chalky spots or film', means: 'Hard water minerals drying on the dishes.', fix: 'Use rinse aid and a dishwasher cleaner. A weak heating element can make it worse.' },
+          { see: 'Cloudy glasses that will not wipe off', means: 'Etching from too much detergent in soft water, or scale buildup in hard water.', fix: 'Try less detergent first. If the film wipes off with vinegar, it is scale.' },
+          { see: 'Dishes soaking wet at the end', means: 'No heat during drying, or empty rinse aid on a condensation-dry model.', fix: 'Fill the rinse aid. If they are still wet, the heating element or vent fan may have failed.' },
+          { see: 'Detergent cup still closed', means: 'The dispenser latch is stuck or the cycle is not reaching the wash step.', fix: 'Clean around the latch. If it still sticks, the dispenser or control needs a look.' },
+        ],
+      },
+      { type: 'symptoms' },
+      { type: 'inlineForm' },
+      {
+        type: 'quickAnswer',
+        heading: 'Water in the bottom? Check these first',
+        steps: [
+          'Turn off the dishwasher and let the water cool. Lay a towel in front of the door.',
+          'Twist out the filter under the lower spray arm and rinse it under the tap. This fixes a lot of drainage complaints.',
+          'If the dishwasher drains into a garbage disposal, run the disposal. A newly installed disposal may still have its knockout plug in place.',
+          'Look under the sink. The drain hose should loop up high under the counter with no kinks or sags. If there is a small air gap cap on the sink deck, pull it off and clear it.',
+          'Run a short rinse cycle. If it hums at the end and still will not drain, the drain pump is the likely cause.',
+        ],
+        note: 'Watch for broken glass in the filter and the sump, and turn off the breaker before reaching near the pump.',
+      },
+      {
+        type: 'prose',
+        heading: 'The drain hose, the high loop and the air gap',
+        paragraphs: [
+          'A dishwasher drain hose has to rise above the sink drain before it connects, so dirty sink water cannot flow back into the dishwasher. That is done with a high loop, where the hose is fastened up under the countertop, or with an air gap fitting on the sink deck.',
+          'Which one your home needs depends on the plumbing code your city has adopted and the dishwasher maker’s instructions. Installation manuals usually set a minimum height for the loop, often around 18 to 20 inches above the floor depending on the brand. When a dishwasher keeps backing up or smells, a hose that has slipped down from that loop is one of the first things we check.',
+        ],
+      },
+      {
+        type: 'prose',
+        heading: 'How often to clean the filter',
+        paragraphs: [
+          'Manufacturers set the schedule by how you load. Whirlpool, for example, suggests cleaning about twice a year for light use with scraped dishes, every three months for 8 to 14 loads a week, and much more often if dishes go in unscraped. Bosch suggests 3 to 6 times a year for light to average use. Check your manual, and clean it sooner after loads heavy with starch, seeds or broken glass.',
+        ],
+      },
+      {
+        type: 'stopUsing',
+        heading: 'Turn it off and call if',
+        items: [
+          'Water is coming out from under the cabinet or soaking the floor.',
+          'You smell burning or see smoke from the bottom of the door.',
+          'The breaker trips when the dishwasher starts or heats.',
+          'Water has reached the wiring box behind the toe kick.',
+          'The door will not latch but the dishwasher still tries to run.',
+        ],
+        note: 'Shut off the dishwasher breaker and the hot water valve under the sink before touching anything wet.',
+      },
+      {
+        type: 'process',
+        heading: 'How a dishwasher repair visit works',
+        steps: [
+          { title: 'Run and watch', text: 'The technician runs a short cycle and checks fill level, spray and drain.' },
+          { title: 'Filter, arms and hose', text: 'The filter, spray arms, drain hose loop and disposal connection are checked first.' },
+          { title: 'Test the parts', text: 'Inlet valve, pump, heating element and latch are tested. You hear what failed and what the repair involves.' },
+          { title: 'Repair and run', text: 'After your OK, the repair is made and a cycle confirms it fills, washes and drains.' },
+        ],
+      },
+      { type: 'repairOrReplace' },
+      { type: 'brands', heading: 'Dishwasher brands we repair', intro: 'We repair the major dishwasher brands found in Temple kitchens. Tell us the brand and model number when you book so the technician can check parts ahead of time.', styles: ['Built-in', 'Front control', 'Top control', 'Third rack'] },
+      { type: 'faq' },
+      { type: 'payment' },
+    ],
   },
   {
     key: 'oven',

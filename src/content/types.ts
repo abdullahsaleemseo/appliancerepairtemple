@@ -50,6 +50,7 @@ export type ServiceBlock =
   | { type: 'prose'; heading: string; paragraphs: string[] }
   | { type: 'payment' }
   | { type: 'diagnostic' }
+  | { type: 'resultsGrid'; heading: string; intro?: string; rows: { see: string; means: string; fix: string }[] }
   | { type: 'factCallout'; stat: string; text: string; source: { name: string; url: string } }
   | { type: 'cycleStages'; heading: string; intro?: string; rows: { stage: string; what: string; parts: string }[] }
   | { type: 'compare'; heading: string; intro?: string; columns: { title: string; items: string[] }[] }

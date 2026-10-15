@@ -386,6 +386,31 @@ function Block({ block, s, index }: { block: ServiceBlock; s: Service; index: nu
         </section>
       );
 
+    case 'resultsGrid':
+      return (
+        <section aria-labelledby={id} className="reveal">
+          <p className="eyebrow mb-4 text-flame">
+            <span className="h-px w-6 bg-flame" aria-hidden="true" />
+            Read the results
+          </p>
+          <Heading id={id}>{block.heading}</Heading>
+          {block.intro ? <p className="mt-4 text-ink-body">{block.intro}</p> : null}
+          <ul className="mt-8 grid gap-4 md:grid-cols-2">
+            {block.rows.map((r) => (
+              <li key={r.see} className="card flex flex-col p-6">
+                <p className="text-[12px] font-semibold uppercase tracking-[0.14em] text-ink-muted">You see</p>
+                <h3 className="mt-1 font-display text-[19px] font-bold tracking-[-0.02em] text-ink">{r.see}</h3>
+                <p className="mt-3 flex-1 text-[15px] text-ink-body">{r.means}</p>
+                <p className="mt-4 flex items-start gap-2 rounded-xl bg-canvas px-3.5 py-2.5 text-[14px] text-ink">
+                  <Icon name="tool" className="mt-0.5 h-4 w-4 shrink-0 text-flame" />
+                  {r.fix}
+                </p>
+              </li>
+            ))}
+          </ul>
+        </section>
+      );
+
     case 'factCallout':
       return (
         <aside className="reveal grid gap-6 rounded-xl2 border border-sand bg-white p-7 md:grid-cols-[auto_1fr] md:items-center md:p-9">
