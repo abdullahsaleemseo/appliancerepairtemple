@@ -84,7 +84,7 @@ Thumbnails added October 15, 2026 (owner-supplied, 1672 x 941, in `public/images
 | Dryer not heating | `dryer-not-heating.webp` |
 | Repair or replace | `repair-or-replace-appliance.webp` |
 | Dishwasher not draining | `dishwasher-drainage-problems.webp` (image text still reads the old title "Common Dishwasher Drainage Problems") |
-| Dryer vent cleaning | no image yet, icon panel shown |
+| Dryer vent cleaning | `how-often-clean-dryer-vent.webp` |
 
 ## 7. CTA copy
 

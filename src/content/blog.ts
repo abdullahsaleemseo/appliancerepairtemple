@@ -433,6 +433,7 @@ export const posts: Post[] = [
   },
   {
     slug: 'how-often-clean-dryer-vent',
+    image: '/images/blog/how-often-clean-dryer-vent.webp',
     title: 'How Often Should You Clean a Dryer Vent? Signs, Steps and Safety',
     metaTitle: 'How Often Should You Clean a Dryer Vent? | Temple, TX',
     metaDescription:
