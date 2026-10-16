@@ -234,3 +234,15 @@ Call (254) 555-0147 · Request Service · Call early in the day and we will give
 - [Stars and Stripes: Fort Hood name ceremony, July 28, 2025](https://www.stripes.com/branches/army/2025-07-28/fort-hood-name-ceremony-18586837.html)
 - [zip-codes.com: Killeen, TX ZIP codes](https://www.zip-codes.com/city/tx-killeen.asp)
 - [LRG Realty: Best neighborhoods in Killeen](https://lrgrealty.com/lrg-blog/?p=2797)
+
+## Content expansion (October 16, 2026)
+
+- Words in `<main>`: about 1,371 before, about 2,245 after. "appliance repair" 10 to 16 mentions, "emergency" 0 to 7.
+- Title: "Appliance Repair Killeen TX | Same-Day & Emergency" (50). Meta description 157 characters.
+- Shared area template (added with Belton): emergency section and the all-services table.
+- Killeen only:
+  - Intro paragraph covering every service term and emergency priority.
+  - Town-specific emergency paragraph (west end of our routes, so call early).
+  - "Moving in or out of Killeen? An appliance checklist": defrosting and draining before a move, shipping bolts, gas disconnects by a qualified person, letting a fridge stand upright, checking hoses, vents and the range anti-tip bracket.
+  - "Newer Killeen homes: check the warranty first": manufacturer and builder warranties.
+  - Three new FAQs: emergency appliance repair in Killeen, same-day refrigerator repair, washer and dryer repair.

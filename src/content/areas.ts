@@ -143,15 +143,18 @@ export const areas: Area[] = [
   {
     slug: 'killeen-tx',
     name: 'Killeen',
-    metaTitle: 'Appliance Repair Killeen TX | Homes & Rentals',
+    metaTitle: 'Appliance Repair Killeen TX | Same-Day & Emergency',
     metaDescription:
-      'In-home appliance repair in Killeen, TX for refrigerators, washers, dryers, dishwashers and ovens. Help for renters, landlords and families on PCS moves.',
+      'Same-day and emergency appliance repair in Killeen, TX for fridges, washers, dryers, dishwashers and ovens. Homes, rentals, PCS moves. Subject to availability.',
     h1: 'Appliance Repair in Killeen, TX for Homes and Rentals',
     intro: [
       'Appliance Repair Temple fixes refrigerators, freezers, washers, dryers, dishwashers, ovens and ranges in homes across Killeen, TX, from the older additions on the north side to the newer neighborhoods south of I-14. The technician finds what failed, explains the repair, and starts only after you approve it.',
       'Killeen is the largest city in Bell County and sits right outside Fort Hood, so a lot of households here arrive and leave on military orders. Many of our Killeen calls come from renters, landlords, property managers and families who just moved in and found an appliance that did not make it through the last move.',
       'Killeen is farther from our Temple base than Belton or Harker Heights, so visits are planned around our west routes. Same-day service is available, subject to technician availability, location, and current demand.',
+      'That covers refrigerator repair and freezer repair, washer and dryer repair, dishwasher repair, oven, stove and range repair, and over-the-range microwave repair in Killeen, across the major brands. Urgent problems, such as a fridge warming up or a washer leaking across the floor, get priority as emergency appliance repair during business hours.',
     ],
+    emergencyNote:
+      'A refrigerator warming up with a week of groceries inside, a washer leaking across a rental floor or a dryer that smells hot cannot wait. Urgent calls from Killeen homes get priority scheduling during business hours, and because Killeen is at the west end of our routes, calling as early as you can helps.',
     travelNote:
       'Killeen visits are grouped with our west routes along the I-14 and US 190 corridor. Call early in the day and we will give you the earliest open time for your address.',
     localPoints: [
@@ -191,6 +194,23 @@ export const areas: Area[] = [
         ],
       },
       {
+        heading: 'Moving in or out of Killeen?',
+        accent: 'An appliance checklist.',
+        paragraphs: [
+          'Moving out: empty and unplug the refrigerator and freezer a day ahead, let them defrost with the doors propped open, and dry them out so they do not smell or leak on the truck. Close the water valves and drain the washer hoses into a bucket. Front-load washers often came with shipping bolts; if you still have them, put them back before a long move. Have a qualified person disconnect a gas dryer or range.',
+          'Moving in: if a refrigerator traveled on its side, let it stand upright for several hours before plugging it in, then give it up to a day to reach temperature. Run an empty washer cycle and watch the hoses for drips. Make sure the dryer vent is connected to the wall and not crushed behind the machine, and check that a freestanding range is secured with its anti-tip bracket.',
+          'If something still is not right after that, write down the brand, the model number and any error code, and tell your landlord first if you rent. Then call us.',
+        ],
+      },
+      {
+        heading: 'Newer Killeen homes:',
+        accent: 'check the warranty first.',
+        paragraphs: [
+          'A lot of Killeen’s housing is recent, and appliances that came with a newer home may still be under the manufacturer’s warranty or a builder’s warranty. Independent repair may not be covered by those warranties, so check the paperwork before you book.',
+          'If the warranty has run out, or you are not sure, call us with the model number. We will tell you plainly whether the repair makes sense for that appliance.',
+        ],
+      },
+      {
         heading: 'How scheduling works',
         accent: 'for Killeen.',
         paragraphs: [
@@ -204,6 +224,18 @@ export const areas: Area[] = [
     zipsVerified: true,
     nearby: ['Harker Heights', 'Nolanville', 'Belton', "Morgan's Point Resort", 'Salado'],
     faqs: [
+      {
+        q: 'Do you offer emergency appliance repair in Killeen?',
+        a: 'Yes. A refrigerator or freezer warming up with food inside, a washer or dishwasher leaking, or an appliance that smells like burning gets priority scheduling during business hours, Monday to Saturday, 8:00 AM to 8:00 PM. Same-day emergency service is subject to technician availability, location, and current demand. Ask about emergency visit details when you call.',
+      },
+      {
+        q: 'Can you repair my refrigerator in Killeen today?',
+        a: 'Sometimes. Refrigerator repair calls get priority because the food inside is at risk. Same-day service is subject to technician availability, location, and current demand, and Killeen is at the west end of our routes, so call early. Keep the doors closed while you wait.',
+      },
+      {
+        q: 'Do you do washer and dryer repair in Killeen?',
+        a: 'Yes. Washers that will not drain, spin or stop leaking, and dryers that will not heat or take too long, are some of our most common Killeen calls. On every dryer call, the technician checks the vent airflow too.',
+      },
       {
         q: 'Which parts of Killeen do you cover?',
         a: 'We serve homes in Killeen’s 76541, 76542, 76543 and 76549 ZIP codes. If your address is on the edge of town or outside city limits, give it to us and we will confirm.',
