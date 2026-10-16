@@ -1,3 +1,4 @@
+import { resolvedAllowIndexing, resolvedSiteMode, resolvedSiteUrl } from './launch';
 /**
  * Brand and market variables. Cloning the site to a new market starts here.
  *
@@ -14,7 +15,7 @@ export const site = {
   brandName: 'Appliance Repair Temple',
   shortName: 'Appliance Repair Temple',
   domain: 'appliancerepairtemple.com',
-  url: (process.env.NEXT_PUBLIC_SITE_URL || 'https://appliancerepairtemple.com').replace(/\/$/, ''),
+  url: resolvedSiteUrl,
 
   city: 'Temple',
   citySlug: 'temple',
@@ -90,14 +91,14 @@ export const claims = {
   brandsServiced: v('Brands listed on the site are serviced by Appliance Repair Temple', true),
 } as const;
 
-export const isProduction = process.env.NEXT_PUBLIC_SITE_MODE === 'production';
+export const isProduction = resolvedSiteMode === 'production';
 
 /**
  * Search engine indexing is a separate switch from production mode, so a staging
  * deployment can preview the launch version while staying out of Google.
  * Both must be set before the site can be indexed.
  */
-export const indexingAllowed = isProduction && process.env.NEXT_PUBLIC_ALLOW_INDEXING === 'true';
+export const indexingAllowed = isProduction && resolvedAllowIndexing;
 
 /** True when a value may be rendered: always in draft, only when verified in production. */
 export function canShow(item: Verifiable<unknown>): boolean {

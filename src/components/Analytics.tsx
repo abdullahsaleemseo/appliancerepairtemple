@@ -1,6 +1,7 @@
+import { resolvedGaId } from '@/config/launch';
 import Script from 'next/script';
 
-const gaId = process.env.NEXT_PUBLIC_GA_ID;
+const gaId = resolvedGaId;
 
 /** GA4 loads after the page is interactive so it never blocks rendering. */
 export function Analytics() {

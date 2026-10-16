@@ -36,11 +36,11 @@ Verified by the owner on Oct 15, 2026: Licensed & Insured, Same-Day Service, 4+ 
 - [ ] Read every page aloud. If it sounds like a chatbot, rewrite it.
 
 ## Technical
-- [ ] `NEXT_PUBLIC_SITE_MODE=production` and `NEXT_PUBLIC_SITE_URL` set on the host
-- [ ] Launch day only: `NEXT_PUBLIC_ALLOW_INDEXING=true`, redeploy, then check robots.txt allows crawling on the real domain
+- [x] Live on appliancerepairtemple.com via Vercel, production mode, noindex (Oct 16, 2026). Switches now in `src/config/launch.ts`
+- [ ] Launch day only: set `allowIndexing: true` in `src/config/launch.ts` and push, then check robots.txt allows crawling on the real domain
 - [ ] `LEAD_WEBHOOK_URL` set, and a test lead and a test feedback (`"type": "feedback"`) received at the destination
 - [ ] Turnstile keys set, and a test submission passes
-- [ ] `NEXT_PUBLIC_GA_ID` set; check `click_to_call`, `form_start`, `generate_lead` and `feedback_submit` in GA4 DebugView
+- [ ] GA4 ID set in `src/config/launch.ts` (`gaId`); check `click_to_call`, `form_start`, `generate_lead` and `feedback_submit` in GA4 DebugView
 - [ ] Mark `generate_lead` as a key event in GA4 and import it into Google Ads if running ads
 - [ ] Search Console verified; sitemap submitted
 - [ ] Rich Results Test on the home page, one service page and the FAQ page

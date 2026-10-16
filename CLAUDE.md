@@ -5,3 +5,10 @@
 - Copy rules: no em or en dashes, no AI-tone filler, no emojis, no unproven superlatives. `npm run check:copy` enforces it.
 - Every phone number goes through `PhoneLink`, `CallButton` or a `tel` link with `data-call-location`, so `click_to_call` is tracked.
 - Before committing: `npm run check` and `npm run build`.
+
+## Deploys and launch switches
+
+- The owner approved pushing straight to `main` (Oct 16, 2026). Vercel deploys `main` to appliancerepairtemple.com in 1 to 2 minutes. Run `npm run check` and `npm run build` before every push.
+- Launch switches live in `src/config/launch.ts`: `siteMode`, `allowIndexing`, `siteUrl`, `gaId`. Change them there and push; no Vercel dashboard needed. A Vercel environment variable with the same purpose overrides the file, so do not add `NEXT_PUBLIC_ALLOW_INDEXING` on Vercel.
+- Secrets stay on Vercel only: `LEAD_WEBHOOK_URL`, `TURNSTILE_SECRET_KEY`.
+- Indexing stays off until the owner says to switch it on.

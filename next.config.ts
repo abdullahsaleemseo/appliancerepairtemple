@@ -1,8 +1,9 @@
-const indexingAllowed =
-  process.env.NEXT_PUBLIC_SITE_MODE === 'production' && process.env.NEXT_PUBLIC_ALLOW_INDEXING === 'true';
+import type { NextConfig } from 'next';
+import { resolvedAllowIndexing, resolvedSiteMode } from './src/config/launch';
 
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+const indexingAllowed = resolvedSiteMode === 'production' && resolvedAllowIndexing;
+
+const nextConfig: NextConfig = {
   trailingSlash: true,
   poweredByHeader: false,
   images: { formats: ['image/avif', 'image/webp'] },
