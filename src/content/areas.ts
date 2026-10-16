@@ -1174,15 +1174,18 @@ export const areas: Area[] = [
   {
     slug: 'holland-tx',
     name: 'Holland',
-    metaTitle: 'Appliance Repair Holland TX | 17 Miles South of Temple',
+    metaTitle: 'Appliance Repair Holland TX | Same-Day & Emergency',
     metaDescription:
-      'Appliance repair in Holland, TX and the 76534 area for refrigerators, freezers, washers, dryers, dishwashers and ovens, in town and on country roads. Call.',
+      'Same-day and emergency appliance repair in Holland, TX for fridges, freezers, washers, dryers and ovens, in town and on country roads. Subject to availability.',
     h1: 'Small-Town Appliance Repair in Holland, TX',
     intro: [
       'Appliance Repair Temple repairs refrigerators, freezers, washers, dryers, dishwashers, ovens and ranges in homes in and around Holland, TX. Same-day service is available, subject to technician availability, location, and current demand.',
       'Holland sits on State Highway 95 about 17 miles south of Temple. It was settled in 1860 as Mountain Home, incorporated in 1891, and has stayed close to 1,100 residents for decades, with 1,075 counted at the 2020 census. The 76534 ZIP code covers a much wider area of farms and country homes, reaching into Milam County.',
       'In a town this size, word gets around, and we would rather be known for straight answers than for upselling. The technician tests the appliance, tells you what failed and what the repair involves, and starts only after your OK. If a repair is not worth it, you will hear that too.',
+      'That covers refrigerator repair and freezer repair, washer and dryer repair, dishwasher repair, oven, stove and range repair, and over-the-range microwave repair in Holland, across the major brands. Urgent problems, such as a fridge warming up or a washer leaking across the floor, get priority as emergency appliance repair during business hours.',
     ],
+    emergencyNote:
+      'A refrigerator warming up with groceries inside, a shop freezer that quit or a washer leaking across an old wood floor cannot wait. Urgent calls from Holland homes get priority scheduling during business hours. Holland is one of our longer drives, down Highway 95, so calling as early as you can helps.',
     travelNote:
       'Holland visits are usually grouped with our south routes along Highway 95. Call early and we will give you the earliest open time for your address.',
     localPoints: [
@@ -1222,6 +1225,24 @@ export const areas: Area[] = [
         ],
       },
       {
+        heading: 'What that smell',
+        accent: 'is telling you.',
+        paragraphs: [
+          'Burning plastic or hot wiring from any appliance means stop: unplug it or switch off its breaker and do not use it until it is checked. A fishy smell near an outlet or the back of an appliance can also mean an electrical part is overheating.',
+          'A rotten egg or sulfur smell near a gas range, dryer or water heater means gas. Do not switch anything on or off. Leave the house and call your gas provider or 911 from outside.',
+          'Some smells are not emergencies. A musty front-load washer usually needs its door seal and pump filter cleaned. A sour refrigerator often has spoiled food or a dirty drain pan underneath. A new oven, or one used for the first time in a while, can smell like hot dust for a few minutes. If a smell keeps coming back, mention it when you call.',
+        ],
+      },
+      {
+        heading: 'Shop and garage units',
+        accent: 'in a cold snap.',
+        paragraphs: [
+          'Many standard refrigerators control both compartments from one thermostat in the fresh food section. In a cold garage or shop, that section stays cold on its own, the compressor barely runs, and the freezer above or below it starts to thaw. It looks like a broken fridge, but it is the room temperature.',
+          'The owner’s manual lists the room temperature range the unit is designed for, and garage-ready models are built for wider swings. If a garage fridge acts up only in the coldest weeks, that is the likely reason. If it struggles in mild weather too, or the freezer is soft year-round, call us.',
+          'A hard freeze can also crack a washer fill hose or an ice maker line in an unheated room. After a freeze, check those lines for drips once they thaw.',
+        ],
+      },
+      {
         heading: 'How scheduling works',
         accent: 'for Holland.',
         paragraphs: [
@@ -1235,6 +1256,14 @@ export const areas: Area[] = [
     zipsVerified: true,
     nearby: ['Little River-Academy', 'Rogers', 'Salado', 'Belton', 'Troy'],
     faqs: [
+      {
+        q: 'Do you offer emergency appliance repair in Holland?',
+        a: 'Yes. A refrigerator or freezer warming up with food inside, a washer or dishwasher leaking, or an appliance that smells like burning gets priority scheduling during business hours, Monday to Saturday, 8:00 AM to 8:00 PM. Same-day emergency service is subject to technician availability, location, and current demand. Ask about emergency visit details when you call.',
+      },
+      {
+        q: 'My garage fridge freezer thaws in winter. Is it broken?',
+        a: 'Not always. Many standard refrigerators use one thermostat in the fresh food section, and in a cold garage the compressor barely runs, so the freezer warms up. If it only happens in the coldest weeks, the room temperature is the likely cause. If it happens in mild weather too, call us.',
+      },
       {
         q: 'Do you cover homes outside Holland?',
         a: 'Yes, across the 76534 ZIP code, including country roads around town. Part of the ZIP crosses into Milam County, so give us your address and we will confirm.',

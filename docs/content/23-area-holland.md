@@ -229,3 +229,15 @@ Call (254) 555-0147 · Request Service · Call early and we will give you the ea
 - [zip-codes.com: Holland, TX](https://www.zip-codes.com/city/tx-holland.asp)
 - [zip-codes.com: ZIP 76534](https://www.zip-codes.com/zip-code/76534/zip-code-76534.asp)
 - [Texas Escapes: Holland](https://www.texasescapes.com/CentralTexasTownsNorth/Holland-Texas.htm)
+
+## Content expansion (October 16, 2026)
+
+- Words in `<main>`: about 1,685 before (with the shared area template), about 2,176 after. "appliance repair" 15 mentions, "emergency" 7.
+- Title: "Appliance Repair Holland TX | Same-Day & Emergency" (50). Meta description 159 characters.
+- Shared area template (added with Belton): emergency section and the all-services table.
+- Holland only:
+  - Intro paragraph covering every service term and emergency priority.
+  - Town-specific emergency paragraph (one of our longer drives down Highway 95, call early).
+  - "What that smell is telling you": burning or fishy electrical smells, gas, and harmless smells (musty washer, sour fridge, hot dust in an oven).
+  - "Shop and garage units in a cold snap": single-thermostat fridges in cold garages, garage-ready models, frozen hoses.
+  - Two new FAQs: emergency appliance repair in Holland, a garage freezer that thaws in winter.
