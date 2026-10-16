@@ -219,6 +219,22 @@ export const cityFaqs: Faq[] = [
     a: 'Often, yes. Same-day appointments are available, subject to technician availability, location, and current demand. Our typical response is about 60 minutes during business hours, which is a typical figure, not a guaranteed arrival time.',
   },
   {
+    q: 'Do you offer emergency appliance repair in Temple?',
+    a: 'Yes. Urgent calls, such as a leak, a refrigerator or freezer warming up with food inside, or a burning smell, get priority during business hours, Monday to Saturday, 8:00 AM to 8:00 PM. Same-day emergency service is subject to technician availability, location, and current demand. Ask about emergency visit details when you call.',
+  },
+  {
+    q: 'My appliance stopped after a storm. What should I check?',
+    a: 'Check the breaker and any GFCI outlet first, then unplug the appliance for a minute and plug it back in. If it still will not run, or it trips the breaker again, stop using it and call. A power surge can damage a control board.',
+  },
+  {
+    q: 'Do you repair gas ranges and dryers in Temple?',
+    a: 'Yes. We repair gas and electric ranges, ovens, cooktops and dryers, including propane models. Tell us it is a gas appliance when you book.',
+  },
+  {
+    q: 'Is there an appliance repair shop I can bring my appliance to?',
+    a: 'Repairs are done in your home. The technician comes to you anywhere in Temple and the nearby towns we serve.',
+  },
+  {
     q: 'What should I do while I wait for the technician?',
     a: 'For a warm refrigerator or freezer, keep the doors closed. For a washer or dishwasher full of water, turn it off and unplug it. For a dryer that smells hot, stop using it. If you smell gas, leave the house and call your gas utility from outside before anything else.',
   },

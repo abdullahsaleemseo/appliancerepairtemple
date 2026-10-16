@@ -214,3 +214,20 @@ Speak with our team about your appliance issue, or send a quick request and we w
 - [Temple, TX listings (Redfin)](https://www.redfin.com/city/18417/TX/Temple/mls-listings/page-2)
 - [Sears Home Services: Temple, TX](https://www.searshomeservices.com/locations/appliance-repair/tx-temple/1212-marlandwood)
 - [Angi: Appliance repair in Temple, TX](https://www.angi.com/companylist/us/tx/temple/appliance-repair.htm)
+
+---
+
+## Content expansion (October 16, 2026)
+
+- Words in `<main>`: about 1,755 before, about 2,640 after. "appliance repair" 8 to 15 mentions; "emergency" 0 to 7.
+- Title: "Appliance Repair Temple, Texas | In-Home & Emergency" (52). Meta description 150 characters.
+- New sections:
+  - "Emergency appliance repair in Temple": priority during business hours, the steps that stop the damage, and calls to action.
+  - "How Temple weather affects your appliances": long hot summers (74 days at 100°F or above in 2011, Temple's record), storms and power blips, hard freezes (February 2021), and dust and pet hair.
+  - "Appliance repair services in Temple, TX": a table of all 7 services with the types covered and common problems, each linking to its service page.
+- Intro: a new paragraph covering appliance repair near me and every service term.
+- Coverage: explains that homes are in 76501, 76502 and 76504; 76503 is the downtown PO box ZIP and 76508 the Baylor Scott & White medical campus.
+- Removed the unverified line "there is no walk-in shop"; it now says repairs happen in your home.
+- Four new FAQs: emergency repair in Temple, an appliance that stopped after a storm, gas ranges and dryers, and whether there is a shop.
+
+Sources: [KDH News: Temple nears triple-digit record](https://kdhnews.com/news/region/temple-nears-triple-digit-record/article_28dd9546-11a5-55e7-95d5-ff2b83e0c8d2.html), [zip-codes.com: Temple ZIP codes](https://www.zip-codes.com/city/tx-temple.asp), [zip-codes.com: 76508](https://www.zip-codes.com/zip-code/76508/zip-code-76508.asp), [zip-codes.com: 76503](https://www.zip-codes.com/zip-code/76503/zip-code-76503.asp).

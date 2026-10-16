@@ -3,7 +3,7 @@ import { canShow, claims, routes, site } from '@/config/site';
 import { areas, areaHref } from '@/content/areas';
 import { brands, otherBrands } from '@/content/brands';
 import { cityFaqs } from '@/content/faqs';
-import { serviceHref, services } from '@/content/services';
+import { serviceByKey, serviceHref, services } from '@/content/services';
 import type { ApplianceKey } from '@/content/types';
 import { AreaMap } from '@/components/AreaList';
 import { BrandChips } from '@/components/BrandChips';
@@ -26,8 +26,8 @@ import { pageMetadata } from '@/lib/seo';
 const path = routes.cityPage;
 
 export const metadata = pageMetadata({
-  title: `Appliance Repair Temple, Texas | In-Home Service`,
-  description: `In-home appliance repair in Temple, Texas for fridges, washers, dryers, dishwashers, ovens and freezers. Every Temple ZIP code, Mon-Sat 8am-8pm. Call us.`,
+  title: `Appliance Repair Temple, Texas | In-Home & Emergency`,
+  description: `In-home and emergency appliance repair in Temple, Texas for fridges, washers, dryers, dishwashers, ovens and freezers. Every Temple ZIP code, Mon-Sat.`,
   path,
 });
 
@@ -77,6 +77,35 @@ const expectSteps = [
   { title: 'Repair and a test run', text: 'Once you approve, the repair is made and the appliance is run to confirm it works. Model-specific parts may need to be ordered.' },
 ];
 
+const weather = [
+  {
+    title: 'Long, hot summers',
+    text: 'Triple-digit days are normal here. Temple recorded 74 days at 100°F or above in 2011, its hottest summer on record. Heat makes refrigerators, freezers and especially garage units run almost nonstop, and dusty condenser coils or a weak fan motor finally fail. Clean coils before June and give units room to breathe.',
+  },
+  {
+    title: 'Storms and power blips',
+    text: 'Spring storms bring outages and flickers. An appliance that stops right after the power blinks may only need its breaker or GFCI outlet reset, or a minute unplugged. If it still will not run, a control board or power supply may have taken the hit.',
+  },
+  {
+    title: 'Hard freezes',
+    text: 'Freezes are rare but real, as the February 2021 winter storm showed. Water lines to ice makers and washer hoses in unheated garages can freeze and split. After a hard freeze, check behind the washer and refrigerator for drips before running them.',
+  },
+  {
+    title: 'Dust, pollen and pet hair',
+    text: 'Dry, windy days and shedding pets load condenser coils, dryer lint traps and range hood filters. Clogged coils make a refrigerator run hot and long; a packed lint trap makes a dryer overheat. A vacuum and a few minutes every few months prevent a lot of calls.',
+  },
+];
+
+const glance: { key: ApplianceKey; types: string; problems: string }[] = [
+  { key: 'refrigerator', types: 'Top-freezer, bottom-freezer, side-by-side and French door refrigerators', problems: 'Not cooling, leaking, ice maker not working, frost buildup, noisy, error codes' },
+  { key: 'freezer', types: 'Chest and upright freezers, including garage units', problems: 'Not freezing, frosting up, running constantly, door or lid not sealing' },
+  { key: 'washer', types: 'Top-load, front-load and high-efficiency washers', problems: 'Not draining, not spinning, leaking, shaking, door lock errors' },
+  { key: 'dryer', types: 'Electric and gas dryers, including propane', problems: 'Not heating, taking too long, squealing or thumping, not turning on' },
+  { key: 'dishwasher', types: 'Built-in dishwashers', problems: 'Not draining, not cleaning, leaking, not drying, not starting' },
+  { key: 'oven', types: 'Gas and electric ranges, ovens, wall ovens and cooktops', problems: 'Not heating, uneven baking, burner not lighting, control or display faults' },
+  { key: 'microwave', types: 'Over-the-range and built-in microwaves', problems: 'Not heating, turntable stopped, fan or light out, touchpad not responding' },
+];
+
 const lifespans = [
   { name: 'Refrigerator', years: '10 to 15 years', repair: 'Fans, relays, defrost parts, valves', closer: 'Compressor or sealed system on an older unit' },
   { name: 'Freezer', years: '10 to 20 years', repair: 'Relays, thermostats, seals, fans', closer: 'Compressor on a small or older chest freezer' },
@@ -102,7 +131,8 @@ export default function CityPage() {
         <p className="text-lg leading-relaxed text-white/75 md:text-xl">
           Appliance Repair Temple sends a technician to homes across Temple, Texas to fix refrigerators, freezers, washers, dryers,
           dishwashers, ovens and ranges. We cover every Temple ZIP code, from the Historic District and Western Hills to the newer
-          neighborhoods along West Adams Avenue, {site.hours.value.long}. Same-day appointments are available, {claims.availabilityQualifier}.
+          neighborhoods along West Adams Avenue, {site.hours.value.long}. Same-day appointments and emergency appliance repair are
+          available, {claims.availabilityQualifier}.
         </p>
         <div className="mt-8">
           <CtaRow location="city_hero" dark />
@@ -124,6 +154,11 @@ export default function CityPage() {
               Most appliance breakdowns come down to one part: a fan motor, a drain pump, a heating element, an igniter, a switch
               or a water valve. The technician tests the likely suspects with a meter, shows you what failed, and explains the
               repair before any work starts. If the appliance is not worth fixing, we will say so.
+            </p>
+            <p>
+              If you have been searching for appliance repair near me in Temple, TX, this is a local team, not a national call
+              center. We handle refrigerator repair, freezer repair, washer and dryer repair, dishwasher repair, oven, stove and range
+              repair, and microwave repair, for gas and electric appliances and the major brands found in Temple homes.
             </p>
             <p>
               Appliance Repair Temple is licensed and insured, with 4+ years of experience and 100+ repairs completed. Customers
@@ -167,7 +202,57 @@ export default function CityPage() {
         </ul>
       </Section>
 
-      <Section labelledBy="expect-heading">
+      <Section tone="white" id="emergency" labelledBy="emergency-heading">
+        <div className="grid gap-12 lg:grid-cols-[1fr_1.3fr]">
+          <SectionHeading
+            id="emergency-heading"
+            eyebrow="Emergency appliance repair in Temple"
+            title="When it cannot"
+            accent="wait until next week."
+            className="!mb-0"
+          />
+          <div>
+            <div className="prose-copy">
+              <p>
+                A refrigerator warming up with a week of groceries inside, a washer leaking toward the hallway, a dryer that smells
+                hot: those are emergencies, and we treat them that way. During business hours, {site.hours.value.long}, urgent calls
+                from Temple homes get priority scheduling. Same-day emergency service is available, {claims.availabilityQualifier}.
+              </p>
+              <p>Before you call, take the steps that stop the damage:</p>
+              <ul>
+                <li>Leak: close the water valve behind the appliance and put towels down.</li>
+                <li>Burning smell, smoke or sparks: switch off the breaker for that appliance.</li>
+                <li>Warm refrigerator or freezer: keep the doors closed. A closed fridge holds food safely for about four hours.</li>
+                <li>Gas smell: leave the house and call your gas provider or 911 from outside first.</li>
+              </ul>
+              <p>Then call and tell us it is urgent. Ask about emergency visit details on the call.</p>
+            </div>
+            <div className="mt-6">
+              <CtaRow location="city_emergency" />
+            </div>
+          </div>
+        </div>
+      </Section>
+
+      <Section labelledBy="weather-heading">
+        <SectionHeading
+          id="weather-heading"
+          eyebrow="Local conditions"
+          title="How Temple weather"
+          accent="affects your appliances."
+          intro="Central Texas is hard on appliances in a few predictable ways. Knowing them helps you prevent a repair, or describe the problem when you call."
+        />
+        <ul className="grid gap-4 md:grid-cols-2">
+          {weather.map((w) => (
+            <li key={w.title} className="card p-7">
+              <h3 className="font-display text-[20px] font-bold tracking-[-0.02em] text-ink">{w.title}</h3>
+              <p className="mt-2 text-[15px] text-ink-body">{w.text}</p>
+            </li>
+          ))}
+        </ul>
+      </Section>
+
+      <Section tone="white" labelledBy="expect-heading">
         <SectionHeading
           id="expect-heading"
           eyebrow="Booking service"
@@ -187,6 +272,42 @@ export default function CityPage() {
         </div>
         <div className="mx-auto mt-4 max-w-4xl">
           <PaymentNote />
+        </div>
+      </Section>
+
+      <Section labelledBy="glance-heading">
+        <SectionHeading
+          id="glance-heading"
+          eyebrow="Services at a glance"
+          title="Appliance repair services"
+          accent="in Temple, TX."
+          intro="Every appliance below is repaired in your home. Pick one for the full list of problems, causes and what to check first."
+        />
+        <div className="overflow-hidden rounded-card border border-sand">
+          <table className="w-full text-left text-[15px]">
+            <caption className="sr-only">Appliance repair services in Temple, the types covered and common problems</caption>
+            <thead className="bg-canvas text-[13px] uppercase tracking-[0.1em] text-ink-muted">
+              <tr>
+                <th scope="col" className="px-5 py-4 font-semibold">Service</th>
+                <th scope="col" className="hidden px-5 py-4 font-semibold md:table-cell">Types we repair</th>
+                <th scope="col" className="px-5 py-4 font-semibold">Common problems</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-sand bg-white">
+              {glance.map((g) => (
+                <tr key={g.key}>
+                  <th scope="row" className="px-5 py-4 align-top font-semibold text-ink">
+                    <Link href={serviceHref(g.key)} className="underline decoration-flame/50 underline-offset-4 hover:decoration-flame">
+                      {serviceByKey[g.key].name} repair
+                    </Link>
+                    <span className="mt-1 block text-[13px] font-normal text-ink-muted md:hidden">{g.types}</span>
+                  </th>
+                  <td className="hidden px-5 py-4 align-top text-ink-body md:table-cell">{g.types}</td>
+                  <td className="px-5 py-4 align-top text-ink-body">{g.problems}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
       </Section>
 
@@ -256,7 +377,7 @@ export default function CityPage() {
           eyebrow="Service area"
           title="Where we work in Temple"
           accent="and nearby."
-          intro="This is a service-area business. Technicians come to your home; there is no walk-in shop."
+          intro="Repairs happen in your home; the technician comes to you anywhere in Temple and the towns around it."
         />
         <div className="grid items-start gap-10 lg:grid-cols-[1.1fr_1fr]">
           <AreaMap />
@@ -271,7 +392,8 @@ export default function CityPage() {
             </ul>
             <p className="mt-4 text-[15px] text-ink-body">
               Central Temple and the Historic District, Midway, Western Hills, West Temple along West Adams Avenue and Highway
-              317, and the south side of town.
+              317, and the south side of town. Homes are in 76501, 76502 and 76504; 76503 is the downtown post office box ZIP and
+              76508 covers the Baylor Scott &amp; White medical campus.
             </p>
             <h3 className="mt-8 text-[13px] font-semibold uppercase tracking-[0.14em] text-ink-muted">Nearby towns</h3>
             <ul className="mt-4 flex flex-wrap gap-2">
