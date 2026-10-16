@@ -234,7 +234,7 @@ Call (254) 555-0147 · Request Service · Call to confirm the earliest open time
 ## Content expansion (October 16, 2026)
 
 - Words in `<main>`: about 1,345 before, about 2,190 after. "appliance repair" 9 to 15 mentions, "emergency" 0 to 7.
-- Title: "Appliance Repair Harker Heights TX | Same-Day & Emergency" (57). Meta description 157 characters.
+- Title: "Appliance Repair Harker Heights TX | Same-Day & Emergency" (57). Meta description 158 characters.
 - Shared area template (added with Belton): emergency section and the all-services table.
 - Harker Heights only:
   - Intro paragraph covering every service term and emergency priority.
