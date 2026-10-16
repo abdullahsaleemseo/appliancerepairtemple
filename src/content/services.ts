@@ -1035,13 +1035,15 @@ export const services: Service[] = [
     navLabel: 'Oven & Stove Repair',
     icon: 'oven',
     card: 'Oven won’t heat, burner out, igniter clicking.',
-    metaTitle: 'Oven & Stove Repair Temple TX | Ranges & Cooktops',
+    metaTitle: 'Oven & Stove Repair Temple TX | Same-Day & Emergency',
     metaDescription:
-      'Oven not heating or a burner won’t light? Electric and gas oven, stove and range repair in Temple, TX. Same-day service available. Call (254) 555-0147.',
+      'Oven not heating or a burner won’t light? Same-day and emergency oven, stove and range repair in Temple, TX, electric and gas, subject to availability.',
     h1: 'Oven, Stove & Range Repair in Temple, TX',
     intro: [
       'Oven will not heat, bakes unevenly or a burner will not light? Appliance Repair Temple repairs ovens, stoves, ranges, wall ovens and cooktops in homes across Temple, TX, electric and gas. Same-day service is available, subject to technician availability, location, and current demand.',
       'The usual causes are a short list: a burned-out bake or broil element, a weak gas igniter, a temperature sensor that has drifted, a failed surface element or infinite switch, or a door lock stuck after a self-clean. The technician tests the part before replacing it, explains what failed and what the repair involves, and starts only after your OK.',
+      'Oven repair, stove repair and range repair are the same visit in practice. A range is an oven and a cooktop in one cabinet, and a gas stove repair often comes down to the same few igniters, switches and valves whether the problem is in the oven or on a burner. Electric ovens and glass-top stoves have their own short list of elements, switches and sensors.',
+      'Some range problems cannot wait. An oven that will not turn off, a burner stuck on high, a burning electrical smell or sparks get priority as emergency oven and stove repair during business hours. If you smell gas, leave the house and call your gas utility from outside first.',
     ],
     symptomsHeading: 'Oven and stove problems we fix',
     symptoms: [
@@ -1126,6 +1128,26 @@ export const services: Service[] = [
         a: 'Yes. Built-in wall ovens and drop-in cooktops are part of the work. Give us the model number when you book so the technician can plan for the access.',
       },
       {
+        q: 'Do you offer emergency oven and stove repair?',
+        a: 'Yes. An oven that will not turn off, a burner stuck on high, sparks or a burning electrical smell get priority scheduling during business hours, Monday to Saturday, 8:00 AM to 8:00 PM. Same-day emergency service is subject to technician availability, location, and current demand. Ask about emergency visit details when you call. If you smell gas, leave the house and call your gas utility from outside before anything else.',
+      },
+      {
+        q: 'My oven will not turn off. What should I do?',
+        a: 'Switch off the breaker for the range. On a gas range, also turn off the gas supply valve behind it if you can reach it safely. Keep the door closed and let the oven cool. An oven that keeps heating after it is switched off usually has a stuck relay on the control board or a failed switch, and it should not be used until it is checked.',
+      },
+      {
+        q: 'Why is my oven not heating but the broiler works?',
+        a: 'On an electric oven, the bake element has most likely burned out. On a gas oven with a separate broil burner, the bake igniter is the usual cause. Both are common oven repairs.',
+      },
+      {
+        q: 'Why does my gas stove keep clicking?',
+        a: 'Clicking that does not stop usually means moisture or a spill around a burner, a burner cap out of place, or a switch behind a knob that has failed. Let a wet cooktop dry fully and reseat the caps. If the clicking continues, the spark switch or spark module needs to be replaced.',
+      },
+      {
+        q: 'Do you offer oven and stove repair outside Temple?',
+        a: 'Yes. Along with Temple, we repair ovens, stoves and ranges in Belton, Killeen, Harker Heights, Nolanville, Morgan’s Point Resort, Salado, Troy, Little River-Academy, Rogers, Holland and Moody.',
+      },
+      {
         q: 'How much does oven or stove repair cost?',
         a: 'It depends on the model and the part, so we do not list prices online. Call to discuss your repair needs. Have the brand, the model number and whether it is gas or electric ready.',
       },
@@ -1192,6 +1214,23 @@ export const services: Service[] = [
         ],
       },
       {
+        type: 'emergency',
+        heading: 'Emergency oven and stove repair in Temple',
+        intro: 'A range that will not shut off or smells like burning wiring is a fire risk, not an inconvenience. These situations get priority scheduling during business hours. Same-day emergency oven and stove repair is available, subject to technician availability, location, and current demand.',
+        signs: [
+          { title: 'Oven will not turn off', text: 'The oven keeps heating after it is switched off, or runs far hotter than the setting.' },
+          { title: 'Burner stuck on high', text: 'A coil or glass-top burner stays on full heat no matter where the knob is set.' },
+          { title: 'Sparks or burning wiring smell', text: 'Arcing at an element, a flash from a burner, or an electrical smell from the back of the range.' },
+          { title: 'Gas smell', text: 'Do not switch anything on or off. Leave the house and call your gas utility from outside, then call us.' },
+        ],
+        steps: [
+          'Switch off the breaker for the range, unless you smell gas.',
+          'On a gas range, close the gas supply valve behind it if you can reach it safely.',
+          'Keep the oven door closed and let everything cool.',
+          'Write down the brand, model number, gas or electric and any error code, then call.',
+        ],
+      },
+      {
         type: 'prose',
         heading: 'Why a glowing igniter can still be the problem',
         paragraphs: [
@@ -1222,6 +1261,27 @@ export const services: Service[] = [
           { title: 'Test the heat source', text: 'Elements, igniters, switches and the temperature sensor are tested with a meter.' },
           { title: 'Explain and approve', text: 'You hear what failed and what the repair involves. Work starts after your OK.' },
           { title: 'Repair and verify', text: 'After the repair, the oven or burner is run to confirm it heats correctly.' },
+        ],
+      },
+      {
+        type: 'resultsGrid',
+        eyebrow: 'Oven not heating',
+        heading: 'Oven not heating? What the symptom points to',
+        intro: 'How the oven fails narrows down the part. Note which of these matches yours before you call.',
+        rows: [
+          { see: 'Gas oven: igniter glows, no flame', means: 'The igniter is too weak to open the gas valve, or less often the valve itself has failed.', fix: 'The igniter is tested with a meter first; it is the most common gas oven repair.' },
+          { see: 'Electric oven: broil works, bake does not', means: 'The bake element has burned out. You can often see a break or a blister on it.', fix: 'Bake element replacement is a routine oven repair.' },
+          { see: 'Heats, but bakes too hot or too cold', means: 'The temperature sensor has drifted or the oven needs calibration.', fix: 'Run the thermometer test above; calibration or a new sensor fixes most cases.' },
+          { see: 'Nothing heats and the display is dead', means: 'A tripped breaker, a blown thermal fuse or a control board fault.', fix: 'Check both breakers first; the fuse and board are tested before anything is replaced.' },
+        ],
+      },
+      {
+        type: 'prose',
+        heading: 'Ovens, stoves and ranges we repair',
+        paragraphs: [
+          'Freestanding ranges are the most common setup in Temple kitchens, with the oven below and four or five burners on top. Slide-in ranges sit flush with the counter and put the controls on the front, which changes how the technician reaches the wiring and switches.',
+          'Wall ovens, single or double, are built into the cabinets and pair with a separate cooktop. They need more care to pull out, so give us the model number when you book. Gas cooktops use spark igniters and burner valves, and electric cooktops use coil elements or radiant elements under a glass top, each with its own switch.',
+          'Whatever the setup, the oven and stove repair starts the same way: confirm power or gas, test the heat source and the controls, and explain the fix before any work starts.',
         ],
       },
       { type: 'repairOrReplace' },

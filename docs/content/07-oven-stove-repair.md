@@ -318,3 +318,14 @@ Call (254) 555-0147 · Request Service · Request oven & stove repair · Speak w
 - [Temple Appliance Repair (Voolt): oven repair](https://templeappliancerepair.voolt.com/oven-repair)
 - [Sears Home Services: Temple](https://www.searshomeservices.com/locations/appliance-repair/tx-temple/1212-marlandwood)
 - [Mr. Appliance East Texas: ranges and stove tops](https://www.mrappliance.com/east-texas/residential/appliance-repair/ranges-and-stove-tops)
+
+## Content expansion (October 16, 2026)
+
+- Words in `<main>`: about 1,801 before, about 2,753 after. "oven repair" 0 to 4 mentions, "range repair" 1 to 2, "oven and stove repair" 6, "emergency" 0 to 8, "not heating" 1 to 4, "gas stove" 2.
+- Title: "Oven & Stove Repair Temple TX | Same-Day & Emergency" (52). Meta description 151 characters, phone number removed.
+- New sections:
+  - "Emergency oven and stove repair in Temple": four urgent signs (oven will not turn off, burner stuck on high, sparks or burning wiring smell, gas smell), four steps before the technician arrives, and the business-hours priority note. A gas smell means leave and call the gas utility first. No emergency amounts are stated.
+  - "Oven not heating? What the symptom points to": a four-row table for gas and electric ovens.
+  - "Ovens, stoves and ranges we repair": freestanding and slide-in ranges, wall ovens, gas and electric cooktops. Induction and dual fuel are not mentioned; not confirmed.
+- Intro: two new paragraphs on oven, stove and range repair terms and emergency priority.
+- Five new FAQs: emergency oven and stove repair, oven will not turn off, oven not heating but broiler works, gas stove clicking, and repair outside Temple.
