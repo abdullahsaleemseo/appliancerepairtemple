@@ -11,7 +11,7 @@ export const metadata = pageMetadata({
 
 export default function PrivacyPage() {
   return (
-    <LegalPage title="Privacy Policy" path={routes.privacy} updated="October 15, 2026">
+    <LegalPage title="Privacy Policy" path={routes.privacy} updated="October 16, 2026">
       <p>
         This policy explains what information {site.brandName} (“we”, “us”) collects through this website, how we use it, and who
         we share it with. We only collect what we need to respond to a repair request.
@@ -32,6 +32,10 @@ export default function PrivacyPage() {
         (such as UTM parameters), your general device type and how you interacted with the site, including phone number clicks and
         form submissions. We use Google Analytics for this. Google Analytics uses cookies; you can opt out with Google’s browser
         add-on or your browser’s cookie settings.
+      </p>
+      <p>
+        Some pages show an embedded Google Map of the area we serve. When the map loads, Google may receive your IP address and set
+        cookies under its own privacy policy.
       </p>
       <p>We may also use Cloudflare Turnstile to block automated spam. It processes limited technical data to tell people from bots.</p>
 

@@ -4,56 +4,48 @@ import { areas, areaHref } from '@/content/areas';
 import { Icon } from './Icon';
 import { PhoneLink } from './PhoneLink';
 
-const points = [
-  { x: 74, y: 178, n: 'Killeen', dy: 22 },
-  { x: 140, y: 168, n: 'Harker Heights', dy: -14 },
-  { x: 205, y: 160, n: 'Belton', dy: 22 },
-  { x: 214, y: 232, n: 'Salado', dy: 22 },
-  { x: 312, y: 52, n: 'Troy', dy: -12 },
-];
+const mapQuery = (place: string) => encodeURIComponent(`${place}, ${site.stateAbbr}`);
 
-export function AreaMap() {
+/** Google Map of one town, framed in the site style. Loads lazily and needs no API key. */
+export function MapEmbed({ place, zoom = 12, note }: { place: string; zoom?: number; note?: string }) {
+  const q = mapQuery(place);
   return (
-    <div className="grain relative overflow-hidden rounded-card bg-ink">
-      <svg viewBox="0 0 400 300" className="relative h-full w-full" role="img" aria-label={`Map showing ${site.city} at the center of the service area`}>
-        <defs>
-          <radialGradient id="glow" cx="62%" cy="42%" r="45%">
-            <stop offset="0" stopColor="#FF7A3D" stopOpacity=".45" />
-            <stop offset="1" stopColor="#FF7A3D" stopOpacity="0" />
-          </radialGradient>
-          <pattern id="dots" width="16" height="16" patternUnits="userSpaceOnUse">
-            <circle cx="1" cy="1" r="1" fill="#fff" fillOpacity=".08" />
-          </pattern>
-        </defs>
-        <rect width="400" height="300" fill="url(#dots)" />
-        <rect width="400" height="300" fill="url(#glow)" />
-        <circle cx="250" cy="125" r="120" fill="none" stroke="#fff" strokeOpacity=".12" strokeDasharray="4 6" />
-        <circle cx="250" cy="125" r="70" fill="none" stroke="#fff" strokeOpacity=".1" strokeDasharray="4 6" />
-        <path d="M265 0 C258 80 246 140 228 300" stroke="#fff" strokeOpacity=".16" strokeWidth="3" fill="none" />
-        <path d="M20 182 C120 176 180 160 250 125" stroke="#fff" strokeOpacity=".16" strokeWidth="3" fill="none" />
-        {points.map((p) => (
-          <g key={p.n}>
-            <circle cx={p.x} cy={p.y} r="4.5" fill="#9CCBFF" />
-            <text x={p.x} y={p.y + p.dy} textAnchor="middle" fontSize="12" fontWeight="600" fill="#fff" fillOpacity=".75">
-              {p.n}
-            </text>
-          </g>
-        ))}
-        <circle cx="250" cy="125" r="16" fill="#FF7A3D" fillOpacity=".25" />
-        <circle cx="250" cy="125" r="8" fill="#FF7A3D" />
-        <text x="268" y="121" fontSize="18" fontWeight="800" fill="#fff">
-          {site.city}
-        </text>
-      </svg>
-      <p className="absolute bottom-3 right-4 text-[11px] text-white/40">Not to scale</p>
-    </div>
+    <figure className="overflow-hidden rounded-card border border-sand bg-white shadow-[0_24px_60px_-30px_rgba(11,17,32,0.35)]">
+      <figcaption className="grain relative flex flex-wrap items-center justify-between gap-x-4 gap-y-2 overflow-hidden bg-ink px-5 py-4">
+        <span className="relative flex items-center gap-2.5 font-display text-[17px] font-bold tracking-[-0.02em] text-white">
+          <span className="flex h-8 w-8 items-center justify-center rounded-full bg-flame/20">
+            <Icon name="pin" className="h-4 w-4 text-flame-glow" />
+          </span>
+          {place}, {site.stateAbbr}
+        </span>
+        <a
+          href={`https://www.google.com/maps/search/?api=1&query=${q}`}
+          target="_blank"
+          rel="noopener"
+          className="relative text-[14px] font-semibold text-white/80 underline decoration-flame underline-offset-4 hover:text-white"
+        >
+          Open in Google Maps
+        </a>
+      </figcaption>
+      <div className="relative aspect-[4/3] bg-sand/40 sm:aspect-[16/11]">
+        <iframe
+          src={`https://maps.google.com/maps?q=${q}&z=${zoom}&output=embed`}
+          title={`Map of ${place}, ${site.state}`}
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          allowFullScreen
+          className="absolute inset-0 h-full w-full border-0 [filter:saturate(0.8)_contrast(1.04)]"
+        />
+      </div>
+      {note ? <p className="border-t border-sand px-5 py-3 text-[14px] text-ink-muted">{note}</p> : null}
+    </figure>
   );
 }
 
 export function AreaBlock() {
   return (
     <div className="grid items-start gap-10 lg:grid-cols-[1.1fr_1fr]">
-      <AreaMap />
+      <MapEmbed place={site.city} note={`Based in ${site.city}. The technician comes to your home.`} />
       <div>
         <h3 className="text-[13px] font-semibold uppercase tracking-[0.14em] text-ink-muted">{site.city} ZIP codes</h3>
         <ul className="mt-4 flex flex-wrap gap-2">

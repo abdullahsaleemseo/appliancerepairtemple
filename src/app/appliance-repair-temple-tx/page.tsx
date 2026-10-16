@@ -5,7 +5,7 @@ import { brands, otherBrands } from '@/content/brands';
 import { cityFaqs } from '@/content/faqs';
 import { serviceByKey, serviceHref, services } from '@/content/services';
 import type { ApplianceKey } from '@/content/types';
-import { AreaMap } from '@/components/AreaList';
+import { MapEmbed } from '@/components/AreaList';
 import { BrandChips } from '@/components/BrandChips';
 import { CtaRow } from '@/components/Buttons';
 import { FaqList } from '@/components/FaqList';
@@ -380,7 +380,7 @@ export default function CityPage() {
           intro="Repairs happen in your home; the technician comes to you anywhere in Temple and the towns around it."
         />
         <div className="grid items-start gap-10 lg:grid-cols-[1.1fr_1fr]">
-          <AreaMap />
+          <MapEmbed place={site.city} note="All of Temple is in range: 76501, 76502 and 76504." />
           <div>
             <h3 className="text-[13px] font-semibold uppercase tracking-[0.14em] text-ink-muted">All of Temple</h3>
             <ul className="mt-4 flex flex-wrap gap-2">

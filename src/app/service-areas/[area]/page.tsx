@@ -8,6 +8,7 @@ import { TrustBadges } from '@/components/TrustBadges';
 import { CtaRow } from '@/components/Buttons';
 import { FaqList } from '@/components/FaqList';
 import { FinalCta } from '@/components/FinalCta';
+import { MapEmbed } from '@/components/AreaList';
 import { Icon } from '@/components/Icon';
 import { JsonLd } from '@/components/JsonLd';
 import { ShareExperience } from '@/components/ShareExperience';
@@ -136,40 +137,45 @@ export default async function AreaPage({ params }: Params) {
       </Section>
 
       <Section tone="white" labelledBy="zip-heading">
-        <h2 id="zip-heading" className="font-display text-2xl font-bold tracking-[-0.02em] text-ink">
-          {a.name} ZIP codes we serve
-        </h2>
-        <ul className="mt-5 flex flex-wrap gap-2">
-          {a.zips.map((z) => (
-            <li key={z} className="rounded-full bg-ink px-4 py-2 font-display font-semibold tracking-wide text-white">
-              {z}
-            </li>
-          ))}
-        </ul>
-        {a.zipsVerified ? null : (
-          <p className="mt-2">
-            <VerifyTag label="CHECK ZIP LIST AGAINST USPS" />
-          </p>
-        )}
-        <div className="mt-10 flex flex-wrap gap-x-8 gap-y-3">
-          <Link href={routes.cityPage} className="link-arrow">
-            Appliance repair in {site.city}
-          </Link>
-          {(a.nearby ?? others.map((o) => o.name)).map((name) => {
-            const o = areas.find((x) => x.name === name);
-            return o ? (
-              <Link key={name} href={areaHref(o)} className="link-arrow">
-                Appliance repair in {o.name}
+        <div className="grid items-start gap-10 lg:grid-cols-[1.1fr_1fr]">
+          <MapEmbed place={a.name} zoom={a.slug === 'killeen-tx' ? 12 : 13} />
+          <div>
+            <h2 id="zip-heading" className="font-display text-2xl font-bold tracking-[-0.02em] text-ink">
+              {a.name} ZIP codes we serve
+            </h2>
+            <ul className="mt-5 flex flex-wrap gap-2">
+              {a.zips.map((z) => (
+                <li key={z} className="rounded-full bg-ink px-4 py-2 font-display font-semibold tracking-wide text-white">
+                  {z}
+                </li>
+              ))}
+            </ul>
+            {a.zipsVerified ? null : (
+              <p className="mt-2">
+                <VerifyTag label="CHECK ZIP LIST AGAINST USPS" />
+              </p>
+            )}
+            <div className="mt-10 flex flex-wrap gap-x-8 gap-y-3">
+              <Link href={routes.cityPage} className="link-arrow">
+                Appliance repair in {site.city}
               </Link>
-            ) : (
-              <span key={name} className="text-ink-body">
-                {name}
-              </span>
-            );
-          })}
-          <Link href={routes.request} className="link-arrow">
-            Request service
-          </Link>
+              {(a.nearby ?? others.map((o) => o.name)).map((name) => {
+                const o = areas.find((x) => x.name === name);
+                return o ? (
+                  <Link key={name} href={areaHref(o)} className="link-arrow">
+                    Appliance repair in {o.name}
+                  </Link>
+                ) : (
+                  <span key={name} className="text-ink-body">
+                    {name}
+                  </span>
+                );
+              })}
+              <Link href={routes.request} className="link-arrow">
+                Request service
+              </Link>
+            </div>
+          </div>
         </div>
       </Section>
 
