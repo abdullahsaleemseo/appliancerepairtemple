@@ -274,15 +274,18 @@ export const areas: Area[] = [
   {
     slug: 'harker-heights-tx',
     name: 'Harker Heights',
-    metaTitle: 'Appliance Repair Harker Heights TX | Same-Day Help',
+    metaTitle: 'Appliance Repair Harker Heights TX | Same-Day & Emergency',
     metaDescription:
-      'Appliance repair in Harker Heights, TX for refrigerators, washers, dryers, dishwashers and ranges, including newer models with error codes. Call to book.',
+      'Same-day and emergency appliance repair in Harker Heights, TX for fridges, washers, dryers, dishwashers and ranges, smart models too. Subject to availability.',
     h1: 'Appliance Repair in Harker Heights, TX, Between Killeen and Belton',
     intro: [
       'Appliance Repair Temple repairs refrigerators, freezers, washers, dryers, dishwashers, ovens and ranges in homes across Harker Heights, TX. Same-day service is available, subject to technician availability, location, and current demand.',
       'Harker Heights roughly doubled in size between 2000 and 2020, so a large share of its homes, and the appliances in them, are fairly new. That changes the kind of calls we get here. Fewer worn-out machines, more electronic controls, error codes, sensors and questions about whether a factory warranty still applies.',
       'Older or newer, the visit works the same way. The technician tests the appliance, tells you which part failed and what the repair involves, and waits for your OK before starting. If a repair is not worth the money on your model, you will hear that too.',
+      'That covers refrigerator repair and freezer repair, washer and dryer repair, dishwasher repair, oven, stove and range repair, and over-the-range microwave repair in Harker Heights, across the major brands. Urgent problems, such as a fridge warming up or a washer leaking across the floor, get priority as emergency appliance repair during business hours.',
     ],
+    emergencyNote:
+      'A French door refrigerator warming up with groceries inside, a front-load washer leaking across a new floor or a dryer that smells hot cannot wait. Urgent calls from Harker Heights homes get priority scheduling during business hours, and Harker Heights sits on our I-14 routes between Belton and Killeen.',
     travelNote:
       'Harker Heights sits between Killeen and Belton along I-14, so visits are usually grouped with those routes on the same day. Call to confirm the earliest open time for your address.',
     localPoints: [
@@ -322,6 +325,23 @@ export const areas: Area[] = [
         ],
       },
       {
+        heading: 'Smart and Wi-Fi appliances',
+        accent: 'in Harker Heights homes.',
+        paragraphs: [
+          'Many newer refrigerators, washers, dryers and ranges connect to a phone app that sends alerts and shows error codes. The app is a useful clue, so take a screenshot of any alert before you call. It often names the same system the technician will test first.',
+          'The repair itself is the same as on any appliance: fans, valves, pumps, locks, sensors, elements and control boards. If the only problem is that the app will not connect, start with your router and the manufacturer’s support line, since that is a network or account issue rather than a broken part.',
+        ],
+      },
+      {
+        heading: 'Keeping newer appliances',
+        accent: 'out of trouble.',
+        paragraphs: [
+          'Refrigerators with ice makers and water dispensers depend on the water filter. Most manufacturers suggest replacing it about every six months; an old filter slows the dispenser and shrinks the ice cubes. Vacuum the condenser coils or the front grille once or twice a year.',
+          'Front-load washers stay fresh when you wipe the door seal after the last load, leave the door open to dry and clean the pump filter every few months. Use HE detergent, and not too much of it.',
+          'Dishwashers with a manual filter need it rinsed regularly, more often for heavy use. Dryers need the lint screen cleaned every load and the vent checked once a year, which matters even more in a newer home where the vent runs through an interior wall to the roof.',
+        ],
+      },
+      {
         heading: 'How scheduling works',
         accent: 'for Harker Heights.',
         paragraphs: [
@@ -335,6 +355,18 @@ export const areas: Area[] = [
     zipsVerified: true,
     nearby: ['Killeen', 'Nolanville', 'Belton', "Morgan's Point Resort", 'Salado'],
     faqs: [
+      {
+        q: 'Do you offer emergency appliance repair in Harker Heights?',
+        a: 'Yes. A refrigerator or freezer warming up with food inside, a washer or dishwasher leaking, or an appliance that smells like burning gets priority scheduling during business hours, Monday to Saturday, 8:00 AM to 8:00 PM. Same-day emergency service is subject to technician availability, location, and current demand. Ask about emergency visit details when you call.',
+      },
+      {
+        q: 'Can you repair my refrigerator in Harker Heights today?',
+        a: 'Often. Refrigerator repair calls get priority because the food inside is at risk. Same-day service is subject to technician availability, location, and current demand. Keep the doors closed while you wait.',
+      },
+      {
+        q: 'Do you repair smart or Wi-Fi appliances?',
+        a: 'Yes. Smart appliances use the same core parts as any other model, and the app alert or error code helps the technician start in the right place. If only the app connection is failing, check your router and the manufacturer’s support first.',
+      },
       {
         q: 'Do you cover all of Harker Heights?',
         a: 'Yes. We serve the 76548 ZIP code, from the neighborhoods along I-14 to the homes on the south side toward Stillhouse Hollow Lake. Some nearby addresses carry a Killeen or Belton mailing city, so give us your address and we will confirm.',

@@ -230,3 +230,15 @@ Call (254) 555-0147 · Request Service · Call to confirm the earliest open time
 - [Islands: Harker Heights, lake and dining](https://www.islands.com/2246811/harker-heights-texas-sandwiched-between-austin-lake-fun-tasty-eats/)
 - [Neuhaus Realty: Lakecliff Dr listing (Dana Peak Park note)](https://neuhausre.com/properties/harker-heights/4017-lakecliff-dr-1484/)
 - [10 Federal Storage: Best neighborhoods in Harker Heights (home sizes and prices rise toward the lake)](https://10federalstorage.com/blog/best-neighborhoods-in-harker-heights-tx)
+
+## Content expansion (October 16, 2026)
+
+- Words in `<main>`: about 1,345 before, about 2,190 after. "appliance repair" 9 to 15 mentions, "emergency" 0 to 7.
+- Title: "Appliance Repair Harker Heights TX | Same-Day & Emergency" (57). Meta description 157 characters.
+- Shared area template (added with Belton): emergency section and the all-services table.
+- Harker Heights only:
+  - Intro paragraph covering every service term and emergency priority.
+  - Town-specific emergency paragraph (newer homes, on the I-14 routes between Belton and Killeen).
+  - "Smart and Wi-Fi appliances in Harker Heights homes": app alerts as clues; app connection problems go to the router and manufacturer.
+  - "Keeping newer appliances out of trouble": fridge water filters, coils, front-load seals, dishwasher filters, dryer vents.
+  - Three new FAQs: emergency appliance repair in Harker Heights, same-day refrigerator repair, smart appliances.
