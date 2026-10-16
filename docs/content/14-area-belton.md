@@ -229,3 +229,15 @@ Call (254) 555-0147 · Request Service · Call to confirm the earliest open time
 - [Texas Escapes: Belton](https://www.texasescapes.com/TOWNS/Belton_Texas/Belton.htm)
 - [Thumbtack: appliance repair in Belton, TX](https://www.thumbtack.com/tx/belton/appliance-repair)
 - [HomeAdvisor: appliance repair in Belton, TX](https://www.homeadvisor.com/tloc/Belton-TX/Appliances-All-Types-Repair-or-Service)
+
+## Content expansion (October 16, 2026)
+
+- Words in `<main>`: about 1,332 before, about 2,209 after. "appliance repair" 10 to 16 mentions, "emergency" 0 to 7.
+- Title: "Appliance Repair Belton TX | Same-Day & Emergency" (49). Meta description 157 characters.
+- New on every area page (shared template): an "Emergency appliance repair in {town}" section with damage-stopping steps and the business-hours priority note, and an "All appliance repair services in {town}, TX" table linking all seven service pages. The table replaced the one-line "Also ..." list.
+- Belton only:
+  - Intro paragraph covering every service term and emergency priority.
+  - Town-specific emergency paragraph (Belton is one of the shortest drives from Temple).
+  - "Appliance problems in Belton, season by season": summer fridges and freezers, spring storms and outages, fall ovens and dryers, winter freezes.
+  - "Landlords, tenants and property managers": rentals near downtown and UMHB, who approves the repair.
+  - Three new FAQs: emergency appliance repair in Belton, same-day refrigerator repair, washer and dryer repair.

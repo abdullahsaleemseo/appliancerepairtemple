@@ -9,15 +9,18 @@ export const areas: Area[] = [
   {
     slug: 'belton-tx',
     name: 'Belton',
-    metaTitle: 'Appliance Repair Belton TX | Next Door to Temple',
+    metaTitle: 'Appliance Repair Belton TX | Same-Day & Emergency',
     metaDescription:
-      'Appliance repair in Belton, TX for fridges, washers, dryers, dishwashers and ovens, from a team based next door in Temple. Same-day service available.',
+      'Same-day and emergency appliance repair in Belton, TX for fridges, washers, dryers, dishwashers and ovens, from next door in Temple. Subject to availability.',
     h1: 'Appliance Repair in Belton, TX, Right Next Door to Temple',
     intro: [
       'Need appliance repair in Belton? Appliance Repair Temple fixes refrigerators, freezers, washers, dryers, dishwashers, ovens and ranges in homes across Belton, TX, from the older streets north of Nolan Creek to the newer subdivisions on the edge of town. Same-day service is available, subject to technician availability, location, and current demand.',
       'Belton is the Bell County seat and sits right beside Temple, so it is one of the shortest drives on our routes. That makes Belton visits easier to fit into the day than towns farther out.',
       'The work is the same as anywhere else we go. The technician finds the part that failed, explains what the repair involves, and starts only after your OK. If an appliance is not worth fixing, you will hear that too.',
+      'That covers refrigerator repair and freezer repair, washer and dryer repair, dishwasher repair, oven, stove and range repair, and over-the-range microwave repair in Belton, across the major brands. Urgent problems, such as a fridge warming up or a washer leaking across the floor, get priority as emergency appliance repair during business hours.',
     ],
+    emergencyNote:
+      'A refrigerator warming up with groceries inside, a washer leaking toward the carpet or a dryer that smells hot cannot wait, and Belton is one of the shortest drives from Temple. Urgent calls from Belton homes get priority scheduling during business hours.',
     travelNote:
       'Belton visits are usually scheduled alongside our south and west Temple routes, so availability tends to track Temple’s. Call to confirm the earliest open time for your address.',
     localPoints: [
@@ -49,6 +52,24 @@ export const areas: Area[] = [
         ],
       },
       {
+        heading: 'Appliance problems in Belton,',
+        accent: 'season by season.',
+        paragraphs: [
+          'Summer is refrigerator and freezer season. Long stretches of heat push kitchen fridges and garage freezers hard, and a weak start relay, a dusty condenser coil or a tired fan motor tends to fail in July and August. If the fridge feels warm and never seems to stop running, call before the food is lost.',
+          'Spring and early summer bring storms. A storm that knocks the power out can leave a freezer on a tripped garage outlet, or damage a start relay or control board when the power comes back. After an outage, check that every refrigerator and freezer actually restarted.',
+          'Fall and the holidays are oven and dryer season. Ovens that sat quiet all summer get a workout, and self-clean cycles before Thanksgiving are a common time for door locks and temperature sensors to fail. Dryers run more loads as the weather cools, which shows up any lint buildup in the vent.',
+          'Winter freezes are rarer, but a hard one can crack a washer fill hose or an ice maker line in an unheated laundry room or garage. If a line froze, check for leaks once it thaws.',
+        ],
+      },
+      {
+        heading: 'Landlords, tenants and',
+        accent: 'property managers.',
+        paragraphs: [
+          'Belton has plenty of rentals, from homes near downtown to houses and apartments around the University of Mary Hardin-Baylor. When a rental appliance fails, the lease usually decides who arranges the repair. Tenants should tell the landlord or property manager first.',
+          'Landlords and property managers can call us directly. Tell us the address, who approves the repair and who will let the technician in. You hear what failed and what the repair involves before any work starts, so the approval happens before the work.',
+        ],
+      },
+      {
         heading: 'How scheduling works',
         accent: 'for Belton.',
         paragraphs: [
@@ -68,6 +89,18 @@ export const areas: Area[] = [
     zipsVerified: true,
     nearby: ["Morgan's Point Resort", 'Harker Heights', 'Salado', 'Killeen', 'Nolanville'],
     faqs: [
+      {
+        q: 'Do you offer emergency appliance repair in Belton?',
+        a: 'Yes. A refrigerator or freezer warming up with food inside, a washer or dishwasher leaking, or an appliance that smells like burning gets priority scheduling during business hours, Monday to Saturday, 8:00 AM to 8:00 PM. Same-day emergency service is subject to technician availability, location, and current demand. Ask about emergency visit details when you call.',
+      },
+      {
+        q: 'Can you repair my refrigerator in Belton today?',
+        a: 'Often. Refrigerator repair calls get priority because the food inside is at risk, and Belton is close to Temple. Same-day service is subject to technician availability, location, and current demand. Keep the doors closed while you wait.',
+      },
+      {
+        q: 'Do you do washer and dryer repair in Belton?',
+        a: 'Yes. Washers that will not drain, spin or stop leaking, and dryers that will not heat or take too long, are among our most common Belton calls. On every dryer call, the technician checks the vent airflow too.',
+      },
       {
         q: 'Do you cover all of Belton?',
         a: 'Yes. We serve Belton’s 76513 ZIP code, including the older neighborhoods near downtown and Nolan Creek and the newer subdivisions around town. If you are outside city limits, give us your address and we will confirm.',

@@ -1,8 +1,7 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { routes, site } from '@/config/site';
+import { claims, routes, site } from '@/config/site';
 import { areas, areaHref } from '@/content/areas';
-import { serviceByKey, serviceHref } from '@/content/services';
 import { PageHero } from '@/components/PageHero';
 import { TrustBadges } from '@/components/TrustBadges';
 import { CtaRow } from '@/components/Buttons';
@@ -14,6 +13,7 @@ import { JsonLd } from '@/components/JsonLd';
 import { ShareExperience } from '@/components/ShareExperience';
 import { Section, SectionHeading } from '@/components/Section';
 import { ServicesGrid } from '@/components/ServicesGrid';
+import { ServicesTable } from '@/components/ServicesTable';
 import { VerifyTag } from '@/components/Verify';
 import { serviceSchema } from '@/lib/schema';
 import { pageMetadata } from '@/lib/seo';
@@ -96,6 +96,39 @@ export default async function AreaPage({ params }: Params) {
         </ul>
       </Section>
 
+      <Section tone="white" id="emergency" labelledBy="emergency-heading">
+        <div className="grid gap-12 lg:grid-cols-[1fr_1.3fr]">
+          <SectionHeading
+            id="emergency-heading"
+            eyebrow={`Emergency appliance repair in ${a.name}`}
+            title="When it cannot"
+            accent="wait until next week."
+            className="!mb-0"
+          />
+          <div>
+            <div className="prose-copy">
+              <p>
+                {a.emergencyNote ??
+                  `A refrigerator warming up with food inside, a washer leaking across the floor or a dryer that smells hot cannot wait. Urgent calls from ${a.name} homes get priority scheduling during business hours.`}{' '}
+                Our hours are {site.hours.value.long}. Same-day emergency appliance repair in {a.name} is available,{' '}
+                {claims.availabilityQualifier}.
+              </p>
+              <p>Before you call, take the steps that stop the damage:</p>
+              <ul>
+                <li>Leak: close the water valve behind the appliance and put towels down.</li>
+                <li>Burning smell, smoke or sparks: switch off the breaker for that appliance.</li>
+                <li>Warm refrigerator or freezer: keep the doors closed. A closed fridge holds food safely for about four hours.</li>
+                <li>Gas smell: leave the house and call your gas provider or 911 from outside first.</li>
+              </ul>
+              <p>Then call and tell us it is urgent. Ask about emergency visit details on the call.</p>
+            </div>
+            <div className="mt-6">
+              <CtaRow location={`area_${a.slug}_emergency`} />
+            </div>
+          </div>
+        </div>
+      </Section>
+
       {a.sections?.map((sec, i) => (
         <Section key={sec.heading} tone={i % 2 ? 'white' : 'canvas'} labelledBy={`sec-${i}`}>
           <div className="grid gap-10 lg:grid-cols-[1fr_1.4fr]">
@@ -112,19 +145,13 @@ export default async function AreaPage({ params }: Params) {
       <Section labelledBy="svc-heading">
         <SectionHeading id="svc-heading" eyebrow="Repairs" title="What we fix in" accent={`${a.name}.`} />
         <ServicesGrid keys={a.featuredServices} showOther={false} bento={false} />
-        <p className="mt-8 text-ink-body">
-          Also{' '}
-          {(['dishwasher', 'oven', 'microwave', 'washer', 'dryer', 'refrigerator', 'freezer'] as const)
-            .filter((k) => !a.featuredServices.includes(k))
-            .map((k, i, arr) => (
-              <span key={k}>
-                <Link href={serviceHref(k)} className="font-semibold text-ink underline decoration-flame underline-offset-4">
-                  {serviceByKey[k].name.toLowerCase()} repair
-                </Link>
-                {i < arr.length - 1 ? ', ' : '.'}
-              </span>
-            ))}
+        <h3 className="mt-14 font-display text-2xl font-bold tracking-[-0.02em] text-ink">
+          All appliance repair services in {a.name}, {site.stateAbbr}
+        </h3>
+        <p className="mb-6 mt-2 max-w-2xl text-ink-body">
+          Every appliance below is repaired in your {a.name} home. Pick one for the full list of problems, causes and what to check first.
         </p>
+        <ServicesTable place={a.name} />
       </Section>
 
       <ShareExperience place={a.name} />
