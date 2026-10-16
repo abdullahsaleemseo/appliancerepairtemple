@@ -243,3 +243,20 @@ Format: WebP or AVIF, under 200 KB each, descriptive file names such as `technic
 - [customerflows.io: Top appliance companies, Temple TX](https://customerflows.io/top-appliance-companies/temple-tx)
 - [Sears Home Services: refrigerator repair cost guide](https://www.searshomeservices.com/blog/how-much-does-it-cost-to-repair-a-refrigerator)
 - [Bob Vila: refrigerator repair cost](https://www.bobvila.com/articles/refrigerator-repair-cost/)
+
+---
+
+## Content expansion (October 16, 2026)
+
+Goal: broader keyword coverage on the homepage, plus emergency service keywords. The owner confirmed emergency service means urgent calls are prioritized during business hours (Monday to Saturday, 8:00 AM to 8:00 PM), and emergency visit details are given on the call. No 24/7 claim.
+
+- Words in `<main>`: about 1,670 before, about 2,800 after.
+- Title: "Appliance Repair Temple TX | Same-Day & Emergency Service" (57). The placeholder phone number was removed from the meta description.
+- New sections:
+  - "A local appliance repair service for Temple homes": kitchen appliance repair, laundry appliance repair, what every service call includes.
+  - "Emergency appliance repair": six urgent situations, a "what to do right now" checklist and a call button.
+  - "How long does an appliance repair take?" inside How it works.
+  - "Small habits that prevent repairs": a maintenance table with a link to the repair tips.
+- Six new FAQs: emergency appliance repair, what counts as an emergency, how long a repair takes, gas appliances, towns served, using an appliance with an error code.
+- The "When to stop using the appliance" box was folded into the emergency section.
+- Keyword coverage now includes appliance repair Temple TX, appliance repair near me, home appliance repair, appliance repair company, appliance technician, emergency appliance repair, same-day appliance repair, kitchen appliance repair, laundry appliance repair, and each appliance repair term.

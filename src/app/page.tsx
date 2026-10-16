@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { canShow, claims, phoneDisplay, routes, site } from '@/config/site';
+import { canShow, claims, routes, site } from '@/config/site';
 import { brands, otherBrands } from '@/content/brands';
 import { homeFaqs } from '@/content/faqs';
 import { primaryServiceKeys, serviceHref, services } from '@/content/services';
@@ -25,8 +25,8 @@ import { websiteSchema } from '@/lib/schema';
 import { pageMetadata } from '@/lib/seo';
 
 export const metadata = pageMetadata({
-  title: `Appliance Repair Temple TX | Same-Day Service`,
-  description: `Appliance repair in Temple, TX for fridges, washers, dryers, dishwashers, ovens and freezers. Same-day service, subject to availability. Call ${phoneDisplay}.`,
+  title: `Appliance Repair Temple TX | Same-Day & Emergency Service`,
+  description: `Appliance repair in Temple, TX for fridges, washers, dryers, dishwashers, ovens and freezers. Same-day and emergency service, subject to availability.`,
   path: '/',
 });
 
@@ -78,6 +78,32 @@ const steps = [
   { title: 'We confirm the visit', text: `We call to confirm the details and set a visit window. We are open ${site.hours.value.long}.` },
   { title: 'Diagnosis at your home', text: 'The technician checks the appliance, tests the likely parts, and explains what failed and what the repair involves.' },
   { title: 'Repair and test', text: 'With your OK, the technician makes the repair and runs the appliance to confirm it works.' },
+];
+
+const emergencies = [
+  { title: 'Water on the floor', text: 'A washer, dishwasher or refrigerator leaking or overflowing. Water spreads under cabinets and flooring fast.' },
+  { title: 'Food at risk', text: 'A refrigerator or freezer warming up while it is full. A closed refrigerator keeps food safe for about four hours.' },
+  { title: 'Burning smell, smoke or sparks', text: 'From any appliance, especially a dryer, range or microwave. Switch it off at the breaker and do not use it again until it is checked.' },
+  { title: 'A range or oven that will not turn off', text: 'A stuck burner, element or control. Switch off the breaker for the range and keep the area clear.' },
+  { title: 'A washer full of water', text: 'Stopped mid-cycle with the door locked or the tub full. Unplug it, then drain it through the pump filter or call us.' },
+  { title: 'No way to cook or wash for a family', text: 'A dead range, a broken washer in a busy household or a dishwasher out before a holiday. Tell us and we will look for the earliest slot.' },
+];
+
+const emergencySteps = [
+  'If you smell gas, leave the house and call your gas provider or 911 from outside first.',
+  'For a leak, close the water supply valve behind the appliance and put towels down.',
+  'For sparks, smoke or a burning smell, switch off the breaker for that appliance.',
+  'Keep refrigerator and freezer doors closed to hold the cold in.',
+  'Then call us, or send a request, and say it is urgent.',
+];
+
+const maintenance = [
+  { appliance: 'Refrigerator and freezer', habit: 'Vacuum the condenser coils and wipe the door gaskets', often: 'Every 6 to 12 months' },
+  { appliance: 'Washer', habit: 'Clean the pump filter (front-loaders), wipe the door seal and run a cleaning cycle', often: 'Monthly' },
+  { appliance: 'Dryer', habit: 'Clean the lint screen; clean the vent run and check the outside flap', often: 'Every load; vent at least once a year' },
+  { appliance: 'Dishwasher', habit: 'Rinse the filter, clear the spray arms and use rinse aid in hard water', often: 'Monthly' },
+  { appliance: 'Oven and range', habit: 'Wipe spills before they bake on; keep burner ports and igniters clean', often: 'As needed' },
+  { appliance: 'Microwave', habit: 'Clean the interior and replace the grease filter on over-the-range models', often: 'Monthly; filter as the manual says' },
 ];
 
 const pickerItems = services.map((s) => ({
@@ -156,7 +182,8 @@ export default function HomePage() {
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/70 md:text-xl lg:text-lg xl:text-xl">
               Appliance Repair Temple fixes refrigerators, washers, dryers, dishwashers, ovens and freezers in homes across Temple, TX
               and nearby Bell County towns. A technician comes to you, tests the parts most likely to have failed, and explains the
-              repair before any work starts. Same-day service is available, {claims.availabilityQualifier}.
+              repair before any work starts. Same-day service and emergency appliance repair are available,{' '}
+              {claims.availabilityQualifier}.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <CallButton location="hero" className="text-[17px]" />
@@ -209,8 +236,46 @@ export default function HomePage() {
         </p>
       </Section>
 
+      {/* Local service explained */}
+      <Section tone="white" labelledBy="local-heading">
+        <div className="grid gap-12 lg:grid-cols-[1fr_1.4fr]">
+          <SectionHeading
+            id="local-heading"
+            eyebrow="Home appliance repair"
+            title="A local appliance repair service"
+            accent={`for ${site.city} homes.`}
+            className="!mb-0"
+          />
+          <div className="prose-copy [&_h3]:mb-2 [&_h3]:mt-8 [&_h3]:font-display [&_h3]:text-[22px] [&_h3]:font-bold [&_h3]:tracking-[-0.02em] [&_h3]:text-ink">
+            <p>
+              {site.brandName} is an appliance repair company based in {site.city}, Texas. We repair the major appliances a household
+              depends on, in your home, on your schedule. If you have been searching for appliance repair near me, this is a team that
+              works in {site.city} and across {site.county} every day, not a call center that sends your request somewhere else.
+            </p>
+            <h3>Kitchen appliance repair</h3>
+            <p>
+              Refrigerator repair is the most urgent call we get, whether it is a fridge not cooling, a freezer frosting up or an ice
+              maker that stopped. We also handle dishwasher repair, oven and stove repair for gas and electric ranges, cooktops and
+              wall ovens, and over-the-range and built-in microwave repair.
+            </p>
+            <h3>Laundry appliance repair</h3>
+            <p>
+              Washer repair and dryer repair cover top-load and front-load washers, electric and gas dryers, and the problems that
+              stop laundry day: a washer that will not drain or spin, a dryer that runs without heat, loud noises, leaks and error
+              codes.
+            </p>
+            <h3>What every service call includes</h3>
+            <p>
+              An appliance technician tests the parts most likely to have failed, explains the problem in plain words and tells you
+              what the repair involves before any work starts. Common parts can often be replaced on the first visit. If a part has
+              to be ordered, or if a repair does not make sense for an older appliance, you will hear that up front.
+            </p>
+          </div>
+        </div>
+      </Section>
+
       {/* Common problems */}
-      <Section tone="white" labelledBy="problems-heading">
+      <Section labelledBy="problems-heading">
         <SectionHeading
           id="problems-heading"
           eyebrow="Common problems"
@@ -232,16 +297,46 @@ export default function HomePage() {
             </li>
           ))}
         </ul>
-        <aside className="mt-8 flex gap-4 rounded-2xl border border-flame/25 bg-flame-soft p-6">
-          <Icon name="shield" className="h-6 w-6 shrink-0 text-flame" />
-          <div className="text-[15px] text-ink">
-            <p className="font-semibold">When to stop using the appliance</p>
-            <p className="mt-1 text-ink-body">
-              Turn it off and call if you see smoke or sparks, smell burning, or find water pooling near wiring or an outlet. If you
-              smell gas near a range or dryer, leave the house first and call your gas utility from outside.
-            </p>
+      </Section>
+
+      {/* Emergency */}
+      <Section tone="white" id="emergency" labelledBy="emergency-heading">
+        <SectionHeading
+          id="emergency-heading"
+          eyebrow="Emergency appliance repair"
+          title="Urgent appliance problem?"
+          accent="We move it up the list."
+          intro={`Some breakdowns cannot wait for next week. During business hours, ${site.hours.value.long}, urgent calls get priority scheduling. Same-day emergency service is available, ${claims.availabilityQualifier}.`}
+        />
+        <div className="grid gap-8 lg:grid-cols-[1.5fr_1fr]">
+          <div>
+            <h3 className="font-display text-xl font-bold tracking-[-0.02em] text-ink">What counts as an appliance emergency</h3>
+            <ul className="mt-5 grid gap-4 sm:grid-cols-2">
+              {emergencies.map((e) => (
+                <li key={e.title} className="card p-6">
+                  <h4 className="font-display text-[18px] font-bold tracking-[-0.02em] text-ink">{e.title}</h4>
+                  <p className="mt-1.5 text-[15px] text-ink-body">{e.text}</p>
+                </li>
+              ))}
+            </ul>
           </div>
-        </aside>
+          <div className="grain relative self-start overflow-hidden rounded-card bg-ink p-7 text-white md:p-8">
+            <div aria-hidden="true" className="pointer-events-none absolute -right-16 -top-16 h-56 w-56 rounded-full bg-flame/30 blur-[80px]" />
+            <h3 className="relative font-display text-xl font-bold tracking-[-0.02em] text-white">What to do right now</h3>
+            <ol className="relative mt-5 space-y-3">
+              {emergencySteps.map((t, i) => (
+                <li key={t} className="flex gap-3 text-[15px] text-white/75">
+                  <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-flame text-[13px] font-semibold text-white">{i + 1}</span>
+                  {t}
+                </li>
+              ))}
+            </ol>
+            <p className="relative mt-6 text-[14px] text-white/55">Ask about emergency visit details when you call.</p>
+            <div className="relative mt-6">
+              <CallButton location="emergency" className="w-full" />
+            </div>
+          </div>
+        </div>
       </Section>
 
       {/* Why choose us */}
@@ -292,15 +387,72 @@ export default function HomePage() {
             <li>Clear access to the appliance on the day of the visit.</li>
           </ul>
         </div>
+        <div className="mx-auto mt-6 max-w-3xl rounded-xl2 border border-sand bg-white p-7 md:p-9">
+          <h3 className="font-display text-xl font-bold tracking-[-0.02em] text-ink">How long does an appliance repair take?</h3>
+          <div className="prose-copy">
+            <p>
+              Many common repairs, such as a fan motor, a drain pump, a door switch, a heating element or an igniter, can be finished
+              on the first visit. A few things change the timeline:
+            </p>
+            <ul>
+              <li>Whether the part is common or specific to your model and has to be ordered.</li>
+              <li>How easy the appliance is to reach, for example a built-in refrigerator or a stacked laundry pair.</li>
+              <li>Whether more than one part has failed, which the diagnosis will show.</li>
+            </ul>
+            <p>The technician tells you which applies before any work starts, so you can plan around it.</p>
+          </div>
+        </div>
         <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
           <CallButton location="how_it_works" />
           <RequestButton location="how_it_works" />
         </div>
       </Section>
 
+      {/* Maintenance */}
+      <Section tone="white" labelledBy="care-heading">
+        <SectionHeading
+          id="care-heading"
+          eyebrow="Appliance care"
+          title="Small habits that"
+          accent="prevent repairs."
+          intro="Most of the breakdowns we see start with something simple: dusty coils, a clogged filter, a lint-packed vent. These habits keep appliances running longer between service calls."
+        />
+        <div className="overflow-hidden rounded-card border border-sand">
+          <table className="w-full text-left text-[15px]">
+            <caption className="sr-only">Appliance maintenance habits and how often to do them</caption>
+            <thead className="bg-canvas text-[13px] uppercase tracking-[0.1em] text-ink-muted">
+              <tr>
+                <th scope="col" className="px-5 py-4 font-semibold">Appliance</th>
+                <th scope="col" className="px-5 py-4 font-semibold">What to do</th>
+                <th scope="col" className="hidden px-5 py-4 font-semibold sm:table-cell">How often</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-sand bg-white">
+              {maintenance.map((m) => (
+                <tr key={m.appliance}>
+                  <th scope="row" className="px-5 py-4 align-top font-semibold text-ink">{m.appliance}</th>
+                  <td className="px-5 py-4 align-top text-ink-body">
+                    {m.habit}
+                    <span className="mt-1 block text-[13px] text-ink-muted sm:hidden">{m.often}</span>
+                  </td>
+                  <td className="hidden px-5 py-4 align-top text-ink-body sm:table-cell">{m.often}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="mt-6 text-ink-body">
+          More detail in our{' '}
+          <Link href={routes.blog} className="font-semibold text-ink underline decoration-flame underline-offset-4">
+            appliance repair tips
+          </Link>
+          , including how often to clean a dryer vent and what to check when a refrigerator stops cooling.
+        </p>
+      </Section>
+
       {/* Brands */}
       {canShow(claims.brandsServiced) ? (
-        <Section tone="white" labelledBy="brands-heading">
+        <Section labelledBy="brands-heading">
           <SectionHeading
             id="brands-heading"
             eyebrow="Brands"
@@ -327,7 +479,7 @@ export default function HomePage() {
       ) : null}
 
       {/* Service area */}
-      <Section labelledBy="area-heading">
+      <Section tone="white" labelledBy="area-heading">
         <SectionHeading
           id="area-heading"
           eyebrow="Service area"

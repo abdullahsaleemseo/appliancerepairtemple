@@ -164,7 +164,15 @@ export const homeFaqs: Faq[] = [
   },
   {
     q: 'What are your hours?',
-    a: 'Monday through Saturday, 8:00 AM to 8:00 PM. Requests sent outside those hours are answered when we reopen.',
+    a: 'Monday through Saturday, 8:00 AM to 8:00 PM. You can send a request online at any time, and we follow up during business hours.',
+  },
+  {
+    q: 'Do you offer emergency appliance repair?',
+    a: 'Yes. Urgent problems, such as a washer leaking onto the floor, a refrigerator or freezer warming up with food inside, or a burning smell, are prioritized during business hours, Monday to Saturday, 8:00 AM to 8:00 PM. Same-day visits are subject to technician availability, location, and current demand. Ask about emergency visit details when you call.',
+  },
+  {
+    q: 'What counts as an appliance emergency?',
+    a: 'Anything that puts your home, your food or your safety at risk: water leaking or pooling, a refrigerator or freezer that is warming up, sparks, smoke or a burning smell, or an oven or range you cannot turn off. If you smell gas, leave the house and call your gas provider or 911 from outside before you call us.',
   },
   {
     q: 'How much will my repair cost?',
@@ -177,6 +185,22 @@ export const homeFaqs: Faq[] = [
   {
     q: 'Are you licensed and insured?',
     a: 'Yes. Appliance Repair Temple is licensed and insured.',
+  },
+  {
+    q: 'How long does an appliance repair take?',
+    a: 'Many common repairs can be finished on the first visit. How long it takes depends on the appliance, the failed part and how easy it is to reach. If the part is model-specific and not on hand, it has to be ordered and the repair is completed on a follow-up visit. The technician will tell you which applies before any work starts.',
+  },
+  {
+    q: 'Do you repair gas appliances?',
+    a: 'Yes. We repair gas ranges, ovens, cooktops and dryers, including propane models. Tell us it is a gas appliance when you book so the technician comes prepared.',
+  },
+  {
+    q: 'Do you serve towns outside Temple?',
+    a: 'Yes. Along with Temple, we cover Belton, Killeen, Harker Heights, Nolanville, Morgan’s Point Resort, Salado, Troy, Little River-Academy, Rogers, Holland and Moody. Give us your address and we will confirm.',
+  },
+  {
+    q: 'Can I keep using an appliance that shows an error code?',
+    a: 'It depends on the code. A drain or door lock code usually just stops the cycle. If the code comes with leaking water, a burning smell or tripped breakers, stop using the appliance and call. Write the code down either way.',
   },
   {
     q: 'Should I repair my appliance or replace it?',

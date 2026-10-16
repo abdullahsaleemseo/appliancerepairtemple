@@ -87,6 +87,7 @@ export const claims = {
   responseTime: v({ value: 'About 60 min', label: 'Typical response', long: 'Typical response: about 60 minutes' }, true),
   paymentOptions: v('Flexible Payment Options Available', true),
   callbackMinutes: v(60, true),
+  emergencyService: v('Emergency appliance repair: urgent calls are prioritized during business hours', true),
   gasAppliances: v('Gas range and gas dryer repair', true),
   brandsServiced: v('Brands listed on the site are serviced by Appliance Repair Temple', true),
 } as const;
