@@ -318,3 +318,15 @@ Call (254) 555-0147 · Request Service · Request washer repair · Speak with ou
 - [Parts of Canada: diagnosing a washer door lock](https://partsofcanada.com/blogs/news/how-to-diagnose-defective-washing-machine-door-lock-switch)
 - [Oatey: when to change a washing machine hose](https://oatey.com/faqs-blog-videos-case-studies/blog/when-should-i-change-my-washing-machine-hose)
 - [Bob Vila: best washing machine hoses](https://www.bobvila.com/articles/best-washing-machine-hoses.md)
+
+## Content expansion (October 16, 2026)
+
+- Words in `<main>`: about 1,878 before, about 2,989 after. "washer repair" 17 to 25 mentions, "washing machine" 1 to 3, "emergency" 0 to 8, "leak" 5 to 11, "error code" 8.
+- Title: "Washer Repair Temple TX | Same-Day & Emergency" (46). Meta description 156 characters, phone number removed.
+- New sections:
+  - "Emergency washer repair in Temple": four urgent signs (water across the floor, drum stuck full, breaker trips or burning smell, violent banging), four steps before the technician arrives, and the business-hours priority note. No emergency amounts are stated.
+  - "Washing machine types and features we repair": agitator and HE impeller top-loaders, front-loaders, stacked laundry centers.
+  - "What your washer’s error code is pointing to": a four-row table for door lock, drain, fill and unbalance codes, without brand-specific code numbers.
+  - "When it is not the washer": slow house drains, lukewarm water and tripped outlets.
+- Intro: two new paragraphs on hookup checks and emergency priority.
+- Five new FAQs: emergency washer repair, leaking on the floor, door locked with wet clothes inside, stopping with water in the drum, and washer repair outside Temple.

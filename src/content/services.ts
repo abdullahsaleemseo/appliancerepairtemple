@@ -260,13 +260,15 @@ export const services: Service[] = [
     navLabel: 'Washer Repair',
     icon: 'washer',
     card: 'Won’t drain, won’t spin, leaking or shaking hard.',
-    metaTitle: 'Washer Repair Temple TX | Top-Load & Front-Load',
+    metaTitle: 'Washer Repair Temple TX | Same-Day & Emergency',
     metaDescription:
-      'Washer won’t drain, spin or stop leaking? Washer repair in Temple, TX for top-load and front-load machines. Same-day service available. Call (254) 555-0147.',
+      'Washer won’t drain, spin or stop leaking? Same-day and emergency washer repair in Temple, TX for top-load and front-load washing machines. All major brands.',
     h1: 'Top-Load & Front-Load Washer Repair in Temple, TX',
     intro: [
       'Washer stuck full of water, refusing to spin or leaking across the laundry room floor? Appliance Repair Temple repairs top-load and front-load washing machines in homes across Temple, TX, including stacked laundry centers and high-efficiency models. Same-day service is available, subject to technician availability, location, and current demand.',
       'Most washer breakdowns trace back to a handful of parts: the lid or door lock, the drain pump, a water inlet valve, the drive belt or coupler, or the suspension. Where the cycle stops tells you a lot about which one failed, so that is where the technician starts. You hear what failed and what the repair involves before any work begins.',
+      'Washing machine repair covers more than the machine itself. A slow house drain, a worn fill hose or an outlet on a tripped circuit can look like a washer problem, so the technician checks the hookups too and tells you if the fault is outside the washer.',
+      'Some washer problems cannot wait until the weekend. A washer leaking across the floor, a drum stuck full of water or a machine that trips the breaker gets priority as emergency washer repair during business hours, so you are not left with wet laundry and a wet floor.',
     ],
     symptomsHeading: 'Washer problems we fix most',
     symptoms: [
@@ -355,6 +357,26 @@ export const services: Service[] = [
         a: 'It depends on the machine and the failed part, so we do not list prices online. Call to discuss your repair needs. Have the brand, model number and a short description of what the washer is doing ready.',
       },
       {
+        q: 'Do you offer emergency washer repair?',
+        a: 'Yes. A washer leaking across the floor, stuck full of water or tripping the breaker gets priority scheduling during business hours, Monday to Saturday, 8:00 AM to 8:00 PM. Same-day emergency service is subject to technician availability, location, and current demand. Ask about emergency visit details when you call.',
+      },
+      {
+        q: 'Why is my washer leaking water on the floor?',
+        a: 'On a front-loader, a torn door boot seal is the most common cause. Other sources are a loose or cracked fill hose, a leaking drain pump, a drain hose that has slipped out of the standpipe, or a worn tub seal. Shut off both water valves, dry the floor and note where the puddle forms before you call.',
+      },
+      {
+        q: 'The door is locked with wet clothes inside. How do I get them out?',
+        a: 'Most front-loaders keep the door locked while there is water in the drum. Unplug the washer for a few minutes, then drain it through the pump filter panel at the bottom front. Many models release the lock once the drum is empty. If it still will not open, do not force it, because a broken latch or strike adds to the repair.',
+      },
+      {
+        q: 'Why does my washer stop with water in the drum?',
+        a: 'The washer cannot drain. A clogged pump filter, a kinked drain hose, a failed drain pump or a clogged house drain are the usual reasons. On some models a faulty lid lock or water level sensor stops the cycle at the same point.',
+      },
+      {
+        q: 'Do you offer washer repair outside Temple?',
+        a: 'Yes. Along with Temple, we repair washers in Belton, Killeen, Harker Heights, Nolanville, Morgan’s Point Resort, Salado, Troy, Little River-Academy, Rogers, Holland and Moody.',
+      },
+      {
         q: 'Where is the model number on my washer?',
         a: 'On top-loaders, look under the lid or on the back of the control panel. On front-loaders, check the door frame or the inside of the door. A photo of the label works.',
       },
@@ -417,6 +439,23 @@ export const services: Service[] = [
         note: 'Never open a front-load door while the drum is full. The water will pour straight onto the floor.',
       },
       {
+        type: 'emergency',
+        heading: 'Emergency washer repair in Temple',
+        intro: 'A washer that is leaking or stuck full of water can damage floors and cabinets within hours. These situations get priority scheduling during business hours. Same-day emergency washer repair is available, subject to technician availability, location, and current demand.',
+        signs: [
+          { title: 'Water spreading across the floor', text: 'A burst or cracked fill hose, a torn door boot or a pump leak that keeps coming back every cycle.' },
+          { title: 'Drum stuck full of water', text: 'The washer stops mid-cycle and will not drain, often with a full load of wet clothes locked inside.' },
+          { title: 'Breaker trips or burning smell', text: 'The washer trips the breaker on start or spin, or there is heat or a smell from the bottom. Stop using it.' },
+          { title: 'Violent banging during spin', text: 'The machine moves or slams even with a balanced load. Worn suspension parts can damage the tub.' },
+        ],
+        steps: [
+          'Turn the washer off and unplug it, or switch off the breaker if water is near the outlet.',
+          'Close both water valves behind the washer.',
+          'Lay towels down and keep the front-load door shut while the drum is full.',
+          'Write down the brand, model number and any error code, then call.',
+        ],
+      },
+      {
         type: 'stopUsing',
         heading: 'Stop the cycle and call if you notice this',
         items: [
@@ -448,6 +487,37 @@ export const services: Service[] = [
         ],
       },
       { type: 'repairOrReplace' },
+      {
+        type: 'prose',
+        heading: 'Washing machine types and features we repair',
+        paragraphs: [
+          'Top-load washers with an agitator are still common in Temple homes and rentals. They are simple to work on, and most of their failures come from the lid lock, the coupler, the belt or the shift actuator. High-efficiency top-loaders swap the agitator for a low-profile impeller and add electronic controls, sensors and error codes.',
+          'Front-load washers use less water and spin faster, which puts more load on the door lock, the door boot seal, the shock absorbers and the tub bearings. They also hold water in the pump filter and the seal, which is behind most odor complaints.',
+          'Stacked laundry centers and stacked front-load pairs need more access work, because the dryer sits on top or the washer has to come out of a closet. Mention it when you book so the technician can plan for it.',
+          'Whatever the type, the washer repair starts the same way: run a cycle, read any stored codes, test the likely parts and explain the fix before any work starts.',
+        ],
+      },
+      {
+        type: 'resultsGrid',
+        eyebrow: 'Washer error codes',
+        heading: 'What your washer’s error code is pointing to',
+        intro: 'The exact codes differ by brand and model, but most washer error codes fall into a few groups. Write the code down before you reset anything.',
+        rows: [
+          { see: 'A door or lid lock code', means: 'The washer cannot confirm the door or lid is locked. A worn lock, a broken strike or a wiring fault.', fix: 'Check that nothing is caught in the door; locks and strikes are routine parts.' },
+          { see: 'A drain code', means: 'Water did not leave the drum in time. A clogged pump filter, a kinked hose or a failed drain pump.', fix: 'Clean the pump filter first; if it still will not drain, the pump gets tested.' },
+          { see: 'A fill or water supply code', means: 'Water did not come in fast enough. Closed valves, clogged inlet screens or a failed inlet valve.', fix: 'Open both valves fully; screens and inlet valves are common repairs.' },
+          { see: 'An unbalance or vibration code', means: 'The load is uneven, the washer is not level, or the suspension is worn.', fix: 'Rebalance and level; if it repeats, shocks or suspension rods are checked.' },
+        ],
+      },
+      {
+        type: 'prose',
+        heading: 'When it is not the washer',
+        paragraphs: [
+          'A washer that overflows the standpipe or gurgles while it drains may be pushing water into a slow house drain. If the laundry sink or a nearby floor drain backs up at the same time, the clog is in the plumbing, and a plumber is the right call.',
+          'Water that is barely warm usually means the hot water valve is not fully open, the hot and cold hoses are swapped, or the water heater is the problem. Modern washers also mix in cold water to save energy, so lukewarm is normal on many cycles.',
+          'A washer that is dead with no lights may be on a tripped breaker or a tripped outlet in the laundry room or garage. Check those first. If the power is good and the washer still does nothing, that is a washer repair.',
+        ],
+      },
       { type: 'brands', heading: 'Washer brands and types we repair', intro: 'We repair the major washer brands found in Temple laundry rooms. Tell us the brand and model number when you book so the technician can check parts ahead of time.', styles: ['Top-load', 'Front-load', 'High-efficiency (HE)', 'Stacked laundry centers'] },
       { type: 'faq' },
       { type: 'payment' },
