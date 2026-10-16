@@ -791,15 +791,18 @@ export const areas: Area[] = [
   {
     slug: 'troy-tx',
     name: 'Troy',
-    metaTitle: 'Appliance Repair Troy TX | 8 Miles North of Temple',
+    metaTitle: 'Appliance Repair Troy TX | Same-Day & Emergency',
     metaDescription:
-      'Appliance repair in Troy, TX for refrigerators, freezers, washers, dryers, dishwashers and ovens, in town and on rural roads in the 76579 area. Call us.',
+      'Same-day and emergency appliance repair in Troy, TX for fridges, freezers, washers, dryers and ovens, in town and on rural roads. Subject to availability.',
     h1: 'Appliance Repair in Troy, TX, Just Up I-35 from Temple',
     intro: [
       'Appliance Repair Temple repairs refrigerators, freezers, washers, dryers, dishwashers, ovens and ranges in homes in and around Troy, TX. Same-day service is available, subject to technician availability, location, and current demand.',
       'Troy sits beside I-35 about 8 miles north of Temple, which makes it one of the shorter drives on our routes. The town has been growing quickly. It counted 1,645 residents in 2010 and 2,375 in 2020, and the 76579 ZIP code reaches well past city limits into the farm and ranch country around it, even crossing into Falls County.',
       'So a Troy call might be a newer home in a fresh subdivision or an older farmhouse a few miles down a county road. The visit works the same either way. The technician tests the appliance, tells you what failed and what the repair involves, and starts only after your OK.',
+      'That covers refrigerator repair and freezer repair, washer and dryer repair, dishwasher repair, oven, stove and range repair, and over-the-range microwave repair in Troy, across the major brands. Urgent problems, such as a fridge warming up or a washer leaking across the floor, get priority as emergency appliance repair during business hours.',
     ],
+    emergencyNote:
+      'A refrigerator warming up with a week of groceries inside, a shop freezer full of beef that stopped running or a dryer that smells hot cannot wait. Urgent calls from Troy homes get priority scheduling during business hours, and Troy is a short drive up I-35 from Temple.',
     travelNote:
       'Troy visits are usually grouped with our north Temple routes along I-35. Call to confirm the earliest open time for your address.',
     localPoints: [
@@ -840,6 +843,24 @@ export const areas: Area[] = [
         ],
       },
       {
+        heading: 'Work clothes',
+        accent: 'and heavy laundry.',
+        paragraphs: [
+          'Mud, sand and grit from work clothes settle in a washer’s drain pump and filter, and a pump that sounds like gravel or hums without draining has usually caught something. Shake off dirt before a load and clean the pump filter on a front-loader every month or so if you wash a lot of work gear.',
+          'Never put clothes or rags soaked in oil, grease, gasoline or stain into the dryer, even after washing. Fire safety groups warn they can ignite from the heat. Let them air dry instead.',
+          'Heavy, wet loads are hard on dryer belts, rollers and heating parts. Split big loads, clean the lint screen every time and have the vent checked once a year, since dust from outdoor work adds to the lint.',
+        ],
+      },
+      {
+        heading: 'Dust, heat and critters',
+        accent: 'in the country.',
+        paragraphs: [
+          'Homes on farm and ranch land deal with more dust, and it collects on refrigerator and freezer condenser coils. Dirty coils make the compressor run longer and hotter. Vacuum the coils or the front grille a few times a year, more often for units in a shop or barn.',
+          'Mice and other pests like the warm space at the bottom of a refrigerator or freezer and the inside of a range drawer. They build nests that block airflow and can chew through wiring. If you see droppings or nesting material near an appliance that is acting up, mention it when you call.',
+          'Rural power lines also see more flickers during storms. If an appliance quit after the power blinked, check the breaker and any GFCI outlet first, then call us if it still will not run.',
+        ],
+      },
+      {
         heading: 'How scheduling works',
         accent: 'for Troy.',
         paragraphs: [
@@ -853,6 +874,14 @@ export const areas: Area[] = [
     zipsVerified: true,
     nearby: ['Moody', 'Holland', 'Little River-Academy', 'Belton', "Morgan's Point Resort"],
     faqs: [
+      {
+        q: 'Do you offer emergency appliance repair in Troy?',
+        a: 'Yes. A refrigerator or freezer warming up with food inside, a washer or dishwasher leaking, or an appliance that smells like burning gets priority scheduling during business hours, Monday to Saturday, 8:00 AM to 8:00 PM. Same-day emergency service is subject to technician availability, location, and current demand. Ask about emergency visit details when you call.',
+      },
+      {
+        q: 'My washer sounds like it has gravel in it. What is wrong?',
+        a: 'Usually something is caught in the drain pump or the pump filter, such as sand, a coin or a small stone from work clothes. Turn the washer off, clean the pump filter if your model has one, and call if it still grinds or will not drain.',
+      },
       {
         q: 'Do you cover homes outside Troy city limits?',
         a: 'Yes, across the 76579 ZIP code, which includes rural roads around town. Give us your address and we will confirm.',

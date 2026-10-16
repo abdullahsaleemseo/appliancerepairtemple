@@ -231,3 +231,15 @@ Call (254) 555-0147 · Request Service · Call to confirm the earliest open time
 - [zip-codes.com: Troy, TX](https://www.zip-codes.com/city/tx-troy.asp)
 - [zip-codes.com: ZIP 76579](https://www.zip-codes.com/zip-code/76579/zip-code-76579.asp)
 - [CityPopulation.de: Troy](https://citypopulation.de/en/usa/places/texas/bell/4873748__troy/)
+
+## Content expansion (October 16, 2026)
+
+- Words in `<main>`: about 1,711 before (with the shared area template), about 2,177 after. "appliance repair" 15 mentions, "emergency" 7.
+- Title: "Appliance Repair Troy TX | Same-Day & Emergency" (47). Meta description 154 characters.
+- Shared area template (added with Belton): emergency section and the all-services table.
+- Troy only:
+  - Intro paragraph covering every service term and emergency priority.
+  - Town-specific emergency paragraph (shop freezers, a short drive up I-35).
+  - "Work clothes and heavy laundry": grit in drain pumps, never dry oil- or gas-soaked clothes, split heavy loads.
+  - "Dust, heat and critters in the country": dusty coils, pests nesting in appliances and chewing wiring, storm flickers.
+  - Two new FAQs: emergency appliance repair in Troy, a washer that sounds like gravel.
