@@ -321,3 +321,15 @@ Call (254) 555-0147 · Request Service · Request dryer repair · Speak with our
 - [Temple Appliance Repair (Voolt): dryer](https://templeappliancerepair.voolt.com/dryer-repair-service)
 - [Sears Home Services: Temple](https://www.searshomeservices.com/locations/appliance-repair/tx-temple/1212-marlandwood)
 - [Mr. Appliance of East Texas: dryer repair](https://www.mrappliance.com/east-texas/residential-services/laundry/dryer-repair/)
+
+## Content expansion (October 16, 2026)
+
+- Words in `<main>`: about 1,932 before, about 2,900 after. "dryer repair" 16 to 24 mentions, "emergency" 0 to 8, "not heating" 0 to 4, "gas dryer" 8 to 11, "electric dryer" 2 to 4.
+- Title: "Dryer Repair Temple TX | Same-Day & Emergency" (46). Meta description 151 characters, phone number removed.
+- New sections:
+  - "Emergency dryer repair in Temple": four urgent signs (burning smell or smoke, too hot to touch, breaker trips, gas smell), four steps before the technician arrives, and the business-hours priority note. Flames mean leave and call 911; a gas smell means leave and call the gas utility first. No emergency amounts are stated.
+  - "Dryer not heating? What the symptom points to": a four-row table for electric and gas heat failures.
+  - "Dryer types and features we repair": electric, gas, sensor dry and steam features, stacked units.
+- Intro: two new paragraphs on how the diagnosis works and emergency priority.
+- Five new FAQs: emergency dryer repair, dryer not heating, burning smell, long drying times, and dryer repair outside Temple.
+- Dryer vent cleaning is not offered as a separate service on the page; it is not confirmed.

@@ -530,13 +530,15 @@ export const services: Service[] = [
     navLabel: 'Dryer Repair',
     icon: 'dryer',
     card: 'No heat, long dry times, squealing or won’t turn.',
-    metaTitle: 'Dryer Repair Temple TX | Electric & Gas Dryers',
+    metaTitle: 'Dryer Repair Temple TX | Same-Day & Emergency',
     metaDescription:
-      'Dryer not heating, taking forever or squealing? Electric and gas dryer repair in Temple, TX. Same-day service, subject to availability. Call (254) 555-0147.',
+      'Dryer not heating, taking forever or squealing? Same-day and emergency dryer repair in Temple, TX for electric and gas dryers, subject to availability.',
     h1: 'Electric & Gas Dryer Repair in Temple, TX',
     intro: [
       'Dryer running but the clothes come out damp? Taking two or three cycles to dry a load? Appliance Repair Temple repairs electric and gas dryers in homes across Temple, TX, including stacked laundry centers. Same-day service is available, subject to technician availability, location, and current demand.',
       'Most dryer calls come down to heat or airflow. On the heat side it is a heating element, a thermal fuse, a thermostat or a gas igniter. On the airflow side it is lint: in the screen housing, the transition hose or the vent run to the outside. A clogged vent also makes the dryer overheat and burn out heating parts, so the technician checks both and explains the repair before starting.',
+      'Whether your dryer is not heating, will not tumble, shuts off early or squeals through every load, the dryer repair starts with a test run, a look at the airflow and a meter on the heat circuit. That way you pay for the part that failed, not a guess.',
+      'A dryer that smells like burning, runs far too hot or trips the breaker should not be used again until it is checked. Those calls get priority as emergency dryer repair during business hours, because heat and lint together are a fire risk.',
     ],
     symptomsHeading: 'Dryer problems and what usually causes them',
     symptoms: [
@@ -621,6 +623,26 @@ export const services: Service[] = [
         a: 'Same-day service is available, subject to technician availability, location, and current demand. Many dryer parts are common enough to replace on the first visit. Some model-specific parts have to be ordered.',
       },
       {
+        q: 'Do you offer emergency dryer repair?',
+        a: 'Yes. A dryer that smells like burning, runs far too hot, trips the breaker or has a gas smell nearby gets priority scheduling during business hours, Monday to Saturday, 8:00 AM to 8:00 PM. Same-day emergency service is subject to technician availability, location, and current demand. Ask about emergency visit details when you call. If you smell gas, leave the house and call your gas utility from outside first.',
+      },
+      {
+        q: 'Why is my dryer not heating?',
+        a: 'On an electric dryer, the usual causes are a burned-out heating element, a blown thermal fuse, a failed thermostat or one half of the double breaker tripped. On a gas dryer, look at the igniter, the flame sensor, the gas valve coils and the gas supply valve. A restricted vent is often what caused the part to fail in the first place.',
+      },
+      {
+        q: 'My dryer smells like burning. What should I do?',
+        a: 'Stop the dryer, unplug it or switch off its breaker, and let it cool. Do not run another load. A burning smell usually means lint has built up near the heating element or burner, or a part is overheating. Call to have it checked before you use it again.',
+      },
+      {
+        q: 'Why does my dryer take so long to dry clothes?',
+        a: 'Most of the time the air cannot get out: a packed lint screen housing, a crushed hose behind the dryer or a vent full of lint. Overloading the drum and wet loads from a washer that is not spinning fully also add time. If the airflow is strong outside and the clothes still come out damp, a heating part is the likely cause.',
+      },
+      {
+        q: 'Do you offer dryer repair outside Temple?',
+        a: 'Yes. Along with Temple, we repair dryers in Belton, Killeen, Harker Heights, Nolanville, Morgan’s Point Resort, Salado, Troy, Little River-Academy, Rogers, Holland and Moody.',
+      },
+      {
         q: 'How much does dryer repair cost?',
         a: 'It depends on the dryer and the part that failed, so we do not list prices online. Call to discuss your repair needs. Have the brand, the model number and whether it is gas or electric ready.',
       },
@@ -674,6 +696,23 @@ export const services: Service[] = [
         ],
         note: 'Do not run a dryer that smells hot or burning while you test. Check the airflow with a load of wet towels only if it has been running normally.',
       },
+      {
+        type: 'emergency',
+        heading: 'Emergency dryer repair in Temple',
+        intro: 'Heat and lint together are a fire risk, so a dryer that smells like burning or runs far too hot should not wait. These situations get priority scheduling during business hours. Same-day emergency dryer repair is available, subject to technician availability, location, and current demand.',
+        signs: [
+          { title: 'Burning smell or smoke', text: 'A hot, singed smell during a cycle, or smoke from the drum, the vent or the cabinet. If you see flames, leave and call 911.' },
+          { title: 'Too hot to touch', text: 'The top or sides of the dryer get very hot, or clothes come out scorched.' },
+          { title: 'Breaker trips', text: 'The breaker trips when the dryer starts or when the heat comes on.' },
+          { title: 'Gas smell near a gas dryer', text: 'Leave the house first and call your gas utility from outside. Call us once it is safe.' },
+        ],
+        steps: [
+          'Stop the dryer and unplug it, or switch off its breaker.',
+          'Take the clothes out once they have cooled and leave the door open.',
+          'Clean the lint screen, but do not run another load to test it.',
+          'Write down the brand, model number and whether it is gas or electric, then call.',
+        ],
+      },
       { type: 'symptoms' },
       { type: 'inlineForm' },
       {
@@ -718,6 +757,27 @@ export const services: Service[] = [
           { title: 'Test the heat circuit', text: 'Element, fuse and thermostats on electric models, or igniter, sensor and valve coils on gas models, are tested with a meter.' },
           { title: 'Explain and approve', text: 'You hear what failed, whether the vent played a part, and what the repair involves. Work starts after your OK.' },
           { title: 'Repair and run', text: 'The part is replaced and the dryer is run to confirm it heats and the drum turns quietly.' },
+        ],
+      },
+      {
+        type: 'resultsGrid',
+        eyebrow: 'Dryer not heating',
+        heading: 'Dryer not heating? What the symptom points to',
+        intro: 'How the heat fails tells the technician where to look first. Note which of these matches your dryer before you call.',
+        rows: [
+          { see: 'Drum turns, air stays cold', means: 'Electric: an open heating element, a blown thermal fuse or half of the breaker tripped. Gas: no ignition at all.', fix: 'Reset the breaker fully; elements, fuses and igniters are standard parts.' },
+          { see: 'Heats for a few minutes, then goes cold', means: 'Gas: the valve coils are failing. Electric: a cycling thermostat or a vent so restricted the safety limit keeps opening.', fix: 'Check the airflow at the vent hood; coils and thermostats are routine repairs.' },
+          { see: 'Igniter glows but the burner never lights', means: 'Failed gas valve coils, or the gas supply valve is partly closed after the dryer was moved.', fix: 'Check the gas valve handle is in line with the pipe; coils are a common repair.' },
+          { see: 'Warm but takes two or three cycles', means: 'Weak airflow from lint, a crushed hose or a long vent run. Sometimes a partly failed element.', fix: 'Clear the airflow first; if drying is still slow, the heat circuit is tested.' },
+        ],
+      },
+      {
+        type: 'prose',
+        heading: 'Dryer types and features we repair',
+        paragraphs: [
+          'Electric dryers run on a 240-volt circuit and heat with an element. Gas dryers use a burner, an igniter and a gas valve, with a standard outlet for the motor and controls. The motor, belt, rollers and drum are much the same in both, so a drum that will not turn is the same dryer repair either way.',
+          'Newer dryers add sensor dry, steam and wrinkle care cycles, and electronic controls that store error codes. Sensor dry problems are often fixed by cleaning the moisture bars inside the drum, and steam features need a working water supply and fill valve.',
+          'Stacked laundry centers and stacked front-load pairs need more access work, because the dryer sits on top or sits in a closet. Mention it when you book so the technician can plan for it.',
         ],
       },
       { type: 'repairOrReplace' },
