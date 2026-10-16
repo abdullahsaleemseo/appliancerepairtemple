@@ -235,7 +235,7 @@ Call (254) 555-0147 · Request Service · Call to confirm the earliest open time
 
 ## Content expansion (October 16, 2026)
 
-- Words in `<main>`: about 1,350 before, about 2,210 after. "appliance repair" 15 mentions, "emergency" 0 to 7.
+- Words in `<main>`: about 2,210 after the expansion. "appliance repair" 15 mentions, "emergency" 7.
 - Title: "Appliance Repair Nolanville TX | Same-Day & Emergency" (53). Meta description 159 characters.
 - Shared area template (added with Belton): emergency section and the all-services table.
 - Nolanville only:
