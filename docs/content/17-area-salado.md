@@ -234,7 +234,7 @@ Call (254) 555-0147 · Request Service · Call early and we will give you the ea
 ## Content expansion (October 16, 2026)
 
 - Words in `<main>`: about 1,304 before, about 2,100 after. "appliance repair" 9 to 15 mentions, "emergency" 0 to 7, "propane" 11.
-- Title: "Appliance Repair Salado TX | Same-Day & Emergency" (49). Meta description 151 characters.
+- Title: "Appliance Repair Salado TX | Same-Day & Emergency" (49). Meta description 152 characters.
 - Shared area template (added with Belton): emergency section and the all-services table.
 - Salado only:
   - Intro paragraph covering every service term, propane and emergency priority.
