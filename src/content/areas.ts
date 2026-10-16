@@ -920,15 +920,18 @@ export const areas: Area[] = [
   {
     slug: 'little-river-academy-tx',
     name: 'Little River-Academy',
-    metaTitle: 'Appliance Repair Little River-Academy TX | Near Temple',
+    metaTitle: 'Appliance Repair Little River-Academy TX | Emergency',
     metaDescription:
-      'Appliance repair in Little River-Academy, TX for refrigerators, freezers, washers, dryers, dishwashers and ovens, in town and out on Highway 95. Call us.',
+      'Same-day and emergency appliance repair in Little River-Academy, TX for fridges, washers, dryers, dishwashers and ovens. Subject to availability.',
     h1: 'Home Appliance Repair in Little River-Academy, TX',
     intro: [
       'Appliance Repair Temple repairs refrigerators, freezers, washers, dryers, dishwashers, ovens and ranges in homes across Little River-Academy, TX. Same-day service is available, subject to technician availability, location, and current demand.',
       'Little River-Academy is a small city of about 2,000 people roughly 10 miles south of Temple. It grew out of two older communities, Little River and Academy, and the Academy side centers on Main Street where it meets State Highway 95. Around town, the 76554 ZIP code takes in country homes and acreage along the farm roads.',
       'Wherever you are in it, the visit works the same way. The technician tests the appliance, tells you what failed and what the repair involves, and starts only after your OK. If a repair does not make sense for your appliance, you will hear that too.',
+      'That covers refrigerator repair and freezer repair, washer and dryer repair, dishwasher repair, oven, stove and range repair, and over-the-range microwave repair in Little River-Academy, across the major brands. Urgent problems, such as a fridge warming up or a washer leaking across the floor, get priority as emergency appliance repair during business hours.',
     ],
+    emergencyNote:
+      'A refrigerator warming up with groceries inside, a washer leaking across the floor or a dryer that smells hot cannot wait. Urgent calls from Little River-Academy homes get priority scheduling during business hours, and visits here are grouped with our routes south of Temple along Highway 95.',
     travelNote:
       'Little River-Academy visits are usually grouped with our south and east Temple routes along Highway 95. Call to confirm the earliest open time for your address.',
     localPoints: [
@@ -967,6 +970,24 @@ export const areas: Area[] = [
         ],
       },
       {
+        heading: 'Keeping an older appliance',
+        accent: 'going strong.',
+        paragraphs: [
+          'Older washers, dryers, ranges and refrigerators are often simpler machines, with fewer electronics to fail. What wears out are the parts that move, heat or seal: belts, rollers and idler pulleys on dryers, lid switches and couplers on top-load washers, igniters and bake elements on ranges, and door gaskets and start relays on refrigerators.',
+          'Those parts give warning. A dryer squeal, a washer that agitates but will not spin, an oven that takes longer to preheat, or a fridge that clicks and runs warm are all signs that one part is wearing out. Fixing it at that stage is usually a smaller repair than waiting for a second part to fail.',
+          'The question on an older appliance is whether the part is still available and whether the rest of the machine is sound. The technician checks both and tells you plainly before any work starts.',
+        ],
+      },
+      {
+        heading: 'Range and oven care',
+        accent: 'for busy kitchens.',
+        paragraphs: [
+          'Boil-overs are the most common reason a gas burner clicks and will not light. Let the cooktop cool, wipe the igniter and the burner head, and make sure the burner cap sits flat. On a glass top, wipe sugary spills while the surface is still warm but not hot, since sugar can pit the glass as it cools.',
+          'Self-clean cycles run the oven far hotter than baking, and that heat is hard on door locks, sensors and fuses. On an older oven, wipe spills by hand and skip the self-clean, especially right before a holiday meal.',
+          'If the oven bakes unevenly or runs hot or cold, put an oven thermometer on the middle rack and compare it with the setting before you call. It tells the technician whether to start with calibration, the sensor or a heating part.',
+        ],
+      },
+      {
         heading: 'How scheduling works',
         accent: 'for Little River-Academy.',
         paragraphs: [
@@ -980,6 +1001,14 @@ export const areas: Area[] = [
     zipsVerified: true,
     nearby: ['Holland', 'Rogers', 'Troy', 'Belton', 'Salado'],
     faqs: [
+      {
+        q: 'Do you offer emergency appliance repair in Little River-Academy?',
+        a: 'Yes. A refrigerator or freezer warming up with food inside, a washer or dishwasher leaking, or an appliance that smells like burning gets priority scheduling during business hours, Monday to Saturday, 8:00 AM to 8:00 PM. Same-day emergency service is subject to technician availability, location, and current demand. Ask about emergency visit details when you call.',
+      },
+      {
+        q: 'Is my older washer or dryer worth fixing?',
+        a: 'Often, yes. Belts, rollers, lid switches, couplers and heating parts are reasonable repairs on an older machine if the part is still available and the rest of it is sound. The technician will tell you plainly.',
+      },
       {
         q: 'Do you cover homes outside Little River-Academy city limits?',
         a: 'Yes, across the 76554 ZIP code, including country homes along the farm roads. Give us your address and we will confirm.',

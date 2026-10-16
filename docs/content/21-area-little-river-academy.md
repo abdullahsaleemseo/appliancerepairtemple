@@ -226,3 +226,15 @@ Call (254) 555-0147 · Request Service · Call to confirm the earliest open time
 - [zip-codes.com: Little River Academy, TX](https://www.zip-codes.com/city/tx-little-river-academy.asp)
 - [zip-codes.com: ZIP 76554](https://www.zip-codes.com/zip-code/76554/zip-code-76554.asp)
 - [U.S. Fire Administration: clothes dryer fire safety flyer](https://www.usfa.fema.gov/downloads/pdf/publications/clothes_dryer_fire_safety_flyer.pdf)
+
+## Content expansion (October 16, 2026)
+
+- Words in `<main>`: about 1,672 before (with the shared area template), about 2,144 after. "appliance repair" 15 mentions, "emergency" 7.
+- Title: "Appliance Repair Little River-Academy TX | Emergency" (52; "Same-Day &" would push it past 60). Meta description 145 characters.
+- Shared area template (added with Belton): emergency section and the all-services table.
+- Little River-Academy only:
+  - Intro paragraph covering every service term and emergency priority.
+  - Town-specific emergency paragraph (routes south of Temple along Highway 95).
+  - "Keeping an older appliance going strong": the parts that wear, their warning signs, part availability.
+  - "Range and oven care for busy kitchens": boil-overs and clicking burners, glass-top spills, self-clean on older ovens, the thermometer test.
+  - Two new FAQs: emergency appliance repair in Little River-Academy, older washers and dryers.
