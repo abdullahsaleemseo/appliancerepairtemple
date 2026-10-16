@@ -32,7 +32,7 @@ export function ThankYouContent() {
 
   const minutes = claims.callbackMinutes;
   const promise = canShow(minutes)
-    ? `We’ll call you within ${minutes.value} minutes during business hours.`
+    ? `We usually call back within ${minutes.value} minutes during business hours (Monday to Saturday, 8:00 AM to 8:00 PM).`
     : 'We’ll call you back as soon as we can during business hours.';
 
   const steps = [

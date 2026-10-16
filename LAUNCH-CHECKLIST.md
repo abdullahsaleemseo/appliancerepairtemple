@@ -16,7 +16,7 @@ Verified by the owner on Oct 15, 2026: Licensed & Insured, Same-Day Service, 4+ 
 4.9 Average Rating, Typical Response about 60 minutes, Flexible Payment Options Available, Mon-Sat 8 AM to 8 PM.
 - [ ] Platform and review count behind the 4.9 rating (needed before showing a source or adding review markup)
 - [x] Brand list (`claims.brandsServiced`): all 12 brands, owner confirmed
-- [ ] Callback time shown on the thank-you page
+- [x] Callback time shown on the thank-you page: usually within 60 minutes during business hours (owner confirmed Oct 16, 2026)
 - [x] Gas appliance service (owner confirmed October 15, 2026, including propane)
 - [x] Pricing policy: no prices, fees, ranges, coupons or financing terms anywhere on the site
 
@@ -29,7 +29,7 @@ Verified by the owner on Oct 15, 2026: Licensed & Insured, Same-Day Service, 4+ 
 - [ ] Real reviews in `src/content/reviews.ts` only with a source (platform link or screenshot) and date
 - [ ] Google Business Profile, Facebook and Yelp links in `reviewPlatforms` (adds "Review us on..." buttons)
 - [x] Team, technician and service van photos on the About page
-- [ ] Owner story on the About page (hidden draft block)
+- [x] About page story: owner confirmed the current "How we think" text is accurate; draft owner-story block removed (Oct 16, 2026)
 - [ ] "How we work" promises on the About page match how the business actually works
 - [x] Privacy Policy and Terms updated: Appliance Repair Temple performs repairs itself (Oct 15, 2026)
 - [ ] Privacy Policy and Terms reviewed by the owner (and ideally a lawyer)

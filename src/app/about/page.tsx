@@ -8,7 +8,7 @@ import { FaqList } from '@/components/FaqList';
 import { HowItWorks } from '@/components/HowItWorks';
 import { Icon } from '@/components/Icon';
 import { Section, SectionHeading } from '@/components/Section';
-import { Claim, DraftBlock, VerifyTag } from '@/components/Verify';
+import { Claim, VerifyTag } from '@/components/Verify';
 import { services, serviceHref } from '@/content/services';
 import { brands, brandHref, otherBrands } from '@/content/brands';
 import { areas, areaHref } from '@/content/areas';
@@ -118,13 +118,6 @@ export default function AboutPage() {
                 We stay close to {site.city} on purpose. Working {site.county} and the towns just outside it keeps drive times
                 shorter and scheduling realistic, which matters when your fridge is warm or the washer is full of water.
               </p>
-            </div>
-            <div className="mt-8">
-              <DraftBlock show={false} label="OWNER STORY: REPLACE BEFORE LAUNCH">
-                <p className="rounded-card bg-white p-6 text-ink-body">
-                  Add the real business story here: who runs it, how they got into appliance repair, and why {site.city}.
-                </p>
-              </DraftBlock>
             </div>
           </div>
         </div>
