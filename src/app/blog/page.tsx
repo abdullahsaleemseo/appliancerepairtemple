@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { routes, site } from '@/config/site';
+import { PhoneLink } from '@/components/PhoneLink';
 import { posts, postHref } from '@/content/blog';
 import { serviceByKey } from '@/content/services';
 import { FinalCta } from '@/components/FinalCta';
@@ -41,9 +42,7 @@ export default function BlogIndex() {
                 appliance repair service in {site.city}
               </Link>{' '}
               or{' '}
-              <Link href={routes.request} className="font-semibold text-ink underline decoration-flame/50 underline-offset-4 hover:decoration-flame">
-                request service
-              </Link>
+              <PhoneLink location="blog_index_tips" label="call" className="font-semibold text-ink underline decoration-flame/50 underline-offset-4 hover:decoration-flame" />
               .
             </li>
           </ul>

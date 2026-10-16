@@ -25,7 +25,7 @@ Verified by the owner on Oct 15, 2026: Licensed & Insured, Same-Day Service, 4+ 
 - [x] Confirm the brand lists on service pages and the 12 brand pages
 - [x] Confirm each nearby city is really served, and the travel and scheduling notes in `areas.ts` (owner confirmed October 15, 2026)
 - [x] Area ZIP lists checked against zip-codes.com for all 11 towns (optional: spot-check with the USPS lookup)
-- [x] Review card sections replaced with "Share your experience" prompts and a feedback form on `/reviews/` (Oct 15, 2026)
+- [x] Review card sections replaced with "Share your experience" prompts; feedback is shared by phone (Oct 16, 2026)
 - [ ] Real reviews in `src/content/reviews.ts` only with a source (platform link or screenshot) and date
 - [ ] Google Business Profile, Facebook and Yelp links in `reviewPlatforms` (adds "Review us on..." buttons)
 - [x] Team, technician and service van photos on the About page
@@ -38,10 +38,11 @@ Verified by the owner on Oct 15, 2026: Licensed & Insured, Same-Day Service, 4+ 
 ## Technical
 - [x] Live on appliancerepairtemple.com via Vercel, production mode, noindex (Oct 16, 2026). Switches now in `src/config/launch.ts`
 - [ ] Launch day only: set `allowIndexing: true` in `src/config/launch.ts` and push, then check robots.txt allows crawling on the real domain
-- [ ] `LEAD_WEBHOOK_URL` set, and a test lead and a test feedback (`"type": "feedback"`) received at the destination
-- [ ] Turnstile keys set, and a test submission passes
-- [ ] GA4 ID set in `src/config/launch.ts` (`gaId`); check `click_to_call`, `form_start`, `generate_lead` and `feedback_submit` in GA4 DebugView
-- [ ] Mark `generate_lead` as a key event in GA4 and import it into Google Ads if running ads
+- [x] Call-only site: no contact, quote or feedback forms; footer disclaimer on every page; no prices; no "free quote/estimate/inspection" wording, enforced by `npm run check:copy` (Oct 16, 2026)
+- [ ] Real phone number in `src/config/site.ts`, then a test call from a phone on several pages
+- [ ] GA4 ID set in `src/config/launch.ts` (`gaId`); check `click_to_call` (with `data-call-location`) in GA4 DebugView
+- [ ] Mark `click_to_call` as a key event in GA4 and import it into Google Ads if running ads
+- [ ] Remove `LEAD_WEBHOOK_URL` and any Turnstile keys from Vercel; the site no longer uses them
 - [ ] Search Console verified; sitemap submitted
 - [ ] Rich Results Test on the home page, one service page and the FAQ page
 - [ ] PageSpeed Insights on mobile for home and one service page (target LCP < 2.5s, CLS < 0.1)

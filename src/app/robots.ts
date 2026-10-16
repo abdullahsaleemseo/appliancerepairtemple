@@ -1,5 +1,5 @@
 import type { MetadataRoute } from 'next';
-import { indexingAllowed, routes, site } from '@/config/site';
+import { indexingAllowed, site } from '@/config/site';
 
 export const dynamic = 'force-static';
 
@@ -9,7 +9,7 @@ export default function robots(): MetadataRoute.Robots {
     return { rules: [{ userAgent: '*', disallow: '/' }] };
   }
   return {
-    rules: [{ userAgent: '*', allow: '/', disallow: ['/api/', routes.thankYou] }],
+    rules: [{ userAgent: '*', allow: '/', disallow: ['/api/'] }],
     sitemap: `${site.url}/sitemap.xml`,
     host: site.url,
   };

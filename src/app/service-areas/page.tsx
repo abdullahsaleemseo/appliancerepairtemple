@@ -25,7 +25,7 @@ export default function AreasPage() {
             Repairs happen in your home; the technician comes to you.
           </p>
           <p>
-            When you call or send a request, we check the schedule for your ZIP code and give you the earliest open visit window.
+            When you call, we check the schedule for your ZIP code and give you the earliest open visit window.
             Towns closer to {site.city} usually have more openings. Towns at the edge of the area are scheduled on set days.
           </p>
         </div>

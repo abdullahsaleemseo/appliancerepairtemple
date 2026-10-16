@@ -159,13 +159,14 @@ export function Header() {
               </li>
             ))}
         </ul>
-        <Link
-          href={routes.request}
-          className="mt-6 flex min-h-[52px] w-full items-center justify-center rounded-full bg-white font-semibold text-ink"
-          data-cta="mobile_menu"
+        <a
+          href={tel}
+          className="mt-6 flex min-h-[52px] w-full items-center justify-center gap-2.5 rounded-full bg-flame font-semibold text-white shadow-cta"
+          data-call-location="mobile_menu"
         >
-          Request Service
-        </Link>
+          <Icon name="phone" className="h-5 w-5" strokeWidth={2} />
+          Call Now {phoneDisplay}
+        </a>
       </nav>
     </header>
   );

@@ -1,5 +1,6 @@
 #!/usr/bin/env node
-// Enforces the content standard: no em or en dashes, no banned AI-tone phrases, no lorem ipsum.
+// Enforces the content standard: no em or en dashes, no banned AI-tone phrases, no lorem ipsum,
+// no "free quote/estimate/inspection" wording and no lead or contact forms.
 import { readFileSync, readdirSync, statSync } from 'node:fs';
 import { join, relative } from 'node:path';
 
@@ -22,6 +23,9 @@ const rules = [
   { re: /from .{1,30} to .{1,30}, we/i, why: 'formulaic phrase' },
   { re: /\bthe best\b|#1\b|\bnumber one\b/i, why: 'unproven superlative' },
   { re: /welcome to our website/i, why: 'generic copy' },
+  { re: /\b(free|no[- ]cost|complimentary)\s+(in[- ]home\s+)?(quotes?|estimates?|inspections?|diagnos\w*|service calls?|consultations?)\b/i, why: 'free quote/estimate/inspection wording' },
+  { re: /\b(quotes?|estimates?|inspections?)\s+(are|is)\s+(always\s+)?free\b/i, why: 'free quote/estimate/inspection wording' },
+  { re: /<form\b|\b(QuickLeadForm|MultiStepForm|FeedbackForm)\b/, why: 'lead or contact form (the site is call-only)' },
   { re: /\b(TODO|FIXME|XXX)\b/, why: 'placeholder comment' },
   { re: /[\u{1F300}-\u{1FAFF}\u{2600}-\u{2604}\u{2606}-\u{26FF}\u{2700}-\u{27BF}]/u, why: 'emoji' },
 ];

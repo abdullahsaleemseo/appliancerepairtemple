@@ -40,7 +40,7 @@ export type Symptom = { title: string; cause: string; fixable: string };
 export type ServiceBlock =
   | { type: 'quickAnswer'; heading: string; intro?: string; steps: string[]; note?: string }
   | { type: 'symptoms' }
-  | { type: 'inlineForm' }
+  | { type: 'callCard' }
   | { type: 'partsTable'; heading: string; intro?: string; columns?: [string, string, string]; note?: string; rows: { part: string; job: string; signs: string }[] }
   | { type: 'stopUsing'; heading: string; intro?: string; items: string[]; note?: string }
   | { type: 'diyVsPro'; heading: string; intro?: string; diy: string[]; pro: string[] }

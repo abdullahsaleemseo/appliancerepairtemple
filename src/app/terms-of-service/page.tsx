@@ -11,16 +11,15 @@ export const metadata = pageMetadata({
 
 export default function TermsPage() {
   return (
-    <LegalPage title="Terms of Service" path={routes.terms} updated="October 15, 2026">
+    <LegalPage title="Terms of Service" path={routes.terms} updated="October 16, 2026">
       <p>
         By using {site.domain} you agree to these terms. If you do not agree, please do not use the site.
       </p>
 
       <h2>What this site does</h2>
       <p>
-        This site provides information about appliance repair and lets you request a callback. Submitting a form requests a call
-        back. It does not book an appointment or create a contract for repair. Appointments, prices and repair terms are agreed
-        directly with us before any work begins.
+        This site provides information about appliance repair and how to reach us by phone. It does not book an appointment or
+        create a contract for repair. Appointments, prices and repair terms are agreed directly with us before any work begins.
       </p>
 
       <h2>Scheduling and availability</h2>
@@ -50,7 +49,7 @@ export default function TermsPage() {
       </p>
 
       <h2>Acceptable use</h2>
-      <p>Do not submit false requests, attempt to disrupt the site or use automated tools to send form submissions.</p>
+      <p>Do not attempt to disrupt the site or use automated tools to scrape or overload it.</p>
 
       <h2>Limitation of liability</h2>
       <p>

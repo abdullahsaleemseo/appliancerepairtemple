@@ -11,7 +11,7 @@ export const metadata = pageMetadata({
 
 export default function AccessibilityPage() {
   return (
-    <LegalPage title="Accessibility" path={routes.accessibility} updated="October 15, 2026">
+    <LegalPage title="Accessibility" path={routes.accessibility} updated="October 16, 2026">
       <p>
         We want everyone to be able to use this website and request a repair, including people who use screen readers, keyboard
         navigation, magnification or voice control.
@@ -19,7 +19,7 @@ export default function AccessibilityPage() {
       <h2>What we do</h2>
       <ul>
         <li>We aim to meet the Web Content Accessibility Guidelines (WCAG) 2.1 at level AA.</li>
-        <li>Every form field has a label, and errors are announced and described in text.</li>
+        <li>Every phone number is a tap-to-call link with a clear label.</li>
         <li>All features work with a keyboard, with a visible focus outline.</li>
         <li>Text and buttons are built to meet AA color contrast.</li>
         <li>A skip link lets you jump straight to the main content.</li>

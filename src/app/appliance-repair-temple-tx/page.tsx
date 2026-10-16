@@ -71,7 +71,7 @@ const localNeeds: { title: string; text: string; key: ApplianceKey; link: string
 ];
 
 const expectSteps = [
-  { title: 'Book by phone or online', text: 'Call or send a request with the appliance, brand, model number and the problem. Photos of the label and any error code help.' },
+  { title: 'Book by phone', text: 'Call with the appliance, brand, model number and the problem. Any error code on the display helps.' },
   { title: 'We confirm a visit window', text: `We call to confirm the details and set a time. We are open ${site.hours.value.long}.` },
   { title: 'Diagnosis in your home', text: 'The technician tests the likely parts, explains what failed and what the repair involves, and waits for your OK.' },
   { title: 'Repair and a test run', text: 'Once you approve, the repair is made and the appliance is run to confirm it works. Model-specific parts may need to be ordered.' },
@@ -432,9 +432,7 @@ export default function CityPage() {
               <Link href={routes.faq} className="link-arrow">
                 More appliance repair FAQs <Icon name="arrow" className="h-4 w-4" />
               </Link>
-              <Link href={routes.request} className="link-arrow">
-                Request appliance repair online <Icon name="arrow" className="h-4 w-4" />
-              </Link>
+              <PhoneLink location="city_faq" label="Call" className="link-arrow" />
             </div>
           </div>
           <FaqList faqs={cityFaqs} />
@@ -444,7 +442,7 @@ export default function CityPage() {
       <FinalCta
         title="Need an appliance technician"
         accent="in Temple?"
-        text="Speak with our team about your appliance issue, or send a quick request and we will call you back to set a time."
+        text="Speak with our team about your appliance issue and set a visit window on the same call. Urgent calls get priority during business hours."
         formId="city_final"
       />
     </>

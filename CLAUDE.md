@@ -10,6 +10,6 @@
 
 - The owner approved pushing straight to `main` (Oct 16, 2026). Vercel deploys `main` to appliancerepairtemple.com in 1 to 2 minutes. Run `npm run check` and `npm run build` before every push.
 - Launch switches live in `src/config/launch.ts`: `siteMode`, `allowIndexing`, `siteUrl`, `gaId`. Change them there and push; no Vercel dashboard needed. A Vercel environment variable with the same purpose overrides the file, so do not add `NEXT_PUBLIC_ALLOW_INDEXING` on Vercel.
-- Secrets stay on Vercel only: `LEAD_WEBHOOK_URL`, `TURNSTILE_SECRET_KEY`.
+- The site is call-only: no contact, quote or feedback forms, no prices, no "free quote/estimate/inspection" wording, and a footer disclaimer on every page. Every CTA is a tracked call (`CallButton`, `CallCard`, `PhoneLink`). `npm run check:copy` blocks forms and free-quote wording.
 - Indexing stays off until the owner says to switch it on.
 - Commits must be authored as the owner (Abdullah Saleem, seo.abdullahsaleem@gmail.com; set in the repo git config). Vercel Hobby blocks deploys of commits by any other author on this private repo.

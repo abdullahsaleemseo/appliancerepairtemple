@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { routes, site } from '@/config/site';
+import { PhoneLink } from '@/components/PhoneLink';
 import { posts, postHref } from '@/content/blog';
 import { serviceByKey, serviceHref } from '@/content/services';
 import { PageHero } from '@/components/PageHero';
@@ -124,10 +125,8 @@ export default async function PostPage({ params }: Params) {
                     .
                   </>
                 )}{' '}
-                <Link href={routes.request} className="font-semibold text-white underline decoration-flame underline-offset-4">
-                  Request service online
-                </Link>{' '}
-                or call.
+                <PhoneLink location={`blog_${p.slug}_aside`} label="Call" className="font-semibold text-white underline decoration-flame underline-offset-4" /> to
+                book a visit.
               </p>
             </aside>
 
@@ -163,7 +162,7 @@ export default async function PostPage({ params }: Params) {
           </div>
         </div>
       </article>
-      <FinalCta formId={`blog_${p.slug}_final`} appliance={svc?.key} />
+      <FinalCta formId={`blog_${p.slug}_final`} appliance={svc?.name.toLowerCase()} />
     </>
   );
 }

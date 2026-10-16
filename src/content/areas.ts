@@ -52,7 +52,7 @@ export const areas: Area[] = [
         heading: 'How scheduling works',
         accent: 'for Belton.',
         paragraphs: [
-          'Call or send a request with your address, the appliance, the brand and what it is doing. We confirm the details by phone and set a visit window. We are open Monday to Saturday, 8:00 AM to 8:00 PM.',
+          'Call with your address, the appliance, the brand and what it is doing. We confirm the details and set a visit window on the same call. We are open Monday to Saturday, 8:00 AM to 8:00 PM.',
           'Our typical response is about 60 minutes during business hours. That is a typical figure, subject to technician availability, location, and current demand, not a guaranteed arrival time. Calling earlier in the day gives you a better shot at a same-day visit in Belton.',
         ],
       },
@@ -161,7 +161,7 @@ export const areas: Area[] = [
         heading: 'How scheduling works',
         accent: 'for Killeen.',
         paragraphs: [
-          'Call or send a request with your address, the appliance, the brand and what it is doing. We confirm the details by phone and set a visit window. We are open Monday to Saturday, 8:00 AM to 8:00 PM.',
+          'Call with your address, the appliance, the brand and what it is doing. We confirm the details and set a visit window on the same call. We are open Monday to Saturday, 8:00 AM to 8:00 PM.',
           'Our typical response is about 60 minutes during business hours. That is a typical figure, subject to technician availability, location, and current demand, not a guaranteed arrival time. Because Killeen sits at the west end of our routes, an early call gives you a better shot at a same-day visit.',
           'Before the visit, find the model number, usually on a label inside the door, under the lid or on the frame, and note any error code. Clear a path to the appliance and, if you can, empty the washer or dishwasher.',
         ],
@@ -260,7 +260,7 @@ export const areas: Area[] = [
         heading: 'How scheduling works',
         accent: 'for Harker Heights.',
         paragraphs: [
-          'Call or send a request with your address, the appliance, the brand and what it is doing. We confirm the details by phone and set a visit window. We are open Monday to Saturday, 8:00 AM to 8:00 PM.',
+          'Call with your address, the appliance, the brand and what it is doing. We confirm the details and set a visit window on the same call. We are open Monday to Saturday, 8:00 AM to 8:00 PM.',
           'Our typical response is about 60 minutes during business hours. That is a typical figure, subject to technician availability, location, and current demand, not a guaranteed arrival time. Calling earlier in the day gives you a better shot at a same-day visit.',
           'Before the visit, find the model number on the appliance, usually on a label inside the door, under the lid or on the frame. Clear a path to the appliance and, if you can, empty the washer or dishwasher.',
         ],
@@ -359,7 +359,7 @@ export const areas: Area[] = [
         heading: 'How scheduling works',
         accent: 'for Salado.',
         paragraphs: [
-          'Call or send a request with your address, the appliance, the brand and what it is doing. We confirm the details by phone and set a visit window. We are open Monday to Saturday, 8:00 AM to 8:00 PM.',
+          'Call with your address, the appliance, the brand and what it is doing. We confirm the details and set a visit window on the same call. We are open Monday to Saturday, 8:00 AM to 8:00 PM.',
           'Our typical response is about 60 minutes during business hours. That is a typical figure, subject to technician availability, location, and current demand, not a guaranteed arrival time. Salado is one of our longer drives, so calling earlier in the day gives you a better shot at a same-day visit.',
           'Before the visit, find the model number, usually on a label inside the door, under the lid or on the frame, and write down any error code.',
         ],
@@ -458,7 +458,7 @@ export const areas: Area[] = [
         heading: 'How scheduling works',
         accent: 'for Nolanville.',
         paragraphs: [
-          'Call or send a request with your address, the appliance, the brand and what it is doing. We confirm the details by phone and set a visit window. We are open Monday to Saturday, 8:00 AM to 8:00 PM.',
+          'Call with your address, the appliance, the brand and what it is doing. We confirm the details and set a visit window on the same call. We are open Monday to Saturday, 8:00 AM to 8:00 PM.',
           'Our typical response is about 60 minutes during business hours. That is a typical figure, subject to technician availability, location, and current demand, not a guaranteed arrival time. Calling earlier in the day gives you a better shot at a same-day visit.',
           'Before the visit, find the model number, usually on a label inside the door, under the lid or on the frame, and write down any error code. Clear a path to the appliance and, if you can, empty the washer or dishwasher.',
         ],
@@ -557,7 +557,7 @@ export const areas: Area[] = [
         heading: 'How scheduling works',
         accent: "for Morgan's Point.",
         paragraphs: [
-          'Call or send a request with your address, the appliance, the brand and what it is doing. We confirm the details by phone and set a visit window. We are open Monday to Saturday, 8:00 AM to 8:00 PM.',
+          'Call with your address, the appliance, the brand and what it is doing. We confirm the details and set a visit window on the same call. We are open Monday to Saturday, 8:00 AM to 8:00 PM.',
           'Our typical response is about 60 minutes during business hours. That is a typical figure, subject to technician availability, location, and current demand, not a guaranteed arrival time. Calling earlier in the day gives you a better shot at a same-day visit.',
           'Before the visit, find the model number, usually on a label inside the door, under the lid or on the frame, and write down any error code. If the appliance is in a garage or shop, make sure the technician can reach it and the outlet behind it.',
         ],
@@ -657,7 +657,7 @@ export const areas: Area[] = [
         heading: 'How scheduling works',
         accent: 'for Troy.',
         paragraphs: [
-          'Call or send a request with your address, the appliance, the brand and what it is doing. We confirm the details by phone and set a visit window. We are open Monday to Saturday, 8:00 AM to 8:00 PM.',
+          'Call with your address, the appliance, the brand and what it is doing. We confirm the details and set a visit window on the same call. We are open Monday to Saturday, 8:00 AM to 8:00 PM.',
           'Our typical response is about 60 minutes during business hours. That is a typical figure, subject to technician availability, location, and current demand, not a guaranteed arrival time. Calling earlier in the day gives you a better shot at a same-day visit.',
           'Before the visit, find the model number, usually on a label inside the door, under the lid or on the frame, and write down any error code. If the appliance is in a shop or barn, make sure the technician can reach it and the outlet behind it.',
         ],
@@ -755,7 +755,7 @@ export const areas: Area[] = [
         heading: 'How scheduling works',
         accent: 'for Little River-Academy.',
         paragraphs: [
-          'Call or send a request with your address, the appliance, the brand and what it is doing. We confirm the details by phone and set a visit window. We are open Monday to Saturday, 8:00 AM to 8:00 PM.',
+          'Call with your address, the appliance, the brand and what it is doing. We confirm the details and set a visit window on the same call. We are open Monday to Saturday, 8:00 AM to 8:00 PM.',
           'Our typical response is about 60 minutes during business hours. That is a typical figure, subject to technician availability, location, and current demand, not a guaranteed arrival time. Calling earlier in the day gives you a better shot at a same-day visit.',
           'Most calls here are refrigerators and freezers that stop cooling, washers that will not drain or spin, dryers that run without heat, dishwashers that leave dishes dirty and ovens that will not heat. On every dryer call we check the vent as well.',
         ],
@@ -853,7 +853,7 @@ export const areas: Area[] = [
         heading: 'How scheduling works',
         accent: 'for Rogers.',
         paragraphs: [
-          'Call or send a request with your address, the appliance, the brand and what it is doing. We confirm the details by phone and set a visit window. We are open Monday to Saturday, 8:00 AM to 8:00 PM.',
+          'Call with your address, the appliance, the brand and what it is doing. We confirm the details and set a visit window on the same call. We are open Monday to Saturday, 8:00 AM to 8:00 PM.',
           'Our typical response is about 60 minutes during business hours. That is a typical figure, subject to technician availability, location, and current demand, not a guaranteed arrival time. Rogers is at the edge of our routes, so calling earlier in the day gives you a better shot at a same-day visit.',
           'Most calls here are refrigerators and freezers that stop cooling, washers that will not drain or spin, dryers that run without heat, dishwashers that leave dishes dirty and ovens that will not heat.',
         ],
@@ -952,7 +952,7 @@ export const areas: Area[] = [
         heading: 'How scheduling works',
         accent: 'for Holland.',
         paragraphs: [
-          'Call or send a request with your address, the appliance, the brand and what it is doing. We confirm the details by phone and set a visit window. We are open Monday to Saturday, 8:00 AM to 8:00 PM.',
+          'Call with your address, the appliance, the brand and what it is doing. We confirm the details and set a visit window on the same call. We are open Monday to Saturday, 8:00 AM to 8:00 PM.',
           'Our typical response is about 60 minutes during business hours. That is a typical figure, subject to technician availability, location, and current demand, not a guaranteed arrival time. Holland is one of our longer drives, so calling earlier in the day gives you a better shot at a same-day visit.',
           'Before the visit, find the model number, usually on a label inside the door, under the lid or on the frame, and write down any error code.',
         ],
@@ -1050,7 +1050,7 @@ export const areas: Area[] = [
         heading: 'How scheduling works',
         accent: 'for Moody.',
         paragraphs: [
-          'Call or send a request with your address, the appliance, the brand and what it is doing. We confirm the details by phone and set a visit window. We are open Monday to Saturday, 8:00 AM to 8:00 PM.',
+          'Call with your address, the appliance, the brand and what it is doing. We confirm the details and set a visit window on the same call. We are open Monday to Saturday, 8:00 AM to 8:00 PM.',
           'Our typical response is about 60 minutes during business hours. That is a typical figure, subject to technician availability, location, and current demand, not a guaranteed arrival time. Moody is one of our longer drives, so calling earlier in the day gives you a better shot at a same-day visit.',
           'Most calls here are refrigerators and freezers that stop cooling, washers that will not drain or spin, dryers that run without heat, dishwashers that leave dishes dirty and ovens that will not heat. On every dryer call we check the vent too.',
         ],

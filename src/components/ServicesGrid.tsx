@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import { routes } from '@/config/site';
 import { serviceByKey, serviceHref } from '@/content/services';
 import type { ApplianceKey } from '@/content/types';
 import { Icon } from './Icon';
@@ -69,9 +68,6 @@ export function ServicesGrid({ keys, showOther = true, bento = true }: { keys: A
             </div>
             <div className="mt-6 flex flex-col gap-2 text-[15px] font-semibold">
               <PhoneLink location="services_grid" className="text-flame hover:underline" label="Call" />
-              <Link href={routes.request} className="text-ink hover:underline">
-                Request service online
-              </Link>
             </div>
           </div>
         </li>

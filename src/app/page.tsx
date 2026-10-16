@@ -6,7 +6,7 @@ import { primaryServiceKeys, serviceHref, services } from '@/content/services';
 import type { ApplianceKey } from '@/content/types';
 import { AreaBlock } from '@/components/AreaList';
 import { BrandChips, BrandMarquee } from '@/components/BrandChips';
-import { CallButton, RequestButton } from '@/components/Buttons';
+import { CallButton, CtaRow } from '@/components/Buttons';
 import { FaqList } from '@/components/FaqList';
 import { FinalCta } from '@/components/FinalCta';
 import { HowItWorks } from '@/components/HowItWorks';
@@ -74,8 +74,8 @@ const problems: { title: string; text: string; key: ApplianceKey }[] = [
 ];
 
 const steps = [
-  { title: 'Call or send a request', text: 'Tell us the appliance, the brand and what it is doing. A photo of the model number label helps.' },
-  { title: 'We confirm the visit', text: `We call to confirm the details and set a visit window. We are open ${site.hours.value.long}.` },
+  { title: 'Call us', text: 'Tell us the appliance, the brand and what it is doing. Having the model number label handy helps.' },
+  { title: 'We set the visit', text: `On the same call, we confirm the details and set a visit window. We are open ${site.hours.value.long}.` },
   { title: 'Diagnosis at your home', text: 'The technician checks the appliance, tests the likely parts, and explains what failed and what the repair involves.' },
   { title: 'Repair and test', text: 'With your OK, the technician makes the repair and runs the appliance to confirm it works.' },
 ];
@@ -94,7 +94,7 @@ const emergencySteps = [
   'For a leak, close the water supply valve behind the appliance and put towels down.',
   'For sparks, smoke or a burning smell, switch off the breaker for that appliance.',
   'Keep refrigerator and freezer doors closed to hold the cold in.',
-  'Then call us, or send a request, and say it is urgent.',
+  'Then call us and say it is urgent.',
 ];
 
 const maintenance = [
@@ -150,7 +150,7 @@ export default function HomePage() {
       show: canShow(site.hours),
       icon: 'calendar' as const,
       title: 'Open six days a week',
-      text: `${site.hours.value.long}. Send a request any time and we reply when we are open.`,
+      text: `${site.hours.value.long}. Call and talk to a real person; urgent calls get priority.`,
     },
   ].filter((w) => w.show);
 
@@ -185,9 +185,8 @@ export default function HomePage() {
               repair before any work starts. Same-day service and emergency appliance repair are available,{' '}
               {claims.availabilityQualifier}.
             </p>
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <CallButton location="hero" className="text-[17px]" />
-              <RequestButton location="hero" variant="onDarkSecondary" />
+            <div className="mt-8">
+              <CtaRow location="hero" dark />
             </div>
             <div className="mt-8 border-t border-white/10 pt-6">
               <TrustBadges dark />
@@ -403,8 +402,7 @@ export default function HomePage() {
           </div>
         </div>
         <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
-          <CallButton location="how_it_works" />
-          <RequestButton location="how_it_works" />
+          <CallButton location="how_it_works" label="Call Now" className="text-[17px]" />
         </div>
       </Section>
 
@@ -513,7 +511,7 @@ export default function HomePage() {
       <FinalCta
         title="Appliance broken?"
         accent="Let’s get it running."
-        text={`Call to discuss your repair needs, or send a request and we will call you back. We are open ${site.hours.value.long}.`}
+        text={`Call to discuss your repair needs and set a visit window on the same call. We are open ${site.hours.value.long}.`}
         formId="home_final"
       />
     </>

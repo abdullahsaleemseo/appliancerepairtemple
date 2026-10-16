@@ -19,7 +19,7 @@ import { ShareExperience } from '@/components/ShareExperience';
 import { ServicePageView } from '@/components/SiteClient';
 import { TrustBadges } from '@/components/TrustBadges';
 import { VerifyTag } from '@/components/Verify';
-import { QuickLeadForm } from '@/components/forms/QuickLeadForm';
+import { CallCard } from '@/components/CallCard';
 import { serviceSchema } from '@/lib/schema';
 import { pageMetadata } from '@/lib/seo';
 
@@ -40,7 +40,7 @@ export async function generateMetadata({ params }: Params) {
 }
 
 const defaultProcess = [
-  { title: 'Book', text: 'Call or send a request. We confirm a visit window.' },
+  { title: 'Call', text: 'Call us. We set a visit window on the same call.' },
   { title: 'Diagnose', text: 'The technician tests the parts and finds the fault.' },
   { title: 'Approve', text: 'You hear what failed and what the fix involves. Work starts only after you say yes.' },
   { title: 'Repair and test', text: 'The part is replaced and the appliance is run to confirm the fix.' },
@@ -49,7 +49,7 @@ const defaultProcess = [
 /** Layout for services that have not been given their own block order yet. */
 const defaultBlocks: ServiceBlock[] = [
   { type: 'symptoms' },
-  { type: 'inlineForm' },
+  { type: 'callCard' },
   { type: 'diagnostic' },
   { type: 'payment' },
   { type: 'process', heading: 'How the repair works', steps: defaultProcess },
@@ -130,10 +130,10 @@ function Block({ block, s, index }: { block: ServiceBlock; s: Service; index: nu
         </section>
       );
 
-    case 'inlineForm':
+    case 'callCard':
       return (
         <div className="lg:hidden">
-          <QuickLeadForm formId={`service_${s.key}_inline`} title={`Request ${s.name.toLowerCase()} repair`} defaultAppliance={s.key} />
+          <CallCard location={`service_${s.key}_inline`} title={`Book ${s.name.toLowerCase()} repair`} appliance={s.name.toLowerCase()} />
         </div>
       );
 
@@ -556,9 +556,9 @@ export default async function ServicePage({ params }: Params) {
           </nav>
         </div>
 
-        <aside className="hidden lg:block" aria-label="Request service">
+        <aside className="hidden lg:block" aria-label="Call to book">
           <div className="sticky top-28">
-            <QuickLeadForm formId={`service_${s.key}_sidebar`} title={`Request ${s.name.toLowerCase()} repair`} defaultAppliance={s.key} />
+            <CallCard location={`service_${s.key}_sidebar`} title={`Book ${s.name.toLowerCase()} repair`} appliance={s.name.toLowerCase()} />
           </div>
         </aside>
       </div>
@@ -566,8 +566,8 @@ export default async function ServicePage({ params }: Params) {
       <FinalCta
         title={`${s.name} acting up?`}
         accent="Let’s take a look."
-        text="Speak with our team about your appliance issue, or send a quick request and we will call you back."
-        appliance={s.key}
+        text="Speak with our team about your appliance issue. We set a visit window on the same call, and urgent calls get priority during business hours."
+        appliance={s.name.toLowerCase()}
         formId={`service_${s.key}_final`}
       />
     </>

@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { routes, site } from '@/config/site';
+import { phoneDisplay, routes, site, tel } from '@/config/site';
 import { serviceHref, services } from '@/content/services';
 import { CallButton } from '@/components/Buttons';
 import { Icon } from '@/components/Icon';
@@ -32,10 +32,10 @@ export default function NotFound() {
             </li>
           ))}
           <li>
-            <Link href={routes.request} className="flex items-center justify-between rounded-card bg-white px-5 py-4 font-semibold text-ink">
-              Request service online
-              <Icon name="arrow" className="h-4 w-4" />
-            </Link>
+            <a href={tel} data-call-location="not_found_list" className="flex items-center justify-between rounded-card bg-flame px-5 py-4 font-semibold text-white">
+              Call Now {phoneDisplay}
+              <Icon name="phone" className="h-4 w-4" />
+            </a>
           </li>
         </ul>
         <p className="mt-10 text-white/60">

@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
-import { routes } from '@/config/site';
+import { phoneDisplay, tel } from '@/config/site';
 import type { ApplianceKey, IconName } from '@/content/types';
 import { track } from '@/lib/analytics';
 import { Icon } from './Icon';
@@ -10,11 +10,12 @@ import { Icon } from './Icon';
 export type PickerItem = { key: ApplianceKey; name: string; icon: IconName; href: string; symptoms: string[] };
 
 /**
- * Hero widget: pick the appliance, tap the symptom, land on the request form with both filled in.
+ * Hero widget: pick the appliance, tap the symptom, then call about it.
  * Lets a visitor confirm in two taps that this is the right place for their exact problem.
  */
 export function ProblemPicker({ items }: { items: PickerItem[] }) {
   const [active, setActive] = useState(0);
+  const [symptom, setSymptom] = useState<string | null>(null);
   const item = items[active];
   return (
     <div className="relative rounded-xl2 border border-white/10 bg-white/[0.06] p-2 shadow-glow backdrop-blur-xl">
@@ -38,7 +39,10 @@ export function ProblemPicker({ items }: { items: PickerItem[] }) {
                 id={`pp-tab-${it.key}`}
                 aria-selected={selected}
                 aria-controls="pp-panel"
-                onClick={() => setActive(i)}
+                onClick={() => {
+                  setActive(i);
+                  setSymptom(null);
+                }}
                 className={`group flex aspect-square flex-col items-center justify-center gap-1 rounded-2xl border text-[11.5px] font-semibold transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-flame ${
                   selected
                     ? 'border-ink bg-ink text-white shadow-lift'
@@ -55,27 +59,45 @@ export function ProblemPicker({ items }: { items: PickerItem[] }) {
         <div id="pp-panel" role="tabpanel" aria-labelledby={`pp-tab-${item.key}`} className="mt-6">
           <p className="text-[13px] font-semibold uppercase tracking-[0.14em] text-ink-muted">Common {item.name.toLowerCase()} problems</p>
           <ul className="mt-3 space-y-2">
-            {item.symptoms.map((s) => (
-              <li key={s}>
-                <Link
-                  href={`${routes.request}?appliance=${item.key}&issue=${encodeURIComponent(s)}`}
-                  onClick={() => track('cta_click', { location: 'problem_picker', appliance: item.key, symptom: s })}
-                  className="group flex items-center justify-between gap-3 rounded-2xl border border-sand px-4 py-3.5 text-[15px] font-medium text-ink transition hover:border-flame hover:bg-flame-soft focus-visible:outline focus-visible:outline-2 focus-visible:outline-flame"
-                >
-                  {s}
-                  <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-canvas text-ink transition group-hover:bg-flame group-hover:text-white">
-                    <Icon name="arrow" className="h-3.5 w-3.5" strokeWidth={2.4} />
-                  </span>
-                </Link>
-              </li>
-            ))}
+            {item.symptoms.map((sym) => {
+              const picked = sym === symptom;
+              return (
+                <li key={sym}>
+                  <button
+                    type="button"
+                    aria-pressed={picked}
+                    onClick={() => {
+                      setSymptom(sym);
+                      track('cta_click', { location: 'problem_picker', appliance: item.key, symptom: sym });
+                    }}
+                    className={`group flex w-full items-center justify-between gap-3 rounded-2xl border px-4 py-3.5 text-left text-[15px] font-medium text-ink transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-flame ${
+                      picked ? 'border-flame bg-flame-soft' : 'border-sand hover:border-flame hover:bg-flame-soft'
+                    }`}
+                  >
+                    {sym}
+                    <span
+                      className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full transition ${
+                        picked ? 'bg-flame text-white' : 'bg-canvas text-ink group-hover:bg-flame group-hover:text-white'
+                      }`}
+                    >
+                      <Icon name={picked ? 'check' : 'arrow'} className="h-3.5 w-3.5" strokeWidth={2.4} />
+                    </span>
+                  </button>
+                </li>
+              );
+            })}
           </ul>
-          <div className="mt-4 flex items-center justify-between text-[14px]">
+          <a
+            href={tel}
+            data-call-location={symptom ? 'problem_picker_symptom' : 'problem_picker'}
+            className="mt-4 flex min-h-[52px] w-full items-center justify-center gap-2.5 rounded-full bg-flame px-5 text-[16px] font-semibold text-white shadow-cta transition hover:bg-flame-hover"
+          >
+            <Icon name="phone" className="h-5 w-5" strokeWidth={2.2} />
+            {symptom ? 'Call Now about this' : 'Call Now'} <span className="font-normal text-white/85">{phoneDisplay}</span>
+          </a>
+          <div className="mt-4 text-[14px]">
             <Link href={item.href} className="link-arrow text-[14px]">
               {item.name} repair details
-            </Link>
-            <Link href={routes.request} className="font-semibold text-ink-muted hover:text-ink">
-              Something else
             </Link>
           </div>
         </div>

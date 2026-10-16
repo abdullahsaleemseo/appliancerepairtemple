@@ -29,7 +29,7 @@ const values = [
 ];
 
 const visitSteps = [
-  { title: 'You call or send a request', text: 'Tell us the appliance, the brand and what it is doing. The model number helps if you have it.' },
+  { title: 'You call us', text: 'Tell us the appliance, the brand and what it is doing. The model number helps if you have it.' },
   { title: 'We confirm a visit window', text: 'We check the schedule for your address and confirm a time that works for you.' },
   { title: 'Diagnosis in your home', text: 'The technician tests the appliance, finds the failed part and explains what the repair involves.' },
   { title: 'Repair after your OK', text: 'Work starts only once you agree. Then the appliance is tested before the technician leaves.' },

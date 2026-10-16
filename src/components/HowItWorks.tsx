@@ -1,11 +1,11 @@
 const defaultSteps = [
   {
     title: 'Tell us what’s wrong',
-    text: 'Call, or send the request form. Give us the appliance, the brand and what it is doing. It takes about a minute.',
+    text: 'Call and give us the appliance, the brand and what it is doing. It takes a few minutes.',
   },
   {
     title: 'We confirm a time',
-    text: 'We call you back, check the schedule and confirm a visit window that works for you.',
+    text: 'On the same call, we check the schedule and set a visit window that works for you.',
   },
   {
     title: 'Diagnosis before repair',

@@ -83,7 +83,7 @@ export function Footer() {
               <li><Link href={routes.faq} className={link}>FAQs</Link></li>
               <li><Link href={routes.blog} className={link}>Repair tips</Link></li>
               <li><Link href={routes.contact} className={link}>Contact</Link></li>
-              <li><Link href={routes.request} className={link}>Request Service</Link></li>
+              <li><Link href={routes.request} className={link}>Book by Phone</Link></li>
             </ul>
           </div>
         </div>
@@ -113,10 +113,14 @@ export function Footer() {
       </div>
 
       <div className="relative border-t border-white/[0.08]">
+        <p className="mx-auto max-w-site px-4 pt-6 text-[12.5px] leading-relaxed text-white/45 lg:px-6">
+          <span className="font-semibold text-white/60">Disclaimer:</span> {site.brandName} is an independent appliance repair service and is not
+          affiliated with, endorsed by or sponsored by any appliance manufacturer. Brand names are trademarks of their respective owners and
+          are used only to identify the appliances we service. Same-day and emergency service is subject to technician availability,
+          location, and current demand.
+        </p>
         <div className="mx-auto flex max-w-site flex-col gap-3 px-4 py-6 text-[13px] sm:flex-row sm:items-center sm:justify-between lg:px-6">
-          <p>
-            © {year} {site.brandName}. Independent repair service, not affiliated with any appliance manufacturer.
-          </p>
+          <p>© {year} {site.brandName}. All rights reserved.</p>
           <ul className="flex flex-wrap gap-x-5 gap-y-2">
             <li><Link href={routes.privacy} className="hover:text-white">Privacy</Link></li>
             <li><Link href={routes.terms} className="hover:text-white">Terms</Link></li>

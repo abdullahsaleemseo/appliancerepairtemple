@@ -1,6 +1,7 @@
 import { canShow, claims, routes, site } from '@/config/site';
 import { reviewPlatforms } from '@/content/reviews';
 import type { Faq } from '@/content/types';
+import { CallButton } from '@/components/Buttons';
 import { FaqList } from '@/components/FaqList';
 import { FinalCta } from '@/components/FinalCta';
 import { Icon } from '@/components/Icon';
@@ -9,27 +10,26 @@ import { PhoneLink } from '@/components/PhoneLink';
 import { Stars } from '@/components/ReviewsBlock';
 import { Section, SectionHeading } from '@/components/Section';
 import { StatsStrip } from '@/components/StatsStrip';
-import { FeedbackForm } from '@/components/forms/FeedbackForm';
 import { pageMetadata } from '@/lib/seo';
 
 export const metadata = pageMetadata({
   title: `Customer Reviews & Feedback | ${site.brandName}`,
-  description: `Customer ratings and feedback for ${site.brandName}, in-home appliance repair in ${site.city}, ${site.stateAbbr}. Worked with us? Share your experience with us here.`,
+  description: `Customer ratings and feedback for ${site.brandName}, in-home appliance repair in ${site.city}, ${site.stateAbbr}. Worked with us? Call and share your experience with us.`,
   path: routes.reviews,
 });
 
 const reviewFaqs: Faq[] = [
   {
     q: 'Where can I leave a review?',
-    a: 'Use the form on this page. It takes about a minute and goes straight to our team. You can also leave a review on the platform where you found us.',
+    a: 'Call us and tell us how it went. It goes straight to our team. You can also leave a review on the platform where you found us.',
   },
   {
     q: 'Will my feedback be published?',
-    a: 'Only if you tick the box that allows it. If you do, we may share your comments on this website with your first name and town. We never publish your phone number or email.',
+    a: 'Only with your permission. If you agree, we may share your comments on this website with your first name and town. We never publish your phone number or address.',
   },
   {
     q: 'What if something did not go right with my repair?',
-    a: 'Tell us in the form or call us. We read every message and would rather hear about a problem than have you live with it.',
+    a: 'Call us. We would rather hear about a problem than have you live with it.',
   },
 ];
 
@@ -41,7 +41,7 @@ export default function ReviewsPage() {
       show: canShow(claims.sameDayShort),
       icon: 'clock' as const,
       title: 'Same-day service',
-      text: `Available, ${claims.availabilityQualifier}. Typical response is about 60 minutes during business hours.`,
+      text: `Available, ${claims.availabilityQualifier}. Urgent calls get priority during business hours.`,
     },
     { show: true, icon: 'chat' as const, title: 'Plain explanations', text: 'You hear what failed and what the repair involves before any work starts.' },
     { show: canShow(claims.paymentOptions), icon: 'tag' as const, title: 'Flexible payment', text: 'Flexible payment options are available. Ask when you call.' },
@@ -110,11 +110,8 @@ export default function ReviewsPage() {
                 to improve.
               </p>
               <p>
-                Your feedback goes straight to the {site.brandName} team. If you allow it, we may share your comments on this site
-                with your first name and town. Your contact details are never published.
-              </p>
-              <p>
-                Prefer to talk? Call <PhoneLink location="reviews_page" />.
+                Call and tell us how it went. Your feedback goes straight to the {site.brandName} team. With your permission, we may
+                share your comments on this site with your first name and town. Your contact details are never published.
               </p>
             </div>
             {reviewPlatforms.some((p) => p.leaveReviewUrl) ? (
@@ -135,7 +132,32 @@ export default function ReviewsPage() {
               </ul>
             ) : null}
           </div>
-          <FeedbackForm />
+          <div className="grain relative self-start overflow-hidden rounded-card bg-ink p-8 text-white md:p-10">
+            <div aria-hidden="true" className="pointer-events-none absolute -right-16 -top-16 h-56 w-56 rounded-full bg-flame/30 blur-[80px]" />
+            <p className="relative text-[12.5px] font-semibold uppercase tracking-[0.16em] text-flame-glow">Share it by phone</p>
+            <h3 className="relative mt-3 font-display text-2xl font-bold tracking-[-0.025em] text-white">Tell us how your repair went</h3>
+            <PhoneLink
+              location="reviews_share_number"
+              withIcon
+              className="relative mt-5 inline-flex items-center gap-3 font-display text-[clamp(1.75rem,3.4vw,2.4rem)] font-extrabold tracking-[-0.03em] text-white hover:text-flame-glow"
+            />
+            {canShow(site.hours) ? <p className="relative mt-2 text-[14px] text-white/55">{site.hours.value.long}</p> : null}
+            <ul className="relative mt-6 space-y-3 text-[15px] text-white/80">
+              <li className="flex items-start gap-3">
+                <Icon name="check" className="mt-1 h-4 w-4 shrink-0 text-flame-glow" strokeWidth={3} />
+                What went well, and what we could do better
+              </li>
+              <li className="flex items-start gap-3">
+                <Icon name="check" className="mt-1 h-4 w-4 shrink-0 text-flame-glow" strokeWidth={3} />
+                Which appliance we repaired and your town
+              </li>
+              <li className="flex items-start gap-3">
+                <Icon name="check" className="mt-1 h-4 w-4 shrink-0 text-flame-glow" strokeWidth={3} />
+                Whether we may share your comments with your first name
+              </li>
+            </ul>
+            <CallButton location="reviews_share" label="Call" className="relative mt-7 w-full text-[17px]" />
+          </div>
         </div>
       </Section>
 

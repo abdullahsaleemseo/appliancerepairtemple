@@ -9,7 +9,7 @@ export type Attribution = {
   firstSeen: string;
 } & Partial<Record<(typeof UTM_KEYS)[number], string>>;
 
-/** Stores first-touch attribution for the session so it can travel with a form submission. */
+/** Stores first-touch attribution for the session so it can travel with tracked call events. */
 export function captureAttribution() {
   try {
     const params = new URLSearchParams(window.location.search);

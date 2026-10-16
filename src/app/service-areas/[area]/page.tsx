@@ -172,7 +172,7 @@ export default async function AreaPage({ params }: Params) {
                 );
               })}
               <Link href={routes.request} className="link-arrow">
-                Request service
+                Book by phone
               </Link>
             </div>
           </div>

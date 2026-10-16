@@ -9,11 +9,11 @@ export const faqGroups: { id: string; title: string; accent: string; faqs: Faq[]
     faqs: [
       {
         q: 'How do I schedule a repair?',
-        a: 'Call during business hours, or send the request form with your appliance, what it is doing and your ZIP code. We call back to confirm the details and set a visit window.',
+        a: 'Call during business hours with your appliance, what it is doing and your ZIP code. We confirm the details and set a visit window on the same call.',
       },
       {
-        q: 'Does sending the form book an appointment?',
-        a: 'No. The form requests a callback. The appointment is set once we confirm a time with you by phone.',
+        q: 'Can I book a repair online?',
+        a: 'Booking is by phone. A short call lets us ask the right questions about the appliance and set a visit window in the same conversation.',
       },
       {
         q: 'Do you offer same-day service?',
@@ -164,7 +164,7 @@ export const homeFaqs: Faq[] = [
   },
   {
     q: 'What are your hours?',
-    a: 'Monday through Saturday, 8:00 AM to 8:00 PM. You can send a request online at any time, and we follow up during business hours.',
+    a: 'Monday through Saturday, 8:00 AM to 8:00 PM. Please call during those hours. Urgent calls get priority scheduling.',
   },
   {
     q: 'Do you offer emergency appliance repair?',

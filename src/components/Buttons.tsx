@@ -1,5 +1,4 @@
-import Link from 'next/link';
-import { phoneDisplay, routes, tel } from '@/config/site';
+import { canShow, phoneDisplay, site, tel } from '@/config/site';
 import { Icon } from './Icon';
 
 const base =
@@ -16,7 +15,7 @@ export function CallButton({
   className = '',
   location,
   variant = 'primary',
-  label = 'Call',
+  label = 'Call Now',
 }: {
   className?: string;
   location: string;
@@ -35,30 +34,14 @@ export function CallButton({
   );
 }
 
-export function RequestButton({
-  className = '',
-  variant = 'secondary',
-  label = 'Request Service',
-  location,
-}: {
-  className?: string;
-  variant?: keyof typeof btn;
-  label?: string;
-  location: string;
-}) {
-  return (
-    <Link href={routes.request} data-cta={location} className={`${btn[variant]} group ${className}`}>
-      {label}
-      <Icon name="arrow" className="h-4 w-4 transition group-hover:translate-x-1" strokeWidth={2.2} />
-    </Link>
-  );
-}
-
 export function CtaRow({ location, dark = false }: { location: string; dark?: boolean }) {
   return (
-    <div className="flex flex-col gap-3 sm:flex-row">
-      <CallButton location={location} />
-      <RequestButton location={location} variant={dark ? 'onDarkSecondary' : 'secondary'} />
+    <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-5">
+      <CallButton location={location} label="Call Now" className="text-[17px]" />
+      <p className={`text-[14px] leading-snug ${dark ? 'text-white/60' : 'text-ink-muted'}`}>
+        <span className={`block font-semibold ${dark ? 'text-white' : 'text-ink'}`}>Talk to a real person</span>
+        {canShow(site.hours) ? site.hours.value.display : 'Urgent calls get priority'}
+      </p>
     </div>
   );
 }

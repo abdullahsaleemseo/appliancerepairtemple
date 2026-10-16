@@ -171,7 +171,7 @@ export const services: Service[] = [
         ],
       },
       { type: 'symptoms' },
-      { type: 'inlineForm' },
+      { type: 'callCard' },
       {
         type: 'partsTable',
         heading: 'The parts behind most refrigerator repairs',
@@ -398,7 +398,7 @@ export const services: Service[] = [
         ],
       },
       { type: 'symptoms' },
-      { type: 'inlineForm' },
+      { type: 'callCard' },
       {
         type: 'compare',
         heading: 'Top-load and front-load washers fail differently',
@@ -714,7 +714,7 @@ export const services: Service[] = [
         ],
       },
       { type: 'symptoms' },
-      { type: 'inlineForm' },
+      { type: 'callCard' },
       {
         type: 'partsTable',
         heading: 'The dryer parts we test most',
@@ -925,7 +925,7 @@ export const services: Service[] = [
         ],
       },
       { type: 'symptoms' },
-      { type: 'inlineForm' },
+      { type: 'callCard' },
       {
         type: 'quickAnswer',
         heading: 'Water in the bottom? Check these first',
@@ -1200,7 +1200,7 @@ export const services: Service[] = [
         ],
       },
       { type: 'symptoms' },
-      { type: 'inlineForm' },
+      { type: 'callCard' },
       {
         type: 'quickAnswer',
         heading: 'Is your oven running hot or cold? A simple test',
@@ -1495,7 +1495,7 @@ export const services: Service[] = [
         ],
       },
       { type: 'symptoms' },
-      { type: 'inlineForm' },
+      { type: 'callCard' },
       {
         type: 'prose',
         heading: 'Garage freezers in a Texas summer',
@@ -1738,7 +1738,7 @@ export const services: Service[] = [
         ],
       },
       { type: 'symptoms' },
-      { type: 'inlineForm' },
+      { type: 'callCard' },
       {
         type: 'quickAnswer',
         heading: 'Safe checks before you call',

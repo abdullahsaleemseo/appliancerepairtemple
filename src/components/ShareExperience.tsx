@@ -6,7 +6,7 @@ import { Stars } from './ReviewsBlock';
 const shareHref = `${routes.reviews}#share`;
 
 /**
- * "Leave us a review" prompt used where review cards would sit. Links to the Reviews page form.
+ * "Leave us a review" prompt used where review cards would sit. Links to the share section of the Reviews page.
  * band: full-width section. card: compact block inside a content column.
  */
 export function ShareExperience({ variant = 'band', place }: { variant?: 'band' | 'card'; place?: string }) {
@@ -44,8 +44,8 @@ export function ShareExperience({ variant = 'band', place }: { variant?: 'band' 
               Worked with us? <span className="accent text-flame-glow">Share your experience.</span>
             </h2>
             <p className="mt-4 max-w-xl text-lg text-white/70">
-              Tell us how your repair{where} went, what we got right and what we could do better. It takes about a minute and helps
-              other {site.city}-area homeowners choose with confidence.
+              Tell us how your repair{where} went, what we got right and what we could do better. It helps other {site.city}-area
+              homeowners choose with confidence.
             </p>
             <Link
               href={shareHref}
