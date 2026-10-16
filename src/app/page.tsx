@@ -138,7 +138,7 @@ export default function HomePage() {
         <div aria-hidden="true" className="pointer-events-none absolute -left-40 -top-40 h-[620px] w-[620px] rounded-full bg-flame/30 blur-[150px]" />
         <div aria-hidden="true" className="pointer-events-none absolute -bottom-40 right-[-10%] h-[520px] w-[520px] rounded-full bg-frost/15 blur-[140px]" />
 
-        <div className="relative mx-auto grid max-w-site items-center gap-14 px-4 pb-20 pt-12 md:pt-16 lg:grid-cols-[1.12fr_1fr] lg:gap-16 lg:px-6 lg:pb-28 lg:pt-20">
+        <div className="relative mx-auto grid max-w-site items-center gap-14 px-4 pb-20 pt-12 md:pt-16 lg:grid-cols-[1.12fr_1fr] lg:gap-16 lg:px-6 lg:pb-20 lg:pt-14">
           <div>
             <p className="inline-flex items-center gap-2.5 rounded-full border border-white/10 bg-white/[0.05] py-1.5 pl-2 pr-4 text-[13px] font-medium text-white/80 backdrop-blur">
               <span className="flex h-6 shrink-0 items-center gap-1.5 whitespace-nowrap rounded-full bg-mint-bright/15 px-2 text-[12px] font-semibold text-mint-bright">
@@ -147,22 +147,22 @@ export default function HomePage() {
               </span>
               In-home repair across {site.city} &amp; {site.county}
             </p>
-            <h1 className="h-display mt-7 text-[2.9rem] text-white sm:text-[4.2rem] lg:text-[5rem]">
+            <h1 className="h-display mt-6 text-[2.9rem] text-white sm:text-[4.2rem] lg:text-[4.4rem] xl:text-[4.75rem]">
               Same-Day Appliance Repair in {site.city}, {site.stateAbbr}
             </h1>
-            <p aria-hidden="true" className="accent mt-1 font-serif text-[2.7rem] leading-none text-flame-glow sm:text-[3.9rem] lg:text-[4.6rem]">
+            <p aria-hidden="true" className="accent mt-1 font-serif text-[2.7rem] leading-none text-flame-glow sm:text-[3.9rem] lg:whitespace-nowrap lg:text-[3.6rem] xl:text-[4rem]">
               without the guesswork.
             </p>
-            <p className="mt-7 max-w-xl text-lg leading-relaxed text-white/70 md:text-xl">
+            <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/70 md:text-xl lg:text-lg xl:text-xl">
               Appliance Repair Temple fixes refrigerators, washers, dryers, dishwashers, ovens and freezers in homes across Temple, TX
               and nearby Bell County towns. A technician comes to you, tests the parts most likely to have failed, and explains the
               repair before any work starts. Same-day service is available, {claims.availabilityQualifier}.
             </p>
-            <div className="mt-9 flex flex-col gap-3 sm:flex-row">
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <CallButton location="hero" className="text-[17px]" />
               <RequestButton location="hero" variant="onDarkSecondary" />
             </div>
-            <div className="mt-10 border-t border-white/10 pt-6">
+            <div className="mt-8 border-t border-white/10 pt-6">
               <TrustBadges dark />
             </div>
           </div>
