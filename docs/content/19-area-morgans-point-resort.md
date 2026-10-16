@@ -231,3 +231,15 @@ Call (254) 555-0147 · Request Service · Call to confirm the earliest open time
 - [Kiddle: Morgan's Point Resort census history](https://kids.kiddle.co/Morgan's_Point_Resort,_Texas)
 - [Redfin: Morgan's Point Resort](https://www.redfin.com/city/12656/TX/Morgan-s-Point-Resort)
 - [MHVillage: manufactured home community listing](https://www.mhvillage.com/parks/39458)
+
+## Content expansion (October 16, 2026)
+
+- Words in `<main>`: about 1,708 before (with the shared area template), about 2,182 after. "appliance repair" 15 mentions, "emergency" 7, "freezer" 32.
+- Title: "Appliance Repair Morgan's Point Resort TX | Emergency" (53; "Same-Day &" would push it past 60). Meta description 158 characters.
+- Shared area template (added with Belton): emergency section and the all-services table.
+- Morgan's Point Resort only:
+  - Intro paragraph covering every service term and emergency priority.
+  - Town-specific emergency paragraph (fish and game freezers, grouped with Belton routes).
+  - "Fish and game freezers: keep them running": 0°F, flat packs, defrost at about a quarter inch of frost, never chip ice, clicking means unplug and call.
+  - "Lake homes that sit empty for weeks": close water valves, check freezers after storms, test on return, book between guest stays.
+  - Two new FAQs: emergency appliance repair in Morgan's Point Resort, a fridge or ice maker after the house sat empty.

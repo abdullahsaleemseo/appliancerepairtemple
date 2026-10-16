@@ -663,15 +663,18 @@ export const areas: Area[] = [
   {
     slug: 'morgans-point-resort-tx',
     name: "Morgan's Point Resort",
-    metaTitle: "Appliance Repair Morgan's Point Resort TX | Lake Homes",
+    metaTitle: "Appliance Repair Morgan's Point Resort TX | Emergency",
     metaDescription:
-      "Appliance repair in Morgan's Point Resort, TX for refrigerators, freezers, washers, dryers, dishwashers and ovens in homes along Belton Lake. Call to book.",
+      "Same-day and emergency appliance repair in Morgan's Point Resort, TX for fridges, freezers, washers, dryers and ovens on Belton Lake. Subject to availability.",
     h1: "Appliance Repair in Morgan's Point Resort, TX, on Belton Lake",
     intro: [
       "Appliance Repair Temple repairs refrigerators, freezers, washers, dryers, dishwashers, ovens and ranges in homes across Morgan's Point Resort, TX. Same-day service is available, subject to technician availability, location, and current demand.",
       "Morgan's Point Resort is a lakeside city of about 4,600 people on the east shore of Belton Lake, north of Belton and west of Temple. Homes here range from older lake houses to newer builds, plus manufactured homes, and many have a garage or shop that holds a second refrigerator or a chest freezer.",
       'Whatever the house looks like, the visit works the same way. The technician tests the appliance, tells you what failed and what the repair involves, and starts only after your OK. If a repair does not make sense for an older unit, you will hear that too.',
+      "That covers refrigerator repair and freezer repair, washer and dryer repair, dishwasher repair, oven, stove and range repair, and over-the-range microwave repair in Morgan's Point Resort, across the major brands. Urgent problems, such as a freezer full of fish warming up or a washer leaking across the floor, get priority as emergency appliance repair during business hours.",
     ],
+    emergencyNote:
+      "A chest freezer full of fish and game warming up in the garage, a refrigerator that quit in the heat or a washer leaking across the floor cannot wait. Urgent calls from Morgan's Point Resort homes get priority scheduling during business hours, and visits here are grouped with our Belton routes.",
     travelNote:
       "Morgan's Point Resort shares the 76513 ZIP code with Belton, and visits are usually grouped with our Belton and west Temple routes. Call to confirm the earliest open time for your address.",
     localPoints: [
@@ -711,6 +714,24 @@ export const areas: Area[] = [
         ],
       },
       {
+        heading: 'Fish and game freezers:',
+        accent: 'keep them running.',
+        paragraphs: [
+          'A chest freezer packed with fish and game works best full and cold. Keep it at 0°F, freeze fresh catches in flat, thin packs so they freeze quickly, and avoid loading a large amount of warm food at once, which makes the compressor run for hours to catch up.',
+          'Defrost a manual-defrost chest freezer when the frost gets about a quarter inch thick, using a cooler to hold the food. Never chip ice with a knife or screwdriver; puncturing a cooling line ends the life of the freezer. If the lid gasket is cracked or the lid does not close square, frost builds much faster.',
+          'If the freezer clicks every few minutes and never runs, unplug it and call. That pattern usually points to the start relay or the compressor, and running it that way does not help.',
+        ],
+      },
+      {
+        heading: 'Lake homes that sit empty',
+        accent: 'for weeks.',
+        paragraphs: [
+          'If your lake home is a weekend or seasonal place, close the water valves to the washer, the dishwasher and the refrigerator ice maker before you leave. A burst fill hose in an empty house can run for days before anyone notices.',
+          'Leave a freezer you rely on plugged in, and check it after storms, since a tripped breaker or garage GFCI outlet can leave it off without anyone knowing. When you come back, open the valves slowly, run an empty washer and dishwasher cycle and watch for drips before you leave them running.',
+          'If you rent the home to guests, book repairs between stays when you can, and tell us who will let the technician in.',
+        ],
+      },
+      {
         heading: 'How scheduling works',
         accent: "for Morgan's Point.",
         paragraphs: [
@@ -724,6 +745,14 @@ export const areas: Area[] = [
     zipsVerified: true,
     nearby: ['Belton', 'Harker Heights', 'Nolanville', 'Salado', 'Killeen'],
     faqs: [
+      {
+        q: "Do you offer emergency appliance repair in Morgan's Point Resort?",
+        a: 'Yes. A refrigerator or freezer warming up with food inside, a washer or dishwasher leaking, or an appliance that smells like burning gets priority scheduling during business hours, Monday to Saturday, 8:00 AM to 8:00 PM. Same-day emergency service is subject to technician availability, location, and current demand. Ask about emergency visit details when you call.',
+      },
+      {
+        q: 'My lake house sat empty and now the fridge smells or the ice maker quit. Is it broken?',
+        a: 'Not always. An ice maker with the water valve closed will stop, and a fridge that lost power can smell until it is cleaned out. Open the valve, clean the fridge and give it a day. If it still does not cool or make ice, call us.',
+      },
       {
         q: "Do you cover all of Morgan's Point Resort?",
         a: "Yes. We serve homes throughout Morgan's Point Resort, which shares the 76513 ZIP code with Belton. Give us your street address and we will confirm.",
