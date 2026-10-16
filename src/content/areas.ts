@@ -1047,15 +1047,18 @@ export const areas: Area[] = [
   {
     slug: 'rogers-tx',
     name: 'Rogers',
-    metaTitle: 'Appliance Repair Rogers TX | Southeast Bell County',
+    metaTitle: 'Appliance Repair Rogers TX | Same-Day & Emergency',
     metaDescription:
-      'Appliance repair in Rogers, TX and the 76569 area for refrigerators, freezers, washers, dryers, dishwashers and ovens, in town and on rural roads. Call us.',
+      'Same-day and emergency appliance repair in Rogers, TX for fridges, freezers, washers, dryers and ovens, in town and on rural roads. Subject to availability.',
     h1: 'Appliance Repair in Rogers, TX, Out on Highway 190',
     intro: [
       'Appliance Repair Temple repairs refrigerators, freezers, washers, dryers, dishwashers, ovens and ranges in homes in and around Rogers, TX. Same-day service is available, subject to technician availability, location, and current demand.',
       'Rogers is a small town in southeastern Bell County, about 14 miles southeast of Temple on US 190. It has held close to the same size for more than a century, with 1,275 residents in 1910 and 1,113 at the 2020 census. The 76569 ZIP code reaches well beyond town into farm country and across the line into Milam County.',
       'That makes Rogers one of the longer drives on our routes, so we try to make every visit count. The technician tests the appliance, tells you what failed and what the repair involves, and starts only after your OK. If a repair does not make sense for your appliance, you will hear that too.',
+      'That covers refrigerator repair and freezer repair, washer and dryer repair, dishwasher repair, oven, stove and range repair, and over-the-range microwave repair in Rogers, across the major brands. Urgent problems, such as a fridge warming up or a washer leaking across the floor, get priority as emergency appliance repair during business hours.',
     ],
+    emergencyNote:
+      'A refrigerator or freezer warming up with food inside, a washer leaking across the floor or a dryer that smells hot cannot wait. Urgent calls from Rogers homes get priority scheduling during business hours. Rogers is at the southeast end of our routes along US 190, so calling as early as you can helps.',
     travelNote:
       'Rogers sits at the southeast end of our area, so visits are planned around our east routes along US 190. Call early and we will give you the earliest open time for your address.',
     localPoints: [
@@ -1094,6 +1097,24 @@ export const areas: Area[] = [
         ],
       },
       {
+        heading: 'While you wait',
+        accent: 'for the technician.',
+        paragraphs: [
+          'Refrigerator or freezer: keep the doors closed. A closed refrigerator keeps food safe for about four hours, a full freezer for about 48. Put a thermometer inside, and move milk, meat and leftovers to a cooler with ice if the fridge climbs above 40°F.',
+          'Washer or dishwasher leak: close the water valve behind the machine, lay down towels and do not run another load. Dryer without heat: hang clothes to dry rather than running cycle after cycle. Oven out: the cooktop and microwave usually still work, unless anything smells like gas or burning.',
+          'Write down what you notice, such as noises, codes or when it happens. It helps the technician find the fault faster once on site.',
+        ],
+      },
+      {
+        heading: 'Storms, surges',
+        accent: 'and control boards.',
+        paragraphs: [
+          'Lightning and storm-related power surges are hard on the electronics in newer appliances. A control board, a dispenser board or a start relay can fail the moment the power comes back. If several things in the house acted up after the same storm, mention it when you call.',
+          'Point-of-use surge protectors suit small electronics more than large appliances. A whole-house surge protector, installed at the panel by a licensed electrician, is one way to protect the refrigerator, washer, dryer and range together.',
+          'After an outage, check every breaker and any GFCI outlet in the kitchen, laundry room and garage before deciding an appliance has failed.',
+        ],
+      },
+      {
         heading: 'How scheduling works',
         accent: 'for Rogers.',
         paragraphs: [
@@ -1107,6 +1128,14 @@ export const areas: Area[] = [
     zipsVerified: true,
     nearby: ['Holland', 'Little River-Academy', 'Troy', 'Belton', 'Salado'],
     faqs: [
+      {
+        q: 'Do you offer emergency appliance repair in Rogers?',
+        a: 'Yes. A refrigerator or freezer warming up with food inside, a washer or dishwasher leaking, or an appliance that smells like burning gets priority scheduling during business hours, Monday to Saturday, 8:00 AM to 8:00 PM. Same-day emergency service is subject to technician availability, location, and current demand. Ask about emergency visit details when you call.',
+      },
+      {
+        q: 'An appliance stopped after a storm. Is it broken?',
+        a: 'Maybe not. Check the breaker and any GFCI outlet first, then unplug the appliance for a minute and plug it back in. If it still does not work, a surge may have damaged a control board or relay, which can often be replaced.',
+      },
       {
         q: 'Do you cover homes outside Rogers?',
         a: 'Yes, across the 76569 ZIP code, including rural roads around town. Part of the ZIP crosses into Milam County, so give us your address and we will confirm.',

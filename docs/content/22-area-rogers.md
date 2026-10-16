@@ -228,3 +228,15 @@ Call (254) 555-0147 · Request Service · Call early and we will give you the ea
 - [zip-codes.com: Rogers, TX](https://www.zip-codes.com/city/tx-rogers.asp)
 - [zip-codes.com: ZIP 76569](https://www.zip-codes.com/zip-code/76569/zip-code-76569.asp)
 - [CityPopulation.de: Rogers](https://citypopulation.de/en/usa/places/texas/bell/4862924__rogers/)
+
+## Content expansion (October 16, 2026)
+
+- Words in `<main>`: about 1,669 before (with the shared area template), about 2,094 after. "appliance repair" 15 mentions, "emergency" 7.
+- Title: "Appliance Repair Rogers TX | Same-Day & Emergency" (49). Meta description 156 characters.
+- Shared area template (added with Belton): emergency section and the all-services table.
+- Rogers only:
+  - Intro paragraph covering every service term and emergency priority.
+  - Town-specific emergency paragraph (southeast end of our routes along US 190, call early).
+  - "While you wait for the technician": food safety times, closing valves after leaks, hang-drying, using the cooktop when the oven is out.
+  - "Storms, surges and control boards": surge damage to boards and relays, whole-house surge protection by a licensed electrician, checking breakers and GFCI outlets.
+  - Two new FAQs: emergency appliance repair in Rogers, an appliance that stopped after a storm.
