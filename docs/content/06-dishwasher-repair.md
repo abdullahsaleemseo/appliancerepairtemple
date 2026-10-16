@@ -336,3 +336,15 @@ Call (254) 555-0147 · Request Service · Request dishwasher repair · Speak wit
 - [Temple Appliance Repair (Voolt): dishwasher](https://templeappliancerepair.voolt.com/dishwasher-repair)
 - [HomeAdvisor: dishwasher repair in Temple](https://www.homeadvisor.com/tloc/Temple-TX/Repair-or-Service-a-Dishwasher)
 - [Sears Home Services: Temple](https://www.searshomeservices.com/locations/appliance-repair/tx-temple/1212-marlandwood)
+
+## Content expansion (October 16, 2026)
+
+- Words in `<main>`: about 1,811 before, about 2,856 after. "dishwasher repair" 16 to 25 mentions, "emergency" 0 to 8, "leak" 5 to 13, "error code" 0 to 5, "not draining" 0 to 2.
+- Title: "Dishwasher Repair Temple TX | Same-Day & Emergency" (50). Meta description 156 characters, phone number removed.
+- New sections:
+  - "Emergency dishwasher repair in Temple": four urgent signs (water on the floor, water near the wiring, burning smell or tripped breaker, will not stop filling), four steps before the technician arrives, and the business-hours priority note. No emergency amounts are stated.
+  - "What your dishwasher’s error code is pointing to": drain, fill, leak or float, and heating codes, without brand-specific code numbers.
+  - "Dishwasher types and features we repair": front and hidden controls, third rack and tall tub, condensation dry.
+  - "When it is not the dishwasher": sink drain and disposal, cold water at the start, breaker and outlet.
+- Intro: two new paragraphs on the diagnosis and emergency priority.
+- Five new FAQs: emergency dishwasher repair, leaking onto the floor, not draining, won't start, and dishwasher repair outside Temple.

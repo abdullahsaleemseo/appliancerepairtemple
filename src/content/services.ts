@@ -793,13 +793,15 @@ export const services: Service[] = [
     navLabel: 'Dishwasher Repair',
     icon: 'dishwasher',
     card: 'Not draining, not cleaning, leaking or won’t start.',
-    metaTitle: 'Dishwasher Repair Temple TX | Built-In Dishwashers',
+    metaTitle: 'Dishwasher Repair Temple TX | Same-Day & Emergency',
     metaDescription:
-      'Dishwasher not draining, leaking or leaving dishes dirty? Built-in dishwasher repair in Temple, TX. Same-day service available. Call (254) 555-0147.',
+      'Dishwasher not draining, leaking or leaving dishes dirty? Same-day and emergency dishwasher repair in Temple, TX, subject to availability. All major brands.',
     h1: 'Built-In Dishwasher Repair in Temple, TX',
     intro: [
       'Standing water in the bottom, gritty dishes or a puddle under the door? Appliance Repair Temple repairs built-in dishwashers in homes across Temple, TX, from basic models to third-rack machines with front or hidden top controls. Same-day service is available, subject to technician availability, location, and current demand.',
       'Most dishwasher calls come back to a clogged filter, a drain pump, a water inlet valve, a door seal or the heating element. Hard water is common in Central Texas, and mineral scale makes several of these worse over time, so the technician checks for it on every visit. You hear what failed and what the repair involves before anything is replaced.',
+      'A dishwasher not draining, a dishwasher not cleaning, a door that will not latch or a control panel that flashes an error code all start the same way: a short test cycle, a look at the filter, spray arms and drain hose, then a meter on the parts that could be at fault.',
+      'Because a dishwasher sits inside your cabinets, a leak can soak the subfloor and the cabinet base before you see much water. A dishwasher leaking onto the floor, or one that trips the breaker or smells like burning, gets priority as emergency dishwasher repair during business hours.',
     ],
     symptomsHeading: 'Dishwasher problems we repair',
     symptoms: [
@@ -878,6 +880,26 @@ export const services: Service[] = [
         a: 'No. Chemical drain cleaners can damage the pump seals and plastic parts. If the dishwasher will not drain, clean the filter and check the hose and disposal, then call.',
       },
       {
+        q: 'Do you offer emergency dishwasher repair?',
+        a: 'Yes. A dishwasher leaking onto the floor, tripping the breaker or smelling like burning gets priority scheduling during business hours, Monday to Saturday, 8:00 AM to 8:00 PM. Same-day emergency service is subject to technician availability, location, and current demand. Ask about emergency visit details when you call.',
+      },
+      {
+        q: 'Why is my dishwasher leaking onto the floor?',
+        a: 'The usual causes are a worn door gasket, regular dish soap making too many suds, a loose inlet connection, or a leaking pump seal under the tub. Turn off the breaker and the hot water valve under the sink, dry the floor and call. A leak that keeps going can damage the subfloor and cabinets.',
+      },
+      {
+        q: 'Why is my dishwasher not draining?',
+        a: 'Most often the filter under the lower spray arm is clogged. After that, look at the drain hose under the sink, a garbage disposal that is clogged or still has its knockout plug, a blocked air gap and the drain pump. A hum at the end of the cycle with no water moving usually means the pump is jammed or has failed.',
+      },
+      {
+        q: 'Why won’t my dishwasher start?',
+        a: 'Check the breaker and make sure the door is fully latched. Many models also have a control lock or delay start that looks like a dead machine. If those are fine, a door latch switch, a thermal fuse, a float switch or the control board is the likely cause.',
+      },
+      {
+        q: 'Do you offer dishwasher repair outside Temple?',
+        a: 'Yes. Along with Temple, we repair dishwashers in Belton, Killeen, Harker Heights, Nolanville, Morgan’s Point Resort, Salado, Troy, Little River-Academy, Rogers, Holland and Moody.',
+      },
+      {
         q: 'How much does dishwasher repair cost?',
         a: 'It depends on the model and the part, so we do not list prices online. Call to discuss your repair needs, with the brand and model number ready.',
       },
@@ -917,6 +939,23 @@ export const services: Service[] = [
         note: 'Watch for broken glass in the filter and the sump, and turn off the breaker before reaching near the pump.',
       },
       {
+        type: 'emergency',
+        heading: 'Emergency dishwasher repair in Temple',
+        intro: 'A dishwasher leak runs under the cabinets, where it can soak the subfloor long before the puddle looks serious. These situations get priority scheduling during business hours. Same-day emergency dishwasher repair is available, subject to technician availability, location, and current demand.',
+        signs: [
+          { title: 'Water on the floor', text: 'Water coming from under the door, the toe kick or the sink cabinet during or after a cycle.' },
+          { title: 'Water near the wiring', text: 'Water has reached the wiring box behind the toe kick or the outlet under the sink.' },
+          { title: 'Burning smell or tripped breaker', text: 'A hot or electrical smell from the bottom of the door, or the breaker trips when the dishwasher heats.' },
+          { title: 'Will not stop filling', text: 'Water keeps coming in after the dishwasher is switched off, which points to a stuck inlet valve.' },
+        ],
+        steps: [
+          'Switch off the dishwasher breaker.',
+          'Close the hot water valve under the sink.',
+          'Dry the floor and keep the door shut if the tub is still full.',
+          'Write down the brand, model number and any error code, then call.',
+        ],
+      },
+      {
         type: 'prose',
         heading: 'The drain hose, the high loop and the air gap',
         paragraphs: [
@@ -951,6 +990,36 @@ export const services: Service[] = [
           { title: 'Filter, arms and hose', text: 'The filter, spray arms, drain hose loop and disposal connection are checked first.' },
           { title: 'Test the parts', text: 'Inlet valve, pump, heating element and latch are tested. You hear what failed and what the repair involves.' },
           { title: 'Repair and run', text: 'After your OK, the repair is made and a cycle confirms it fills, washes and drains.' },
+        ],
+      },
+      {
+        type: 'resultsGrid',
+        eyebrow: 'Dishwasher error codes',
+        heading: 'What your dishwasher’s error code is pointing to',
+        intro: 'The exact codes differ by brand and model, but most dishwasher error codes fall into a few groups. Write the code down before you reset anything.',
+        rows: [
+          { see: 'A drain code', means: 'Water did not leave the tub in time. A clogged filter, a kinked hose, a clogged disposal or a failed drain pump.', fix: 'Clean the filter and check the hose and disposal; the pump gets tested next.' },
+          { see: 'A fill or water supply code', means: 'Not enough water came in. A partly closed valve, a kinked supply line or a failed inlet valve.', fix: 'Open the hot water valve fully; inlet valves are a routine repair.' },
+          { see: 'A leak or float code', means: 'Water has collected in the base pan and tripped the float switch, so the dishwasher stops filling.', fix: 'Turn it off and call; the source of the water has to be found, not just the code cleared.' },
+          { see: 'A heating or temperature code', means: 'The water is not heating, or the temperature sensor is reading wrong.', fix: 'The heating element and sensor are tested; both are replaceable parts.' },
+        ],
+      },
+      {
+        type: 'prose',
+        heading: 'Dishwasher types and features we repair',
+        paragraphs: [
+          'Most Temple kitchens have a standard built-in dishwasher, with the controls on the front of the door or hidden along the top edge. Hidden controls look cleaner, but they also mean the door latch and the control panel work together, so a latch fault can look like a dead dishwasher.',
+          'Third-rack and tall-tub models add longer spray arms and more racks to wear. Quiet stainless tub models often dry by condensation and lean on rinse aid. Many newer dishwashers also use a manual filter that needs regular cleaning, which is why so many dishwasher repair calls start with the filter.',
+          'Whatever the model, the dishwasher repair follows the same steps: run it, check the filter, spray arms and drain path, test the likely parts and explain the fix before any work starts.',
+        ],
+      },
+      {
+        type: 'prose',
+        heading: 'When it is not the dishwasher',
+        paragraphs: [
+          'Dishwashers share a drain with the kitchen sink, and often with a garbage disposal. If the sink is slow or the disposal is clogged, the dishwasher cannot drain either. Clearing the sink drain or the disposal can fix what looks like a dishwasher problem.',
+          'Dishes that come out cool and poorly washed may be getting cold water at the start of the cycle. Run the hot tap at the kitchen sink until it is warm, then start the dishwasher. If the water heater is set low or far from the kitchen, this makes a real difference.',
+          'If the dishwasher is dead with no lights, check its breaker and, on plug-in models, the outlet under the sink. If the power is good and it still does nothing, that is a dishwasher repair.',
         ],
       },
       { type: 'repairOrReplace' },
