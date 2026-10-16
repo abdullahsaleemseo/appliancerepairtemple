@@ -32,58 +32,59 @@ export function ThankYouContent() {
 
   const minutes = claims.callbackMinutes;
   const promise = canShow(minutes)
-    ? `We’ll call you within ${minutes.value} minutes during business hours.`
+    ? `We usually call back within ${minutes.value} minutes during business hours (Monday to Saturday, 8:00 AM to 8:00 PM).`
     : 'We’ll call you back as soon as we can during business hours.';
 
   const steps = [
     { title: 'We review your request', text: 'We look at the appliance, the problem and your ZIP code.' },
     { title: 'We call to schedule', text: 'You get a visit window that fits your day.' },
-    { title: 'The technician visits', text: 'Diagnosis first, then a price. Work starts after you say yes.' },
+    { title: 'The technician visits', text: 'Diagnosis first, then an explanation of the repair. Work starts after you say yes.' },
   ];
 
   return (
-    <div className="bg-surface">
-      <div className="mx-auto max-w-3xl px-4 py-16 text-center lg:py-24">
-        <span className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-trust text-white">
-          <Icon name="check" className="h-9 w-9" strokeWidth={2.5} />
+    <div className="grain relative overflow-hidden bg-ink">
+      <div aria-hidden="true" className="pointer-events-none absolute left-1/2 top-0 h-[520px] w-[720px] -translate-x-1/2 rounded-full bg-mint-bright/15 blur-[140px]" />
+      <div className="relative mx-auto max-w-4xl px-4 py-20 text-center lg:py-28">
+        <span className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-mint-bright/15 text-mint-bright ring-8 ring-mint-bright/5">
+          <Icon name="check" className="h-10 w-10" strokeWidth={2.5} />
         </span>
-        <h1 className="mt-6 font-heading text-4xl font-extrabold tracking-tight text-navy md:text-5xl">
-          Thanks{name ? `, ${name}` : ''}! We got your request.
+        <h1 className="h-display mt-8 text-[2.6rem] text-white md:text-6xl">
+          Thanks{name ? `, ${name}` : ''}! <span className="accent block text-mint-bright">We got your request.</span>
         </h1>
-        <p className="mt-4 text-lg text-ink-body">
+        <p className="mx-auto mt-6 max-w-xl text-lg text-white/70">
           {promise}
           {!minutes.verified && canShow(minutes) ? <VerifyTag label="CONFIRM CALLBACK TIME" /> : null}
         </p>
 
-        <ol className="mt-12 grid gap-4 text-left md:grid-cols-3">
+        <ol className="mt-14 grid gap-4 text-left md:grid-cols-3">
           {steps.map((s, i) => (
-            <li key={s.title} className="rounded-card bg-white p-6 shadow-card">
-              <span className="flex h-10 w-10 items-center justify-center rounded-full bg-navy font-heading font-extrabold text-white">{i + 1}</span>
-              <h2 className="mt-3 font-heading text-lg font-extrabold text-navy">{s.title}</h2>
-              <p className="mt-1 text-[15px] text-ink-body">{s.text}</p>
+            <li key={s.title} className="card-dark p-7">
+              <span className="font-serif text-4xl italic text-flame-glow">{i + 1}</span>
+              <h2 className="mt-3 font-display text-xl font-bold tracking-[-0.02em] text-white">{s.title}</h2>
+              <p className="mt-1 text-[15px] text-white/60">{s.text}</p>
             </li>
           ))}
         </ol>
 
-        <div className="mt-12 rounded-card bg-navy p-8 text-white">
-          <h2 className="font-heading text-2xl font-extrabold text-white">In a hurry?</h2>
-          <p className="mt-2 text-white/80">Call now and we can usually set a time on the first call.</p>
-          <div className="mt-5 flex justify-center">
+        <div className="mt-12 rounded-card bg-white p-8 md:p-10">
+          <h2 className="font-display text-3xl font-bold tracking-[-0.03em] text-ink">In a hurry?</h2>
+          <p className="mt-2 text-ink-body">Call now and we can usually set a time on the first call.</p>
+          <div className="mt-6 flex justify-center">
             <CallButton location="thank_you" label="Call" />
           </div>
         </div>
 
-        <p className="mt-10 text-ink-body">
+        <p className="mt-10 text-white/60">
           While you wait:{' '}
-          <Link href={routes.blog} className="font-semibold text-navy underline">
+          <Link href={routes.blog} className="font-semibold text-white underline decoration-flame underline-offset-4">
             repair tips
           </Link>{' '}
           ·{' '}
-          <Link href={routes.faq} className="font-semibold text-navy underline">
+          <Link href={routes.faq} className="font-semibold text-white underline decoration-flame underline-offset-4">
             common questions
           </Link>{' '}
           ·{' '}
-          <Link href="/" className="font-semibold text-navy underline">
+          <Link href="/" className="font-semibold text-white underline decoration-flame underline-offset-4">
             back to {site.brandName}
           </Link>
         </p>

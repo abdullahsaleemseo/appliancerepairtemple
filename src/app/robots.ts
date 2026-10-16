@@ -1,11 +1,11 @@
 import type { MetadataRoute } from 'next';
-import { isProduction, routes, site } from '@/config/site';
+import { indexingAllowed, routes, site } from '@/config/site';
 
 export const dynamic = 'force-static';
 
-/** Draft builds block all crawling so placeholder content never gets indexed. */
+/** Staging and draft builds block all crawling. */
 export default function robots(): MetadataRoute.Robots {
-  if (!isProduction) {
+  if (!indexingAllowed) {
     return { rules: [{ userAgent: '*', disallow: '/' }] };
   }
   return {

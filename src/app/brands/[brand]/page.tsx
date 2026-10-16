@@ -3,7 +3,9 @@ import { notFound } from 'next/navigation';
 import { routes, site } from '@/config/site';
 import { brands, brandHref } from '@/content/brands';
 import { serviceByKey, serviceHref } from '@/content/services';
-import { Breadcrumbs } from '@/components/Breadcrumbs';
+import { PageHero } from '@/components/PageHero';
+import { PhoneLink } from '@/components/PhoneLink';
+import { TrustBadges } from '@/components/TrustBadges';
 import { CtaRow } from '@/components/Buttons';
 import { FaqList } from '@/components/FaqList';
 import { FinalCta } from '@/components/FinalCta';
@@ -44,43 +46,49 @@ export default async function BrandPage({ params }: Params) {
           serviceType: `${b.name} appliance repair`,
         })}
       />
-      <section className="bg-surface">
-        <div className="mx-auto max-w-site px-4 pb-12 pt-6 lg:px-6">
-          <Breadcrumbs
-            items={[
-              { name: 'Brands', path: routes.brands },
-              { name: b.name, path },
-            ]}
-          />
-          <h1 className="mt-6 font-heading text-4xl font-extrabold tracking-tight text-navy md:text-5xl">
-            {b.name} Appliance Repair in {site.city}, {site.state}
-          </h1>
-          <div className="prose-copy mt-6 max-w-3xl">
-            {b.intro.map((p) => (
-              <p key={p.slice(0, 24)}>{p}</p>
-            ))}
-          </div>
-          <p className="mt-2">
-            <VerifyTag label={`CONFIRM PROVIDER SERVICES ${b.name.toUpperCase()}`} />
-          </p>
-          <div className="mt-8">
-            <CtaRow location={`brand_${b.key}_hero`} />
-          </div>
+      <PageHero
+        crumbs={[
+          { name: 'Brands', path: routes.brands },
+          { name: b.name, path },
+        ]}
+        title={b.h1 ?? `${b.name} Appliance Repair in ${site.city}, ${site.state}`}
+      >
+        <p className="text-lg leading-relaxed text-white/75 md:text-xl">{b.intro[0]}</p>
+        <div className="mt-8">
+          <CtaRow location={`brand_${b.key}_hero`} dark />
         </div>
-      </section>
+        <div className="mt-8 border-t border-white/10 pt-6">
+          <TrustBadges dark />
+        </div>
+      </PageHero>
+
+      {b.intro.length > 1 ? (
+        <Section labelledBy="about-heading" className="!pb-0">
+          <div className="grid gap-10 lg:grid-cols-[1fr_1.4fr]">
+            <SectionHeading id="about-heading" eyebrow={b.name} title={`${b.name} repair`} accent={`in ${site.city}.`} />
+            <div className="prose-copy">
+              {b.intro.slice(1).map((p) => (
+                <p key={p.slice(0, 24)}>{p}</p>
+              ))}
+            </div>
+          </div>
+        </Section>
+      ) : null}
 
       <Section labelledBy="types-heading">
-        <SectionHeading id="types-heading" title={`${b.name} appliances we repair`} />
+        <SectionHeading id="types-heading" eyebrow="Appliances" title={`${b.name} appliances`} accent="we repair." />
         <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {b.appliances.map((a) => {
             const s = serviceByKey[a.key];
             return (
               <li key={a.key}>
-                <Link href={serviceHref(a.key)} className="flex h-full items-start gap-4 rounded-card bg-white p-5 shadow-card ring-1 ring-slate-100 hover:shadow-lift">
-                  <Icon name={s.icon} className="h-8 w-8 shrink-0 text-navy" />
+                <Link href={serviceHref(a.key)} className="card group flex h-full items-start gap-4 p-6 transition hover:-translate-y-1 hover:shadow-lift">
+                  <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-canvas text-ink transition group-hover:bg-flame group-hover:text-white">
+                    <Icon name={s.icon} className="h-6 w-6" />
+                  </span>
                   <span>
-                    <span className="block font-heading font-extrabold text-navy">
-                      {b.name} {s.name.toLowerCase()}
+                    <span className="block font-display text-lg font-bold tracking-[-0.02em] text-ink">
+                      {b.name} {s.name.toLowerCase()} repair
                     </span>
                     <span className="mt-1 block text-[15px] text-ink-body">{a.note}</span>
                   </span>
@@ -91,43 +99,111 @@ export default async function BrandPage({ params }: Params) {
         </ul>
       </Section>
 
-      <Section tone="surface" labelledBy="issues-heading">
-        <SectionHeading id="issues-heading" title={`Common ${b.name} problems we see`} intro="Every appliance brand has its usual failures. These are the ones we run into most." />
+      <Section tone="ink" labelledBy="issues-heading">
+        <SectionHeading
+          id="issues-heading"
+          eyebrow="What we see"
+          title={`Common ${b.name} problems`}
+          accent="and what they usually mean."
+          intro="General patterns, not model-specific defects. The technician confirms the cause on your appliance before replacing anything."
+          dark
+        />
         <ul className="grid gap-4 md:grid-cols-2">
           {b.issues.map((i) => (
-            <li key={i.title} className="rounded-card bg-white p-6 shadow-card">
-              <h3 className="font-heading text-lg font-extrabold text-navy">{i.title}</h3>
-              <p className="mt-2 text-[15px] text-ink-body">{i.text}</p>
+            <li key={i.title} className="card-dark p-7">
+              <h3 className="font-display text-[21px] font-bold tracking-[-0.025em] text-white">{i.title}</h3>
+              <p className="mt-2 text-[15px] text-white/60">{i.text}</p>
             </li>
           ))}
         </ul>
       </Section>
 
-      <Section labelledBy="process-heading">
-        <SectionHeading id="process-heading" title="How service works" center />
+      {b.haveReady || b.modelLocations ? (
+        <Section labelledBy="ready-heading">
+          <SectionHeading
+            id="ready-heading"
+            eyebrow="Before you call"
+            title="What to have ready"
+            accent="when you call."
+            intro="A minute of prep helps the technician bring the right parts and often saves a second trip."
+          />
+          <div className="grid gap-6 lg:grid-cols-[1fr_1.2fr]">
+            {b.haveReady ? (
+              <div className="card self-start p-7">
+                <h3 className="font-display text-xl font-bold tracking-[-0.02em] text-ink">Checklist</h3>
+                <ul className="prose-copy">
+                  {b.haveReady.map((t) => (
+                    <li key={t.slice(0, 24)}>{t}</li>
+                  ))}
+                </ul>
+                <p className="mt-6">
+                  <PhoneLink location={`brand_${b.key}_ready`} withIcon label="Call" className="inline-flex items-center gap-2 font-semibold text-ink underline decoration-flame underline-offset-4" />
+                </p>
+              </div>
+            ) : null}
+            {b.modelLocations ? (
+              <div className="card overflow-hidden">
+                <table className="w-full text-left text-[15px]">
+                  <caption className="px-6 pt-6 text-left font-display text-xl font-bold tracking-[-0.02em] text-ink">
+                    Where to find the {b.name} model number
+                  </caption>
+                  <thead className="text-[12px] uppercase tracking-[0.14em] text-ink-muted">
+                    <tr className="border-b border-sand">
+                      <th scope="col" className="px-6 py-4 font-semibold">Appliance</th>
+                      <th scope="col" className="px-6 py-4 font-semibold">Usually found</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-sand/70">
+                    {b.modelLocations.map((m) => (
+                      <tr key={m.appliance} className="align-top">
+                        <th scope="row" className="px-6 py-4 font-semibold text-ink">{m.appliance}</th>
+                        <td className="px-6 py-4 text-ink-body">{m.where}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+                {b.modelSource ? (
+                  <p className="border-t border-sand bg-canvas px-6 py-4 text-[13px] text-ink-muted">
+                    Locations vary by model. Source:{' '}
+                    <a href={b.modelSource.url} rel="noopener" className="underline underline-offset-2 hover:text-ink">
+                      {b.modelSource.name}
+                    </a>
+                  </p>
+                ) : null}
+              </div>
+            ) : null}
+          </div>
+        </Section>
+      ) : null}
+
+      <Section tone="white" labelledBy="process-heading">
+        <SectionHeading id="process-heading" eyebrow="Process" title="How service" accent="works." center />
         <HowItWorks />
       </Section>
 
-      <Section tone="surface" labelledBy="faq-heading">
-        <div className="grid gap-10 lg:grid-cols-[1fr_1.6fr]">
-          <SectionHeading id="faq-heading" title={`${b.name} repair questions`} />
+      <Section labelledBy="faq-heading">
+        <div className="grid gap-12 lg:grid-cols-[1fr_1.5fr]">
+          <div className="lg:sticky lg:top-32 lg:self-start">
+            <SectionHeading id="faq-heading" eyebrow="FAQ" title={`${b.name} repair`} accent="questions." />
+            <div className="-mt-6 flex flex-col gap-3">
+              <Link href={routes.cityPage} className="link-arrow">
+                Appliance repair in {site.city}
+              </Link>
+              <Link href={routes.brands} className="link-arrow">
+                All brands we service
+              </Link>
+            </div>
+          </div>
           <FaqList faqs={b.faqs} />
         </div>
-        <p className="mt-10 max-w-3xl text-sm text-ink-muted">
-          {b.name} is a trademark of its respective owner. {site.brandName} is not affiliated with or endorsed by {b.name}.
-        </p>
-        <p className="mt-4">
-          <Link href={routes.cityPage} className="font-semibold text-navy underline">
-            Appliance repair in {site.city}
-          </Link>{' '}
-          ·{' '}
-          <Link href={routes.brands} className="font-semibold text-navy underline">
-            All brands
-          </Link>
-        </p>
+        <aside className="mt-12 rounded-2xl border border-sand bg-white p-6 text-[14px] leading-relaxed text-ink-body">
+          <strong className="font-semibold text-ink">Trademark notice:</strong> {b.name} is a trademark of its respective owner.{' '}
+          {site.brandName} is an independent repair service and is not affiliated with, authorized by or endorsed by {b.name}.
+          Brand names are used only to describe the appliances we repair.
+        </aside>
       </Section>
 
-      <FinalCta formId={`brand_${b.key}_final`} title={`${b.name} appliance acting up?`} />
+      <FinalCta formId={`brand_${b.key}_final`} title={`${b.name} acting up?`} accent="We can help." />
     </>
   );
 }

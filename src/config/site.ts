@@ -11,8 +11,8 @@ export type Verifiable<T> = { value: T; verified: boolean };
 const v = <T,>(value: T, verified = false): Verifiable<T> => ({ value, verified });
 
 export const site = {
-  brandName: 'Temple Appliance Repair',
-  shortName: 'Temple Appliance',
+  brandName: 'Appliance Repair Temple',
+  shortName: 'Appliance Repair Temple',
   domain: 'appliancerepairtemple.com',
   url: (process.env.NEXT_PUBLIC_SITE_URL || 'https://appliancerepairtemple.com').replace(/\/$/, ''),
 
@@ -31,29 +31,32 @@ export const site = {
   serviceAreaSummary: 'Temple, Belton, Killeen, Harker Heights, Salado, and nearby Central Texas communities',
   footerAreaLine: 'Proudly serving Temple, TX and nearby Central Texas communities.',
 
-  hours: v({
-    display: 'Mon-Sat 8am-8pm',
-    long: 'Monday to Saturday, 8:00 AM to 8:00 PM',
-    // schema.org openingHours format
-    schema: ['Mo-Sa 08:00-20:00'],
-  }),
+  hours: v(
+    {
+      display: 'Mon-Sat 8am-8pm',
+      long: 'Monday to Saturday, 8:00 AM to 8:00 PM',
+      // schema.org openingHours format
+      schema: ['Mo-Sa 08:00-20:00'],
+    },
+    true,
+  ),
 
   // Temple ZIP codes supplied in the design brief as verified.
   templeZips: ['76501', '76502', '76503', '76504', '76508'],
 
-  // Towns covered without a dedicated page. Listed on the service-areas hub only.
+  // Nearby towns covered. Towns with an entry in content/areas.ts get their own page and are linked automatically.
   nearbyTowns: [
     'Belton',
     'Killeen',
     'Harker Heights',
-    'Copperas Cove',
+    'Nolanville',
+    "Morgan's Point Resort",
     'Salado',
-    'Rogers',
     'Troy',
-    'Moody',
-    'Holland',
     'Little River-Academy',
-    'Waco',
+    'Rogers',
+    'Holland',
+    'Moody',
   ],
 
   // Toggle for the slim same-day banner above the header. Only switch on when slots are really open.
@@ -68,27 +71,33 @@ export const site = {
 } as const;
 
 /**
- * Claims used in trust strips, comparison tables, hero chips and stats.
- * Replace the values with the owner's own wording, then set verified: true.
+ * Public business facts. Only claims confirmed by the owner carry verified: true.
+ * Pricing policy: no prices, fees, ranges, coupons, financing terms or cost estimates anywhere on the site.
  */
 export const claims = {
-  licensedInsured: v('Licensed & Insured'),
-  sameDay: v('Same-day service, subject to technician availability'),
-  sameDayShort: v('Same-Day Service'),
-  upfrontPricing: v('Upfront Pricing'),
-  warranty: v({ short: '90-Day Warranty', long: '90-day parts and labor warranty on repairs' }),
-  backgroundChecked: v('Background-checked technicians'),
-  rating: v({ value: '4.9', count: '[REVIEW COUNT]', source: 'Google' }),
-  repairsCompleted: v('1,200+'),
-  yearsServing: v('[YEARS IN BUSINESS]'),
-  responseTime: v('60-min response'),
-  callbackMinutes: v(15),
-  diagnosticFee: v({ amount: '[DIAGNOSTIC FEE]', waivedWithRepair: true }),
-  paymentOptions: v(['[PAYMENT OPTIONS CONFIRMED BY OWNER]']),
-  gasAppliances: v('Gas range and gas dryer repair'),
+  licensedInsured: v('Licensed & Insured', true),
+  sameDayShort: v('Same-Day Service', true),
+  /** Required wording whenever same-day service or response time appears in body copy. */
+  availabilityQualifier: 'subject to technician availability, location, and current demand',
+  yearsExperience: v({ value: '4+', label: 'Years of experience', short: '4+ Years of Experience' }, true),
+  repairsCompleted: v({ value: '100+', label: 'Repairs completed' }, true),
+  rating: v({ value: '4.9', label: 'Average rating' }, true),
+  /** A typical figure, never a guaranteed arrival time. */
+  responseTime: v({ value: 'About 60 min', label: 'Typical response', long: 'Typical response: about 60 minutes' }, true),
+  paymentOptions: v('Flexible Payment Options Available', true),
+  callbackMinutes: v(60, true),
+  gasAppliances: v('Gas range and gas dryer repair', true),
+  brandsServiced: v('Brands listed on the site are serviced by Appliance Repair Temple', true),
 } as const;
 
 export const isProduction = process.env.NEXT_PUBLIC_SITE_MODE === 'production';
+
+/**
+ * Search engine indexing is a separate switch from production mode, so a staging
+ * deployment can preview the launch version while staying out of Google.
+ * Both must be set before the site can be indexed.
+ */
+export const indexingAllowed = isProduction && process.env.NEXT_PUBLIC_ALLOW_INDEXING === 'true';
 
 /** True when a value may be rendered: always in draft, only when verified in production. */
 export function canShow(item: Verifiable<unknown>): boolean {

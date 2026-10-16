@@ -4,61 +4,74 @@ import { areas, areaHref } from '@/content/areas';
 import { Icon } from './Icon';
 import { PhoneLink } from './PhoneLink';
 
-export function AreaBlock() {
-  const pageNames = new Set(areas.map((a) => a.name));
+const points = [
+  { x: 74, y: 178, n: 'Killeen', dy: 22 },
+  { x: 140, y: 168, n: 'Harker Heights', dy: -14 },
+  { x: 205, y: 160, n: 'Belton', dy: 22 },
+  { x: 214, y: 232, n: 'Salado', dy: 22 },
+  { x: 312, y: 52, n: 'Troy', dy: -12 },
+];
+
+export function AreaMap() {
   return (
-    <div className="grid items-start gap-8 lg:grid-cols-[1fr_1.4fr]">
-      <div className="relative flex aspect-[4/3] items-center justify-center overflow-hidden rounded-card bg-surface">
-        <svg viewBox="0 0 400 300" className="h-full w-full" role="img" aria-label={`Map showing ${site.city} at the center of the service area`}>
-          <defs>
-            <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
-              <path d="M24 0H0v24" fill="none" stroke="#0B2B4C" strokeOpacity=".06" />
-            </pattern>
-          </defs>
-          <rect width="400" height="300" fill="url(#grid)" />
-          <circle cx="230" cy="130" r="115" fill="#0B2B4C" fillOpacity=".05" stroke="#0B2B4C" strokeOpacity=".15" strokeDasharray="6 6" />
-          <path d="M250 10 C245 80 238 140 225 290" stroke="#0B2B4C" strokeOpacity=".2" strokeWidth="5" fill="none" />
-          <path d="M40 160 C120 158 170 150 230 130" stroke="#0B2B4C" strokeOpacity=".2" strokeWidth="5" fill="none" />
-          {[
-            { x: 70, y: 166, n: 'Killeen' },
-            { x: 140, y: 160, n: 'Harker Heights', above: true },
-            { x: 200, y: 150, n: 'Belton' },
-            { x: 210, y: 215, n: 'Salado' },
-            { x: 300, y: 40, n: 'Troy' },
-          ].map((p) => (
-            <g key={p.n}>
-              <circle cx={p.x} cy={p.y} r="5" fill="#0B2B4C" />
-              <text x={p.x} y={'above' in p ? p.y - 12 : p.y + 20} textAnchor="middle" fontSize="12" fontWeight="600" fill="#1A2332">
-                {p.n}
-              </text>
-            </g>
-          ))}
-          <circle cx="245" cy="118" r="11" fill="#F26A1B" />
-          <circle cx="245" cy="118" r="4" fill="#fff" />
-          <text x="262" y="114" fontSize="16" fontWeight="800" fill="#0B2B4C">
-            {site.city}
-          </text>
-        </svg>
-        <p className="absolute bottom-2 right-3 text-xs text-ink-muted">Not to scale</p>
-      </div>
+    <div className="grain relative overflow-hidden rounded-card bg-ink">
+      <svg viewBox="0 0 400 300" className="relative h-full w-full" role="img" aria-label={`Map showing ${site.city} at the center of the service area`}>
+        <defs>
+          <radialGradient id="glow" cx="62%" cy="42%" r="45%">
+            <stop offset="0" stopColor="#FF7A3D" stopOpacity=".45" />
+            <stop offset="1" stopColor="#FF7A3D" stopOpacity="0" />
+          </radialGradient>
+          <pattern id="dots" width="16" height="16" patternUnits="userSpaceOnUse">
+            <circle cx="1" cy="1" r="1" fill="#fff" fillOpacity=".08" />
+          </pattern>
+        </defs>
+        <rect width="400" height="300" fill="url(#dots)" />
+        <rect width="400" height="300" fill="url(#glow)" />
+        <circle cx="250" cy="125" r="120" fill="none" stroke="#fff" strokeOpacity=".12" strokeDasharray="4 6" />
+        <circle cx="250" cy="125" r="70" fill="none" stroke="#fff" strokeOpacity=".1" strokeDasharray="4 6" />
+        <path d="M265 0 C258 80 246 140 228 300" stroke="#fff" strokeOpacity=".16" strokeWidth="3" fill="none" />
+        <path d="M20 182 C120 176 180 160 250 125" stroke="#fff" strokeOpacity=".16" strokeWidth="3" fill="none" />
+        {points.map((p) => (
+          <g key={p.n}>
+            <circle cx={p.x} cy={p.y} r="4.5" fill="#9CCBFF" />
+            <text x={p.x} y={p.y + p.dy} textAnchor="middle" fontSize="12" fontWeight="600" fill="#fff" fillOpacity=".75">
+              {p.n}
+            </text>
+          </g>
+        ))}
+        <circle cx="250" cy="125" r="16" fill="#FF7A3D" fillOpacity=".25" />
+        <circle cx="250" cy="125" r="8" fill="#FF7A3D" />
+        <text x="268" y="121" fontSize="18" fontWeight="800" fill="#fff">
+          {site.city}
+        </text>
+      </svg>
+      <p className="absolute bottom-3 right-4 text-[11px] text-white/40">Not to scale</p>
+    </div>
+  );
+}
+
+export function AreaBlock() {
+  return (
+    <div className="grid items-start gap-10 lg:grid-cols-[1.1fr_1fr]">
+      <AreaMap />
       <div>
-        <h3 className="font-heading text-lg font-extrabold text-navy">{site.city} ZIP codes</h3>
-        <ul className="mt-3 flex flex-wrap gap-2">
+        <h3 className="text-[13px] font-semibold uppercase tracking-[0.14em] text-ink-muted">{site.city} ZIP codes</h3>
+        <ul className="mt-4 flex flex-wrap gap-2">
           {site.templeZips.map((z) => (
-            <li key={z} className="rounded-full bg-white px-4 py-2 font-semibold text-navy shadow-card">
+            <li key={z} className="rounded-full bg-ink px-4 py-2 font-display font-semibold tracking-wide text-white">
               {z}
             </li>
           ))}
         </ul>
-        <h3 className="mt-8 font-heading text-lg font-extrabold text-navy">Nearby areas we serve</h3>
-        <ul className="mt-3 grid grid-cols-2 gap-x-6 gap-y-2 sm:grid-cols-3">
+        <h3 className="mt-10 text-[13px] font-semibold uppercase tracking-[0.14em] text-ink-muted">Nearby towns</h3>
+        <ul className="mt-4 grid grid-cols-2 gap-x-6 gap-y-3 sm:grid-cols-3">
           {site.nearbyTowns.map((t) => {
             const a = areas.find((x) => x.name === t);
             return (
               <li key={t} className="flex items-center gap-2 text-ink-body">
-                <Icon name="pin" className="h-4 w-4 shrink-0 text-brand-dark" />
-                {a && pageNames.has(t) ? (
-                  <Link href={areaHref(a)} className="font-semibold text-navy hover:underline">
+                <Icon name="pin" className="h-4 w-4 shrink-0 text-flame" />
+                {a ? (
+                  <Link href={areaHref(a)} className="font-semibold text-ink underline decoration-flame/50 underline-offset-4 hover:decoration-flame">
                     {t}
                   </Link>
                 ) : (
@@ -68,13 +81,13 @@ export function AreaBlock() {
             );
           })}
         </ul>
-        <p className="mt-8 text-ink-body">
-          Don’t see your area? <PhoneLink location="area_block" className="font-bold text-navy underline" label="Call us at" /> or{' '}
-          <Link href={routes.areas} className="font-semibold text-navy underline">
-            see the full service area
+        <div className="mt-10 rounded-2xl border border-sand bg-white p-5 text-ink-body">
+          Don’t see your town? <PhoneLink location="area_block" className="font-semibold text-ink underline decoration-flame underline-offset-4" label="Call" /> or{' '}
+          <Link href={routes.areas} className="font-semibold text-ink underline decoration-flame underline-offset-4">
+            see the full area
           </Link>
           .
-        </p>
+        </div>
       </div>
     </div>
   );

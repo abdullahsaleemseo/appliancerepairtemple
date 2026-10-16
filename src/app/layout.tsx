@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from 'next';
 import './globals.css';
-import { isProduction, site } from '@/config/site';
+import { indexingAllowed, site } from '@/config/site';
 import { Analytics } from '@/components/Analytics';
 import { Footer } from '@/components/Footer';
 import { Header } from '@/components/Header';
@@ -8,18 +8,18 @@ import { JsonLd } from '@/components/JsonLd';
 import { MobileCallBar } from '@/components/MobileCallBar';
 import { SiteClient } from '@/components/SiteClient';
 import { EmergencyBanner, UtilityBar } from '@/components/UtilityBar';
-import { localBusinessSchema } from '@/lib/schema';
+import { localBusinessReady, localBusinessSchema, organizationSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: { default: `Appliance Repair in ${site.city}, ${site.stateAbbr} | ${site.brandName}`, template: `%s | ${site.brandName}` },
   applicationName: site.brandName,
-  robots: isProduction ? undefined : { index: false, follow: false },
+  robots: indexingAllowed ? undefined : { index: false, follow: false },
   formatDetection: { telephone: false },
 };
 
 export const viewport: Viewport = {
-  themeColor: '#0B2B4C',
+  themeColor: '#0A0F1C',
   width: 'device-width',
   initialScale: 1,
 };
@@ -30,7 +30,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="pb-[76px] md:pb-0">
         <a
           href="#main"
-          className="sr-only z-50 rounded bg-navy px-4 py-3 font-bold text-white focus:not-sr-only focus:fixed focus:left-3 focus:top-3"
+          className="sr-only z-50 rounded bg-ink px-4 py-3 font-bold text-white focus:not-sr-only focus:fixed focus:left-3 focus:top-3"
         >
           Skip to content
         </a>
@@ -44,7 +44,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <MobileCallBar />
         <SiteClient />
         <Analytics />
-        <JsonLd data={localBusinessSchema()} />
+        <JsonLd data={localBusinessReady ? localBusinessSchema() : organizationSchema()} />
       </body>
     </html>
   );

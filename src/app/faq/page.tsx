@@ -1,55 +1,80 @@
 import Link from 'next/link';
 import { routes, site } from '@/config/site';
-import { generalFaqs } from '@/content/faqs';
+import { faqGroups, generalFaqs } from '@/content/faqs';
 import { serviceHref, services } from '@/content/services';
-import { Breadcrumbs } from '@/components/Breadcrumbs';
+import { CtaRow } from '@/components/Buttons';
 import { FaqList } from '@/components/FaqList';
 import { FinalCta } from '@/components/FinalCta';
+import { JsonLd } from '@/components/JsonLd';
+import { PageHero } from '@/components/PageHero';
+import { faqSchema } from '@/lib/schema';
 import { pageMetadata } from '@/lib/seo';
 
 export const metadata = pageMetadata({
-  title: `Appliance Repair FAQ | ${site.brandName}, ${site.city} ${site.stateAbbr}`,
-  description: `Answers about appliance repair in ${site.city}: brands, same-day visits, diagnostic visits, repair vs replace, gas appliances, ZIP codes and scheduling.`,
+  title: `Appliance Repair FAQ | ${site.city}, ${site.stateAbbr} Answers Before You Call`,
+  description: `Answers about appliance repair in ${site.city}, ${site.stateAbbr}: scheduling, same-day visits, the diagnosis, repair or replace, brands, areas, payment and safety questions.`,
   path: routes.faq,
 });
 
 export default function FaqPage() {
   return (
     <>
-      <div className="bg-surface">
-        <div className="mx-auto max-w-4xl px-4 pb-16 pt-6 lg:px-6">
-          <Breadcrumbs items={[{ name: 'FAQs', path: routes.faq }]} />
-          <h1 className="mt-6 font-heading text-4xl font-extrabold tracking-tight text-navy md:text-5xl">
-            Appliance Repair Questions
-          </h1>
-          <p className="mt-4 text-lg text-ink-body">
-            Straight answers to what people in {site.city} ask us most. Don’t see yours? Call and ask.
+      <JsonLd data={faqSchema(generalFaqs)} />
+      <PageHero crumbs={[{ name: 'FAQs', path: routes.faq }]} title={`${site.city} Appliance Repair FAQ,`} accent="answered plainly.">
+        <div className="prose-copy prose-dark">
+          <p>
+            These are the questions people in {site.city} and the nearby towns ask us most, from booking a visit to deciding
+            whether an old appliance is worth fixing. If yours is not here, call and ask.
           </p>
-          <div className="mt-10">
-            <FaqList faqs={generalFaqs} />
-          </div>
-          <h2 className="mt-12 font-heading text-2xl font-extrabold text-navy">Questions about a specific appliance</h2>
-          <ul className="mt-4 grid gap-2 sm:grid-cols-2">
-            {services.map((s) => (
-              <li key={s.key}>
-                <Link href={`${serviceHref(s.key)}#faq-heading`} className="font-semibold text-navy underline">
-                  {s.name} repair FAQ
+        </div>
+        <div className="mt-8">
+          <CtaRow location="faq_hero" dark />
+        </div>
+      </PageHero>
+
+      <div className="mx-auto grid max-w-site gap-12 px-4 py-20 lg:grid-cols-[1fr_2.2fr] lg:px-6">
+        <aside className="lg:sticky lg:top-28 lg:self-start">
+          <nav aria-label="FAQ topics" className="card p-7">
+            <h2 className="font-display text-xl font-bold tracking-[-0.02em] text-ink">Topics</h2>
+            <ul className="mt-5 space-y-3">
+              {faqGroups.map((g) => (
+                <li key={g.id}>
+                  <a href={`#${g.id}`} className="link-arrow">
+                    {g.title} {g.accent}
+                  </a>
+                </li>
+              ))}
+            </ul>
+            <h2 className="mt-8 font-display text-xl font-bold tracking-[-0.02em] text-ink">By appliance</h2>
+            <ul className="mt-5 space-y-3">
+              {services.map((s) => (
+                <li key={s.key}>
+                  <Link href={`${serviceHref(s.key)}#faq-heading`} className="link-arrow">
+                    {s.name} repair FAQ
+                  </Link>
+                </li>
+              ))}
+              <li>
+                <Link href={routes.cityPage} className="link-arrow">
+                  Appliance repair in {site.city}
                 </Link>
               </li>
-            ))}
-            <li>
-              <Link href={routes.cityPage} className="font-semibold text-navy underline">
-                Appliance repair in {site.city}
-              </Link>
-            </li>
-            <li>
-              <Link href={routes.request} className="font-semibold text-navy underline">
-                Request service
-              </Link>
-            </li>
-          </ul>
+            </ul>
+          </nav>
+        </aside>
+
+        <div className="space-y-16">
+          {faqGroups.map((g) => (
+            <section key={g.id} id={g.id} aria-labelledby={`${g.id}-heading`} className="scroll-mt-28">
+              <h2 id={`${g.id}-heading`} className="h-display mb-6 text-3xl text-ink sm:text-4xl">
+                {g.title} <span className="accent text-flame">{g.accent}</span>
+              </h2>
+              <FaqList faqs={g.faqs} schema={false} />
+            </section>
+          ))}
         </div>
       </div>
+
       <FinalCta formId="faq_final" />
     </>
   );

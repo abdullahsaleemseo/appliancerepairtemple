@@ -5,13 +5,13 @@ import { pageMetadata } from '@/lib/seo';
 
 export const metadata = pageMetadata({
   title: `Privacy Policy | ${site.brandName}`,
-  description: `How ${site.brandName} collects, uses and shares information submitted through ${site.domain}.`,
+  description: `How ${site.brandName} collects, uses, shares and protects the information you submit through ${site.domain}, and the choices you have about it.`,
   path: routes.privacy,
 });
 
 export default function PrivacyPage() {
   return (
-    <LegalPage title="Privacy Policy" path={routes.privacy} updated="October 14, 2026">
+    <LegalPage title="Privacy Policy" path={routes.privacy} updated="October 15, 2026">
       <p>
         This policy explains what information {site.brandName} (“we”, “us”) collects through this website, how we use it, and who
         we share it with. We only collect what we need to respond to a repair request.
@@ -38,24 +38,39 @@ export default function PrivacyPage() {
       <h2>How we use your information</h2>
       <ul>
         <li>To call or text you about your repair request and schedule a visit</li>
-        <li>To pass your request to the local appliance repair provider who will perform the service</li>
+        <li>To send a technician, perform the repair and follow up on it</li>
         <li>To understand which pages and campaigns bring in requests, so we can improve the site</li>
         <li>To prevent spam and abuse</li>
       </ul>
 
       <h2>Who we share it with</h2>
       <p>
-        Requests submitted on this site may be forwarded to an independent local appliance repair provider in the {site.city} area so
-        they can contact you and perform the repair. We also use service providers that host the site, process form submissions
-        and provide analytics. We do not sell your personal information, and we do not share it with unrelated third parties for
-        their own marketing.
+        {site.brandName} performs the repairs itself, so your request stays with us. We use a small number of service providers
+        that host the site, process form submissions and provide analytics, and they handle information only to provide those
+        services to us. We may also share information when the law requires it. We do not sell your personal information, and we
+        do not share it with unrelated third parties for their own marketing.
       </p>
 
       <h2>Calls and text messages</h2>
       <p>
-        By checking the consent box on a form, you agree that we and the repair provider may call or text the number you provided
+        By checking the consent box on a form, you agree that we may call or text the number you provided
         about your request. Consent is not a condition of purchase. Message and data rates may apply. Reply STOP to any text to opt
         out.
+      </p>
+
+      <h2>Cookies</h2>
+      <p>
+        The site uses a small number of cookies and similar browser storage. Google Analytics uses cookies to count visits and
+        see how pages are used. We also keep campaign tags from the link you arrived on for the length of your visit, so a request
+        can be matched to the ad or page that brought you here. You can block or delete cookies in your browser settings; the site
+        will still work.
+      </p>
+
+      <h2>How we protect it</h2>
+      <p>
+        The site uses an encrypted (HTTPS) connection, and form submissions are sent over that connection. We limit access to
+        request details to the people who need them to respond to you. No method of transmission or storage is completely secure,
+        so please do not send sensitive information through the form.
       </p>
 
       <h2>How long we keep it</h2>

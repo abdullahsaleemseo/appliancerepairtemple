@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback, useId, useRef, useState } from 'react';
+import { useCallback, useEffect, useId, useRef, useState } from 'react';
 import { applianceOptions } from '@/content/services';
 import type { ApplianceKey } from '@/content/types';
 import { contactTimes, validateLead } from '@/lib/lead';
@@ -35,6 +35,18 @@ export function MultiStepForm({ defaultAppliance }: { defaultAppliance?: Applian
     turnstileToken: '',
   });
   const set = <K extends keyof typeof f>(k: K, v: (typeof f)[K]) => setF((prev) => ({ ...prev, [k]: v }));
+
+  // Prefill from the homepage problem picker (?appliance=washer&issue=Won't drain).
+  useEffect(() => {
+    const q = new URLSearchParams(window.location.search);
+    const appliance = q.get('appliance');
+    const issue = q.get('issue');
+    if (appliance && applianceOptions.some((a) => a.key === appliance)) {
+      setF((prev) => ({ ...prev, appliance: appliance as ApplianceKey, issue: issue ? issue.slice(0, 200) : prev.issue }));
+      setStep(1);
+    }
+  }, []);
+
   const onToken = useCallback((t: string) => setF((prev) => ({ ...prev, turnstileToken: t })), []);
 
   const go = (n: number) => {
@@ -64,10 +76,10 @@ export function MultiStepForm({ defaultAppliance }: { defaultAppliance?: Applian
   };
 
   const progress = ((step + 1) / steps.length) * 100;
-  const headingCls = 'font-heading text-2xl font-extrabold text-navy outline-none';
+  const headingCls = 'font-display text-[28px] font-bold tracking-[-0.03em] text-ink outline-none sm:text-[34px]';
 
   return (
-    <form noValidate onSubmit={onSubmit} onFocus={onStart} className="relative rounded-card bg-white p-5 shadow-card ring-1 ring-slate-100 sm:p-8">
+    <form noValidate onSubmit={onSubmit} onFocus={onStart} className="relative rounded-xl2 border border-sand bg-white p-5 shadow-lift sm:p-9">
       <div className="mb-6">
         <div className="flex items-center justify-between text-sm font-semibold text-ink-muted">
           <span>
@@ -76,14 +88,14 @@ export function MultiStepForm({ defaultAppliance }: { defaultAppliance?: Applian
           <span>{steps[step]}</span>
         </div>
         <div
-          className="mt-2 h-2 overflow-hidden rounded-full bg-surface"
+          className="mt-2 h-2 overflow-hidden rounded-full bg-canvas"
           role="progressbar"
           aria-label="Form progress"
           aria-valuemin={1}
           aria-valuemax={steps.length}
           aria-valuenow={step + 1}
         >
-          <div className="h-full rounded-full bg-brand transition-[width] duration-300" style={{ width: `${progress}%` }} />
+          <div className="h-full rounded-full bg-gradient-to-r from-flame-glow to-flame transition-[width] duration-500" style={{ width: `${progress}%` }} />
         </div>
       </div>
 
@@ -107,11 +119,11 @@ export function MultiStepForm({ defaultAppliance }: { defaultAppliance?: Applian
                     setErrors({});
                     go(1);
                   }}
-                  className={`flex min-h-[96px] flex-col items-center justify-center gap-2 rounded-xl border-2 p-3 text-[15px] font-bold transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy ${
-                    selected ? 'border-brand bg-brand-light text-navy' : 'border-slate-200 text-ink hover:border-navy'
+                  className={`flex min-h-[104px] flex-col items-center justify-center gap-2 rounded-2xl border p-3 text-[15px] font-bold transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-flame ${
+                    selected ? 'border-ink bg-ink text-white' : 'border-sand bg-canvas/60 text-ink hover:border-ink/40 hover:bg-white'
                   }`}
                 >
-                  <Icon name={a.icon} className="h-8 w-8 text-navy" />
+                  <Icon name={a.icon} className={`h-8 w-8 ${selected ? 'text-flame-glow' : 'text-ink'}`} strokeWidth={1.6} />
                   {a.label}
                 </button>
               );
@@ -143,8 +155,8 @@ export function MultiStepForm({ defaultAppliance }: { defaultAppliance?: Applian
                   set('brand', b);
                   go(2);
                 }}
-                className={`min-h-[52px] rounded-xl border-2 px-3 text-[15px] font-bold transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy ${
-                  f.brand === b ? 'border-brand bg-brand-light text-navy' : 'border-slate-200 text-ink hover:border-navy'
+                className={`min-h-[54px] rounded-2xl border px-3 text-[15px] font-bold transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-flame ${
+                  f.brand === b ? 'border-ink bg-ink text-white' : 'border-sand bg-canvas/60 text-ink hover:border-ink/40 hover:bg-white'
                 }`}
               >
                 {b}
@@ -237,7 +249,7 @@ export function MultiStepForm({ defaultAppliance }: { defaultAppliance?: Applian
           </button>
         ) : (
           <span className="text-sm text-ink-muted">
-            Rather talk? <PhoneLink location="request_form" className="font-bold text-navy underline" />
+            Rather talk? <PhoneLink location="request_form" className="font-semibold text-ink underline decoration-flame underline-offset-4" />
           </span>
         )}
         {step === 1 || step === 2 ? (

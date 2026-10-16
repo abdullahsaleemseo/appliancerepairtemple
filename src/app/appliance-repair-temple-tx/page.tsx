@@ -1,19 +1,22 @@
 import Link from 'next/link';
-import { routes, site } from '@/config/site';
+import { canShow, claims, routes, site } from '@/config/site';
 import { areas, areaHref } from '@/content/areas';
 import { brands, otherBrands } from '@/content/brands';
 import { cityFaqs } from '@/content/faqs';
 import { serviceHref, services } from '@/content/services';
-import { AreaBlock } from '@/components/AreaList';
+import type { ApplianceKey } from '@/content/types';
+import { AreaMap } from '@/components/AreaList';
 import { BrandChips } from '@/components/BrandChips';
-import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { CtaRow } from '@/components/Buttons';
 import { FaqList } from '@/components/FaqList';
 import { FinalCta } from '@/components/FinalCta';
 import { HowItWorks } from '@/components/HowItWorks';
 import { Icon } from '@/components/Icon';
 import { JsonLd } from '@/components/JsonLd';
-import { ReviewsBlock, hasVerifiedReviews } from '@/components/ReviewsBlock';
+import { PageHero } from '@/components/PageHero';
+import { PaymentNote } from '@/components/PaymentNote';
+import { PhoneLink } from '@/components/PhoneLink';
+import { ShareExperience } from '@/components/ShareExperience';
 import { Section, SectionHeading } from '@/components/Section';
 import { ServicesGrid } from '@/components/ServicesGrid';
 import { TrustBadges } from '@/components/TrustBadges';
@@ -23,58 +26,64 @@ import { pageMetadata } from '@/lib/seo';
 const path = routes.cityPage;
 
 export const metadata = pageMetadata({
-  title: `Appliance Repair ${site.city}, ${site.stateAbbr}: Fridge, Washer, Dryer & Oven | ${site.shortName}`,
-  description: `In-home appliance repair in ${site.city}, ${site.stateAbbr}. Common problems, what a visit covers, brands serviced and ZIP codes. Request service or call.`,
+  title: `Appliance Repair Temple, Texas | In-Home Service`,
+  description: `In-home appliance repair in Temple, Texas for fridges, washers, dryers, dishwashers, ovens and freezers. Every Temple ZIP code, Mon-Sat 8am-8pm. Call us.`,
   path,
 });
 
-const problems = [
+const localNeeds: { title: string; text: string; key: ApplianceKey; link: string }[] = [
   {
-    title: 'Refrigerator not cooling',
-    text: 'Usually a frosted evaporator, a stopped fan or a failed start relay. Most of these are fixed in one visit.',
-    key: 'refrigerator' as const,
+    title: 'Refrigerators and garage freezers working through the summer',
+    text: 'Temple summers are long and hot. A fridge in a warm kitchen or a freezer in the garage runs harder, so a weak start relay, dusty coils or a tired fan motor tends to give out in July and August. Call when it feels warm and never stops running, not after the food spoils.',
+    key: 'freezer',
+    link: 'freezer repair in Temple',
   },
   {
-    title: 'Washer not draining',
-    text: 'A sock in the pump, a clogged filter or a failed drain pump. The pump is one of the most common washer parts we replace.',
-    key: 'washer' as const,
+    title: 'Hard water buildup in dishwashers, washers and ice makers',
+    text: 'Many Central Texas homes have hard water. Minerals coat dishwasher spray arms, clog washer inlet screens and slow the water feeding an ice maker. It looks like a bad part: cloudy dishes, slow fills, no ice. Sometimes cleaning fixes it. Sometimes the valve has to be replaced.',
+    key: 'dishwasher',
+    link: 'dishwasher repair in Temple',
   },
   {
-    title: 'Dryer not heating',
-    text: 'Heating element, thermal fuse or gas igniter. A clogged vent is often the reason the part failed, so we check airflow too.',
-    key: 'dryer' as const,
+    title: 'Dryer vents in older Temple homes',
+    text: 'Older houses around the Historic District, Midway and Western Hills often have long vent runs or tight laundry closets. Lint builds up, the dryer runs hot, and the thermal fuse or element fails. We check airflow on every dryer call, because a new part behind a clogged vent fails again.',
+    key: 'dryer',
+    link: 'dryer repair in Temple',
   },
   {
-    title: 'Dishwasher leaving dishes dirty',
-    text: 'Clogged spray arms, a dirty filter or low water fill. Mineral scale from hard water makes it worse over time.',
-    key: 'dishwasher' as const,
+    title: 'Newer appliances in West Temple subdivisions',
+    text: 'Newer homes along West Adams Avenue and Highway 317 often have French door refrigerators, front-load washers and smart ranges that report faults as error codes. Write the code down before you call, and check whether the manufacturer’s warranty still applies.',
+    key: 'washer',
+    link: 'washer repair in Temple',
   },
   {
-    title: 'Oven not heating',
-    text: 'A burned bake element on electric models, a weak igniter on gas. Both are standard parts.',
-    key: 'oven' as const,
+    title: 'Ovens and ranges that run hot, cold or not at all',
+    text: 'Bake elements burn out, gas igniters weaken and temperature sensors drift. You notice when dinner takes twice as long. We test the element, igniter and sensor before replacing anything.',
+    key: 'oven',
+    link: 'oven and stove repair in Temple',
   },
   {
-    title: 'Garage freezer struggling',
-    text: 'Dirty condenser coils, a failing relay or a worn lid seal. Summer heat in a Texas garage makes all three show up faster.',
-    key: 'freezer' as const,
-  },
-  {
-    title: 'Ice maker stopped',
-    text: 'A frozen fill tube, a bad water inlet valve or a worn-out ice maker module.',
-    key: 'refrigerator' as const,
-  },
-  {
-    title: 'Washer shaking across the floor',
-    text: 'An unlevel machine or worn suspension rods and shocks. The parts are inexpensive.',
-    key: 'washer' as const,
+    title: 'Rental homes and move-ins',
+    text: 'Appliances that sat empty between tenants often come back with stuck pumps, dried-out seals or a fridge that will not restart. Tenants should tell the landlord first. Landlords and property managers can book directly.',
+    key: 'refrigerator',
+    link: 'refrigerator repair in Temple',
   },
 ];
 
 const expectSteps = [
-  { title: 'You call or send a request', text: 'Tell us the appliance, the brand and what it is doing. We confirm a visit window.' },
-  { title: 'The technician diagnoses it', text: 'Parts get tested with a meter, not guessed at. You hear what failed and why.' },
-  { title: 'You approve the price', text: 'You get the repair price before any work starts. If it is not worth fixing, we say so.' },
+  { title: 'Book by phone or online', text: 'Call or send a request with the appliance, brand, model number and the problem. Photos of the label and any error code help.' },
+  { title: 'We confirm a visit window', text: `We call to confirm the details and set a time. We are open ${site.hours.value.long}.` },
+  { title: 'Diagnosis in your home', text: 'The technician tests the likely parts, explains what failed and what the repair involves, and waits for your OK.' },
+  { title: 'Repair and a test run', text: 'Once you approve, the repair is made and the appliance is run to confirm it works. Model-specific parts may need to be ordered.' },
+];
+
+const lifespans = [
+  { name: 'Refrigerator', years: '10 to 15 years', repair: 'Fans, relays, defrost parts, valves', closer: 'Compressor or sealed system on an older unit' },
+  { name: 'Freezer', years: '10 to 20 years', repair: 'Relays, thermostats, seals, fans', closer: 'Compressor on a small or older chest freezer' },
+  { name: 'Washer', years: '10 to 13 years', repair: 'Pumps, lid locks, belts, suspension', closer: 'Transmission or tub bearings' },
+  { name: 'Dryer', years: '10 to 13 years', repair: 'Elements, igniters, belts, rollers', closer: 'Drum, motor and board all worn at once' },
+  { name: 'Dishwasher', years: '9 to 12 years', repair: 'Pumps, inlet valves, latches, seals', closer: 'Rusted tub or racks plus a failed board' },
+  { name: 'Range or oven', years: '13 to 15 years', repair: 'Elements, igniters, sensors, switches', closer: 'Cracked glass top or discontinued board' },
 ];
 
 export default function CityPage() {
@@ -89,54 +98,69 @@ export default function CityPage() {
         })}
       />
 
-      <section className="bg-surface">
-        <div className="mx-auto max-w-site px-4 pb-12 pt-6 lg:px-6 lg:pb-16">
-          <Breadcrumbs items={[{ name: `Appliance Repair ${site.city}`, path }]} />
-          <h1 className="mt-6 max-w-3xl font-heading text-4xl font-extrabold tracking-tight text-navy md:text-5xl">
-            Appliance Repair in {site.city}, {site.state}
-          </h1>
-          <div className="prose-copy mt-6 max-w-3xl">
+      <PageHero crumbs={[{ name: `Appliance Repair ${site.city}`, path }]} title={`In-Home Appliance Repair in ${site.city}, ${site.state}`}>
+        <p className="text-lg leading-relaxed text-white/75 md:text-xl">
+          Appliance Repair Temple sends a technician to homes across Temple, Texas to fix refrigerators, freezers, washers, dryers,
+          dishwashers, ovens and ranges. We cover every Temple ZIP code, from the Historic District and Western Hills to the newer
+          neighborhoods along West Adams Avenue, {site.hours.value.long}. Same-day appointments are available, {claims.availabilityQualifier}.
+        </p>
+        <div className="mt-8">
+          <CtaRow location="city_hero" dark />
+        </div>
+        <div className="mt-8 border-t border-white/10 pt-6">
+          <TrustBadges dark />
+        </div>
+      </PageHero>
+
+      <Section labelledBy="intro-heading">
+        <div className="grid gap-12 lg:grid-cols-[1fr_1.3fr]">
+          <SectionHeading id="intro-heading" eyebrow="Appliance service in Temple" title="A broken appliance," accent="handled locally." />
+          <div className="prose-copy">
             <p>
-              Most appliance breakdowns in {site.city} come down to a handful of parts: a fan motor, a pump, a heating element, a
-              switch or a valve. A good technician finds the one that failed, replaces only that, and tells you the price before
-              starting. That is how we work.
+              When a refrigerator stops cooling or a washer will not drain, you want someone nearby who can come out, find the
+              problem and fix it. Our technicians work in Temple homes, so the common failures are familiar ones.
             </p>
             <p>
-              We repair refrigerators, freezers, washers, dryers, dishwashers, ranges and over-the-range microwaves in homes across
-              {' '}{site.city}, from older houses near downtown to newer neighborhoods on the west and south sides. We also cover
-              Belton, Killeen, Harker Heights, Salado and other {site.county} communities.
+              Most appliance breakdowns come down to one part: a fan motor, a drain pump, a heating element, an igniter, a switch
+              or a water valve. The technician tests the likely suspects with a meter, shows you what failed, and explains the
+              repair before any work starts. If the appliance is not worth fixing, we will say so.
             </p>
             <p>
-              Central Texas puts its own kind of wear on appliances. Long, hot summers keep refrigerators and garage freezers running
-              almost nonstop, and mineral-heavy water leaves scale in dishwashers, washer inlet screens and ice makers. We keep both
-              in mind when we diagnose a problem, because fixing the part without fixing the cause just means another call later.
+              Appliance Repair Temple is licensed and insured, with 4+ years of experience and 100+ repairs completed. Customers
+              have given us a 4.9 average rating.
             </p>
-          </div>
-          <div className="mt-8">
-            <CtaRow location="city_hero" />
           </div>
         </div>
-      </section>
+      </Section>
 
-      <Section labelledBy="help-heading">
-        <SectionHeading id="help-heading" eyebrow="We help with" title="Appliances we repair in Temple" />
+      <Section tone="white" labelledBy="help-heading">
+        <SectionHeading
+          id="help-heading"
+          eyebrow="Appliance types"
+          title="Appliances we repair"
+          accent="in Temple."
+          intro="Kitchen and laundry appliances, electric and gas, built-in and freestanding. Each page explains the symptoms we see most and what the repair involves."
+        />
         <ServicesGrid keys={services.map((s) => s.key)} showOther />
       </Section>
 
-      <Section tone="surface" labelledBy="problems-heading">
+      <Section tone="ink" labelledBy="needs-heading">
         <SectionHeading
-          id="problems-heading"
-          eyebrow="Common problems"
-          title="What usually goes wrong, and what fixes it"
-          intro="These are the calls we get most often in Temple. Each links to more detail on that appliance."
+          id="needs-heading"
+          eyebrow="Common repair needs"
+          title="What breaks most often"
+          accent="in Temple homes."
+          intro="Patterns we see across Temple, and what they usually mean for your appliance."
+          dark
         />
         <ul className="grid gap-4 md:grid-cols-2">
-          {problems.map((p) => (
-            <li key={p.title} className="rounded-card bg-white p-6 shadow-card">
-              <h3 className="font-heading text-lg font-extrabold text-navy">{p.title}</h3>
-              <p className="mt-2 text-[15px] text-ink-body">{p.text}</p>
-              <Link href={serviceHref(p.key)} className="mt-3 inline-flex items-center gap-1 text-[15px] font-bold text-brand-dark hover:underline">
-                More on {p.key === 'oven' ? 'oven and stove' : p.key} repair <Icon name="arrow" className="h-4 w-4" />
+          {localNeeds.map((n) => (
+            <li key={n.title} className="card-dark flex flex-col p-7">
+              <h3 className="font-display text-[21px] font-bold tracking-[-0.025em] text-white">{n.title}</h3>
+              <p className="mt-3 flex-1 text-[15px] leading-relaxed text-white/65">{n.text}</p>
+              <Link href={serviceHref(n.key)} className="mt-5 inline-flex items-center gap-1.5 text-[15px] font-semibold text-flame-glow hover:underline">
+                {n.link.charAt(0).toUpperCase() + n.link.slice(1)}
+                <Icon name="arrow" className="h-4 w-4" />
               </Link>
             </li>
           ))}
@@ -144,93 +168,163 @@ export default function CityPage() {
       </Section>
 
       <Section labelledBy="expect-heading">
-        <SectionHeading id="expect-heading" eyebrow="What to expect" title="How a repair visit goes" center />
+        <SectionHeading
+          id="expect-heading"
+          eyebrow="Booking service"
+          title="What to expect when"
+          accent="you book a repair."
+          center
+        />
         <HowItWorks steps={expectSteps} />
-        <div className="mx-auto mt-12 max-w-3xl rounded-card bg-surface p-6 md:p-8">
-          <h3 className="font-heading text-lg font-extrabold text-navy">Before the technician arrives</h3>
-          <ul className="prose-copy">
-            <li>Find the model number. It is on a label inside the door, under the lid or on the back.</li>
-            <li>Write down any error code on the display.</li>
-            <li>Clear a path to the appliance and empty it if you can.</li>
-            <li>If you rent, check with your landlord about who approves and pays for the repair.</li>
-          </ul>
+        <div className="mx-auto mt-10 max-w-4xl">
+          <div className="card p-7">
+            <h3 className="font-display text-xl font-bold tracking-[-0.02em] text-ink">Before the visit</h3>
+            <p className="mt-2 text-[15px] text-ink-body">
+              Clear a path to the appliance, empty the washer or dishwasher if you can, and keep pets in another room. An adult
+              needs to be home to let the technician in and approve the repair.
+            </p>
+          </div>
+        </div>
+        <div className="mx-auto mt-4 max-w-4xl">
+          <PaymentNote />
         </div>
       </Section>
 
-      <TrustBadges tone="surface" />
-
-      <Section labelledBy="coverage-heading">
-        <SectionHeading
-          id="coverage-heading"
-          eyebrow="Coverage"
-          title={`Where we work in and around ${site.city}`}
-          intro="This is a service area, not a storefront. Technicians come to your home."
-        />
-        <AreaBlock />
-        <ul className="mt-10 flex flex-wrap gap-3">
-          {areas.map((a) => (
-            <li key={a.slug}>
-              <Link
-                href={areaHref(a)}
-                className="inline-flex min-h-[44px] items-center rounded-full bg-navy px-5 font-semibold text-white hover:bg-navy-700"
-              >
-                Appliance repair in {a.name}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </Section>
-
-      <Section tone="surface" labelledBy="brands-heading">
-        <SectionHeading id="brands-heading" eyebrow="Brands" title="Brands we see every week" />
-        <BrandChips names={[...brands.map((b) => b.name), ...otherBrands]} />
-        <p className="mt-6">
-          <Link href={routes.brands} className="font-bold text-brand-dark hover:underline">
-            Appliance brands we service in {site.city}
-          </Link>
-        </p>
-      </Section>
-
-      {hasVerifiedReviews() ? (
-        <Section labelledBy="reviews-heading">
-          <SectionHeading id="reviews-heading" eyebrow="Reviews" title={`From customers in ${site.city}`} />
-          <ReviewsBlock />
+      {canShow(claims.brandsServiced) ? (
+        <Section tone="white" labelledBy="brands-heading">
+          <SectionHeading
+            id="brands-heading"
+            eyebrow="Brands"
+            title="Appliance brands"
+            accent="we support."
+            intro="We service the major household brands found in Temple kitchens and laundry rooms. Give us the model number when you book so the technician can check parts ahead of time."
+          />
+          <BrandChips names={[...brands.map((b) => b.name), ...otherBrands]} />
+          <p className="mt-8 max-w-3xl text-sm text-ink-muted">
+            Appliance Repair Temple is an independent repair service and is not affiliated with or authorized by any appliance
+            manufacturer.{' '}
+            <Link href={routes.brands} className="font-semibold text-ink underline decoration-flame underline-offset-4">
+              Appliance brands we service in {site.city}
+            </Link>
+          </p>
         </Section>
       ) : null}
 
+      <Section labelledBy="ror-heading">
+        <SectionHeading
+          id="ror-heading"
+          eyebrow="Repair or replace"
+          title="Should you repair it"
+          accent="or replace it?"
+          intro="Age and the type of failure matter more than anything else. A newer appliance with one failed part is almost always worth fixing. An older one with a major failure deserves a closer look."
+        />
+        <div className="card overflow-hidden">
+          <table className="w-full text-left">
+            <caption className="sr-only">Typical appliance lifespans and when repair makes sense</caption>
+            <thead className="border-b border-sand text-[12px] uppercase tracking-[0.14em] text-ink-muted">
+              <tr>
+                <th scope="col" className="px-5 py-4 font-semibold md:px-6">Appliance</th>
+                <th scope="col" className="hidden px-5 py-4 font-semibold sm:table-cell">Typical life</th>
+                <th scope="col" className="px-5 py-4 font-semibold">Usually worth repairing</th>
+                <th scope="col" className="hidden px-5 py-4 font-semibold md:table-cell">Take a closer look</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-sand/70 text-[15px]">
+              {lifespans.map((l) => (
+                <tr key={l.name}>
+                  <th scope="row" className="px-5 py-4 font-semibold text-ink md:px-6">{l.name}</th>
+                  <td className="hidden px-5 py-4 text-ink-body sm:table-cell">{l.years}</td>
+                  <td className="px-5 py-4 text-ink-body">{l.repair}</td>
+                  <td className="hidden px-5 py-4 text-ink-body md:table-cell">{l.closer}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <div className="prose-copy mt-8 max-w-3xl">
+          <p>
+            Lifespans vary with brand, use and care, so treat these as a guide. Ask three questions: How old is it? Is the rest
+            of it in good shape? Can you still get the part? Built-in refrigerators and wall ovens are usually worth repairing even
+            when older, because replacing them means cabinet and installation work too.
+          </p>
+        </div>
+      </Section>
+
+      <Section tone="white" labelledBy="coverage-heading">
+        <SectionHeading
+          id="coverage-heading"
+          eyebrow="Service area"
+          title="Where we work in Temple"
+          accent="and nearby."
+          intro="This is a service-area business. Technicians come to your home; there is no walk-in shop."
+        />
+        <div className="grid items-start gap-10 lg:grid-cols-[1.1fr_1fr]">
+          <AreaMap />
+          <div>
+            <h3 className="text-[13px] font-semibold uppercase tracking-[0.14em] text-ink-muted">All of Temple</h3>
+            <ul className="mt-4 flex flex-wrap gap-2">
+              {site.templeZips.map((z) => (
+                <li key={z} className="rounded-full bg-ink px-4 py-2 font-display font-semibold tracking-wide text-white">
+                  {z}
+                </li>
+              ))}
+            </ul>
+            <p className="mt-4 text-[15px] text-ink-body">
+              Central Temple and the Historic District, Midway, Western Hills, West Temple along West Adams Avenue and Highway
+              317, and the south side of town.
+            </p>
+            <h3 className="mt-8 text-[13px] font-semibold uppercase tracking-[0.14em] text-ink-muted">Nearby towns</h3>
+            <ul className="mt-4 flex flex-wrap gap-2">
+              {site.nearbyTowns.map((t) => {
+                const a = areas.find((x) => x.name === t);
+                const cls = 'inline-flex min-h-[40px] items-center rounded-full border border-sand bg-white px-4 text-[14.5px] font-medium text-ink';
+                return (
+                  <li key={t}>
+                    {a ? (
+                      <Link href={areaHref(a)} className={`${cls} transition hover:border-ink hover:bg-ink hover:text-white`}>
+                        {t}
+                      </Link>
+                    ) : (
+                      <span className={cls}>{t}</span>
+                    )}
+                  </li>
+                );
+              })}
+            </ul>
+            <p className="mt-6 text-[15px] text-ink-body">
+              Not sure if you are in range?{' '}
+              <PhoneLink location="city_coverage" label="Call" className="font-semibold text-ink underline decoration-flame underline-offset-4" /> with
+              your address and we will confirm.
+            </p>
+          </div>
+        </div>
+      </Section>
+
+      <ShareExperience place={site.city} />
+
       <Section labelledBy="faq-heading">
-        <div className="grid gap-10 lg:grid-cols-[1fr_1.6fr]">
-          <SectionHeading id="faq-heading" eyebrow="FAQ" title={`Appliance repair in ${site.city}: common questions`} />
+        <div className="grid gap-12 lg:grid-cols-[1fr_1.5fr]">
+          <div className="lg:sticky lg:top-32 lg:self-start">
+            <SectionHeading id="faq-heading" eyebrow="Local FAQ" title="Appliance repair in Temple:" accent="your questions." />
+            <div className="-mt-6 flex flex-col gap-3">
+              <Link href={routes.faq} className="link-arrow">
+                More appliance repair FAQs <Icon name="arrow" className="h-4 w-4" />
+              </Link>
+              <Link href={routes.request} className="link-arrow">
+                Request appliance repair online <Icon name="arrow" className="h-4 w-4" />
+              </Link>
+            </div>
+          </div>
           <FaqList faqs={cityFaqs} />
         </div>
       </Section>
 
-      <Section tone="surface" labelledBy="links-heading">
-        <h2 id="links-heading" className="font-heading text-2xl font-extrabold text-navy">
-          Keep reading
-        </h2>
-        <ul className="mt-5 grid gap-x-8 gap-y-2 sm:grid-cols-2 lg:grid-cols-3">
-          {services.map((s) => (
-            <li key={s.key}>
-              <Link href={serviceHref(s.key)} className="font-semibold text-navy hover:underline">
-                {s.name.toLowerCase()} repair in {site.city}
-              </Link>
-            </li>
-          ))}
-          <li>
-            <Link href={routes.faq} className="font-semibold text-navy hover:underline">
-              appliance repair FAQs
-            </Link>
-          </li>
-          <li>
-            <Link href={routes.request} className="font-semibold text-navy hover:underline">
-              request appliance repair online
-            </Link>
-          </li>
-        </ul>
-      </Section>
-
-      <FinalCta formId="city_final" />
+      <FinalCta
+        title="Need an appliance technician"
+        accent="in Temple?"
+        text="Speak with our team about your appliance issue, or send a quick request and we will call you back to set a time."
+        formId="city_final"
+      />
     </>
   );
 }

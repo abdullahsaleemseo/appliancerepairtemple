@@ -8,29 +8,39 @@ const defaultSteps = [
     text: 'We call you back, check the schedule and confirm a visit window that works for you.',
   },
   {
-    title: 'Diagnosis and a price first',
-    text: 'The technician finds the problem and tells you the repair price. Work starts only after you say yes.',
+    title: 'Diagnosis before repair',
+    text: 'The technician finds the problem and explains what the repair involves. Work starts only after you say yes.',
   },
 ];
 
-export function HowItWorks({ steps = defaultSteps, compact = false }: { steps?: { title: string; text: string }[]; compact?: boolean }) {
+export function HowItWorks({
+  steps = defaultSteps,
+  dark = false,
+}: {
+  steps?: { title: string; text: string }[];
+  compact?: boolean;
+  dark?: boolean;
+}) {
   return (
-    <ol className={`relative grid gap-6 ${steps.length === 4 ? 'md:grid-cols-4' : 'md:grid-cols-3'}`}>
-      <span
-        aria-hidden="true"
-        className="absolute left-[16%] right-[16%] top-7 hidden border-t-2 border-dashed border-navy/20 md:block"
-      />
+    <ol className={`grid gap-4 ${steps.length === 4 ? 'md:grid-cols-2 xl:grid-cols-4' : 'md:grid-cols-3'}`}>
       {steps.map((s, i) => (
-        <li key={s.title} className={`relative ${compact ? '' : 'text-center'}`}>
+        <li
+          key={s.title}
+          className={`group relative overflow-hidden rounded-card p-7 ${dark ? 'card-dark' : 'card'}`}
+        >
           <span
-            className={`relative z-10 flex h-14 w-14 items-center justify-center rounded-full bg-navy font-heading text-xl font-extrabold text-white ring-8 ring-white ${
-              compact ? '' : 'mx-auto'
+            aria-hidden="true"
+            className={`pointer-events-none absolute -right-3 -top-8 font-serif text-[150px] italic leading-none transition duration-500 group-hover:-translate-y-1 ${
+              dark ? 'text-white/[0.06]' : 'text-ink/[0.05]'
             }`}
           >
             {i + 1}
           </span>
-          <h3 className="mt-4 font-heading text-lg font-extrabold text-navy">{s.title}</h3>
-          <p className="mt-2 text-ink-body">{s.text}</p>
+          <span className={`relative inline-flex h-9 items-center rounded-full px-3.5 text-[13px] font-semibold ${dark ? 'bg-flame text-white' : 'bg-ink text-white'}`}>
+            Step {i + 1}
+          </span>
+          <h3 className={`relative mt-6 font-display text-[22px] font-bold tracking-[-0.025em] ${dark ? 'text-white' : 'text-ink'}`}>{s.title}</h3>
+          <p className={`relative mt-2 ${dark ? 'text-white/65' : 'text-ink-body'}`}>{s.text}</p>
         </li>
       ))}
     </ol>
