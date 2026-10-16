@@ -197,6 +197,46 @@ function Block({ block, s, index }: { block: ServiceBlock; s: Service; index: nu
         </section>
       );
 
+    case 'emergency':
+      return (
+        <section aria-labelledby={id} id="emergency" className="reveal scroll-mt-28">
+          <p className="eyebrow mb-4 text-flame">
+            <span className="h-px w-6 bg-flame" aria-hidden="true" />
+            Emergency {s.name.toLowerCase()} repair
+          </p>
+          <Heading id={id}>{block.heading}</Heading>
+          <p className="mt-4 text-ink-body">{block.intro}</p>
+          <div className="mt-8 grid gap-4 lg:grid-cols-[1.4fr_1fr]">
+            <ul className="grid gap-3 sm:grid-cols-2">
+              {block.signs.map((sg) => (
+                <li key={sg.title} className="card p-5">
+                  <h3 className="font-display text-[17px] font-bold tracking-[-0.02em] text-ink">{sg.title}</h3>
+                  <p className="mt-1 text-[14.5px] text-ink-body">{sg.text}</p>
+                </li>
+              ))}
+            </ul>
+            <div className="grain relative self-start overflow-hidden rounded-card bg-ink p-6 text-white md:p-7">
+              <div aria-hidden="true" className="pointer-events-none absolute -right-16 -top-16 h-48 w-48 rounded-full bg-flame/30 blur-[70px]" />
+              <h3 className="relative font-display text-lg font-bold tracking-[-0.02em] text-white">Before the technician arrives</h3>
+              <ol className="relative mt-4 space-y-2.5">
+                {block.steps.map((t, i) => (
+                  <li key={t.slice(0, 24)} className="flex gap-3 text-[14.5px] text-white/75">
+                    <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-flame text-[12px] font-semibold text-white">{i + 1}</span>
+                    {t}
+                  </li>
+                ))}
+              </ol>
+              <p className="relative mt-5 text-[13.5px] text-white/55">
+                Urgent calls get priority during business hours, {site.hours.value.long}. Ask about emergency visit details when you call.
+              </p>
+              <p className="relative mt-4">
+                <PhoneLink location={`service_${s.key}_emergency`} withIcon label="Call now" className="inline-flex items-center gap-2 font-semibold text-white underline decoration-flame underline-offset-4" />
+              </p>
+            </div>
+          </div>
+        </section>
+      );
+
     case 'diyVsPro':
       return (
         <section aria-labelledby={id} className="reveal">
@@ -395,7 +435,7 @@ function Block({ block, s, index }: { block: ServiceBlock; s: Service; index: nu
         <section aria-labelledby={id} className="reveal">
           <p className="eyebrow mb-4 text-flame">
             <span className="h-px w-6 bg-flame" aria-hidden="true" />
-            Read the results
+            {block.eyebrow ?? 'Read the results'}
           </p>
           <Heading id={id}>{block.heading}</Heading>
           {block.intro ? <p className="mt-4 text-ink-body">{block.intro}</p> : null}

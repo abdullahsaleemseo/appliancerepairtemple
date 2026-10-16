@@ -11,14 +11,15 @@ export const services: Service[] = [
     navLabel: 'Refrigerator Repair',
     icon: 'refrigerator',
     card: 'Not cooling, leaking, noisy, or the ice maker quit.',
-    metaTitle: 'Refrigerator Repair Temple TX | Same-Day Service',
+    metaTitle: 'Refrigerator Repair Temple TX | Same-Day & Emergency',
     metaDescription:
-      'Refrigerator not cooling, leaking or icing up? Same-day refrigerator repair in Temple, TX, subject to availability. All major brands. Call (254) 555-0147.',
+      'Refrigerator not cooling, leaking or icing up? Same-day and emergency refrigerator repair in Temple, TX, subject to availability. All major brands.',
     h1: 'Same-Day Refrigerator Repair in Temple, TX',
     intro: [
       'Refrigerator not cooling, leaking or making a racket? Appliance Repair Temple repairs top-freezer, bottom-freezer, side-by-side and French door refrigerators in homes across Temple, TX. Same-day service is available, subject to technician availability, location, and current demand.',
       'Most refrigerator failures come down to a short list of parts: a fan motor, a defrost component, a start relay, a water valve, a sensor or a control board. The technician tests those parts in your kitchen, shows you which one failed and explains the repair before any work starts. You get a straight answer about whether the fix makes sense for your fridge.',
       'Long Temple summers keep a refrigerator running hard, so a small problem in May can turn into a warm fridge full of groceries by July.',
+      'A refrigerator that stops cooling is one of the few appliance problems that cannot wait, because the food inside is on a clock. That is why fridge repair calls get priority as emergency appliance repair during business hours, along with leaks that are spreading across the floor.',
     ],
     symptomsHeading: 'Refrigerator symptoms and what they usually mean',
     symptoms: [
@@ -113,6 +114,26 @@ export const services: Service[] = [
         a: 'It depends on the model and the part that failed, so we do not list prices online. Call to discuss your repair needs. Have the brand, the model number and a short description of the problem ready.',
       },
       {
+        q: 'Do you offer emergency refrigerator repair?',
+        a: 'Yes. A refrigerator or freezer warming up with food inside, or a fridge leaking across the floor, gets priority scheduling during business hours, Monday to Saturday, 8:00 AM to 8:00 PM. Same-day emergency service is subject to technician availability, location, and current demand. Ask about emergency visit details when you call.',
+      },
+      {
+        q: 'Why is my freezer cold but my refrigerator warm?',
+        a: 'Cold air for the fresh-food side usually comes from the freezer. A stopped evaporator fan, a damper stuck closed or frost blocking the evaporator coil cuts off that air. These are common, repairable problems.',
+      },
+      {
+        q: 'Why is my refrigerator leaking water on the floor?',
+        a: 'The usual causes are a clogged defrost drain, a cracked or loose water line to the ice maker, a failing water inlet valve or a drain pan that has shifted. Turn off the water supply to the fridge if you can, dry the area and call.',
+      },
+      {
+        q: 'Why is my refrigerator making a loud noise?',
+        a: 'A squeal or chirp that changes when you open the freezer door often points to the evaporator fan. A rattle or buzz near the bottom back is often the condenser fan or a loose drain pan. Clicking every few minutes with no cooling often means the start relay or compressor.',
+      },
+      {
+        q: 'Do you offer fridge repair outside Temple?',
+        a: 'Yes. Along with Temple, we repair refrigerators in Belton, Killeen, Harker Heights, Nolanville, Morgan’s Point Resort, Salado, Troy, Little River-Academy, Rogers, Holland and Moody.',
+      },
+      {
         q: 'Where do I find my refrigerator’s model number?',
         a: 'Look for a label inside the fresh-food section, usually on a side wall or the ceiling near the top. Some models put it behind the crisper drawers or on the back. A photo of the label works.',
       },
@@ -131,6 +152,23 @@ export const services: Service[] = [
           'Call us with the brand, the model number and what you noticed.',
         ],
         note: 'Throw out perishables such as milk, meat and leftovers that sat above 40°F for more than two hours. When in doubt, throw it out.',
+      },
+      {
+        type: 'emergency',
+        heading: 'Emergency refrigerator repair in Temple',
+        intro: 'When the fridge stops cooling, the food inside is on a clock. These situations get priority scheduling during business hours. Same-day emergency refrigerator repair is available, subject to technician availability, location, and current demand.',
+        signs: [
+          { title: 'Warming up with food inside', text: 'The fresh-food side is above 40°F, or the freezer is soft, and the fridge is full.' },
+          { title: 'Water spreading on the floor', text: 'A leak from the ice maker line, the water valve or a blocked defrost drain that keeps coming back.' },
+          { title: 'Clicking but not running', text: 'The compressor tries to start every few minutes and fails. Unplug it to protect the compressor.' },
+          { title: 'Burning smell or tripped breaker', text: 'Heat or a smell from the bottom or back of the unit. Unplug it and do not use it until it is checked.' },
+        ],
+        steps: [
+          'Keep both doors closed to hold the cold in.',
+          'Move the most perishable food to a cooler with ice.',
+          'For a leak, close the water supply valve to the fridge and dry the floor.',
+          'Write down the brand, model number and any error code, then call.',
+        ],
       },
       { type: 'symptoms' },
       { type: 'inlineForm' },
@@ -175,6 +213,28 @@ export const services: Service[] = [
           'Anything behind the freezer back panel, including defrost parts.',
           'Water valve and supply line replacement behind the unit.',
           'Compressor, refrigerant and sealed system work.',
+        ],
+      },
+      {
+        type: 'prose',
+        heading: 'Refrigerator types and features we repair',
+        paragraphs: [
+          'French door refrigerators are the most common style in newer Temple kitchens. They add more to go wrong: a second evaporator fan on some models, a flipper mullion on the left door that seals the gap, an ice maker in the door or the freezer drawer, and an electronic control that reports error codes. We repair all of it.',
+          'Side-by-side refrigerators put the freezer on the left and usually feed the ice maker and water dispenser through the freezer door. Top-freezer and bottom-freezer refrigerators are simpler and very common in rentals and starter homes, which makes them practical to repair for years.',
+          'Counter-depth and smart refrigerators use the same core parts as standard models, with tighter spaces around the coils and more electronics. Garage refrigerators and second fridges are a regular call in the summer, because heat pushes them past what they were built for.',
+          'Whatever the style, the diagnosis is the same: check temperatures and airflow, test the likely parts and explain the refrigerator repair before any work starts.',
+        ],
+      },
+      {
+        type: 'resultsGrid',
+        eyebrow: 'Ice makers and dispensers',
+        heading: 'Ice maker and water dispenser problems',
+        intro: 'Ice makers cause more refrigerator service calls than almost any other single part. Here is what the common symptoms usually mean.',
+        rows: [
+          { see: 'No ice at all', means: 'The ice maker is switched off, the freezer is too warm, the fill tube is frozen or the water inlet valve has failed.', fix: 'Check the switch and freezer temperature first; the valve and fill tube are common repairs.' },
+          { see: 'Small, hollow or cloudy cubes', means: 'Low water pressure, a clogged water filter or a valve that is not opening fully.', fix: 'Replace an old filter first; if it does not help, the valve gets tested.' },
+          { see: 'Water dispenser slow or dead', means: 'An old filter, a frozen line in the door, or a failed valve or dispenser switch.', fix: 'Filter, then thaw and test; switches and valves are routine parts.' },
+          { see: 'Ice clumped or jammed in the bin', means: 'The freezer is cycling warm and refreezing, or the auger motor is not turning.', fix: 'Empty the bin; if it returns, the defrost system or auger motor is checked.' },
         ],
       },
       { type: 'brands', heading: 'Refrigerator brands and styles we repair', intro: 'We work on the major refrigerator brands found in Temple kitchens, in every common style. Tell us the brand and model number when you book so the technician can check parts ahead of time.', styles: ['Top-freezer', 'Bottom-freezer', 'Side-by-side', 'French door', 'Counter-depth'] },

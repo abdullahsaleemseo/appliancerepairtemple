@@ -242,3 +242,14 @@ Flexible Payment Options Available · Call for service details
 - [Sears Home Services: Temple](https://www.searshomeservices.com/locations/appliance-repair/tx-temple/1212-marlandwood)
 - [Temple Appliance Repair (Voolt): refrigerator repair](https://templeappliancerepair.voolt.com/refrigerator-repair)
 - [AppliancePartsPros forum: fridge not cooling, freezer working](https://appliancepartspros.discourse.group/t/refrigerator-not-cooling-but-freezer-is-working/459?page=2)
+
+## Content expansion (October 16, 2026)
+
+- Words in `<main>`: about 1,971 before, about 2,837 after. "refrigerator repair" 11 mentions, "fridge repair" 2, "emergency" 8, "ice maker" 15.
+- Title: "Refrigerator Repair Temple TX | Same-Day & Emergency" (52). Meta description 147 characters, phone number removed.
+- New sections:
+  - "Emergency refrigerator repair in Temple": four urgent signs, four steps before the technician arrives, and the note that urgent calls get priority during business hours (Monday to Saturday, 8:00 AM to 8:00 PM). Emergency visit details are discussed on the call; no amounts are stated.
+  - "Refrigerator types and features we repair": French door, side-by-side, top and bottom freezer, counter-depth, smart and garage refrigerators.
+  - "Ice maker and water dispenser problems": a four-row table of what you see, what it usually means and what the fix involves.
+- Intro: a new paragraph on emergency priority for fridge repair.
+- Five new FAQs: emergency refrigerator repair, freezer cold but fridge warm, water leaking, loud noises, and fridge repair outside Temple.
