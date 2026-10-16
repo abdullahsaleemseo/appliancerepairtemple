@@ -532,15 +532,18 @@ export const areas: Area[] = [
   {
     slug: 'nolanville-tx',
     name: 'Nolanville',
-    metaTitle: 'Appliance Repair Nolanville TX | New & Older Homes',
+    metaTitle: 'Appliance Repair Nolanville TX | Same-Day & Emergency',
     metaDescription:
-      'Appliance repair in Nolanville, TX for refrigerators, washers, dryers, dishwashers and ovens, including first-year problems in newly built homes. Call us.',
+      'Same-day and emergency appliance repair in Nolanville, TX for fridges, washers, dryers, dishwashers and ovens, in new and older homes. Subject to availability.',
     h1: 'Appliance Repair in Nolanville, TX, for Growing Neighborhoods',
     intro: [
       'Appliance Repair Temple repairs refrigerators, freezers, washers, dryers, dishwashers, ovens and ranges in homes across Nolanville, TX. Same-day service is available, subject to technician availability, location, and current demand.',
       'Nolanville has grown fast. It was incorporated in 1961 with about 200 residents and counted 5,917 at the 2020 census, and new subdivisions are still going up on the east side near I-14. That mix gives us two kinds of calls: older appliances in established homes, and brand-new appliances that were not hooked up quite right.',
       'Either way, the visit works the same. The technician tests the appliance, tells you what failed and what the repair involves, and starts only after your OK. If the problem turns out to be an installation issue rather than a broken part, you will hear that too.',
+      'That covers refrigerator repair and freezer repair, washer and dryer repair, dishwasher repair, oven, stove and range repair, and over-the-range microwave repair in Nolanville, across the major brands. Urgent problems, such as a fridge warming up or a washer leaking across the floor, get priority as emergency appliance repair during business hours.',
     ],
+    emergencyNote:
+      'A refrigerator warming up with a week of groceries inside, a washer leaking across a new laminate floor or a dryer that smells hot cannot wait. Urgent calls from Nolanville homes get priority scheduling during business hours, and Nolanville sits on our I-14 routes between Belton and Harker Heights.',
     travelNote:
       'Nolanville sits on I-14 between Belton and Harker Heights, so visits are usually grouped with those routes. Call to confirm the earliest open time for your address.',
     localPoints: [
@@ -580,6 +583,23 @@ export const areas: Area[] = [
         ],
       },
       {
+        heading: 'Busy laundry rooms:',
+        accent: 'signs to call early.',
+        paragraphs: [
+          'A washer and dryer that run every day wear in a predictable way. A dryer that starts to squeal or thump usually has worn drum rollers or an idler pulley, and a worn idler can eventually break the belt. A washer that bangs or walks on the spin cycle usually has worn suspension rods or shocks, which can damage the tub if they are left alone.',
+          'Call early for a burning smell, a dryer that takes two cycles, or a washer that leaves water in the drum. Those are cheaper to fix before they cause a second failure. Smaller loads, the right amount of HE detergent and a clean lint screen every load stretch the life of both machines.',
+        ],
+      },
+      {
+        heading: 'Kids, pets',
+        accent: 'and appliances.',
+        paragraphs: [
+          'Many dishwashers, ranges and washers have a control lock or child lock. When it is on, the appliance can look dead: buttons do nothing, or the display shows a lock symbol. Check the manual for how to switch it off before you book a visit for a "dead" appliance.',
+          'Pet hair builds up fast in dryer lint screens and vents, and on refrigerator condenser coils and front grilles. Vacuum the coils and clean the lint housing more often if you have dogs or cats. A fridge that runs nonstop in a home with pets often just needs its coils cleaned.',
+          'Small toys, socks and hair ties end up in washer drain pumps and dishwasher filters. If a washer will not drain or a dishwasher hums at the end of the cycle, check the pump filter or the tub filter first.',
+        ],
+      },
+      {
         heading: 'How scheduling works',
         accent: 'for Nolanville.',
         paragraphs: [
@@ -593,6 +613,18 @@ export const areas: Area[] = [
     zipsVerified: true,
     nearby: ['Harker Heights', 'Belton', 'Killeen', "Morgan's Point Resort", 'Salado'],
     faqs: [
+      {
+        q: 'Do you offer emergency appliance repair in Nolanville?',
+        a: 'Yes. A refrigerator or freezer warming up with food inside, a washer or dishwasher leaking, or an appliance that smells like burning gets priority scheduling during business hours, Monday to Saturday, 8:00 AM to 8:00 PM. Same-day emergency service is subject to technician availability, location, and current demand. Ask about emergency visit details when you call.',
+      },
+      {
+        q: 'Do you do washer and dryer repair in Nolanville?',
+        a: 'Yes. Washers that will not drain, spin or stop leaking, and dryers that will not heat, squeal or take too long, are among our most common Nolanville calls. On every dryer call, the technician checks the vent airflow too.',
+      },
+      {
+        q: 'My dishwasher or range looks dead. Could it be locked?',
+        a: 'It could. Many models have a control lock or child lock that stops the buttons from working. Check the manual for how to switch it off. If it still does nothing, check the breaker, then call us.',
+      },
       {
         q: 'Do you cover all of Nolanville?',
         a: 'Yes. We serve Nolanville’s 76559 ZIP code, from the older streets in town to the newer subdivisions near I-14. If you are outside city limits, give us your address and we will confirm.',

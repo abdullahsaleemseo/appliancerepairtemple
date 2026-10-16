@@ -232,3 +232,15 @@ Call (254) 555-0147 · Request Service · Call to confirm the earliest open time
 - [zip-codes.com: Nolanville, TX](https://www.zip-codes.com/city/tx-nolanville.asp)
 - [LRG Realty: Nolanville 2026 neighborhood guide](https://lrgrealty.com/lrg-blog/nolanville-tx-neighborhood-guide/)
 - [10 Federal Storage: Moving to Nolanville](https://10federalstorage.com/blog/the-complete-guide-to-moving-to-nolanville-tx)
+
+## Content expansion (October 16, 2026)
+
+- Words in `<main>`: about 1,350 before, about 2,210 after. "appliance repair" 15 mentions, "emergency" 0 to 7.
+- Title: "Appliance Repair Nolanville TX | Same-Day & Emergency" (53). Meta description 159 characters.
+- Shared area template (added with Belton): emergency section and the all-services table.
+- Nolanville only:
+  - Intro paragraph covering every service term and emergency priority.
+  - Town-specific emergency paragraph (new floors, on the I-14 routes between Belton and Harker Heights).
+  - "Busy laundry rooms: signs to call early": squeals, thumps, banging, burning smells, two-cycle drying.
+  - "Kids, pets and appliances": control locks that look like a dead appliance, pet hair on coils and in lint, toys and socks in pumps and filters.
+  - Three new FAQs: emergency appliance repair in Nolanville, washer and dryer repair, control locks.
