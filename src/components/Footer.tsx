@@ -114,7 +114,8 @@ export function Footer() {
 
       <div className="relative border-t border-white/[0.08]">
         <p className="mx-auto max-w-site px-4 pt-6 text-[12.5px] leading-relaxed text-white/45 lg:px-6">
-          <span className="font-semibold text-white/60">Disclaimer:</span> Brand names are trademarks of their respective owners and
+          <span className="font-semibold text-white/60">Disclaimer:</span> {site.brandName} is an independent appliance repair service and is not
+          affiliated with, endorsed by or sponsored by any appliance manufacturer. Brand names are trademarks of their respective owners and
           are used only to identify the appliances we service. Same-day and emergency service is subject to technician availability,
           location, and current demand.
         </p>
