@@ -230,3 +230,15 @@ Call (254) 555-0147 · Request Service · Call early and we will give you the ea
 - [zip-codes.com: Salado, TX](https://www.zip-codes.com/city/tx-salado.asp)
 - [zip-codes.com: ZIP 76571](https://zip-codes.com/zip-code/76571/zip-code-76571.asp)
 - [Historic Hotels: Stagecoach Inn history](https://www.historichotels.org/us/hotels-resorts/stagecoach-inn/history.php)
+
+## Content expansion (October 16, 2026)
+
+- Words in `<main>`: about 1,304 before, about 2,100 after. "appliance repair" 9 to 15 mentions, "emergency" 0 to 7, "propane" 11.
+- Title: "Appliance Repair Salado TX | Same-Day & Emergency" (49). Meta description 151 characters.
+- Shared area template (added with Belton): emergency section and the all-services table.
+- Salado only:
+  - Intro paragraph covering every service term, propane and emergency priority.
+  - Town-specific emergency paragraph (barn freezers, one of our longer drives, call early).
+  - "Well water and your appliances": grit in inlet screens, pressure dips from well pumps, sediment filters. Worded as "some homes" because well use is not confirmed per address.
+  - "Propane ranges and dryers around Salado": tell us the fuel; gas smell means leave and call the propane supplier or 911.
+  - Two new FAQs: emergency appliance repair in Salado, well water and appliances.

@@ -405,15 +405,18 @@ export const areas: Area[] = [
   {
     slug: 'salado-tx',
     name: 'Salado',
-    metaTitle: 'Appliance Repair Salado TX | Village & Rural Homes',
+    metaTitle: 'Appliance Repair Salado TX | Same-Day & Emergency',
     metaDescription:
-      'Appliance repair in Salado, TX and the 76571 area for refrigerators, freezers, washers, dryers, dishwashers and ranges, in town or out on acreage. Call us.',
+      'Same-day and emergency appliance repair in Salado, TX for fridges, freezers, washers, dryers and ranges, in town or on acreage. Subject to availability.',
     h1: 'Appliance Repair in Salado, TX, for Village Homes and Acreage',
     intro: [
       'Appliance Repair Temple repairs refrigerators, freezers, washers, dryers, dishwashers, ovens and ranges in Salado, TX and the countryside around it. Same-day service is available, subject to technician availability, location, and current demand.',
       'Salado itself is small, with about 2,400 residents at the 2020 census, but the 76571 ZIP code covers roughly 125 square miles. Many of the calls we get from Salado come from homes on acreage outside the village, not from the streets near Main Street.',
       'That shapes what we see. More chest freezers and second refrigerators in garages, shops and barns, longer drives between stops, and appliances that work hard through a Central Texas summer. The visit itself is the same anywhere: the technician finds what failed, explains the repair, and starts only after your OK.',
+      'That covers refrigerator repair and freezer repair, washer and dryer repair, dishwasher repair, oven, stove and range repair, including propane, and over-the-range microwave repair in Salado, across the major brands. Urgent problems, such as a freezer full of meat warming up or a washer leaking across the floor, get priority as emergency appliance repair during business hours.',
     ],
+    emergencyNote:
+      'A chest freezer full of meat warming up in the barn, a refrigerator that quit in the heat or a washer leaking across the floor cannot wait. Urgent calls from Salado homes get priority scheduling during business hours. Salado is one of our longer drives, so calling as early as you can helps.',
     travelNote:
       'Salado is at the south end of our area, south of Belton along I-35, so visits are planned around our south routes. Call early and we will give you the earliest open time for your address.',
     localPoints: [
@@ -453,6 +456,23 @@ export const areas: Area[] = [
         ],
       },
       {
+        heading: 'Well water and',
+        accent: 'your appliances.',
+        paragraphs: [
+          'Some homes on acreage around Salado draw water from a private well. Sand, grit and minerals from a well collect in the small inlet screens on washers, dishwashers and refrigerator water valves, which shows up as slow fills, weak ice production and error codes for water supply.',
+          'Pressure matters too. When a well pump cycles, water pressure can dip below what an ice maker or a dishwasher valve needs to fill properly. If the problem comes and goes with the time of day or other water use in the house, mention it when you call.',
+          'A sediment filter on the main line and a fresh refrigerator water filter go a long way. The technician will check and clean the inlet screens during the visit and tell you if a valve has been damaged by grit.',
+        ],
+      },
+      {
+        heading: 'Propane ranges and dryers',
+        accent: 'around Salado.',
+        paragraphs: [
+          'Homes outside town limits often run the range, the dryer or both on propane instead of natural gas. Propane appliances use different burner orifices and regulator settings, so tell us the fuel when you book and the technician will come prepared.',
+          'If you smell gas, do not switch anything on or off. Leave the house, then call your propane supplier or 911 from outside. Call us once it is safe. Gas line and tank work belongs to your propane supplier or a licensed plumber.',
+        ],
+      },
+      {
         heading: 'How scheduling works',
         accent: 'for Salado.',
         paragraphs: [
@@ -466,6 +486,14 @@ export const areas: Area[] = [
     zipsVerified: true,
     nearby: ['Belton', "Morgan's Point Resort", 'Harker Heights', 'Killeen', 'Nolanville'],
     faqs: [
+      {
+        q: 'Do you offer emergency appliance repair in Salado?',
+        a: 'Yes. A refrigerator or freezer warming up with food inside, a washer or dishwasher leaking, or an appliance that smells like burning gets priority scheduling during business hours, Monday to Saturday, 8:00 AM to 8:00 PM. Same-day emergency service is subject to technician availability, location, and current demand. Ask about emergency visit details when you call.',
+      },
+      {
+        q: 'My home is on a well. Can that affect my appliances?',
+        a: 'Yes. Grit and minerals from well water can clog the inlet screens on washers, dishwashers and refrigerator water valves, and low pressure can stop an ice maker from filling. The technician checks the screens and the valve during the visit.',
+      },
       {
         q: 'Do you come out to properties outside the village?',
         a: 'Yes. We serve the 76571 ZIP code, which reaches well beyond the village itself. Give us your address and we will confirm.',
