@@ -229,3 +229,15 @@ Call (254) 555-0147 · Request Service · Call early and we will give you the ea
 - [zip-codes.com: ZIP 76557](https://www.zip-codes.com/zip-code/76557/zip-code-76557.asp)
 - [Mother Neff State Park (Wikipedia)](https://en.wikipedia.org/wiki/Mother_Neff_State_Park)
 - [TPWD: Mother Neff State Park map and directions](https://tpwd.texas.gov/state-parks/mother-neff/map)
+
+## Content expansion (October 16, 2026)
+
+- Words in `<main>`: about 1,692 before (with the shared area template), about 2,146 after. "appliance repair" 15 mentions, "emergency" 7.
+- Title: "Appliance Repair Moody TX | Same-Day & Emergency" (48). Meta description 155 characters.
+- Shared area template (added with Belton): emergency section and the all-services table.
+- Moody only:
+  - Intro paragraph covering every service term and emergency priority.
+  - Town-specific emergency paragraph (north end of our routes along Highway 317, call early).
+  - "Fridge not cooling? Check these first": settings, blocked vents, the dollar-bill gasket test, the condenser fan and coils.
+  - "Dishwasher not cleaning? Check these first": filter, spray arms, hot water at the start, detergent and rinse aid.
+  - Two new FAQs: emergency appliance repair in Moody, a refrigerator not cooling.

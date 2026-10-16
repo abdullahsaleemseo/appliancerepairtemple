@@ -1302,15 +1302,18 @@ export const areas: Area[] = [
   {
     slug: 'moody-tx',
     name: 'Moody',
-    metaTitle: 'Appliance Repair Moody TX | Up Highway 317 from Temple',
+    metaTitle: 'Appliance Repair Moody TX | Same-Day & Emergency',
     metaDescription:
-      'Appliance repair in Moody, TX and the 76557 area for refrigerators, freezers, washers, dryers, dishwashers and ovens, from a team based in Temple. Call us.',
+      'Same-day and emergency appliance repair in Moody, TX for fridges, freezers, washers, dryers and ovens, in town and on rural roads. Subject to availability.',
     h1: 'Appliance Repair in Moody, TX, from Your Neighbors in Temple',
     intro: [
       'Appliance Repair Temple repairs refrigerators, freezers, washers, dryers, dishwashers, ovens and ranges in homes in and around Moody, TX. Same-day service is available, subject to technician availability, location, and current demand.',
       'Moody is a small city of about 1,400 people in southern McLennan County, up State Highway 317 from the Temple area. It counts as part of the Waco metro, but for appliance service it sits closer to our Temple base. The 76557 ZIP code covers about 123 square miles of farm and ranch country and reaches into Bell and Coryell counties, out past Mother Neff State Park on the Leon River.',
       'That means a Moody call might be a house in town or a home a few miles down a county road. The visit works the same either way. The technician tests the appliance, tells you what failed and what the repair involves, and starts only after your OK.',
+      'That covers refrigerator repair and freezer repair, washer and dryer repair, dishwasher repair, oven, stove and range repair, and over-the-range microwave repair in Moody, across the major brands. Urgent problems, such as a fridge warming up or a washer leaking across the floor, get priority as emergency appliance repair during business hours.',
     ],
+    emergencyNote:
+      'A refrigerator warming up with groceries inside, a barn freezer that quit or a washer leaking across the floor cannot wait. Urgent calls from Moody homes get priority scheduling during business hours. Moody is at the north end of our routes along Highway 317, so calling as early as you can helps.',
     travelNote:
       'Moody is at the north end of our area, so visits are planned around our north routes along Highway 317. Call early and we will give you the earliest open time for your address.',
     localPoints: [
@@ -1349,6 +1352,24 @@ export const areas: Area[] = [
         ],
       },
       {
+        heading: 'Fridge not cooling?',
+        accent: 'Check these first.',
+        paragraphs: [
+          'Check the temperature setting, since a dial bumped during cleaning is a common cause. The fresh food section should be at or below 40°F and the freezer around 0°F. Make sure food is not blocking the air vents inside, especially the vent between the freezer and the fresh food side.',
+          'Close the door on a dollar bill. If it slides out easily, the door gasket is not sealing there. Pull the fridge out a little and listen: the condenser fan near the bottom back should be running when the compressor runs. Vacuum the coils if they are covered in dust.',
+          'If the freezer is cold but the fridge is warm, or the fridge clicks every few minutes and never runs, those are signs of a fan, defrost or relay problem. Keep the doors closed and call.',
+        ],
+      },
+      {
+        heading: 'Dishwasher not cleaning?',
+        accent: 'Check these first.',
+        paragraphs: [
+          'Clean the filter at the bottom of the tub and rinse the spray arms under the tap, clearing any holes plugged with food or scale. Spin each arm by hand to make sure nothing on the rack stops it.',
+          'Run the hot water at the kitchen sink until it is warm before you start a cycle, so the dishwasher fills with hot water from the start. Use fresh detergent, keep the rinse aid dispenser full and do not block the detergent cup with a tall pan.',
+          'If dishes still come out gritty or the tub has water left in it, the drain pump, the wash motor or the inlet valve may be failing. Those are common dishwasher repairs.',
+        ],
+      },
+      {
         heading: 'How scheduling works',
         accent: 'for Moody.',
         paragraphs: [
@@ -1362,6 +1383,14 @@ export const areas: Area[] = [
     zipsVerified: true,
     nearby: ['Troy', 'Belton', "Morgan's Point Resort", 'Holland', 'Little River-Academy'],
     faqs: [
+      {
+        q: 'Do you offer emergency appliance repair in Moody?',
+        a: 'Yes. A refrigerator or freezer warming up with food inside, a washer or dishwasher leaking, or an appliance that smells like burning gets priority scheduling during business hours, Monday to Saturday, 8:00 AM to 8:00 PM. Same-day emergency service is subject to technician availability, location, and current demand. Ask about emergency visit details when you call.',
+      },
+      {
+        q: 'Why is my refrigerator not cooling?',
+        a: 'Start with the temperature setting, blocked vents inside, the door seal and dusty coils. If the freezer is cold but the fridge is warm, or it clicks and never runs, a fan, defrost part or start relay is the likely cause, and those are common repairs.',
+      },
       {
         q: 'Do you cover homes outside Moody city limits?',
         a: 'Yes, across the 76557 ZIP code, which includes parts of McLennan, Bell and Coryell counties. Give us your address and we will confirm.',
