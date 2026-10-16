@@ -12,3 +12,4 @@
 - Launch switches live in `src/config/launch.ts`: `siteMode`, `allowIndexing`, `siteUrl`, `gaId`. Change them there and push; no Vercel dashboard needed. A Vercel environment variable with the same purpose overrides the file, so do not add `NEXT_PUBLIC_ALLOW_INDEXING` on Vercel.
 - Secrets stay on Vercel only: `LEAD_WEBHOOK_URL`, `TURNSTILE_SECRET_KEY`.
 - Indexing stays off until the owner says to switch it on.
+- Commits must be authored as the owner (Abdullah Saleem, seo.abdullahsaleem@gmail.com; set in the repo git config). Vercel Hobby blocks deploys of commits by any other author on this private repo.
