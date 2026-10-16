@@ -5,7 +5,7 @@ import { pageMetadata } from '@/lib/seo';
 
 export const metadata = pageMetadata({
   title: `Privacy Policy | ${site.brandName}`,
-  description: `How ${site.brandName} collects, uses, shares and protects the information you share with us through ${site.domain} and by phone, and the choices you have about it.`,
+  description: `How ${site.brandName} collects, uses, shares and protects the information you share through ${site.domain} and by phone, and your choices.`,
   path: routes.privacy,
 });
 
