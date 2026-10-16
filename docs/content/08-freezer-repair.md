@@ -313,3 +313,15 @@ Call (254) 555-0147 · Request Service · Request freezer repair · Speak with o
 - [Danby garage-ready chest freezer specifications](https://www.danby.com/products/freezers/dcf072a3wdb-6)
 - [Mr. Appliance of East Texas: freezer repairs](https://www.mrappliance.com/east-texas/residential-services/kitchen/freezer-repairs/)
 - [Sears Home Services: freezer repair](https://www.searshomeservices.com/repair/galaxy/freezer)
+
+## Content expansion (October 16, 2026)
+
+- Words in `<main>`: about 1,776 before, about 2,767 after. "freezer repair" 8 to 17 mentions, "emergency" 0 to 9, "chest freezer" 9 to 12, "deep freezer" 0 to 3, "not freezing" 1 to 4.
+- Title: "Freezer Repair Temple TX | Same-Day & Emergency" (47). Meta description 149 characters, phone number removed.
+- New sections:
+  - "Emergency freezer repair in Temple": four urgent signs (warming up with food inside, clicking but not running, breaker trips or hot outlet, burning smell), four steps before the technician arrives, and the business-hours priority note. No emergency amounts are stated.
+  - "Freezer not freezing? What the symptom points to": a four-row table.
+  - "Power outages, storms and your freezer": keeping it closed and full, tripped GFCI outlets in garages, surge damage to relays and boards.
+  - "Freezer types we repair": chest (deep) freezers, frost-free and manual defrost uprights, garage-ready models.
+- Intro: two new paragraphs on freezer repair terms and emergency priority.
+- Five new FAQs: emergency freezer repair, running but not freezing, stopped after a storm or outage, whether a deep freezer is worth repairing, and freezer repair outside Temple.

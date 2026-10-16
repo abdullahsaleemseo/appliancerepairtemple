@@ -1297,13 +1297,15 @@ export const services: Service[] = [
     navLabel: 'Freezer Repair',
     icon: 'freezer',
     card: 'Upright or chest freezer not freezing or frosting up.',
-    metaTitle: 'Freezer Repair Temple TX | Chest & Upright Freezers',
+    metaTitle: 'Freezer Repair Temple TX | Same-Day & Emergency',
     metaDescription:
-      'Freezer not freezing, frosting up or running nonstop? Chest and upright freezer repair in Temple, TX. Same-day service available. Call (254) 555-0147.',
+      'Freezer not freezing, frosting up or running nonstop? Same-day and emergency chest and upright freezer repair in Temple, TX, subject to availability.',
     h1: 'Chest & Upright Freezer Repair in Temple, TX',
     intro: [
       'Freezer warming up, frosting over or running and never shutting off? Appliance Repair Temple repairs standalone chest and upright freezers in homes, garages and shops across Temple, TX. Same-day service is available, subject to technician availability, location, and current demand.',
       'A full freezer can hold a lot of meat, game and meals, so speed matters. Most freezer failures come down to a start relay, a thermostat, a fan, a defrost part on frost-free uprights or a worn lid or door seal. The technician tests those first, explains what failed and what the repair involves, and starts only after your OK. If a small or older chest freezer is not worth fixing, we will tell you.',
+      'Whether you call it a deep freezer, a garage freezer or a standalone freezer, the freezer repair starts the same way: check the temperature inside, listen to the compressor and fans, look at the coils and the seal, then test the parts that could be at fault.',
+      'A freezer full of food that is warming up is an emergency for your grocery budget. Freezer repair calls like that get priority as emergency appliance repair during business hours, so the food has a better chance of staying frozen.',
     ],
     symptomsHeading: 'Freezer problems and their usual causes',
     symptoms: [
@@ -1396,6 +1398,26 @@ export const services: Service[] = [
         a: 'On chest freezers, look on the back or the side near the bottom, or under the lid. On uprights, check the inside wall near the top or the door frame. A photo of the label works.',
       },
       {
+        q: 'Do you offer emergency freezer repair?',
+        a: 'Yes. A freezer warming up with food inside, one that clicks and will not run, or one that trips the breaker gets priority scheduling during business hours, Monday to Saturday, 8:00 AM to 8:00 PM. Same-day emergency service is subject to technician availability, location, and current demand. Ask about emergency visit details when you call.',
+      },
+      {
+        q: 'Why is my freezer running but not freezing?',
+        a: 'If you can hear it running, the usual causes are dirty condenser coils, a condenser fan that has stopped, an evaporator fan that has failed or frozen in ice, or a defrost failure on a frost-free upright. A compressor that runs but does not cool can also point to a sealed system problem, which the technician will explain plainly.',
+      },
+      {
+        q: 'My freezer stopped working after a storm or power outage. What should I check?',
+        a: 'Check the breaker, and in a garage check the GFCI outlet, since those often trip during storms. If the freezer has power but still does not run, or it clicks and stops, call us. Keep the lid or door closed in the meantime.',
+      },
+      {
+        q: 'Is it worth repairing a deep freezer?',
+        a: 'Usually yes, if the problem is a relay, thermostat, fan, defrost part or seal. If the compressor or the sealed system has failed on a small or older chest freezer, replacement often makes more sense, and the technician will tell you so.',
+      },
+      {
+        q: 'Do you offer freezer repair outside Temple?',
+        a: 'Yes. Along with Temple, we repair freezers in Belton, Killeen, Harker Heights, Nolanville, Morgan’s Point Resort, Salado, Troy, Little River-Academy, Rogers, Holland and Moody.',
+      },
+      {
         q: 'How much does freezer repair cost?',
         a: 'It depends on the freezer and the part, so we do not list prices online. Call to discuss your repair needs, with the brand, model number and type of freezer ready.',
       },
@@ -1414,6 +1436,23 @@ export const services: Service[] = [
           'Call us with the brand, the model number and whether it is a chest or an upright.',
         ],
         note: 'Do not try to speed up a defrost with a knife, ice pick or heat gun. Puncturing a cooling line ruins the freezer.',
+      },
+      {
+        type: 'emergency',
+        heading: 'Emergency freezer repair in Temple',
+        intro: 'A full freezer holds a safe temperature for about 48 hours with the lid closed, and less once it starts warming. These situations get priority scheduling during business hours. Same-day emergency freezer repair is available, subject to technician availability, location, and current demand.',
+        signs: [
+          { title: 'Warming up with food inside', text: 'The thermometer reads well above 0°F, food is getting soft, or the temperature alarm keeps going off.' },
+          { title: 'Clicking but not running', text: 'The compressor tries to start every few minutes and fails. Unplug it to protect the compressor.' },
+          { title: 'Breaker trips or hot outlet', text: 'The freezer trips the breaker or GFCI, or the plug or outlet feels hot. Stop using that outlet.' },
+          { title: 'Burning smell', text: 'A burning or electrical smell from the compressor area. Unplug it and do not use it until it is checked.' },
+        ],
+        steps: [
+          'Keep the lid or door closed to hold the cold in.',
+          'Put a thermometer inside so you know how fast it is warming.',
+          'Move the most valuable food to a cooler with ice or another freezer if it is climbing fast.',
+          'Write down the brand, model number and whether it is a chest or upright, then call.',
+        ],
       },
       {
         type: 'partsTable',
@@ -1486,6 +1525,36 @@ export const services: Service[] = [
           { title: 'Relay, fan and seal', text: 'The start relay, fans, thermostat and gasket are checked first, since they fail most.' },
           { title: 'Explain and approve', text: 'You hear what failed and whether the repair makes sense for your freezer. Work starts after your OK.' },
           { title: 'Repair and confirm', text: 'After the repair, the technician confirms it is cooling. A freezer can take several hours to get back down to 0°F.' },
+        ],
+      },
+      {
+        type: 'resultsGrid',
+        eyebrow: 'Freezer not freezing',
+        heading: 'Freezer not freezing? What the symptom points to',
+        intro: 'What you see and hear narrows the problem down. Note which of these matches your freezer before you call.',
+        rows: [
+          { see: 'Running, but warm inside', means: 'Dirty condenser coils, a stopped condenser fan or a failed evaporator fan.', fix: 'Clean around the coils and vents; fans are a routine freezer repair.' },
+          { see: 'Clicks every few minutes, never runs', means: 'The start relay or overload has failed, or less often the compressor.', fix: 'The relay is tested first; it is a quick part to replace.' },
+          { see: 'Upright: back wall caked in frost, food soft', means: 'The defrost system has failed, so ice is blocking the airflow.', fix: 'Defrost heaters, thermostats and controls are replaceable.' },
+          { see: 'Frost only around the lid or door edge', means: 'The gasket is worn or the lid is not closing square, letting humid air in.', fix: 'Gasket replacement fixes it and cuts the run time.' },
+        ],
+      },
+      {
+        type: 'prose',
+        heading: 'Power outages, storms and your freezer',
+        paragraphs: [
+          'Central Texas storms knock out power often enough that most freezer owners have been through it. Keep the lid or door closed while the power is out. A full freezer holds its temperature far longer than a half-empty one, so keeping it full, even with jugs of water, helps.',
+          'When the power comes back, check that the freezer actually restarted. Garage outlets are usually GFCI outlets, and they often trip during storms without anyone noticing. A freezer on a tripped outlet can sit warm for days before the smell gives it away.',
+          'If the freezer has power but clicks and stops, hums without cooling, or does not get back to 0°F within a day, it needs a look. A power surge can damage a start relay or a control board, both of which are common freezer repairs.',
+        ],
+      },
+      {
+        type: 'prose',
+        heading: 'Freezer types we repair',
+        paragraphs: [
+          'Chest freezers, often called deep freezers, are the most common second freezer in Temple homes. They are simple, efficient and usually manual defrost, which makes them practical to repair for many years.',
+          'Upright freezers take less floor space and are easier to organize. Many are frost-free, with a defrost heater, a defrost thermostat and a fan, which gives them a few more parts to fail. Manual defrost uprights work more like a chest freezer standing on end.',
+          'Garage-ready freezers are built to handle wider temperature swings. If you are not sure whether yours is rated for a garage, the technician can check the model during the visit.',
         ],
       },
       { type: 'repairOrReplace' },
