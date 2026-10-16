@@ -1570,13 +1570,15 @@ export const services: Service[] = [
     navLabel: 'Microwave Repair',
     icon: 'microwave',
     card: 'Over-the-range and built-in microwaves not heating.',
-    metaTitle: 'Microwave Repair Temple TX | Over-the-Range & Built-In',
+    metaTitle: 'Microwave Repair Temple TX | Same-Day & Emergency',
     metaDescription:
-      'Over-the-range or built-in microwave not heating, sparking or dead? Microwave repair in Temple, TX. Same-day service available. Call (254) 555-0147.',
+      'Over-the-range or built-in microwave not heating, sparking or dead? Same-day and emergency microwave repair in Temple, TX, subject to availability.',
     h1: 'Over-the-Range & Built-In Microwave Repair in Temple, TX',
     intro: [
       'Microwave running but not heating, sparking inside or completely dead? Appliance Repair Temple repairs over-the-range and built-in microwaves in homes across Temple, TX, including the vent fan and light on over-the-range models. Same-day service is available, subject to technician availability, location, and current demand.',
       'Microwaves look simple, but inside they run on high voltage. A failed door switch, a blown fuse, a diode, a capacitor or the magnetron is behind most no-heat calls, and those parts can hold a dangerous charge even after the unit is unplugged. The technician discharges the circuit safely, tests the parts, explains what failed and what the repair involves, and starts only after your OK.',
+      'Over-the-range microwave repair also covers the parts that make it a range hood: the vent fan, the cooktop light and their switches. Built-in microwave repair and wall oven combination units follow the same high-voltage rules, with more care taken to remove the unit from the cabinet.',
+      'A microwave that sparks, smokes, smells like burning or keeps running with the door open should not be used again until it is checked. Those calls get priority as emergency microwave repair during business hours.',
     ],
     symptomsHeading: 'Microwave problems we repair',
     symptoms: [
@@ -1659,6 +1661,26 @@ export const services: Service[] = [
         a: 'Grease-clogged filters make the fan work harder. Clean the filters first. If it still rattles, squeals or grinds, the fan motor or a blade may be failing, and both can be replaced.',
       },
       {
+        q: 'Do you offer emergency microwave repair?',
+        a: 'Yes. A microwave that sparks with nothing metal inside, smokes, smells like burning, keeps running with the door open or trips the breaker gets priority scheduling during business hours, Monday to Saturday, 8:00 AM to 8:00 PM. Same-day emergency service is subject to technician availability, location, and current demand. Ask about emergency visit details when you call.',
+      },
+      {
+        q: 'What should I do if there is a fire inside my microwave?',
+        a: 'Keep the door closed and turn the microwave off. Unplug it or switch off its breaker if you can do it safely. Keeping the door shut starves the fire of air. If the fire does not go out, leave and call 911. Do not use the microwave again until it has been checked.',
+      },
+      {
+        q: 'Why is my microwave sparking?',
+        a: 'Metal in the cavity, such as foil, a twist tie or a dish with metallic trim, is the first thing to rule out. With nothing metal inside, sparking usually comes from a burned or greasy waveguide cover or chipped interior paint. Stop using it until it is checked.',
+      },
+      {
+        q: 'Why does my microwave shut off in the middle of a cycle?',
+        a: 'Many microwaves have a thermal cutout that shuts them down when they run too hot. A blocked vent, a cooling fan that has failed or grease-clogged filters on an over-the-range model can trip it. A loose door switch or a control fault can also stop a cycle.',
+      },
+      {
+        q: 'Do you offer microwave repair outside Temple?',
+        a: 'Yes. Along with Temple, we repair over-the-range and built-in microwaves in Belton, Killeen, Harker Heights, Nolanville, Morgan’s Point Resort, Salado, Troy, Little River-Academy, Rogers, Holland and Moody.',
+      },
+      {
         q: 'How much does microwave repair cost?',
         a: 'It depends on the model and the part, so we do not list prices online. Call to discuss your repair needs with the brand and model number ready.',
       },
@@ -1729,6 +1751,23 @@ export const services: Service[] = [
         ],
       },
       {
+        type: 'emergency',
+        heading: 'Emergency microwave repair in Temple',
+        intro: 'A microwave that sparks, smokes or will not stop running is a fire and shock risk, and an over-the-range unit sits right above your cooktop. These situations get priority scheduling during business hours. Same-day emergency microwave repair is available, subject to technician availability, location, and current demand.',
+        signs: [
+          { title: 'Sparking with nothing metal inside', text: 'Flashes or arcing in the cavity, often from a burned waveguide cover or chipped interior paint.' },
+          { title: 'Smoke or burning smell', text: 'Smoke from the vents or cabinet, or an electrical smell that is not food. Keep the door closed and turn it off.' },
+          { title: 'Runs with the door open', text: 'The turntable keeps turning or the microwave keeps humming after the door is opened. A door switch has failed.' },
+          { title: 'Breaker trips when it heats', text: 'The breaker trips every time the microwave starts heating. Stop using it.' },
+        ],
+        steps: [
+          'Turn the microwave off and keep the door closed.',
+          'Unplug it or switch off its breaker if you can do it safely.',
+          'Do not open the cabinet; the capacitor can hold a dangerous charge.',
+          'Write down the brand, model number and any error code, then call.',
+        ],
+      },
+      {
         type: 'partsTable',
         heading: 'The microwave parts we test',
         rows: [
@@ -1757,6 +1796,27 @@ export const services: Service[] = [
           { title: 'Test the parts', text: 'Door switches, fuse, magnetron circuit, controls, fan and light are tested.' },
           { title: 'Explain and approve', text: 'You hear what failed and whether the repair makes sense for your microwave. Work starts after your OK.' },
           { title: 'Repair and test', text: 'After the repair, the microwave is run to confirm it heats, and the door is checked.' },
+        ],
+      },
+      {
+        type: 'resultsGrid',
+        eyebrow: 'Microwave not heating',
+        heading: 'Microwave not heating? What the symptom points to',
+        intro: 'How the microwave fails tells the technician where to start. Note which of these matches yours before you call.',
+        rows: [
+          { see: 'Runs, turns and lights up, but no heat', means: 'The magnetron, high-voltage diode or capacitor has failed, or a door switch is not engaging.', fix: 'High-voltage parts are tested by a technician only; most are replaceable.' },
+          { see: 'Heats weakly or unevenly', means: 'A magnetron losing output, a diode on its way out, or a turntable that has stopped turning.', fix: 'Check the tray first; the heating circuit is tested next.' },
+          { see: 'Stops in the middle of a cycle', means: 'The thermal cutout tripped from a blocked vent, a failed cooling fan or clogged filters.', fix: 'Clean the filters and clear the vents; fans and cutouts are standard parts.' },
+          { see: 'Dead after a pop or a door slam', means: 'A door switch failed and blew the main fuse.', fix: 'Both the fuse and the door switches are tested, so a new fuse does not blow again.' },
+        ],
+      },
+      {
+        type: 'prose',
+        heading: 'Microwaves we repair',
+        paragraphs: [
+          'Over-the-range microwaves are the most common setup in Temple kitchens. They mount to a wall plate and the cabinet above, and they double as the range hood, with a vent fan, a cooktop light and grease filters. That extra hardware is why over-the-range microwave repair usually makes more sense than replacement.',
+          'Built-in microwaves sit in a cabinet opening, often with a trim kit, and wall oven combinations pair a microwave above a wall oven in one unit. Both take more care to pull out, so give us the model number when you book.',
+          'Countertop microwaves are usually cheaper to replace than to repair. If yours is a countertop model, ask about it on the phone before booking a visit.',
         ],
       },
       { type: 'repairOrReplace' },

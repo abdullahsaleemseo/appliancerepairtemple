@@ -226,3 +226,14 @@ Call (254) 555-0147 · Request Service · Speak with our team about your applian
 - [Sears Home Services: Temple](https://www.searshomeservices.com/locations/appliance-repair/tx-temple/1212-marlandwood)
 - [Mr. Appliance East Texas: Whirlpool appliance repair](https://www.mrappliance.com/east-texas/about/brands-we-service/whirlpool-appliance-repair/)
 - [Thumbtack: appliance repair in Temple, TX](https://www.thumbtack.com/tx/temple/appliance-repair)
+
+## Content expansion (October 16, 2026)
+
+- Words in `<main>`: about 1,729 before, about 2,600 after. "microwave repair" 15 to 24 mentions, "emergency" 0 to 8, "over-the-range" 22 to 28, "built-in" 9 to 12, "sparking" 2 to 5.
+- Title: "Microwave Repair Temple TX | Same-Day & Emergency" (49). Meta description 147 characters, phone number removed.
+- New sections:
+  - "Emergency microwave repair in Temple": four urgent signs (sparking with nothing metal inside, smoke or burning smell, runs with the door open, breaker trips), four steps before the technician arrives, and the business-hours priority note. No emergency amounts are stated.
+  - "Microwave not heating? What the symptom points to": a four-row table.
+  - "Microwaves we repair": over-the-range, built-in with trim kits, wall oven combinations; countertop models are usually better replaced.
+- Intro: two new paragraphs on over-the-range and built-in repair and emergency priority.
+- Five new FAQs: emergency microwave repair, a fire inside the microwave (keep the door closed, call 911 if it does not go out), sparking, shutting off mid-cycle, and microwave repair outside Temple.
