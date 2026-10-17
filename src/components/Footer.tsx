@@ -99,6 +99,7 @@ export function Footer() {
             <ul className="mt-5 space-y-2.5">
               <li><Link href={routes.about} className={link}>About</Link></li>
               <li><Link href={routes.reviews} className={link}>Reviews</Link></li>
+              <li><Link href={routes.gallery} className={link}>Gallery</Link></li>
               <li><Link href={routes.brands} className={link}>Brands</Link></li>
               <li><Link href={routes.faq} className={link}>FAQs</Link></li>
               <li><Link href={routes.blog} className={link}>Repair tips</Link></li>

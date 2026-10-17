@@ -1,7 +1,9 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { canShow, claims, routes, site } from '@/config/site';
 import { brands, otherBrands } from '@/content/brands';
 import { homeFaqs } from '@/content/faqs';
+import { gallery } from '@/content/gallery';
 import { primaryServiceKeys, serviceHref, services } from '@/content/services';
 import type { ApplianceKey } from '@/content/types';
 import { AreaBlock } from '@/components/AreaList';
@@ -364,6 +366,54 @@ export default function HomePage() {
         </ul>
         <div className="mt-6">
           <PaymentNote dark />
+        </div>
+      </Section>
+
+      {/* Gallery preview */}
+      <Section tone="white" labelledBy="gallery-heading">
+        <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+          <SectionHeading
+            id="gallery-heading"
+            eyebrow="Gallery"
+            title="Inside the"
+            accent="repairs."
+            intro="Refrigerator ice makers, dryer rollers, dishwasher pumps, washer belts and ovens: a look at the parts behind the most common appliance repairs."
+            className="!mb-0"
+          />
+          <Link href={routes.gallery} className="link-arrow shrink-0">
+            View the full gallery
+          </Link>
+        </div>
+        <ul className="mt-10 grid grid-cols-2 gap-3 lg:grid-cols-4 lg:grid-rows-2">
+          {gallery.slice(0, 5).map((g, i) => (
+            <li key={g.src} className={i === 0 ? 'col-span-2 lg:row-span-2' : ''}>
+              <Link
+                href={routes.gallery}
+                className="group relative block h-full overflow-hidden rounded-card bg-canvas-2"
+                aria-label={`${g.caption}. View the gallery`}
+              >
+                <Image
+                  src={g.src}
+                  alt={g.alt}
+                  width={g.width}
+                  height={g.height}
+                  sizes={i === 0 ? '(min-width: 1024px) 50vw, 100vw' : '(min-width: 1024px) 25vw, 50vw'}
+                  className={`w-full object-cover transition duration-500 group-hover:scale-[1.04] ${i === 0 ? 'aspect-[3/2] lg:aspect-auto lg:h-full' : 'aspect-[4/3]'}`}
+                />
+                <span className="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink/80 to-transparent px-4 pb-3 pt-10 text-[14px] font-semibold text-white">
+                  {g.caption}
+                </span>
+              </Link>
+            </li>
+          ))}
+        </ul>
+        <div className="mt-8 text-center">
+          <Link
+            href={routes.gallery}
+            className="inline-flex min-h-[52px] items-center gap-2 rounded-full border border-ink/15 bg-white px-7 font-semibold text-ink transition hover:-translate-y-0.5 hover:border-ink/40"
+          >
+            View the full gallery <Icon name="arrow" className="h-4 w-4" strokeWidth={2.2} />
+          </Link>
         </div>
       </Section>
 

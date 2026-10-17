@@ -127,6 +127,7 @@ export const routes = {
   request: '/request-service/',
   faq: '/faq/',
   reviews: '/reviews/',
+  gallery: '/gallery/',
   blog: '/blog/',
   privacy: '/privacy-policy/',
   terms: '/terms-of-service/',

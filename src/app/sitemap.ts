@@ -28,6 +28,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     entry(routes.request, 0.7),
     entry(routes.faq, 0.5),
     entry(routes.reviews, 0.5),
+    entry(routes.gallery, 0.5),
     entry(routes.blog, 0.4),
     ...posts.map((p) => entry(postHref(p), 0.4, new Date(`${p.updated}T12:00:00`))),
     entry(routes.privacy, 0.1),
