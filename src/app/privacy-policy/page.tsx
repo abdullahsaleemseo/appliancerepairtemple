@@ -13,9 +13,6 @@ export default function PrivacyPage() {
   return (
     <LegalPage title="Privacy Policy" path={routes.privacy} updated="October 17, 2026">
       <p>
-        <strong>This website is owned and operated by Abdullah Saleem. Updated October 17, 2026.</strong>
-      </p>
-      <p>
         This policy explains what information {site.brandName} (“we”, “us”) collects through this website, how we use it, and who
         we share it with. We only collect what we need to respond to a repair request.
       </p>
@@ -101,6 +98,7 @@ export default function PrivacyPage() {
         ) : null}
         .
       </p>
+      <p>This website is owned and operated by Abdullah Saleem. Updated October 17, 2026.</p>
     </LegalPage>
   );
 }
