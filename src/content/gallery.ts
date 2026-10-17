@@ -68,7 +68,7 @@ export const gallery: GalleryImage[] = [
     height: 1024,
   },
   {
-    src: '/images/gallery/gas-cooktop-connection-repair-temple-tx.webp',
+    src: '/images/gallery/gas-cooktop-burner-repair-temple-tx.webp',
     alt: 'Technician in orange work gloves working on the burner assembly under a gas cooktop',
     caption: 'Working under a gas cooktop',
     service: 'oven',
