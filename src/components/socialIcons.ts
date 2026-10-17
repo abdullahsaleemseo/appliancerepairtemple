@@ -10,3 +10,14 @@ export const socialIconPaths = {
 } as const;
 
 export type SocialKey = keyof typeof socialIconPaths;
+
+/** Official brand colors, for showing each mark in color. */
+export const socialBrandColors: Record<SocialKey, string> = {
+  linkedin: '#0A66C2',
+  facebook: '#0866FF',
+  pinterest: '#BD081C',
+  instagram: '#FF0069',
+  x: '#000000',
+  tiktok: '#000000',
+  youtube: '#FF0000',
+};

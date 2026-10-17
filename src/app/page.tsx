@@ -16,6 +16,7 @@ import { PaymentNote } from '@/components/PaymentNote';
 import { PhoneLink } from '@/components/PhoneLink';
 import { ProblemPicker } from '@/components/ProblemPicker';
 import { ShareExperience } from '@/components/ShareExperience';
+import { FindUsOnline } from '@/components/FindUsOnline';
 import { Section, SectionHeading } from '@/components/Section';
 import { ServicesGrid } from '@/components/ServicesGrid';
 import { StatsStrip } from '@/components/StatsStrip';
@@ -491,8 +492,11 @@ export default function HomePage() {
       {/* Share your experience */}
       <ShareExperience />
 
+      {/* Our own profiles. Add keys here as more listings go live. */}
+      <FindUsOnline keys={['linkedin', 'facebook', 'pinterest', 'instagram', 'x', 'youtube']} />
+
       {/* FAQ */}
-      <Section labelledBy="faq-heading">
+      <Section tone="white" labelledBy="faq-heading">
         <div className="grid gap-12 lg:grid-cols-[1fr_1.5fr]">
           <div className="lg:sticky lg:top-32 lg:self-start">
             <SectionHeading id="faq-heading" eyebrow="FAQ" title="Questions before" accent="you call." />

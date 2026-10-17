@@ -70,14 +70,14 @@ export const site = {
   spanishSpoken: v(false),
 
   social: [
-    { key: 'facebook', name: 'Facebook', url: 'https://www.facebook.com/ApplianceRepairTemple' },
-    { key: 'instagram', name: 'Instagram', url: 'https://www.instagram.com/appliancerepairtemple/' },
-    { key: 'youtube', name: 'YouTube', url: 'https://www.youtube.com/@appliancerepairtemple' },
-    { key: 'tiktok', name: 'TikTok', url: 'https://www.tiktok.com/@appliancerepairtemple' },
-    { key: 'x', name: 'X', url: 'https://x.com/appliancere34' },
-    { key: 'pinterest', name: 'Pinterest', url: 'https://www.pinterest.com/appliancerepairtemple08/' },
-    { key: 'linkedin', name: 'LinkedIn', url: 'https://www.linkedin.com/company/appliance-repair-temple/' },
-  ] as { key: SocialKey; name: string; url: string }[],
+    { key: 'facebook', name: 'Facebook', handle: 'ApplianceRepairTemple', url: 'https://www.facebook.com/ApplianceRepairTemple' },
+    { key: 'instagram', name: 'Instagram', handle: '@appliancerepairtemple', url: 'https://www.instagram.com/appliancerepairtemple/' },
+    { key: 'youtube', name: 'YouTube', handle: '@appliancerepairtemple', url: 'https://www.youtube.com/@appliancerepairtemple' },
+    { key: 'tiktok', name: 'TikTok', handle: '@appliancerepairtemple', url: 'https://www.tiktok.com/@appliancerepairtemple' },
+    { key: 'x', name: 'X', handle: '@appliancere34', url: 'https://x.com/appliancere34' },
+    { key: 'pinterest', name: 'Pinterest', handle: 'appliancerepairtemple08', url: 'https://www.pinterest.com/appliancerepairtemple08/' },
+    { key: 'linkedin', name: 'LinkedIn', handle: 'appliance-repair-temple', url: 'https://www.linkedin.com/company/appliance-repair-temple/' },
+  ] as { key: SocialKey; name: string; handle: string; url: string }[],
 } as const;
 
 /**
