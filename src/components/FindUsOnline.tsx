@@ -31,7 +31,6 @@ export function FindUsOnline({ keys }: { keys: SocialKey[] }) {
                 <path d={socialIconPaths[p.key]} />
               </svg>
               <span className="mt-4 font-display text-lg font-bold tracking-[-0.02em] text-ink">{p.name}</span>
-              <span className="mt-1 max-w-full truncate text-[13px] text-ink-muted">{p.handle}</span>
               <span className="mt-4 inline-flex items-center gap-1.5 text-[13px] font-semibold text-ink-body transition group-hover:text-flame">
                 Visit <Icon name="arrow" className="h-3.5 w-3.5" strokeWidth={2.4} />
               </span>
