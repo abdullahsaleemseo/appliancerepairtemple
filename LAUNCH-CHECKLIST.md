@@ -28,6 +28,7 @@ Verified by the owner on Oct 15, 2026: Licensed & Insured, Same-Day Service, 4+ 
 - [x] Review card sections replaced with "Share your experience" prompts; feedback is shared by phone (Oct 16, 2026)
 - [ ] Real reviews in `src/content/reviews.ts` only with a source (platform link or screenshot) and date
 - [ ] Google Business Profile, Facebook and Yelp links in `reviewPlatforms` (adds "Review us on..." buttons)
+- [x] Social profiles in the footer and in Organization `sameAs` (Oct 17, 2026)
 - [x] Team, technician and service van photos on the About page
 - [x] About page story: owner confirmed the current "How we think" text is accurate; draft owner-story block removed (Oct 16, 2026)
 - [ ] "How we work" promises on the About page match how the business actually works

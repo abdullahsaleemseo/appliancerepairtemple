@@ -1,3 +1,4 @@
+import type { SocialKey } from '@/components/socialIcons';
 import { resolvedAllowIndexing, resolvedSiteMode, resolvedSiteUrl } from './launch';
 /**
  * Brand and market variables. Cloning the site to a new market starts here.
@@ -68,7 +69,15 @@ export const site = {
 
   spanishSpoken: v(false),
 
-  social: [] as { name: string; url: string }[],
+  social: [
+    { key: 'facebook', name: 'Facebook', url: 'https://www.facebook.com/ApplianceRepairTemple' },
+    { key: 'instagram', name: 'Instagram', url: 'https://www.instagram.com/appliancerepairtemple/' },
+    { key: 'youtube', name: 'YouTube', url: 'https://www.youtube.com/@appliancerepairtemple' },
+    { key: 'tiktok', name: 'TikTok', url: 'https://www.tiktok.com/@appliancerepairtemple' },
+    { key: 'x', name: 'X', url: 'https://x.com/appliancere34' },
+    { key: 'pinterest', name: 'Pinterest', url: 'https://www.pinterest.com/appliancerepairtemple08/' },
+    { key: 'linkedin', name: 'LinkedIn', url: 'https://www.linkedin.com/company/appliance-repair-temple/' },
+  ] as { key: SocialKey; name: string; url: string }[],
 } as const;
 
 /**

@@ -5,6 +5,7 @@ import { serviceLinks } from './nav';
 import { Logo } from './Logo';
 import { PhoneLink } from './PhoneLink';
 import { VerifyTag } from './Verify';
+import { socialIconPaths } from './socialIcons';
 
 const col = 'text-[12px] font-semibold uppercase tracking-[0.18em] text-white/40';
 const link = 'text-[15px] text-white/70 transition hover:text-white';
@@ -36,6 +37,25 @@ export function Footer() {
                 </p>
               ) : null}
             </div>
+            {site.social.length ? (
+              <ul aria-label={`${site.brandName} on social media`} className="mt-7 flex flex-wrap gap-2">
+                {site.social.map((s) => (
+                  <li key={s.url}>
+                    <a
+                      href={s.url}
+                      target="_blank"
+                      rel="noopener"
+                      aria-label={`${site.brandName} on ${s.name}`}
+                      className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-white/[0.04] text-white/70 transition hover:-translate-y-0.5 hover:border-flame hover:bg-flame hover:text-white"
+                    >
+                      <svg viewBox="0 0 24 24" className="h-4 w-4" fill="currentColor" aria-hidden="true">
+                        <path d={socialIconPaths[s.key]} />
+                      </svg>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            ) : null}
           </div>
 
           <div>
@@ -125,13 +145,6 @@ export function Footer() {
             <li><Link href={routes.privacy} className="hover:text-white">Privacy</Link></li>
             <li><Link href={routes.terms} className="hover:text-white">Terms</Link></li>
             <li><Link href={routes.accessibility} className="hover:text-white">Accessibility</Link></li>
-            {site.social.map((s) => (
-              <li key={s.url}>
-                <a href={s.url} className="hover:text-white" rel="noopener">
-                  {s.name}
-                </a>
-              </li>
-            ))}
           </ul>
         </div>
       </div>

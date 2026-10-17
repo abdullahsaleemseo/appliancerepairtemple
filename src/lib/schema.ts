@@ -18,6 +18,7 @@ export function organizationSchema() {
     name: site.brandName,
     url: site.url,
     logo: `${site.url}/brand/logo-on-light.svg`,
+    ...(site.social.length ? { sameAs: site.social.map((s) => s.url) } : {}),
   };
 }
 
