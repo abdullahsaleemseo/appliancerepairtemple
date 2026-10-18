@@ -240,3 +240,7 @@ Call (254) 615-2088 · Request Service · Call early and we will give you the ea
   - "While you wait for the technician": food safety times, closing valves after leaks, hang-drying, using the cooktop when the oven is out.
   - "Storms, surges and control boards": surge damage to boards and relays, whole-house surge protection by a licensed electrician, checking breakers and GFCI outlets.
   - Two new FAQs: emergency appliance repair in Rogers, an appliance that stopped after a storm.
+
+## Brand problems section (October 2026)
+
+- Six brand and model problem cards, after the call network's tip to target brand searches with the town name. Each card says what the problem usually means and what to check first, and links to the brand page and the service page. The brand mix is different on every town page. Written in referral voice.

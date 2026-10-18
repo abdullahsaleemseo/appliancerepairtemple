@@ -243,3 +243,7 @@ Call (254) 615-2088 · Request Service · Call to confirm the earliest open time
   - "Fish and game freezers: keep them running": 0°F, flat packs, defrost at about a quarter inch of frost, never chip ice, clicking means unplug and call.
   - "Lake homes that sit empty for weeks": close water valves, check freezers after storms, test on return, book between guest stays.
   - Two new FAQs: emergency appliance repair in Morgan's Point Resort, a fridge or ice maker after the house sat empty.
+
+## Brand problems section (October 2026)
+
+- Six brand and model problem cards, after the call network's tip to target brand searches with the town name. Each card says what the problem usually means and what to check first, and links to the brand page and the service page. The brand mix is different on every town page. Written in referral voice.

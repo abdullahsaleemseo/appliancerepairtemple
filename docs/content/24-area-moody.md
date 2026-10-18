@@ -241,3 +241,7 @@ Call (254) 615-2088 · Request Service · Call early and we will give you the ea
   - "Fridge not cooling? Check these first": settings, blocked vents, the dollar-bill gasket test, the condenser fan and coils.
   - "Dishwasher not cleaning? Check these first": filter, spray arms, hot water at the start, detergent and rinse aid.
   - Two new FAQs: emergency appliance repair in Moody, a refrigerator not cooling.
+
+## Brand problems section (October 2026)
+
+- Six brand and model problem cards, after the call network's tip to target brand searches with the town name. Each card says what the problem usually means and what to check first, and links to the brand page and the service page. The brand mix is different on every town page. Written in referral voice.

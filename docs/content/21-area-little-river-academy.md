@@ -238,3 +238,7 @@ Call (254) 615-2088 · Request Service · Call to confirm the earliest open time
   - "Keeping an older appliance going strong": the parts that wear, their warning signs, part availability.
   - "Range and oven care for busy kitchens": boil-overs and clicking burners, glass-top spills, self-clean on older ovens, the thermometer test.
   - Two new FAQs: emergency appliance repair in Little River-Academy, older washers and dryers.
+
+## Brand problems section (October 2026)
+
+- Six brand and model problem cards, after the call network's tip to target brand searches with the town name. Each card says what the problem usually means and what to check first, and links to the brand page and the service page. The brand mix is different on every town page. Written in referral voice.

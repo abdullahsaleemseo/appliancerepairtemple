@@ -241,3 +241,7 @@ Call (254) 615-2088 · Request Service · Call early and we will give you the ea
   - "What that smell is telling you": burning or fishy electrical smells, gas, and harmless smells (musty washer, sour fridge, hot dust in an oven).
   - "Shop and garage units in a cold snap": single-thermostat fridges in cold garages, garage-ready models, frozen hoses.
   - Two new FAQs: emergency appliance repair in Holland, a garage freezer that thaws in winter.
+
+## Brand problems section (October 2026)
+
+- Six brand and model problem cards, after the call network's tip to target brand searches with the town name. Each card says what the problem usually means and what to check first, and links to the brand page and the service page. The brand mix is different on every town page. Written in referral voice.

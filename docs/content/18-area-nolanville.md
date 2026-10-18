@@ -244,3 +244,7 @@ Call (254) 615-2088 · Request Service · Call to confirm the earliest open time
   - "Busy laundry rooms: signs to call early": squeals, thumps, banging, burning smells, two-cycle drying.
   - "Kids, pets and appliances": control locks that look like a dead appliance, pet hair on coils and in lint, toys and socks in pumps and filters.
   - Three new FAQs: emergency appliance repair in Nolanville, washer and dryer repair, control locks.
+
+## Brand problems section (October 2026)
+
+- Six brand and model problem cards, after the call network's tip to target brand searches with the town name. Each card says what the problem usually means and what to check first, and links to the brand page and the service page. The brand mix is different on every town page. Written in referral voice.
