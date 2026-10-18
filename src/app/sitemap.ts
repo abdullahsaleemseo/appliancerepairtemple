@@ -9,9 +9,15 @@ import { toolRoutes } from '@/config/tools';
 
 export const dynamic = 'force-static';
 
+/**
+ * Date of the last real content change across the site. Bump it when page copy changes; a build date
+ * would tell search engines every page changed on every deploy. Blog posts use their own dates.
+ */
+const contentUpdated = new Date('2026-10-18T12:00:00');
+const legalUpdated = new Date('2026-10-17T12:00:00');
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date();
-  const entry = (path: string, priority: number, lastModified: Date = now) => ({
+  const entry = (path: string, priority: number, lastModified: Date = contentUpdated) => ({
     url: absoluteUrl(path),
     lastModified,
     priority,
@@ -30,9 +36,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     entry(routes.faq, 0.5),
     entry(routes.blog, 0.4),
     ...posts.map((p) => entry(postHref(p), 0.4, new Date(`${p.updated}T12:00:00`))),
-    entry(routes.privacy, 0.1),
-    entry(routes.terms, 0.1),
-    entry(routes.disclaimer, 0.1),
-    entry(routes.accessibility, 0.1),
+    entry(routes.privacy, 0.1, legalUpdated),
+    entry(routes.terms, 0.1, legalUpdated),
+    entry(routes.disclaimer, 0.1, legalUpdated),
+    entry(routes.accessibility, 0.1, legalUpdated),
   ];
 }

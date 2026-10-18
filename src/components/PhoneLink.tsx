@@ -14,7 +14,7 @@ type Props = {
 export function PhoneLink({ className = '', withIcon = false, label, location, showTag = false }: Props) {
   return (
     <>
-      <a href={tel} className={className} data-call-location={location} aria-label={`Call ${site.brandName} at ${phoneDisplay}`}>
+      <a href={tel} className={className} data-call-location={location} aria-label={`${label ? label : 'Call'} ${phoneDisplay}, ${site.brandName}`}>
         {withIcon ? <Icon name="phone" className="h-5 w-5 shrink-0" strokeWidth={2} /> : null}
         <span>{label ? `${label} ${phoneDisplay}` : phoneDisplay}</span>
       </a>

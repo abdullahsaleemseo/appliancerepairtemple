@@ -36,7 +36,10 @@ with independent local providers. The network's review asked for the changes bel
 - [ ] GA4 ID set in `src/config/launch.ts` (`gaId`); check `click_to_call` (with `data-call-location`) in GA4 DebugView
 - [ ] Mark `click_to_call` as a key event in GA4 and import it into Google Ads if running ads
 - [ ] Remove `LEAD_WEBHOOK_URL` and any Turnstile keys from Vercel; the site no longer uses them
-- [ ] Search Console verified; sitemap submitted
+- [ ] Search Console verified (DNS record, or the meta tag value in `launch.googleVerification`); sitemap submitted; URL inspection run on the home page, the city page and one service page
+- [ ] Bing Webmaster Tools verified (import from Search Console, or `launch.bingVerification`); sitemap submitted
+- [ ] Vercel domains: `www.appliancerepairtemple.com` redirects permanently to the apex domain
+- [x] Technical SEO audit before indexing (Oct 18, 2026): og/twitter image on every page, favicon.ico, apple icon, web manifest, llms.txt and llms-full.txt, AI crawlers named in robots.txt, real sitemap dates, Organization `sameAs`, security headers, blog and tool internal links, Lighthouse SEO 100 and accessibility 100 on the tested pages
 - [ ] Rich Results Test on the home page, one service page and the FAQ page
 - [ ] PageSpeed Insights on mobile for home and one service page (target LCP < 2.5s, CLS < 0.1)
 - [x] `npm run check` passes

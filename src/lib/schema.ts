@@ -10,11 +10,14 @@ export function websiteSchema() {
     '@id': `${site.url}/#website`,
     name: site.brandName,
     url: site.url,
+    inLanguage: 'en-US',
     publisher: {
       '@type': 'Organization',
+      '@id': `${site.url}/#organization`,
       name: site.brandName,
       url: site.url,
-      logo: `${site.url}/brand/logo-on-light.svg`,
+      logo: `${site.url}/icon-512.png`,
+      sameAs: site.social.map((s) => s.url),
       contactPoint: {
         '@type': 'ContactPoint',
         telephone: site.phone.value.e164,
@@ -61,14 +64,8 @@ export function articleSchema(opts: { title: string; description: string; path: 
     datePublished: opts.published,
     dateModified: opts.updated,
     ...(opts.image ? { image: absoluteUrl(opts.image) } : {}),
-    author: { '@type': 'Organization', name: site.brandName, url: site.url },
-    publisher: {
-      '@type': 'Organization',
-      name: site.brandName,
-      url: site.url,
-      logo: `${site.url}/brand/logo-on-light.svg`,
-      contactPoint: { '@type': 'ContactPoint', telephone: site.phone.value.e164, contactType: 'appliance repair referrals' },
-    },
+    author: { '@type': 'Organization', '@id': `${site.url}/#organization`, name: site.brandName, url: site.url },
+    publisher: { '@type': 'Organization', '@id': `${site.url}/#organization`, name: site.brandName, url: site.url, logo: `${site.url}/icon-512.png` },
   };
 }
 

@@ -16,7 +16,7 @@ export function MobileCallBar() {
         className="flex min-h-[52px] items-center justify-center gap-2.5 rounded-full bg-flame text-base font-semibold text-white shadow-cta focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-flame-bright"
       >
         <Icon name="phone" className="h-5 w-5" strokeWidth={2} />
-        Call Now <span className="font-normal text-white/85">{phoneDisplay}</span>
+        Call Now <span className="font-normal text-white">{phoneDisplay}</span>
       </a>
     </div>
   );

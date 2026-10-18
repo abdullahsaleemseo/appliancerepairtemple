@@ -9,13 +9,17 @@ export function CallCard({
   appliance,
   dark = false,
   className = '',
+  headingLevel = 3,
 }: {
   location: string;
   title?: string;
   appliance?: string;
   dark?: boolean;
   className?: string;
+  /** Use 2 when the card sits directly under the page h1. */
+  headingLevel?: 2 | 3;
 }) {
+  const Heading = headingLevel === 2 ? 'h2' : 'h3';
   const points = [
     appliance ? `Say what your ${appliance} is doing and the brand.` : 'Say which appliance it is, the brand and what it is doing.',
     'Your call goes to a technician who works in your area.',
@@ -27,7 +31,7 @@ export function CallCard({
       className={`rounded-xl2 border p-6 sm:p-8 ${dark ? 'border-white/10 bg-white/[0.06] text-white backdrop-blur' : 'border-sand bg-white text-ink shadow-lift'} ${className}`}
     >
       <p className={`text-[12.5px] font-semibold uppercase tracking-[0.16em] ${dark ? 'text-flame-glow' : 'text-flame'}`}>Free call</p>
-      <h3 className={`mt-3 font-display text-2xl font-bold tracking-[-0.025em] ${dark ? 'text-white' : 'text-ink'}`}>{title}</h3>
+      <Heading className={`mt-3 font-display text-2xl font-bold tracking-[-0.025em] ${dark ? 'text-white' : 'text-ink'}`}>{title}</Heading>
       <a
         href={tel}
         data-call-location={`${location}_number`}

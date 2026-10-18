@@ -5,7 +5,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        ink: { DEFAULT: '#0A0F1C', 800: '#0F1626', 700: '#151E33', 600: '#1E2942', body: '#4B5263', muted: '#6B7180' },
+        ink: { DEFAULT: '#0A0F1C', 800: '#0F1626', 700: '#151E33', 600: '#1E2942', body: '#4B5263', muted: '#5E6472' },
         canvas: { DEFAULT: '#F6F3EE', 2: '#EFEAE2' },
         sand: '#E4DDD1',
         flame: { DEFAULT: '#C2500C', hover: '#A8430A', bright: '#FF7A3D', glow: '#FF9A5C', soft: '#FFF0E6' },

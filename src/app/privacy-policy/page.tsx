@@ -68,7 +68,9 @@ export default function PrivacyPage() {
       <p>
         The site uses a small number of cookies and similar browser storage. Google Analytics uses cookies to count visits and see
         how pages are used. Campaign tags from the link you arrived on are kept for the length of your visit, so a call can be
-        matched to the ad or page that led to it. You can block or delete cookies in your browser settings; the site will still work.
+        matched to the ad or page that led to it. The free tools keep your answers in this browser tab&rsquo;s session storage so a
+        reload does not lose them; nothing you enter in a tool is sent to the site, and closing the tab clears it. You can block or
+        delete cookies in your browser settings; the site will still work.
       </p>
 
       <h2>Security</h2>

@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from 'next';
 import './globals.css';
 import { indexingAllowed, routes, site } from '@/config/site';
+import { launch } from '@/config/launch';
 import { areas, areaHref } from '@/content/areas';
 import { brands, brandHref } from '@/content/brands';
 import { Analytics } from '@/components/Analytics';
@@ -18,6 +19,10 @@ export const metadata: Metadata = {
   applicationName: site.brandName,
   robots: indexingAllowed ? undefined : { index: false, follow: false },
   formatDetection: { telephone: false },
+  verification: {
+    ...(launch.googleVerification ? { google: launch.googleVerification } : {}),
+    ...(launch.bingVerification ? { other: { 'msvalidate.01': launch.bingVerification } } : {}),
+  },
 };
 
 export const viewport: Viewport = {

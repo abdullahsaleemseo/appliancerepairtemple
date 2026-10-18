@@ -18,6 +18,7 @@ import { TrustBadges } from '@/components/TrustBadges';
 import { VerifyTag } from '@/components/Verify';
 import { CallCard } from '@/components/CallCard';
 import { pageMetadata } from '@/lib/seo';
+import { toolPageList } from '@/content/tools/pages';
 
 export const dynamicParams = false;
 
@@ -622,6 +623,25 @@ export default async function ServicePage({ params }: Params) {
             </ul>
           </section>
 
+          <nav aria-labelledby="tools-heading" className="rounded-xl2 border border-sand bg-canvas-2/60 p-7 md:p-9">
+            <h2 id="tools-heading" className="font-display text-2xl font-bold tracking-[-0.02em] text-ink">
+              Free tools for {copy.noun} problems
+            </h2>
+            <ul className="mt-6 grid gap-3 sm:grid-cols-2">
+              {toolPageList.map((t) => (
+                <li key={t.key}>
+                  <Link href={t.path} className="group flex items-start gap-3 rounded-2xl bg-white p-4 shadow-card transition hover:-translate-y-0.5">
+                    <Icon name={t.card.icon} className="mt-0.5 h-5 w-5 shrink-0 text-flame" />
+                    <span>
+                      <span className="block font-semibold text-ink">{t.card.title}</span>
+                      <span className="block text-[14px] text-ink-muted">{t.card.text}</span>
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+
           <nav aria-labelledby="related-heading" className="rounded-xl2 border border-sand bg-white p-7 md:p-9">
             <h2 id="related-heading" className="font-display text-2xl font-bold tracking-[-0.02em] text-ink">
               Related repairs and areas
@@ -640,7 +660,7 @@ export default async function ServicePage({ params }: Params) {
                   {b.name} {s.name.toLowerCase()} repair
                 </Link>
               ))}
-              {areas.slice(0, 2).map((a) => (
+              {areas.map((a) => (
                 <Link key={a.slug} href={areaHref(a)} className="link-arrow">
                   appliance repair in {a.name}
                 </Link>

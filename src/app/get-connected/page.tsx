@@ -69,7 +69,7 @@ export default function RequestPage() {
 
       <div className="mx-auto -mt-8 grid max-w-site gap-8 px-4 pb-20 lg:grid-cols-[1.6fr_1fr] lg:px-6">
         <div className="relative">
-          <CallCard location="request_main" title="Call and describe the problem" />
+          <CallCard location="request_main" title="Call and describe the problem" headingLevel={2} />
         </div>
         <aside aria-label="Before you call" className="space-y-4 lg:pt-8">
           <div className="grain relative overflow-hidden rounded-card bg-ink p-7 text-white">

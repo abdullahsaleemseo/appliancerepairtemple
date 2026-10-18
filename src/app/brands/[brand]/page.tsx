@@ -13,6 +13,7 @@ import { HowItWorks } from '@/components/HowItWorks';
 import { Icon } from '@/components/Icon';
 import { Section, SectionHeading } from '@/components/Section';
 import { pageMetadata } from '@/lib/seo';
+import { toolRoutes } from '@/config/tools';
 
 export const dynamicParams = false;
 
@@ -186,6 +187,12 @@ export default async function BrandPage({ params }: Params) {
               </Link>
               <Link href={routes.brands} className="link-arrow">
                 All appliance brands
+              </Link>
+              <Link href={toolRoutes.errorCodes} className="link-arrow">
+                Look up a {b.name} error code
+              </Link>
+              <Link href={toolRoutes.symptoms} className="link-arrow">
+                No code? Check the symptoms
               </Link>
             </div>
           </div>

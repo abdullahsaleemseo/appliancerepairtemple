@@ -11,6 +11,8 @@ import { Icon } from '@/components/Icon';
 import { JsonLd } from '@/components/JsonLd';
 import { articleSchema } from '@/lib/schema';
 import { pageMetadata } from '@/lib/seo';
+import type { ToolKey } from '@/config/tools';
+import { toolPageList } from '@/content/tools/pages';
 
 export const dynamicParams = false;
 
@@ -24,8 +26,14 @@ const find = (slug: string) => posts.find((p) => p.slug === slug);
 export async function generateMetadata({ params }: Params) {
   const p = find((await params).slug);
   if (!p) return {};
-  return pageMetadata({ title: p.metaTitle ?? `${p.title} | ${site.shortName}`, description: p.metaDescription, path: postHref(p), type: 'article', image: p.image });
+  return pageMetadata({ title: p.metaTitle ?? `${p.title} | ${site.shortName}`, description: p.metaDescription, path: postHref(p), type: 'article', image: p.image, published: p.published, modified: p.updated });
 }
+
+/** Which free tools fit each post. Posts not listed get the symptom checker and the error code decoder. */
+const postTools: Record<string, ToolKey[]> = {
+  'repair-or-replace-appliance': ['cost', 'symptoms'],
+  'how-often-clean-dryer-vent': ['maintenance', 'symptoms'],
+};
 
 type PostCta = {
   title: string;
@@ -121,6 +129,11 @@ export default async function PostPage({ params }: Params) {
   const path = postHref(p);
   const svc = p.service === 'general' ? null : serviceByKey[p.service];
   const cta = postCta[p.slug] ?? fallbackCta;
+  // Related posts: same appliance first, then the newest others.
+  const related = [...posts.filter((o) => o.slug !== p.slug)]
+    .sort((x, y) => Number(y.service === p.service) - Number(x.service === p.service) || y.published.localeCompare(x.published))
+    .slice(0, 2);
+  const tools = toolPageList.filter((t) => (postTools[p.slug] ?? ['symptoms', 'errorCodes']).includes(t.key));
 
   return (
     <>
@@ -249,6 +262,27 @@ export default async function PostPage({ params }: Params) {
             <p className="mt-10 text-sm text-ink-muted">
               {cta.note}
             </p>
+
+            <nav aria-labelledby="keep-reading" className="mt-14 border-t border-sand pt-10">
+              <h2 id="keep-reading" className="font-display text-[26px] font-bold tracking-[-0.03em] text-ink">
+                Keep reading
+              </h2>
+              <ul className="mt-6 grid gap-3 sm:grid-cols-2">
+                {[
+                  ...related.map((r) => ({ href: postHref(r), title: r.title, kind: 'Repair tip' })),
+                  ...tools.map((t) => ({ href: t.path, title: t.card.title, kind: 'Free tool' })),
+                  ...(svc ? [{ href: serviceHref(svc.key), title: `${svc.name} repair in ${site.city}`, kind: 'Repair guide' }] : []),
+                  { href: routes.cityPage, title: `Appliance repair in ${site.city}, ${site.stateAbbr}`, kind: 'Overview' },
+                ].map((l) => (
+                  <li key={l.href}>
+                    <Link href={l.href} className="card group flex h-full flex-col p-5 transition hover:-translate-y-0.5 hover:shadow-lift">
+                      <span className="text-[12px] font-semibold uppercase tracking-[0.14em] text-flame">{l.kind}</span>
+                      <span className="mt-1 font-display text-[17px] font-semibold leading-snug text-ink">{l.title}</span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
           </div>
         </div>
       </article>

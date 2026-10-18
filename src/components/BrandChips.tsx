@@ -34,7 +34,7 @@ export function BrandMarquee({ names }: { names: string[] }) {
           <li
             key={`${n}-${i}`}
             aria-hidden={i >= names.length ? true : undefined}
-            className="whitespace-nowrap font-display text-[28px] font-bold tracking-[-0.03em] text-ink/30 transition hover:text-ink md:text-[34px]"
+            className="whitespace-nowrap font-display text-[28px] font-bold tracking-[-0.03em] text-ink/50 transition hover:text-ink md:text-[34px]"
           >
             {n}
           </li>

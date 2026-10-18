@@ -6,12 +6,16 @@
  * - allowIndexing: true lets search engines index the real domain. Only works together with siteMode 'production'.
  *   *.vercel.app URLs stay noindex regardless (see src/middleware.ts).
  * - gaId: Google Analytics 4 measurement ID (G-XXXXXXX). Empty disables analytics.
+ * - googleVerification / bingVerification: the content value of the HTML-tag verification method in
+ *   Google Search Console and Bing Webmaster Tools. Empty adds no tag (DNS verification needs none).
  */
 export const launch = {
   siteMode: 'production' as 'production' | 'draft',
   allowIndexing: false,
   siteUrl: 'https://appliancerepairtemple.com',
   gaId: '',
+  googleVerification: '',
+  bingVerification: '',
 };
 
 const env = (v: string | undefined) => (v && v.trim() ? v.trim() : undefined);
