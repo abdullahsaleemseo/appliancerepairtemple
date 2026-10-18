@@ -14,7 +14,7 @@ export const launch = {
   allowIndexing: true,
   siteUrl: 'https://appliancerepairtemple.com',
   gaId: '',
-  googleVerification: '',
+  googleVerification: 'RwkxEOVXQbmWsYSSTFEyMZqxZW3O9lZGAp0PaSfnfdM',
   bingVerification: '',
 };
 
