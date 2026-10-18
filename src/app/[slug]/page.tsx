@@ -4,7 +4,7 @@ import { routes, site } from '@/config/site';
 import { areas, areaHref } from '@/content/areas';
 import { brands, brandHref } from '@/content/brands';
 import { serviceByKey, serviceHref, services } from '@/content/services';
-import type { Service, ServiceBlock } from '@/content/types';
+import type { ApplianceKey, Service, ServiceBlock } from '@/content/types';
 import { BrandChips } from '@/components/BrandChips';
 import { CtaRow } from '@/components/Buttons';
 import { FaqList } from '@/components/FaqList';
@@ -36,18 +36,111 @@ export async function generateMetadata({ params }: Params) {
 }
 
 const defaultProcess = [
-  { title: 'Call', text: 'Call the number on this page and describe the problem to get connected with a local appliance repair pro.' },
-  { title: 'Diagnose', text: 'A local technician will usually test the parts most likely to have failed and find the fault.' },
-  { title: 'Ask first', text: 'A good technician explains what failed and what the repair involves before starting. Ask for that.' },
+  { title: 'Call', text: 'Call the number on this page, name the appliance and the brand, and describe what it is doing.' },
+  { title: 'Diagnose', text: 'A technician will usually test the parts most likely to have failed and find the fault.' },
+  { title: 'Ask first', text: 'A good technician explains what failed and what the repair involves before starting.' },
   { title: 'Repair and test', text: 'After a part is replaced, ask the technician to run the appliance so you can see the fix work.' },
 ];
+
+/** Appliance-specific copy for the shared parts of the template, so no two service pages repeat the same line. */
+type PageCopy = {
+  noun: string;
+  sidebarTitle: string;
+  inlineTitle: string;
+  emergencyNote: string;
+  beforeHeading: string;
+  askQuestion: string;
+  finalTitle: string;
+  finalAccent: string;
+  finalText: string;
+};
+
+const pageCopy: Record<ApplianceKey, PageCopy> = {
+  refrigerator: {
+    noun: 'refrigerator',
+    sidebarTitle: 'Refrigerator warm or leaking?',
+    inlineTitle: 'Call about your refrigerator',
+    emergencyNote: 'Emergency help for a warm or leaking refrigerator may be available from local providers; say it is urgent when you call.',
+    beforeHeading: 'Protect the food while you wait',
+    askQuestion: 'While the fridge is pulled out, can you check the condenser coils and the door gaskets too?',
+    finalTitle: 'Fridge still warm?',
+    finalAccent: 'Call before the food turns.',
+    finalText: 'Have the brand, the model number and the fresh-food temperature handy. Settle the price and any warranty before the panels come off.',
+  },
+  freezer: {
+    noun: 'freezer',
+    sidebarTitle: 'Freezer thawing or frosting up?',
+    inlineTitle: 'Call about your freezer',
+    emergencyNote: 'Emergency help for a thawing chest or upright freezer may be available from local providers; tell them how fast the thermometer is climbing.',
+    beforeHeading: 'Keep the cold in until it is checked',
+    askQuestion: 'Is my garage within the room temperature range this freezer is rated for?',
+    finalTitle: 'Freezer climbing past 0°F?',
+    finalAccent: 'Keep the lid shut and call.',
+    finalText: 'Say whether it is a chest or an upright and what the thermometer reads. Ask about pricing and warranty coverage before any part is ordered.',
+  },
+  washer: {
+    noun: 'washer',
+    sidebarTitle: 'Washer leaking or full of water?',
+    inlineTitle: 'Call about your washer',
+    emergencyNote: 'Emergency help for a leaking or flooded washer may be available from local providers; close both water valves before you call.',
+    beforeHeading: 'Limit the water damage first',
+    askQuestion: 'Should the fill hoses be replaced while the washer is pulled away from the wall?',
+    finalTitle: 'Washer stuck mid-cycle?',
+    finalAccent: 'Call and say where it stopped.',
+    finalText: 'Mention top-load or front-load, the brand and any code on the display. Get the price and any warranty terms before the machine is moved.',
+  },
+  dryer: {
+    noun: 'dryer',
+    sidebarTitle: 'Dryer cold, slow or squealing?',
+    inlineTitle: 'Call about your dryer',
+    emergencyNote: 'Emergency help for a dryer that smells like burning may be available from local providers; leave it off and say it is urgent.',
+    beforeHeading: 'Make the dryer safe first',
+    askQuestion: 'Did a restricted vent cause this failure, and what should be done about the vent run?',
+    finalTitle: 'Clothes still damp after an hour?',
+    finalAccent: 'Call about the dryer.',
+    finalText: 'Say whether it is gas or electric and what you felt at the vent hood outside. Ask what the repair will cost, and about any warranty, before work starts.',
+  },
+  dishwasher: {
+    noun: 'dishwasher',
+    sidebarTitle: 'Dishwasher not draining or leaking?',
+    inlineTitle: 'Call about your dishwasher',
+    emergencyNote: 'Emergency help for a dishwasher leaking under the cabinets may be available from local providers; mention any water near the wiring.',
+    beforeHeading: 'Shut off power and water first',
+    askQuestion: 'Is the drain hose high loop or air gap set up the way the installation manual asks?',
+    finalTitle: 'Water sitting in the tub?',
+    finalAccent: 'Call about the dishwasher.',
+    finalText: 'Have the model number from the door edge and a note on what the last load looked like. Agree on the price and any warranty before the dishwasher comes out.',
+  },
+  oven: {
+    noun: 'oven or stove',
+    sidebarTitle: 'Oven not heating or burner out?',
+    inlineTitle: 'Call about your oven or stove',
+    emergencyNote: 'Emergency help for an oven that will not shut off or a burner stuck on high may be available from local providers; cut the power first.',
+    beforeHeading: 'Shut it down safely',
+    askQuestion: 'Is the anti-tip bracket engaged, and can it be checked before the range goes back in place?',
+    finalTitle: 'Oven cold at dinner time?',
+    finalAccent: 'Call about the range.',
+    finalText: 'Say gas or electric, and whether the problem is in the oven or on the cooktop. Ask about cost and any warranty on the part before the range is moved.',
+  },
+  microwave: {
+    noun: 'microwave',
+    sidebarTitle: 'Microwave not heating or sparking?',
+    inlineTitle: 'Call about your microwave',
+    emergencyNote: 'Emergency help for a microwave that sparks or smokes may be available from local providers; keep the door closed and the power off.',
+    beforeHeading: 'Make it safe, then call',
+    askQuestion: 'Is this part still made for my model, and does repair make more sense than a new over-the-range unit?',
+    finalTitle: 'Microwave humming but cold?',
+    finalAccent: 'Call before you open anything.',
+    finalText: 'Say whether it is over-the-range, built-in or countertop, and the brand. Ask about the price and any warranty before the unit comes off the wall.',
+  },
+};
 
 /** Layout for services that have not been given their own block order yet. */
 const defaultBlocks: ServiceBlock[] = [
   { type: 'symptoms' },
   { type: 'callCard' },
   { type: 'diagnostic' },
-  { type: 'process', heading: 'How getting connected works', steps: defaultProcess },
+  { type: 'process', heading: 'How a repair call works', steps: defaultProcess },
   { type: 'repairOrReplace' },
   { type: 'brands' },
   { type: 'faq' },
@@ -65,6 +158,7 @@ function Heading({ id, children }: { id: string; children: React.ReactNode }) {
 
 function Block({ block, s, index }: { block: ServiceBlock; s: Service; index: number }) {
   const id = `${block.type}-${index}`;
+  const copy = pageCopy[s.key];
   switch (block.type) {
     case 'quickAnswer':
       return (
@@ -103,7 +197,7 @@ function Block({ block, s, index }: { block: ServiceBlock; s: Service; index: nu
             Symptom checker
           </p>
           <Heading id={id}>{s.symptomsHeading}</Heading>
-          <p className="mt-4 text-ink-body">Tap the one that sounds like yours to see the usual cause.</p>
+          <p className="mt-4 text-ink-body">Tap the one that sounds like your {copy.noun} to see the usual cause.</p>
           <div className="mt-8 grid gap-3 md:grid-cols-2">
             {s.symptoms.map((sym, i) => (
               <details key={sym.title} className="group rounded-2xl border border-sand bg-white transition open:border-ink/20 open:shadow-card">
@@ -128,7 +222,7 @@ function Block({ block, s, index }: { block: ServiceBlock; s: Service; index: nu
     case 'callCard':
       return (
         <div className="lg:hidden">
-          <CallCard location={`service_${s.key}_inline`} title={`Get connected for ${s.name.toLowerCase()} repair`} appliance={s.name.toLowerCase()} />
+          <CallCard location={`service_${s.key}_inline`} title={copy.inlineTitle} appliance={copy.noun} />
         </div>
       );
 
@@ -212,7 +306,7 @@ function Block({ block, s, index }: { block: ServiceBlock; s: Service; index: nu
             </ul>
             <div className="grain relative self-start overflow-hidden rounded-card bg-ink p-6 text-white md:p-7">
               <div aria-hidden="true" className="pointer-events-none absolute -right-16 -top-16 h-48 w-48 rounded-full bg-flame/30 blur-[70px]" />
-              <h3 className="relative font-display text-lg font-bold tracking-[-0.02em] text-white">Before the technician arrives</h3>
+              <h3 className="relative font-display text-lg font-bold tracking-[-0.02em] text-white">{copy.beforeHeading}</h3>
               <ol className="relative mt-4 space-y-2.5">
                 {block.steps.map((t, i) => (
                   <li key={t.slice(0, 24)} className="flex gap-3 text-[14.5px] text-white/75">
@@ -222,7 +316,7 @@ function Block({ block, s, index }: { block: ServiceBlock; s: Service; index: nu
                 ))}
               </ol>
               <p className="relative mt-5 text-[13.5px] text-white/55">
-                Emergency help may be available from local providers. Say it is urgent when you call.
+                {copy.emergencyNote}
               </p>
               <p className="relative mt-4">
                 <PhoneLink location={`service_${s.key}_emergency`} withIcon label="Call now" className="inline-flex items-center gap-2 font-semibold text-white underline decoration-flame underline-offset-4" />
@@ -332,12 +426,12 @@ function Block({ block, s, index }: { block: ServiceBlock; s: Service; index: nu
           <Heading id={id}>
             {block.heading ?? (
               <>
-                {s.name} brands <span className="accent text-flame">local pros work on</span>
+                {s.name} brands <span className="accent text-flame">technicians work on</span>
               </>
             )}
           </Heading>
           <p className="mb-6 mt-4 text-ink-body">
-            {block.intro ?? 'Don’t see yours? Call and ask whether a local pro works on it. Have the model number ready if you can.'}
+            {block.intro ?? `Don’t see your ${copy.noun} brand? Call and ask. Have the model number ready if you can.`}
           </p>
           <BrandChips names={s.brands} />
           {block.styles ? (
@@ -351,7 +445,7 @@ function Block({ block, s, index }: { block: ServiceBlock; s: Service; index: nu
             </ul>
           ) : null}
           <p className="mt-6 text-sm text-ink-muted">
-            Appliance Repair Temple is a referral service that connects homeowners with independent local repair providers. It is not affiliated with any appliance manufacturer.
+            Appliance Repair Temple is not affiliated with {s.brands.slice(0, 2).join(', ')} or any other {copy.noun} manufacturer. Brand names are listed to describe the appliances technicians work on.
           </p>
         </section>
       );
@@ -478,6 +572,7 @@ export default async function ServicePage({ params }: Params) {
   const relatedBrands = brands.filter((b) => b.appliances.some((a) => a.key === s.key));
   const [lead, ...rest] = s.intro;
   const blocks = s.blocks ?? defaultBlocks;
+  const copy = pageCopy[s.key];
 
   return (
     <>
@@ -516,13 +611,14 @@ export default async function ServicePage({ params }: Params) {
 
           <section aria-labelledby="ask-heading" className="rounded-xl2 border border-sand bg-white p-7 md:p-9">
             <h2 id="ask-heading" className="font-display text-2xl font-bold tracking-[-0.02em] text-ink">
-              Questions to ask a {s.name.toLowerCase()} repair provider
+              Questions to ask the technician before the {copy.noun} repair starts
             </h2>
             <ul className="prose-copy mt-4">
-              <li>Is there a charge for the diagnostic visit, and does it go toward the repair?</li>
+              <li>Is there a charge to diagnose the {copy.noun}, and does it go toward the repair?</li>
               <li>Can you show me proof of license and insurance for this kind of work?</li>
-              <li>What failed, what will the repair involve, and what will it cost before you start?</li>
+              <li>What failed on the {copy.noun}, what will the repair involve, and what will it cost before you start?</li>
               <li>Is there a warranty on the part and on the labor, and how long does it last?</li>
+              <li>{copy.askQuestion}</li>
             </ul>
           </section>
 
@@ -553,18 +649,18 @@ export default async function ServicePage({ params }: Params) {
           </nav>
         </div>
 
-        <aside className="hidden lg:block" aria-label="Call to get connected">
+        <aside className="hidden lg:block" aria-label={`Call about ${copy.noun} repair`}>
           <div className="sticky top-28">
-            <CallCard location={`service_${s.key}_sidebar`} title={`Get connected for ${s.name.toLowerCase()} repair`} appliance={s.name.toLowerCase()} />
+            <CallCard location={`service_${s.key}_sidebar`} title={copy.sidebarTitle} appliance={copy.noun} />
           </div>
         </aside>
       </div>
 
       <FinalCta
-        title={`${s.name} acting up?`}
-        accent="Get connected with a local pro."
-        text="Call and describe the problem to be connected with an independent local appliance repair provider. Ask about pricing and any warranty before work starts."
-        appliance={s.name.toLowerCase()}
+        title={copy.finalTitle}
+        accent={copy.finalAccent}
+        text={copy.finalText}
+        appliance={copy.noun}
         formId={`service_${s.key}_final`}
       />
     </>
