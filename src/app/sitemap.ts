@@ -33,6 +33,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...posts.map((p) => entry(postHref(p), 0.4, new Date(`${p.updated}T12:00:00`))),
     entry(routes.privacy, 0.1),
     entry(routes.terms, 0.1),
+    entry(routes.disclaimer, 0.1),
     entry(routes.accessibility, 0.1),
   ];
 }

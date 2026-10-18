@@ -145,6 +145,7 @@ export function Footer() {
           <ul className="flex flex-wrap gap-x-5 gap-y-2">
             <li><Link href={routes.privacy} className="hover:text-white">Privacy</Link></li>
             <li><Link href={routes.terms} className="hover:text-white">Terms</Link></li>
+            <li><Link href={routes.disclaimer} className="hover:text-white">Disclaimer</Link></li>
             <li><Link href={routes.accessibility} className="hover:text-white">Accessibility</Link></li>
           </ul>
         </div>

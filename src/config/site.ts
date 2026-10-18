@@ -131,5 +131,6 @@ export const routes = {
   blog: '/blog/',
   privacy: '/privacy-policy/',
   terms: '/terms-of-service/',
+  disclaimer: '/disclaimer/',
   accessibility: '/accessibility/',
 } as const;
