@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { routes, site } from '@/config/site';
+import { phoneDisplay, routes, site } from '@/config/site';
 import { brands, otherBrands } from '@/content/brands';
 import { homeFaqs } from '@/content/faqs';
 import { primaryServiceKeys, serviceHref, services } from '@/content/services';
@@ -21,8 +21,8 @@ import { TrustBadges } from '@/components/TrustBadges';
 import { pageMetadata } from '@/lib/seo';
 
 export const metadata = pageMetadata({
-  title: `Appliance Repair Temple TX | Emergency Help & Local Pros`,
-  description: `Appliance repair in Temple, TX for refrigerators, washers, dryers, dishwashers, ovens and freezers. Call to get connected with an independent local pro.`,
+  title: `Appliance Repair Temple TX | Fridge Warm? Washer Leaking?`,
+  description: `Fridge not cooling, washer won't drain or dryer not heating? Whirlpool, GE, Samsung and LG appliance repair in Temple, TX and Bell County. Call ${phoneDisplay}.`,
   path: '/',
 });
 
@@ -70,8 +70,8 @@ const problems: { title: string; text: string; key: ApplianceKey }[] = [
 ];
 
 const steps = [
-  { title: 'Call the number on this site', text: 'Describe the appliance, the brand and what it is doing. The call is free, and having the model number label handy helps.' },
-  { title: 'Get connected with a local pro', text: 'Your call is connected with an independent appliance repair provider serving your area. Ask about availability, pricing and licensing.' },
+  { title: 'Call and describe the problem', text: 'Say the brand, the appliance and what it is doing. The call is free, and the model number label makes the conversation easier.' },
+  { title: 'Talk with a technician', text: 'The call goes to an appliance repair business that works in your part of Bell County. Ask about availability, pricing and licensing before you agree to anything.' },
   { title: 'Diagnosis at your home', text: 'A good technician checks the appliance, tests the likely parts, and explains what failed and what the repair involves. Ask for that.' },
   { title: 'Repair and test', text: 'Only approve the work once you understand it. Before the technician leaves, ask them to run the appliance so you can see that it works.' },
 ];
@@ -81,7 +81,7 @@ const emergencies = [
   { title: 'Food at risk', text: 'A refrigerator or freezer warming up while it is full. A closed refrigerator keeps food safe for about four hours.' },
   { title: 'Burning smell, smoke or sparks', text: 'From any appliance, especially a dryer, range or microwave. Switch it off at the breaker and do not use it again until it is checked.' },
   { title: 'A range or oven that will not turn off', text: 'A stuck burner, element or control. Switch off the breaker for the range and keep the area clear.' },
-  { title: 'A washer full of water', text: 'Stopped mid-cycle with the door locked or the tub full. Unplug it, then drain it through the pump filter or call to get connected with a local pro.' },
+  { title: 'A washer full of water', text: 'Stopped mid-cycle with the door locked or the tub full. Unplug it, then drain it through the pump filter, or call and say the tub is still full.' },
   { title: 'No way to cook or wash for a family', text: 'A dead range, a broken washer in a busy household or a dishwasher out before a holiday. Say it is urgent when you call.' },
 ];
 
@@ -102,22 +102,22 @@ const maintenance = [
   { appliance: 'Microwave', habit: 'Clean the interior and replace the grease filter on over-the-range models', often: 'Monthly; filter as the manual says' },
 ];
 
-/** How the referral service works and what to check before hiring any provider. */
+/** How the line works (the one place the homepage explains the referral model) and what to check before hiring anyone. */
 const lookFor: { icon: IconName; title: string; text: string }[] = [
   {
     icon: 'phone',
-    title: 'How the free call works',
-    text: `Call the number on this site and describe your appliance and the problem. ${site.brandName} connects your call with an independent appliance repair provider serving ${site.city} and ${site.county}. The call costs you nothing.`,
+    title: 'How the call works',
+    text: `${site.brandName} is a free referral service, not a repair company. You describe the appliance and the problem, and the call is routed to an appliance repair business that works in ${site.city} and ${site.county}. That business sets its own availability, pricing and terms.`,
   },
   {
     icon: 'tool',
-    title: 'Independent local providers',
-    text: `${site.brandName} is a referral service, not a repair company. The providers you reach are independent businesses. They set their own availability, pricing and terms, so ask about each one directly.`,
+    title: 'Ask who will do the work',
+    text: 'Get the name of the business you are speaking with, and ask whether the technician coming out works on your brand and type of appliance. Write the name down with the date of the call.',
   },
   {
     icon: 'shield',
     title: 'Ask about the license',
-    text: 'Ask the pro what licensing they hold for the work, especially for gas appliances and anything wired into your home. Check what the State of Texas and your city require for that type of repair.',
+    text: 'Ask the technician what licensing they hold for the work, especially for gas appliances and anything wired into your home. Check what the State of Texas and your city require for that type of repair.',
   },
   {
     icon: 'check',
@@ -161,7 +161,7 @@ export default function HomePage() {
                 <span className="h-1.5 w-1.5 rounded-full bg-mint-bright" />
                 Free call
               </span>
-              Local appliance repair pros across {site.city} &amp; {site.county}
+              {site.city}&rsquo;s appliance repair line for {site.county}
             </p>
             <h1 className="h-display mt-6 text-[2.9rem] text-white sm:text-[4.2rem] lg:text-[4.4rem] xl:text-[4.75rem]">
               Appliance Repair in {site.city}, {site.stateAbbr}
@@ -170,9 +170,9 @@ export default function HomePage() {
               without the guesswork.
             </p>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/70 md:text-xl lg:text-lg xl:text-xl">
-              {site.brandName} is a free referral service. One call connects you with an independent local appliance repair pro for
-              refrigerators, washers, dryers, dishwashers, ovens and freezers in homes across Temple, TX and nearby Bell County towns.
-              Describe the problem when you call. Emergency help may be available from local providers.
+              Fridge running warm? Washer stuck full of water? Dryer tumbling cold? {site.brandName} is {site.city}&rsquo;s phone line
+              for home appliance repair. Describe the problem once and talk with a technician who handles refrigerators, washers, dryers,
+              dishwashers, ovens and freezers in Temple, Belton, Killeen and the rest of {site.county}.
             </p>
             <div className="mt-8">
               <CtaRow location="hero" dark />
@@ -186,10 +186,10 @@ export default function HomePage() {
       </section>
 
       {/* Brand strip */}
-      <section aria-label="Appliance brands local pros work on" className="border-b border-sand bg-canvas py-10">
+      <section aria-label="Appliance brands technicians work on" className="border-b border-sand bg-canvas py-10">
         <div className="mx-auto max-w-site px-4 lg:px-6">
           <p className="mb-5 text-center text-[13px] font-semibold uppercase tracking-[0.18em] text-ink-muted">
-            Local pros work on the brands already in Temple kitchens
+            The brands already in Temple kitchens and laundry rooms
           </p>
           <BrandMarquee names={[...brands.map((b) => b.name), ...otherBrands]} />
         </div>
@@ -214,7 +214,7 @@ export default function HomePage() {
           <ServicesGrid keys={primaryServiceKeys} />
         </div>
         <p className="mt-6 text-ink-body">
-          Local pros also handle{' '}
+          The same call covers{' '}
           <Link href={serviceHref('microwave')} className="font-semibold text-ink underline decoration-flame underline-offset-4">
             over-the-range and built-in microwaves
           </Link>
@@ -228,20 +228,21 @@ export default function HomePage() {
           <SectionHeading
             id="local-heading"
             eyebrow="Home appliance repair"
-            title="Connect with local appliance repair"
+            title="Kitchen and laundry repair"
             accent={`for ${site.city} homes.`}
             className="!mb-0"
           />
           <div className="prose-copy [&_h3]:mb-2 [&_h3]:mt-8 [&_h3]:font-display [&_h3]:text-[22px] [&_h3]:font-bold [&_h3]:tracking-[-0.02em] [&_h3]:text-ink">
             <p>
-              {site.brandName} is a free service that helps homeowners in {site.city}, Texas reach independent local appliance repair
-              providers by phone. If you have been searching for appliance repair near me, one call connects you with a provider who
-              works in {site.city} and across {site.county}, so you do not have to work through a list of numbers yourself.
+              A search for appliance repair near me in {site.city} usually starts with something that quit at a bad moment: a
+              refrigerator full of groceries in July, a washer stopped mid-load before school. {site.brandName} keeps it to one number.
+              Say what the appliance is doing and talk with a technician who works in {site.city} and across {site.county}, instead of
+              working down a list of numbers yourself.
             </p>
             <h3>Kitchen appliance repair</h3>
             <p>
               Refrigerator repair is often the most urgent problem in a home, whether it is a fridge not cooling, a freezer frosting
-              up or an ice maker that stopped. Local pros also handle dishwasher repair, oven and stove repair for gas and electric
+              up or an ice maker that stopped. Technicians in the area also handle dishwasher repair, oven and stove repair for gas and electric
               ranges, cooktops and wall ovens, and over-the-range and built-in microwave repair.
             </p>
             <h3>Laundry appliance repair</h3>
@@ -293,7 +294,7 @@ export default function HomePage() {
           eyebrow="Emergency appliance repair"
           title="Urgent appliance problem?"
           accent="Stop the damage first."
-          intro="Some breakdowns cannot wait for next week. Emergency help may be available from local providers. Take the steps below to protect your home, then say it is urgent when you call."
+          intro="Some breakdowns cannot wait for next week. Emergency help for a flooded laundry room or a warming freezer may be available from local providers. Protect your home with the steps below first."
         />
         <div className="grid gap-8 lg:grid-cols-[1.5fr_1fr]">
           <div>
@@ -318,9 +319,9 @@ export default function HomePage() {
                 </li>
               ))}
             </ol>
-            <p className="relative mt-6 text-[14px] text-white/55">Ask the provider about emergency availability when you are connected.</p>
+            <p className="relative mt-6 text-[14px] text-white/55">On the call, describe the damage so far and ask what the technician can do about it.</p>
             <div className="relative mt-6">
-              <CallButton location="emergency" className="w-full" />
+              <CallButton location="emergency" label="Call about it" className="w-full" />
             </div>
           </div>
         </div>
@@ -332,9 +333,9 @@ export default function HomePage() {
         <SectionHeading
           id="lookfor-heading"
           eyebrow={`How ${site.brandName} works`}
-          title="What to look for in a"
-          accent="local appliance repair pro."
-          intro="One free call connects you with an independent provider. Before you hire anyone, ask the questions below and check the answers yourself."
+          title="What to look for in an"
+          accent="appliance repair technician."
+          intro="Before anyone takes a panel off your appliance, ask the questions below and check the answers yourself."
           dark
         />
         <ul className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -443,13 +444,12 @@ export default function HomePage() {
           id="brands-heading"
           eyebrow="Brands"
           title="Appliance brands"
-          accent="local pros work on."
-          intro="Local providers work on the major household brands found in Temple homes. Have the brand and model number ready when you call, and ask the pro whether they handle your brand and can get parts for it."
+          accent="technicians work on."
+          intro="Temple homes run the full range, from builder-grade Whirlpool and GE to Samsung and LG models with Wi-Fi control boards. Have the brand and model number ready, and ask the technician whether they handle your brand and can get parts for it."
         />
         <BrandChips names={[...brands.map((b) => b.name), ...otherBrands]} />
         <p className="mt-8 max-w-3xl text-sm text-ink-muted">
-          {site.brandName} is an independent referral service. It is not affiliated with or authorized by any appliance
-          manufacturer, and the providers it connects you with are independent businesses.{' '}
+          {site.brandName} is not affiliated with or authorized by any appliance manufacturer.{' '}
           <Link href={routes.brands} className="font-semibold text-ink underline decoration-flame underline-offset-4">
             See all appliance brands
           </Link>
@@ -464,7 +464,7 @@ export default function HomePage() {
           eyebrow="Service area"
           title="Temple and nearby"
           accent="service areas."
-          intro={`Local appliance repair pros serve homes in ${site.city} and across ${site.county} and nearby ${site.region} towns. In ${site.city}, that covers ZIP codes ${site.templeZips.join(', ')}. Provider availability in towns farther out varies, so give your address when you call.`}
+          intro={`The line covers ${site.city} ZIP codes ${site.templeZips.join(', ')} and towns across ${site.county} and nearby ${site.region}. Availability in rural areas farther from ${site.city} varies, so give your street address on the call.`}
         />
         <AreaBlock />
       </Section>
@@ -478,8 +478,8 @@ export default function HomePage() {
           <div className="lg:sticky lg:top-32 lg:self-start">
             <SectionHeading id="faq-heading" eyebrow="FAQ" title="Questions before" accent="you call." />
             <p className="-mt-6 text-ink-body">
-              Still not sure? <PhoneLink location="home_faq" label="Call" className="font-semibold text-ink underline decoration-flame underline-offset-4" />{' '}
-              to be connected with a local pro and describe your appliance issue.
+              Question not listed? <PhoneLink location="home_faq" label="Call" className="font-semibold text-ink underline decoration-flame underline-offset-4" />{' '}
+              and ask it along with what the appliance is doing.
             </p>
             <Link href={routes.faq} className="link-arrow mt-6">
               All frequently asked questions <Icon name="arrow" className="h-4 w-4" />
@@ -491,8 +491,8 @@ export default function HomePage() {
 
       <FinalCta
         title="Appliance broken?"
-        accent="Get connected."
-        text="Call to be connected with an independent local appliance repair pro serving Temple and Bell County. Describe the problem when you call, and ask the pro about availability and pricing."
+        accent="Call the Temple line."
+        text="Give the technician the brand, the symptom and your ZIP code, and ask how pricing works before anything gets taken apart."
         formId="home_final"
       />
     </>

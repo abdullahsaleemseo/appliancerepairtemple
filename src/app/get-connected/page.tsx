@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { routes, site } from '@/config/site';
+import { phoneDisplay, routes, site } from '@/config/site';
 import { FaqList } from '@/components/FaqList';
 import { HowItWorks } from '@/components/HowItWorks';
 import { Icon } from '@/components/Icon';
@@ -14,49 +14,49 @@ import type { Faq } from '@/content/types';
 import { pageMetadata } from '@/lib/seo';
 
 export const metadata = pageMetadata({
-  title: `Get Connected With Appliance Repair in ${site.city}, ${site.stateAbbr}`,
-  description: `Make a free call to get connected with an independent local appliance repair pro in ${site.city}, ${site.stateAbbr}. Describe the problem and ask about availability and pricing.`,
+  title: `Call for Appliance Repair in ${site.city}, ${site.stateAbbr} | Talk to a Tech`,
+  description: `Fridge warm, washer flooded or oven dead? Call ${phoneDisplay}, pick the appliance, enter your ZIP and describe the problem to a technician near ${site.city}, ${site.stateAbbr}.`,
   path: routes.request,
 });
 
 const nextSteps = [
-  { title: 'You call the number', text: 'Describe the appliance, the brand and what it is doing, and give your address or ZIP code.' },
-  { title: 'You are connected', text: 'Your call is connected with an independent appliance repair provider serving your area. Ask about availability, pricing and licensing.' },
+  { title: 'Pick the appliance, enter your ZIP', text: 'The phone menu asks which appliance is acting up and where you live, from 76501 in Temple to Belton, Killeen or Salado.' },
+  { title: 'Talk to a technician', text: 'Describe the brand, the symptom and any error code. Ask about timing, pricing and licensing before you agree to a visit.' },
   { title: 'Diagnosis, then your OK', text: 'A good technician finds what failed and explains the repair before starting. Agree on the price before any work begins.' },
 ];
 
 const requestFaqs: Faq[] = [
   {
-    q: 'How does the free call work?',
-    a: 'You call the number on this site and your call is connected with an independent local appliance repair provider. You and the provider agree on the visit, the price and any warranty directly. The site does not perform repairs.',
+    q: 'Who answers when I call?',
+    a: 'Appliance Repair Temple works as a free referral service: the line routes your call to an independent repair business that serves your ZIP code. You and that business settle the visit, the price and any warranty directly. Appliance Repair Temple does not perform repairs.',
   },
   {
     q: 'What if I do not know the brand or model?',
-    a: 'Choose your best guess or leave it blank. A plain description of what the appliance is doing is enough to get started.',
+    a: 'Give your best guess. A plain description, such as “top-load washer, full of water, hums at the drain step,” is enough to start the conversation.',
   },
   {
     q: 'Can I get emergency appliance repair?',
-    a: 'Emergency help may be available from local providers. Say it is urgent when you call, and take the safety steps first: close the water valve for a leak, switch off the breaker for a burning smell, and leave the house and call 911 or the gas company from outside if you smell gas.',
+    a: 'Take the safety steps first: close the water valve for a leak, switch off the breaker for a burning smell, and leave the house and call 911 or the gas company from outside if you smell gas. Then call the line and say the problem is urgent.',
   },
   {
-    q: 'How do I check that the provider has a license and insurance?',
-    a: 'Ask. It is the homeowner’s responsibility to verify that the provider holds any license and insurance the work requires. Ask for proof of insurance and any license number before work starts.',
+    q: 'How do I check the technician’s license and insurance?',
+    a: 'Ask on the call. Verifying any license and insurance the work requires is the homeowner’s responsibility, so request a license number and proof of insurance before work starts.',
   },
   {
     q: 'Can I get a price before the visit?',
-    a: 'The cost depends on the appliance, the model and the part that failed, so this site does not list prices. Ask the provider how pricing works when you call, and agree on the price before work starts.',
+    a: 'The cost depends on the appliance, the model and the part that failed, so no prices are listed here. Ask how the visit and diagnosis are priced while you are on the phone.',
   },
 ];
 
 export default function RequestPage() {
   return (
     <>
-      <PageHero crumbs={[{ name: 'Call to Get Connected', path: routes.request }]} title={`Appliance Repair in ${site.city},`} accent="one free call away.">
+      <PageHero crumbs={[{ name: 'Get Connected', path: routes.request }]} title={`Appliance Repair in ${site.city},`} accent="one free call away.">
         <div className="prose-copy prose-dark">
           <p>
-            {site.brandName} is a free referral service. Call the number below, describe the appliance and what it is doing, and
-            your call is connected with an independent local appliance repair pro serving {site.city} and nearby {site.county}{' '}
-            towns.
+            Refrigerator warm? Washer full of water? {site.brandName} is {site.city}’s line for appliance repair. Call the number
+            below, choose the appliance, enter your ZIP code, and you are talking with a technician who works in {site.city} and
+            nearby {site.county} towns.
           </p>
         </div>
         <div className="mt-8">
@@ -69,7 +69,7 @@ export default function RequestPage() {
 
       <div className="mx-auto -mt-8 grid max-w-site gap-8 px-4 pb-20 lg:grid-cols-[1.6fr_1fr] lg:px-6">
         <div className="relative">
-          <CallCard location="request_main" title="Call to get connected with a local pro" />
+          <CallCard location="request_main" title="Call and describe the problem" />
         </div>
         <aside aria-label="Before you call" className="space-y-4 lg:pt-8">
           <div className="grain relative overflow-hidden rounded-card bg-ink p-7 text-white">
@@ -77,7 +77,7 @@ export default function RequestPage() {
             <h2 className="relative font-display text-xl font-bold text-white">Urgent problem?</h2>
             <p className="relative mt-1 text-white/60">
               A leak, a fridge warming up with food inside, or a burning smell: stop the damage first, then call. Emergency help may
-              be available from local providers. Say it is urgent when you call.
+              be available from local providers, so lead with the word urgent.
             </p>
             <PhoneLink
               location="request_urgent"
@@ -91,7 +91,7 @@ export default function RequestPage() {
               <h2 className="font-display font-bold text-ink">Have this ready</h2>
               <p className="mt-1 text-[15px] text-ink-body">
                 The model number, usually inside the door, under the lid or on the frame, and any error code on the display. It
-                helps the provider come prepared.
+                lets the technician think about parts before the visit.
               </p>
             </div>
           </div>

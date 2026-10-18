@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { routes, site } from '@/config/site';
+import { phoneDisplay, routes, site } from '@/config/site';
 import { PageHero } from '@/components/PageHero';
 import { CtaRow } from '@/components/Buttons';
 import { FinalCta } from '@/components/FinalCta';
@@ -15,23 +15,23 @@ import type { Faq } from '@/content/types';
 import { pageMetadata } from '@/lib/seo';
 
 export const metadata = pageMetadata({
-  title: `About ${site.brandName} | How It Works`,
-  description: `${site.brandName} is a free referral service connecting ${site.city} and ${site.county} homeowners with independent local appliance repair pros. See how it works.`,
+  title: `About ${site.brandName} | How One Free Call Works`,
+  description: `Appliance broken in ${site.city}? See how one free call to ${site.brandName} reaches a technician, what to ask and how to check a license. Call ${phoneDisplay}.`,
   path: routes.about,
 });
 
 const callSteps = [
   {
-    title: 'Call the number on this site',
-    text: 'The call is free. Say which appliance is acting up, the brand, and what it is doing or not doing.',
+    title: 'Dial the line and pick the appliance',
+    text: 'The call is free. Choose the appliance in the phone menu, enter your ZIP code, and have the brand and symptom ready.',
   },
   {
-    title: 'Get connected with a local pro',
-    text: `Your call is connected with an independent appliance repair provider serving ${site.city} and nearby towns.`,
+    title: 'Reach a technician near you',
+    text: `The line routes you to a repair business that works in ${site.city} or the nearby town you live in.`,
   },
   {
-    title: 'Talk it through with the provider',
-    text: 'Ask about availability, pricing, licensing, insurance and any warranty on the work. Decide whether to go ahead.',
+    title: 'Ask your questions first',
+    text: 'Timing, pricing, licensing, insurance and any warranty on the work are all between you and that business. Decide only once you have answers.',
   },
   {
     title: 'Diagnosis before repair',
@@ -40,26 +40,26 @@ const callSteps = [
 ];
 
 const verifySteps = [
-  'Ask the provider for the full business name and a phone number you can call back.',
+  'Ask for the full business name and a phone number you can call back.',
   'Ask whether the work requires a license under Texas rules, and check the state requirements for that kind of work.',
   'Ask for proof of liability insurance before anyone works in your home, and check that the policy is current.',
-  'For gas appliances, ask how the provider handles gas line connections and who is qualified to do that work.',
+  'For gas appliances, ask how gas line connections are handled and who is qualified to do that work.',
   'For refrigerant repairs, ask whether the technician holds EPA Section 608 certification, which federal rules require.',
   'Look up the business online and read what other homeowners in the area have said about it.',
 ];
 
 const siteDoesNot = [
   'Send technicians or perform any repair work itself.',
-  'Employ, train or supervise the providers you are connected with.',
+  'Employ, train or supervise the technicians who take the calls.',
   'Set prices, collect payment or give any warranty or guarantee on work performed.',
-  'Verify each provider’s license or insurance on your behalf. That check is yours to make.',
+  'Check a repair business’s license or insurance on your behalf.',
   'Represent, or speak for, any appliance manufacturer.',
 ];
 
 const askBefore = [
   { icon: 'tag' as const, title: 'Pricing', text: 'How is the visit priced, what does a diagnosis cost, and will you hear the full repair price before any part is replaced?' },
-  { icon: 'shield' as const, title: 'License and insurance', text: 'Is the provider licensed for this work where required, and can they show current proof of insurance?' },
-  { icon: 'check' as const, title: 'Warranty on work', text: 'Does the provider stand behind the repair? Ask what is covered, for how long, and whether parts and labor are treated differently.' },
+  { icon: 'shield' as const, title: 'License and insurance', text: 'Is the business licensed for this work where required, and can it show current proof of insurance?' },
+  { icon: 'check' as const, title: 'Warranty on work', text: 'Does the technician stand behind the repair? Ask what is covered, for how long, and whether parts and labor are treated differently.' },
   { icon: 'wrench' as const, title: 'Parts', text: 'Are replacement parts new and made for your model? How long will a part take to arrive if it is not on the truck?' },
 ];
 
@@ -75,31 +75,31 @@ const prepareSteps = [
 const aboutFaqs: Faq[] = [
   {
     q: `What is ${site.brandName}?`,
-    a: `${site.brandName} is a free referral service. When you call the number on this site, your call is connected with an independent local appliance repair provider serving ${site.city} and ${site.county}. The site itself does not do repair work.`,
+    a: `Temple's phone line and guide for appliance repair. Calling the number routes you to a repair business that works in ${site.city} and ${site.county}. That business, not this site, diagnoses and fixes the appliance.`,
   },
   {
     q: 'Does the call cost anything?',
-    a: 'No. The call and the connection are free. Any charge for a visit or repair comes from the provider you speak with, so ask about pricing on the call before you agree to anything.',
+    a: 'No. Dialing the line costs nothing. Any charge for a visit or a repair comes from the business you speak with, so settle pricing on the phone before you agree to a visit.',
   },
   {
     q: `Is ${site.brandName} affiliated with any appliance brand?`,
-    a: 'No. This site is not affiliated with or authorized by any appliance manufacturer. Brand names on this site only describe the appliances that local providers commonly work on.',
+    a: 'No. Appliance Repair Temple is not affiliated with or authorized by any manufacturer. Brand names appear only to describe the refrigerators, washers and ranges that technicians in the area commonly see.',
   },
   {
     q: 'How do I check that an appliance repair pro has a license and insurance?',
-    a: 'It is the homeowner’s responsibility to verify license and insurance. Ask the provider directly, check the Texas requirements for the type of work, and ask for proof of current insurance before work starts.',
+    a: 'That check is yours to make. Ask for a license number where the work requires one, compare it with the Texas rules for that kind of job, and ask to see a current certificate of insurance before anyone opens a panel.',
   },
   {
     q: 'Who stands behind the repair?',
-    a: 'The provider who does the work. This site does not warrant or guarantee any work performed. Ask the provider about any warranty on parts and labor before you approve the repair.',
+    a: 'The business that does the work. Appliance Repair Temple does not warrant or guarantee repairs, so ask how parts and labor are covered before you approve anything.',
   },
   {
     q: 'Can I get emergency appliance repair?',
-    a: 'Emergency help may be available from local providers. Say it is urgent when you call. In the meantime, close the water valve on a leak, switch off the breaker on an electrical problem, and keep a warm refrigerator closed.',
+    a: 'Emergency help for a flooding washer or a fridge full of warming food may be available from local providers; say it is urgent when you call. Until then, close the water valve on a leak, switch off the breaker on an electrical problem, and keep a warm refrigerator shut.',
   },
   {
     q: 'Why are there no prices on the site?',
-    a: 'Each provider sets its own prices, and the cost depends on the appliance, the model and the part that failed. A number on a web page would only be a guess, so ask the provider on the call.',
+    a: 'Each repair business sets its own prices, and the cost turns on the appliance, the model and the part that failed. A figure on a web page would only be a guess, so ask on the call.',
   },
 ];
 
@@ -111,13 +111,13 @@ export default function AboutPage() {
       <PageHero
         crumbs={[{ name: 'About This Site', path: routes.about }]}
         title={`About ${site.brandName}:`}
-        accent={`free appliance repair referrals in ${site.city}.`}
+        accent={`${site.city}'s line for appliance repair.`}
       >
         <div className="prose-copy prose-dark">
           <p>
-            {site.brandName} is a free referral resource for homeowners in {site.city} and across {site.county}. Call the number on
-            this site and you are connected with an independent local appliance repair provider who works on refrigerators,
-            freezers, washers, dryers, dishwashers, ovens, ranges and microwaves in {site.city} and the {site.region} towns around it.
+            Refrigerator warm? Washer won’t drain? {site.brandName} is {site.city}’s line for appliance repair. One call puts you in
+            touch with a technician who works on refrigerators, freezers, washers, dryers, dishwashers, ovens, ranges and microwaves in{' '}
+            {site.city} and the {site.region} towns around it.
           </p>
         </div>
         <div className="mt-8">
@@ -131,20 +131,20 @@ export default function AboutPage() {
           <div>
             <div className="prose-copy">
               <p>
-                When an appliance quits, most people want two things: a local person who can look at it, and a straight answer about
-                what is wrong. This site exists to make the first part easier. One free call connects you with an independent appliance
-                repair provider serving your part of {site.county}, so you do not have to search through listings while the fridge warms
-                up or the washer sits full of water.
+                When an appliance quits, most people want two things: someone nearby who can look at it, and a straight answer about
+                what is wrong. {site.brandName} handles the first part. One free call reaches a repair business serving your part of{' '}
+                {site.county}, so you are not scrolling through listings while the fridge warms up or the washer sits full of water.
               </p>
               <p>
-                {site.brandName} is not a repair company. It does not employ technicians, send anyone to your home or perform any work.
-                The providers you are connected with are independent businesses that set their own prices, availability and terms.
-                You talk to them directly, ask your questions, and decide whether to hire them.
+                Here is how it works behind the scenes. {site.brandName} is a free referral service, not a repair company: it does not
+                employ technicians, send anyone to your home or perform any work. The businesses on the other end of the line are
+                independent and set their own prices, schedules and terms. You talk to them directly, ask your questions, and decide
+                whether to hire them.
               </p>
               <p>
-                The rest of the site is here to help you go into that call prepared. The repair guides walk through safe checks you can
-                do yourself, what common symptoms point to, and how to decide whether an older appliance is worth repairing. The service
-                and area pages explain the problems that come up most with each appliance and in each town nearby.
+                Everything else on the site is there so you go into that call prepared. The repair guides walk through safe checks you
+                can do yourself, what a symptom usually points to, and how to judge whether an older appliance is worth fixing. The
+                service and town pages cover the problems that come up most with each appliance and in each community nearby.
               </p>
             </div>
           </div>
@@ -155,17 +155,18 @@ export default function AboutPage() {
         <SectionHeading id="visit-heading" eyebrow="How the free call works" title="What happens" accent="when you call." />
         <HowItWorks steps={callSteps} />
         <p className="mt-6 max-w-3xl text-[15px] text-ink-body">
-          Emergency help may be available from local providers. If water is leaking or food is at risk, say it is urgent when you call.
+          Water on the floor or food at risk? Stop the damage first: close the supply valve, or keep the refrigerator doors shut. Then
+          call and describe exactly what you see.
         </p>
       </Section>
 
       <Section tone="ink" labelledBy="verify-heading">
         <div className="grid gap-12 lg:grid-cols-[1fr_1.3fr]">
           <div>
-            <SectionHeading id="verify-heading" eyebrow="Independent providers" title="Verify license" accent="and insurance." dark />
+            <SectionHeading id="verify-heading" eyebrow="Your checklist" title="Verify license" accent="and insurance." dark />
             <p className="text-white/70">
-              Every provider is independent. It is the homeowner’s responsibility to verify that the hired provider has the license and
-              insurance required for the work being performed. A few minutes of questions on the call is usually enough.
+              Before anyone works on a gas range or opens a refrigerator’s sealed system, confirm the license and insurance that job
+              requires. Checking is the homeowner’s responsibility, and a few minutes of questions on the call usually covers it.
             </p>
           </div>
           <ul className="space-y-3">
@@ -186,8 +187,8 @@ export default function AboutPage() {
           <div>
             <SectionHeading id="wont-heading" eyebrow="Straight answers" title="What this site" accent="does not do." />
             <p className="text-ink-body">
-              This site is a free service to help homeowners connect with local appliance repair providers. It does not warrant or
-              guarantee any work performed. Any agreement about the repair is between you and the provider you hire.
+              {site.brandName} points you to a technician and stops there. It does not warrant or guarantee any repair, and every
+              agreement about the work is between you and the business you hire.
             </p>
           </div>
           <ul className="space-y-3">
@@ -204,7 +205,7 @@ export default function AboutPage() {
       </Section>
 
       <Section tone="white" labelledBy="ask-heading">
-        <SectionHeading id="ask-heading" eyebrow="Before work starts" title="What to ask" accent="a provider." />
+        <SectionHeading id="ask-heading" eyebrow="Before work starts" title="What to ask" accent="the technician." />
         <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {askBefore.map((v) => (
             <li key={v.title} className="card p-7">
@@ -252,7 +253,7 @@ export default function AboutPage() {
               ))}
             </ul>
             <p className="mt-6 text-ink-body">
-              Local providers commonly work on the major brands, including{' '}
+              Technicians in the area commonly work on the major brands, including{' '}
               {[...brandLinks.map((b) => ({ name: b.name, href: brandHref(b) })), ...otherBrands.map((name) => ({ name, href: '' }))].map(
                 (b, i, all) => (
                   <span key={b.name}>
@@ -267,13 +268,13 @@ export default function AboutPage() {
                   </span>
                 ),
               )}
-              . This site is not affiliated with any of them. Ask the provider on the call whether they work on your brand and model.
+              . None of these manufacturers is affiliated with this site. On the call, ask whether the technician works on your brand and model.
             </p>
           </div>
           <div>
-            <h2 className="font-display text-2xl font-bold tracking-[-0.02em] text-ink">Areas served by local pros</h2>
+            <h2 className="font-display text-2xl font-bold tracking-[-0.02em] text-ink">Temple and nearby towns</h2>
             <p className="mt-3 text-ink-body">
-              Appliance repair is available in {site.city} and these nearby towns, each with its own page of local information:
+              Each town below has its own page on the appliance problems that come up there, from older Temple homes to newer builds in the suburbs:
             </p>
             <ul className="mt-5 flex flex-wrap gap-2">
               <li>
@@ -326,7 +327,12 @@ export default function AboutPage() {
         </div>
       </Section>
 
-      <FinalCta formId="about_final" />
+      <FinalCta
+        formId="about_final"
+        title="Appliance acting up?"
+        accent="Make one call."
+        text={`Call ${site.brandName}’s line and describe the problem. A technician who works in ${site.city} and ${site.county} picks up from there.`}
+      />
     </>
   );
 }

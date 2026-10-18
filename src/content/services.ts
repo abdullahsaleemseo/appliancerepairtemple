@@ -11,15 +11,15 @@ export const services: Service[] = [
     navLabel: 'Refrigerator Repair',
     icon: 'refrigerator',
     card: 'Not cooling, leaking, noisy, or the ice maker quit.',
-    metaTitle: 'Emergency Refrigerator Repair Temple TX | Local Pros',
+    metaTitle: 'Emergency Refrigerator Repair Temple TX | Warm or Leaking?',
     metaDescription:
-      'Refrigerator repair in Temple, TX for fridges that are not cooling, leaking or icing up, on all major brands. Call to get connected with a local pro.',
+      'Fridge warm, leaking or icing up? Help with Samsung, LG, Whirlpool and GE refrigerators across Temple, TX and Bell County. Call (254) 615-2088 now.',
     h1: 'Refrigerator Repair in Temple, TX',
     intro: [
-      'Refrigerator not cooling, leaking or making a racket? Appliance Repair Temple connects homeowners across Temple, TX with independent local appliance repair pros who work on top-freezer, bottom-freezer, side-by-side and French door refrigerators. Describe the problem when you call to be connected with a local provider.',
+      'Refrigerator not cooling, leaking or making a racket? Appliance Repair Temple is Temple’s line for refrigerator repair. One call puts you in touch with a technician who works on top-freezer, bottom-freezer, side-by-side and French door refrigerators in homes across Temple, TX. Say what the fridge is doing, how warm it feels and whether the freezer side is still cold.',
       'Most refrigerator failures come down to a short list of parts: a fan motor, a defrost component, a start relay, a water valve, a sensor or a control board. A local technician will usually test those parts in your kitchen to find the one that failed. A good technician shows you the failed part and explains the repair before any work starts. Ask for that, along with a straight answer about whether the fix makes sense for your fridge.',
       'Long Temple summers keep a refrigerator running hard, so a small problem in May can turn into a warm fridge full of groceries by July.',
-      'A refrigerator that stops cooling is one of the few appliance problems that cannot wait, because the food inside is on a clock. Emergency help may be available from local providers for a warm fridge or a leak that is spreading across the floor. Say it is urgent when you call.',
+      'A refrigerator that stops cooling is one of the few appliance problems that cannot wait, because the food inside is on a clock. A warm fridge full of groceries or a leak spreading across the kitchen floor is worth calling about right away; say it is urgent and mention how long the fridge has been warm.',
     ],
     symptomsHeading: 'Refrigerator symptoms and what they usually mean',
     symptoms: [
@@ -111,11 +111,11 @@ export const services: Service[] = [
       },
       {
         q: 'How much does refrigerator repair cost?',
-        a: 'It depends on the model and the part that failed, so this site does not list prices. Call to get connected with a local pro, and ask about pricing and any warranty before work starts. Have the brand, the model number and a short description of the problem ready.',
+        a: 'A start relay and a sealed system repair are very different jobs, so this site does not list prices. Ask the technician about pricing and any warranty before the panels come off, and have the brand, the model number and a short description of the problem ready when you call.',
       },
       {
         q: 'Can I get emergency refrigerator repair in Temple?',
-        a: 'Emergency help may be available from local providers. A refrigerator or freezer warming up with food inside, or a fridge leaking across the floor, is worth treating as urgent, so say it is urgent when you call. In the meantime, keep the doors closed, move the most perishable food to a cooler with ice and close the water supply valve if there is a leak.',
+        a: 'Call and say it is urgent. A refrigerator or freezer warming up with food inside, or a fridge leaking across the floor, should not sit until next week. In the meantime, keep the doors closed, move the most perishable food to a cooler with ice and close the water supply valve if there is a leak.',
       },
       {
         q: 'Why is my freezer cold but my refrigerator warm?',
@@ -123,7 +123,7 @@ export const services: Service[] = [
       },
       {
         q: 'Why is my refrigerator leaking water on the floor?',
-        a: 'The usual causes are a clogged defrost drain, a cracked or loose water line to the ice maker, a failing water inlet valve or a drain pan that has shifted. Turn off the water supply to the fridge if you can, dry the area and call to get connected with a local pro.',
+        a: 'The usual causes are a clogged defrost drain, a cracked or loose water line to the ice maker, a failing water inlet valve or a drain pan that has shifted. Turn off the water supply to the fridge if you can, dry the area and note where the water collects before you call.',
       },
       {
         q: 'Why is my refrigerator making a loud noise?',
@@ -131,11 +131,11 @@ export const services: Service[] = [
       },
       {
         q: 'Is fridge repair available outside Temple?',
-        a: 'Yes. Along with Temple, local pros repair refrigerators in Belton, Killeen, Harker Heights, Nolanville, Morgan’s Point Resort, Salado, Troy, Little River-Academy, Rogers, Holland and Moody.',
+        a: 'Yes. The same line takes refrigerator calls from Belton, Killeen, Harker Heights, Nolanville, Morgan’s Point Resort, Salado, Troy, Little River-Academy, Rogers, Holland and Moody, where plenty of second fridges sit in hot garages and shops.',
       },
       {
         q: 'Where do I find my refrigerator’s model number?',
-        a: 'Look for a label inside the fresh-food section, usually on a side wall or the ceiling near the top. Some models put it behind the crisper drawers or on the back. A photo of the label works.',
+        a: 'Look for a label inside the fresh-food section, usually on a side wall or the ceiling near the top. Some models put it behind the crisper drawers or on the back. A phone photo of the label is just as good as reading it out.',
       },
     ],
     related: ['freezer', 'dishwasher', 'oven'],
@@ -149,14 +149,14 @@ export const services: Service[] = [
           'Check the basics: the plug, the breaker and the temperature setting. Dials get bumped during cleaning more often than you would think.',
           'Put an appliance thermometer on a middle shelf. The fresh-food side should read 40°F or below and the freezer 0°F.',
           'Listen. Is the compressor humming? Does a fan run inside the freezer when you hold the door switch in?',
-          'Call to get connected with a local pro, with the brand, the model number and what you noticed ready.',
+          'Call with the brand, the model number and what you noticed. Those details help the technician plan for the right parts.',
         ],
         note: 'Throw out perishables such as milk, meat and leftovers that sat above 40°F for more than two hours. When in doubt, throw it out.',
       },
       {
         type: 'emergency',
         heading: 'Emergency refrigerator repair in Temple',
-        intro: 'When the fridge stops cooling, the food inside is on a clock. Emergency help may be available from local providers. Say it is urgent when you call, and use the steps here to protect your food and your floor in the meantime.',
+        intro: 'When the fridge stops cooling, the food inside is on a clock. Use the signs below to judge how urgent it is, and the steps beside them to protect your food and your floor until a technician can look at it.',
         signs: [
           { title: 'Warming up with food inside', text: 'The fresh-food side is above 40°F, or the freezer is soft, and the fridge is full.' },
           { title: 'Water spreading on the floor', text: 'A leak from the ice maker line, the water valve or a blocked defrost drain that keeps coming back.' },
@@ -167,7 +167,7 @@ export const services: Service[] = [
           'Keep both doors closed to hold the cold in.',
           'Move the most perishable food to a cooler with ice.',
           'For a leak, close the water supply valve to the fridge and dry the floor.',
-          'Write down the brand, model number and any error code, then call.',
+          'Note the brand, model number and any code on the display, then call.',
         ],
       },
       {
@@ -177,7 +177,7 @@ export const services: Service[] = [
           'A refrigerator leak is one of the most urgent appliance problems in a Temple kitchen, because water can soak into the flooring, the subfloor and the base of the cabinets before anyone notices. Most leaks come from one of four places. A clogged defrost drain sends meltwater into the fresh-food section, where it pools under the crisper drawers or freezes on the freezer floor and then spills out the front. A cracked or loose plastic supply line behind the fridge leaks every time the ice maker fills. A failing water inlet valve can drip at the back of the unit even when nothing is running. A drain pan that has shifted or cracked lets defrost water run onto the floor under the fridge.',
           'Check first where the water is. Water inside the fridge points to the defrost drain. Water at the back points to the supply line or the inlet valve. Pull off the bottom kick plate and use a flashlight to look for a full or tilted drain pan. If you recently changed the water filter, make sure it is seated and locked, because a loose filter housing often drips inside the door or from the ceiling of the fresh-food section.',
           'To stop the damage, close the shutoff valve that feeds the refrigerator. It is often under the kitchen sink or behind the fridge, and in some homes it is a small saddle valve on a copper line. Turn the ice maker off, dry the floor and set towels along the base. If water has reached the outlet or the cord, switch off the breaker before you unplug the refrigerator. Keep the doors closed so the food stays cold while the water is off.',
-          'Call to get connected with a local pro if the leak comes back after you dry it, if water is showing up inside the cabinet or the wall, or if the supply valve will not close. A leak that keeps returning usually means a frozen drain line, a cracked valve or a split tube that needs a part. Emergency help may be available from local providers. Say it is urgent when you call, and mention the brand, the model number and where the water collects.',
+          'Call if the leak comes back after you dry it, if water is showing up inside the cabinet or the wall, or if the supply valve will not close. A leak that keeps returning usually means a frozen drain line, a cracked valve or a split tube that needs a part. Say it is urgent if water is still spreading, and mention the brand, the model number and where the water collects: inside the fresh-food section, at the back or under the front grille.',
         ],
       },
       { type: 'symptoms' },
@@ -227,7 +227,7 @@ export const services: Service[] = [
       },
       {
         type: 'prose',
-        heading: 'Refrigerator types and features local pros repair',
+        heading: 'Refrigerator types and features technicians repair',
         paragraphs: [
           'French door refrigerators are the most common style in newer Temple kitchens. They add more to go wrong: a second evaporator fan on some models, a flipper mullion on the left door that seals the gap, an ice maker in the door or the freezer drawer, and an electronic control that reports error codes. A local technician can usually work on all of it.',
           'Side-by-side refrigerators put the freezer on the left and usually feed the ice maker and water dispenser through the freezer door. Top-freezer and bottom-freezer refrigerators are simpler and very common in rentals and starter homes, which makes them practical to repair for years.',
@@ -247,7 +247,7 @@ export const services: Service[] = [
           { see: 'Ice clumped or jammed in the bin', means: 'The freezer is cycling warm and refreezing, or the auger motor is not turning.', fix: 'Empty the bin; if it returns, the defrost system or auger motor is checked.' },
         ],
       },
-      { type: 'brands', heading: 'Refrigerator brands and styles local pros repair', intro: 'Local pros work on the major refrigerator brands found in Temple kitchens, in every common style. Give the brand and model number when you call so the technician can check parts ahead of time.', styles: ['Top-freezer', 'Bottom-freezer', 'Side-by-side', 'French door', 'Counter-depth'] },
+      { type: 'brands', heading: 'Refrigerator brands and styles in Temple kitchens', intro: 'From French door Samsungs to older top-freezer Whirlpools in rentals, these are the refrigerator brands most often behind a Temple repair call. Read the brand and model number off the label inside the fresh-food section before you call, so parts can be checked ahead of time.', styles: ['Top-freezer', 'Bottom-freezer', 'Side-by-side', 'French door', 'Counter-depth'] },
       {
         type: 'process',
         heading: 'What to expect on a refrigerator repair visit',
@@ -269,15 +269,15 @@ export const services: Service[] = [
     navLabel: 'Freezer Repair',
     icon: 'freezer',
     card: 'Upright or chest freezer not freezing or frosting up.',
-    metaTitle: 'Emergency Freezer Repair Temple TX | Local Pros',
+    metaTitle: 'Emergency Freezer Repair Temple TX | Food Starting to Thaw?',
     metaDescription:
-      'Freezer repair in Temple, TX for chest and upright freezers not freezing, leaking, frosting up or running nonstop. Call to get connected with a local pro.',
+      'Chest or upright freezer not freezing, frosted over or running nonstop? Help for garage and deep freezers across Temple, TX and Bell County. Call (254) 615-2088.',
     h1: 'Chest & Upright Freezer Repair in Temple, TX',
     intro: [
-      'Freezer warming up, frosting over or running and never shutting off? Appliance Repair Temple connects homeowners across Temple, TX with independent local pros who repair standalone chest and upright freezers in homes, garages and shops. Call and describe the problem to get connected with a local provider.',
+      'Freezer warming up, frosting over or running and never shutting off? Appliance Repair Temple is the Temple number for chest and upright freezer repair, whether the unit sits in a kitchen, a garage, a shop or a barn. One call puts you in touch with a technician who works on deep freezers and frost-free uprights. Say which kind you have and what the thermometer reads.',
       'A full freezer can hold a lot of meat, game and meals, so it pays to act early. Most freezer failures come down to a start relay, a thermostat, a fan, a defrost part on frost-free uprights or a worn lid or door seal. A good technician tests those first, explains what failed and what the repair involves, and starts only after you say yes. If a small or older chest freezer is not worth fixing, a good technician will tell you so. Ask.',
       'Whether you call it a deep freezer, a garage freezer or a standalone freezer, a good freezer repair starts the same way: check the temperature inside, listen to the compressor and fans, look at the coils and the seal, then test the parts that could be at fault.',
-      'A freezer full of food that is warming up is an emergency for your grocery budget. Emergency help may be available from local providers. Say it is urgent when you call, and keep the lid or door closed so the food has a better chance of staying frozen.',
+      'A freezer full of food that is warming up is an emergency for your grocery budget, and for anyone storing a season of deer meat or a side of beef. Say it is urgent when you call, and keep the lid or door closed so the food has a better chance of staying frozen.',
     ],
     symptomsHeading: 'Freezer problems and their usual causes',
     symptoms: [
@@ -294,7 +294,7 @@ export const services: Service[] = [
         fixable: 'Gaskets and defrost parts are replaceable.',
       },
       {
-        title: 'Running all the time',
+        title: 'Runs and never shuts off',
         cause:
           'A hot garage, blocked airflow around the coils, a leaking seal or a low refrigerant charge. A freezer packed tight against the walls can run longer too.',
         fixable: 'Many causes are fixed by cleaning, better airflow or a new seal.',
@@ -359,7 +359,7 @@ export const services: Service[] = [
       },
       {
         q: 'Can a technician come out to a freezer in a garage or shop?',
-        a: 'Yes. Local pros work on garage and shop freezers, which are common in Temple. Make sure there is room around the unit for the technician to reach the back and the coils.',
+        a: 'Yes. Garage and shop freezers are common in Temple, and technicians work on them where they stand. Make sure there is room around the unit for the technician to reach the back and the coils.',
       },
       {
         q: 'Should I defrost my chest freezer before the technician comes?',
@@ -367,11 +367,11 @@ export const services: Service[] = [
       },
       {
         q: 'Where is the model number on my freezer?',
-        a: 'On chest freezers, look on the back or the side near the bottom, or under the lid. On uprights, check the inside wall near the top or the door frame. A photo of the label works.',
+        a: 'On chest freezers, look on the back or the side near the bottom, or under the lid. On uprights, check the inside wall near the top or the door frame. Snap a photo of the label if the print is small or faded.',
       },
       {
         q: 'Can I get emergency freezer repair in Temple?',
-        a: 'Emergency help may be available from local providers. A freezer warming up with food inside, one that clicks and will not run, or one that trips the breaker is worth treating as urgent, so say it is urgent when you call. In the meantime, keep the lid or door shut and move the most valuable food to a cooler with ice.',
+        a: 'Say it is urgent when you call. A freezer warming up with food inside, one that clicks and will not run, or one that trips the breaker should not wait for a convenient week. In the meantime, keep the lid or door shut and move the most valuable food to a cooler with ice.',
       },
       {
         q: 'Why is my freezer running but not freezing?',
@@ -379,19 +379,19 @@ export const services: Service[] = [
       },
       {
         q: 'My freezer stopped working after a storm or power outage. What should I check?',
-        a: 'Check the breaker, and in a garage check the GFCI outlet, since those often trip during storms. If the freezer has power but still does not run, or it clicks and stops, call to get connected with a local pro. Keep the lid or door closed in the meantime.',
+        a: 'Check the breaker, and in a garage check the GFCI outlet, since those often trip during storms. If the freezer has power but still does not run, or it clicks and stops, call with the brand and model number. Keep the lid or door closed in the meantime.',
       },
       {
         q: 'Is it worth repairing a deep freezer?',
-        a: 'Usually yes, if the problem is a relay, thermostat, fan, defrost part or seal. If the compressor or the sealed system has failed on a small or older chest freezer, replacement often makes more sense. Ask the technician to tell you plainly.',
+        a: 'Usually yes, if the problem is a relay, thermostat, fan, defrost part or seal. If the compressor or the sealed system has failed on a small or older chest freezer, replacement often makes more sense. A straight answer from the technician on that point is worth asking for.',
       },
       {
         q: 'Is freezer repair available outside Temple?',
-        a: 'Yes. Along with Temple, local pros repair freezers in Belton, Killeen, Harker Heights, Nolanville, Morgan’s Point Resort, Salado, Troy, Little River-Academy, Rogers, Holland and Moody.',
+        a: 'Yes. Chest and upright freezer calls also come from Belton, Killeen, Harker Heights, Nolanville, Morgan’s Point Resort, Salado, Troy, Little River-Academy, Rogers, Holland and Moody, including plenty of garage and barn freezers on rural lots.',
       },
       {
         q: 'How much does freezer repair cost?',
-        a: 'It depends on the freezer and the part, so this site does not list prices. Call to get connected with a local pro, with the brand, model number and type of freezer ready, and ask about pricing and any warranty before work starts.',
+        a: 'A start relay on a chest freezer and a defrost repair on a frost-free upright are very different jobs, so this site does not list prices. Ask the technician about pricing and any warranty before a part is ordered, and have the brand, model number and freezer type ready when you call.',
       },
     ],
     related: ['refrigerator', 'washer', 'dryer'],
@@ -405,19 +405,19 @@ export const services: Service[] = [
           'Put an appliance thermometer inside. A working freezer should read 0°F.',
           'If it is climbing fast, move the most valuable items to a cooler with ice or to another freezer.',
           'Check that the plug is in, the breaker is on and nothing is blocking the coils or vents.',
-          'Call to get connected with a local pro, with the brand, the model number and whether it is a chest or an upright ready.',
+          'Call with the brand, the model number and whether it is a chest or an upright. Those details shape which parts the technician checks first.',
         ],
         note: 'Do not try to speed up a defrost with a knife, ice pick or heat gun. Puncturing a cooling line ruins the freezer.',
       },
       {
         type: 'emergency',
         heading: 'Emergency freezer repair in Temple',
-        intro: 'A full freezer holds a safe temperature for about 48 hours with the lid closed, and less once it starts warming. Emergency help may be available from local providers. Say it is urgent when you call, and keep the lid closed while you wait.',
+        intro: 'A full freezer holds a safe temperature for about 48 hours with the lid closed, and less once it starts warming. Check the signs below, keep the lid shut and take a thermometer reading so you can tell the technician how fast it is climbing.',
         signs: [
-          { title: 'Warming up with food inside', text: 'The thermometer reads well above 0°F, food is getting soft, or the temperature alarm keeps going off.' },
-          { title: 'Clicking but not running', text: 'The compressor tries to start every few minutes and fails. Unplug it to protect the compressor.' },
+          { title: 'Food softening inside', text: 'The thermometer reads well above 0°F, food is getting soft, or the temperature alarm keeps going off.' },
+          { title: 'Clicks, then silence', text: 'You hear a click every few minutes but the compressor never kicks on. Pull the plug so the compressor is not damaged.' },
           { title: 'Breaker trips or hot outlet', text: 'The freezer trips the breaker or GFCI, or the plug or outlet feels hot. Stop using that outlet.' },
-          { title: 'Burning smell', text: 'A burning or electrical smell from the compressor area. Unplug it and do not use it until it is checked.' },
+          { title: 'Burning smell', text: 'A burning or electrical smell from the compressor area. Unplug the freezer and leave it off until a technician has checked it.' },
         ],
         steps: [
           'Keep the lid or door closed to hold the cold in.',
@@ -433,7 +433,7 @@ export const services: Service[] = [
           'A freezer that leaks is usually telling you it is not holding cold, and a puddle under a garage or utility room freezer can hide for days. On an upright frost-free freezer, the most common source is a clogged defrost drain. Meltwater from the defrost cycle backs up, freezes in the drain tube and then overflows inside the cabinet or onto the floor. A cracked or missing drain pan under the unit lets that same water run out. On a chest freezer, water usually comes from a worn lid gasket that lets humid air in, which builds frost that melts each time the compressor cycles off, or from a drain plug at the bottom front that was left loose after the last defrost.',
           'Check first whether the freezer is still cold. Put a thermometer inside. If it reads near 0°F, the leak is probably a drain, pan or seal problem. If it is climbing, the leak may be frost melting because the freezer is failing, which makes the food the bigger worry. Look inside an upright for ice on the floor of the cabinet or a sheet of frost on the back wall. On a chest freezer, run a flashlight around the lid seal and look for gaps or cracks, especially at the corners.',
           'To stop the damage, dry the floor, put towels around the base and slide a shallow pan under a chest freezer drain. Check that the drain plug is pushed in or capped. If water has reached the outlet, the cord or a GFCI outlet in the garage, switch off the breaker before you unplug the freezer. Keep the lid or door shut so the food stays frozen, and move the most valuable items to a cooler if the temperature is rising.',
-          'Call to get connected with a local pro if water keeps coming back after you dry it, if the freezer is warming up, or if you see heavy frost on the back wall of an upright, which points to a failed defrost part. Emergency help may be available from local providers. Say it is urgent when you call, and have the brand, the model number and whether it is a chest or an upright ready.',
+          'Call if water keeps coming back after you dry it, if the freezer is warming up, or if you see heavy frost on the back wall of an upright, which points to a failed defrost part. Have the brand, the model number, the thermometer reading and the freezer type ready, and say it is urgent if the food is softening.',
         ],
       },
       {
@@ -447,7 +447,7 @@ export const services: Service[] = [
           { part: 'Shellfish and cooked dishes', job: 'Ice crystals are still present', signs: 'It warmed above 40°F' },
           { part: 'Ice cream and frozen desserts', job: 'Still frozen solid', signs: 'It partly thawed, even if it is cold' },
         ],
-        note: 'Refreezing can lower the quality of some foods, but it stays safe under these conditions. Appearance and smell are not reliable tests. When in doubt, throw it out.',
+        note: 'Refreezing can lower the quality of some foods, but it stays safe under these conditions. Appearance and smell are not reliable tests. If you are unsure about an item, discard it.',
       },
       {
         type: 'compare',
@@ -497,7 +497,7 @@ export const services: Service[] = [
           'The compressor clicks every few minutes and never runs.',
           'You see oily residue on the tubing, which can point to a refrigerant leak.',
         ],
-        note: 'Refrigerant work requires EPA Section 608 certification. Never cut or puncture freezer tubing.',
+        note: 'Only an EPA 608 certified technician should open the sealed system. Never cut or puncture freezer tubing.',
       },
       {
         type: 'process',
@@ -532,7 +532,7 @@ export const services: Service[] = [
       },
       {
         type: 'prose',
-        heading: 'Freezer types local pros repair',
+        heading: 'Chest, upright and garage freezer types',
         paragraphs: [
           'Chest freezers, often called deep freezers, are the most common second freezer in Temple homes. They are simple, efficient and usually manual defrost, which makes them practical to repair for many years.',
           'Upright freezers take less floor space and are easier to organize. Many are frost-free, with a defrost heater, a defrost thermostat and a fan, which gives them a few more parts to fail. Manual defrost uprights work more like a chest freezer standing on end.',
@@ -540,7 +540,7 @@ export const services: Service[] = [
         ],
       },
       { type: 'repairOrReplace' },
-      { type: 'brands', heading: 'Freezer brands and types local pros repair', intro: 'Local pros repair the major freezer brands found in Temple homes and garages. Give the brand, model number and type when you call.', styles: ['Chest freezers', 'Upright freezers', 'Frost-free', 'Manual defrost'] },
+      { type: 'brands', heading: 'Freezer brands in Temple homes and garages', intro: 'Frigidaire and GE chest freezers fill a lot of Temple garages, with Whirlpool, Kenmore and others close behind. These are the brands technicians see most on freezer calls. Give the brand, model number and type when you call.', styles: ['Chest freezers', 'Upright freezers', 'Frost-free', 'Manual defrost'] },
       { type: 'faq' },
     ],
   },
@@ -551,15 +551,15 @@ export const services: Service[] = [
     navLabel: 'Washer Repair',
     icon: 'washer',
     card: 'Won’t drain, won’t spin, leaking or shaking hard.',
-    metaTitle: 'Emergency Washer Repair Temple TX | Local Pros',
+    metaTitle: 'Emergency Washer Repair Temple TX | Leaking or Won’t Drain?',
     metaDescription:
-      'Washer repair in Temple, TX for top-load and front-load washing machines that won’t drain, spin or stop leaking. Call to get connected with a local pro.',
+      'Washer stuck full of water, leaking or not spinning? Top-load, front-load and stacked washers in Temple, TX, including Whirlpool, LG and Samsung. Call (254) 615-2088.',
     h1: 'Top-Load & Front-Load Washer Repair in Temple, TX',
     intro: [
-      'Washer stuck full of water, refusing to spin or leaking across the laundry room floor? Appliance Repair Temple connects homeowners across Temple, TX with independent local pros who repair top-load and front-load washing machines, including stacked laundry centers and high-efficiency models. Call and describe the problem to get connected with a local provider.',
+      'Washer stuck full of water, refusing to spin or leaking across the laundry room floor? Appliance Repair Temple is Temple’s line for washer repair. One call puts you in touch with a technician who works on top-load and front-load washing machines, stacked laundry centers and high-efficiency models. Say where in the cycle it stops and whether water is still on the floor.',
       'Most washer breakdowns trace back to a handful of parts: the lid or door lock, the drain pump, a water inlet valve, the drive belt or coupler, or the suspension. Where the cycle stops tells you a lot about which one failed, so that is where a technician will usually start. A good technician explains what failed and what the repair involves before any work begins. Ask for that.',
       'Washing machine repair covers more than the machine itself. A slow house drain, a worn fill hose or an outlet on a tripped circuit can look like a washer problem, so a good technician checks the hookups too and tells you if the fault is outside the washer.',
-      'Some washer problems cannot wait until the weekend. A washer leaking across the floor, a drum stuck full of water or a machine that trips the breaker is a reason to look for emergency washer repair. Emergency help may be available from local providers. Say it is urgent when you call.',
+      'Some washer problems cannot wait until the weekend. A washer leaking across the floor, a drum stuck full of water or a machine that trips the breaker is a reason to look for emergency washer repair, and to say it is urgent the moment the call connects.',
     ],
     symptomsHeading: 'Common washer problems in Temple homes',
     symptoms: [
@@ -641,15 +641,15 @@ export const services: Service[] = [
       },
       {
         q: 'Can stacked washer and dryer units be repaired?',
-        a: 'Yes. Stacked laundry centers take more access work, so mention it when you call and the technician can plan for it.',
+        a: 'Yes. Stacked laundry centers take more access work, so say it is a stacked unit up front and the technician can plan for the extra time.',
       },
       {
         q: 'How much does washer repair cost?',
-        a: 'It depends on the machine and the failed part, so this site does not list prices. Call to get connected with a local pro, and ask about pricing and any warranty before work starts. Have the brand, model number and a short description of what the washer is doing ready.',
+        a: 'Clearing a drain pump and replacing tub bearings are worlds apart in labor, so this site does not list prices. Get the price and any warranty terms before the machine is pulled out, and have the brand, model number and a short description of what the washer is doing ready.',
       },
       {
         q: 'Can I get emergency washer repair in Temple?',
-        a: 'Emergency help may be available from local providers. A washer leaking across the floor, stuck full of water or tripping the breaker is worth treating as urgent, so say it is urgent when you call. In the meantime, close both water valves, unplug the washer or switch off its breaker, and keep a front-load door shut while the drum is full.',
+        a: 'Treat it as urgent, and say so when you call, if the washer is leaking across the floor, stuck full of water or tripping the breaker. In the meantime, close both water valves, unplug the washer or switch off its breaker, and keep a front-load door shut while the drum is full.',
       },
       {
         q: 'Why is my washer leaking water on the floor?',
@@ -665,11 +665,11 @@ export const services: Service[] = [
       },
       {
         q: 'Is washer repair available outside Temple?',
-        a: 'Yes. Along with Temple, local pros repair washers in Belton, Killeen, Harker Heights, Nolanville, Morgan’s Point Resort, Salado, Troy, Little River-Academy, Rogers, Holland and Moody.',
+        a: 'Yes. Washer calls come in from Belton, Killeen, Harker Heights, Nolanville, Morgan’s Point Resort, Salado, Troy, Little River-Academy, Rogers, Holland and Moody as well, from apartments with stacked units to rural homes on well water.',
       },
       {
         q: 'Where is the model number on my washer?',
-        a: 'On top-loaders, look under the lid or on the back of the control panel. On front-loaders, check the door frame or the inside of the door. A photo of the label works.',
+        a: 'On top-loaders, look under the lid or on the back of the control panel. On front-loaders, check the door frame or the inside of the door. A clear photo of the label is enough.',
       },
     ],
     related: ['dryer', 'dishwasher', 'refrigerator'],
@@ -725,14 +725,14 @@ export const services: Service[] = [
           'Front-load: open the small panel at the bottom front, lay down towels and a shallow pan, drain through the little hose if there is one, then unscrew the filter slowly.',
           'Top-load: bail the water out with a container, or lower the drain hose into a bucket below the level of the tub.',
           'Check the pump filter and drain hose for socks, coins, hair ties and kinks.',
-          'Plug it back in and run a drain and spin. If it hums and nothing moves, stop and call to get connected with a local pro. Running a jammed pump can burn out its motor.',
+          'Plug it back in and run a drain and spin. If it hums and nothing moves, stop and call. Running a jammed pump can burn out its motor.',
         ],
         note: 'Never open a front-load door while the drum is full. The water will pour straight onto the floor.',
       },
       {
         type: 'emergency',
         heading: 'Emergency washer repair in Temple',
-        intro: 'A washer that is leaking or stuck full of water can damage floors and cabinets within hours. Emergency help may be available from local providers. Say it is urgent when you call, and take the steps here to limit the water damage first.',
+        intro: 'A washer that is leaking or stuck full of water can damage floors, baseboards and cabinets within hours. Take the steps here to limit the water damage before you pick up the phone.',
         signs: [
           { title: 'Water spreading across the floor', text: 'A burst or cracked fill hose, a torn door boot or a pump leak that keeps coming back every cycle.' },
           { title: 'Drum stuck full of water', text: 'The washer stops mid-cycle and will not drain, often with a full load of wet clothes locked inside.' },
@@ -743,7 +743,7 @@ export const services: Service[] = [
           'Turn the washer off and unplug it, or switch off the breaker if water is near the outlet.',
           'Close both water valves behind the washer.',
           'Lay towels down and keep the front-load door shut while the drum is full.',
-          'Write down the brand, model number and any error code, then call.',
+          'Write down the brand, the model number and the error code if one is showing, then call.',
         ],
       },
       {
@@ -753,7 +753,7 @@ export const services: Service[] = [
           'A leaking washing machine can put gallons of water on the floor in a single cycle, and in many Temple homes the laundry room sits next to carpet, a hallway or a garage wall that soaks it up. Most washer leaks come from a few places. Fill hoses crack or bulge with age and can split under pressure. On front-loaders, a torn or folded door boot seal lets water run out the front during the wash. The drain pump and its filter cap can drip under the machine, and a drain hose that has slipped out of the standpipe sends water behind the washer every time it drains. Less often, a worn tub seal leaks from underneath.',
           'Check first when the leak happens. Water during the fill points to the hoses or the inlet valve. Water during the drain or spin points to the pump, the drain hose or the standpipe. Water at the front of a front-loader points to the door boot or to too many suds from non-HE detergent. Use a flashlight to look at both hose connections behind the machine, and make sure the drain hose is secured in the standpipe.',
           'To stop the damage, turn the washer off and close both water valves behind it. If water is near the outlet or the cord, switch off the breaker before you touch anything. Leave a front-load door closed while the drum is full, mop up standing water and pull wet items away from walls and baseboards. A wet-dry vacuum makes quick work of a large puddle.',
-          'Call to get connected with a local pro if the leak returns on the next cycle, if a hose or valve is damaged, or if the water is coming from under the tub. Do not keep running loads on a leaking washer, because water that reaches the motor or the controls can turn a hose or seal repair into a bigger one. Emergency help may be available from local providers. Say it is urgent when you call, and have the brand and model number ready.',
+          'Call if the leak returns on the next cycle, if a hose or valve is damaged, or if the water is coming from under the tub. Do not keep running loads on a leaking washer, because water that reaches the motor or the controls can turn a hose or seal repair into a bigger one. Say it is urgent if water is still spreading, and have the brand and model number ready.',
         ],
       },
       {
@@ -790,11 +790,11 @@ export const services: Service[] = [
       { type: 'repairOrReplace' },
       {
         type: 'prose',
-        heading: 'Washing machine types and features local pros repair',
+        heading: 'Washing machine types and what wears out on each',
         paragraphs: [
           'Top-load washers with an agitator are still common in Temple homes and rentals. They are simple to work on, and most of their failures come from the lid lock, the coupler, the belt or the shift actuator. High-efficiency top-loaders swap the agitator for a low-profile impeller and add electronic controls, sensors and error codes.',
           'Front-load washers use less water and spin faster, which puts more load on the door lock, the door boot seal, the shock absorbers and the tub bearings. They also hold water in the pump filter and the seal, which is behind most odor complaints.',
-          'Stacked laundry centers and stacked front-load pairs need more access work, because the dryer sits on top or the washer has to come out of a closet. Mention it when you call so the technician can plan for it.',
+          'Stacked laundry centers and stacked front-load pairs need more access work, because the dryer sits on top or the washer has to come out of a closet. Say so when you call, because pulling a stacked pair out of a laundry closet takes planning.',
           'Whatever the type, a good washer repair starts the same way: run a cycle, read any stored codes, test the likely parts and explain the fix before any work starts.',
         ],
       },
@@ -819,7 +819,7 @@ export const services: Service[] = [
           'A washer that is dead with no lights may be on a tripped breaker or a tripped outlet in the laundry room or garage. Check those first. If the power is good and the washer still does nothing, that is a washer repair.',
         ],
       },
-      { type: 'brands', heading: 'Washer brands and types local pros repair', intro: 'Local pros repair the major washer brands found in Temple laundry rooms. Give the brand and model number when you call so the technician can check parts ahead of time.', styles: ['Top-load', 'Front-load', 'High-efficiency (HE)', 'Stacked laundry centers'] },
+      { type: 'brands', heading: 'Washer brands in Temple laundry rooms', intro: 'Whirlpool and Maytag top-loaders, LG and Samsung front-loaders and the occasional Speed Queen make up most washer calls in Temple. Give the brand and model number when you call so lock, pump and valve parts can be lined up.', styles: ['Top-load', 'Front-load', 'High-efficiency (HE)', 'Stacked laundry centers'] },
       { type: 'faq' },
     ],
   },
@@ -830,15 +830,15 @@ export const services: Service[] = [
     navLabel: 'Dryer Repair',
     icon: 'dryer',
     card: 'No heat, long dry times, squealing or won’t turn.',
-    metaTitle: 'Dryer Repair Temple TX | Connect With Local Pros',
+    metaTitle: 'Dryer Repair Temple TX | No Heat, Squealing or Slow Drying',
     metaDescription:
-      'Dryer repair in Temple, TX for electric and gas dryers that are not heating, take too long or squeal. Call to get connected with a local appliance repair pro.',
+      'Dryer running cold, squealing or taking three cycles to dry? Gas and electric dryer repair in Temple, TX. Find out if it is the vent or a heat part. Call (254) 615-2088.',
     h1: 'Electric & Gas Dryer Repair in Temple, TX',
     intro: [
-      'Dryer running but the clothes come out damp? Taking two or three cycles to dry a load? Appliance Repair Temple connects homeowners across Temple, TX with independent local pros who repair electric and gas dryers, including stacked laundry centers. Call and describe the problem to get connected with a local provider.',
-      'Most dryer calls come down to heat or airflow. On the heat side it is a heating element, a thermal fuse, a thermostat or a gas igniter. On the airflow side it is lint: in the screen housing, the transition hose or the vent run to the outside. A clogged vent also makes the dryer overheat and burn out heating parts, so a good technician checks both and explains the repair before starting. Ask for that.',
+      'Dryer running but the clothes come out damp? Taking two or three cycles to dry a load? Appliance Repair Temple is Temple’s line for dryer repair, electric or gas. One call puts you in touch with a technician who works on standalone dryers and stacked laundry centers. Say whether yours runs on gas or a 240-volt outlet.',
+      'Most dryer calls come down to heat or airflow. On the heat side it is a heating element, a thermal fuse, a thermostat or a gas igniter. On the airflow side it is lint: in the screen housing, the transition hose or the vent run to the outside. A clogged vent also makes the dryer overheat and burn out heating parts, so a good technician checks both and explains the repair before starting.',
       'Whether your dryer is not heating, will not tumble, shuts off early or squeals through every load, a good dryer repair starts with a test run, a look at the airflow and a meter on the heat circuit. Ask for that, so you pay for the part that failed, not a guess.',
-      'A dryer that smells like burning, runs far too hot or trips the breaker should not be used again until it is checked. Heat and lint together are a fire risk, so treat it as an emergency dryer repair. Emergency help may be available from local providers. Say it is urgent when you call.',
+      'A dryer that smells like burning, runs far too hot or trips the breaker should not be used again until it is checked. Heat and lint together are a fire risk, so treat it as an emergency dryer repair and say so when you call.',
     ],
     symptomsHeading: 'Dryer problems and what usually causes them',
     symptoms: [
@@ -908,7 +908,7 @@ export const services: Service[] = [
       },
       {
         q: 'Can gas dryers be repaired in Temple?',
-        a: 'Yes. Local pros repair gas dryers, and a technician will usually check the igniter, flame sensor and gas valve coils. If you ever smell gas, leave the house and call your gas utility from outside before anything else.',
+        a: 'Yes. Gas dryer repair is a regular call in Temple, and a technician will usually check the igniter, flame sensor and gas valve coils. If you ever smell gas, leave the house and call your gas utility from outside before anything else.',
       },
       {
         q: 'How often should a dryer vent be cleaned?',
@@ -920,11 +920,11 @@ export const services: Service[] = [
       },
       {
         q: 'Can a dryer be fixed on the first visit?',
-        a: 'Often, yes. Many dryer parts are common enough to replace on the first visit. Some model-specific parts have to be ordered, so ask the technician whether the part is on hand. Giving the brand and model number when you call helps.',
+        a: 'Often, yes. Belts, fuses, rollers and thermostats are common enough to replace on the first visit, while some model-specific parts have to be ordered. Giving the brand and model number when you call helps.',
       },
       {
         q: 'Can I get emergency dryer repair in Temple?',
-        a: 'Emergency help may be available from local providers. A dryer that smells like burning, runs far too hot, trips the breaker or has a gas smell nearby is worth treating as urgent, so say it is urgent when you call. Stop using the dryer and unplug it or switch off its breaker. If you smell gas, leave the house and call your gas utility from outside first.',
+        a: 'Say it is urgent at the start of the call. A dryer that smells like burning, runs far too hot, trips the breaker or has a gas smell nearby should not run another load. Stop using the dryer and unplug it or switch off its breaker. If you smell gas, leave the house and call your gas utility from outside first.',
       },
       {
         q: 'Why is my dryer not heating?',
@@ -932,7 +932,7 @@ export const services: Service[] = [
       },
       {
         q: 'My dryer smells like burning. What should I do?',
-        a: 'Stop the dryer, unplug it or switch off its breaker, and let it cool. Do not run another load. A burning smell usually means lint has built up near the heating element or burner, or a part is overheating. Call to get connected with a local pro and have it checked before you use it again.',
+        a: 'Stop the dryer, unplug it or switch off its breaker, and let it cool. Do not run another load. A burning smell usually means lint has built up near the heating element or burner, or a part is overheating. Have a technician check it before the next load.',
       },
       {
         q: 'Why does my dryer take so long to dry clothes?',
@@ -940,11 +940,11 @@ export const services: Service[] = [
       },
       {
         q: 'Is dryer repair available outside Temple?',
-        a: 'Yes. Along with Temple, local pros repair dryers in Belton, Killeen, Harker Heights, Nolanville, Morgan’s Point Resort, Salado, Troy, Little River-Academy, Rogers, Holland and Moody.',
+        a: 'Yes. Dryer owners in Belton, Killeen, Harker Heights, Nolanville, Morgan’s Point Resort, Salado, Troy, Little River-Academy, Rogers, Holland and Moody can call the same number, gas or electric.',
       },
       {
         q: 'How much does dryer repair cost?',
-        a: 'It depends on the dryer and the part that failed, so this site does not list prices. Call to get connected with a local pro, and ask about pricing and any warranty before work starts. Have the brand, the model number and whether it is gas or electric ready.',
+        a: 'A blown thermal fuse and a new heating element plus a cleared vent are very different jobs, so this site does not list prices. Ask what the repair will cost, and about any warranty, before work starts, and have the brand, the model number and the fuel type ready.',
       },
     ],
     related: ['washer', 'oven', 'dishwasher'],
@@ -992,14 +992,14 @@ export const services: Service[] = [
           'Look behind the dryer. The hose should be smooth and short, not crushed, kinked or full of sags.',
           'Run the dryer on high heat and go outside to the vent hood. You should feel strong, warm air and the flap should open fully.',
           'Weak or no airflow outside means a clogged vent. Strong airflow but no heat means a heating part.',
-          'Call to get connected with a local pro, and describe what you found, the brand, the model number and whether it is gas or electric.',
+          'Call and describe what you found at the vent hood, along with the brand, the model number and whether it is gas or electric.',
         ],
         note: 'Do not run a dryer that smells hot or burning while you test. Check the airflow with a load of wet towels only if it has been running normally.',
       },
       {
         type: 'emergency',
         heading: 'Emergency dryer repair in Temple',
-        intro: 'Heat and lint together are a fire risk, so a dryer that smells like burning or runs far too hot should not wait. Emergency help may be available from local providers. Say it is urgent when you call, and stop using the dryer until it is checked.',
+        intro: 'Heat and lint together are a fire risk, so a dryer that smells like burning or runs far too hot should not wait. Stop using the dryer, run through the signs below and leave it off until a technician has looked at it.',
         signs: [
           { title: 'Burning smell or smoke', text: 'A hot, singed smell during a cycle, or smoke from the drum, the vent or the cabinet. If you see flames, leave and call 911.' },
           { title: 'Too hot to touch', text: 'The top or sides of the dryer get very hot, or clothes come out scorched.' },
@@ -1055,7 +1055,7 @@ export const services: Service[] = [
         steps: [
           { title: 'Airflow first', text: 'A good technician checks airflow at the vent hood and the hose behind the dryer before blaming a part.' },
           { title: 'Test the heat circuit', text: 'Element, fuse and thermostats on electric models, or igniter, sensor and valve coils on gas models, are usually tested with a meter.' },
-          { title: 'Explain and approve', text: 'Ask what failed, whether the vent played a part, and what the repair involves. Work should start only after you say yes.' },
+          { title: 'Explain and approve', text: 'Ask what failed, whether the vent played a part, and what the repair involves. Nothing should be replaced until you agree.' },
           { title: 'Repair and run', text: 'After a part is replaced, ask for a test run to confirm the dryer heats and the drum turns quietly.' },
         ],
       },
@@ -1073,15 +1073,15 @@ export const services: Service[] = [
       },
       {
         type: 'prose',
-        heading: 'Dryer types and features local pros repair',
+        heading: 'Electric, gas and stacked dryer types',
         paragraphs: [
           'Electric dryers run on a 240-volt circuit and heat with an element. Gas dryers use a burner, an igniter and a gas valve, with a standard outlet for the motor and controls. The motor, belt, rollers and drum are much the same in both, so a drum that will not turn is the same dryer repair either way.',
           'Newer dryers add sensor dry, steam and wrinkle care cycles, and electronic controls that store error codes. Sensor dry problems are often fixed by cleaning the moisture bars inside the drum, and steam features need a working water supply and fill valve.',
-          'Stacked laundry centers and stacked front-load pairs need more access work, because the dryer sits on top or sits in a closet. Mention it when you call so the technician can plan for it.',
+          'On a stacked laundry center or a stacked front-load pair, the dryer is the top half, so reaching the belt, rollers and heat parts often means lifting it off the washer or pulling both out of a closet. Say it is stacked when you call.',
         ],
       },
       { type: 'repairOrReplace' },
-      { type: 'brands', heading: 'Dryer brands and types local pros repair', intro: 'Local pros repair the major dryer brands found in Temple laundry rooms. Give the brand, model number and whether it is gas or electric when you call.', styles: ['Electric', 'Gas', 'Stacked laundry centers'] },
+      { type: 'brands', heading: 'Dryer brands, gas and electric', intro: 'Most Temple laundry rooms pair the dryer with a washer of the same brand, so the list looks a lot like the washer list: Whirlpool, Maytag, Samsung, LG, GE and more. Give the brand, model number and fuel type when you call.', styles: ['Electric', 'Gas', 'Stacked laundry centers'] },
       { type: 'faq' },
     ],
   },
@@ -1092,15 +1092,15 @@ export const services: Service[] = [
     navLabel: 'Dishwasher Repair',
     icon: 'dishwasher',
     card: 'Not draining, not cleaning, leaking or won’t start.',
-    metaTitle: 'Dishwasher Repair Temple TX | Connect With Local Pros',
+    metaTitle: 'Dishwasher Repair Temple TX | Not Draining or Cleaning?',
     metaDescription:
-      'Dishwasher repair in Temple, TX for dishwashers not draining, leaking or leaving dishes dirty. All major brands. Call to get connected with a local pro.',
+      'Dishwasher not draining, leaving gritty dishes or leaking under the door? Bosch, Whirlpool, GE and KitchenAid dishwasher repair in Temple, TX. Call (254) 615-2088.',
     h1: 'Built-In Dishwasher Repair in Temple, TX',
     intro: [
-      'Standing water in the bottom, gritty dishes or a puddle under the door? Appliance Repair Temple connects homeowners across Temple, TX with independent local pros who repair built-in dishwashers, from basic models to third-rack machines with front or hidden top controls. Call and describe the problem to get connected with a local provider.',
+      'Standing water in the bottom, gritty dishes or a puddle under the door? Appliance Repair Temple is Temple’s line for dishwasher repair. One call puts you in touch with a technician who works on built-in dishwashers, from basic models to third-rack machines with front or hidden top controls. Mention what the last load looked like.',
       'Most dishwasher calls come back to a clogged filter, a drain pump, a water inlet valve, a door seal or the heating element. Hard water is common in Central Texas, and mineral scale makes several of these worse over time, so ask the technician to check for it. A good technician explains what failed and what the repair involves before anything is replaced.',
       'A dishwasher not draining, a dishwasher not cleaning, a door that will not latch or a control panel that flashes an error code should all start the same way: a short test cycle, a look at the filter, spray arms and drain hose, then a meter on the parts that could be at fault.',
-      'Because a dishwasher sits inside your cabinets, a leak can soak the subfloor and the cabinet base before you see much water. A dishwasher leaking onto the floor, or one that trips the breaker or smells like burning, is a reason to look for emergency dishwasher repair. Emergency help may be available from local providers. Say it is urgent when you call.',
+      'Because a dishwasher sits inside your cabinets, a leak can soak the subfloor and the cabinet base before you see much water. A dishwasher leaking onto the floor, or one that trips the breaker or smells like burning, is a reason to look for emergency dishwasher repair and to say it is urgent when you call.',
     ],
     symptomsHeading: 'Common dishwasher problems in Temple homes',
     symptoms: [
@@ -1180,7 +1180,7 @@ export const services: Service[] = [
       },
       {
         q: 'Can I get emergency dishwasher repair in Temple?',
-        a: 'Emergency help may be available from local providers. A dishwasher leaking onto the floor, tripping the breaker or smelling like burning is worth treating as urgent, so say it is urgent when you call. In the meantime, switch off the dishwasher breaker, close the hot water valve under the sink and dry the floor.',
+        a: 'Call and say it is urgent if the dishwasher is leaking onto the floor, tripping the breaker or smelling like burning. In the meantime, switch off the dishwasher breaker, close the hot water valve under the sink and dry the floor.',
       },
       {
         q: 'Why is my dishwasher leaking onto the floor?',
@@ -1196,15 +1196,15 @@ export const services: Service[] = [
       },
       {
         q: 'Is dishwasher repair available outside Temple?',
-        a: 'Yes. Along with Temple, local pros repair dishwashers in Belton, Killeen, Harker Heights, Nolanville, Morgan’s Point Resort, Salado, Troy, Little River-Academy, Rogers, Holland and Moody.',
+        a: 'Yes. Homeowners in Belton, Killeen, Harker Heights, Nolanville, Morgan’s Point Resort, Salado, Troy, Little River-Academy, Rogers, Holland and Moody can call the same line about a dishwasher, and hard water scale is just as common a culprit there.',
       },
       {
         q: 'How much does dishwasher repair cost?',
-        a: 'It depends on the model and the part, so this site does not list prices. Call to get connected with a local pro, with the brand and model number ready, and ask about pricing and any warranty before work starts.',
+        a: 'A clogged filter and a failed control board sit at opposite ends of the bill, so this site does not list prices. Agree on the price and any warranty before the dishwasher comes out of the cabinet, and have the brand and model number ready when you call.',
       },
       {
         q: 'Where is the model number on my dishwasher?',
-        a: 'Open the door and look along the top or side edge of the door, or on the tub frame just inside. A photo of the label works.',
+        a: 'Open the door and look along the top or side edge of the door, or on the tub frame just inside. A photo of that sticker saves reading it out over the phone.',
       },
     ],
     related: ['washer', 'refrigerator', 'oven'],
@@ -1240,18 +1240,18 @@ export const services: Service[] = [
       {
         type: 'emergency',
         heading: 'Emergency dishwasher repair in Temple',
-        intro: 'A dishwasher leak runs under the cabinets, where it can soak the subfloor long before the puddle looks serious. Emergency help may be available from local providers. Say it is urgent when you call, and shut off the power and water first.',
+        intro: 'A dishwasher leak runs under the cabinets, where it can soak the subfloor long before the puddle looks serious. Shut off the power and water first, then work through the signs below.',
         signs: [
           { title: 'Water on the floor', text: 'Water coming from under the door, the toe kick or the sink cabinet during or after a cycle.' },
           { title: 'Water near the wiring', text: 'Water has reached the wiring box behind the toe kick or the outlet under the sink.' },
-          { title: 'Burning smell or tripped breaker', text: 'A hot or electrical smell from the bottom of the door, or the breaker trips when the dishwasher heats.' },
+          { title: 'Hot smell or a tripped breaker', text: 'A hot or electrical smell from the bottom of the door, or the breaker trips when the dishwasher heats.' },
           { title: 'Will not stop filling', text: 'Water keeps coming in after the dishwasher is switched off, which points to a stuck inlet valve.' },
         ],
         steps: [
           'Switch off the dishwasher breaker.',
           'Close the hot water valve under the sink.',
           'Dry the floor and keep the door shut if the tub is still full.',
-          'Write down the brand, model number and any error code, then call.',
+          'Find the model label on the door edge, note any code, then call.',
         ],
       },
       {
@@ -1288,24 +1288,24 @@ export const services: Service[] = [
           { title: 'Run and watch', text: 'A technician will usually run a short cycle and check fill level, spray and drain.' },
           { title: 'Filter, arms and hose', text: 'The filter, spray arms, drain hose loop and disposal connection are usually checked first.' },
           { title: 'Test the parts', text: 'Ask that the inlet valve, pump, heating element and latch be tested, and that the technician explains what failed and what the repair involves.' },
-          { title: 'Repair and run', text: 'Once you approve, the repair is made. Ask for a cycle to confirm it fills, washes and drains.' },
+          { title: 'Repair and run', text: 'With your approval, the part goes in. Ask for a cycle to confirm it fills, washes and drains.' },
         ],
       },
       {
         type: 'resultsGrid',
         eyebrow: 'Dishwasher error codes',
         heading: 'What your dishwasher’s error code is pointing to',
-        intro: 'The exact codes differ by brand and model, but most dishwasher error codes fall into a few groups. Write the code down before you reset anything.',
+        intro: 'The exact codes differ by brand and model, but most dishwasher error codes fall into a few groups. Note the code, or take a photo of the display, before you reset anything.',
         rows: [
           { see: 'A drain code', means: 'Water did not leave the tub in time. A clogged filter, a kinked hose, a clogged disposal or a failed drain pump.', fix: 'Clean the filter and check the hose and disposal; the pump gets tested next.' },
-          { see: 'A fill or water supply code', means: 'Not enough water came in. A partly closed valve, a kinked supply line or a failed inlet valve.', fix: 'Open the hot water valve fully; inlet valves are a routine repair.' },
+          { see: 'A fill code or no-water code', means: 'Not enough water came in. A partly closed valve, a kinked supply line or a failed inlet valve.', fix: 'Open the hot water valve fully; inlet valves are a routine repair.' },
           { see: 'A leak or float code', means: 'Water has collected in the base pan and tripped the float switch, so the dishwasher stops filling.', fix: 'Turn it off and call for repair; the source of the water has to be found, not just the code cleared.' },
           { see: 'A heating or temperature code', means: 'The water is not heating, or the temperature sensor is reading wrong.', fix: 'The heating element and sensor are tested; both are replaceable parts.' },
         ],
       },
       {
         type: 'prose',
-        heading: 'Dishwasher types and features local pros repair',
+        heading: 'Dishwasher types and features in Temple kitchens',
         paragraphs: [
           'Most Temple kitchens have a standard built-in dishwasher, with the controls on the front of the door or hidden along the top edge. Hidden controls look cleaner, but they also mean the door latch and the control panel work together, so a latch fault can look like a dead dishwasher.',
           'Third-rack and tall-tub models add longer spray arms and more racks to wear. Quiet stainless tub models often dry by condensation and lean on rinse aid. Many newer dishwashers also use a manual filter that needs regular cleaning, which is why so many dishwasher repair calls start with the filter.',
@@ -1322,7 +1322,7 @@ export const services: Service[] = [
         ],
       },
       { type: 'repairOrReplace' },
-      { type: 'brands', heading: 'Dishwasher brands local pros repair', intro: 'Local pros repair the major dishwasher brands found in Temple kitchens. Give the brand and model number when you call so the technician can check parts ahead of time.', styles: ['Built-in', 'Front control', 'Top control', 'Third rack'] },
+      { type: 'brands', heading: 'Dishwasher brands in Temple kitchens', intro: 'Quiet Bosch tubs, Whirlpool and KitchenAid third-rack models and GE builder units cover most dishwasher calls in Temple. Read the brand and model number off the door edge before you call so the pump, valve or latch can be checked ahead of time.', styles: ['Built-in', 'Front control', 'Top control', 'Third rack'] },
       { type: 'faq' },
     ],
   },
@@ -1333,15 +1333,15 @@ export const services: Service[] = [
     navLabel: 'Oven & Stove Repair',
     icon: 'oven',
     card: 'Oven won’t heat, burner out, igniter clicking.',
-    metaTitle: 'Oven & Stove Repair Temple TX | Connect With Local Pros',
+    metaTitle: 'Oven & Stove Repair Temple TX | Won’t Heat or Burner Out?',
     metaDescription:
-      'Oven and stove repair in Temple, TX for electric and gas ranges, wall ovens and cooktops that won’t heat or light. Call to get connected with a local pro.',
+      'Oven not heating, burner clicking but not lighting, or door locked after self-clean? Gas and electric ranges and wall ovens in Temple, TX. Call (254) 615-2088.',
     h1: 'Oven, Stove & Range Repair in Temple, TX',
     intro: [
-      'Oven will not heat, bakes unevenly or a burner will not light? Appliance Repair Temple connects homeowners across Temple, TX with independent local pros who repair ovens, stoves, ranges, wall ovens and cooktops, electric and gas. Call and describe the problem to get connected with a local provider.',
-      'The usual causes are a short list: a burned-out bake or broil element, a weak gas igniter, a temperature sensor that has drifted, a failed surface element or infinite switch, or a door lock stuck after a self-clean. A good technician tests the part before replacing it, explains what failed and what the repair involves, and starts only after you say yes. Ask for that.',
+      'Oven will not heat, bakes unevenly or a burner will not light? Appliance Repair Temple is Temple’s line for oven, stove and range repair, electric and gas. One call puts you in touch with a technician who works on freestanding and slide-in ranges, wall ovens and cooktops. Say whether the trouble is in the oven, on the cooktop or both.',
+      'The usual causes are a short list: a burned-out bake or broil element, a weak gas igniter, a temperature sensor that has drifted, a failed surface element or infinite switch, or a door lock stuck after a self-clean. A good technician tests the part before replacing it, explains what failed and what the repair involves, and starts only after you say yes.',
       'Oven repair, stove repair and range repair are the same visit in practice. A range is an oven and a cooktop in one cabinet, and a gas stove repair often comes down to the same few igniters, switches and valves whether the problem is in the oven or on a burner. Electric ovens and glass-top stoves have their own short list of elements, switches and sensors.',
-      'Some range problems cannot wait. An oven that will not turn off, a burner stuck on high, a burning electrical smell or sparks call for emergency oven and stove repair. Emergency help may be available from local providers. Say it is urgent when you call. If you smell gas, leave the house and call your gas utility from outside first.',
+      'Some range problems cannot wait. An oven that will not turn off, a burner stuck on high, a burning electrical smell or sparks call for emergency oven and stove repair; say it is urgent when you call. If you smell gas, get out of the house and call the gas utility from outside before anything else.',
     ],
     symptomsHeading: 'Common oven and stove problems in Temple homes',
     symptoms: [
@@ -1419,15 +1419,15 @@ export const services: Service[] = [
       },
       {
         q: 'Is it safe to use the stovetop while the oven is broken?',
-        a: 'Usually, if the problem is limited to the oven. If anything smells like gas or burning wiring, stop using the whole range and call to get connected with a local pro.',
+        a: 'Usually, if the problem is limited to the oven. If anything smells like gas or burning wiring, stop using the whole range and have it checked first.',
       },
       {
         q: 'Can wall ovens and cooktops be repaired?',
-        a: 'Yes. Local pros repair built-in wall ovens and drop-in cooktops. Give the model number when you call so the technician can plan for the access.',
+        a: 'Yes. Built-in wall ovens and drop-in cooktops are regular repair calls in Temple. Give the model number when you call so the technician can plan for the access.',
       },
       {
         q: 'Can I get emergency oven and stove repair in Temple?',
-        a: 'Emergency help may be available from local providers. An oven that will not turn off, a burner stuck on high, sparks or a burning electrical smell are worth treating as urgent, so say it is urgent when you call. Switch off the breaker for the range first. If you smell gas, leave the house and call your gas utility from outside before anything else.',
+        a: 'Call and say it is urgent if the oven will not turn off, a burner is stuck on high, or you see sparks or smell burning wiring. Switch off the breaker for the range first. If you smell gas, leave the house and call your gas utility from outside before anything else.',
       },
       {
         q: 'My oven will not turn off. What should I do?',
@@ -1443,15 +1443,15 @@ export const services: Service[] = [
       },
       {
         q: 'Is oven and stove repair available outside Temple?',
-        a: 'Yes. Along with Temple, local pros repair ovens, stoves and ranges in Belton, Killeen, Harker Heights, Nolanville, Morgan’s Point Resort, Salado, Troy, Little River-Academy, Rogers, Holland and Moody.',
+        a: 'Yes. Oven, stove and range calls also come from Belton, Killeen, Harker Heights, Nolanville, Morgan’s Point Resort, Salado, Troy, Little River-Academy, Rogers, Holland and Moody, gas and electric alike.',
       },
       {
         q: 'How much does oven or stove repair cost?',
-        a: 'It depends on the model and the part, so this site does not list prices. Call to get connected with a local pro, and ask about pricing and any warranty before work starts. Have the brand, the model number and whether it is gas or electric ready.',
+        a: 'A new igniter and a replacement glass cooktop are very different jobs, so this site does not list prices. Ask about cost and any warranty on the part before the range is moved, and have the brand, the model number and whether it is gas or electric ready.',
       },
       {
         q: 'Where is the model number on my range?',
-        a: 'Pull out the storage drawer or open the oven door and look along the frame. On wall ovens and cooktops, check the frame edge or the underside. A photo of the label works.',
+        a: 'Pull out the storage drawer or open the oven door and look along the frame. On wall ovens and cooktops, check the frame edge or the underside. A photo of the rating plate is fine.',
       },
     ],
     related: ['microwave', 'dishwasher', 'refrigerator'],
@@ -1514,7 +1514,7 @@ export const services: Service[] = [
       {
         type: 'emergency',
         heading: 'Emergency oven and stove repair in Temple',
-        intro: 'A range that will not shut off or smells like burning wiring is a fire risk, not an inconvenience. Emergency help may be available from local providers. Say it is urgent when you call, and shut off the power or gas first.',
+        intro: 'A range that will not shut off or smells like burning wiring is a fire risk, not an inconvenience. Shut off the power or gas first, then check the signs below.',
         signs: [
           { title: 'Oven will not turn off', text: 'The oven keeps heating after it is switched off, or runs far hotter than the setting.' },
           { title: 'Burner stuck on high', text: 'A coil or glass-top burner stays on full heat no matter where the knob is set.' },
@@ -1541,7 +1541,7 @@ export const services: Service[] = [
         heading: 'Self-clean cycles: what to know before you press the button',
         paragraphs: [
           'A self-clean cycle heats the oven far above normal baking temperatures for a few hours to burn off spills. That heat is hard on parts that are already worn. Door locks, temperature sensors, thermal fuses and control boards often fail during or right after a self-clean, which is why so many oven calls start with "it was fine until I cleaned it."',
-          'If your oven is older or already acting up, wipe out loose spills by hand and skip the self-clean for now. Remove the racks unless your manual says they can stay, keep the kitchen ventilated, and do not try to force the door open while it is locked. If the lock does not release after the oven has cooled for a few hours, call to get connected with a local pro.',
+          'If your oven is older or already acting up, wipe out loose spills by hand and skip the self-clean for now. Remove the racks unless your manual says they can stay, keep the kitchen ventilated, and do not try to force the door open while it is locked. If the lock does not release after the oven has cooled for a few hours, call and say it stuck after a self-clean.',
         ],
       },
       {
@@ -1557,7 +1557,7 @@ export const services: Service[] = [
         steps: [
           { title: 'Check power or gas', text: 'A technician will usually confirm the range has power or gas supply before testing parts.' },
           { title: 'Test the heat source', text: 'Elements, igniters, switches and the temperature sensor are usually tested with a meter.' },
-          { title: 'Explain and approve', text: 'Ask what failed and what the repair involves. Work should start only after you say yes.' },
+          { title: 'Explain and approve', text: 'Ask what failed and what the repair involves. Give the go-ahead only once that is clear.' },
           { title: 'Repair and verify', text: 'After the repair, ask for the oven or burner to be run to confirm it heats correctly.' },
         ],
       },
@@ -1575,7 +1575,7 @@ export const services: Service[] = [
       },
       {
         type: 'prose',
-        heading: 'Ovens, stoves and ranges local pros repair',
+        heading: 'Ranges, wall ovens and cooktops in Temple kitchens',
         paragraphs: [
           'Freestanding ranges are the most common setup in Temple kitchens, with the oven below and four or five burners on top. Slide-in ranges sit flush with the counter and put the controls on the front, which changes how the technician reaches the wiring and switches.',
           'Wall ovens, single or double, are built into the cabinets and pair with a separate cooktop. They need more care to pull out, so give the model number when you call. Gas cooktops use spark igniters and burner valves, and electric cooktops use coil elements or radiant elements under a glass top, each with its own switch.',
@@ -1583,7 +1583,7 @@ export const services: Service[] = [
         ],
       },
       { type: 'repairOrReplace' },
-      { type: 'brands', heading: 'Oven and range brands local pros repair', intro: 'Local pros repair the major range, oven and cooktop brands found in Temple kitchens. Give the brand, model number and whether it is gas or electric when you call.', styles: ['Freestanding ranges', 'Slide-in ranges', 'Wall ovens', 'Cooktops', 'Electric and gas'] },
+      { type: 'brands', heading: 'Oven, range and cooktop brands', intro: 'GE and Frigidaire ranges are a common sight in Temple builder homes, with Whirlpool, Samsung, LG and KitchenAid in newer kitchens. Give the brand, model number and whether it is gas or electric when you call.', styles: ['Freestanding ranges', 'Slide-in ranges', 'Wall ovens', 'Cooktops', 'Electric and gas'] },
       { type: 'faq' },
     ],
   },
@@ -1594,15 +1594,15 @@ export const services: Service[] = [
     navLabel: 'Microwave Repair',
     icon: 'microwave',
     card: 'Over-the-range and built-in microwaves not heating.',
-    metaTitle: 'Microwave Repair Temple TX | Connect With Local Pros',
+    metaTitle: 'Microwave Repair Temple TX | Over-the-Range Not Heating?',
     metaDescription:
-      'Microwave repair in Temple, TX for over-the-range and built-in microwaves that are not heating, sparking or dead. Call to get connected with a local pro.',
+      'Microwave running but not heating, sparking or dead? Over-the-range and built-in microwave repair in Temple, TX, vent fan and light too. Call (254) 615-2088.',
     h1: 'Over-the-Range & Built-In Microwave Repair in Temple, TX',
     intro: [
-      'Microwave running but not heating, sparking inside or completely dead? Appliance Repair Temple connects homeowners across Temple, TX with independent local pros who repair over-the-range and built-in microwaves, including the vent fan and light on over-the-range models. Call and describe the problem to get connected with a local provider.',
-      'Microwaves look simple, but inside they run on high voltage. A failed door switch, a blown fuse, a diode, a capacitor or the magnetron is behind most no-heat calls, and those parts can hold a dangerous charge even after the unit is unplugged. A qualified technician discharges the circuit safely, tests the parts, explains what failed and what the repair involves, and starts only after you say yes. Ask for that.',
+      'Microwave running but not heating, sparking inside or completely dead? Appliance Repair Temple is Temple’s line for over-the-range and built-in microwave repair. One call puts you in touch with a technician who works on the heating circuit and on the vent fan and cooktop light of over-the-range models. Say how the microwave is mounted.',
+      'Microwaves look simple, but inside they run on high voltage. A failed door switch, a blown fuse, a diode, a capacitor or the magnetron is behind most no-heat calls, and those parts can hold a dangerous charge even after the unit is unplugged. A qualified technician discharges the circuit safely, tests the parts, explains what failed and what the repair involves, and starts only after you say yes.',
       'Over-the-range microwave repair also covers the parts that make it a range hood: the vent fan, the cooktop light and their switches. Built-in microwave repair and wall oven combination units follow the same high-voltage rules, with more care taken to remove the unit from the cabinet.',
-      'A microwave that sparks, smokes, smells like burning or keeps running with the door open should not be used again until it is checked. That is a case for emergency microwave repair. Emergency help may be available from local providers. Say it is urgent when you call.',
+      'A microwave that sparks, smokes, smells like burning or keeps running with the door open should not be used again until it is checked. That is a case for emergency microwave repair, so say it is urgent when you call.',
     ],
     symptomsHeading: 'Common microwave problems in Temple homes',
     symptoms: [
@@ -1648,7 +1648,7 @@ export const services: Service[] = [
       heading: 'Repair or replace your microwave?',
       paragraphs: [
         'For countertop microwaves, replacing usually makes more sense than a service visit. For over-the-range and built-in units, the math changes: a replacement means removing the old unit, mounting the new one and sometimes matching the cabinet opening, so repairing a door switch, fuse, turntable or fan is usually worth it.',
-        'A magnetron failure on an older over-the-range unit is the closer call. It depends on the age of the microwave and whether the part is still available. Ask the technician to tell you plainly.',
+        'A magnetron failure on an older over-the-range unit is the closer call. It depends on the age of the microwave and whether the part is still available. It is fair to ask the technician which way they would go.',
       ],
       points: [
         'Countertop microwave: replacement usually makes more sense',
@@ -1678,7 +1678,7 @@ export const services: Service[] = [
       },
       {
         q: 'Can I get an over-the-range microwave installed?',
-        a: 'This site connects homeowners with local repair pros. Some providers also install over-the-range microwaves, so call and ask about installation for your situation.',
+        a: 'Calls to this line are about repair. Some technicians also install over-the-range microwaves, so ask about installation on the call and mention the cabinet width.',
       },
       {
         q: 'Why is my over-the-range microwave fan so loud?',
@@ -1686,7 +1686,7 @@ export const services: Service[] = [
       },
       {
         q: 'Can I get emergency microwave repair in Temple?',
-        a: 'Emergency help may be available from local providers. A microwave that sparks with nothing metal inside, smokes, smells like burning, keeps running with the door open or trips the breaker is worth treating as urgent, so say it is urgent when you call. In the meantime, turn it off, keep the door closed and unplug it or switch off its breaker if you can do it safely.',
+        a: 'Say it is urgent when you call if the microwave sparks with nothing metal inside, smokes, smells like burning, keeps running with the door open or trips the breaker. In the meantime, turn it off, keep the door closed and unplug it or switch off its breaker if you can do it safely.',
       },
       {
         q: 'What should I do if there is a fire inside my microwave?',
@@ -1702,11 +1702,11 @@ export const services: Service[] = [
       },
       {
         q: 'Is microwave repair available outside Temple?',
-        a: 'Yes. Along with Temple, local pros repair over-the-range and built-in microwaves in Belton, Killeen, Harker Heights, Nolanville, Morgan’s Point Resort, Salado, Troy, Little River-Academy, Rogers, Holland and Moody.',
+        a: 'Yes. Over-the-range and built-in microwave calls also come from Belton, Killeen, Harker Heights, Nolanville, Morgan’s Point Resort, Salado, Troy, Little River-Academy, Rogers, Holland and Moody.',
       },
       {
         q: 'How much does microwave repair cost?',
-        a: 'It depends on the model and the part, so this site does not list prices. Call to get connected with a local pro, with the brand and model number ready, and ask about pricing and any warranty before work starts.',
+        a: 'A door switch and a magnetron are very different repairs, so this site does not list prices. Ask about the price and any warranty before the unit comes off the wall, and have the brand and model number ready.',
       },
       {
         q: 'Where is the model number on my microwave?',
@@ -1777,7 +1777,7 @@ export const services: Service[] = [
       {
         type: 'emergency',
         heading: 'Emergency microwave repair in Temple',
-        intro: 'A microwave that sparks, smokes or will not stop running is a fire and shock risk, and an over-the-range unit sits right above your cooktop. Emergency help may be available from local providers. Say it is urgent when you call, and stop using the microwave until it is checked.',
+        intro: 'A microwave that sparks, smokes or will not stop running is a fire and shock risk, and an over-the-range unit sits right above your cooktop. Stop using it and work through the signs below.',
         signs: [
           { title: 'Sparking with nothing metal inside', text: 'Flashes or arcing in the cavity, often from a burned waveguide cover or chipped interior paint.' },
           { title: 'Smoke or burning smell', text: 'Smoke from the vents or cabinet, or an electrical smell that is not food. Keep the door closed and turn it off.' },
@@ -1818,7 +1818,7 @@ export const services: Service[] = [
         steps: [
           { title: 'Safe discharge', text: 'A qualified technician unplugs the unit and safely discharges the high-voltage circuit before opening it.' },
           { title: 'Test the parts', text: 'Door switches, fuse, magnetron circuit, controls, fan and light are usually tested.' },
-          { title: 'Explain and approve', text: 'Ask what failed and whether the repair makes sense for your microwave. Work should start only after you say yes.' },
+          { title: 'Explain and approve', text: 'Ask what failed and whether the repair makes sense for your microwave. The repair should wait for your yes.' },
           { title: 'Repair and test', text: 'After the repair, ask for the microwave to be run to confirm it heats, and for the door to be checked.' },
         ],
       },
@@ -1826,7 +1826,7 @@ export const services: Service[] = [
         type: 'resultsGrid',
         eyebrow: 'Microwave not heating',
         heading: 'Microwave not heating? What the symptom points to',
-        intro: 'How the microwave fails tells the technician where to start. Note which of these matches yours before you call.',
+        intro: 'How the microwave fails tells the technician where to start. Match your microwave to one of these before you call.',
         rows: [
           { see: 'Runs, turns and lights up, but no heat', means: 'The magnetron, high-voltage diode or capacitor has failed, or a door switch is not engaging.', fix: 'High-voltage parts are tested by a technician only; most are replaceable.' },
           { see: 'Heats weakly or unevenly', means: 'A magnetron losing output, a diode on its way out, or a turntable that has stopped turning.', fix: 'Check the tray first; the heating circuit is tested next.' },
@@ -1836,7 +1836,7 @@ export const services: Service[] = [
       },
       {
         type: 'prose',
-        heading: 'Microwaves local pros repair',
+        heading: 'Over-the-range, built-in and countertop microwaves',
         paragraphs: [
           'Over-the-range microwaves are the most common setup in Temple kitchens. They mount to a wall plate and the cabinet above, and they double as the range hood, with a vent fan, a cooktop light and grease filters. That extra hardware is why over-the-range microwave repair usually makes more sense than replacement.',
           'Built-in microwaves sit in a cabinet opening, often with a trim kit, and wall oven combinations pair a microwave above a wall oven in one unit. Both take more care to pull out, so give the model number when you call.',
@@ -1844,7 +1844,7 @@ export const services: Service[] = [
         ],
       },
       { type: 'repairOrReplace' },
-      { type: 'brands', heading: 'Microwave brands local pros repair', intro: 'Local pros repair the major microwave brands found in Temple kitchens. Give the brand and model number when you call.', styles: ['Over-the-range', 'Built-in', 'Wall oven combination'] },
+      { type: 'brands', heading: 'Microwave brands in Temple kitchens', intro: 'Over-the-range microwaves usually match the range below them, so GE, Whirlpool, Samsung and LG lead the list in Temple kitchens. Give the brand and model number from the door frame when you call.', styles: ['Over-the-range', 'Built-in', 'Wall oven combination'] },
       { type: 'faq' },
     ],
   },

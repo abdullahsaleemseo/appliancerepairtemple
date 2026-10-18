@@ -10,7 +10,7 @@ import { Icon } from '@/components/Icon';
 import { pageMetadata } from '@/lib/seo';
 
 export const metadata = pageMetadata({
-  title: `Appliance Repair Tips ${site.city} ${site.stateAbbr} | Fridge, Washer, Dryer Checks`,
+  title: `Appliance Repair Tips ${site.city} ${site.stateAbbr} | Fridge, Washer and Dryer`,
   description: `Fridge not cooling, washer full of water or dryer blowing cold? Safe checks, error codes and repair or replace advice for ${site.city}, ${site.stateAbbr} homes. Call ${phoneDisplay}.`,
   path: routes.blog,
 });

@@ -318,7 +318,7 @@ export const posts: Post[] = [
     image: '/images/blog/repair-or-replace-appliance.webp',
     title: 'Repair or Replace an Appliance? A Practical Way to Decide',
     metaTitle: 'Repair or Replace an Appliance? Use the 50% Rule | Temple TX',
-    metaDescription: `Is a broken fridge, washer or dryer worth fixing? Weigh age and what failed with the 50 percent rule and typical lifespans. Want a diagnosis? Call ${phoneDisplay}.`,
+    metaDescription: `Is a broken fridge, washer or dryer worth fixing? Weigh age and what failed with the 50 percent rule and lifespans. Want a diagnosis? Call ${phoneDisplay}.`,
     excerpt:
       'Two questions settle most repair-or-replace decisions: how old is the appliance, and what exactly failed? Here is how to weigh them, appliance by appliance.',
     published: '2026-10-14',
@@ -541,7 +541,7 @@ export const posts: Post[] = [
     slug: 'dishwasher-drainage-problems',
     image: '/images/blog/dishwasher-drainage-problems.webp',
     title: 'Dishwasher Not Draining? Common Causes and Safe Checks',
-    metaTitle: 'Dishwasher Not Draining? Filter, Hose and Pump Checks | Temple',
+    metaTitle: 'Dishwasher Not Draining? Filter, Hose, Pump Checks | Temple',
     metaDescription: `Standing water in the dishwasher? Clean the filter, check the disposal plug, high loop and air gap, decode E24 and E25, and call ${phoneDisplay} if it hums.`,
     excerpt:
       'Standing water usually comes down to the filter, the drain hose, the garbage disposal or the pump. Here is how to check them in order, and what to leave to a technician.',

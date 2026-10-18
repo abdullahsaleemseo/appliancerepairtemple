@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { routes, site } from '@/config/site';
+import { phoneDisplay, routes, site } from '@/config/site';
 import { faqGroups, generalFaqs } from '@/content/faqs';
 import { serviceHref, services } from '@/content/services';
 import { CtaRow } from '@/components/Buttons';
@@ -11,8 +11,8 @@ import { faqSchema } from '@/lib/schema';
 import { pageMetadata } from '@/lib/seo';
 
 export const metadata = pageMetadata({
-  title: `Appliance Repair FAQ | ${site.city}, ${site.stateAbbr} Answers Before You Call`,
-  description: `Appliance repair FAQ for ${site.city}, ${site.stateAbbr}: how the free call works, checking a license and insurance, repair or replace, brands and safety. Call to get connected.`,
+  title: `Appliance Repair FAQ ${site.city} ${site.stateAbbr} | Fix It or Replace It?`,
+  description: `Is an old washer worth fixing? How do you check a license? Answers on brands, gas appliances, warranties and safety in ${site.city}, ${site.stateAbbr}. Call ${phoneDisplay}.`,
   path: routes.faq,
 });
 
@@ -23,9 +23,9 @@ export default function FaqPage() {
       <PageHero crumbs={[{ name: 'FAQs', path: routes.faq }]} title={`${site.city} Appliance Repair FAQ,`} accent="answered plainly.">
         <div className="prose-copy prose-dark">
           <p>
-            These are the questions homeowners in {site.city} and the nearby towns ask most, from how the free call works and how to
-            check a provider&rsquo;s license and insurance to deciding whether an old appliance is worth fixing. {site.brandName}
-            connects you with independent local appliance repair pros. If your question is not here, call and ask.
+            What {site.city}-area homeowners ask before and after they pick up the phone: whether a visit today is realistic, how
+            to check a license and insurance, when an aging refrigerator or washer is worth fixing and what to do about a gas
+            smell. If your question is not here, call and ask it.
           </p>
         </div>
         <div className="mt-8">

@@ -4,32 +4,32 @@ import type { Faq } from './types';
 export const faqGroups: { id: string; title: string; accent: string; faqs: Faq[] }[] = [
   {
     id: 'booking',
-    title: 'Getting',
-    accent: 'connected',
+    title: 'Making',
+    accent: 'the call',
     faqs: [
       {
-        q: 'How do I get connected with an appliance repair pro?',
-        a: 'Call the number on this site with your appliance, what it is doing and your ZIP code. Your call is connected with an independent local appliance repair provider, and you work out the details with them directly.',
+        q: 'How do I reach an appliance repair technician through this site?',
+        a: 'Dial the number shown on every page and have three things ready: the appliance, what it is doing and your ZIP code. The call is passed to a repair business that works in your area, and the visit, the bill and any follow-up are between you and that business.',
       },
       {
-        q: 'Can I request a repair online?',
-        a: 'This site works by phone only. A short call lets you describe the appliance and the problem and be connected with a local provider in the same conversation, without filling out a form.',
+        q: 'Is there an online form?',
+        a: 'No, it is phone only. Talking it through takes a couple of minutes and covers what a form would ask, plus the follow-up questions a form cannot.',
       },
       {
-        q: 'Can I get a technician out today?',
-        a: 'That depends on the provider you are connected with and how busy the day is. Ask about availability when you are connected, and say it is urgent if it is.',
+        q: 'Is a visit today realistic?',
+        a: 'It can be, but this site cannot promise it. The repair business you reach decides based on its own workload. If the problem is urgent, say so before anything else.',
       },
       {
-        q: 'How soon will a technician arrive?',
-        a: 'Timing is set by the independent provider, not by this site. Ask the pro when they can come out and how they will let you know they are on the way, and plan around their answer.',
+        q: 'How will I know when the technician is coming?',
+        a: 'Arrival timing is set by the repair business, not by this site. Ask how they confirm the visit, whether by text or a phone call, and keep your phone close that day.',
       },
       {
-        q: 'Is the call free?',
-        a: 'Yes. Calling the number on this site is a free service for homeowners. Ask the provider you are connected with about any trip charge, diagnostic charge or repair cost before work starts.',
+        q: 'What does the call cost me?',
+        a: 'Nothing. You pay only the repair business, and only for work you agree to. Before the technician starts, ask about a trip charge, a diagnostic fee and whether that fee is credited toward the repair.',
       },
       {
         q: 'Do I need to be home for the visit?',
-        a: 'Usually an adult needs to be there to let the technician in and approve the repair. If a landlord or property manager will approve a repair for a tenant, arrange that with the provider ahead of time.',
+        a: 'In most cases an adult has to open the door and okay the repair. For a tenant whose landlord approves the work, sort out who will be there and who signs off before the day of the visit.',
       },
     ],
   },
@@ -40,23 +40,23 @@ export const faqGroups: { id: string; title: string; accent: string; faqs: Faq[]
     faqs: [
       {
         q: 'What happens when the technician arrives?',
-        a: 'A good technician asks what you have noticed, tests the parts most likely to have failed and explains what is wrong and what the repair involves. Ask that nothing be replaced until you say yes.',
+        a: 'Expect questions about what you have seen and heard, then testing of the parts that usually cause that symptom on your model. A careful technician explains the fault and the fix before replacing anything. Ask them to wait for your go-ahead.',
       },
       {
-        q: 'What should I do before the technician arrives?',
-        a: 'Find the model number, usually on a label inside the door, under the lid or on the frame. Write down any error code, clear a path to the appliance and, if you can, empty the washer or dishwasher.',
+        q: 'How can I prepare for the visit?',
+        a: 'Locate the model and serial number tag: inside the fridge door, under the washer lid, on the dryer door frame or along the edge of the dishwasher tub. Note any error code, move laundry baskets or stored items out of the way, and empty a washer or dishwasher if it is safe to.',
       },
       {
-        q: 'Can a pro tell me what is wrong over the phone?',
-        a: 'A pro can talk through the symptoms and what they often point to, but the cause is confirmed on site. The same symptom can come from different parts on different models.',
+        q: 'Can someone diagnose the problem over the phone?',
+        a: 'Only partly. A technician can say what a symptom usually points to, such as a clicking refrigerator often meaning a start relay, but the real cause shows up under test. Two models with the same symptom can need different parts.',
       },
       {
         q: 'Do technicians carry parts?',
-        a: 'Many technicians carry common parts that can be replaced on the first visit. Model-specific parts sometimes have to be ordered. Ask the technician whether that applies and what happens next.',
+        a: 'Many keep common wear parts in the van, such as belts, igniters, door switches and drain pumps. Control boards and model-specific parts often have to be ordered. Ask whether your repair is likely to need a second trip.',
       },
       {
-        q: 'How do I check an appliance repair pro’s license and insurance?',
-        a: 'It is your responsibility as the homeowner to verify this. Ask the provider what license they hold for the work, check what the State of Texas and your city require for that type of repair, and ask for a certificate of liability insurance before any work starts.',
+        q: 'How do I verify a repair business’s license and insurance?',
+        a: 'Ask the business which license covers the work, then check the Texas and local requirements for that type of repair yourself, especially for gas. Ask for a current certificate of liability insurance. This check is the homeowner’s job, so do it before any work begins.',
       },
     ],
   },
@@ -67,15 +67,15 @@ export const faqGroups: { id: string; title: string; accent: string; faqs: Faq[]
     faqs: [
       {
         q: 'Is my appliance worth repairing?',
-        a: 'Usually, if it is not near the end of its normal life and the failed part is a common one like a pump, fan, relay, belt or heating element. A common rule of thumb: if the repair would cost more than half of a comparable new appliance and the unit is getting old, replacement deserves a serious look.',
+        a: 'If it is in the first half of its normal lifespan and the failure is a common part such as a pump, fan, relay, belt or heating element, repair usually comes out ahead. A rough rule many homeowners use: when the repair runs more than half the price of a comparable new unit and the old one is aging, compare replacement seriously.',
       },
       {
         q: 'How long do appliances usually last?',
-        a: 'As a rough guide, refrigerators about 10 to 15 years, washers and dryers about 10 to 13, dishwashers about 9 to 12 and ranges about 13 to 15. Use and care move those numbers a lot.',
+        a: 'Rough lifespans: refrigerators 10 to 15 years, washers and dryers 10 to 13, dishwashers 9 to 12 and ranges 13 to 15. Hard water, heavy use and skipped maintenance shorten them, and regular care stretches them.',
       },
       {
-        q: 'How do I find out if it is not worth fixing?',
-        a: 'Ask the technician directly whether the repair makes sense for the age and condition of your appliance. A good technician gives a straight answer, and the decision is always yours.',
+        q: 'Will a technician tell me if a repair is not worth it?',
+        a: 'Ask plainly: would you fix this one, given its age? A straight answer with the reasons behind it is what to expect from a good technician. The decision stays with you.',
       },
     ],
   },
@@ -85,24 +85,24 @@ export const faqGroups: { id: string; title: string; accent: string; faqs: Faq[]
     accent: 'and areas',
     faqs: [
       {
-        q: 'Which appliances can I get repaired?',
-        a: 'Local pros handle refrigerators, freezers, washers, dryers, dishwashers, ovens, ranges, cooktops and over-the-range or built-in microwaves. If you have something else, call and ask.',
+        q: 'What kinds of appliances are included?',
+        a: 'Major household appliances: refrigerators, freezers, washers, dryers, dishwashers, ovens, ranges, cooktops and built-in or over-the-range microwaves. Commercial kitchen equipment and small countertop appliances are worth asking about separately.',
       },
       {
-        q: 'Which brands do local pros work on?',
-        a: 'The major household brands, including Whirlpool, GE, Samsung, LG, Frigidaire, Maytag, KitchenAid, Bosch, Kenmore, Electrolux, Amana and Speed Queen. Have the brand and model ready when you call, and ask the pro whether they work on it.',
+        q: 'Which brands can be repaired?',
+        a: 'The common household names: Whirlpool, GE, Samsung, LG, Frigidaire, Maytag, KitchenAid, Bosch, Kenmore, Electrolux, Amana and Speed Queen. Some high-end or imported brands need special-order parts, so name the brand and model and ask the technician whether they work on it.',
       },
       {
         q: 'Is this site an authorized service center for any brand?',
-        a: 'No. Appliance Repair Temple is an independent referral service, not affiliated with or authorized by any manufacturer. Ask the provider you are connected with about any brand authorization they hold.',
+        a: 'No. Appliance Repair Temple has no ties to any manufacturer and is not a factory-authorized service center. If brand authorization matters to you, ask the repair business whether it holds any.',
       },
       {
-        q: 'Can I get gas appliances repaired?',
-        a: 'Local pros work on gas ranges, ovens, cooktops and dryers. Say it is a gas appliance when you call, and ask the pro about their gas licensing. If you smell gas, leave the house and call your gas provider or 911 from outside first.',
+        q: 'What about gas appliances?',
+        a: 'Gas ranges, cooktops, ovens and dryers are included. Mention the gas line when you call and ask the technician about gas licensing. If you smell gas, do not flip any switches; go outside and call the gas company or 911 from there.',
       },
       {
-        q: 'Which areas can I get appliance repair in?',
-        a: 'Temple (76501, 76502, 76503, 76504 and 76508) plus Belton, Killeen, Harker Heights, Nolanville, Morgan’s Point Resort, Salado, Troy, Little River-Academy, Rogers, Holland and Moody. Give your address when you call so you are connected with a provider who serves it.',
+        q: 'Where is appliance repair available?',
+        a: 'Temple (76501, 76502, 76503, 76504 and 76508), Belton, Killeen, Harker Heights, Nolanville, Morgan’s Point Resort, Salado, Troy, Little River-Academy, Rogers, Holland and Moody. Share your full address on the call so it goes to a business that works there.',
       },
     ],
   },
@@ -113,19 +113,19 @@ export const faqGroups: { id: string; title: string; accent: string; faqs: Faq[]
     faqs: [
       {
         q: 'Why are there no prices on the website?',
-        a: 'The cost depends on the appliance, the model, the part that failed and the provider, so a number on a web page would only be a guess. Ask the pro you are connected with how pricing works, with the brand and model number ready.',
+        a: 'A posted price would be a guess. The bill depends on the appliance, the model, the failed part and the business doing the work. Ask how they price it, and have the brand and model number ready so the answer means something.',
       },
       {
-        q: 'How do I pay for a repair?',
-        a: 'Payment is between you and the independent provider. Ask which payment methods they accept and when payment is due before work starts, and get an itemized invoice when the job is done.',
+        q: 'How is payment handled?',
+        a: 'Directly with the repair business. Before the job starts, ask which methods it accepts and when payment is due, and ask for an itemized invoice at the end.',
       },
       {
-        q: 'My appliance is still under warranty. Who should I call?',
-        a: 'Check with the manufacturer or your extended plan first, since independent repair may not be covered by a factory warranty. If coverage has run out or you are not sure, call with the model number and ask the provider about it.',
+        q: 'What if my appliance is still under a factory or extended warranty?',
+        a: 'Call the manufacturer or the plan provider first. Many factory warranties require their own authorized service, so outside repair may not be reimbursed. When coverage is over or unclear, call with the model number and ask the repair business.',
       },
       {
         q: 'I rent my home. Who pays for the repair?',
-        a: 'That depends on your lease. Many leases make the landlord responsible for the appliances they supply, so check with your landlord or property manager before you call for a repair.',
+        a: 'Your lease decides. Landlords commonly cover the appliances they supplied, so contact the landlord or property manager before arranging any repair yourself.',
       },
     ],
   },
@@ -136,11 +136,11 @@ export const faqGroups: { id: string; title: string; accent: string; faqs: Faq[]
     faqs: [
       {
         q: 'When should I stop using an appliance right away?',
-        a: 'If you see sparks, smell burning plastic or hot wiring, find scorch marks on a cord or outlet, or see water pooling near an outlet. Unplug it or switch off the breaker, then call to get connected with a local pro.',
+        a: 'At the first sign of sparks, a burning plastic or hot wire smell, scorch marks on a cord or outlet, or water pooling near an outlet. Unplug it or turn off its breaker, and do not run it again until it has been looked at.',
       },
       {
         q: 'My dryer smells hot. Is that dangerous?',
-        a: 'It can be. Lint buildup is a leading cause of dryer fires. Stop the dryer, clean the lint screen and check that the outside vent flap opens when it runs. If the smell continues, do not use it until it has been checked.',
+        a: 'It can be. Lint is a leading cause of dryer fires. Turn the dryer off, clean the lint screen and go outside to see whether the vent flap opens while it runs. If the smell keeps coming back, leave it off until a technician has checked it.',
       },
     ],
   },
@@ -151,107 +151,107 @@ export const generalFaqs: Faq[] = faqGroups.flatMap((g) => g.faqs);
 /** Homepage FAQs: the questions people ask before they call. Shown with FAQPage markup on the homepage. */
 export const homeFaqs: Faq[] = [
   {
-    q: 'What appliances can I get repaired in Temple?',
-    a: 'Local pros handle refrigerators, freezers, washers, dryers, dishwashers, ovens, ranges, cooktops and over-the-range microwaves. If yours is not on that list, call and ask before you rule it out.',
+    q: 'Which appliances does the Temple line cover?',
+    a: 'Refrigerators, freezers, top-load and front-load washers, gas and electric dryers, dishwashers, ranges, wall ovens, cooktops and over-the-range or built-in microwaves. A wine fridge, an ice machine or a second freezer in the garage is worth asking about too; describe it on the call.',
   },
   {
     q: 'How does Appliance Repair Temple work?',
-    a: 'It is a free referral service. You call the number on this site, describe the appliance and the problem, and your call is connected with an independent local appliance repair provider. You agree on the visit, the price and the terms with that provider directly.',
+    a: 'You call, say what the appliance is doing and where you live, and the call is routed to an appliance repair business that works in that area. The visit, the price and the terms are agreed between you and that business.',
   },
   {
-    q: 'Can I get a technician out today?',
-    a: 'That depends on the independent provider and how busy the day is. Ask about availability when you are connected. If the problem is urgent, say so at the start of the call.',
+    q: 'Could a technician look at it today?',
+    a: 'Sometimes. It depends on the repair business that takes the call and how full its day already is. Mention early on that you are hoping for today so the answer comes up front.',
   },
   {
-    q: 'Is the call free?',
-    a: 'Yes. Calling the number on this site costs you nothing. Ask the provider about any trip or diagnostic charge and what the repair will cost before you approve any work.',
+    q: 'Does the phone call cost anything?',
+    a: 'No, dialing the line is free. Charges start with the repair business, so ask whether there is a trip or diagnostic fee and how the repair itself is priced before you say yes to any work.',
   },
   {
-    q: 'Can I get emergency appliance repair in Temple?',
-    a: 'Emergency help may be available from local providers. Urgent problems include a washer leaking onto the floor, a refrigerator or freezer warming up with food inside, or a burning smell. Stop the damage first, then say it is urgent when you call.',
+    q: 'When is it an emergency appliance repair?',
+    a: 'Treat it as urgent when water is spreading, food is warming or something smells hot. Shut off the water valve or the breaker first, then open the call by saying it is urgent and what has happened so far, so the technician knows what to expect.',
   },
   {
     q: 'What counts as an appliance emergency?',
-    a: 'Anything that puts your home, your food or your safety at risk: water leaking or pooling, a refrigerator or freezer that is warming up, sparks, smoke or a burning smell, or an oven or range you cannot turn off. If you smell gas, leave the house and call your gas provider or 911 from outside before anything else.',
+    a: 'Four situations: water on the floor that will not stop, a full refrigerator or freezer losing its cold, smoke, sparks or a hot electrical smell, and a burner or oven that will not shut off. A gas smell is different. Leave the house and call the gas company or 911 from outside.',
   },
   {
-    q: 'How much will my repair cost?',
-    a: 'This site does not list prices because every repair depends on the appliance, the brand, the failed part and the provider. Ask the pro you are connected with how pricing works. Having the model number and a short description of the problem ready makes that conversation more useful.',
+    q: 'How much does appliance repair cost in Temple?',
+    a: 'It varies too much to post one number. A door switch on a dryer and a sealed-system leak on a refrigerator are very different jobs, and parts for a Samsung or Bosch can cost more than a basic Whirlpool part. Ask the technician how they price the visit and the repair, with the model number in hand.',
   },
   {
-    q: 'How do I pay for the repair?',
-    a: 'Payment is arranged between you and the independent provider. Ask which payment methods they accept, when payment is due and whether you will get an itemized invoice.',
+    q: 'Who do I pay for the repair?',
+    a: 'The business that does the work, not this site. Ask which methods it accepts, when payment is due and whether you will get an invoice that lists parts and labor separately.',
   },
   {
-    q: 'How do I check an appliance repair pro’s license and insurance?',
-    a: 'Verifying this is the homeowner’s responsibility. Ask the provider what license they hold for the work, check what the State of Texas and the City of Temple require for that type of repair, and ask for a certificate of liability insurance before the technician starts.',
+    q: 'Should I check a technician’s license and insurance?',
+    a: 'Yes, every time. Ask which license covers the job, which matters most for gas lines and hard-wired appliances, look up what Texas and the City of Temple require, and ask for a liability insurance certificate before any panel comes off.',
   },
   {
-    q: 'How long does an appliance repair take?',
-    a: 'Many common repairs can be finished on the first visit. How long it takes depends on the appliance, the failed part and how easy it is to reach. If the part is model-specific and not on hand, it has to be ordered and the repair is completed on a follow-up visit. Ask the technician which applies before any work starts.',
+    q: 'How long does a typical repair take?',
+    a: 'Swapping a common part such as a drain pump, igniter or door switch often fits in one visit. A model-specific control board or a sealed-system part may have to be ordered, which means a second trip. Ask which case yours is before work begins.',
   },
   {
-    q: 'Can I get gas appliances repaired?',
-    a: 'Local pros work on gas ranges, ovens, cooktops and dryers, including propane models. Say it is a gas appliance when you call, and ask the pro about their gas licensing.',
+    q: 'Can a technician work on a gas dryer or gas range?',
+    a: 'Yes. Gas ranges, cooktops, wall ovens and dryers, including propane units on rural lots, are part of the call. Say the fuel type up front and ask about gas licensing before work starts.',
   },
   {
-    q: 'Is appliance repair available in towns outside Temple?',
-    a: 'Yes. Along with Temple, local pros serve Belton, Killeen, Harker Heights, Nolanville, Morgan’s Point Resort, Salado, Troy, Little River-Academy, Rogers, Holland and Moody. Give your address when you call.',
+    q: 'Does the line cover Belton, Killeen and Salado?',
+    a: 'Yes, along with Harker Heights, Nolanville, Morgan’s Point Resort, Troy, Little River-Academy, Rogers, Holland and Moody. Give your street address so the call reaches someone who works in that town.',
   },
   {
-    q: 'Can I keep using an appliance that shows an error code?',
-    a: 'It depends on the code. A drain or door lock code usually just stops the cycle. If the code comes with leaking water, a burning smell or tripped breakers, stop using the appliance and call. Write the code down either way.',
+    q: 'Is it safe to keep running an appliance with an error code?',
+    a: 'Some codes only stop the cycle, like a washer drain code or a dishwasher door latch code. Others come with warning signs: water under the unit, a burning smell or a breaker that keeps tripping. With those, unplug it and call. Either way, write down the code and the model number.',
   },
   {
-    q: 'Should I repair my appliance or replace it?',
-    a: 'Look at age and condition. A newer appliance with one failed part, such as a fan, pump, igniter or valve, is usually worth repairing. An older unit with a major failure, such as a compressor or transmission, deserves a closer look. Ask the technician to explain the options so you can decide.',
+    q: 'Is it worth fixing an older appliance?',
+    a: 'Often, when one wear part has failed, such as a fan motor, pump, igniter or water valve. A dead compressor in a 14-year-old refrigerator or a failed transmission in an aging top-loader is where replacement starts to make more sense. Ask the technician to lay out both options.',
   },
 ];
 
 /** Main city page FAQs: local questions about coverage, timing, rentals, warranty and repair decisions in Temple. */
 export const cityFaqs: Faq[] = [
   {
-    q: 'Is appliance repair available across all of Temple, Texas?',
-    a: 'Yes. Local pros serve every Temple ZIP code: 76501, 76502, 76503, 76504 and 76508. That includes central Temple, the Historic District, West Temple along West Adams Avenue and Highway 317, and the south side of town.',
+    q: 'Which Temple ZIP codes and neighborhoods are covered?',
+    a: 'All five Temple ZIP codes: 76501, 76502, 76503, 76504 and 76508. That takes in downtown, the Historic District, West Temple along West Adams Avenue and Highway 317, and the south side.',
   },
   {
-    q: 'Can a technician come out today?',
-    a: 'That depends on the independent provider you are connected with and how busy the day is. Ask about availability on the call, and say so if the problem is urgent.',
+    q: 'I need my appliance looked at today in Temple. Is that possible?',
+    a: 'On some days. Whether a technician has room depends on the Temple business that takes your call and the jobs already on its list. Ask directly, and explain what is at stake, like a full freezer.',
   },
   {
     q: 'Can I get emergency appliance repair in Temple?',
-    a: 'Emergency help may be available from local providers. For a leak, a refrigerator or freezer warming up with food inside, or a burning smell, take steps to stop the damage first, then say it is urgent when you call.',
+    a: 'Say it is urgent in your first sentence, then describe the damage: how much water, how warm the freezer feels, what the smell is like. How quickly someone can come depends on the Temple business on the other end, so ask.',
   },
   {
-    q: 'My appliance stopped after a storm. What should I check?',
-    a: 'Check the breaker and any GFCI outlet first, then unplug the appliance for a minute and plug it back in. If it still will not run, or it trips the breaker again, stop using it and call. A power surge can damage a control board.',
+    q: 'My appliance quit after a Central Texas thunderstorm. What should I check?',
+    a: 'Reset the breaker and any tripped GFCI outlet in the kitchen, laundry room or garage, then leave the appliance unplugged for a full minute before plugging it back in. If it stays dead or trips the breaker again, a surge may have damaged the control board, so stop and call.',
   },
   {
-    q: 'Can I get gas ranges and dryers repaired in Temple?',
-    a: 'Local pros work on gas and electric ranges, ovens, cooktops and dryers, including propane models. Say it is a gas appliance when you call, and ask the pro about their gas licensing.',
+    q: 'Are gas and propane appliances included in Temple?',
+    a: 'Gas and electric ranges, cooktops, ovens and dryers are included, and so are propane units in homes on the edge of town that are not on a gas main. Tell the technician which fuel it runs on and ask about gas licensing.',
   },
   {
-    q: 'Is there an appliance repair shop I can bring my appliance to?',
-    a: 'Most major appliance repairs are done in your home. Local technicians come to homes in Temple and the nearby towns. Ask the provider you are connected with how they handle smaller appliances.',
+    q: 'Is there a Temple repair shop where I can drop off an appliance?',
+    a: 'Full-size appliances are repaired where they sit, in the kitchen, laundry room or garage. For a countertop microwave or another small appliance, ask on the call whether the business takes those.',
   },
   {
     q: 'What should I do while I wait for the technician?',
-    a: 'For a warm refrigerator or freezer, keep the doors closed. For a washer or dishwasher full of water, turn it off and unplug it. For a dryer that smells hot, stop using it. If you smell gas, leave the house and call your gas utility from outside before anything else.',
+    a: 'Keep a warm refrigerator or freezer shut and move the most perishable food to a cooler with ice. Unplug a washer or dishwasher that is holding water and lay towels at the door. If there is a gas smell, get everyone outside and call the gas utility from there.',
   },
   {
-    q: 'Can I get appliances repaired in rental homes and apartments?',
-    a: 'Yes. Tenants should check the lease and tell the landlord first, since the landlord is often responsible for appliances they provide. Landlords and property managers can call directly. Tell the provider who approves the repair and who will let the technician in.',
+    q: 'I rent in Temple. Can I arrange an appliance repair?',
+    a: 'Read the lease first and let the landlord know, because the owner usually answers for appliances that came with the unit. Landlords and property managers with Temple rentals can call themselves. Tell the technician who signs off on the repair and who can open the door.',
   },
   {
-    q: 'My appliance is still under warranty. Who should I call?',
-    a: 'Check with the manufacturer first. Independent repair may not be covered by a factory warranty. If the warranty has run out, or you are not sure, call with the model number and talk it through with the provider you are connected with.',
+    q: 'My Temple appliance is still under warranty. Who should I call?',
+    a: 'Start with the manufacturer or the company behind your extended plan, because work done outside that plan may not be paid for under it. Once coverage has ended, or if you cannot tell, call with the model and serial number and ask the technician.',
   },
   {
-    q: 'Can I get refrigerators and freezers in the garage repaired?',
-    a: 'Yes. Garage units work hard in a Temple summer, and they are a common repair. Give the unit some space for airflow and keep the condenser coils clean between service calls.',
+    q: 'Can garage refrigerators and freezers in Temple be repaired?',
+    a: 'They can. Garage units have a hard time in a Temple summer, when the garage can run hotter than the outdoor high and the compressor barely rests. Leave a few inches of space around the unit and brush the condenser coils clean a couple of times a year.',
   },
   {
-    q: 'How do I know if a repair is worth it?',
-    a: 'Look at the age of the appliance, the condition of the rest of it and whether the part is still available. Ask the technician to explain what failed and whether the repair makes sense, and you make the call.',
+    q: 'How do I know whether to fix or replace?',
+    a: 'Weigh three things: the appliance’s age, how the rest of it is holding up and whether the part can still be bought. Ask the technician what failed and what they would do in your place, then decide.',
   },
 ];
