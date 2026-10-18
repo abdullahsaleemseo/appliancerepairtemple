@@ -17,11 +17,11 @@ export function ServicesTable({ place }: { place: string }) {
   return (
     <div className="overflow-hidden rounded-card border border-sand">
       <table className="w-full text-left text-[15px]">
-        <caption className="sr-only">Appliance repair services in {place}, the types covered and common problems</caption>
+        <caption className="sr-only">Appliance repair services in {place}, the appliance types covered and common problems</caption>
         <thead className="bg-canvas text-[13px] uppercase tracking-[0.1em] text-ink-muted">
           <tr>
             <th scope="col" className="px-5 py-4 font-semibold">Service</th>
-            <th scope="col" className="hidden px-5 py-4 font-semibold md:table-cell">Types we repair</th>
+            <th scope="col" className="hidden px-5 py-4 font-semibold md:table-cell">Types covered</th>
             <th scope="col" className="px-5 py-4 font-semibold">Common problems</th>
           </tr>
         </thead>

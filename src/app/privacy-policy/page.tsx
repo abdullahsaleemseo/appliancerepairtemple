@@ -1,101 +1,101 @@
-import { canShow, routes, site } from '@/config/site';
+import { routes, site } from '@/config/site';
 import { LegalPage } from '@/components/LegalPage';
-import { PhoneLink } from '@/components/PhoneLink';
 import { pageMetadata } from '@/lib/seo';
 
 export const metadata = pageMetadata({
   title: `Privacy Policy | ${site.brandName}`,
-  description: `How ${site.brandName} collects, uses, shares and protects the information you share through ${site.domain} and by phone, and your choices.`,
+  description: `How ${site.brandName}, a free referral service, handles information from visits to ${site.domain} and calls to local repair providers.`,
   path: routes.privacy,
 });
 
+const facebook = site.social.find((s) => s.key === 'facebook');
+
 export default function PrivacyPage() {
   return (
-    <LegalPage title="Privacy Policy" path={routes.privacy} updated="October 17, 2026">
+    <LegalPage title="Privacy Policy" path={routes.privacy} updated="October 18, 2026">
       <p>
-        This policy explains what information {site.brandName} (“we”, “us”) collects through this website, how we use it, and who
-        we share it with. We only collect what we need to respond to a repair request.
+        This policy explains what information {site.brandName} collects through {site.domain} and the phone number on it, how that
+        information is used and who it is shared with. {site.brandName} is a free referral service that connects homeowners with
+        independent local appliance repair providers. It does not perform repairs.
       </p>
 
-      <h2>Information you give us</h2>
-      <p>This website has no contact or request forms. Repairs are booked by phone. When you call us, we note what you tell us:</p>
-      <ul>
-        <li>Your name, phone number and service address</li>
-        <li>The appliance type, brand and a description of the problem</li>
-        <li>Your preferred visit window</li>
-      </ul>
+      <h2>This site has no forms</h2>
+      <p>
+        There are no contact, quote or request forms on this site. The only way to use the service is to call the phone number shown
+        on the site.
+      </p>
+
+      <h2>Calls</h2>
+      <p>
+        Calls to the number on this site are handled by a call tracking service, which routes each call to an independent appliance
+        repair provider that serves the caller’s area. The call tracking service may record the phone number you call from, the
+        date, time and length of the call, the page you called from and your general location. Calls may be recorded for quality and
+        routing purposes.
+      </p>
+      <p>
+        When your call is connected, the provider receives what you share on the call, such as your name, phone number, address and
+        a description of the appliance problem. The provider uses that information under its own privacy practices. Ask the provider
+        directly how it handles your information.
+      </p>
 
       <h2>Information collected automatically</h2>
       <p>
-        When you visit the site, we may record the page you landed on, the website that referred you, campaign tags in the link
-        (such as UTM parameters), your general device type and how you interacted with the site, including phone number clicks. We use Google Analytics for this. Google Analytics uses cookies; you can opt out with Google’s browser
-        add-on or your browser’s cookie settings.
+        When you visit the site, it may record the page you landed on, the website that referred you, campaign tags in the link (such
+        as UTM parameters), your general device type and how you interacted with the site, including phone number clicks. Google
+        Analytics is used for this. Google Analytics uses cookies; you can opt out with Google’s browser add-on or your browser’s
+        cookie settings.
       </p>
       <p>
-        Some pages show an embedded Google Map of the area we serve. When the map loads, Google may receive your IP address and set
-        cookies under its own privacy policy.
+        Some pages show an embedded Google Map of the area. When the map loads, Google may receive your IP address and set cookies
+        under its own privacy policy.
       </p>
 
-      <h2>How we use your information</h2>
+      <h2>How information is used</h2>
       <ul>
-        <li>To call or text you about your repair request and schedule a visit</li>
-        <li>To send a technician, perform the repair and follow up on it</li>
-        <li>To understand which pages and campaigns bring in calls, so we can improve the site</li>
-        <li>To prevent spam and abuse</li>
+        <li>To connect your call with an independent local appliance repair provider</li>
+        <li>To understand which pages and campaigns lead to calls, so the site can be improved</li>
+        <li>To prevent spam, fraud and abuse</li>
       </ul>
 
-      <h2>Who we share it with</h2>
+      <h2>Who information is shared with</h2>
       <p>
-        {site.brandName} performs the repairs itself, so your request stays with us. We use a small number of service providers
-        that host the site and provide analytics, and they handle information only to provide those
-        services to us. We may also share information when the law requires it. We do not sell your personal information, and we
-        do not share it with unrelated third parties for their own marketing.
-      </p>
-
-      <h2>Calls and text messages</h2>
-      <p>
-        We use the phone number you call from, or the number you give us on the call, only to contact you about your repair. Message
-        and data rates may apply to texts. Reply STOP to any text to opt out.
+        Call details are shared with the call tracking service and with the provider your call is connected to. The site also uses a
+        small number of service providers for hosting and analytics, which handle information only to provide those services.
+        Information may also be shared when the law requires it. {site.brandName} does not sell your personal information.
       </p>
 
       <h2>Cookies</h2>
       <p>
-        The site uses a small number of cookies and similar browser storage. Google Analytics uses cookies to count visits and
-        see how pages are used. We also keep campaign tags from the link you arrived on for the length of your visit, so a call
-        can be matched to the ad or page that brought you here. You can block or delete cookies in your browser settings; the site
-        will still work.
+        The site uses a small number of cookies and similar browser storage. Google Analytics uses cookies to count visits and see
+        how pages are used. Campaign tags from the link you arrived on are kept for the length of your visit, so a call can be
+        matched to the ad or page that led to it. You can block or delete cookies in your browser settings; the site will still work.
       </p>
 
-      <h2>How we protect it</h2>
-      <p>
-        The site uses an encrypted (HTTPS) connection. We limit access to repair details to the people who need them to respond to
-        you. No method of transmission or storage is completely secure.
-      </p>
-
-      <h2>How long we keep it</h2>
-      <p>We keep request records only as long as needed to provide service, handle follow-up questions and meet legal obligations.</p>
+      <h2>Security</h2>
+      <p>The site uses an encrypted (HTTPS) connection. No method of transmission or storage is completely secure.</p>
 
       <h2>Your choices</h2>
       <p>
-        You can ask us to access, correct or delete the information we hold about you by contacting us below. We will respond
-        within a reasonable time.
+        You can ask for access to, correction of or deletion of information connected to your use of the site. Requests about
+        information held by a provider should go to that provider.
       </p>
 
       <h2>Children</h2>
-      <p>This site is not directed to children under 13, and we do not knowingly collect information from them.</p>
+      <p>This site is not directed to children under 13 and does not knowingly collect information from them.</p>
 
       <h2>Changes</h2>
-      <p>If we change this policy, we will update the date at the top of this page.</p>
+      <p>If this policy changes, the date at the top of this page will be updated.</p>
 
       <h2>Contact</h2>
       <p>
-        Questions about this policy: call <PhoneLink location="privacy" />
-        {canShow(site.email) ? (
-          <>
-            {' '}
-            or email <a href={`mailto:${site.email.value}`}>{site.email.value}</a>
-          </>
-        ) : null}
+        Questions about this policy can be sent as a message to the site’s{' '}
+        {facebook ? (
+          <a href={facebook.url} rel="noopener" target="_blank">
+            Facebook page
+          </a>
+        ) : (
+          'social media pages'
+        )}
         .
       </p>
       <p>This website is owned and operated by Abdullah Saleem. Updated October 17, 2026.</p>

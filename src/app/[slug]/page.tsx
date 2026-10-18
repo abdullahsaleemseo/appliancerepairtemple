@@ -11,16 +11,12 @@ import { FaqList } from '@/components/FaqList';
 import { FinalCta } from '@/components/FinalCta';
 import { HowItWorks } from '@/components/HowItWorks';
 import { Icon } from '@/components/Icon';
-import { JsonLd } from '@/components/JsonLd';
 import { PageHero } from '@/components/PageHero';
-import { PaymentNote } from '@/components/PaymentNote';
 import { PhoneLink } from '@/components/PhoneLink';
-import { ShareExperience } from '@/components/ShareExperience';
 import { ServicePageView } from '@/components/SiteClient';
 import { TrustBadges } from '@/components/TrustBadges';
 import { VerifyTag } from '@/components/Verify';
 import { CallCard } from '@/components/CallCard';
-import { serviceSchema } from '@/lib/schema';
 import { pageMetadata } from '@/lib/seo';
 
 export const dynamicParams = false;
@@ -40,10 +36,10 @@ export async function generateMetadata({ params }: Params) {
 }
 
 const defaultProcess = [
-  { title: 'Call', text: 'Call us. We set a visit window on the same call.' },
-  { title: 'Diagnose', text: 'The technician tests the parts and finds the fault.' },
-  { title: 'Approve', text: 'You hear what failed and what the fix involves. Work starts only after you say yes.' },
-  { title: 'Repair and test', text: 'The part is replaced and the appliance is run to confirm the fix.' },
+  { title: 'Call', text: 'Call the number on this page and describe the problem to get connected with a local appliance repair pro.' },
+  { title: 'Diagnose', text: 'A local technician will usually test the parts most likely to have failed and find the fault.' },
+  { title: 'Ask first', text: 'A good technician explains what failed and what the repair involves before starting. Ask for that.' },
+  { title: 'Repair and test', text: 'After a part is replaced, ask the technician to run the appliance so you can see the fix work.' },
 ];
 
 /** Layout for services that have not been given their own block order yet. */
@@ -51,8 +47,7 @@ const defaultBlocks: ServiceBlock[] = [
   { type: 'symptoms' },
   { type: 'callCard' },
   { type: 'diagnostic' },
-  { type: 'payment' },
-  { type: 'process', heading: 'How the repair works', steps: defaultProcess },
+  { type: 'process', heading: 'How getting connected works', steps: defaultProcess },
   { type: 'repairOrReplace' },
   { type: 'brands' },
   { type: 'faq' },
@@ -133,7 +128,7 @@ function Block({ block, s, index }: { block: ServiceBlock; s: Service; index: nu
     case 'callCard':
       return (
         <div className="lg:hidden">
-          <CallCard location={`service_${s.key}_inline`} title={`Book ${s.name.toLowerCase()} repair`} appliance={s.name.toLowerCase()} />
+          <CallCard location={`service_${s.key}_inline`} title={`Get connected for ${s.name.toLowerCase()} repair`} appliance={s.name.toLowerCase()} />
         </div>
       );
 
@@ -227,7 +222,7 @@ function Block({ block, s, index }: { block: ServiceBlock; s: Service; index: nu
                 ))}
               </ol>
               <p className="relative mt-5 text-[13.5px] text-white/55">
-                Urgent calls get priority during business hours, {site.hours.value.long}. Ask about emergency visit details when you call.
+                Emergency help may be available from local providers. Say it is urgent when you call.
               </p>
               <p className="relative mt-4">
                 <PhoneLink location={`service_${s.key}_emergency`} withIcon label="Call now" className="inline-flex items-center gap-2 font-semibold text-white underline decoration-flame underline-offset-4" />
@@ -337,12 +332,12 @@ function Block({ block, s, index }: { block: ServiceBlock; s: Service; index: nu
           <Heading id={id}>
             {block.heading ?? (
               <>
-                {s.name} brands <span className="accent text-flame">we service</span>
+                {s.name} brands <span className="accent text-flame">local pros work on</span>
               </>
             )}
           </Heading>
           <p className="mb-6 mt-4 text-ink-body">
-            {block.intro ?? 'Don’t see yours? Call and ask. Have the model number ready if you can.'}
+            {block.intro ?? 'Don’t see yours? Call and ask whether a local pro works on it. Have the model number ready if you can.'}
           </p>
           <BrandChips names={s.brands} />
           {block.styles ? (
@@ -356,7 +351,7 @@ function Block({ block, s, index }: { block: ServiceBlock; s: Service; index: nu
             </ul>
           ) : null}
           <p className="mt-6 text-sm text-ink-muted">
-            Appliance Repair Temple is an independent repair service and is not affiliated with any appliance manufacturer.
+            Appliance Repair Temple is a referral service that connects homeowners with independent local repair providers. It is not affiliated with any appliance manufacturer.
           </p>
         </section>
       );
@@ -371,13 +366,6 @@ function Block({ block, s, index }: { block: ServiceBlock; s: Service; index: nu
             ))}
           </div>
         </section>
-      );
-
-    case 'payment':
-      return (
-        <div className="reveal">
-          <PaymentNote />
-        </div>
       );
 
     case 'cycleStages':
@@ -494,7 +482,6 @@ export default async function ServicePage({ params }: Params) {
   return (
     <>
       <ServicePageView service={s.key} />
-      <JsonLd data={serviceSchema({ name: s.h1, description: s.metaDescription, path, serviceType: `${s.name} repair` })} />
 
       <PageHero
         crumbs={[
@@ -527,7 +514,17 @@ export default async function ServicePage({ params }: Params) {
             <Block key={`${b.type}-${i}`} block={b} s={s} index={i} />
           ))}
 
-          <ShareExperience variant="card" />
+          <section aria-labelledby="ask-heading" className="rounded-xl2 border border-sand bg-white p-7 md:p-9">
+            <h2 id="ask-heading" className="font-display text-2xl font-bold tracking-[-0.02em] text-ink">
+              Questions to ask a {s.name.toLowerCase()} repair provider
+            </h2>
+            <ul className="prose-copy mt-4">
+              <li>Is there a charge for the diagnostic visit, and does it go toward the repair?</li>
+              <li>Can you show me proof of license and insurance for this kind of work?</li>
+              <li>What failed, what will the repair involve, and what will it cost before you start?</li>
+              <li>Is there a warranty on the part and on the labor, and how long does it last?</li>
+            </ul>
+          </section>
 
           <nav aria-labelledby="related-heading" className="rounded-xl2 border border-sand bg-white p-7 md:p-9">
             <h2 id="related-heading" className="font-display text-2xl font-bold tracking-[-0.02em] text-ink">
@@ -556,17 +553,17 @@ export default async function ServicePage({ params }: Params) {
           </nav>
         </div>
 
-        <aside className="hidden lg:block" aria-label="Call to book">
+        <aside className="hidden lg:block" aria-label="Call to get connected">
           <div className="sticky top-28">
-            <CallCard location={`service_${s.key}_sidebar`} title={`Book ${s.name.toLowerCase()} repair`} appliance={s.name.toLowerCase()} />
+            <CallCard location={`service_${s.key}_sidebar`} title={`Get connected for ${s.name.toLowerCase()} repair`} appliance={s.name.toLowerCase()} />
           </div>
         </aside>
       </div>
 
       <FinalCta
         title={`${s.name} acting up?`}
-        accent="Let’s take a look."
-        text="Speak with our team about your appliance issue. We set a visit window on the same call, and urgent calls get priority during business hours."
+        accent="Get connected with a local pro."
+        text="Call and describe the problem to be connected with an independent local appliance repair provider. Ask about pricing and any warranty before work starts."
         appliance={s.name.toLowerCase()}
         formId={`service_${s.key}_final`}
       />

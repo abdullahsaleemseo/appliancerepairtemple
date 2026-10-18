@@ -1,15 +1,15 @@
 const defaultSteps = [
   {
-    title: 'Tell us what’s wrong',
-    text: 'Call and give us the appliance, the brand and what it is doing. It takes a few minutes.',
+    title: 'Call the number on this site',
+    text: 'Describe the appliance, the brand and what it is doing. The call is free.',
   },
   {
-    title: 'We confirm a time',
-    text: 'On the same call, we check the schedule and set a visit window that works for you.',
+    title: 'Get connected with a local pro',
+    text: 'Your call is connected with an independent appliance repair provider serving your area. Ask about availability, pricing and licensing.',
   },
   {
     title: 'Diagnosis before repair',
-    text: 'The technician finds the problem and explains what the repair involves. Work starts only after you say yes.',
+    text: 'A good technician finds the problem and explains what the repair involves before any work starts.',
   },
 ];
 

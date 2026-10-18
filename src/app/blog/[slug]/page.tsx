@@ -110,7 +110,7 @@ export default async function PostPage({ params }: Params) {
               <p className="relative mt-3 text-white/65">
                 {svc ? (
                   <>
-                    We handle{' '}
+                    Local pros offer{' '}
                     <Link href={serviceHref(svc.key)} className="font-semibold text-white underline decoration-flame underline-offset-4">
                       {svc.name.toLowerCase()} repair in {site.city}
                     </Link>{' '}
@@ -118,15 +118,15 @@ export default async function PostPage({ params }: Params) {
                   </>
                 ) : (
                   <>
-                    See our{' '}
+                    Read about{' '}
                     <Link href={routes.cityPage} className="font-semibold text-white underline decoration-flame underline-offset-4">
-                      appliance repair service in {site.city}
+                      appliance repair in {site.city}
                     </Link>
                     .
                   </>
                 )}{' '}
                 <PhoneLink location={`blog_${p.slug}_aside`} label="Call" className="font-semibold text-white underline decoration-flame underline-offset-4" /> to
-                book a visit.
+                be connected with an independent local appliance repair pro. Verify the provider’s license and insurance before work starts.
               </p>
             </aside>
 

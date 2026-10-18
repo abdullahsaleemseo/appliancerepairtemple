@@ -15,7 +15,6 @@ import { Section, SectionHeading } from '@/components/Section';
 import { ServicesGrid } from '@/components/ServicesGrid';
 import { ServicesTable } from '@/components/ServicesTable';
 import { VerifyTag } from '@/components/Verify';
-import { serviceSchema } from '@/lib/schema';
 import { pageMetadata } from '@/lib/seo';
 
 export const dynamicParams = false;
@@ -41,14 +40,6 @@ export default async function AreaPage({ params }: Params) {
 
   return (
     <>
-      <JsonLd
-        data={serviceSchema({
-          name: `Appliance Repair in ${a.name}, ${site.state}`,
-          description: a.metaDescription,
-          path,
-          serviceType: 'Appliance repair',
-        })}
-      />
       <PageHero
         crumbs={[
           { name: 'Service Areas', path: routes.areas },

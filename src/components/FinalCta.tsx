@@ -1,4 +1,3 @@
-import { canShow, site } from '@/config/site';
 import { CallButton } from './Buttons';
 import { CallCard } from './CallCard';
 import { TrustBadges } from './TrustBadges';
@@ -6,7 +5,7 @@ import { TrustBadges } from './TrustBadges';
 export function FinalCta({
   title = 'Broken appliance?',
   accent = 'Let’s fix it.',
-  text = 'Call and talk to a real person. We set a visit window on the same call, and urgent calls get priority during business hours.',
+  text = 'Call to be connected with an independent local appliance repair pro. Emergency help may be available from local providers.',
   appliance,
   formId = 'final_cta',
 }: {
@@ -31,7 +30,6 @@ export function FinalCta({
             <div className="mt-9">
               <CallButton location={`${formId}_band`} label="Call Now" className="text-[17px]" />
             </div>
-            {canShow(site.hours) ? <p className="mt-4 text-[14px] text-white/50">Phones answered {site.hours.value.long}.</p> : null}
             <div className="mt-10 border-t border-white/10 pt-6">
               <TrustBadges dark />
             </div>

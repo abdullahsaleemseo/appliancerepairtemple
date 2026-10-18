@@ -11,7 +11,7 @@ import { pageMetadata } from '@/lib/seo';
 
 export const metadata = pageMetadata({
   title: `Appliance Repair Tips for ${site.city}, ${site.stateAbbr} Homes | Safe Checks`,
-  description: `Safe troubleshooting guides for refrigerators, washers, dryers and dishwashers, plus repair or replace advice, from an appliance repair team in ${site.city}, ${site.stateAbbr}.`,
+  description: `Appliance repair tips for ${site.city}, ${site.stateAbbr}: safe checks for refrigerators, washers, dryers and dishwashers, and repair or replace advice for homeowners.`,
   path: routes.blog,
 });
 
@@ -23,7 +23,7 @@ export default function BlogIndex() {
       <PageHero crumbs={[{ name: 'Repair Tips', path: routes.blog }]} title="Appliance Repair Tips" accent={`for ${site.city} homes.`}>
         <div className="prose-copy prose-dark">
           <p>
-            Plain-language guides for the problems we see most in {site.city} homes: a warm refrigerator, a washer full of water, a
+            Plain-language guides for the appliance problems {site.city} homeowners run into most often: a warm refrigerator, a washer full of water, a
             dryer running cold, a dishwasher that will not drain. Each one starts with the safe checks you can do yourself and
             ends with how to tell when it is time to call a technician.
           </p>
@@ -37,13 +37,13 @@ export default function BlogIndex() {
             <li>Work through the checks in order. Many problems turn out to be a filter, a hose, a setting or a vent.</li>
             <li>Stop when a check needs panels removed, a meter, gas or refrigerant. That is technician work.</li>
             <li>
-              Still stuck? See our{' '}
+              Still stuck? Read about{' '}
               <Link href={routes.cityPage} className="font-semibold text-ink underline decoration-flame/50 underline-offset-4 hover:decoration-flame">
-                appliance repair service in {site.city}
+                appliance repair in {site.city}
               </Link>{' '}
               or{' '}
-              <PhoneLink location="blog_index_tips" label="call" className="font-semibold text-ink underline decoration-flame/50 underline-offset-4 hover:decoration-flame" />
-              .
+              <PhoneLink location="blog_index_tips" label="call" className="font-semibold text-ink underline decoration-flame/50 underline-offset-4 hover:decoration-flame" />{' '}
+              to be connected with an independent local appliance repair pro.
             </li>
           </ul>
         </div>

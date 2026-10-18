@@ -38,7 +38,7 @@ export const posts: Post[] = [
         id: 'safe-checks',
         heading: 'Safe checks to try first',
         paragraphs: [
-          'Many warm-refrigerator calls turn out to have a simple cause. These checks take about fifteen minutes and need no tools beyond a vacuum.',
+          'Many warm refrigerators turn out to have a simple cause. These checks take about fifteen minutes and need no tools beyond a vacuum.',
         ],
         list: [
           'Check the setting. Dials and touch controls get bumped during cleaning or by kids. Some models also have a showroom or demo mode that turns cooling off while the lights stay on.',
@@ -68,7 +68,7 @@ export const posts: Post[] = [
         id: 'temple-heat',
         heading: 'Central Texas heat and garage refrigerators',
         paragraphs: [
-          'In Temple, summer is when refrigerator calls peak. Higher kitchen temperatures and dusty coils add up, and a refrigerator that was barely keeping up in spring can fall behind in July.',
+          'In Temple, summer is the hardest season on refrigerators. Higher kitchen temperatures and dusty coils add up, and a refrigerator that was barely keeping up in spring can fall behind in July.',
           'Garage refrigerators and freezers have it harder. Many standard refrigerators are not designed to run in a space that gets very hot or close to freezing, and some will warm up or stop cycling properly in those conditions. If yours only misbehaves on the hottest or coldest days, that is useful information for the technician. Some manufacturers sell garage-ready models built for wider temperature ranges.',
         ],
       },
@@ -77,10 +77,10 @@ export const posts: Post[] = [
         heading: 'When to call a technician',
         paragraphs: [
           'Call if the refrigerator is still warm after the checks above, if there is heavy frost on the back wall of the freezer, if it clicks but does not run, or if you see water collecting inside. These repairs need parts testing with a meter, and some need panels removed that are best left to a technician.',
-          'Most of the parts behind these problems, such as fans, relays, defrost heaters, sensors and thermostats, are common and reasonable to replace. A failed compressor or a refrigerant leak is a bigger repair. On a refrigerator past about 10 to 15 years old, the technician will help you weigh repair against replacement.',
+          'Most of the parts behind these problems, such as fans, relays, defrost heaters, sensors and thermostats, are common and reasonable to replace. A failed compressor or a refrigerant leak is a bigger repair. On a refrigerator past about 10 to 15 years old, a good technician should help you weigh repair against replacement. Ask for that before you approve the work.',
         ],
         after: [
-          'When you call, have the brand, the model number from the label inside the fresh-food section, and a short description of what you have already tried. It saves time on the visit.',
+          'When you call to get connected with a local pro, have the brand, the model number from the label inside the fresh-food section, and a short description of what you have already tried. It saves time on the visit.',
         ],
       },
     ],
@@ -117,7 +117,7 @@ export const posts: Post[] = [
   {
     slug: 'washer-not-draining',
     image: '/images/blog/washer-not-draining.webp',
-    title: 'Washer Not Draining? Safe Checks Before You Book a Repair',
+    title: 'Washer Not Draining? Safe Checks Before You Call for Repair',
     metaTitle: 'Washer Not Draining? Safe Checks First | Temple, TX',
     metaDescription:
       'Washer full of water and won’t drain? Safe checks for top-load and front-load washers, what the sounds and codes mean, and when to call a technician.',
@@ -177,7 +177,7 @@ export const posts: Post[] = [
           'A washer that will not drain is usually worth repairing. Drain pumps, lid locks and lid switches are common parts, and replacing one is a much smaller job than replacing the washer. On an older machine, a failed transmission or worn tub bearings are the main cases where replacement starts to make more sense.',
         ],
         after: [
-          'When you call, have the brand, the model number, whether it is a top-load or front-load washer, and any code on the display.',
+          'When you call to get connected with a local pro, have the brand, the model number, whether it is a top-load or front-load washer, and any code on the display.',
         ],
       },
     ],
@@ -261,7 +261,7 @@ export const posts: Post[] = [
         paragraphs: [
           'Electric dryers: the heating element, the thermal fuse, the high-limit thermostat or the cycling thermostat. A broken element coil is common. A blown thermal fuse often means the dryer overheated, which points back to the vent.',
           'Gas dryers: the igniter, the flame sensor or the gas valve coils. A common pattern is a dryer that heats for a while, then goes cold mid-cycle as the valve coils weaken. If the igniter glows but the burner never lights, the coils or the flame sensor are likely suspects.',
-          'Each part can be tested with a meter. A technician tests them in order and replaces only what failed, then checks airflow so the new part is not the next to go.',
+          'Each part can be tested with a meter. A careful technician tests them in order and replaces only what failed, then checks airflow so the new part is not the next to go. Ask the technician how they will confirm which part failed before any part is replaced.',
         ],
       },
       {
@@ -280,7 +280,7 @@ export const posts: Post[] = [
           'Stop using the dryer and call right away if it smells like burning, the top or sides feel very hot, or you see scorch marks on clothes. If you smell gas, do not switch anything on or off. Leave the house and call your gas provider or 911 from outside.',
         ],
         after: [
-          'When you call, have the brand, the model number, whether it is gas or electric, and what you have already checked.',
+          'When you call to get connected with a local pro, have the brand, the model number, whether it is gas or electric, and what you have already checked.',
         ],
       },
     ],
@@ -398,7 +398,7 @@ export const posts: Post[] = [
           'Would you repair this one if it were yours?',
         ],
         after: [
-          'A good technician will answer all five plainly, including telling you when a repair does not make sense.',
+          'A good technician should answer all five plainly, including telling you when a repair does not make sense. Also ask about pricing and any warranty on the work before the repair starts.',
         ],
       },
     ],

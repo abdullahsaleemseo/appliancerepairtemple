@@ -14,7 +14,6 @@ import { Icon } from '@/components/Icon';
 import { JsonLd } from '@/components/JsonLd';
 import { Section, SectionHeading } from '@/components/Section';
 import { VerifyTag } from '@/components/Verify';
-import { serviceSchema } from '@/lib/schema';
 import { pageMetadata } from '@/lib/seo';
 
 export const dynamicParams = false;
@@ -38,14 +37,6 @@ export default async function BrandPage({ params }: Params) {
   const path = brandHref(b);
   return (
     <>
-      <JsonLd
-        data={serviceSchema({
-          name: `${b.name} Appliance Repair in ${site.city}, ${site.state}`,
-          description: b.metaDescription,
-          path,
-          serviceType: `${b.name} appliance repair`,
-        })}
-      />
       <PageHero
         crumbs={[
           { name: 'Brands', path: routes.brands },

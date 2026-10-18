@@ -26,6 +26,10 @@ const rules = [
   { re: /\b(free|no[- ]cost|complimentary)\s+(in[- ]home\s+)?(quotes?|estimates?|inspections?|diagnos\w*|service calls?|consultations?)\b/i, why: 'free quote/estimate/inspection wording' },
   { re: /\b(quotes?|estimates?|inspections?)\s+(are|is)\s+(always\s+)?free\b/i, why: 'free quote/estimate/inspection wording' },
   { re: /<form\b|\b(QuickLeadForm|MultiStepForm|FeedbackForm)\b/, why: 'lead or contact form (the site is call-only)' },
+  // Referral-network compliance: the site connects callers with independent providers and makes no service claims.
+  { re: /licensed (and|&|&amp;) insured|\b\d+\+? years of experience|repairs completed|average rating/i, why: 'credential or track-record claim (referral site)' },
+  { re: /same[- ]day|typical response|about 60 min|priority scheduling|get priority|business hours|monday to saturday/i, why: 'speed or hours claim (referral site)' },
+  { re: /flexible payment|book by phone|request service|visit window|leave us a review|share your experience/i, why: 'booking, payment or review language (referral site)' },
   { re: /\b(TODO|FIXME|XXX)\b/, why: 'placeholder comment' },
   { re: /[\u{1F300}-\u{1FAFF}\u{2600}-\u{2604}\u{2606}-\u{26FF}\u{2700}-\u{27BF}]/u, why: 'emoji' },
 ];

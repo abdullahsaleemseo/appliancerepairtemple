@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { canShow, routes, site } from '@/config/site';
+import { canShow, referralDisclaimer, routes, site } from '@/config/site';
 import { areas, areaHref } from '@/content/areas';
 import { serviceLinks } from './nav';
 import { Logo } from './Logo';
@@ -30,12 +30,7 @@ export function Footer() {
                   {!site.email.verified ? <VerifyTag label="REPLACE EMAIL" /> : null}
                 </p>
               ) : null}
-              {canShow(site.hours) ? (
-                <p>
-                  {site.hours.value.long}
-                  {!site.hours.verified ? <VerifyTag label="VERIFY HOURS" /> : null}
-                </p>
-              ) : null}
+              <p>Call to get connected with a local appliance repair pro.</p>
             </div>
             {site.social.length ? (
               <ul aria-label={`${site.brandName} on social media`} className="mt-7 flex flex-wrap gap-2">
@@ -97,14 +92,11 @@ export function Footer() {
           <div>
             <h2 className={col}>Company</h2>
             <ul className="mt-5 space-y-2.5">
-              <li><Link href={routes.about} className={link}>About</Link></li>
-              <li><Link href={routes.reviews} className={link}>Reviews</Link></li>
-              <li><Link href={routes.gallery} className={link}>Gallery</Link></li>
+              <li><Link href={routes.about} className={link}>About This Site</Link></li>
               <li><Link href={routes.brands} className={link}>Brands</Link></li>
               <li><Link href={routes.faq} className={link}>FAQs</Link></li>
               <li><Link href={routes.blog} className={link}>Repair tips</Link></li>
-              <li><Link href={routes.contact} className={link}>Contact</Link></li>
-              <li><Link href={routes.request} className={link}>Book by Phone</Link></li>
+              <li><Link href={routes.request} className={link}>Call to Get Connected</Link></li>
             </ul>
           </div>
         </div>
@@ -135,10 +127,9 @@ export function Footer() {
 
       <div className="relative border-t border-white/[0.08]">
         <p className="mx-auto max-w-site px-4 pt-6 text-[12.5px] leading-relaxed text-white/45 lg:px-6">
-          <span className="font-semibold text-white/60">Disclaimer:</span> {site.brandName} is an independent appliance repair service and is not
-          affiliated with, endorsed by or sponsored by any appliance manufacturer. Brand names are trademarks of their respective owners and
-          are used only to identify the appliances we service. Same-day and emergency service is subject to technician availability,
-          location, and current demand.
+          <span className="font-semibold text-white/60">Disclaimer:</span> {referralDisclaimer} {site.brandName} is not affiliated with,
+          endorsed by or sponsored by any appliance manufacturer. Brand names are trademarks of their respective owners and are used only
+          to identify appliances.
         </p>
         <div className="mx-auto flex max-w-site flex-col gap-3 px-4 py-6 text-[13px] sm:flex-row sm:items-center sm:justify-between lg:px-6">
           <p>© {year} {site.brandName}. All rights reserved.</p>

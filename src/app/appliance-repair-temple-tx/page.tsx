@@ -21,7 +21,6 @@ import { Section, SectionHeading } from '@/components/Section';
 import { ServicesGrid } from '@/components/ServicesGrid';
 import { ServicesTable } from '@/components/ServicesTable';
 import { TrustBadges } from '@/components/TrustBadges';
-import { serviceSchema } from '@/lib/schema';
 import { pageMetadata } from '@/lib/seo';
 
 const path = routes.cityPage;
@@ -110,14 +109,6 @@ const lifespans = [
 export default function CityPage() {
   return (
     <>
-      <JsonLd
-        data={serviceSchema({
-          name: `Appliance Repair in ${site.city}, ${site.state}`,
-          description: `In-home repair for refrigerators, freezers, washers, dryers, dishwashers, ovens and microwaves in ${site.city}, ${site.stateAbbr}.`,
-          path,
-          serviceType: 'Appliance repair',
-        })}
-      />
 
       <PageHero crumbs={[{ name: `Appliance Repair ${site.city}`, path }]} title={`In-Home Appliance Repair in ${site.city}, ${site.state}`}>
         <p className="text-lg leading-relaxed text-white/75 md:text-xl">

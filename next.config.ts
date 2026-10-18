@@ -14,9 +14,14 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
-      { source: '/get-a-quote', destination: '/request-service/', permanent: true },
-      { source: '/quote', destination: '/request-service/', permanent: true },
+      { source: '/get-a-quote', destination: '/get-connected/', permanent: true },
+      { source: '/quote', destination: '/get-connected/', permanent: true },
       { source: '/services', destination: '/appliance-repair-temple-tx/', permanent: true },
+      { source: '/request-service', destination: '/get-connected/', permanent: true },
+      { source: '/contact', destination: '/get-connected/', permanent: true },
+      { source: '/reviews', destination: '/', permanent: true },
+      { source: '/gallery', destination: '/', permanent: true },
+      { source: '/thank-you', destination: '/', permanent: true },
     ];
   },
 };

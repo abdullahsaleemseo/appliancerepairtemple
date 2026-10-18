@@ -2,37 +2,29 @@
 
 Nothing below may be invented. Each item needs confirmation from the business owner.
 
-## Business facts (`src/config/site.ts`)
-- [ ] `site.phone`: real number (or call tracking number that keeps NAP consistent), then `verified: true`.
-      The phone shows in production even when unverified, because the site needs a number to work. Replace the 555 number before launch.
-- [ ] `site.email`, then `verified: true`
-- [x] `site.hours`: Monday to Saturday, 8:00 AM to 8:00 PM (verified)
-- [ ] `site.spanishSpoken`: only if the owner confirms
-- [ ] `site.social`: real profiles only
-- [ ] `site.emergencyBanner.enabled`: switch on only on days with open same-day slots
+## Referral model (October 18, 2026)
+The site is a referral service for a pay-per-call network (Ringba, "Main Appliance Repair" offer). Calls are connected
+with independent local providers. The network's review asked for the changes below; all were made on Oct 18, 2026.
+- [x] Third-person or homeowner-advice voice on every page; no "we repair", "our technician", "call us"
+- [x] Removed: Licensed & Insured, years of experience, repairs completed, average rating, the Reviews page and review prompts, the Gallery page
+- [x] Removed: same-day and response-time claims, hours, "urgent calls get priority"; emergency wording limited to "may be available from local providers"
+- [x] Removed: payment options and warranty or pricing promises; Terms rewritten for a referral service
+- [x] "Request Service" / "Book by Phone" replaced with "Call to get connected" (`/get-connected/`, old URLs redirect)
+- [x] Referral disclaimer in the footer of every page and on `/disclaimer/`
+- [x] Schema limited to WebSite, BreadcrumbList, FAQPage and Article
+- [ ] Network re-review passed
+- [ ] Ringba tracking number in `site.phone` after approval
 
-## Claims (`claims` in `src/config/site.ts`)
-Verified by the owner on Oct 15, 2026: Licensed & Insured, Same-Day Service, 4+ Years of Experience, 100+ Repairs Completed,
-4.9 Average Rating, Typical Response about 60 minutes, Flexible Payment Options Available, Mon-Sat 8 AM to 8 PM.
-- [ ] Platform and review count behind the 4.9 rating (needed before showing a source or adding review markup)
-- [x] Brand list (`claims.brandsServiced`): all 12 brands, owner confirmed
-- [x] Callback time shown on the thank-you page: usually within 60 minutes during business hours (owner confirmed Oct 16, 2026)
-- [x] Gas appliance service (owner confirmed October 15, 2026, including propane)
-- [x] Pricing policy: no prices, fees, ranges, coupons or financing terms anywhere on the site
+## Business facts (`src/config/site.ts`)
+- [ ] `site.phone`: the Ringba tracking number after approval. Replace the 555 number.
+- [ ] `site.social`: real profiles only
 
 ## Content
 - [x] Confirm each service is offered (`offeredVerified: true` for all 7 services)
 - [x] Confirm the brand lists on service pages and the 12 brand pages
 - [x] Confirm each nearby city is really served, and the travel and scheduling notes in `areas.ts` (owner confirmed October 15, 2026)
 - [x] Area ZIP lists checked against zip-codes.com for all 11 towns (optional: spot-check with the USPS lookup)
-- [x] Review card sections replaced with "Share your experience" prompts; feedback is shared by phone (Oct 16, 2026)
-- [ ] Real reviews in `src/content/reviews.ts` only with a source (platform link or screenshot) and date
-- [ ] Google Business Profile, Facebook and Yelp links in `reviewPlatforms` (adds "Review us on..." buttons)
-- [x] Social profiles in the footer and in Organization `sameAs` (Oct 17, 2026)
-- [x] Team, technician and service van photos on the About page
-- [x] About page story: owner confirmed the current "How we think" text is accurate; draft owner-story block removed (Oct 16, 2026)
-- [ ] "How we work" promises on the About page match how the business actually works
-- [x] Privacy Policy and Terms updated: Appliance Repair Temple performs repairs itself (Oct 15, 2026)
+- [x] Social profiles in the footer (Oct 17, 2026); Organization schema removed Oct 18, 2026
 - [ ] Privacy Policy and Terms reviewed by the owner (and ideally a lawyer)
 - [ ] Read every page aloud. If it sounds like a chatbot, rewrite it.
 

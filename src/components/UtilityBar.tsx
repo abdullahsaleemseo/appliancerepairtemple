@@ -1,17 +1,6 @@
-import { canShow, site } from '@/config/site';
-import { Icon } from './Icon';
+import { site } from '@/config/site';
 import { PhoneLink } from './PhoneLink';
 import { VerifyTag } from './Verify';
-
-export function EmergencyBanner() {
-  if (!site.emergencyBanner.enabled) return null;
-  return (
-    <div className="bg-flame px-4 py-2 text-center text-sm font-semibold text-white">
-      <span className="mr-2 inline-block h-2 w-2 animate-pulseDot rounded-full bg-white align-middle" />
-      {site.emergencyBanner.text} <PhoneLink location="emergency_banner" className="underline underline-offset-2" />
-    </div>
-  );
-}
 
 export function UtilityBar() {
   return (
@@ -20,21 +9,14 @@ export function UtilityBar() {
         <div className="hidden items-center gap-6 md:flex">
           <span className="inline-flex items-center gap-2">
             <span className="h-1.5 w-1.5 animate-pulseDot rounded-full bg-mint-bright" />
-            Booking repairs across {site.city} &amp; {site.county}
+            Connecting {site.city} &amp; {site.county} homeowners with local appliance repair pros
           </span>
-          {canShow(site.hours) ? (
-            <span className="inline-flex items-center gap-1.5">
-              <Icon name="clock" className="h-3.5 w-3.5" />
-              {site.hours.value.display}
-              {!site.hours.verified ? <VerifyTag label="VERIFY HOURS" /> : null}
-            </span>
-          ) : null}
         </div>
         <span className="inline-flex items-center gap-2">
           <PhoneLink
             location="utility_bar"
             withIcon
-            label="Talk to a person:"
+            label="Call to get connected:"
             className="inline-flex items-center gap-1.5 font-semibold text-white hover:text-flame-glow"
           />
           <span className="hidden md:inline">

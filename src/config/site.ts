@@ -31,17 +31,8 @@ export const site = {
 
   // Service-area business: no street address is published or marked up.
   serviceAreaSummary: 'Temple, Belton, Killeen, Harker Heights, Salado, and nearby Central Texas communities',
-  footerAreaLine: 'Proudly serving Temple, TX and nearby Central Texas communities.',
+  footerAreaLine: 'Helping Temple, TX homeowners connect with local appliance repair pros.',
 
-  hours: v(
-    {
-      display: 'Mon-Sat 8am-8pm',
-      long: 'Monday to Saturday, 8:00 AM to 8:00 PM',
-      // schema.org openingHours format
-      schema: ['Mo-Sa 08:00-20:00'],
-    },
-    true,
-  ),
 
   // Temple ZIP codes supplied in the design brief as verified.
   templeZips: ['76501', '76502', '76503', '76504', '76508'],
@@ -61,11 +52,6 @@ export const site = {
     'Moody',
   ],
 
-  // Toggle for the slim same-day banner above the header. Only switch on when slots are really open.
-  emergencyBanner: {
-    enabled: false,
-    text: 'Same-day appointments open in Temple today. Call before 2pm.',
-  },
 
   spanishSpoken: v(false),
 
@@ -81,24 +67,12 @@ export const site = {
 } as const;
 
 /**
- * Public business facts. Only claims confirmed by the owner carry verified: true.
- * Pricing policy: no prices, fees, ranges, coupons, financing terms or cost estimates anywhere on the site.
+ * The site is a referral resource: it connects homeowners with independent local appliance repair
+ * providers by phone. It makes no claims about credentials, experience, ratings, speed, prices or payment.
+ * This disclaimer appears in the footer of every page and on the Disclaimer page.
  */
-export const claims = {
-  licensedInsured: v('Licensed & Insured', true),
-  sameDayShort: v('Same-Day Service', true),
-  /** Required wording whenever same-day service or response time appears in body copy. */
-  availabilityQualifier: 'subject to technician availability, location, and current demand',
-  yearsExperience: v({ value: '4+', label: 'Years of experience', short: '4+ Years of Experience' }, true),
-  repairsCompleted: v({ value: '100+', label: 'Repairs completed' }, true),
-  rating: v({ value: '4.9', label: 'Average rating' }, true),
-  /** A typical figure, never a guaranteed arrival time. */
-  responseTime: v({ value: 'About 60 min', label: 'Typical response', long: 'Typical response: about 60 minutes' }, true),
-  paymentOptions: v('Flexible Payment Options Available', true),
-  emergencyService: v('Emergency appliance repair: urgent calls are prioritized during business hours', true),
-  gasAppliances: v('Gas range and gas dryer repair', true),
-  brandsServiced: v('Brands listed on the site are serviced by Appliance Repair Temple', true),
-} as const;
+export const referralDisclaimer =
+  'This site is a free service to assist homeowners in connecting with local appliance repair providers. All providers are independent and this site does not warrant or guarantee any work performed. It is the responsibility of the homeowner to verify that the hired provider furnishes the necessary license and insurance required for the work being performed. All persons depicted in a photo or video are actors or models and not providers listed on this site.';
 
 export const isProduction = resolvedSiteMode === 'production';
 
@@ -123,11 +97,8 @@ export const routes = {
   brands: '/brands/',
   areas: '/service-areas/',
   about: '/about/',
-  contact: '/contact/',
-  request: '/request-service/',
+  request: '/get-connected/',
   faq: '/faq/',
-  reviews: '/reviews/',
-  gallery: '/gallery/',
   blog: '/blog/',
   privacy: '/privacy-policy/',
   terms: '/terms-of-service/',

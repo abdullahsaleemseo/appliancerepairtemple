@@ -1,11 +1,11 @@
-import { canShow, claims, phoneDisplay, site, tel } from '@/config/site';
+import { phoneDisplay, tel } from '@/config/site';
 import { btn } from './Buttons';
 import { Icon } from './Icon';
 
-/** The phone-first booking card that stands in for a lead form. Every link in it is a tracked call. */
+/** The phone-first card that connects a caller with a local provider. Every link in it is a tracked call. */
 export function CallCard({
   location,
-  title = 'Call to book a visit',
+  title = 'Call to get connected',
   appliance,
   dark = false,
   className = '',
@@ -16,18 +16,17 @@ export function CallCard({
   dark?: boolean;
   className?: string;
 }) {
-  const hours = canShow(site.hours) ? site.hours.value.long : null;
   const points = [
-    appliance ? `Tell us it is your ${appliance}, the brand and what it is doing.` : 'Tell us the appliance, the brand and what it is doing.',
-    'We check the schedule and set a visit window on the same call.',
-    'Urgent calls get priority during business hours.',
+    appliance ? `Describe the problem with your ${appliance} and the brand.` : 'Describe the appliance, the brand and what it is doing.',
+    'You are connected with an independent local appliance repair pro.',
+    'Ask the pro about availability, pricing and licensing before any work starts.',
   ];
   const muted = dark ? 'text-white/60' : 'text-ink-muted';
   return (
     <div
       className={`rounded-xl2 border p-6 sm:p-8 ${dark ? 'border-white/10 bg-white/[0.06] text-white backdrop-blur' : 'border-sand bg-white text-ink shadow-lift'} ${className}`}
     >
-      <p className={`text-[12.5px] font-semibold uppercase tracking-[0.16em] ${dark ? 'text-flame-glow' : 'text-flame'}`}>Fastest way to book</p>
+      <p className={`text-[12.5px] font-semibold uppercase tracking-[0.16em] ${dark ? 'text-flame-glow' : 'text-flame'}`}>Free call</p>
       <h3 className={`mt-3 font-display text-2xl font-bold tracking-[-0.025em] ${dark ? 'text-white' : 'text-ink'}`}>{title}</h3>
       <a
         href={tel}
@@ -40,7 +39,6 @@ export function CallCard({
         </span>
         <span className="whitespace-nowrap">{phoneDisplay}</span>
       </a>
-      {hours ? <p className={`mt-2 text-[14px] ${muted}`}>{hours}</p> : null}
       <ul className="mt-6 space-y-3">
         {points.map((p) => (
           <li key={p} className={`flex items-start gap-3 text-[15px] ${dark ? 'text-white/80' : 'text-ink-body'}`}>
@@ -55,7 +53,7 @@ export function CallCard({
         <Icon name="phone" className="h-5 w-5" strokeWidth={2.2} />
         Call Now
       </a>
-      <p className={`mt-3 text-center text-[13px] ${muted}`}>Same-day service is available, {claims.availabilityQualifier}.</p>
+      <p className={`mt-3 text-center text-[13px] ${muted}`}>Emergency help may be available from local providers. Say it is urgent when you call.</p>
     </div>
   );
 }

@@ -4,11 +4,9 @@ import { indexingAllowed, site } from '@/config/site';
 import { Analytics } from '@/components/Analytics';
 import { Footer } from '@/components/Footer';
 import { Header } from '@/components/Header';
-import { JsonLd } from '@/components/JsonLd';
 import { MobileCallBar } from '@/components/MobileCallBar';
 import { SiteClient } from '@/components/SiteClient';
-import { EmergencyBanner, UtilityBar } from '@/components/UtilityBar';
-import { localBusinessReady, localBusinessSchema, organizationSchema } from '@/lib/schema';
+import { UtilityBar } from '@/components/UtilityBar';
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
@@ -34,7 +32,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         >
           Skip to content
         </a>
-        <EmergencyBanner />
         <UtilityBar />
         <Header />
         <main id="main" tabIndex={-1} className="focus:outline-none">
@@ -44,7 +41,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <MobileCallBar />
         <SiteClient />
         <Analytics />
-        <JsonLd data={localBusinessReady ? localBusinessSchema() : organizationSchema()} />
       </body>
     </html>
   );
