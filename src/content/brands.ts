@@ -14,30 +14,29 @@ export const brands: Brand[] = [
       'Whirlpool washer stuck on F9 E1, dryer blowing cold or ice maker quit? Whirlpool appliance repair in Temple, TX for 76501, 76502, 76504. Call (254) 615-2088.',
     intro: [
       'Whirlpool washer stuck mid-cycle, dryer blowing cold or refrigerator warming up? Appliance Repair Temple’s line puts you in touch with a technician who works on Whirlpool washers, dryers, refrigerators, dishwashers, ranges and over-the-range microwaves in homes across Temple, TX.',
-      'Whirlpool is one of the most common names in Temple kitchens and laundry rooms, from builder-grade sets in rentals near downtown to Cabrio top-loaders and French door refrigerators in newer West Temple homes. Older Duet front-loaders still turn up in a lot of laundry rooms too. Whirlpool Corporation also owns Maytag, KitchenAid, JennAir and Amana, so many parts are shared across those brands and are usually easy to find.',
-      'Whirlpool model numbers read like a short description of the appliance. Most start with W, and the next letters name the product: WTW is a top-load washer, WFW a front-load washer, WED and WGD an electric or gas dryer, WRF a French door refrigerator, WRS a side-by-side, WRT a top-freezer, WDT or WDF a dishwasher, WFE or WFG a freestanding electric or gas range, and WMH an over-the-range microwave. The letters and digits at the end mark the model year and color, and they decide which parts fit.',
-      'Before any part is swapped, ask the technician to explain what the test showed and what the repair involves, and give your OK first.',
+      'Whirlpool is one of the most common names in Temple kitchens and laundry rooms, from builder-grade sets in rentals near downtown to Cabrio top-loaders and French door refrigerators in West Temple. Whirlpool Corporation also owns Maytag, KitchenAid, JennAir and Amana, so many parts are shared and easy to find.',
+      'Whirlpool model numbers read like a short description of the appliance. Most start with W, and the next letters name the product: WTW is a top-load washer, WFW a front-load washer, WED and WGD an electric or gas dryer, WRF a French door refrigerator, WRS a side-by-side, WRT a top-freezer, WDT or WDF a dishwasher, WFE or WFG a freestanding electric or gas range, and WMH an over-the-range microwave. The suffix marks the model year and color.',
     ],
     appliances: [
       { key: 'washer', note: 'Cabrio and other top-loaders, Duet and newer front-loaders, agitator and high-efficiency models' },
       { key: 'dryer', note: 'Electric (WED) and gas (WGD) dryers, including stacked and Duet pairs' },
       { key: 'refrigerator', note: 'Top-freezer, bottom-freezer, side-by-side and French door' },
-      { key: 'dishwasher', note: 'Built-in dishwashers with removable filters under the lower spray arm' },
+      { key: 'dishwasher', note: 'Built-in dishwashers with twist-out filters' },
       { key: 'oven', note: 'Electric and gas freestanding and slide-in ranges, and wall ovens' },
       { key: 'microwave', note: 'Over-the-range microwaves (WMH models)' },
     ],
     issues: [
       {
         title: 'Top-load washer won’t spin or shows F9 E1',
-        text: 'Many Cabrio-style top-loaders lock the lid before spinning. A worn lid lock, a broken lid strike or water left in the drum stops the cycle. On models with a two-part display, F9 E1 usually means a long drain, so a clogged pump or a kinked hose comes first, and F8 E1 points to a slow fill.',
+        text: 'Many Cabrio-style top-loaders lock the lid before spinning. A worn lid lock, a broken lid strike or water left in the drum stops the cycle. On models with a two-part display, F9 E1 usually means a long drain, so a clogged pump or a kinked hose comes first.',
       },
       {
         title: 'Dryer runs but no heat',
-        text: 'Whirlpool dryers protect themselves with a thermal fuse that opens when the cabinet overheats, usually behind a restricted vent. Many recent models also have a Check Vent light. The fuse, element or gas igniter gets replaced, and the vent should be cleared at the same visit so the new part lasts.',
+        text: 'Whirlpool dryers protect themselves with a thermal fuse that opens when the cabinet overheats, usually behind a restricted vent. Many recent models also have a Check Vent light. The fuse, element or igniter is a simple swap, but the vent should be cleared too.',
       },
       {
         title: 'Refrigerator ice maker stopped',
-        text: 'The usual suspects are the water inlet valve, a frozen fill tube, a filter past its date or the ice maker module itself. Hard water in Temple slows the inlet screen over time. Each of those can be tested in a few minutes, which keeps the guesswork out of the parts order.',
+        text: 'The usual suspects are the water inlet valve, a frozen fill tube, a filter past its date or the ice maker module itself. Each can be tested before a part is ordered.',
       },
       {
         title: 'Dishwasher leaving water behind',
@@ -45,11 +44,11 @@ export const brands: Brand[] = [
       },
       {
         title: 'Duet front-loader smells or leaves the drum wet',
-        text: 'The door boot traps water and lint, and the drain pump filter behind the lower front panel collects coins and hair. A boot that has torn or a pump that hums without moving water are common Duet repairs.',
+        text: 'The door boot traps water and lint, and the pump filter behind the lower front panel collects coins and hair. A torn boot or a pump that hums without draining are common Duet repairs.',
       },
     ],
     haveReady: [
-      'The full model and serial number. A clear photo of the tag is perfect.',
+      'The full model and serial number. A clear photo of the tag is perfect for a Whirlpool.',
       'Whether a dryer or range is gas or electric (the model prefix often tells you).',
       'What it is doing, and any two-part code such as F9 E1 or a flashing light pattern.',
       'Roughly how old it is, and whether it is still under the manufacturer’s warranty.',
@@ -67,11 +66,11 @@ export const brands: Brand[] = [
     faqs: [
       {
         q: 'Can the same technician look at my Maytag, KitchenAid or Amana?',
-        a: 'Usually, yes. Maytag, KitchenAid, JennAir and Amana are Whirlpool Corporation brands, and a lot of their pumps, valves, igniters and control parts overlap. Give the brand and the full model number on the call so the right parts can be checked.',
+        a: 'Usually, yes. Maytag, KitchenAid, JennAir and Amana are Whirlpool Corporation brands, and a lot of their pumps, valves, igniters and control parts overlap.',
       },
       {
         q: 'Is this Whirlpool factory service?',
-        a: 'No. Appliance Repair Temple is not affiliated with or authorized by Whirlpool. The technicians reached through this line handle Whirlpool appliances that are out of warranty, or for owners who would rather use someone local.',
+        a: 'No. Appliance Repair Temple is not affiliated with or authorized by Whirlpool. The technicians reached through this line are local and not part of Whirlpool’s service network.',
       },
       {
         q: 'My Whirlpool is still under warranty. Who should I call?',
@@ -79,15 +78,15 @@ export const brands: Brand[] = [
       },
       {
         q: 'What does F9 E1 or F8 E1 mean on my Whirlpool washer?',
-        a: 'On many Whirlpool washers the F number names the system and the E number the fault. F9 E1 usually flags a long drain and F8 E1 a long or slow fill, but meanings vary by model. Check the drain hose and the water valves, then note the code for the technician.',
+        a: 'On many Whirlpool washers the F number names the system and the E number the fault. F9 E1 usually flags a long drain and F8 E1 a long or slow fill, but meanings vary by model.',
       },
       {
         q: 'Are Whirlpool parts easy to get in Temple?',
-        a: 'Common Whirlpool parts such as lid locks, thermal fuses, inlet valves and igniters are widely stocked and can often be swapped on the first visit. Control boards and some model-year parts may need to be ordered, so ask about timing when you call.',
+        a: 'Lid locks, thermal fuses, inlet valves and igniters are widely stocked and often swapped on the first visit. Control boards and some model-year parts may need to be ordered.',
       },
       {
         q: 'How much does Whirlpool appliance repair cost?',
-        a: 'It depends on the appliance and the part, so this site does not list prices. Ask the provider about pricing and any warranty on the work before the repair starts.',
+        a: 'Whirlpool repair costs depend on the appliance and the part, so no prices are listed. Ask the provider about pricing and any warranty on the work before the repair starts.',
       },
     ],
     hasPage: true,
@@ -102,9 +101,8 @@ export const brands: Brand[] = [
       'GE oven showing F3 or F7, fridge warming up or dishwasher not draining? GE, GE Profile and Café appliance repair in Temple, TX homes. Call (254) 615-2088.',
     intro: [
       'GE oven slow to heat, refrigerator warming up or dishwasher leaving water behind? One call to Appliance Repair Temple puts you in touch with a technician who works on GE and GE Profile ranges, wall ovens, cooktops, refrigerators, dishwashers, washers, dryers and over-the-range microwaves in Temple, TX.',
-      'GE appliances are everywhere in Temple, especially the ranges, refrigerators and dishwashers that came with the house in neighborhoods built in the 1990s and 2000s. GE Appliances has been owned by Haier since 2016 and sells several lines: GE, GE Profile, Café and Monogram, plus Hotpoint, which shares many GE parts. Mention which line you have, because parts and features vary between them.',
+      'GE appliances are everywhere in Temple, especially the ranges, refrigerators and dishwashers that came with the house. GE Appliances has been owned by Haier since 2016 and sells several lines: GE, GE Profile, Café and Monogram, plus Hotpoint, which shares many GE parts. Mention which line you have, because parts and features vary between them.',
       'The first letters of a GE model number usually tell you the line and the product. A leading P means GE Profile, C means Café and Z means Monogram. JB is an electric freestanding range and JGB a gas one, JS and JGS are slide-ins, GTS and GTE are top-freezer refrigerators, GSS a side-by-side, GNE and GFE French door, GDT or GDF a dishwasher, GTW and GTD a top-load washer and dryer, and JVM an over-the-range microwave.',
-      'A careful technician tests the suspect part, shows you the reading and starts work only after your OK.',
     ],
     appliances: [
       { key: 'oven', note: 'JB and JGB freestanding ranges, slide-ins, wall ovens and cooktops' },
@@ -137,7 +135,7 @@ export const brands: Brand[] = [
       },
     ],
     haveReady: [
-      'The full model and serial number. GE model numbers start with a letter. A photo of the tag works.',
+      'The model and serial number from the GE tag. A photo of it works.',
       'Which GE line it is: GE, GE Profile, Café, Monogram or Hotpoint.',
       'Gas or electric, for ranges, cooktops and dryers.',
       'What the appliance is doing, and any F code on the display.',
@@ -154,7 +152,7 @@ export const brands: Brand[] = [
     faqs: [
       {
         q: 'Do Profile, Café and Monogram need different parts?',
-        a: 'Often they do. The model prefix (P, C or Z) separates the lines, and trim, controls and some burners are line-specific. Ask the technician to check parts against the full model number before the visit.',
+        a: 'Often they do. The model prefix (P, C or Z) separates the lines, and trim, controls and some burners are line-specific.',
       },
       {
         q: 'Is Appliance Repair Temple connected to GE Appliances?',
@@ -189,7 +187,7 @@ export const brands: Brand[] = [
       'Samsung ice maker frozen, washer flashing 5C or dC, or dryer not heating? Samsung appliance repair in Temple, TX for fridges, laundry and ranges. Call now.',
     intro: [
       'Samsung ice maker frozen solid, washer stopping with a code or dryer blowing cold? Call Appliance Repair Temple’s line to reach a technician who works on Samsung refrigerators, washers, dryers, ranges, dishwashers and over-the-range microwaves in homes across Temple, TX.',
-      'Samsung refrigerators and laundry pairs are common in newer Temple homes, especially in the subdivisions on the west side of town along West Adams Avenue and Highway 317. They are feature-heavy machines, and most report faults as short codes on the display. A code narrows the search, but it rarely names the exact part, so the cause still has to be confirmed with testing.',
+      'Samsung refrigerators and laundry pairs are common in newer West Temple subdivisions along West Adams Avenue and Highway 317. Most report faults as short codes on the display. A code narrows the search but rarely names the part, so testing still confirms the cause.',
       'Samsung model numbers start with two letters for the product: RF is a French door refrigerator, RS a side-by-side, RB a bottom-freezer, WF a front-load washer, WA a top-load washer, DV a dryer (DVE electric, DVG gas), NE an electric range, NX a gas range, DW a dishwasher and ME an over-the-range microwave. The part after the slash, such as /AA or /A5, is the version code. Parts can change between versions, so include it.',
     ],
     appliances: [
@@ -203,7 +201,7 @@ export const brands: Brand[] = [
     issues: [
       {
         title: 'Ice maker frozen up or not making ice',
-        text: 'Ice building up around the in-door ice maker is a frequent complaint from owners of some Samsung French door models. Depending on the model, the cause can be the ice maker, its fan, a heater or the seal on the ice compartment. Chipping the ice out brings it back for a while; finding the cause keeps it working.',
+        text: 'Ice building up around the in-door ice maker is a frequent complaint from owners of some Samsung French door models. Depending on the model, the cause can be the ice maker, its fan, a heater or the seal on the ice compartment.',
       },
       {
         title: 'Washer stops and shows 4C, 5C, dC or UB',
@@ -211,22 +209,22 @@ export const brands: Brand[] = [
       },
       {
         title: 'Dryer runs but no heat',
-        text: 'A heating element or thermal fuse on DVE electric models, an igniter or gas valve coil on DVG gas models. Some models show HE for a heating fault. Airflow matters too, since a crushed or clogged vent is a common root cause.',
+        text: 'A heating element or thermal fuse on DVE electric models, an igniter or gas valve coil on DVG gas models. Some models show HE for a heating fault. A crushed or clogged vent is a common root cause.',
       },
       {
         title: 'Fridge warm, freezer cold',
-        text: 'Often a frosted evaporator or a fan that stopped. Defrost parts and fans are replaceable on most models. If the display reads OF OF, the refrigerator may simply be in demo mode, which lights the display without cooling.',
+        text: 'Often a frosted evaporator or a fan that stopped. Defrost parts and fans are replaceable on most models. Check the display for OF OF first (see the FAQ).',
       },
       {
         title: 'Dishwasher shows LC',
-        text: 'On Samsung dishwashers LC usually means the leak sensor in the base has found water. Turn the dishwasher off and look for a loose hose, a worn door gasket or suds from the wrong detergent before it is run again.',
+        text: 'On Samsung dishwashers LC usually means the leak sensor in the base has found water. Turn it off and look for a loose hose, a worn gasket or excess suds.',
       },
     ],
     haveReady: [
       'The model number including the version code after the slash, plus the long serial number. A photo of the label is easiest.',
       'The exact error code on the display, and when it appears.',
       'For refrigerators: whether the ice maker is in the door or the freezer, and whether there is ice buildup.',
-      'Gas or electric, for dryers and ranges.',
+      'Gas or electric, for a Samsung dryer or range.',
       'Whether the appliance is still under Samsung’s warranty.',
     ],
     modelLocations: [
@@ -240,15 +238,15 @@ export const brands: Brand[] = [
     faqs: [
       {
         q: 'Can a Samsung ice maker that keeps freezing up be fixed?',
-        a: 'Usually, yes. The repair depends on the model and may involve the ice maker, a fan, a heater or the seal around the ice compartment. Defrosting it by hand only resets the clock, so ask for the cause to be found.',
+        a: 'Usually, yes. The repair depends on the model and may involve the ice maker, a fan, a heater or the seal around the ice compartment.',
       },
       {
         q: 'Will a Samsung authorized center pick up this call?',
-        a: 'No. Appliance Repair Temple is not affiliated with or authorized by Samsung, and the call goes to a technician who is not part of Samsung’s network. For a repair still under Samsung’s warranty, contact Samsung first.',
+        a: 'No. Appliance Repair Temple is not affiliated with or authorized by Samsung. For a repair still under Samsung’s warranty, contact Samsung first.',
       },
       {
         q: 'Should I read the code to the technician over the phone?',
-        a: 'Yes. Read it exactly as shown, including whether it is 5C or 5E, and say when it appears in the cycle. That points to the right system and helps the likely parts come on the first visit.',
+        a: 'Yes. Read it exactly as shown, 5C or 5E, and say when in the cycle it appears. That helps the likely parts come on the first visit.',
       },
       {
         q: 'Where is the model number on my Samsung refrigerator?',
@@ -275,9 +273,9 @@ export const brands: Brand[] = [
       'LG fridge not cooling, washer flashing OE or IE, or dryer showing D90? LG appliance repair in Temple, TX for refrigerators, laundry and ranges. Call now.',
     intro: [
       'LG refrigerator warming up, washer stopping with a code or dryer running cold? Call (254) 615-2088 to reach a technician who works on LG refrigerators, washers, dryers, ranges, dishwashers and over-the-range microwaves in Temple, TX homes.',
-      'LG appliances are common in newer Temple homes, especially French door refrigerators, front-load laundry pairs and smart ranges. Most LG models report faults as two-letter codes on the display, and many can send a Smart Diagnosis report through the LG ThinQ app or by holding a phone to the appliance. A code points to the right system; testing confirms which part failed.',
+      'LG appliances are common in newer Temple homes, especially French door refrigerators, front-load laundry pairs and smart ranges. Most LG models report faults as two-letter codes on the display, and many support Smart Diagnosis through the LG ThinQ app. A code points to the right system; testing confirms which part failed.',
       'LG model numbers start with the product: LF, LRF and LRMV are French door and InstaView-style refrigerators, LS a side-by-side, WM a front-load washer, WT a top-load washer, DLE and DLG an electric or gas dryer, LRE and LRG an electric or gas range, LDF, LDT and LDP dishwashers, and LMV an over-the-range microwave. Kenmore models with a 795 or 796 prefix were built by LG and use many of the same parts.',
-      'If your LG refrigerator has stopped cooling, check the purchase date first. LG offers longer coverage on the linear or inverter compressor of many refrigerator models than its standard warranty, so a compressor fault may be a warranty matter.',
+      'If your LG refrigerator has stopped cooling, check the purchase date first: LG covers the linear or inverter compressor on many models longer than its standard warranty.',
     ],
     appliances: [
       { key: 'refrigerator', note: 'French door, side-by-side, bottom-freezer and InstaView-style models' },
@@ -290,7 +288,7 @@ export const brands: Brand[] = [
     issues: [
       {
         title: 'Refrigerator not cooling',
-        text: 'Many LG refrigerators use linear or inverter compressors. Fans, the defrost system, sensors and the control board fail more often and are simpler to fix, so they get checked first. Display codes such as Er FF (freezer fan), Er CF (condenser fan) or Er dH (defrost heater) narrow it down. If it is the compressor, ask for that to be written down for the warranty claim.',
+        text: 'Fans, the defrost system, sensors and the control board fail more often and are simpler to fix, so they get checked first. Display codes such as Er FF (freezer fan), Er CF (condenser fan) or Er dH (defrost heater) narrow it down. If it is the compressor, ask for that to be written down for the warranty claim.',
       },
       {
         title: 'Ice maker slow or frozen',
@@ -310,10 +308,10 @@ export const brands: Brand[] = [
       },
     ],
     haveReady: [
-      'The model and serial number from the label. A photo is the easiest way to share it.',
+      'The model and serial number from the LG label, or a photo of it.',
       'The exact error code, and whether it shows on the display or in the ThinQ app.',
       'For refrigerators: the purchase date, so you can check LG’s compressor coverage.',
-      'Gas or electric, for dryers and ranges.',
+      'Gas or electric, if it is an LG dryer or range.',
       'Whether the appliance is still under any LG warranty.',
     ],
     modelLocations: [
@@ -331,7 +329,7 @@ export const brands: Brand[] = [
       },
       {
         q: 'My LG refrigerator stopped cooling. Is it the compressor?',
-        a: 'Not always. Fans, the defrost heater, sensors and the control board can all stop an LG from cooling, and they are tested first. If the compressor has failed, check whether LG’s compressor coverage applies to your model before paying for that repair.',
+        a: 'Not always. Fans, the defrost heater, sensors and the control board are tested first. If the compressor has failed, check LG’s compressor coverage for your model before paying.',
       },
       {
         q: 'Can a Kenmore built by LG be repaired the same way?',
@@ -397,7 +395,7 @@ export const brands: Brand[] = [
       },
     ],
     haveReady: [
-      'The model and serial number from the label. A photo is the easiest way to share it.',
+      'A photo of the Frigidaire model and serial label.',
       'Whether it is a Gallery (FG), Professional (FP) or standard (FF) model.',
       'Gas or electric, for ranges and dryers.',
       'Any F code on the display.',
@@ -485,7 +483,7 @@ export const brands: Brand[] = [
       },
     ],
     haveReady: [
-      'The model and serial number from the label. A photo is the easiest way to share it.',
+      'The Maytag model and serial number, typed out or photographed.',
       'The purchase date, so you can check which parts the Maytag warranty still covers.',
       'Top-load or front-load, and gas or electric for dryers and ranges.',
       'Any code on the display, such as Ld or LF, and what the washer or dryer was doing when it stopped.',
@@ -515,7 +513,7 @@ export const brands: Brand[] = [
       },
       {
         q: 'Do Maytag and Whirlpool use the same parts?',
-        a: 'Many current models share designs and parts, since both brands belong to Whirlpool Corporation. An MVW washer and a WTW washer of the same year often share a pump and lid lock. The full model number shows exactly which parts fit.',
+        a: 'Many current models share designs and parts, since both brands belong to Whirlpool Corporation. An MVW washer and a WTW washer of the same year often share a pump and lid lock. The full model number confirms the match.',
       },
       {
         q: 'What does Ld mean on my Maytag washer?',
@@ -570,7 +568,7 @@ export const brands: Brand[] = [
       },
     ],
     haveReady: [
-      'The model and serial number from the silver label. A photo is the easiest way to share it.',
+      'The model and serial number from the silver KitchenAid label.',
       'Any error code or the number of flashes on the control panel.',
       'Gas or electric, for ranges.',
       'For dishwashers: when the filter was last cleaned and whether you have hard water.',
@@ -595,7 +593,7 @@ export const brands: Brand[] = [
       },
       {
         q: 'Do KitchenAid and Whirlpool use the same parts?',
-        a: 'Many core parts are shared, such as dishwasher pumps and refrigerator fans. Panels, trim and some controls are KitchenAid-specific. The full model number shows exactly which parts fit.',
+        a: 'Many core parts are shared, such as dishwasher pumps and refrigerator fans. Panels, trim and some controls are KitchenAid-specific, so the full model number decides.',
       },
       {
         q: 'Can my KitchenAid stand mixer be repaired through this line?',
@@ -740,7 +738,7 @@ export const brands: Brand[] = [
     haveReady: [
       'The full model number, including the digits before the dot. A photo of the tag is the easiest way to share it.',
       'The serial number, which helps date the appliance.',
-      'Gas or electric, for dryers and ranges.',
+      'Gas or electric, for a Kenmore dryer or range.',
       'Roughly how old the appliance is, if you know.',
       'Any error code or unusual noise.',
     ],
@@ -828,7 +826,7 @@ export const brands: Brand[] = [
       'A photo of the full label: model number, PNC and serial number.',
       'Any error code on the display.',
       'For washers: whether you have cleaned the pump filter, and which detergent you use.',
-      'Gas or electric, for dryers and ranges.',
+      'Gas or electric (ELFE or ELFG on dryers).',
       'Whether the appliance is still under Electrolux’s warranty.',
     ],
     modelLocations: [
@@ -912,9 +910,9 @@ export const brands: Brand[] = [
       },
     ],
     haveReady: [
-      'The model and serial number from the tag. A photo is the easiest way to share it.',
+      'The model and serial number from the Amana tag.',
       'Whether you own the home or rent it, and who approves repairs.',
-      'Gas or electric, for dryers and ranges.',
+      'Whether the dryer or range runs on gas or electric.',
       'What the appliance is doing, or not doing, and when it started.',
       'Whether the appliance is still under Amana’s warranty.',
     ],
@@ -995,7 +993,7 @@ export const brands: Brand[] = [
       },
     ],
     haveReady: [
-      'The model and serial number from the serial plate. A photo is the easiest way to share it.',
+      'The model and serial number from the serial plate; a phone photo is fine.',
       'The purchase date and your warranty paperwork, since coverage depends on the serial number.',
       'Top-load or front-load, and gas or electric for the dryer.',
       'What the machine was doing when it stopped, and any code or flashing light.',

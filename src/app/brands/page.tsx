@@ -11,19 +11,26 @@ import { Section, SectionHeading } from '@/components/Section';
 import { pageMetadata } from '@/lib/seo';
 
 export const metadata = pageMetadata({
-  title: `Appliance Brands Repaired in ${site.city}, ${site.stateAbbr} | Local Pros`,
-  description: `Whirlpool, GE, Samsung, LG, Frigidaire, Maytag, KitchenAid, Bosch, Kenmore, Electrolux, Amana and Speed Queen appliance repair in ${site.city}, ${site.stateAbbr}. Call a local pro.`,
+  title: `Appliance Brand Repair ${site.city} ${site.stateAbbr} | Error Codes & Model Tags`,
+  description: `Samsung code, LG fridge not cooling or Bosch E15? Repair notes for 12 brands in ${site.city}, ${site.stateAbbr}: model numbers, common failures and parts. Call (254) 615-2088.`,
   path: routes.brands,
 });
+
+const families = [
+  { title: 'Whirlpool Corporation', text: 'Whirlpool, Maytag, KitchenAid, Amana and JennAir. Many pumps, lid locks, valves and igniters cross over between them.' },
+  { title: 'GE Appliances (Haier)', text: 'GE, GE Profile, Café, Monogram and Hotpoint. The first letter of the model number usually names the line.' },
+  { title: 'Electrolux', text: 'Electrolux and Frigidaire, including Gallery and Professional. Laundry and refrigeration platforms are often shared.' },
+  { title: 'Kenmore', text: 'Built for Sears by Whirlpool, LG, Frigidaire and others. The three digits before the dot in the model number name the builder.' },
+];
 
 export default function BrandsPage() {
   return (
     <>
       <PageHero crumbs={[{ name: 'Brands', path: routes.brands }]} title={`Appliance Brands Repaired in ${site.city}`}>
         <p className="text-lg leading-relaxed text-white/70">
-          Most homes in {site.city} have a mix of brands, often whatever came with the house plus a newer washer or fridge.
-          Independent local repair pros work on the common household brands below, and one call connects you with one. Have the
-          model number ready so the technician can confirm parts before the visit.
+          Most {site.city} homes have a mix: a GE range that came with the house, a Samsung or LG fridge bought later, a
+          Whirlpool or Maytag laundry pair in the utility room. Each brand guide below covers that brand&apos;s model number
+          format, typical failures, error codes and where the tag sits, so you can describe the problem in a minute when you call.
         </p>
         <div className="mt-8">
           <CtaRow location="brands_hero" dark />
@@ -57,10 +64,22 @@ export default function BrandsPage() {
         </ul>
       </Section>
 
-      <Section tone="white" labelledBy="other-heading">
+      <Section tone="white" labelledBy="family-heading">
+        <SectionHeading id="family-heading" eyebrow="Brand families" title="Who builds" accent="what." intro="Many brands share a parent company, and with it platforms and parts. Knowing the family helps a technician find a part." />
+        <ul className="grid gap-4 md:grid-cols-2">
+          {families.map((f) => (
+            <li key={f.title} className="card p-7">
+              <h3 className="font-display text-[20px] font-bold tracking-[-0.02em] text-ink">{f.title}</h3>
+              <p className="mt-2 text-[15px] text-ink-body">{f.text}</p>
+            </li>
+          ))}
+        </ul>
+      </Section>
+
+      <Section labelledBy="other-heading">
         {otherBrands.length ? (
           <>
-            <SectionHeading id="other-heading" eyebrow="Also" title="Other brands" accent="local pros work on." intro="No dedicated page yet, but these are common in Temple homes." />
+            <SectionHeading id="other-heading" eyebrow="Also" title="Other brands" accent={`in ${site.city} homes.`} intro="No dedicated page yet, but these are common in Temple homes." />
             <BrandChips names={otherBrands} />
           </>
         ) : (
@@ -69,18 +88,22 @@ export default function BrandsPage() {
             eyebrow="Not listed?"
             title="Your brand"
             accent="is not here?"
-            intro="Local pros work on most major household brands. If yours is not on this page, call with the brand and model number and ask whether the provider can help."
+            intro="Many technicians also work on brands without a page here, such as JennAir, Hotpoint, Haier and Café. Call with the brand and model number and ask whether the provider can help."
           />
         )}
         <p className="mt-12 max-w-3xl text-sm text-ink-muted">
-          All brand names are trademarks of their respective owners. {site.brandName} is a free referral service that connects
-          homeowners with independent local repair providers. It is not affiliated with, authorized by or endorsed by any
-          manufacturer listed here. If your appliance is still under a
-          manufacturer’s warranty, contact the manufacturer first.
+          All brand names are trademarks of their respective owners. {site.brandName} is not affiliated with, authorized by or
+          endorsed by any manufacturer listed here. If your appliance is still under a manufacturer’s warranty, contact the
+          manufacturer first.
         </p>
       </Section>
 
-      <FinalCta formId="brands_final" />
+      <FinalCta
+        formId="brands_final"
+        title="Whatever the brand,"
+        accent="one call."
+        text="Read the brand and model number off the tag, and the technician can check parts before the visit."
+      />
     </>
   );
 }

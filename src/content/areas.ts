@@ -2,23 +2,24 @@ import type { Area } from './types';
 
 /**
  * Nearby-city pages. Only towns with their own local content get a page; the
- * rest stay on the hub list in site.nearbyTowns. Copy speaks as a referral
- * service: callers are connected with independent local appliance repair pros.
+ * rest stay on the hub list in site.nearbyTowns. Copy is written for the
+ * Appliance Repair Temple line: lead with the appliance problem and the town,
+ * never write as the repair company, and keep every paragraph about this town.
  * ZIP lists outside Temple must be checked against USPS before launch.
  */
 export const areas: Area[] = [
   {
     slug: 'belton-tx',
     name: 'Belton',
-    metaTitle: 'Appliance Repair Belton TX | Connect With Local Pros',
+    metaTitle: 'Appliance Repair Belton TX | Fridge, Washer & Dryer Help',
     metaDescription:
-      'Appliance repair in Belton, TX for fridges, washers, dryers, dishwashers and ovens. Free referral service near Temple. Call to get connected with a local pro.',
+      'Fridge warm, washer stuck or dryer cold in Belton? Whirlpool, Maytag, LG and Kenmore repairs in 76513, from Nolan Creek to the lake. Call (254) 615-2088.',
     h1: 'Appliance Repair in Belton, TX, Right Next Door to Temple',
     intro: [
-      'Need appliance repair in Belton? Appliance Repair Temple is a free referral service that connects Belton, TX homeowners with independent local appliance repair pros for refrigerators, freezers, washers, dryers, dishwashers, ovens and ranges, in the older streets north of Nolan Creek and the newer subdivisions on the edge of town. Call, describe the problem, and you are connected with a local pro.',
-      'Belton is the Bell County seat and sits right beside Temple, so many of the local appliance repair providers who work in Temple also serve Belton homes. Give your street address when you call so you are connected with a pro who covers your part of town.',
-      'The repair itself should work the same way anywhere. A good technician finds the part that failed, explains what the repair involves, and starts only after your OK. If an appliance is not worth fixing, a good technician will say so. Ask for that before any work starts.',
-      'That covers refrigerator repair and freezer repair, washer and dryer repair, dishwasher repair, oven, stove and range repair, and over-the-range microwave repair in Belton, across the major brands. For urgent problems, such as a fridge warming up or a washer leaking across the floor, emergency appliance repair may be available from local providers. Say it is urgent when you call.',
+      'Refrigerator warm, washer stuck mid-cycle or dryer running cold in Belton? Appliance Repair Temple is the appliance repair line for Belton, TX and the rest of Bell County. One call puts you in touch with a technician who works on refrigerators, freezers, washers, dryers, dishwashers, ovens and ranges, from the older streets north of Nolan Creek to the newer subdivisions on the edge of town.',
+      'Belton is the Bell County seat and sits right beside Temple, so many of the technicians who work in Temple also take Belton calls. Give your street address when you call, since a house near downtown, a rental by the UMHB campus and a home out toward Belton Lake can fall to different providers.',
+      'In Belton, the age of the house often explains the failure. An older home north of Nolan Creek may have an original shutoff valve and a long dryer vent behind the problem, while a newer build may have a French door fridge still under factory coverage. A good technician looks at the hookups as well as the appliance, explains what failed and starts only after your OK.',
+      'Refrigerator and freezer repair, washer and dryer repair, dishwasher repair, oven, stove and range repair and over-the-range microwave repair are all part of appliance repair in Belton, on the major brands. The cards further down cover the Whirlpool, Maytag, Kenmore, GE, LG and Frigidaire problems Belton households search for.',
     ],
     brandProblems: [
       { brand: 'whirlpool', appliance: 'refrigerator', title: 'Whirlpool refrigerator ice maker not working in Belton', text: 'When a Whirlpool ice maker stops, check that it is switched on, the freezer is near 0°F and the water filter is not overdue. If those are fine, the usual causes are a frozen fill tube, a failed water inlet valve or the ice maker assembly itself. Older homes north of Nolan Creek with original shutoff valves can also have a valve that is only partly open.' },
@@ -28,10 +29,20 @@ export const areas: Area[] = [
       { brand: 'lg', appliance: 'refrigerator', title: 'LG refrigerator not cooling in Belton', text: 'Start with the condenser coils and the fan at the bottom back, since dust and pet hair block airflow in summer. If the fridge clicks, hums and stays warm, the compressor or its control may be at fault. Some LG compressors carry longer manufacturer coverage, so check the warranty paperwork before you pay for that repair.' },
       { brand: 'frigidaire', appliance: 'freezer', title: 'Frigidaire chest freezer not freezing in Belton', text: 'Chest freezers in Belton garages and lake-house shops work hard in July. If one runs but stays soft, clean the coils or the cabinet vents and give it room to breathe. If it clicks every few minutes and never runs, the start relay or the compressor is the likely cause. Keep the lid closed while you wait.' },
     ],
+    brandProblemsIntro:
+      'Whirlpool ice makers, Maytag washers and Kenmore dryers turn up in older Belton homes, and LG and Frigidaire units in the newer ones and the lake garages. Each card says what the problem usually means and what to check first.',
+    emergencyHeading: { title: 'Fridge warm or washer flooding', accent: 'in Belton?' },
     emergencyNote:
-      'A refrigerator warming up with groceries inside, a washer leaking toward the carpet or a dryer that smells hot cannot wait, and Belton sits right next to Temple. Emergency help may be available from local providers who serve Belton homes. Say it is urgent when you call.',
+      'Belton emergencies pile up in summer: a kitchen fridge losing its cold in July, a garage chest freezer full of lake catches that stopped humming, or a washer hose that let go in an older laundry closet. Emergency help for problems like these may be available from local providers who work in Belton; say it is urgent as soon as the call starts.',
+    emergencyStepsIntro: 'While you wait, these steps keep a Belton problem from getting bigger:',
+    emergencySteps: [
+      'Leak in an older home: close the shutoff behind the washer or fridge. If an original valve will not turn, close the main water valve for the house instead of forcing it.',
+      'Garage freezer warming: keep the lid shut and check the garage outlet, since a tripped GFCI is a common reason a garage unit goes quiet.',
+      'Dryer smells hot: stop the cycle, pull the lint screen and leave the dryer off. Long vent runs in older Belton laundry rooms trap lint.',
+      'Gas smell at a range or dryer: get everyone outside and call your gas provider or 911 from the street.',
+    ],
     travelNote:
-      'How getting connected works in Belton: call, describe the problem and give your 76513 address, and you are connected with an independent local appliance repair pro. Ask about availability, pricing and licensing on that call.',
+      'Calling from Belton? Have your 76513 street address, the brand and what the appliance is doing. Say if you are near UMHB or out by the lake, since that helps match the call to a technician who covers that side of town.',
     localPoints: [
       {
         heading: 'Older homes north of Nolan Creek',
@@ -75,15 +86,15 @@ export const areas: Area[] = [
         accent: 'property managers.',
         paragraphs: [
           'Belton has plenty of rentals, from homes near downtown to houses and apartments around the University of Mary Hardin-Baylor. When a rental appliance fails, the lease usually decides who arranges the repair. Tenants should tell the landlord or property manager first.',
-          'Landlords and property managers can call directly to be connected with a local pro. Have the address ready, and know who approves the repair and who will let the technician in. Ask the technician to explain what failed and what the repair involves before any work starts, so the approval happens before the work.',
+          'Owners and managers can make the call themselves. Have the unit address ready, and know who approves the repair and who holds the key. Between semesters, when a unit sits empty, ask the technician to explain what failed and what the fix involves before work starts, so the approval is settled while nobody is home.',
         ],
       },
       {
-        heading: 'How getting connected works',
-        accent: 'in Belton.',
+        heading: 'Calling about a Belton appliance:',
+        accent: 'what to ask.',
         paragraphs: [
-          'Call the number on this page with your address, the appliance, the brand and what it is doing. Appliance Repair Temple is a free referral service, and the call connects you with an independent local appliance repair pro who serves Belton.',
-          'Each provider sets their own schedule and prices, so ask on that call when they can come out, how they charge for the visit and the repair, and whether they carry insurance and any license the work requires. Ask about any warranty on parts and labor before work starts, and write the answers down.',
+          'Lead with the address and the symptom, such as a Maytag that fills but will not spin or a GE oven showing an F-code. Belton calls range from campus duplexes to lake houses off FM 439, and the street address decides which technician covers it.',
+          'Belton technicians each set their own schedule and prices, so on that call ask when they can come out, how the visit and the repair are priced, and whether they hold insurance and any license the work needs. If parts or labor carry a warranty, get the terms first and write them down.',
         ],
       },
       {
@@ -96,31 +107,33 @@ export const areas: Area[] = [
     ],
     zips: ['76513'],
     zipsVerified: true,
+    zipNote:
+      'Belton uses 76513, a ZIP it shares with Morgan’s Point Resort. Homes toward the lakes can also show a Belton mailing city, so the street address matters more than the ZIP.',
     nearby: ["Morgan's Point Resort", 'Harker Heights', 'Salado', 'Killeen', 'Nolanville'],
     faqs: [
       {
-        q: 'Can I get emergency appliance repair in Belton?',
-        a: 'Emergency help may be available from local providers. A refrigerator or freezer warming up with food inside, a washer or dishwasher leaking, or an appliance that smells like burning is worth an urgent call. Say it is urgent when you call. Until a technician arrives, close the water valve on a leak, keep a warm fridge closed and switch off the breaker for anything that smells hot.',
+        q: 'What counts as emergency appliance repair in Belton?',
+        a: 'Anything losing food or spreading water: a refrigerator or garage freezer warming up, a washer or dishwasher leaking, or an appliance that smells like burning. Say it is urgent at the start of the call. Until a technician is there, close the water valve on a leak, keep a warm fridge shut and switch off the breaker for anything that smells hot.',
       },
       {
         q: 'My refrigerator in Belton stopped cooling. What should I do first?',
-        a: 'Keep the doors closed, since a closed refrigerator holds food safely for about four hours. Check the temperature setting and the breaker, then call to be connected with a local pro. Refrigerator repair is time-sensitive, so say it is urgent and ask about availability on that call.',
+        a: 'Keep the doors closed, since a closed refrigerator holds food safely for about four hours. Check the dial and the breaker, then look at the condenser coils, which Belton summers and pet hair clog quickly. If it is still warm after that, call and say the food is at risk.',
       },
       {
-        q: 'Is washer and dryer repair available in Belton?',
-        a: 'Yes. Local pros handle washers that will not drain, spin or stop leaking, and dryers that will not heat or take too long. These are some of the most common appliance problems in Belton homes. On a dryer repair, ask the technician to check the vent airflow too.',
+        q: 'Can washers and dryers in older Belton laundry rooms be repaired?',
+        a: 'Yes. Washers that will not drain, spin or stop leaking and dryers that will not heat are among the most common Belton calls. In the tight closets north of Nolan Creek, ask the technician to look at the vent run and the hoses as well as the machine.',
       },
       {
         q: 'Is appliance repair available across all of Belton?',
-        a: 'Local pros serve Belton’s 76513 ZIP code, including the older neighborhoods near downtown and Nolan Creek and the newer subdivisions around town. If you are outside city limits, give your full address when you call so you are connected with a provider who covers it.',
+        a: 'The 76513 ZIP takes in downtown, Nolan Creek, the UMHB area, the newer subdivisions and homes past city limits. Give the full street address rather than just the ZIP, so the call goes to a technician who works in that part of it.',
       },
       {
-        q: 'How do I find an appliance repair pro near Belton?',
-        a: 'Call the number on this page with your Belton address and a short description of the problem. You are connected with an independent local appliance repair pro who serves the area. Ask about their availability on that call, since each provider sets their own schedule.',
+        q: 'How do I reach an appliance repair technician in Belton?',
+        a: 'Call the number at the top of this page with your Belton address and a sentence or two about the problem. The call is routed to a local appliance repair pro who takes Belton jobs; ask about timing then, since each provider keeps their own calendar.',
       },
       {
         q: 'Can I get appliance repair in a rental near UMHB?',
-        a: 'Yes. Tenants should contact the landlord or property manager first, since many leases make the landlord responsible for appliances they supply. If the landlord or manager is paying, they should approve the repair with the provider, and someone needs to let the technician in.',
+        a: 'Yes. Tenants should contact the landlord or property manager first, since many leases make the landlord responsible for appliances they supply. If the owner is paying, they should approve the repair with the provider, and someone needs to let the technician in.',
       },
       {
         q: 'Can I get garage and shop freezers repaired around Belton Lake?',
@@ -128,39 +141,46 @@ export const areas: Area[] = [
       },
       {
         q: 'Which appliances can be repaired in Belton?',
-        a: 'Local appliance repair pros work on refrigerators, freezers, washers, dryers, dishwashers, ovens, ranges, cooktops and over-the-range microwaves, across the major brands. Mention the brand and model when you call.',
+        a: 'Kitchen refrigerators and garage freezers, top-load and front-load washers, gas and electric dryers, dishwashers, ovens, ranges, cooktops and over-the-range microwaves. That spans the older Kenmore and Maytag sets in established homes and the newer LG and Samsung models in the subdivisions.',
       },
       {
-        q: 'My appliance is still under warranty. Who should I call?',
-        a: 'Check with the manufacturer first, since independent repair may not be covered by a factory warranty. If the warranty has expired or you are not sure, call with the model number and you can be connected with a local pro.',
+        q: 'My Belton appliance is still under warranty. Who do I call?',
+        a: 'The manufacturer first, since a repair outside their network may not be covered. Appliances in Belton’s newer subdivisions often still have factory coverage. If it has run out or you cannot tell, call with the model number and the brand.',
       },
       {
-        q: 'What happens if a part has to be ordered?',
-        a: 'Many common parts can be replaced on the first visit. Some are model-specific and have to be ordered. Ask the technician whether that is the case, how long the part usually takes and what the next visit involves.',
+        q: 'What if the part for my Belton repair has to be ordered?',
+        a: 'Common parts like a lid switch, a bake element or a start relay can often be replaced on the first visit. Model-specific parts, like a control board for a newer French door fridge, may need ordering. Ask how long the part usually takes and what the second visit involves.',
       },
       {
         q: 'Is appliance repair available in towns around Belton?',
-        a: 'Yes. Along with Belton and Temple, local pros serve Morgan’s Point Resort, Harker Heights, Nolanville, Killeen, Salado and other nearby towns. Give your address when you call to be connected with a provider who covers it.',
+        a: 'Yes. Morgan’s Point Resort, Harker Heights, Nolanville, Killeen, Salado and Temple all have pages on this site, and other nearby towns are covered too. Give your address when you call so it reaches a technician who works there.',
       },
       {
         q: 'How much does appliance repair in Belton cost?',
-        a: 'It depends on the appliance, the part and the provider, so this site does not list prices. When you are connected with a local pro, ask how they price the visit and the repair, and have the brand and model number ready.',
+        a: 'This site does not list prices, because each technician sets their own. The appliance, the part and the trip all matter. Ask how the visit and the repair are priced before any work starts, and have the brand and model number ready.',
       },
     ],
     featuredServices: ['washer', 'dryer', 'refrigerator', 'freezer'],
+    servicesNote:
+      'Every appliance below is repaired in Belton homes, from UMHB rentals to lake garages. Open one for its common problems, the usual causes and what to check before you call.',
+    finalCta: {
+      title: 'Belton appliance acting up?',
+      accent: 'Call and describe it.',
+      text: 'From a warm fridge near UMHB to a garage freezer by the lake, one call puts you in touch with a technician who works in Belton.',
+    },
   },
   {
     slug: 'killeen-tx',
     name: 'Killeen',
-    metaTitle: 'Appliance Repair Killeen TX | Connect With Local Pros',
+    metaTitle: 'Appliance Repair Killeen TX | Fridges, Washers, Dryers',
     metaDescription:
-      'Appliance repair in Killeen, TX for fridges, washers, dryers, dishwashers and ovens in homes, rentals and PCS moves. Call to get connected with a local pro.',
+      'Samsung fridge warm or LG washer showing OE in Killeen? Repairs for homes, rentals and PCS move-ins in 76541, 76542, 76543 and 76549. Call (254) 615-2088.',
     h1: 'Appliance Repair in Killeen, TX for Homes and Rentals',
     intro: [
-      'Appliance Repair Temple connects Killeen, TX homeowners and renters with independent local appliance repair pros for refrigerators, freezers, washers, dryers, dishwashers, ovens and ranges, in the older additions on the north side and the newer neighborhoods south of I-14. A good technician finds what failed, explains the repair, and starts only after you approve it.',
+      'Samsung fridge warm, LG washer flashing OE, or a dryer that quit the week you moved in? Appliance Repair Temple is the appliance repair line for Killeen, TX homeowners, renters and landlords. One call puts you in touch with a technician for refrigerators, freezers, washers, dryers, dishwashers, ovens and ranges, from the older additions on the north side to the newer neighborhoods south of I-14.',
       'Killeen is the largest city in Bell County and sits right outside Fort Hood, so a lot of households here arrive and leave on military orders. Many appliance problems in Killeen come up for renters, landlords, property managers and families who just moved in and found an appliance that did not make it through the last move.',
-      'Killeen is a larger city than most towns around Temple, and several local providers work there. When you call, give your full address and ZIP code so you are connected with a pro who covers your part of Killeen, then ask about their availability.',
-      'That covers refrigerator repair and freezer repair, washer and dryer repair, dishwasher repair, oven, stove and range repair, and over-the-range microwave repair in Killeen, across the major brands. For urgent problems, such as a fridge warming up or a washer leaking across the floor, emergency appliance repair may be available from local providers. Say it is urgent when you call.',
+      'Killeen spreads across four ZIP codes and several technicians work different parts of it. Give your full address and ZIP when you call so it reaches someone who covers your side of town, whether that is off Rancier Avenue or out past Stan Schlueter Loop.',
+      'Refrigerator and freezer repair, washer and dryer repair, dishwasher repair, oven, stove and range repair and over-the-range microwave repair in Killeen cover the brands that fill local rentals and new builds: Samsung, LG, Whirlpool, GE and Frigidaire, with the error codes and symptoms explained below.',
     ],
     brandProblems: [
       { brand: 'samsung', appliance: 'refrigerator', title: 'Samsung refrigerator not cooling in Killeen', text: 'On many Samsung French door and side-by-side models, frost can build up on the evaporator coil behind the freezer panel and block airflow, so the fresh-food side warms while the freezer stays cold. A noisy or stopped evaporator fan is another common cause. Unplugging the fridge melts the frost for a while but does not fix a defrost fault, so describe the pattern when you call.' },
@@ -170,10 +190,20 @@ export const areas: Area[] = [
       { brand: 'ge', appliance: 'dishwasher', title: 'GE dishwasher not draining in Killeen', text: 'Check the filter under the lower spray arm and the drain hose under the sink. In newer homes south of I-14, a recently installed garbage disposal may still have its knockout plug in place, which blocks the dishwasher drain. If the dishwasher hums at the end of the cycle and water stays put, the drain pump is the likely cause.' },
       { brand: 'frigidaire', appliance: 'freezer', title: 'Frigidaire upright freezer frosting up in Killeen', text: 'Heavy frost on the back wall of a frost-free Frigidaire upright usually means the defrost heater, the defrost thermostat or the control has failed. Frost only around the door edge points to a worn gasket or a door that does not close square. Do not chip the ice with a knife; a punctured line ends the freezer.' },
     ],
+    brandProblemsIntro:
+      'Killeen rentals and new builds lean on Samsung and LG, with Whirlpool, GE and Frigidaire close behind. These are the codes and symptoms Killeen tenants and owners look up most, with what each usually means.',
+    emergencyHeading: { title: 'Leak in a rental or a fridge warm', accent: 'after a PCS move?' },
     emergencyNote:
-      'A refrigerator warming up with a week of groceries inside, a washer leaking across a rental floor or a dryer that smells hot cannot wait. Emergency help may be available from local providers who serve Killeen homes. Say it is urgent when you call, and if you rent, tell your landlord or property manager right away too.',
+      'In Killeen the urgent calls often land in the first week in a new home: a refrigerator that never got cold after the move, a washer hose that was not tightened and is now soaking a rental floor, or a dryer that smells hot because the vent was crushed behind it. Emergency help for a Killeen leak or a warm fridge may be available from local providers; say it is urgent when you call, and if you rent, tell the landlord or property manager the same day.',
+    emergencyStepsIntro: 'Before the technician arrives, do this in a Killeen house or rental:',
+    emergencySteps: [
+      'Washer or ice maker leak: close both supply valves behind the machine, lay towels down and take photos for the landlord or the moving claim.',
+      'Fridge warm after a move: keep the doors shut and move milk and meat to a cooler with ice; a fridge that was laid on its side may need a few hours upright before it is restarted.',
+      'Dryer smells hot: stop it and pull it out far enough to check that the vent hose is connected and not flattened against the wall.',
+      'Gas smell from a range or dryer: leave the house first, then call your gas provider or 911 from outside. In on-post housing, call the housing office as well.',
+    ],
     travelNote:
-      'How getting connected works in Killeen: call, describe the problem and give your address and ZIP code, and you are connected with an independent local appliance repair pro. Ask about availability, pricing and licensing on that call.',
+      'Calling from Killeen? Have your address with the ZIP (76541, 76542, 76543 or 76549), the brand and any error code. If you rent, have the landlord or property manager’s name ready too.',
     localPoints: [
       {
         heading: 'PCS moves and move-in surprises',
@@ -181,7 +211,7 @@ export const areas: Area[] = [
       },
       {
         heading: 'Landlords and property managers',
-        text: 'Killeen has a large rental market, and owners and managers can call to be connected with a local pro as well as tenants. Settle who approves the repair, who handles payment and who will let the technician in before the visit. That keeps the repair from stalling at the door.',
+        text: 'Killeen has a large rental market, and owners and managers place these calls as often as tenants do. Settle who approves the repair, who handles payment and who will let the technician in before the visit. That keeps the repair from stalling at the door.',
       },
       {
         heading: 'Older additions on the north side',
@@ -199,7 +229,7 @@ export const areas: Area[] = [
         paragraphs: [
           'Refrigerators and freezers come first in summer. A dusty condenser coil, a failed fan motor or a defrost problem can turn a working fridge warm in a day. If the freezer is cold but the fresh food side is warm, that pattern usually points to airflow or defrost, both common repairs.',
           'Laundry is close behind. Busy households wear out dryer belts, rollers and heating parts faster, and washers that will not drain usually have a clogged pump or a worn lid lock. Ask the technician to check airflow on any dryer repair, because a restricted vent is often why the heating part failed.',
-          'Dishwashers that leave dishes dirty or water in the tub often have a blocked filter, a worn pump or scale in the spray arms. Ovens and ranges round out the list with burned bake elements, weak igniters and temperature sensors that have drifted.',
+          'Dishwashers that leave dishes dirty or water in the tub often have a blocked filter, a worn pump or scale in the spray arms. Ovens and ranges add burned bake elements, weak igniters and temperature sensors that have drifted, often found the first time a new tenant cooks a full meal.',
         ],
       },
       {
@@ -207,7 +237,7 @@ export const areas: Area[] = [
         accent: 'Check this first.',
         paragraphs: [
           'Many leases put landlord-supplied appliances on the landlord. Before you arrange a repair yourself, read your lease and contact your landlord or property manager. If they ask you to set up the repair, find out who is approving the work so the technician can confirm it with that person before starting.',
-          'If you live in on-post housing at Fort Hood, appliance problems go through your housing office and its maintenance contractor, not an outside repair company. Off-post homes and rentals in Killeen are where independent local pros can help.',
+          'If you live in on-post housing at Fort Hood, appliance problems go through your housing office and its maintenance contractor, not an outside repair company. Off-post homes and rentals in Killeen are where an outside technician can help.',
         ],
       },
       {
@@ -216,54 +246,56 @@ export const areas: Area[] = [
         paragraphs: [
           'Moving out: empty and unplug the refrigerator and freezer a day ahead, let them defrost with the doors propped open, and dry them out so they do not smell or leak on the truck. Close the water valves and drain the washer hoses into a bucket. Front-load washers often came with shipping bolts; if you still have them, put them back before a long move. Have a qualified person disconnect a gas dryer or range.',
           'Moving in: if a refrigerator traveled on its side, let it stand upright for several hours before plugging it in, then give it up to a day to reach temperature. Run an empty washer cycle and watch the hoses for drips. Make sure the dryer vent is connected to the wall and not crushed behind the machine, and check that a freestanding range is secured with its anti-tip bracket.',
-          'If something still is not right after that, write down the brand, the model number and any error code, and tell your landlord first if you rent. Then call to be connected with a local appliance repair pro.',
+          'If something still is not right after that, write down the brand, the model number and any error code, and tell your landlord first if you rent. Then call and describe what you found on move-in day.',
         ],
       },
       {
         heading: 'Newer Killeen homes:',
         accent: 'check the warranty first.',
         paragraphs: [
-          'A lot of Killeen’s housing is recent, and appliances that came with a newer home may still be under the manufacturer’s warranty or a builder’s warranty. Independent repair may not be covered by those warranties, so check the paperwork before you call anyone.',
-          'If the warranty has run out, or you are not sure, call with the model number to be connected with a local pro. A good technician will tell you plainly whether the repair makes sense for that appliance. Ask for that answer before any work starts.',
+          'A lot of Killeen’s housing is recent, and appliances that came with a newer home may still be under the manufacturer’s warranty or a builder’s warranty. A repair outside those programs may not be covered, so check the paperwork before you call anyone.',
+          'If the warranty has run out, or you are not sure, call with the model number. A good technician will tell you plainly whether the repair makes sense for that appliance. Ask for that answer before any work starts.',
         ],
       },
       {
-        heading: 'How getting connected works',
-        accent: 'in Killeen.',
+        heading: 'One call from Killeen:',
+        accent: 'what to have ready.',
         paragraphs: [
-          'Call the number on this page with your address, the appliance, the brand and what it is doing. Appliance Repair Temple is a free referral service, and the call connects you with an independent local appliance repair pro who serves Killeen.',
-          'Each provider sets their own schedule and prices, so ask on that call when they can come out, how they charge for the visit and the repair, and whether they carry insurance and any license the work requires. Ask about any warranty on parts and labor before work starts.',
-          'Before the visit, find the model number, usually on a label inside the door, under the lid or on the frame, and note any error code. Clear a path to the appliance and, if you can, empty the washer or dishwasher.',
+          'Have four things in hand: the full address with ZIP, the brand and model, the error code or symptom, and who approves the repair if the home is a rental. A Samsung fridge on Trimmier Road and a Whirlpool dryer off Fort Hood Street may go to different technicians, and the address sorts that out.',
+          'Killeen providers set their own calendars and rates. Ask when they can come out, how the visit and the repair are priced, and whether they hold insurance and the license the work requires. If you are on orders with a move date coming, say so, and ask about any parts and labor warranty.',
+          'Before the visit, find the model number, usually on a label inside the door, under the lid or on the frame. Clear a path through any moving boxes and, if you can, empty the washer or dishwasher.',
         ],
       },
     ],
     zips: ['76541', '76542', '76543', '76549'],
     zipsVerified: true,
+    zipNote:
+      'Killeen spans four ZIP codes, from the older north side in 76541 to the newer building south of I-14. Fort Hood housing has its own maintenance process and is not covered here.',
     nearby: ['Harker Heights', 'Nolanville', 'Belton', "Morgan's Point Resort", 'Salado'],
     faqs: [
       {
-        q: 'Can I get emergency appliance repair in Killeen?',
-        a: 'Emergency help may be available from local providers. A refrigerator or freezer warming up with food inside, a washer or dishwasher leaking, or an appliance that smells like burning is worth an urgent call. Say it is urgent when you call. Until a technician arrives, close the water valve on a leak, keep a warm fridge closed and switch off the breaker for anything that smells hot.',
+        q: 'What should I treat as emergency appliance repair in Killeen?',
+        a: 'Water on a rental floor, a fridge or freezer warming with food inside, or an appliance that smells like burning. Say it is urgent when you call and tell your landlord or property manager right away. Close the water valve on a leak, keep a warm fridge shut and switch off the breaker for anything that smells hot.',
       },
       {
         q: 'My refrigerator in Killeen stopped cooling. What should I do first?',
-        a: 'Keep the doors closed, since a closed refrigerator holds food safely for about four hours. Check the temperature setting and the breaker, then call to be connected with a local pro. Refrigerator repair is time-sensitive, so say it is urgent and ask about availability on that call.',
+        a: 'Keep the doors closed; a shut refrigerator keeps food safe for about four hours. Check the setting and the breaker, and if the fridge was just moved, give it time upright before deciding it is broken. Still warm? Call, give the brand and say whether the freezer side is cold too.',
       },
       {
-        q: 'Is washer and dryer repair available in Killeen?',
-        a: 'Yes. Local pros handle washers that will not drain, spin or stop leaking, and dryers that will not heat or take too long. These are some of the most common appliance problems in Killeen homes. On a dryer repair, ask the technician to check the vent airflow too.',
+        q: 'Do Killeen washer and dryer repairs include rentals?',
+        a: 'Yes, with the landlord’s approval where the lease calls for it. Drain errors, washers that will not spin and dryers with no heat are frequent Killeen calls. In rentals, ask the technician to check the dryer vent, which is often crushed or full of a past tenant’s lint.',
       },
       {
         q: 'Is appliance repair available in every part of Killeen?',
-        a: 'Local pros serve homes in Killeen’s 76541, 76542, 76543 and 76549 ZIP codes. If your address is on the edge of town or outside city limits, give it when you call so you are connected with a provider who covers it.',
+        a: 'Homes in 76541, 76542, 76543 and 76549 are covered. If your address is on the edge of town or outside city limits, give it in full when you call so it reaches a technician who works there.',
       },
       {
-        q: 'How do I find an appliance repair pro near Killeen?',
-        a: 'Call the number on this page with your Killeen address and a short description of the problem. You are connected with an independent local appliance repair pro who serves the area. Ask about their availability on that call.',
+        q: 'How do I find an appliance repair technician near Killeen?',
+        a: 'Call the number on this page with your Killeen address, the brand and a short description of the problem. You are put in touch with a technician who works in the area; ask about their availability on that call.',
       },
       {
         q: 'Can I get appliance repair in on-post housing at Fort Hood?',
-        a: 'No. On-post housing has its own maintenance process. Contact your housing office, since its contractor handles appliance repair there. Independent local pros work in off-post homes and rentals in Killeen.',
+        a: 'No. On-post housing has its own maintenance process. Contact your housing office, since its contractor handles appliance repair there. Outside technicians work in off-post homes and rentals in Killeen.',
       },
       {
         q: 'I rent my home. Who pays for the repair?',
@@ -271,35 +303,42 @@ export const areas: Area[] = [
       },
       {
         q: 'Can my property manager arrange the repair?',
-        a: 'Yes. A property manager can call to be connected with a local pro directly. The provider needs to know who approves the repair and who will let the technician in.',
+        a: 'Yes. A property manager can call directly. The provider needs to know who approves the repair and who will let the technician in.',
       },
       {
         q: 'My fridge stopped cooling after we moved. Is it broken?',
-        a: 'Not always. A refrigerator that was moved or unplugged can take up to a day to reach temperature. If it is still warm after that, or it runs nonstop, call to be connected with a local pro.',
+        a: 'Not always. A refrigerator that was moved or unplugged can take up to a day to reach temperature. If it is still warm after that, or it runs nonstop, call with the brand and model.',
       },
       {
         q: 'Which appliances can be repaired in Killeen?',
-        a: 'Local appliance repair pros work on refrigerators, freezers, washers, dryers, dishwashers, ovens, ranges, cooktops and over-the-range microwaves, across the major brands.',
+        a: 'Refrigerators, freezers, washers, dryers, dishwashers, ovens, ranges, cooktops and over-the-range microwaves, including the Samsung and LG models common in Killeen’s newer homes and the older units in north side rentals.',
       },
       {
         q: 'How much does appliance repair in Killeen cost?',
-        a: 'It depends on the appliance, the part and the provider, so this site does not list prices. When you are connected with a local pro, ask how they price the visit and the repair, and have the brand and model number ready.',
+        a: 'Prices are set by each technician, so none are listed here. The brand, the part and whether it is in stock all change the total. Ask how the visit and the repair are priced on the call, and in a rental, confirm who is paying first.',
       },
     ],
     featuredServices: ['refrigerator', 'washer', 'dryer', 'dishwasher'],
+    servicesNote:
+      'These are the appliances Killeen renters and owners call about. Open one for its usual problems, from Samsung defrost faults to LG drain codes, and what to check first.',
+    finalCta: {
+      title: 'Killeen fridge, washer or dryer down?',
+      accent: 'Make one call.',
+      text: 'New PCS move-in or long-time owner, call with the address, the brand and the error code, and you are put in touch with a technician who works in Killeen.',
+    },
   },
   {
     slug: 'harker-heights-tx',
     name: 'Harker Heights',
-    metaTitle: 'Appliance Repair Harker Heights TX | Local Pros',
+    metaTitle: 'Appliance Repair Harker Heights TX | Error Codes, Ice Makers',
     metaDescription:
-      'Appliance repair in Harker Heights, TX for fridges, washers, dryers, dishwashers and ranges, smart models too. Call to get connected with a local repair pro.',
+      'Error code on a newer LG, Samsung or Bosch in Harker Heights? Fridge, washer, dryer and dishwasher repair across 76548, I-14 to the lake. Call (254) 615-2088.',
     h1: 'Appliance Repair in Harker Heights, TX, Between Killeen and Belton',
     intro: [
-      'Appliance Repair Temple connects Harker Heights, TX homeowners with independent local appliance repair pros for refrigerators, freezers, washers, dryers, dishwashers, ovens and ranges. Call, describe the problem, and you are connected with a local pro who serves the area.',
+      'Ice maker frozen solid, a dryer flashing HE or a Bosch dishwasher stuck on E15? Appliance Repair Temple is the appliance repair line for Harker Heights, TX. One call puts you in touch with a technician who works on refrigerators, freezers, washers, dryers, dishwashers, ovens and ranges, including the smart and Wi-Fi models that came with so many homes here.',
       'Harker Heights roughly doubled in size between 2000 and 2020, so a large share of its homes, and the appliances in them, are fairly new. That changes the kind of appliance problems that come up here. Fewer worn-out machines, more electronic controls, error codes, sensors and questions about whether a factory warranty still applies.',
-      'Older or newer, a repair visit should go the same way. A good technician tests the appliance, tells you which part failed and what the repair involves, and waits for your OK before starting. If a repair is not worth the money on your model, a good technician will say so.',
-      'That covers refrigerator repair and freezer repair, washer and dryer repair, dishwasher repair, oven, stove and range repair, and over-the-range microwave repair in Harker Heights, across the major brands. For urgent problems, such as a fridge warming up or a washer leaking across the floor, emergency appliance repair may be available from local providers. Say it is urgent when you call.',
+      'On a newer appliance the code is the starting point, not the answer. A good technician reads the code, tests the part it points to, and tells you whether the fault is the part, the hookup or the vent before asking for your OK. If a repair on your model is not worth the money, a good technician will say so.',
+      'Refrigerator and freezer repair, washer and dryer repair, dishwasher repair, oven, stove and range repair and over-the-range microwave repair in Harker Heights take in French door fridges, front-load laundry pairs and touch-control ranges across the major brands, with LG, Samsung, Bosch, KitchenAid and GE problems covered below.',
     ],
     brandProblems: [
       { brand: 'lg', appliance: 'refrigerator', title: 'LG French door ice maker freezing up in Harker Heights', text: 'On some LG French door models, ice can build up in the ice maker compartment in the door, which stops ice production or drips water inside the fridge. A worn door seal or a blocked drain in that compartment can add to it. Note when the ice builds up and how long the fridge has had the problem before you call.' },
@@ -309,10 +348,20 @@ export const areas: Area[] = [
       { brand: 'kitchenaid', appliance: 'dishwasher', title: 'KitchenAid dishwasher not cleaning in Harker Heights', text: 'Gritty dishes from a KitchenAid usually trace back to a dirty filter, spray arm holes clogged with scale, or a cycle that starts with cold water. Clean the filter, rinse the spray arms, run the hot water at the sink before starting and keep the rinse aid full. If the top rack is still dirty, the wash pump or a low fill is the likely cause.' },
       { brand: 'ge', appliance: 'microwave', title: 'GE over-the-range microwave not heating in Harker Heights', text: 'If a GE over-the-range microwave runs, turns and lights up but food stays cold, the cause is usually a door switch, the high-voltage diode, the capacitor or the magnetron. These are high-voltage parts that can hold a dangerous charge after unplugging, so leave the testing to a technician.' },
     ],
+    brandProblemsIntro:
+      'Newer Harker Heights kitchens and laundry rooms mean error codes: LG LE and ice maker freeze-ups, Samsung HE, Bosch E15. Here is what each code or symptom usually points to on these models.',
+    emergencyHeading: { title: 'Front-loader leaking on a new floor', accent: 'or a smart fridge warming?' },
     emergencyNote:
-      'A French door refrigerator warming up with groceries inside, a front-load washer leaking across a new floor or a dryer that smells hot cannot wait. Emergency help may be available from local providers who serve Harker Heights, between Belton and Killeen on I-14. Say it is urgent when you call.',
+      'Harker Heights emergencies tend to involve newer equipment: a front-load washer leaking across fresh vinyl plank, a Bosch dishwasher that tripped its leak sensor with water still under it, or a French door fridge whose display says one thing while the milk says another. Emergency help for these may be available from local providers who work in Harker Heights, between Belton and Killeen on I-14; say it is urgent when you call.',
+    emergencyStepsIntro: 'In a newer Harker Heights home, start with these:',
+    emergencySteps: [
+      'Front-loader or dishwasher leak: switch it off, close the supply valve and dry under the unit. Do not keep resetting a leak code until the source is found.',
+      'Smart fridge warming: trust a thermometer over the display, keep the doors shut and screenshot any app alert for the technician.',
+      'Dryer smells hot: stop it. Vents that run through an interior wall to the roof clog where you cannot see them.',
+      'Gas smell at a range or dryer: walk out, then call your gas provider or 911 once you are outside.',
+    ],
     travelNote:
-      'How getting connected works in Harker Heights: call, describe the problem and give your 76548 address, and you are connected with an independent local appliance repair pro. Ask about availability, pricing and licensing on that call.',
+      'Calling from Harker Heights? Have your 76548 address, the brand, the model number and any error code or app alert. Many nearby addresses carry a Killeen or Belton mailing city, so give the street too.',
     localPoints: [
       {
         heading: 'Newer homes, newer appliances',
@@ -320,7 +369,7 @@ export const areas: Area[] = [
       },
       {
         heading: 'Warranty check first',
-        text: 'If your appliance is less than a year old, or you bought an extended plan, check that coverage before you call anyone. Independent repair may not be covered by a factory warranty. If the warranty has run out or you are not sure, call with the model number to be connected with a local pro.',
+        text: 'If your appliance is less than a year old, or you bought an extended plan, check that coverage before you call anyone. A repair outside the manufacturer’s network may not be covered by a factory warranty. If the warranty has run out or you are not sure, call with the model number.',
       },
       {
         heading: 'Larger homes toward the lake',
@@ -328,7 +377,7 @@ export const areas: Area[] = [
       },
       {
         heading: 'Rentals and military moves',
-        text: 'Being close to Fort Hood, Harker Heights also has plenty of rentals and families on PCS moves. If you rent, check your lease and talk to your landlord before arranging a repair, since many leases make the landlord responsible for the appliances they supply.',
+        text: 'Being close to Fort Hood, Harker Heights has plenty of rentals and families on PCS moves. Renters here should read the lease first: many make the owner responsible for supplied appliances, and the owner or manager may want to choose who does the work.',
       },
     ],
     sections: [
@@ -337,16 +386,16 @@ export const areas: Area[] = [
         accent: 'and what to do with them.',
         paragraphs: [
           'An error code points to the system that tripped, not always to the part that failed. A drain code on a front-load washer can mean a clogged pump filter, a kinked hose or a failed pump. A code on a refrigerator display can come from a sensor, a fan or a defrost problem.',
-          'Before you call, try the simple steps in your owner’s manual, like clearing the washer’s pump filter or switching the appliance off at the breaker for a minute. If the code comes back, stop resetting it and call to be connected with a local pro. Repeated resets can hide a fault that keeps getting worse.',
+          'Before you call, try the simple steps in your owner’s manual, like clearing the washer’s pump filter or switching the appliance off at the breaker for a minute. If the code comes back, stop resetting it and call with the code and model number. Repeated resets can hide a fault that keeps getting worse.',
         ],
       },
       {
         heading: 'Common appliance problems',
         accent: 'in Harker Heights.',
         paragraphs: [
-          'Refrigerator problems lead in summer: warm fresh food sections, frost on the back wall of the freezer, ice makers that stop and water dispensers that leak. Fan motors, defrost parts and water valves are frequent fixes.',
-          'Front-load washers bring drain errors, door locks that will not release and musty smells from the door seal. Dryers that run without heat or take two cycles to dry often have a failed heating part or a restricted vent, so ask the technician to check the airflow on any dryer repair.',
-          'Dishwashers that leave a film on glasses or water in the tub, and ranges with a dead bake element, a weak igniter or a touch panel that stopped responding, round out the list.',
+          'Refrigerator problems lead in summer: warm fresh food sections, frost on the back wall of the freezer, ice makers that stop and water dispensers that leak. In French door models, door-mounted ice makers and the fans behind the freezer panel are the usual suspects.',
+          'Front-load washers bring drain errors, door locks that will not release and musty smells from the door seal. Dryers that run without heat or take two cycles to dry often have a failed heating part or a restricted roof vent, so ask the technician to check the airflow on any dryer repair.',
+          'Dishwashers that leave a film on glasses or trip a leak code, and ranges with a dead bake element, a weak igniter or a touch panel that stopped responding, complete the picture for Harker Heights.',
         ],
       },
       {
@@ -367,26 +416,28 @@ export const areas: Area[] = [
         ],
       },
       {
-        heading: 'How getting connected works',
-        accent: 'in Harker Heights.',
+        heading: 'Calling from Harker Heights',
+        accent: 'with a code in hand.',
         paragraphs: [
-          'Call the number on this page with your address, the appliance, the brand and what it is doing. Appliance Repair Temple is a free referral service, and the call connects you with an independent local appliance repair pro who serves Harker Heights.',
-          'Each provider sets their own schedule and prices, so ask on that call when they can come out, how they charge for the visit and the repair, and whether they carry insurance and any license the work requires. Ask about any warranty on parts and labor before work starts.',
-          'Before the visit, find the model number on the appliance, usually on a label inside the door, under the lid or on the frame. Clear a path to the appliance and, if you can, empty the washer or dishwasher.',
+          'The more exact the call, the better prepared the technician. Give the 76548 street address, the brand and full model number, the code exactly as it shows (LE, HE, E15 or a string of digits) and whether it came back after a reset. On a smart model, mention any app alert.',
+          'Schedules and prices vary from one Harker Heights provider to the next. Find out when they can come, what the visit and the repair cost, and whether they are insured and hold any license the job needs. On a newer appliance, ask whether the part is usually stocked or ordered, and what warranty covers the repair.',
+          'Before the visit, clear a path to the appliance and, if you can, empty the washer or dishwasher. On a range or fridge with a touch panel, leave it powered so the technician can read the code.',
         ],
       },
     ],
     zips: ['76548'],
     zipsVerified: true,
+    zipNote:
+      'Harker Heights is one ZIP, 76548, from the shops along I-14 down to the homes by Stillhouse Hollow Lake and Dana Peak Park.',
     nearby: ['Killeen', 'Nolanville', 'Belton', "Morgan's Point Resort", 'Salado'],
     faqs: [
       {
-        q: 'Can I get emergency appliance repair in Harker Heights?',
-        a: 'Emergency help may be available from local providers. A refrigerator or freezer warming up with food inside, a washer or dishwasher leaking, or an appliance that smells like burning is worth an urgent call. Say it is urgent when you call. Until a technician arrives, close the water valve on a leak, keep a warm fridge closed and switch off the breaker for anything that smells hot.',
+        q: 'When is a Harker Heights appliance problem an emergency?',
+        a: 'When water is spreading under a washer or dishwasher, when a refrigerator or garage freezer is warming with food inside, or when anything smells like burning. Open the call by saying it is urgent. Close the water valve on a leak, keep the fridge shut and switch off the breaker for anything that smells hot.',
       },
       {
         q: 'My refrigerator in Harker Heights stopped cooling. What should I do first?',
-        a: 'Keep the doors closed, since a closed refrigerator holds food safely for about four hours. Check the temperature setting and the breaker, then call to be connected with a local pro. Refrigerator repair is time-sensitive, so say it is urgent and ask about availability on that call.',
+        a: 'Keep the doors shut, which holds food safely for about four hours, and put a thermometer inside rather than trusting the display. Check the breaker and the filter, and note any code or app alert. If the fresh food side stays warm, call with the model number.',
       },
       {
         q: 'Can smart or Wi-Fi appliances be repaired?',
@@ -394,51 +445,58 @@ export const areas: Area[] = [
       },
       {
         q: 'Is appliance repair available across all of Harker Heights?',
-        a: 'Local pros serve the 76548 ZIP code, from the neighborhoods along I-14 to the homes on the south side toward Stillhouse Hollow Lake. Some nearby addresses carry a Killeen or Belton mailing city, so give your full address when you call.',
+        a: 'Yes, across the 76548 ZIP code, from the neighborhoods along I-14 to the homes on the south side toward Stillhouse Hollow Lake. Some nearby addresses carry a Killeen or Belton mailing city, so give your full address when you call.',
       },
       {
-        q: 'How do I find an appliance repair pro near Harker Heights?',
-        a: 'Call the number on this page with your Harker Heights address and a short description of the problem. You are connected with an independent local appliance repair pro who serves the area. Ask about their availability on that call.',
+        q: 'How do I find an appliance repair technician in Harker Heights?',
+        a: 'Call the number on this page with your Harker Heights address, the brand and the code or symptom. One call puts you in touch with a local appliance repair pro who works there, and you can ask then when they are free.',
       },
       {
         q: 'My new washer shows an error code. What should I do?',
-        a: 'If the washer is still under factory warranty, contact the manufacturer first. If not, write down the code and the model number and call to be connected with a local pro.',
+        a: 'If the washer is still under factory warranty, contact the manufacturer first. If not, write down the code and the model number, try the reset in the manual once, and call if the code returns.',
       },
       {
         q: 'Can French door and side-by-side refrigerators be repaired?',
         a: 'Yes. Give the brand and model when you call so the provider can check parts before the visit.',
       },
       {
-        q: 'Can I get appliance repair in a rental home?',
-        a: 'Yes. Tenants should contact the landlord or property manager first. If the landlord or property manager is paying, they should approve the repair with the provider, and someone needs to let the technician in.',
+        q: 'I rent in Harker Heights. Can I arrange a repair myself?',
+        a: 'Check the lease and ask your landlord or property manager first. If they are paying, they should approve the repair with the provider, and someone needs to let the technician in.',
       },
       {
         q: 'Which appliances can be repaired in Harker Heights?',
-        a: 'Local appliance repair pros work on refrigerators, freezers, washers, dryers, dishwashers, ovens, ranges, cooktops and over-the-range microwaves, across the major brands.',
+        a: 'Refrigerators, freezers, washers, dryers, dishwashers, ovens, ranges, cooktops and over-the-range microwaves, including the smart, Wi-Fi and touch-control models common in Harker Heights homes built since 2000.',
       },
       {
-        q: 'What happens if a part has to be ordered?',
-        a: 'Many common parts can be replaced on the first visit. Some are model-specific and have to be ordered. Ask the technician whether that is the case, how long the part usually takes and what the next visit involves.',
+        q: 'Are parts for newer appliances harder to get?',
+        a: 'Sometimes. Fans, valves and elements are widely stocked, while control boards and model-specific sensors may need ordering. Ask the technician whether the part is likely to need ordering, how long that usually takes and what the follow-up visit involves.',
       },
       {
         q: 'How much does appliance repair in Harker Heights cost?',
-        a: 'It depends on the appliance, the part and the provider, so this site does not list prices. When you are connected with a local pro, ask how they price the visit and the repair, and have the brand and model number ready.',
+        a: 'Each technician sets their own prices, so none are listed here. On newer models the part, especially a control board, can drive the total. Ask how the visit and the repair are priced, and have the model number and code ready.',
       },
     ],
     featuredServices: ['refrigerator', 'washer', 'dryer', 'dishwasher'],
+    servicesNote:
+      'Each appliance below is repaired in Harker Heights homes, smart models included. Open one for its error codes, common causes and the checks worth doing first.',
+    finalCta: {
+      title: 'Error code in Harker Heights?',
+      accent: 'Read it out on the call.',
+      text: 'Give the model, the code and the 76548 address, and one call puts you in touch with a technician who works on newer appliances in Harker Heights.',
+    },
   },
   {
     slug: 'salado-tx',
     name: 'Salado',
-    metaTitle: 'Appliance Repair Salado TX | Connect With Local Pros',
+    metaTitle: 'Appliance Repair Salado TX | Freezers, Propane & Well Water',
     metaDescription:
-      'Appliance repair in Salado, TX for fridges, freezers, washers, dryers and ranges, in the village or on acreage. Call to get connected with a local repair pro.',
+      'Barn freezer warm or propane range not lighting in Salado? Repairs for village homes and acreage across 76571, well water issues included. Call (254) 615-2088.',
     h1: 'Appliance Repair in Salado, TX, for Village Homes and Acreage',
     intro: [
-      'Appliance Repair Temple connects homeowners in Salado, TX and the countryside around it with independent local appliance repair pros for refrigerators, freezers, washers, dryers, dishwashers, ovens and ranges. Call, describe the problem, and you are connected with a local pro.',
+      'Chest freezer in the barn gone quiet, propane burner clicking with no flame, or an ice maker starved by well water? Appliance Repair Temple is the appliance repair line for Salado, TX and the countryside around it. One call puts you in touch with a technician who works on refrigerators, freezers, washers, dryers, dishwashers, ovens and ranges, in the village and out on acreage.',
       'Salado itself is small, with about 2,400 residents at the 2020 census, but the 76571 ZIP code covers roughly 125 square miles. Many appliance problems around Salado come up in homes on acreage outside the village, not only on the streets near Main Street.',
-      'That shapes what comes up. More chest freezers and second refrigerators in garages, shops and barns, longer drives for a technician, and appliances that work hard through a Central Texas summer. A good technician finds what failed, explains the repair, and starts only after your OK. Ask for that before work starts.',
-      'That covers refrigerator repair and freezer repair, washer and dryer repair, dishwasher repair, oven, stove and range repair, including propane, and over-the-range microwave repair in Salado, across the major brands. For urgent problems, such as a freezer full of meat warming up or a washer leaking across the floor, emergency appliance repair may be available from local providers. Say it is urgent when you call.',
+      'That shapes what comes up: more chest freezers and second refrigerators in garages, shops and barns, propane instead of natural gas, private wells, and longer drives for a technician. A good technician checks the fuel, the water supply and the power as well as the appliance, explains what failed and starts only after your OK.',
+      'Refrigerator and freezer repair, washer and dryer repair, dishwasher repair, oven, stove and range repair, including propane ranges, and over-the-range microwave repair in Salado span the major brands. GE propane ranges, Whirlpool barn freezers, Speed Queen washers and Maytag gas dryers are among the problems covered below.',
     ],
     brandProblems: [
       { brand: 'ge', appliance: 'oven', title: 'GE propane range burner will not light in Salado', text: 'Clicking with no flame on a GE range that runs on propane usually means a wet or dirty igniter, a burner cap out of place, or low tank pressure. Check the tank level first, then let a wet cooktop dry and reseat the caps. If one burner still will not light, the igniter or spark switch is the likely cause.' },
@@ -448,10 +506,20 @@ export const areas: Area[] = [
       { brand: 'maytag', appliance: 'dryer', title: 'Maytag gas dryer not heating in Salado', text: 'On a Maytag dryer running on propane or natural gas, a weak igniter, failed gas valve coils or a blown thermal fuse are the usual causes. Make sure the gas supply valve is fully open, especially after the dryer was moved. A burner that lights, then goes out and will not relight often points to the valve coils.' },
       { brand: 'frigidaire', appliance: 'refrigerator', title: 'Frigidaire shop refrigerator not cooling in Salado', text: 'Spare Frigidaire refrigerators in shops and barns fight heat, dust and the occasional mouse nest near the condenser. Vacuum the coils, clear the area behind the unit and make sure the condenser fan spins. If it still runs warm, a start relay, a fan motor or a defrost part is the likely cause.' },
     ],
+    brandProblemsIntro:
+      'Around Salado the brand problems follow the property: propane ranges and dryers, barn and shop freezers, and fridges fed by a private well. Each card covers what the symptom usually means and what to rule out first.',
+    emergencyHeading: { title: 'Barn freezer thawing', accent: 'out past the village?' },
     emergencyNote:
-      'A chest freezer full of meat warming up in the barn, a refrigerator that quit in the heat or a washer leaking across the floor cannot wait. Emergency help may be available from local providers who serve Salado. Say it is urgent when you call, and keep the freezer lid closed while you wait.',
+      'Out on Salado acreage, the costly failures are a chest freezer full of beef or deer warming up in a barn, a kitchen fridge that quit in August heat, or a washer leaking in a farmhouse with no one home to notice. Emergency help for a Salado freezer or leak may be available from local providers; say it is urgent when you call, and give gate and outbuilding details so the technician can find the unit.',
+    emergencyStepsIntro: 'On a Salado property, these steps buy time:',
+    emergencySteps: [
+      'Barn or shop freezer warming: keep the lid shut, check the outbuilding breaker and any GFCI outlet, and move the most valuable meat to the house freezer if there is room.',
+      'Leak on a well system: close the valve behind the appliance; if it is stuck, switch off the well pump breaker to stop the flow.',
+      'Propane smell at a range or dryer: leave the building, close the tank valve only if you can do so safely outdoors, and call your propane supplier or 911.',
+      'Appliance dead after a storm: check the breaker and GFCI, then unplug it for a minute before you call.',
+    ],
     travelNote:
-      'How getting connected works in Salado: call, describe the problem and give your 76571 address, including any gate or outbuilding details, and you are connected with an independent local appliance repair pro. Ask about availability, pricing and licensing on that call.',
+      'Calling from Salado? Give your 76571 address, any gate code or road directions, and which building the appliance is in. Say if the range or dryer runs on propane or the house is on a well.',
     localPoints: [
       {
         heading: 'Freezers and fridges in barns and shops',
@@ -463,7 +531,7 @@ export const areas: Area[] = [
       },
       {
         heading: 'Long driveways and gates',
-        text: 'For homes on acreage, mention gates, gate codes, dogs and where to park when you call. If the appliance is in an outbuilding, say which one. It saves time when the technician arrives.',
+        text: 'For homes on acreage, mention gates, gate codes, dogs and where to park when you call. If the appliance is in an outbuilding, say which one, so the technician is not walking the property looking for it.',
       },
       {
         heading: 'Power blips and surges',
@@ -483,9 +551,9 @@ export const areas: Area[] = [
         heading: 'Common appliance problems',
         accent: 'around Salado.',
         paragraphs: [
-          'Refrigerators that run but do not cool, frost on the freezer wall, ice makers that quit and water leaking under the crisper drawers are the most common kitchen problems. Fan motors, defrost parts and water valves are frequent fixes.',
-          'Washers that will not drain or spin and dryers that run without heat come next. On any dryer repair, ask the technician to check the vent, since a long or crushed vent run is one of the most common reasons a dryer stops heating.',
-          'Dishwashers that leave a film or do not drain, and ovens with a burned bake element or a temperature that has drifted, round out the list.',
+          'In Salado kitchens, the usual complaints are refrigerators that run but do not cool, frost on the freezer wall, ice makers that quit on well water and water leaking under the crisper drawers. Valves clogged with grit come up here more than in town.',
+          'Laundry problems follow: washers that will not drain or spin, and gas or propane dryers that tumble without heat. Farmhouse vent runs can be long and crushed behind the machine, so a dryer repair should include a look at the vent.',
+          'Dishwashers that leave a film from hard well water, and ovens with a burned bake element or a temperature that has drifted, are the rest of what Salado homes call about.',
         ],
       },
       {
@@ -506,22 +574,24 @@ export const areas: Area[] = [
         ],
       },
       {
-        heading: 'How getting connected works',
-        accent: 'in Salado.',
+        heading: 'A Salado call that',
+        accent: 'saves a second trip.',
         paragraphs: [
-          'Call the number on this page with your address, the appliance, the brand and what it is doing. Appliance Repair Temple is a free referral service, and the call connects you with an independent local appliance repair pro who serves the 76571 area.',
-          'Each provider sets their own schedule and prices, and homes on acreage can mean a longer drive, so ask on that call when they can come out, how they charge for the visit and the repair, and whether they carry insurance and any license the work requires. Ask about any warranty on parts and labor before work starts.',
-          'Before the visit, find the model number, usually on a label inside the door, under the lid or on the frame, and write down any error code.',
+          'Acreage around Salado can mean a long drive, so the call matters. Give the 76571 address and how to reach the right building, the appliance and brand, the fuel type, whether the house is on a well, and what the unit is doing.',
+          'Salado providers set their own schedules and prices, and a longer drive can figure into both. Ask when they can come out, how the trip, the visit and the repair are priced, whether they carry insurance and the license the work requires, and what warranty, if any, covers parts and labor.',
+          'Have the model number from the tag inside the door, under the lid or on the frame, plus any error code. If the unit is in a barn, clear the path and the outlet.',
         ],
       },
     ],
     zips: ['76571'],
     zipsVerified: true,
+    zipNote:
+      'Salado’s 76571 runs about 125 square miles, well past the village and Main Street. Give the road and any gate details, not only the ZIP.',
     nearby: ['Belton', "Morgan's Point Resort", 'Harker Heights', 'Killeen', 'Nolanville'],
     faqs: [
       {
-        q: 'Can I get emergency appliance repair in Salado?',
-        a: 'Emergency help may be available from local providers. A refrigerator or freezer warming up with food inside, a washer or dishwasher leaking, or an appliance that smells like burning is worth an urgent call. Say it is urgent when you call. Until a technician arrives, close the water valve on a leak, keep a warm fridge or freezer closed and switch off the breaker for anything that smells hot.',
+        q: 'What is an appliance emergency on Salado acreage?',
+        a: 'A barn or kitchen freezer warming with meat inside, a fridge that quit in the heat, a washer or dishwasher leaking, or anything that smells like burning or propane. Call it urgent and give gate and building details. Keep freezer lids shut, close the water valve on a leak and switch off the breaker for anything hot.',
       },
       {
         q: 'My home is on a well. Can that affect my appliances?',
@@ -529,15 +599,15 @@ export const areas: Area[] = [
       },
       {
         q: 'Is appliance repair available on properties outside the village?',
-        a: 'Local pros serve the 76571 ZIP code, which reaches well beyond the village itself. Give your full address when you call so you are connected with a provider who covers it.',
+        a: 'Yes. The 76571 ZIP reaches well beyond the village itself, out along the farm roads. Give your full address and directions when you call so it reaches a technician who works that far out.',
       },
       {
-        q: 'How do I find an appliance repair pro near Salado?',
-        a: 'Call the number on this page with your Salado address and a short description of the problem. You are connected with an independent local appliance repair pro who serves the area. Ask about their availability on that call.',
+        q: 'How do I reach a repair technician near Salado?',
+        a: 'Call the number on this page with your Salado address, the appliance and a short description of the problem. One call puts you in touch with a technician who works around Salado; ask about their availability, since the drive can affect timing.',
       },
       {
         q: 'My chest freezer in the barn stopped. Is it worth repairing?',
-        a: 'If it is a relay, thermostat or fan, usually yes. A failed compressor on an older, small chest freezer is usually not worth repairing. Ask the technician which it is before any work starts.',
+        a: 'If it is a relay, thermostat or fan, usually yes. A failed compressor on an older, small chest freezer is usually not worth the money. Ask the technician which it is before any work starts.',
       },
       {
         q: 'Can propane ranges and dryers be repaired?',
@@ -545,35 +615,42 @@ export const areas: Area[] = [
       },
       {
         q: 'My appliance stopped after a storm. What should I check?',
-        a: 'Check the breaker and any GFCI outlet, then unplug the appliance for a minute and plug it back in. If it still does not work, call to be connected with a local pro.',
+        a: 'Check the breaker and any GFCI outlet, including in outbuildings, then unplug the appliance for a minute and plug it back in. If it still does not work, a surge may have damaged a control or relay; describe that when you call.',
       },
       {
         q: 'Which appliances can be repaired in Salado?',
-        a: 'Local appliance repair pros work on refrigerators, freezers, washers, dryers, dishwashers, ovens, ranges, cooktops and over-the-range microwaves, across the major brands.',
+        a: 'Refrigerators, chest and upright freezers, washers, dryers on electric, natural gas or propane, dishwashers, ovens, ranges, cooktops and over-the-range microwaves, in historic village homes and in barns and shops alike.',
       },
       {
-        q: 'What happens if a part has to be ordered?',
-        a: 'Many common parts can be replaced on the first visit. Some are model-specific and have to be ordered. Ask the technician whether that is the case, how long the part usually takes and what the next visit involves.',
+        q: 'What if my Salado repair needs a part ordered?',
+        a: 'Relays, igniters and elements can often be replaced on the first visit, but propane conversion parts and model-specific boards may need ordering. Since the drive is longer, ask whether the part is likely in stock and what the return trip involves.',
       },
       {
         q: 'How much does appliance repair in Salado cost?',
-        a: 'It depends on the appliance, the part and the provider, so this site does not list prices. When you are connected with a local pro, ask how they price the visit and the repair, and have the brand and model number ready.',
+        a: 'Technicians set their own prices, so this site lists none. Distance out into 76571, the part and the appliance all matter. Get the trip, visit and repair pricing on the call, before anything is started.',
       },
     ],
     featuredServices: ['freezer', 'refrigerator', 'washer', 'dryer'],
+    servicesNote:
+      'Each appliance below is repaired in Salado homes and outbuildings. Open one for the problems that show up with propane, well water and summer heat, and what to check first.',
+    finalCta: {
+      title: 'Salado freezer or range down?',
+      accent: 'Call with directions.',
+      text: 'Give the 76571 address, the building and the fuel, and one call puts you in touch with a technician who works around Salado.',
+    },
   },
   {
     slug: 'nolanville-tx',
     name: 'Nolanville',
-    metaTitle: 'Appliance Repair Nolanville TX | Connect With Local Pros',
+    metaTitle: 'Appliance Repair Nolanville TX | New-Home Hookups & Laundry',
     metaDescription:
-      'Appliance repair in Nolanville, TX for fridges, washers, dryers, dishwashers and ovens, in new and older homes. Call to get connected with a local repair pro.',
+      'Dishwasher not draining or washer walking in a new Nolanville home? Samsung, Whirlpool, Bosch and LG repairs across 76559 near I-14. Call (254) 615-2088.',
     h1: 'Appliance Repair in Nolanville, TX, for Growing Neighborhoods',
     intro: [
-      'Appliance Repair Temple connects Nolanville, TX homeowners with independent local appliance repair pros for refrigerators, freezers, washers, dryers, dishwashers, ovens and ranges. Call, describe the problem, and you are connected with a local pro who serves the area.',
+      'Dishwasher holding water in a brand-new kitchen, a washer that walks across the floor on spin, or a dryer squealing from daily family loads? Appliance Repair Temple is the appliance repair line for Nolanville, TX. One call puts you in touch with a technician who works on refrigerators, freezers, washers, dryers, dishwashers, ovens and ranges, in the new subdivisions and the established streets in town.',
       'Nolanville has grown fast. It was incorporated in 1961 with about 200 residents and counted 5,917 at the 2020 census, and new subdivisions are still going up on the east side near I-14. That mix brings two kinds of appliance problems: older appliances in established homes, and brand-new appliances that were not hooked up quite right.',
-      'Either way, a repair visit should go the same way. A good technician tests the appliance, tells you what failed and what the repair involves, and starts only after your OK. If the problem turns out to be an installation issue rather than a broken part, a good technician will say so.',
-      'That covers refrigerator repair and freezer repair, washer and dryer repair, dishwasher repair, oven, stove and range repair, and over-the-range microwave repair in Nolanville, across the major brands. For urgent problems, such as a fridge warming up or a washer leaking across the floor, emergency appliance repair may be available from local providers. Say it is urgent when you call.',
+      'Because so many Nolanville kitchens are new, the fault is sometimes in the installation: a drain hose with no high loop, a pinched ice maker line, a washer never leveled. A good technician checks the hookup before blaming the appliance, and will say so if the fix is a hose rather than a part.',
+      'Refrigerator and freezer repair, washer and dryer repair, dishwasher repair, oven, stove and range repair and over-the-range microwave repair in Nolanville cover the builder packages and the older sets alike, with Samsung, Whirlpool, Bosch, GE, LG and Frigidaire problems explained below.',
     ],
     brandProblems: [
       { brand: 'samsung', appliance: 'refrigerator', title: 'Samsung ice maker freezing up in Nolanville', text: 'On some Samsung French door refrigerators, ice and frost build up around the ice maker in the fresh-food door, which stops ice production or causes a drip. It often shows up in the first few years in newer homes. Note when it started and whether the ice bucket has jammed before you call.' },
@@ -583,10 +660,20 @@ export const areas: Area[] = [
       { brand: 'lg', appliance: 'washer', title: 'LG front-load washer smell in Nolanville', text: 'A musty LG front-loader usually has moisture and residue trapped in the door gasket and the pump filter. Wipe the gasket after the last load, leave the door open, clean the filter and run the tub clean cycle with HE detergent only. If the smell comes with slow draining, the pump may be partly blocked.' },
       { brand: 'frigidaire', appliance: 'oven', title: 'Frigidaire range oven not heating in Nolanville', text: 'On a Frigidaire electric range, a broil element that works while bake does not points to a burned-out bake element. On gas ranges, a slow or failed preheat usually means a weak bake igniter. Ovens that came with a new home are often still under warranty, so check before you call.' },
     ],
+    brandProblemsIntro:
+      'Builder appliance packages and busy family laundry rooms set the pattern in Nolanville: Samsung ice makers, Bosch drains, worn Whirlpool lid locks and noisy GE dryers. Here is what each usually comes down to.',
+    emergencyHeading: { title: 'Water across new laminate', accent: 'in Nolanville?' },
     emergencyNote:
-      'A refrigerator warming up with a week of groceries inside, a washer leaking across a new laminate floor or a dryer that smells hot cannot wait. Emergency help may be available from local providers who serve Nolanville, on I-14 between Belton and Harker Heights. Say it is urgent when you call.',
+      'New Nolanville floors do not forgive leaks. A dishwasher drain connection that slipped, a washer fill hose that was never fully tightened on move-in day or an ice maker line nicked behind the fridge can put water under laminate fast, and a fridge losing its cold with a week of family groceries inside cannot wait either. Emergency help for these may be available from local providers who work in Nolanville, on I-14 between Belton and Harker Heights; say it is urgent when you call.',
+    emergencyStepsIntro: 'In a Nolanville home, do these first:',
+    emergencySteps: [
+      'Dishwasher or washer leak: close the valve under the sink or behind the washer and pull up any wet rug. Photos help if the builder’s warranty may cover a bad hookup.',
+      'Ice maker line dripping: close the small valve feeding the fridge, often under the sink or in the garage, and turn the ice maker off.',
+      'Dryer smells hot or squeals loudly: stop it, clean the lint screen and leave it off until it is checked; pet hair speeds up lint buildup.',
+      'Gas smell at a range: leave with the kids and pets, then call your gas provider or 911 from outside.',
+    ],
     travelNote:
-      'How getting connected works in Nolanville: call, describe the problem and give your 76559 address, and you are connected with an independent local appliance repair pro. Ask about availability, pricing and licensing on that call.',
+      'Calling from Nolanville? Have your 76559 address, the brand and model, and whether the appliance came with a new build, since that can mean a warranty or an installation issue.',
     localPoints: [
       {
         heading: 'Newer subdivisions on the east side',
@@ -598,7 +685,7 @@ export const areas: Area[] = [
       },
       {
         heading: 'Military families and rentals',
-        text: 'Nolanville is a short drive from Fort Hood, and many homes here are rented or change hands on military orders. If you rent, check your lease and talk to your landlord before arranging a repair, since many leases make the landlord responsible for the appliances they supply.',
+        text: 'Nolanville is a short drive from Fort Hood, and many homes here are rented or change hands on military orders. A tenant’s first call on a broken appliance usually belongs to the landlord, since supplied appliances are often the owner’s responsibility under the lease.',
       },
       {
         heading: 'Laundry rooms that get daily use',
@@ -611,16 +698,16 @@ export const areas: Area[] = [
         accent: 'new appliance problems.',
         paragraphs: [
           'Some of the most common problems in newly built homes are not broken parts at all. A dishwasher drain hose without a high loop can let dirty water flow back into the tub. A refrigerator water line pinched behind the unit can stop the ice maker. A washer that was never leveled will shake and walk across the floor on the spin cycle.',
-          'Before you call, check your paperwork. In many new homes, appliance coverage comes from the manufacturer’s warranty, not the builder’s. If the appliance is still covered, contact the manufacturer first, since independent repair may not be covered. If coverage has run out, or the problem is in the hookup rather than the appliance, call to be connected with a local pro.',
+          'Before you call, check your paperwork. In many new homes, appliance coverage comes from the manufacturer’s warranty, not the builder’s. If the appliance is still covered, contact the manufacturer first, since an outside repair may not be covered. If coverage has run out, or the problem is in the hookup rather than the appliance, call and describe it.',
         ],
       },
       {
         heading: 'Common appliance problems',
         accent: 'in Nolanville.',
         paragraphs: [
-          'Refrigerators that run warm, freezers that frost up and ice makers that quit come first in summer. Fan motors, defrost parts and water valves are frequent fixes.',
-          'Washers that will not drain or spin and dryers that run without heat are close behind. On any dryer repair, ask the technician to check the vent, because a crushed or clogged vent is one of the most common reasons a dryer stops heating.',
-          'Dishwashers that leave dishes dirty or water in the tub, and ovens with a burned bake element, a weak igniter or a temperature that has drifted, round out the list.',
+          'Summer in Nolanville brings warm refrigerators, frosted freezer walls and ice makers that stop, often in French door models from a builder package. Defrost parts, evaporator fans and water valves account for many of those repairs.',
+          'Laundry is next. Washers that will not drain or spin, and dryers that tumble with no heat because a vent was crushed when the machine was pushed back, are frequent calls from the newer streets.',
+          'Dishwashers left with standing water after a disposal install, and ovens with a dead bake element or a weak gas igniter, fill out the Nolanville list.',
         ],
       },
       {
@@ -635,84 +722,93 @@ export const areas: Area[] = [
         heading: 'Kids, pets',
         accent: 'and appliances.',
         paragraphs: [
-          'Many dishwashers, ranges and washers have a control lock or child lock. When it is on, the appliance can look dead: buttons do nothing, or the display shows a lock symbol. Check the manual for how to switch it off before you call about a "dead" appliance.',
+          'Many dishwashers, ranges and washers have a control lock or child lock. When it is on, the appliance can look dead: buttons do nothing, or the display shows a lock symbol. Check the manual for how to switch it off before you call about an appliance that seems to have died.',
           'Pet hair builds up fast in dryer lint screens and vents, and on refrigerator condenser coils and front grilles. Vacuum the coils and clean the lint housing more often if you have dogs or cats. A fridge that runs nonstop in a home with pets often just needs its coils cleaned.',
           'Small toys, socks and hair ties end up in washer drain pumps and dishwasher filters. If a washer will not drain or a dishwasher hums at the end of the cycle, check the pump filter or the tub filter first.',
         ],
       },
       {
-        heading: 'How getting connected works',
-        accent: 'in Nolanville.',
+        heading: 'Calling from Nolanville:',
+        accent: 'part or hookup?',
         paragraphs: [
-          'Call the number on this page with your address, the appliance, the brand and what it is doing. Appliance Repair Temple is a free referral service, and the call connects you with an independent local appliance repair pro who serves Nolanville.',
-          'Each provider sets their own schedule and prices, so ask on that call when they can come out, how they charge for the visit and the repair, and whether they carry insurance and any license the work requires. Ask about any warranty on parts and labor before work starts.',
-          'Before the visit, find the model number, usually on a label inside the door, under the lid or on the frame, and write down any error code. Clear a path to the appliance and, if you can, empty the washer or dishwasher.',
+          'Say how old the home and the appliance are. A two-year-old Bosch in a subdivision off I-14 that has drained badly since move-in day points somewhere different than a ten-year-old washer in town that just started leaking. Give the 76559 address, the brand, the model and what you have already checked, like the filter or the drain loop.',
+          'Every Nolanville provider keeps their own schedule and rates, so ask about timing, how a visit and a repair are priced, and whether they are insured and licensed for the work. If the problem turns out to be installation, ask the technician to note it in writing, which helps with a builder or warranty claim.',
+          'Before the technician comes, note the model number from its label and any code on the display. Put pets in another room and, if you can, empty the washer or dishwasher.',
         ],
       },
     ],
     zips: ['76559'],
     zipsVerified: true,
+    zipNote:
+      'Nolanville is 76559, from the older streets near the center of town to the subdivisions still being built east toward I-14.',
     nearby: ['Harker Heights', 'Belton', 'Killeen', "Morgan's Point Resort", 'Salado'],
     faqs: [
       {
-        q: 'Can I get emergency appliance repair in Nolanville?',
-        a: 'Emergency help may be available from local providers. A refrigerator or freezer warming up with food inside, a washer or dishwasher leaking, or an appliance that smells like burning is worth an urgent call. Say it is urgent when you call. Until a technician arrives, close the water valve on a leak, keep a warm fridge closed and switch off the breaker for anything that smells hot.',
+        q: 'What needs emergency appliance repair in a Nolanville home?',
+        a: 'Water spreading under a dishwasher or washer, a refrigerator or freezer warming with food inside, or a dryer or range that smells like burning. Tell the line it is urgent. Shut the water valve on a leak, keep the fridge closed and cut the breaker for anything that smells hot.',
       },
       {
-        q: 'Is washer and dryer repair available in Nolanville?',
-        a: 'Yes. Local pros handle washers that will not drain, spin or stop leaking, and dryers that will not heat, squeal or take too long. These are some of the most common appliance problems in Nolanville homes. On a dryer repair, ask the technician to check the vent airflow too.',
+        q: 'Can my family’s washer and dryer be repaired in Nolanville?',
+        a: 'Yes. Washers that will not drain or spin and dryers that will not heat, squeal or take two cycles are everyday calls here, where laundry runs daily. Ask the technician to check the vent airflow on any dryer repair.',
       },
       {
         q: 'My dishwasher or range looks dead. Could it be locked?',
-        a: 'It could. Many models have a control lock or child lock that stops the buttons from working. Check the manual for how to switch it off. If it still does nothing, check the breaker, then call to be connected with a local pro.',
+        a: 'It could. Many models have a control lock or child lock that stops the buttons from working. Check the manual for how to switch it off. If it still does nothing, check the breaker, then call with the model number.',
       },
       {
         q: 'Is appliance repair available across all of Nolanville?',
-        a: 'Local pros serve Nolanville’s 76559 ZIP code, from the older streets in town to the newer subdivisions near I-14. If you are outside city limits, give your full address when you call so you are connected with a provider who covers it.',
+        a: 'Yes, throughout 76559, from the older streets in town to the newer subdivisions near I-14. If you live outside city limits, give your full address on the call so it reaches a technician who covers it.',
       },
       {
-        q: 'How do I find an appliance repair pro near Nolanville?',
-        a: 'Call the number on this page with your Nolanville address and a short description of the problem. You are connected with an independent local appliance repair pro who serves the area. Ask about their availability on that call.',
+        q: 'How do I reach an appliance repair technician in Nolanville?',
+        a: 'Call the number on this page with your Nolanville address and what the appliance is doing. You are put in touch with a local appliance repair pro who works in the area; ask about their availability on that call.',
       },
       {
         q: 'My new home’s dishwasher smells and leaves water behind. Is it broken?',
         a: 'Not always. Check the filter at the bottom of the tub first. If the drain hose was installed without a high loop, dirty water can flow back in. Ask the technician to check the hookup as well as the dishwasher.',
       },
       {
-        q: 'My appliance is still under warranty. Who should I call?',
-        a: 'Contact the manufacturer first, since independent repair may not be covered by a factory warranty. If the warranty has expired or you are not sure, call with the model number and you can be connected with a local pro.',
+        q: 'My builder-package appliance is still under warranty. Who should I call?',
+        a: 'The manufacturer first, since an outside repair may not be covered by a factory warranty. If the issue is the installation, the builder may be responsible. If coverage has run out or you are not sure, call with the model number.',
       },
       {
-        q: 'Can I get appliance repair in a rental home?',
-        a: 'Yes. Tenants should contact the landlord or property manager first. If the landlord or property manager is paying, they should approve the repair with the provider, and someone needs to let the technician in.',
+        q: 'I rent in Nolanville. Who arranges an appliance repair?',
+        a: 'Usually the landlord or property manager, under most leases. Tell them first. If they want you to set it up, they still need to approve the repair with the provider, and someone needs to let the technician in.',
       },
       {
         q: 'Which appliances can be repaired in Nolanville?',
-        a: 'Local appliance repair pros work on refrigerators, freezers, washers, dryers, dishwashers, ovens, ranges, cooktops and over-the-range microwaves, across the major brands.',
+        a: 'Refrigerators, freezers, washers, dryers, dishwashers, ovens, ranges, cooktops and over-the-range microwaves, from the builder packages in new east side homes to older machines in established houses.',
       },
       {
-        q: 'What happens if a part has to be ordered?',
-        a: 'Many common parts can be replaced on the first visit. Some are model-specific and have to be ordered. Ask the technician whether that is the case, how long the part usually takes and what the next visit involves.',
+        q: 'Will a part for my Nolanville appliance need to be ordered?',
+        a: 'Belts, rollers, lid locks and elements can often be replaced on the first visit. Parts for a newer model, like an ice maker assembly or a control board, may need ordering. Ask how long the part usually takes and what happens on the return visit.',
       },
       {
         q: 'How much does appliance repair in Nolanville cost?',
-        a: 'It depends on the appliance, the part and the provider, so this site does not list prices. When you are connected with a local pro, ask how they price the visit and the repair, and have the brand and model number ready.',
+        a: 'Each technician sets their own prices, so this site lists none. A hookup fix and a new part are priced very differently. Ask how the visit and the repair are priced before work starts, with the brand and model ready.',
       },
     ],
     featuredServices: ['dishwasher', 'refrigerator', 'washer', 'dryer'],
+    servicesNote:
+      'Each appliance below is repaired in Nolanville homes, new builds included. Open one for the common faults and the hookup checks worth doing before you call.',
+    finalCta: {
+      title: 'Nolanville appliance not right?',
+      accent: 'Call and say how old it is.',
+      text: 'New build or established home, one call puts you in touch with a technician who works in Nolanville and can tell a bad part from a bad hookup.',
+    },
   },
   {
     slug: 'morgans-point-resort-tx',
     name: "Morgan's Point Resort",
-    metaTitle: "Appliance Repair Morgan's Point Resort TX | Local Pros",
+    metaTitle: "Appliance Repair Morgan's Point Resort TX | Lake Freezers",
     metaDescription:
-      "Appliance repair in Morgan's Point Resort, TX for fridges, freezers, washers, dryers and ovens on Belton Lake. Call to get connected with a local repair pro.",
+      "Garage fridge warm or fish freezer clicking in Morgan's Point Resort? Repairs for lake houses and manufactured homes on Belton Lake, 76513. Call (254) 615-2088.",
     h1: "Appliance Repair in Morgan's Point Resort, TX, on Belton Lake",
     intro: [
-      "Appliance Repair Temple connects homeowners in Morgan's Point Resort, TX with independent local appliance repair pros for refrigerators, freezers, washers, dryers, dishwashers, ovens and ranges. Call, describe the problem, and you are connected with a local pro who serves the lake area.",
+      "Chest freezer of fish clicking off in a hot garage, a lake-house ice maker that quit after a quiet month, or a front-loader smelling of mildew? Appliance Repair Temple is the appliance repair line for Morgan's Point Resort, TX. One call puts you in touch with a technician who works on refrigerators, freezers, washers, dryers, dishwashers, ovens and ranges around the east shore of Belton Lake.",
       "Morgan's Point Resort is a lakeside city of about 4,600 people on the east shore of Belton Lake, north of Belton and west of Temple. Homes here range from older lake houses to newer builds, plus manufactured homes, and many have a garage or shop that holds a second refrigerator or a chest freezer.",
-      'Whatever the house looks like, a repair visit should go the same way. A good technician tests the appliance, tells you what failed and what the repair involves, and starts only after your OK. If a repair does not make sense for an older unit, a good technician will say so.',
-      "That covers refrigerator repair and freezer repair, washer and dryer repair, dishwasher repair, oven, stove and range repair, and over-the-range microwave repair in Morgan's Point Resort, across the major brands. For urgent problems, such as a freezer full of fish warming up or a washer leaking across the floor, emergency appliance repair may be available from local providers. Say it is urgent when you call.",
+      'Lake homes have their own failure patterns: garage units fighting summer heat, weekend houses where valves sat closed and seals dried out, and compact appliances wedged into manufactured-home kitchens. A good technician asks how the home is used, finds what failed and starts only after your OK. If an older unit is not worth fixing, a good technician will say so.',
+      "Refrigerator and freezer repair, washer and dryer repair, dishwasher repair, oven, stove and range repair and over-the-range microwave repair in Morgan's Point Resort cover the major brands, with the Kenmore, Whirlpool, GE, Maytag, Amana and Samsung problems lake households run into explained below.",
     ],
     brandProblems: [
       { brand: 'kenmore', appliance: 'freezer', title: 'Kenmore chest freezer warming in Morgan\'s Point Resort', text: 'Many Kenmore chest freezers were built by other manufacturers, and the first digits of the model number tell a technician which one. In a hot lake-house garage, a freezer that runs nonstop and still warms up usually has dirty coils or vents, a failing start relay or a worn lid gasket. Keep the lid shut while you wait.' },
@@ -722,10 +818,20 @@ export const areas: Area[] = [
       { brand: 'amana', appliance: 'dryer', title: 'Amana dryer not heating in Morgan\'s Point Resort', text: 'Amana dryers share many parts with Whirlpool models, so the usual suspects are a blown thermal fuse, a burned-out heating element or a failed thermostat. Lint-heavy vents in older lake houses are often why the fuse blew. Check that air blows strongly at the outside vent hood before you call.' },
       { brand: 'samsung', appliance: 'refrigerator', title: 'Samsung refrigerator leaking water in Morgan\'s Point Resort', text: 'Water under a Samsung refrigerator usually comes from a clogged defrost drain, the water line to the ice maker or the inlet valve. A puddle inside the fresh-food section points to the drain, while water at the back points to the line. Close the water valve to the fridge and dry the floor first.' },
     ],
+    brandProblemsIntro:
+      "Garage freezers and second fridges set the pattern in Morgan's Point Resort, along with front-loaders in homes that sit closed for weeks. These are the brand problems lake households look up, and what each usually means.",
+    emergencyHeading: { title: 'Fish freezer warming', accent: 'in a lake garage?' },
     emergencyNote:
-      "A chest freezer full of fish and game warming up in the garage, a refrigerator that quit in the heat or a washer leaking across the floor cannot wait. Emergency help may be available from local providers who serve Morgan's Point Resort and Belton. Say it is urgent when you call.",
+      "Around Belton Lake, the calls that cannot wait are a chest freezer full of fish and game warming in a July garage, a kitchen fridge that quit with a weekend's food inside, or a burst fill hose in a lake house nobody was in. Emergency help for these may be available from local providers who work in Morgan's Point Resort and Belton; flag it as urgent at the start of the call.",
+    emergencyStepsIntro: "For a lake home in Morgan's Point Resort:",
+    emergencySteps: [
+      'Freezer warming: keep the lid closed, check the garage GFCI and breaker, and pack the most valuable fish and game into ice chests if the unit is above 10°F.',
+      'Leak in a home that sat empty: close the main water valve first, then the valves behind the washer, dishwasher and fridge.',
+      'Dryer smells hot: shut it off and check the outside vent hood, which collects lint and nests in older lake houses.',
+      'Gas or propane smell: go outside before touching any switch, and call the gas or propane supplier or 911 from there.',
+    ],
     travelNote:
-      "How getting connected works in Morgan's Point Resort: call, describe the problem and give your street address in 76513, and you are connected with an independent local appliance repair pro. Ask about availability, pricing and licensing on that call.",
+      "Calling from Morgan's Point Resort? Give your street address in 76513 and say you are in Morgan's Point, since some addresses show Belton as the mailing city. Mention if the unit is in a garage or shop.",
     localPoints: [
       {
         heading: 'Same ZIP as Belton',
@@ -737,7 +843,7 @@ export const areas: Area[] = [
       },
       {
         heading: 'Older lake houses',
-        text: 'Some homes near the water date back decades, with small kitchens, original hookups and long dryer vent runs. On a laundry repair, ask the technician to check the vent and the water connections too, because they cause many repeat failures.',
+        text: 'Some homes near the water date back decades, with small kitchens, original hookups and long dryer vent runs. A laundry repair in one of these houses should include the vent and the water connections, which are behind many repeat failures.',
       },
       {
         heading: 'Manufactured homes',
@@ -750,16 +856,16 @@ export const areas: Area[] = [
         accent: 'try these first.',
         paragraphs: [
           'Power can flicker during storms. If an appliance stopped right after the power blinked, check the breaker and any GFCI outlet in the garage or kitchen first. Then unplug the appliance for a minute and plug it back in.',
-          'If a garage refrigerator is not cooling, look at where it sits. In a closed garage in July, many standard refrigerators struggle. Pull it a few inches from the wall and check that the condenser fan is running. If it still runs warm, or it clicks on and off every few minutes, call to be connected with a local pro.',
+          'If a garage refrigerator is not cooling, look at where it sits. In a closed garage in July, many standard refrigerators struggle. Pull it a few inches from the wall and check that the condenser fan is running. If it still runs warm, or it clicks on and off every few minutes, call and describe the pattern.',
         ],
       },
       {
         heading: 'Common appliance problems',
         accent: "in Morgan's Point Resort.",
         paragraphs: [
-          'Refrigerators and freezers lead the list in summer: warm fresh food sections, frost on the freezer wall, ice makers that stop and chest freezers that will not start. Start relays, fan motors and defrost parts are frequent fixes.',
-          'Washers that will not drain or spin and dryers that run without heat come next. On any dryer repair, ask the technician to check the vent, since a long or clogged vent is one of the most common reasons a dryer stops heating.',
-          'Dishwashers that leave dishes dirty or water in the tub, and ovens with a burned bake element or a temperature that has drifted, round out the list.',
+          "Summer at the lake is hard on cold storage: warm fresh food sections, frost on the freezer wall, ice makers that stop and chest freezers that will not start. Start relays, fan motors and defrost parts make up much of the work in Morgan's Point garages.",
+          'Laundry follows. Washers that will not drain or spin, front-loaders that smell after a quiet stretch and dryers that run cold because a long lake-house vent is clogged with lint all come up here.',
+          'Dishwashers that sat unused and now leave dishes dirty, and ovens with a burned bake element or a temperature that has drifted, are the rest of the lake list.',
         ],
       },
       {
@@ -781,34 +887,36 @@ export const areas: Area[] = [
         ],
       },
       {
-        heading: 'How getting connected works',
-        accent: "in Morgan's Point.",
+        heading: "Calling from Morgan's Point",
+        accent: 'about a lake home.',
         paragraphs: [
-          "Call the number on this page with your address, the appliance, the brand and what it is doing. Appliance Repair Temple is a free referral service, and the call connects you with an independent local appliance repair pro who serves Morgan's Point Resort.",
-          'Each provider sets their own schedule and prices, so ask on that call when they can come out, how they charge for the visit and the repair, and whether they carry insurance and any license the work requires. Ask about any warranty on parts and labor before work starts.',
-          'Before the visit, find the model number, usually on a label inside the door, under the lid or on the frame, and write down any error code. If the appliance is in a garage or shop, make sure the technician can reach it and the outlet behind it.',
+          "Tell the line how the house is used. A full-time home, a weekend place and a guest rental each change who needs to be there and when. Give the 76513 street address, say it is in Morgan's Point Resort, and describe the appliance, the brand and where it sits, whether that is the kitchen, a hot garage or a shop by the water.",
+          'Providers around the lake set their own schedules and prices. Ask when they can come out, how they price the visit and the repair, and whether they carry insurance and a license where the work needs one. For a guest rental, ask whether the visit can fall between stays, and what warranty applies to parts and labor.',
+          'Find the model tag, often inside the door or on the back of a chest freezer, and jot down any code. If the appliance is in a garage or shop, clear room so the technician can reach it and the outlet behind it.',
         ],
       },
     ],
     zips: ['76513'],
     zipsVerified: true,
+    zipNote:
+      "Morgan's Point Resort shares 76513 with Belton, and many mailing addresses read Belton. Say Morgan's Point on the call so the technician finds the right street by the lake.",
     nearby: ['Belton', 'Harker Heights', 'Nolanville', 'Salado', 'Killeen'],
     faqs: [
       {
-        q: "Can I get emergency appliance repair in Morgan's Point Resort?",
-        a: 'Emergency help may be available from local providers. A refrigerator or freezer warming up with food inside, a washer or dishwasher leaking, or an appliance that smells like burning is worth an urgent call. Say it is urgent when you call. Until a technician arrives, close the water valve on a leak, keep a warm fridge or freezer closed and switch off the breaker for anything that smells hot.',
+        q: "What counts as emergency appliance repair in Morgan's Point Resort?",
+        a: 'A garage freezer or kitchen fridge warming with food inside, a washer or dishwasher leaking, especially in a house that sat empty, or anything that smells like burning. Say it is urgent when you call. Keep the freezer lid down, close the water at the main if the leak is big, and switch off the breaker for anything hot.',
       },
       {
         q: 'My lake house sat empty and now the fridge smells or the ice maker quit. Is it broken?',
-        a: 'Not always. An ice maker with the water valve closed will stop, and a fridge that lost power can smell until it is cleaned out. Open the valve, clean the fridge and give it a day. If it still does not cool or make ice, call to be connected with a local pro.',
+        a: 'Not always. An ice maker with the water valve closed will stop, and a fridge that lost power can smell until it is cleaned out. Open the valve, clean the fridge and give it a day. If it still does not cool or make ice, call with the brand and model.',
       },
       {
         q: "Is appliance repair available across all of Morgan's Point Resort?",
-        a: "Local pros serve homes throughout Morgan's Point Resort, which shares the 76513 ZIP code with Belton. Give your full street address when you call so you are connected with a provider who covers it.",
+        a: "Yes, throughout Morgan's Point Resort, which shares the 76513 ZIP code with Belton. Give your full street address when you call so it reaches a technician who works along the lake.",
       },
       {
-        q: "How do I find an appliance repair pro near Morgan's Point Resort?",
-        a: 'Call the number on this page with your address and a short description of the problem. You are connected with an independent local appliance repair pro who serves the area. Ask about their availability on that call.',
+        q: "How do I reach an appliance repair technician in Morgan's Point Resort?",
+        a: 'Call the number on this page, give your street address and describe what the appliance is doing. One call puts you in touch with a local appliance repair pro who works around Belton Lake; ask about availability on that call.',
       },
       {
         q: 'Can garage refrigerators and chest freezers be repaired?',
@@ -819,57 +927,74 @@ export const areas: Area[] = [
         a: 'Yes. Give the brand, the model and how much space there is around the appliance when you call so the technician can plan the visit.',
       },
       {
-        q: 'Is an old chest freezer worth repairing?',
-        a: 'If it is a relay, thermostat or fan, usually yes. A failed compressor on an older, small chest freezer is usually not worth repairing. Ask the technician which it is before any work starts.',
+        q: 'Is an old fish and game chest freezer worth repairing?',
+        a: 'If the fault is a relay, a thermostat or a lid gasket, usually yes. A dead compressor on an older small unit usually tips it toward replacement. Ask the technician which you have before any work starts.',
       },
       {
         q: "Which appliances can be repaired in Morgan's Point Resort?",
-        a: 'Local appliance repair pros work on refrigerators, freezers, washers, dryers, dishwashers, ovens, ranges, cooktops and over-the-range microwaves, across the major brands.',
+        a: 'Refrigerators, garage and chest freezers, washers, dryers, dishwashers, ovens, ranges, cooktops and over-the-range microwaves, including the compact units in manufactured homes and the older sets in lake houses.',
       },
       {
-        q: 'What happens if a part has to be ordered?',
-        a: 'Many common parts can be replaced on the first visit. Some are model-specific and have to be ordered. Ask the technician whether that is the case, how long the part usually takes and what the next visit involves.',
+        q: 'What if my lake-house repair needs a part ordered?',
+        a: 'Relays, fans and elements can often be replaced on the first visit, while some ice maker and control parts are model-specific. If it is a weekend place, ask how long the part usually takes and plan who will be there for the second visit.',
       },
       {
         q: "How much does appliance repair in Morgan's Point Resort cost?",
-        a: 'It depends on the appliance, the part and the provider, so this site does not list prices. When you are connected with a local pro, ask how they price the visit and the repair, and have the brand and model number ready.',
+        a: 'Prices are set by each technician and are not listed on this site. A relay on a garage freezer and a control board on a newer fridge are very different jobs. Ask for the pricing on the visit and the repair before anyone starts.',
       },
     ],
     featuredServices: ['freezer', 'refrigerator', 'washer', 'dryer'],
+    servicesNote:
+      "Each appliance below is repaired in Morgan's Point Resort homes, from lake garages to manufactured-home kitchens. Open one for its usual problems and the first checks.",
+    finalCta: {
+      title: 'Lake freezer or fridge quitting?',
+      accent: "Call from Morgan's Point.",
+      text: "Give the street, say Morgan's Point Resort and where the unit sits, and one call puts you in touch with a technician who works around Belton Lake.",
+    },
   },
   {
     slug: 'troy-tx',
     name: 'Troy',
-    metaTitle: 'Appliance Repair Troy TX | Connect With Local Pros',
+    metaTitle: 'Appliance Repair Troy TX | Farm Laundry, Fridges, Freezers',
     metaDescription:
-      'Appliance repair in Troy, TX for fridges, freezers, washers, dryers and ovens, in town and on rural roads near I-35. Call to get connected with a local pro.',
+      'Washer full of grit or shop freezer quit in Troy? Speed Queen, Maytag and GE repairs in town and out on 76579 county roads off I-35. Call (254) 615-2088.',
     h1: 'Appliance Repair in Troy, TX, Just Up I-35 from Temple',
     intro: [
-      'Appliance Repair Temple connects homeowners in and around Troy, TX with independent local appliance repair pros for refrigerators, freezers, washers, dryers, dishwashers, ovens and ranges. Call, describe the problem, and you are connected with a local pro who serves the area.',
-      'Troy sits beside I-35 about 8 miles north of Temple, so many of the local providers who work in Temple also serve Troy. The town has been growing quickly. It counted 1,645 residents in 2010 and 2,375 in 2020, and the 76579 ZIP code reaches well past city limits into the farm and ranch country around it, even crossing into Falls County.',
-      'So a Troy repair might be a newer home in a fresh subdivision or an older farmhouse a few miles down a county road. Either way, a good technician tests the appliance, tells you what failed and what the repair involves, and starts only after your OK.',
-      'That covers refrigerator repair and freezer repair, washer and dryer repair, dishwasher repair, oven, stove and range repair, and over-the-range microwave repair in Troy, across the major brands. For urgent problems, such as a fridge warming up or a washer leaking across the floor, emergency appliance repair may be available from local providers. Say it is urgent when you call.',
+      'Washer grinding on mud from work clothes, a shop freezer full of beef that stopped running, or a Speed Queen dryer with no heat? Appliance Repair Temple is the appliance repair line for Troy, TX and the farm country around it. One call puts you in touch with a technician who works on refrigerators, freezers, washers, dryers, dishwashers, ovens and ranges, in new houses in town and farmhouses down the county roads.',
+      'Troy sits beside I-35 about 8 miles north of Temple, so many of the technicians who work in Temple also take Troy calls. The town has been growing quickly. It counted 1,645 residents in 2010 and 2,375 in 2020, and the 76579 ZIP code reaches well past city limits into the farm and ranch country around it, even crossing into Falls County.',
+      'So a Troy repair might be a builder-grade range in a fresh subdivision or a heavy-use washer in a farmhouse a few miles out. In either case, the technician should test the appliance, tell you what failed and what the fix involves, and start only after your OK.',
+      'Refrigerator and freezer repair, washer and dryer repair, dishwasher repair, oven, stove and range repair and over-the-range microwave repair in Troy cover the major brands. Speed Queen and Maytag laundry, GE and Kenmore cold storage, and the Whirlpool and LG problems Troy homes run into are below.',
     ],
     brandProblems: [
       { brand: 'speed-queen', appliance: 'dryer', title: 'Speed Queen dryer not heating in Troy', text: 'Speed Queen dryers in farm and work-laundry homes handle heavy, dusty loads. When one runs without heat, the vent and the lint housing come first, then the thermal fuse, the high-limit thermostat and the element or gas igniter. Split heavy loads of work clothes and clean the screen every load.' },
-      { brand: 'maytag', appliance: 'washer', title: 'Maytag top-load washer not draining in Troy', text: 'Mud and grit from work clothes settle in a Maytag washer\'s drain pump, and a pump that hums or sounds like gravel has usually caught something. Shake off dirt before a load. If water stays in the tub, check the drain hose for kinks before calling to get connected with a local pro.' },
+      { brand: 'maytag', appliance: 'washer', title: 'Maytag top-load washer not draining in Troy', text: 'Mud and grit from work clothes settle in a Maytag washer\'s drain pump, and a pump that hums or sounds like gravel has usually caught something. Shake off dirt before a load. If water stays in the tub after you check the drain hose for kinks, the pump needs a technician.' },
       { brand: 'ge', appliance: 'refrigerator', title: 'GE refrigerator warm but freezer cold in Troy', text: 'When the freezer of a GE refrigerator stays cold but the fresh-food side warms, airflow between them is blocked. Frost on the evaporator coil from a defrost fault, a stopped evaporator fan or a stuck damper are the usual causes. Keep the doors closed and move milk and meat to a cooler.' },
       { brand: 'whirlpool', appliance: 'dishwasher', title: 'Whirlpool dishwasher not cleaning in Troy', text: 'Gritty dishes from a Whirlpool dishwasher often mean a clogged filter or spray arms plugged with scale. Clean the filter, rinse the arms, and run the kitchen tap until the water is hot before starting a cycle. If the top rack stays dirty, a low fill from the inlet valve or a weak wash pump is likely.' },
       { brand: 'kenmore', appliance: 'freezer', title: 'Kenmore upright freezer frosting up in Troy', text: 'Heavy frost on the back wall of a frost-free Kenmore upright points to the defrost system: the heater, the defrost thermostat or the control. Frost only around the door means the gasket is not sealing. Shop and garage freezers that get opened often with dusty hands wear out gaskets faster.' },
       { brand: 'lg', appliance: 'dryer', title: 'LG dryer taking too long in Troy', text: 'Many LG dryers watch the airflow and show a flow sense warning when the vent is restricted. Dust from outdoor work adds to the lint, so long drying times usually start at the vent. If the airflow outside is strong and loads still come out damp, a heating part needs testing.' },
     ],
+    brandProblemsIntro:
+      'Work laundry and shop freezers drive Troy’s brand problems: Speed Queen and Maytag machines full of grit, Kenmore uprights frosting in the shop, and GE fridges warm on one side. Each card says what to check first.',
+    emergencyHeading: { title: 'Shop freezer of beef stopped', accent: 'outside Troy?' },
     emergencyNote:
-      'A refrigerator warming up with a week of groceries inside, a shop freezer full of beef that stopped running or a dryer that smells hot cannot wait. Emergency help may be available from local providers who serve Troy, just up I-35 from Temple. Say it is urgent when you call.',
+      'Around Troy, the expensive failures are a shop freezer full of beef that quit running, a kitchen fridge warming with a week of groceries, or a washer that started leaking mid-load of muddy work clothes. Emergency help for a Troy freezer, fridge or leak may be available from local providers who work up I-35 from Temple; mention that it is urgent when the call starts.',
+    emergencyStepsIntro: 'At a Troy home or shop, start here:',
+    emergencySteps: [
+      'Shop freezer warm: keep it closed and check the shop breaker; dust and mice in an outbuilding panel or outlet are common culprits.',
+      'Washer leaking on a work load: stop it, close both valves and bail the drum before moving the machine, since grit-heavy water is heavy.',
+      'Dryer smells hot: shut it off. Never restart a dryer that has oily or greasy rags in it, even washed ones.',
+      'Gas smell at a farmhouse range or dryer: leave first, then call the gas or propane supplier or 911 from the yard.',
+    ],
     travelNote:
-      'How getting connected works in Troy: call, describe the problem and give your 76579 address, including any gate details, and you are connected with an independent local appliance repair pro. Ask about availability, pricing and licensing on that call.',
+      'Calling from Troy? Give your 76579 address, the county road and any gate details if you are outside town, and say whether the appliance is in the house or a shop.',
     localPoints: [
       {
         heading: 'Newer homes in town',
-        text: 'With the population growing, Troy has added newer houses with the appliance package that came with the build. If an appliance is less than a year or two old, check the manufacturer’s warranty before you call, since independent repair may not be covered.',
+        text: 'With the population growing, Troy has added newer houses with the appliance package that came with the build. If an appliance is less than a year or two old, check the manufacturer’s warranty before you call, since an outside repair may not be covered.',
       },
       {
         heading: 'Farm and ranch properties',
-        text: 'Homes outside town often have a long driveway, a gate and a shop or barn with a spare refrigerator or a chest freezer. Mention gates, dogs and where the appliance is when you call. It saves time when the technician arrives.',
+        text: 'Out on the county roads, a Troy home often comes with a long drive, a gate and a shop holding a spare fridge or a beef freezer. Tell the line about the gate, any dogs and which building the unit is in.',
       },
       {
         heading: 'Older farmhouses',
@@ -894,9 +1019,9 @@ export const areas: Area[] = [
         heading: 'Common appliance problems',
         accent: 'in and around Troy.',
         paragraphs: [
-          'Refrigerators that run but do not cool, frost on the freezer wall and ice makers that quit are the most common kitchen problems. Fan motors, defrost parts and water valves are frequent fixes. Chest freezers that hum and click off often have a bad start relay.',
-          'Washers that will not drain or spin and dryers that run without heat come next. On any dryer repair, ask the technician to check the vent, since a long or clogged vent is one of the most common reasons a dryer stops heating.',
-          'Dishwashers that leave dishes dirty or water in the tub, and ovens with a burned bake element or a temperature that has drifted, round out the list.',
+          'Kitchen calls from Troy are mostly refrigerators that run but do not cool, frost on the freezer wall and ice makers that quit. Shop and garage freezers that hum and click off point to a bad start relay more often than a dead compressor.',
+          'Laundry wears hardest here because of work clothes. Pumps jammed with grit, washers that will not spin and dryers with lint and dust packed into the vent are regular Troy repairs.',
+          'Dishwashers that leave dishes gritty and ovens with a burned bake element or a temperature that has drifted come up too, in the new builds and the farmhouses alike.',
         ],
       },
       {
@@ -914,26 +1039,28 @@ export const areas: Area[] = [
         paragraphs: [
           'Homes on farm and ranch land deal with more dust, and it collects on refrigerator and freezer condenser coils. Dirty coils make the compressor run longer and hotter. Vacuum the coils or the front grille a few times a year, more often for units in a shop or barn.',
           'Mice and other pests like the warm space at the bottom of a refrigerator or freezer and the inside of a range drawer. They build nests that block airflow and can chew through wiring. If you see droppings or nesting material near an appliance that is acting up, mention it when you call.',
-          'Rural power lines also see more flickers during storms. If an appliance quit after the power blinked, check the breaker and any GFCI outlet first, then call to be connected with a local pro if it still will not run.',
+          'Rural power lines also see more flickers during storms. If an appliance quit after the power blinked, check the breaker and any GFCI outlet first, and call if it still will not run.',
         ],
       },
       {
-        heading: 'How getting connected works',
-        accent: 'in Troy.',
+        heading: 'Calling from Troy',
+        accent: 'or the county roads.',
         paragraphs: [
-          'Call the number on this page with your address, the appliance, the brand and what it is doing. Appliance Repair Temple is a free referral service, and the call connects you with an independent local appliance repair pro who serves Troy.',
-          'Each provider sets their own schedule and prices, so ask on that call when they can come out, how they charge for the visit and the repair, and whether they carry insurance and any license the work requires. Ask about any warranty on parts and labor before work starts.',
-          'Before the visit, find the model number, usually on a label inside the door, under the lid or on the frame, and write down any error code. If the appliance is in a shop or barn, make sure the technician can reach it and the outlet behind it.',
+          'Tell the line where the appliance is and how it is used. A Speed Queen that washes muddy gear every day, a beef freezer in a shop off FM 935 and a dishwasher in a new house in town call for different prep. Give the 76579 address, the brand and model, and the symptom.',
+          'A farm address can add drive time, and each Troy provider prices and schedules their own work. On the call, ask when they can be there, what the trip and the repair will cost, and whether they are insured and properly licensed for the job. Ask about warranty terms on parts and labor too.',
+          'Copy down the model number and any error code before the visit. If the appliance is in a shop or barn, make sure the technician can reach it and the outlet behind it.',
         ],
       },
     ],
     zips: ['76579'],
     zipsVerified: true,
+    zipNote:
+      'Troy’s 76579 runs past city limits into farm and ranch land and crosses into Falls County, so give the road name as well as the ZIP.',
     nearby: ['Moody', 'Holland', 'Little River-Academy', 'Belton', "Morgan's Point Resort"],
     faqs: [
       {
-        q: 'Can I get emergency appliance repair in Troy?',
-        a: 'Emergency help may be available from local providers. A refrigerator or freezer warming up with food inside, a washer or dishwasher leaking, or an appliance that smells like burning is worth an urgent call. Say it is urgent when you call. Until a technician arrives, close the water valve on a leak, keep a warm fridge or freezer closed and switch off the breaker for anything that smells hot.',
+        q: 'What should I call about urgently in Troy?',
+        a: 'A refrigerator or shop freezer warming with food inside, a washer or dishwasher leaking, or an appliance that smells like burning. Say it is urgent when you call. Keep cold storage closed, shut the water valve on a leak and cut the breaker for anything that smells hot.',
       },
       {
         q: 'My washer sounds like it has gravel in it. What is wrong?',
@@ -941,51 +1068,58 @@ export const areas: Area[] = [
       },
       {
         q: 'Is appliance repair available outside Troy city limits?',
-        a: 'Local pros serve the 76579 ZIP code, which includes rural roads around town. Give your full address when you call so you are connected with a provider who covers it.',
+        a: 'Yes, across the 76579 ZIP code, which includes the county roads around town and part of Falls County. Give your full address when you call so it reaches a technician who works that far out.',
       },
       {
-        q: 'How do I find an appliance repair pro near Troy?',
-        a: 'Call the number on this page with your Troy address and a short description of the problem. You are connected with an independent local appliance repair pro who serves the area. Ask about their availability on that call.',
+        q: 'How do I reach an appliance repair technician near Troy?',
+        a: 'Call the number on this page with your Troy address and what the appliance is doing. One call puts you in touch with a local appliance repair pro who works in the area; ask about availability on that call.',
       },
       {
         q: 'Is my 12-year-old refrigerator worth fixing?',
-        a: 'It depends on what failed. A fan, relay or defrost part is usually worth it. A sealed system failure on an older refrigerator usually is not. Ask the technician to explain the options before any work starts.',
+        a: 'It depends on what failed. A fan, relay or defrost part is usually worth it. A sealed system failure on an older refrigerator usually is not. Have the technician walk you through repair versus replacement first.',
       },
       {
-        q: 'Can freezers and fridges in shops and barns be repaired?',
-        a: 'Yes. Make sure the technician can reach the back of the unit and the outlet, and mention any gates when you call.',
+        q: 'Can the beef freezer in my Troy shop be repaired?',
+        a: 'Usually. Relays, thermostats, fans and gaskets are common fixes on shop freezers. Clear the area around the unit and its outlet, and mention any gate when you call.',
       },
       {
-        q: 'My appliance is still under warranty. Who should I call?',
-        a: 'Contact the manufacturer first, since independent repair may not be covered by a factory warranty. If the warranty has expired or you are not sure, call with the model number and you can be connected with a local pro.',
+        q: 'My new Troy home’s appliance is still under warranty. Who should I call?',
+        a: 'The manufacturer, since an outside repair may not be covered by a factory warranty. If the warranty has run out or you cannot find the paperwork, call with the model number.',
       },
       {
         q: 'Which appliances can be repaired in Troy?',
-        a: 'Local appliance repair pros work on refrigerators, freezers, washers, dryers, dishwashers, ovens, ranges, cooktops and over-the-range microwaves, across the major brands.',
+        a: 'Refrigerators, shop and garage freezers, washers, dryers, dishwashers, ovens, ranges, cooktops and over-the-range microwaves, including heavy-use laundry machines in farmhouses and the builder appliances in Troy’s newer homes.',
       },
       {
-        q: 'What happens if a part has to be ordered?',
-        a: 'Many common parts can be replaced on the first visit. Some are model-specific and have to be ordered. Ask the technician whether that is the case, how long the part usually takes and what the next visit involves.',
+        q: 'What if a part for my Troy repair has to be ordered?',
+        a: 'Pumps, belts, relays and elements can often be replaced on the first visit. Less common parts may need ordering. Since farm addresses mean a longer drive, ask how long the part usually takes and what the return trip involves.',
       },
       {
         q: 'How much does appliance repair in Troy cost?',
-        a: 'It depends on the appliance, the part and the provider, so this site does not list prices. When you are connected with a local pro, ask how they price the visit and the repair, and have the brand and model number ready.',
+        a: 'No prices are listed here, since each technician sets their own. Distance out the county roads can matter along with the part. Ask what the trip and the repair will run before anything is started.',
       },
     ],
     featuredServices: ['refrigerator', 'washer', 'dryer', 'freezer'],
+    servicesNote:
+      'Each appliance below is repaired in Troy homes and shops. Open one for the problems that dust, grit and heavy use cause, and what to check before you call.',
+    finalCta: {
+      title: 'Troy washer, fridge or freezer down?',
+      accent: 'Call with the address.',
+      text: 'In town or out a county road, give the 76579 address and the appliance, and you are put in touch with a technician who works around Troy.',
+    },
   },
   {
     slug: 'little-river-academy-tx',
     name: 'Little River-Academy',
-    metaTitle: 'Appliance Repair Little River-Academy TX | Local Pros',
+    metaTitle: 'Appliance Repair Little River-Academy TX | Washers & Ovens',
     metaDescription:
-      'Appliance repair in Little River-Academy, TX for fridges, washers, dryers, dishwashers and ovens. Free referral service. Call to get connected with a local pro.',
+      'Older washer not spinning or oven not heating in Little River-Academy? Kenmore, Whirlpool and Amana repairs in 76554 along Highway 95. Call (254) 615-2088.',
     h1: 'Home Appliance Repair in Little River-Academy, TX',
     intro: [
-      'Appliance Repair Temple connects Little River-Academy, TX homeowners with independent local appliance repair pros for refrigerators, freezers, washers, dryers, dishwashers, ovens and ranges. Call, describe the problem, and you are connected with a local pro who serves the area.',
+      'Kenmore washer that agitates but will not spin, a Whirlpool oven that quit before Sunday dinner, or an Amana fridge clicking with no cold? Appliance Repair Temple is the appliance repair line for Little River-Academy, TX. One call puts you in touch with a technician who works on refrigerators, freezers, washers, dryers, dishwashers, ovens and ranges, in town and out along the farm roads.',
       'Little River-Academy is a small city of about 2,000 people roughly 10 miles south of Temple. It grew out of two older communities, Little River and Academy, and the Academy side centers on Main Street where it meets State Highway 95. Around town, the 76554 ZIP code takes in country homes and acreage along the farm roads.',
-      'Wherever you are in it, a repair visit should go the same way. A good technician tests the appliance, tells you what failed and what the repair involves, and starts only after your OK. If a repair does not make sense for your appliance, a good technician will say so.',
-      'That covers refrigerator repair and freezer repair, washer and dryer repair, dishwasher repair, oven, stove and range repair, and over-the-range microwave repair in Little River-Academy, across the major brands. For urgent problems, such as a fridge warming up or a washer leaking across the floor, emergency appliance repair may be available from local providers. Say it is urgent when you call.',
+      'Plenty of homes here keep a reliable older appliance going for years, and that usually pays. The question for the technician is whether the worn part is still available and whether the rest of the machine is sound. A good technician checks both and tells you plainly before any work starts.',
+      'Refrigerator and freezer repair, washer and dryer repair, dishwasher repair, oven, stove and range repair and over-the-range microwave repair in Little River-Academy cover older and newer models across the major brands, with the Kenmore, Whirlpool, Amana, GE, Frigidaire and Maytag problems families here search for below.',
     ],
     brandProblems: [
       { brand: 'kenmore', appliance: 'washer', title: 'Kenmore washer not spinning in Little River-Academy', text: 'Older Kenmore top-loaders that agitate but will not spin often have a worn lid switch, a broken motor coupler or a slipping belt. These machines are simple and often worth keeping. If the tub is still full, drain it into a bucket and note any grinding or humming during the spin cycle.' },
@@ -995,10 +1129,20 @@ export const areas: Area[] = [
       { brand: 'frigidaire', appliance: 'dishwasher', title: 'Frigidaire dishwasher not draining in Little River-Academy', text: 'Water left in a Frigidaire dishwasher usually starts at the filter under the lower spray arm. Then check the drain hose under the sink for a kink and the garbage disposal for a clog. A hum at the end of the cycle with no water moving usually means the drain pump is jammed or worn.' },
       { brand: 'maytag', appliance: 'dryer', title: 'Maytag dryer squealing in Little River-Academy', text: 'A Maytag dryer that squeals or thumps as it turns usually needs new drum rollers, an idler pulley or a belt. These parts wear slowly on older dryers that run several loads a day for a family. Catching the noise early often keeps it to one set of parts instead of a broken belt too.' },
     ],
+    brandProblemsIntro:
+      'Little River-Academy homes keep appliances a long time, so the searches here lean toward worn parts on dependable machines: Kenmore and Maytag laundry, Amana top-freezers and Whirlpool and GE ranges.',
+    emergencyHeading: { title: 'Sparks, scorch marks or water', accent: 'near an outlet?' },
     emergencyNote:
-      'A refrigerator warming up with groceries inside, a washer leaking across the floor or a dryer that smells hot cannot wait. Emergency help may be available from local providers who serve Little River-Academy and the homes along Highway 95 south of Temple. Say it is urgent when you call.',
+      'In Little River-Academy, the problems that should stop you in your tracks are electrical and gas ones on older equipment: a cord with scorch marks, a dryer hot to the touch, water pooling by an outlet, or a range that smells of gas. A fridge warming with groceries inside belongs on the urgent list too. Emergency help for these may be available from local providers who work in Little River-Academy and along Highway 95 south of Temple; say it is urgent when you call.',
+    emergencyStepsIntro: 'With an older appliance in Little River-Academy, do this before anything else:',
+    emergencySteps: [
+      'Sparks, a burning plastic smell or a scorched cord: switch off the breaker, not just the appliance, and leave it off until it is checked.',
+      'Water near an outlet or under a machine: cut the power at the breaker before stepping in the water, then close the supply valve.',
+      'Older top-freezer fridge warming: keep both doors shut and put a thermometer in the fresh food section to watch the temperature.',
+      'Gas smell at a range or water heater: do not switch anything on or off; go outside and call your gas provider or 911 from there.',
+    ],
     travelNote:
-      'How getting connected works in Little River-Academy: call, describe the problem and give your 76554 address, and you are connected with an independent local appliance repair pro. Ask about availability, pricing and licensing on that call.',
+      'Calling from Little River-Academy? Give your 76554 address, the brand and roughly how old the appliance is. Out on the farm roads, add gate and driveway details.',
     localPoints: [
       {
         heading: 'Family homes near the schools',
@@ -1006,11 +1150,11 @@ export const areas: Area[] = [
       },
       {
         heading: 'Country homes on acreage',
-        text: 'Homes outside town often have long driveways, gates and a spare refrigerator or chest freezer in a shop. Mention gates, dogs and where the appliance is when you call.',
+        text: 'Past the edge of town, 76554 homes often have long drives, gates and a spare fridge or chest freezer in a shop. Say on the call which gate to use, whether there are dogs, and where the unit is.',
       },
       {
         heading: 'Older homes in town',
-        text: 'Older houses near the center of each community can have small kitchens, original water shutoffs and long dryer vent runs. On a laundry repair, ask the technician to check the vent and the hookups, because they cause many repeat failures.',
+        text: 'Older houses near the center of each community can have small kitchens, original water shutoffs and long dryer vent runs. Ask the technician to look over those hookups on a laundry repair, because they are behind many repeat failures.',
       },
       {
         heading: 'Appliances that outlast their parts',
@@ -1023,7 +1167,7 @@ export const areas: Area[] = [
         accent: 'if you notice this.',
         paragraphs: [
           'Most appliance problems can wait for a visit. A few cannot. Unplug the appliance or switch off its breaker, and do not use it again until it has been checked, if you see sparks, smell burning plastic or hot wiring, see scorch marks on a cord or outlet, or find water pooling near an outlet or under a machine.',
-          'If you smell gas near a range, dryer or water heater, do not switch anything on or off. Leave the house and call your gas provider or 911 from outside. A dryer that feels hot on the outside or smells scorched is also a reason to stop and call, since lint buildup in the vent is a known fire risk.',
+          'If you smell gas near a range, dryer or water heater, do not switch anything on or off. Get out of the house and phone your gas provider or 911 once outside. A dryer that feels hot on the outside or smells scorched is also a reason to stop and call, since lint buildup in the vent is a known fire risk.',
         ],
       },
       {
@@ -1031,7 +1175,7 @@ export const areas: Area[] = [
         accent: 'when you call.',
         paragraphs: [
           'A few details help the technician arrive ready. The brand and model number, usually on a label inside the door, under the lid or on the frame. What the appliance is doing, or not doing, and when it started. Any error code, noise or smell. Anything that happened just before, like a storm, a move or a power outage, and what you have already tried.',
-          'You do not need to know what is wrong. A plain description is enough, and the local pro you are connected with will take it from there.',
+          'You do not need to know what is wrong. A plain description is enough, and the technician takes it from there.',
         ],
       },
       {
@@ -1040,7 +1184,7 @@ export const areas: Area[] = [
         paragraphs: [
           'Older washers, dryers, ranges and refrigerators are often simpler machines, with fewer electronics to fail. What wears out are the parts that move, heat or seal: belts, rollers and idler pulleys on dryers, lid switches and couplers on top-load washers, igniters and bake elements on ranges, and door gaskets and start relays on refrigerators.',
           'Those parts give warning. A dryer squeal, a washer that agitates but will not spin, an oven that takes longer to preheat, or a fridge that clicks and runs warm are all signs that one part is wearing out. Fixing it at that stage is usually a smaller repair than waiting for a second part to fail.',
-          'The question on an older appliance is whether the part is still available and whether the rest of the machine is sound. Ask the technician to check both and tell you plainly before any work starts.',
+          'On a machine that has run for decades, the deciding factors are parts availability and the condition of the rest of it, such as the tub, the motor or the sealed system. Get that answer from the technician before saying yes to a repair.',
         ],
       },
       {
@@ -1053,22 +1197,24 @@ export const areas: Area[] = [
         ],
       },
       {
-        heading: 'How getting connected works',
-        accent: 'in Little River-Academy.',
+        heading: 'Little River-Academy calls:',
+        accent: 'older machines welcome.',
         paragraphs: [
-          'Call the number on this page with your address, the appliance, the brand and what it is doing. Appliance Repair Temple is a free referral service, and the call connects you with an independent local appliance repair pro who serves Little River-Academy.',
-          'Each provider sets their own schedule and prices, so ask on that call when they can come out, how they charge for the visit and the repair, and whether they carry insurance and any license the work requires. Ask about any warranty on parts and labor before work starts.',
-          'The most common appliance problems here are refrigerators and freezers that stop cooling, washers that will not drain or spin, dryers that run without heat, dishwashers that leave dishes dirty and ovens that will not heat. On any dryer repair, ask for the vent to be checked as well.',
+          'Say how old the appliance is, even roughly. A twenty-year-old Kenmore washer, an Amana top-freezer from a rental and a newer GE range need different parts, and the age tells the technician whether to check part availability before the trip down Highway 95. Give the 76554 address and the brand.',
+          'Timing and prices are up to each provider. Ask when they can come down Highway 95, how they charge for the visit and the repair, and whether they are insured and licensed for the work. On an older machine, ask whether parts are still made for it and what warranty comes with them.',
+          'In family homes here, the usual Little River-Academy calls are fridges and freezers that stop cooling, washers that will not spin, squealing dryers, dishwashers that hold water and ovens that will not bake. Ask for the dryer vent to be looked at on any dryer repair.',
         ],
       },
     ],
     zips: ['76554'],
     zipsVerified: true,
+    zipNote:
+      'Little River-Academy uses 76554, which covers both old communities and the country homes along the farm roads off Highway 95.',
     nearby: ['Holland', 'Rogers', 'Troy', 'Belton', 'Salado'],
     faqs: [
       {
-        q: 'Can I get emergency appliance repair in Little River-Academy?',
-        a: 'Emergency help may be available from local providers. A refrigerator or freezer warming up with food inside, a washer or dishwasher leaking, or an appliance that smells like burning is worth an urgent call. Say it is urgent when you call. Until a technician arrives, close the water valve on a leak, keep a warm fridge closed and switch off the breaker for anything that smells hot.',
+        q: 'When is it emergency appliance repair in Little River-Academy?',
+        a: 'When there are sparks, scorch marks or a burning smell, water near an outlet, a gas smell, or a fridge or freezer warming with food inside. Cut the breaker first on anything electrical, then call and say it is urgent.',
       },
       {
         q: 'Is my older washer or dryer worth fixing?',
@@ -1076,51 +1222,58 @@ export const areas: Area[] = [
       },
       {
         q: 'Is appliance repair available outside Little River-Academy city limits?',
-        a: 'Local pros serve the 76554 ZIP code, including country homes along the farm roads. Give your full address when you call so you are connected with a provider who covers it.',
+        a: 'Yes, across the 76554 ZIP code, including country homes along the farm roads. Give your full address and any gate details so the call reaches a technician who works out there.',
       },
       {
-        q: 'How do I find an appliance repair pro near Little River-Academy?',
-        a: 'Call the number on this page with your address and a short description of the problem. You are connected with an independent local appliance repair pro who serves the area. Ask about their availability on that call.',
+        q: 'How do I reach an appliance repair technician in Little River-Academy?',
+        a: 'Call the number on this page, give your address and say what the appliance is doing and roughly how old it is. The call connects you to a local appliance repair pro who takes jobs in 76554.',
       },
       {
         q: 'My dryer smells hot. Should I keep using it?',
         a: 'No. Turn it off, clean the lint screen and check that the outside vent flap opens when the dryer runs. If the smell or heat continues, do not use it until it has been checked.',
       },
       {
-        q: 'Can freezers and fridges in shops be repaired?',
-        a: 'Yes. Make sure the technician can reach the back of the unit and the outlet, and mention any gates when you call.',
+        q: 'Can the spare fridge in my shop be repaired?',
+        a: 'Yes. Spare fridges and freezers in shops are common repairs. Clear the space behind the unit and around the outlet, and give directions to the shop when you call.',
       },
       {
-        q: 'My appliance is still under warranty. Who should I call?',
-        a: 'Contact the manufacturer first, since independent repair may not be covered by a factory warranty. If the warranty has expired or you are not sure, call with the model number and you can be connected with a local pro.',
+        q: 'My appliance is newer and still under warranty. Who should I call?',
+        a: 'Start with the manufacturer, since an outside repair may not be covered by a factory warranty. If the coverage has ended or you are unsure, call with the model number and brand.',
       },
       {
         q: 'Which appliances can be repaired in Little River-Academy?',
-        a: 'Local appliance repair pros work on refrigerators, freezers, washers, dryers, dishwashers, ovens, ranges, cooktops and over-the-range microwaves, across the major brands.',
+        a: 'Refrigerators, freezers, washers, dryers, dishwashers, ovens, gas and electric ranges, cooktops and over-the-range microwaves, including long-lived Kenmore, Maytag and Amana machines in older homes.',
       },
       {
-        q: 'What happens if a part has to be ordered?',
-        a: 'Many common parts can be replaced on the first visit. Some are model-specific and have to be ordered. Ask the technician whether that is the case, how long the part usually takes and what the next visit involves.',
+        q: 'What if a part for an older appliance has to be ordered?',
+        a: 'Common wear parts are often on hand, but parts for older models sometimes need ordering or are no longer made. Ask the technician which applies, how long the part usually takes and what the next visit involves.',
       },
       {
         q: 'How much does appliance repair in Little River-Academy cost?',
-        a: 'It depends on the appliance, the part and the provider, so this site does not list prices. When you are connected with a local pro, ask how they price the visit and the repair, and have the brand and model number ready.',
+        a: 'This site does not list prices; each technician sets their own. A belt on an old dryer and a control board on a newer range land in very different places. Settle the visit and repair pricing before saying yes.',
       },
     ],
     featuredServices: ['washer', 'dryer', 'refrigerator', 'dishwasher'],
+    servicesNote:
+      'Each appliance below is repaired in Little River-Academy homes, old machines included. Open one for the wear parts that fail most and what to check first.',
+    finalCta: {
+      title: 'Older appliance giving out?',
+      accent: 'It may be one worn part.',
+      text: 'Call with the brand and its rough age, and one call puts you in touch with a technician who works in Little River-Academy and along Highway 95.',
+    },
   },
   {
     slug: 'rogers-tx',
     name: 'Rogers',
-    metaTitle: 'Appliance Repair Rogers TX | Connect With Local Pros',
+    metaTitle: 'Appliance Repair Rogers TX | Storm Damage, Fridges, Freezers',
     metaDescription:
-      'Appliance repair in Rogers, TX for fridges, freezers, washers, dryers and ovens, in town and on rural roads off US 190. Call to get connected with a local pro.',
+      'Fridge dead after a storm or freezer clicking in Rogers? Samsung, Whirlpool and GE repairs across 76569 off US 190, Milam County too. Call (254) 615-2088.',
     h1: 'Appliance Repair in Rogers, TX, Out on Highway 190',
     intro: [
-      'Appliance Repair Temple connects homeowners in and around Rogers, TX with independent local appliance repair pros for refrigerators, freezers, washers, dryers, dishwashers, ovens and ranges. Call, describe the problem, and you are connected with a local pro who serves the area.',
+      'Refrigerator display dark after a storm, a chest freezer clicking every few minutes, or a washer that will not fill on rural water? Appliance Repair Temple is the appliance repair line for Rogers, TX and the farm country around it. One call puts you in touch with a technician who works on refrigerators, freezers, washers, dryers, dishwashers, ovens and ranges, in town and out along US 190.',
       'Rogers is a small town in southeastern Bell County, about 14 miles southeast of Temple on US 190. It has held close to the same size for more than a century, with 1,275 residents in 1910 and 1,113 at the 2020 census. The 76569 ZIP code reaches well beyond town into farm country and across the line into Milam County.',
-      'That makes Rogers a longer drive for many technicians, so it pays to make every visit count. A good technician tests the appliance, tells you what failed and what the repair involves, and starts only after your OK. If a repair does not make sense for your appliance, a good technician will say so.',
-      'That covers refrigerator repair and freezer repair, washer and dryer repair, dishwasher repair, oven, stove and range repair, and over-the-range microwave repair in Rogers, across the major brands. For urgent problems, such as a fridge warming up or a washer leaking across the floor, emergency appliance repair may be available from local providers. Say it is urgent when you call.',
+      'That makes Rogers a longer drive for many technicians, so it pays to make every visit count. Expect the technician to test the appliance, explain what failed and what the repair involves, and wait for your OK. If a storm-damaged board or an old compressor is not worth replacing, a good technician will tell you so.',
+      'Refrigerator and freezer repair, washer and dryer repair, dishwasher repair, oven, stove and range repair and over-the-range microwave repair in Rogers span the major brands, with Samsung, Whirlpool, Frigidaire, GE, Amana and LG problems tied to storms, outages and rural water covered below.',
     ],
     brandProblems: [
       { brand: 'samsung', appliance: 'refrigerator', title: 'Samsung refrigerator dead after a storm in Rogers', text: 'If a Samsung refrigerator stays dark after a storm, check the breaker and any GFCI outlet first, then unplug it for a minute. A display that stays dead or a fridge that will not start cooling can mean a power surge damaged the main control board. Keep the doors closed while you call.' },
@@ -1130,10 +1283,20 @@ export const areas: Area[] = [
       { brand: 'amana', appliance: 'freezer', title: 'Amana chest freezer clicking in Rogers', text: 'A chest freezer that clicks every few minutes and never runs usually has a failed start relay or overload, and sometimes a compressor problem. In Rogers homes, where storms and outages are part of life, relays and controls take a beating. Unplug the freezer and keep the lid closed until it is checked.' },
       { brand: 'lg', appliance: 'oven', title: 'LG range display blank in Rogers', text: 'An LG electric range with a blank display after a storm may be on a tripped breaker, since ranges use a double breaker that can trip on one side. Reset it fully. If the display stays dark with good power, a control board or power supply on the range may have failed.' },
     ],
+    brandProblemsIntro:
+      'Storms and outages shape the brand problems in Rogers: Samsung and LG boards that do not come back, Frigidaire and Amana freezers stuck after a surge, and Whirlpool washers fed by sediment-heavy water.',
+    emergencyHeading: { title: 'Freezer warm after the power', accent: 'came back in Rogers?' },
     emergencyNote:
-      'A refrigerator or freezer warming up with food inside, a washer leaking across the floor or a dryer that smells hot cannot wait. Emergency help may be available from local providers who serve Rogers and the farm roads along US 190. Say it is urgent when you call.',
+      'After a storm along US 190, the quiet emergency is a freezer or fridge that never restarted, sitting warm on a tripped breaker or a fried relay while everyone assumes it is fine. Add a washer leaking across an old floor or a dryer that smells hot, and you have most of the urgent Rogers calls. Emergency help for these may be available from local providers who work in Rogers and the farm roads around it; say it is urgent when you call.',
+    emergencyStepsIntro: 'After a Rogers storm or outage, check these:',
+    emergencySteps: [
+      'Freezers and fridges: open each one briefly and feel for cold, then check every breaker and garage or shop GFCI. A full freezer stays frozen for about 48 hours with the lid shut.',
+      'Dead display: switch the appliance off at the breaker for a full minute before restarting; if it stays dark, leave it off to protect the board.',
+      'Washer or dishwasher leak: close the supply valve and dry the floor; older floors in long-established Rogers homes soak up water fast.',
+      'Gas smell or lines down near the house: leave and call the gas supplier, the power company or 911 from a safe spot.',
+    ],
     travelNote:
-      'How getting connected works in Rogers: call, describe the problem and give your 76569 address, including any gate details, and you are connected with an independent local appliance repair pro. Ask about availability, pricing and licensing on that call.',
+      'Calling from Rogers? Give your 76569 address, the county if you are over the Milam County line, any gate details, and whether the trouble started with a storm.',
     localPoints: [
       {
         heading: 'Long-established homes',
@@ -1141,7 +1304,7 @@ export const areas: Area[] = [
       },
       {
         heading: 'Farm and country properties',
-        text: 'Outside town, homes often have long driveways, gates and a shop or barn with a spare refrigerator or chest freezer. Mention gates, dogs and where the appliance is when you call.',
+        text: 'Outside town, Rogers properties often mean a long gravel drive, a gate and a barn with a spare refrigerator or a chest freezer. Give the gate code and say which building on the call.',
       },
       {
         heading: 'Appliances kept for the long haul',
@@ -1149,7 +1312,7 @@ export const areas: Area[] = [
       },
       {
         heading: 'Rogers ISD families',
-        text: 'Family homes run the washer, dryer and dishwasher every day during the school year. Long dry times, thumping spins and dishes that come out gritty are early signs worth a call before they turn into a bigger repair.',
+        text: 'During the school year, a Rogers family laundry room can run every evening. Dryers that take two cycles, washers that thump on spin and dishwashers leaving grit are early signs, and cheaper to fix at that stage.',
       },
     ],
     sections: [
@@ -1188,22 +1351,24 @@ export const areas: Area[] = [
         ],
       },
       {
-        heading: 'How getting connected works',
-        accent: 'in Rogers.',
+        heading: 'A Rogers call',
+        accent: 'after a storm.',
         paragraphs: [
-          'Call the number on this page with your address, the appliance, the brand and what it is doing. Appliance Repair Temple is a free referral service, and the call connects you with an independent local appliance repair pro who serves Rogers and the 76569 area.',
-          'Each provider sets their own schedule and prices, and Rogers can be a longer drive, so ask on that call when they can come out, how they charge for the visit and the repair, and whether they carry insurance and any license the work requires. Ask about any warranty on parts and labor before work starts.',
-          'The most common appliance problems here are refrigerators and freezers that stop cooling, washers that will not drain or spin, dryers that run without heat, dishwashers that leave dishes dirty and ovens that will not heat.',
+          'Say what happened and when. A Samsung fridge that went dark during Tuesday’s storm, a freezer that clicks since the power came back and a range with a blank display point a technician toward surge damage, which changes which parts to bring out US 190. Give the 76569 address and every appliance that is acting up.',
+          'Rogers is a longer drive, and providers set their own schedules and rates. Ask when they can make it out, how they price the trip, the visit and the repair, and whether they carry insurance and the license the work calls for. If the repair carries a warranty, ask what it covers.',
+          'If you plan to file a homeowner’s insurance claim for storm damage, ask the technician to write down what failed and why. That note is useful to the adjuster.',
         ],
       },
     ],
     zips: ['76569'],
     zipsVerified: true,
+    zipNote:
+      'Rogers’ 76569 stretches from the town on US 190 into farm country and across the Milam County line, so give the road and county when you call.',
     nearby: ['Holland', 'Little River-Academy', 'Troy', 'Belton', 'Salado'],
     faqs: [
       {
-        q: 'Can I get emergency appliance repair in Rogers?',
-        a: 'Emergency help may be available from local providers. A refrigerator or freezer warming up with food inside, a washer or dishwasher leaking, or an appliance that smells like burning is worth an urgent call. Say it is urgent when you call. Until a technician arrives, close the water valve on a leak, keep a warm fridge or freezer closed and switch off the breaker for anything that smells hot.',
+        q: 'What counts as an appliance emergency in Rogers?',
+        a: 'A fridge or freezer that did not restart after a storm and is warming, a washer or dishwasher leaking, or anything that smells like burning or gas. Say right away that it is urgent. Keep cold storage shut, close the water valve on a leak and cut the breaker for anything hot.',
       },
       {
         q: 'An appliance stopped after a storm. Is it broken?',
@@ -1211,11 +1376,11 @@ export const areas: Area[] = [
       },
       {
         q: 'Is appliance repair available outside Rogers?',
-        a: 'Local pros serve the 76569 ZIP code, including rural roads around town. Part of the ZIP crosses into Milam County, so give your full address when you call so you are connected with a provider who covers it.',
+        a: 'Yes, across the 76569 ZIP code, including the rural roads around town. Part of the ZIP crosses into Milam County, so give your full address and county on the call.',
       },
       {
-        q: 'How do I find an appliance repair pro near Rogers?',
-        a: 'Call the number on this page with your Rogers address and a short description of the problem. You are connected with an independent local appliance repair pro who serves the area. Ask about their availability on that call.',
+        q: 'How do I reach an appliance repair technician near Rogers?',
+        a: 'Call the number on this page with your Rogers address and what happened, especially if a storm was involved. One call puts you in touch with a technician who works out US 190; ask about their availability on that call.',
       },
       {
         q: 'Can the technician look at two appliances on one visit?',
@@ -1223,39 +1388,46 @@ export const areas: Area[] = [
       },
       {
         q: 'Is my older washer worth repairing?',
-        a: 'Often. Pumps, lid locks, belts and suspension parts are reasonable repairs. A failed transmission or worn tub bearings on an older machine usually tip the balance toward replacing it. Ask the technician to explain the options before any work starts.',
+        a: 'Often. Pumps, lid locks, belts and suspension parts are reasonable repairs. A failed transmission or worn tub bearings on an older machine usually tip the balance toward replacing it. Ask for both options, repair and replace, before any work starts.',
       },
       {
-        q: 'Can freezers and fridges in shops and barns be repaired?',
-        a: 'Yes. Make sure the technician can reach the back of the unit and the outlet, and mention any gates when you call.',
+        q: 'Can a barn freezer in Rogers be fixed after a surge?',
+        a: 'Often. A surge tends to take out the start relay or the control before the compressor. Make sure the technician can reach the back of the unit and the outlet, and give gate details when you call.',
       },
       {
         q: 'Which appliances can be repaired in Rogers?',
-        a: 'Local appliance repair pros work on refrigerators, freezers, washers, dryers, dishwashers, ovens, ranges, cooktops and over-the-range microwaves, across the major brands.',
+        a: 'Refrigerators, chest and upright freezers, washers, dryers, dishwashers, ovens, ranges, cooktops and over-the-range microwaves, including storm-damaged electronics and long-serving older machines.',
       },
       {
-        q: 'What happens if a part has to be ordered?',
-        a: 'Many common parts can be replaced on the first visit. Some are model-specific and have to be ordered. Ask the technician whether that is the case, how long the part usually takes and what the next visit involves.',
+        q: 'What if the control board for my Rogers appliance has to be ordered?',
+        a: 'Boards are often model-specific, so ordering is common, while relays and fuses may be replaced on the first visit. Ask how long the part usually takes and whether the return trip is priced separately.',
       },
       {
         q: 'How much does appliance repair in Rogers cost?',
-        a: 'It depends on the appliance, the part and the provider, so this site does not list prices. When you are connected with a local pro, ask how they price the visit and the repair, and have the brand and model number ready.',
+        a: 'Technicians set their own prices, so none appear on this site. The drive out to 76569, the part and the number of appliances all play in. Ask how everything is priced on the call, before any work starts.',
       },
     ],
     featuredServices: ['refrigerator', 'freezer', 'washer', 'dryer'],
+    servicesNote:
+      'Each appliance below is repaired in Rogers homes and barns. Open one for its common faults, storm damage included, and the checks to make before you call.',
+    finalCta: {
+      title: 'Rogers appliance quit after a storm?',
+      accent: 'Check the breaker, then call.',
+      text: 'Give the 76569 address and what happened, and one call puts you in touch with a technician who works out US 190.',
+    },
   },
   {
     slug: 'holland-tx',
     name: 'Holland',
-    metaTitle: 'Appliance Repair Holland TX | Connect With Local Pros',
+    metaTitle: 'Appliance Repair Holland TX | Leaks, Noises, Shop Freezers',
     metaDescription:
-      'Appliance repair in Holland, TX for fridges, freezers, washers, dryers and ovens, in town and on country roads. Call to get connected with a local repair pro.',
+      'Washer leaking, fridge clicking or garage freezer thawing in Holland? Speed Queen, Whirlpool and GE repairs across 76534 on Highway 95. Call (254) 615-2088.',
     h1: 'Small-Town Appliance Repair in Holland, TX',
     intro: [
-      'Appliance Repair Temple connects homeowners in and around Holland, TX with independent local appliance repair pros for refrigerators, freezers, washers, dryers, dishwashers, ovens and ranges. Call, describe the problem, and you are connected with a local pro who serves the area.',
+      'Water under the washer, a refrigerator clicking but not cooling, or a garage freezer thawing on the coldest night of the year? Appliance Repair Temple is the appliance repair line for Holland, TX and the country roads around it. One call puts you in touch with a technician who works on refrigerators, freezers, washers, dryers, dishwashers, ovens and ranges, in town and on the farms out along Highway 95.',
       'Holland sits on State Highway 95 about 17 miles south of Temple. It was settled in 1860 as Mountain Home, incorporated in 1891, and has stayed close to 1,100 residents for decades, with 1,075 counted at the 2020 census. The 76534 ZIP code covers a much wider area of farms and country homes, reaching into Milam County.',
-      'In a town this size, word gets around, and straight answers matter more than upselling. A good technician tests the appliance, tells you what failed and what the repair involves, and starts only after your OK. If a repair is not worth it, a good technician will say so. Ask for that before work starts.',
-      'That covers refrigerator repair and freezer repair, washer and dryer repair, dishwasher repair, oven, stove and range repair, and over-the-range microwave repair in Holland, across the major brands. For urgent problems, such as a fridge warming up or a washer leaking across the floor, emergency appliance repair may be available from local providers. Say it is urgent when you call.',
+      'In a town this size, word gets around, and straight answers matter more than upselling. The technician should test the appliance, tell you what failed and what the repair involves, and start only after your OK. If a repair is not worth it, a good technician will say so; ask for that before work starts.',
+      'Refrigerator and freezer repair, washer and dryer repair, dishwasher repair, oven, stove and range repair and over-the-range microwave repair in Holland cover the major brands, with the Whirlpool, Speed Queen, Kenmore, Electrolux, GE and Maytag problems that show up in older homes and outbuildings below.',
     ],
     brandProblems: [
       { brand: 'whirlpool', appliance: 'refrigerator', title: 'Whirlpool garage freezer thawing in a Holland winter', text: 'Many Whirlpool top-freezer models use one thermostat in the fresh-food section. In a cold Holland garage or shop, that section stays cold on its own, the compressor barely runs and the freezer above starts to thaw. If it only happens in the coldest weeks, the room temperature is the likely cause.' },
@@ -1265,10 +1437,20 @@ export const areas: Area[] = [
       { brand: 'ge', appliance: 'dishwasher', title: 'GE dishwasher leaking in Holland', text: 'A GE dishwasher that leaks under the door usually has a worn door gasket or is making too many suds from the wrong detergent. A leak under the toe kick points to a loose inlet connection or the pump seal. Switch off the breaker and close the hot water valve under the sink, then dry the floor.' },
       { brand: 'maytag', appliance: 'freezer', title: 'Maytag chest freezer not freezing in Holland', text: 'A Maytag chest freezer in a shop or outbuilding that runs but stays soft usually has dusty cabinet vents or coils, a worn lid gasket or a failing start relay. Keep a few inches of space around it and keep the lid closed. If it clicks on and off and never runs, unplug it until it is checked.' },
     ],
+    brandProblemsIntro:
+      'Holland’s searches follow its older homes and outbuildings: Speed Queen and GE leaks, Kenmore dryers that will not start, and Whirlpool and Maytag freezers in shops that run cold or hot with the weather.',
+    emergencyHeading: { title: 'Water spreading on an old wood floor', accent: 'in Holland?' },
     emergencyNote:
-      'A refrigerator warming up with groceries inside, a shop freezer that quit or a washer leaking across an old wood floor cannot wait. Emergency help may be available from local providers who serve Holland and the country roads along Highway 95. Say it is urgent when you call.',
+      'Older Holland homes often have wood floors, and a washer, dishwasher or ice maker leak can cup the boards in a day. A fridge warming with groceries inside, a shop freezer that quit or a range smelling of gas cannot wait either. Emergency help for these may be available from local providers who work in Holland and the country roads along Highway 95; say it is urgent when you call.',
+    emergencyStepsIntro: 'In a Holland house or shop, do this right away:',
+    emergencySteps: [
+      'Leak on a wood floor: close the valve behind the appliance, then mop and fan the boards dry; water that sits under a machine is what damages them.',
+      'Water near a cord or outlet: switch off the breaker before you step in it.',
+      'Shop freezer quit: keep the lid shut and check the outbuilding breaker. In a hard freeze, a garage fridge may be fine and only too cold to run.',
+      'Rotten egg smell at a range, dryer or water heater: leave without flipping switches and call your gas provider or 911 from outside.',
+    ],
     travelNote:
-      'How getting connected works in Holland: call, describe the problem and give your 76534 address, including any gate or entrance details, and you are connected with an independent local appliance repair pro. Ask about availability, pricing and licensing on that call.',
+      'Calling from Holland? Give your 76534 address and, for country homes, which entrance to use and where the appliance is. Some addresses here are in Milam County.',
     localPoints: [
       {
         heading: 'Older homes in town',
@@ -1280,11 +1462,11 @@ export const areas: Area[] = [
       },
       {
         heading: 'Gates, dogs and directions',
-        text: 'Some country addresses are hard to find on a map. When you call, mention gates, dogs, which entrance to use and where the appliance is. It saves time when the technician arrives.',
+        text: 'Some country addresses are hard to find on a map. When you call, mention gates, dogs, which entrance to use and where the appliance is, so the technician spends the visit on the repair.',
       },
       {
         heading: 'Holland ISD families',
-        text: 'Family homes run the washer, dryer and dishwasher every day. Long dry times, a washer that thumps on spin or dishes that come out gritty are early signs worth a call.',
+        text: 'With kids in Holland schools, the washer, dryer and dishwasher rarely get a day off. A dryer that runs long, a washer thumping on spin or gritty glasses are early warnings worth acting on.',
       },
     ],
     sections: [
@@ -1302,7 +1484,7 @@ export const areas: Area[] = [
         accent: 'Where to look first.',
         paragraphs: [
           'Under a refrigerator, a leak is often a clogged defrost drain, a cracked water line to the ice maker or a loose water valve fitting. Under a washer, check the hoses at the back and the drain hose connection before anything else. Under a dishwasher, the cause is often a worn door seal, a loose drain connection or suds from the wrong detergent.',
-          'If water is pooling near an outlet or cord, switch off the breaker before you touch anything. Close the water supply valve for the appliance if you can reach it, dry the area, and call to be connected with a local pro.',
+          'If water is pooling near an outlet or cord, switch off the breaker before you touch anything. Close the water supply valve for the appliance if you can reach it, dry the area, and then call with what you found.',
         ],
       },
       {
@@ -1310,7 +1492,7 @@ export const areas: Area[] = [
         accent: 'is telling you.',
         paragraphs: [
           'Burning plastic or hot wiring from any appliance means stop: unplug it or switch off its breaker and do not use it until it is checked. A fishy smell near an outlet or the back of an appliance can also mean an electrical part is overheating.',
-          'A rotten egg or sulfur smell near a gas range, dryer or water heater means gas. Do not switch anything on or off. Leave the house and call your gas provider or 911 from outside.',
+          'A rotten egg or sulfur smell near a gas range, dryer or water heater means gas. Do not switch anything on or off. Leave the house and make the call to your gas provider or 911 from outdoors.',
           'Some smells are not emergencies. A musty front-load washer usually needs its door seal and pump filter cleaned. A sour refrigerator often has spoiled food or a dirty drain pan underneath. A new oven, or one used for the first time in a while, can smell like hot dust for a few minutes. If a smell keeps coming back, mention it when you call.',
         ],
       },
@@ -1319,79 +1501,88 @@ export const areas: Area[] = [
         accent: 'in a cold snap.',
         paragraphs: [
           'Many standard refrigerators control both compartments from one thermostat in the fresh food section. In a cold garage or shop, that section stays cold on its own, the compressor barely runs, and the freezer above or below it starts to thaw. It looks like a broken fridge, but it is the room temperature.',
-          'The owner’s manual lists the room temperature range the unit is designed for, and garage-ready models are built for wider swings. If a garage fridge acts up only in the coldest weeks, that is the likely reason. If it struggles in mild weather too, or the freezer is soft year-round, call to be connected with a local pro.',
+          'The owner’s manual lists the room temperature range the unit is designed for, and garage-ready models are built for wider swings. If a garage fridge acts up only in the coldest weeks, that is the likely reason. If it struggles in mild weather too, or the freezer is soft year-round, it needs a technician.',
           'A hard freeze can also crack a washer fill hose or an ice maker line in an unheated room. After a freeze, check those lines for drips once they thaw.',
         ],
       },
       {
-        heading: 'How getting connected works',
-        accent: 'in Holland.',
+        heading: 'Calling from Holland:',
+        accent: 'describe it plainly.',
         paragraphs: [
-          'Call the number on this page with your address, the appliance, the brand and what it is doing. Appliance Repair Temple is a free referral service, and the call connects you with an independent local appliance repair pro who serves Holland and the 76534 area.',
-          'Each provider sets their own schedule and prices, and Holland can be a longer drive, so ask on that call when they can come out, how they charge for the visit and the repair, and whether they carry insurance and any license the work requires. Ask about any warranty on parts and labor before work starts.',
-          'Before the visit, find the model number, usually on a label inside the door, under the lid or on the frame, and write down any error code.',
+          'You do not need the part name. Say what you see, hear and smell: water under the Speed Queen after the last freeze, a fridge that clicks and stays warm, a burning smell from the dryer. Give the 76534 address, the brand and model, and directions if the home is off a county road.',
+          'Holland is a longer drive from Temple, and each provider has their own schedule and prices. Ask about timing, about how the trip and the repair are charged, and about insurance and any license the work needs. Get any parts and labor warranty terms before work starts.',
+          'Have the model number and any code written down. Leave the leak area as it is, once it is safe, so the technician can see where the water came from.',
         ],
       },
     ],
     zips: ['76534'],
     zipsVerified: true,
+    zipNote:
+      'Holland’s 76534 is much bigger than the town, covering farms and country homes along Highway 95 and into Milam County.',
     nearby: ['Little River-Academy', 'Rogers', 'Salado', 'Belton', 'Troy'],
     faqs: [
       {
-        q: 'Can I get emergency appliance repair in Holland?',
-        a: 'Emergency help may be available from local providers. A refrigerator or freezer warming up with food inside, a washer or dishwasher leaking, or an appliance that smells like burning is worth an urgent call. Say it is urgent when you call. Until a technician arrives, close the water valve on a leak, keep a warm fridge or freezer closed and switch off the breaker for anything that smells hot.',
+        q: 'Which Holland appliance problems are emergencies?',
+        a: 'A leak spreading across the floor, especially on old wood, a fridge or freezer warming with food inside, or a burning or gas smell. Say up front that it is urgent. Close the water valve, keep cold storage shut and switch off the breaker for anything hot.',
       },
       {
         q: 'My garage fridge freezer thaws in winter. Is it broken?',
-        a: 'Not always. Many standard refrigerators use one thermostat in the fresh food section, and in a cold garage the compressor barely runs, so the freezer warms up. If it only happens in the coldest weeks, the room temperature is the likely cause. If it happens in mild weather too, call to be connected with a local pro.',
+        a: 'Not always. Many standard refrigerators use one thermostat in the fresh food section, and in a cold garage the compressor barely runs, so the freezer warms up. If it only happens in the coldest weeks, the room temperature is the likely cause. If it happens in mild weather too, call with the brand and model.',
       },
       {
         q: 'Is appliance repair available outside Holland?',
-        a: 'Local pros serve the 76534 ZIP code, including country roads around town. Part of the ZIP crosses into Milam County, so give your full address when you call so you are connected with a provider who covers it.',
+        a: 'Yes, across the 76534 ZIP code, including the country roads around town. Part of the ZIP crosses into Milam County, so give your full address and directions on the call.',
       },
       {
-        q: 'How do I find an appliance repair pro near Holland?',
-        a: 'Call the number on this page with your Holland address and a short description of the problem. You are connected with an independent local appliance repair pro who serves the area. Ask about their availability on that call.',
+        q: 'How do I reach an appliance repair technician near Holland?',
+        a: 'Call the number on this page with your Holland address and a plain description of the problem. One call puts you in touch with a local appliance repair pro who works the Highway 95 area; ask about availability on that call.',
       },
       {
         q: 'My refrigerator is clicking but not cooling. What is wrong?',
-        a: 'A click every few minutes often points to a failing start relay or a compressor that cannot start. Unplug it, check that the coils are clean and the fan turns, then call to be connected with a local pro if it still will not run.',
+        a: 'A click every few minutes often points to a failing start relay or a compressor that cannot start. Unplug it, check that the coils are clean and the fan turns, and call if it still will not run.',
       },
       {
         q: 'My washer is leaking. Should I keep using it?',
         a: 'No. Turn off the water supply to the washer, check the hoses at the back, and call for a repair. Running a leaking washer can damage the floor and anything nearby.',
       },
       {
-        q: 'Can freezers and fridges in shops and barns be repaired?',
-        a: 'Yes. Make sure the technician can reach the back of the unit and the outlet, and mention any gates when you call.',
+        q: 'Can a chest freezer in my Holland shop be repaired?',
+        a: 'Usually. Coils, gaskets and start relays are common fixes. Clear room behind the unit and around the outlet, and explain on the call how to reach the building.',
       },
       {
         q: 'Which appliances can be repaired in Holland?',
-        a: 'Local appliance repair pros work on refrigerators, freezers, washers, dryers, dishwashers, ovens, ranges, cooktops and over-the-range microwaves, across the major brands.',
+        a: 'Refrigerators, garage and shop freezers, washers, dryers, dishwashers, ovens, ranges, cooktops and over-the-range microwaves, from long-serving Speed Queen and Kenmore laundry to newer front-loaders.',
       },
       {
-        q: 'What happens if a part has to be ordered?',
-        a: 'Many common parts can be replaced on the first visit. Some are model-specific and have to be ordered. Ask the technician whether that is the case, how long the part usually takes and what the next visit involves.',
+        q: 'What if my Holland repair needs a part ordered?',
+        a: 'Hoses, relays and fuses can often be replaced on the first visit; door locks, pumps and boards for some models may need ordering. Ask how long the part usually takes and what the return visit involves, given the drive out Highway 95.',
       },
       {
         q: 'How much does appliance repair in Holland cost?',
-        a: 'It depends on the appliance, the part and the provider, so this site does not list prices. When you are connected with a local pro, ask how they price the visit and the repair, and have the brand and model number ready.',
+        a: 'Each technician sets their own prices, so this site does not show any. The part, the appliance and the distance from Temple all count. Ask how the trip, the visit and the repair are priced before work starts.',
       },
     ],
     featuredServices: ['refrigerator', 'washer', 'dryer', 'dishwasher'],
+    servicesNote:
+      'Each appliance below is repaired in Holland homes and outbuildings. Open one for the leaks, noises and smells it is known for, and what to check first.',
+    finalCta: {
+      title: 'Leak, noise or smell in Holland?',
+      accent: 'Describe it on one call.',
+      text: 'Give the 76534 address and what you are seeing, and you are put in touch with a technician who works in Holland and along Highway 95.',
+    },
   },
   {
     slug: 'moody-tx',
     name: 'Moody',
-    metaTitle: 'Appliance Repair Moody TX | Connect With Local Pros',
+    metaTitle: 'Appliance Repair Moody TX | Ice Makers, Fridges, Dishwashers',
     metaDescription:
-      'Appliance repair in Moody, TX for fridges, freezers, washers, dryers and ovens, in town and on rural roads. Call to get connected with a local repair pro.',
+      'Ice maker quit or fridge not cooling in Moody? Whirlpool, Samsung, LG and GE repairs across 76557 in McLennan, Bell and Coryell counties. Call (254) 615-2088.',
     h1: 'Appliance Repair in Moody, TX, Up Highway 317 from Temple',
     intro: [
-      'Appliance Repair Temple connects homeowners in and around Moody, TX with independent local appliance repair pros for refrigerators, freezers, washers, dryers, dishwashers, ovens and ranges. Call, describe the problem, and you are connected with a local pro who serves the area.',
-      'Moody is a small city of about 1,400 people in southern McLennan County, up State Highway 317 from the Temple area. It counts as part of the Waco metro, but plenty of Temple-area providers work there too. The 76557 ZIP code covers about 123 square miles of farm and ranch country and reaches into Bell and Coryell counties, out past Mother Neff State Park on the Leon River.',
-      'That means a Moody repair might be a house in town or a home a few miles down a county road. Either way, a good technician tests the appliance, tells you what failed and what the repair involves, and starts only after your OK.',
-      'That covers refrigerator repair and freezer repair, washer and dryer repair, dishwasher repair, oven, stove and range repair, and over-the-range microwave repair in Moody, across the major brands. For urgent problems, such as a fridge warming up or a washer leaking across the floor, emergency appliance repair may be available from local providers. Say it is urgent when you call.',
+      'Ice maker quit, fridge warm on one side, or a washer hose split after a hard freeze? Appliance Repair Temple is the appliance repair line for Moody, TX and the ranch country around it. One call puts you in touch with a technician who works on refrigerators, freezers, washers, dryers, dishwashers, ovens and ranges, in town and down the county roads toward the Leon River.',
+      'Moody is a small city of about 1,400 people in southern McLennan County, up State Highway 317 from the Temple area. It counts as part of the Waco metro, but plenty of Temple-area technicians work there too. The 76557 ZIP code covers about 123 square miles of farm and ranch country and reaches into Bell and Coryell counties, out past Mother Neff State Park on the Leon River.',
+      'Many Moody calls can be narrowed down before anyone drives out, which is why this page has quick checks for ice makers, fridges and dishwashers. If those do not fix it, the technician tests the appliance, explains what failed and what the repair involves, and starts only after your OK.',
+      'Refrigerator and freezer repair, washer and dryer repair, dishwasher repair, oven, stove and range repair and over-the-range microwave repair in Moody cover the major brands, with Whirlpool, Samsung, LG, Amana, GE and KitchenAid problems explained below.',
     ],
     brandProblems: [
       { brand: 'whirlpool', appliance: 'refrigerator', title: 'Whirlpool refrigerator not cooling in Moody', text: 'When a Whirlpool refrigerator runs warm, check the temperature setting, vents inside blocked by food, the door seal and the coils at the bottom or back. If the freezer is cold but the fridge is warm, a fan or defrost part is the likely cause. Keep the doors closed while you wait.' },
@@ -1401,10 +1592,20 @@ export const areas: Area[] = [
       { brand: 'ge', appliance: 'freezer', title: 'GE upright freezer frosting up in Moody', text: 'Heavy frost on the back wall of a frost-free GE upright usually means the defrost heater, the defrost thermostat or the control has failed. If the frost is only around the door, the gasket or the door alignment is the problem. Never chip the ice with a sharp tool.' },
       { brand: 'kitchenaid', appliance: 'oven', title: 'KitchenAid oven temperature off in Moody', text: 'If a KitchenAid oven bakes too hot or too cold, put an oven thermometer on the middle rack at 350°F and average a few readings. A gap of more than about 25 degrees often means a drifting temperature sensor, though some models can be calibrated from the control panel.' },
     ],
+    brandProblemsIntro:
+      'Moody households search for a mix of kitchen and laundry fixes: Whirlpool fridges warming, LG flow sense codes, older Amana washers and GE uprights in the barn. Each card gives the usual cause and a first check.',
+    emergencyHeading: { title: 'Pipes froze or the barn freezer quit', accent: 'near Moody?' },
     emergencyNote:
-      'A refrigerator warming up with groceries inside, a barn freezer that quit or a washer leaking across the floor cannot wait. Emergency help may be available from local providers who serve Moody and the farm roads along Highway 317. Say it is urgent when you call.',
+      'Around Moody, a hard freeze is when the surprise leaks happen: a washer fill hose or ice maker line that split in an unheated room and lets go once it thaws. In summer it is a barn freezer or kitchen fridge losing its cold. Emergency help for these may be available from local providers who work in Moody and the farm roads along Highway 317; say it is urgent when you call.',
+    emergencyStepsIntro: 'For a Moody home after a freeze or a breakdown:',
+    emergencySteps: [
+      'Split hose after a freeze: close the valves behind the washer and fridge before the line thaws fully, and check again once it does.',
+      'Barn or garage freezer warming: keep the lid shut and check the outbuilding breaker; in a cold snap, a garage fridge may simply be too cold to run.',
+      'Dryer runs hot with a flow code: stop it and clear the lint housing and the outside hood before another load.',
+      'Gas smell at a range or dryer: leave the house first and call your gas or propane supplier or 911 from outside.',
+    ],
     travelNote:
-      'How getting connected works in Moody: call, describe the problem and give your full 76557 address and county, and you are connected with an independent local appliance repair pro. Ask about availability, pricing and licensing on that call.',
+      'Calling from Moody? Give your full 76557 address and the county, since the ZIP crosses McLennan, Bell and Coryell, plus any gate details for country homes.',
     localPoints: [
       {
         heading: 'Homes in town',
@@ -1412,15 +1613,15 @@ export const areas: Area[] = [
       },
       {
         heading: 'Farm and ranch properties',
-        text: 'Across the wider 76557 area, homes often have long driveways, gates and a shop or barn with a spare refrigerator or chest freezer. Mention gates, dogs and where the appliance is when you call.',
+        text: 'Across the wider 76557 area, ranch homes often sit behind a cattle gate with a shop or barn holding a spare fridge or chest freezer. Give the technician directions to the right building and warn about any dogs or livestock.',
       },
       {
         heading: 'Three counties, one ZIP',
-        text: 'Because 76557 crosses into Bell and Coryell counties, some addresses near Moody are not in McLennan County at all. Give your full address when you call so you are connected with a provider who covers your exact location.',
+        text: 'Because 76557 crosses into Bell and Coryell counties, some addresses near Moody are not in McLennan County at all. Give your full address when you call so it reaches a technician who covers your exact location.',
       },
       {
         heading: 'Moody ISD families',
-        text: 'Family homes run the washer, dryer and dishwasher every day. Long dry times, a washer that thumps on spin or dishes that come out gritty are early signs worth a call before they turn into a bigger repair.',
+        text: 'Moody family homes put the laundry and the dishwasher through daily school-year loads. A washer that thumps, a dryer that runs long or a dishwasher that leaves grit are the early signs worth a call.',
       },
     ],
     sections: [
@@ -1437,7 +1638,7 @@ export const areas: Area[] = [
         accent: 'Check these first.',
         paragraphs: [
           'Make sure the ice maker is switched on and the shutoff arm or sensor is not stuck in the full position. Check that the freezer is cold enough, usually around 0°F, since many ice makers stop below a certain temperature. If you recently changed the water filter, reseat it, as a filter that is not fully locked in can block water flow.',
-          'If ice is still not forming, the problem is often a failed water inlet valve, a frozen fill tube or the ice maker assembly itself. Those are common repairs, so call with the model number ready to be connected with a local pro.',
+          'If ice is still not forming, the problem is often a failed water inlet valve, a frozen fill tube or the ice maker assembly itself. Those are common repairs, so have the model number ready when you call.',
         ],
       },
       {
@@ -1459,22 +1660,24 @@ export const areas: Area[] = [
         ],
       },
       {
-        heading: 'How getting connected works',
-        accent: 'in Moody.',
+        heading: 'Calling from Moody',
+        accent: 'after the checks.',
         paragraphs: [
-          'Call the number on this page with your address, the appliance, the brand and what it is doing. Appliance Repair Temple is a free referral service, and the call connects you with an independent local appliance repair pro who serves Moody and the 76557 area.',
-          'Each provider sets their own schedule and prices, and Moody can be a longer drive, so ask on that call when they can come out, how they charge for the visit and the repair, and whether they carry insurance and any license the work requires. Ask about any warranty on parts and labor before work starts.',
-          'The most common appliance problems here are refrigerators and freezers that stop cooling, washers that will not drain or spin, dryers that run without heat, dishwashers that leave dishes dirty and ovens that will not heat. On any dryer repair, ask for the vent to be checked too.',
+          'Tell the line which of the checks above you already tried. Knowing that the filter is seated, the coils are clean and the dial is right lets the technician skip ahead. Give the 76557 address, the county, the brand and model, and whether the unit is in the house, the garage or a barn.',
+          'Moody is a longer drive up Highway 317, and every provider sets their own timing and rates. Ask when they can come, how the trip and the repair are priced, whether they are insured and hold the license the work needs, and what warranty covers parts and labor.',
+          'On a dryer call, say whether an LG flow code or long drying times are involved, since that often means the vent needs attention along with the dryer.',
         ],
       },
     ],
     zips: ['76557'],
     zipsVerified: true,
+    zipNote:
+      'Moody’s 76557 covers about 123 square miles across McLennan, Bell and Coryell counties, out past Mother Neff State Park. Give the county with your address.',
     nearby: ['Troy', 'Belton', "Morgan's Point Resort", 'Holland', 'Little River-Academy'],
     faqs: [
       {
-        q: 'Can I get emergency appliance repair in Moody?',
-        a: 'Emergency help may be available from local providers. A refrigerator or freezer warming up with food inside, a washer or dishwasher leaking, or an appliance that smells like burning is worth an urgent call. Say it is urgent when you call. Until a technician arrives, close the water valve on a leak, keep a warm fridge or freezer closed and switch off the breaker for anything that smells hot.',
+        q: 'What counts as emergency appliance repair around Moody?',
+        a: 'A split hose or line leaking after a freeze, a fridge or barn freezer warming with food inside, or anything that smells like burning or gas. Make it clear it is urgent. Close the valves, keep cold storage shut and switch off the breaker for anything hot.',
       },
       {
         q: 'Why is my refrigerator not cooling?',
@@ -1482,38 +1685,45 @@ export const areas: Area[] = [
       },
       {
         q: 'Is appliance repair available outside Moody city limits?',
-        a: 'Local pros serve the 76557 ZIP code, which includes parts of McLennan, Bell and Coryell counties. Give your full address when you call so you are connected with a provider who covers it.',
+        a: 'Yes, across the 76557 ZIP code, which includes parts of McLennan, Bell and Coryell counties. Give your full address and county when you call so it reaches a technician who works there.',
       },
       {
-        q: 'Moody is in McLennan County. Can I still get connected with a pro from the Temple area?',
-        a: 'Yes. Moody sits up Highway 317 from Temple, and local appliance repair pros serve the area. Call with your address and you are connected with an independent provider who covers it. Ask about their availability on that call.',
+        q: 'Moody is in McLennan County. Can a Temple-area technician still come out?',
+        a: 'Yes. Moody sits up Highway 317 from Temple, and Temple-area technicians work there. Call with your address and one call puts you in touch with a local appliance repair pro who covers it. When they can come is the next question to ask.',
       },
       {
         q: 'My washer hose split after a freeze. What should I do?',
-        a: 'Shut off the water supply valves behind the washer, unplug it and dry the area. Then call to be connected with a local pro. Do not run the washer until the hose and connections have been checked.',
+        a: 'Shut off the water supply valves behind the washer, unplug it and dry the area. Then call with the brand and model. Do not run the washer until the hose and connections have been checked.',
       },
       {
         q: 'My ice maker stopped. Is it worth repairing?',
         a: 'Usually. Inlet valves, fill tubes and ice maker assemblies are common, reasonable repairs. Check that the ice maker is on and the filter is seated first.',
       },
       {
-        q: 'Can freezers and fridges in shops and barns be repaired?',
-        a: 'Yes. Make sure the technician can reach the back of the unit and the outlet, and mention any gates when you call.',
+        q: 'Can a freezer in my Moody barn be repaired?',
+        a: 'In most cases. Relays, fans and defrost parts are typical fixes for barn and shop units. Make the outlet and the back of the freezer easy to reach, and mention any cattle gate on the call.',
       },
       {
         q: 'Which appliances can be repaired in Moody?',
-        a: 'Local appliance repair pros work on refrigerators, freezers, washers, dryers, dishwashers, ovens, ranges, cooktops and over-the-range microwaves, across the major brands.',
+        a: 'Refrigerators, ice makers, upright and chest freezers, washers, dryers, dishwashers, ovens, ranges, cooktops and over-the-range microwaves, in town and on ranch properties across the three counties 76557 touches.',
       },
       {
-        q: 'What happens if a part has to be ordered?',
-        a: 'Many common parts can be replaced on the first visit. Some are model-specific and have to be ordered. Ask the technician whether that is the case, how long the part usually takes and what the next visit involves.',
+        q: 'What if a part for my Moody repair has to be ordered?',
+        a: 'Inlet valves, fill tubes and relays can often be replaced on the first visit; ice maker assemblies and boards for some models may need ordering. Ask how long the part usually takes and what the return trip up Highway 317 involves.',
       },
       {
         q: 'How much does appliance repair in Moody cost?',
-        a: 'It depends on the appliance, the part and the provider, so this site does not list prices. When you are connected with a local pro, ask how they price the visit and the repair, and have the brand and model number ready.',
+        a: 'Prices are set by each technician, so this site lists none. The drive, the part and the appliance all factor in. Ask how the trip, the visit and the repair are priced, and mention which checks you already tried.',
       },
     ],
     featuredServices: ['refrigerator', 'washer', 'dryer', 'freezer'],
+    servicesNote:
+      'Each appliance below is repaired in Moody homes and barns. Open one for its common problems and quick checks, like the ones above for ice makers and dishwashers.',
+    finalCta: {
+      title: 'Tried the checks in Moody?',
+      accent: 'Then make the call.',
+      text: 'Give the 76557 address, the county and what you already ruled out, and you are put in touch with a technician who works up Highway 317.',
+    },
   },
 ];
 
