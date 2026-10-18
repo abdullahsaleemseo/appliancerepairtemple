@@ -33,7 +33,7 @@ Source: `src/content/brands.ts` (lg entry). Page copy below is exported from the
 | Field | Value |
 |---|---|
 | Title tag (55 chars) | LG Appliance Repair Temple TX \| Fridges, Washers, Dryers |
-| Meta description (158 chars) | LG fridge not cooling, washer error code or dryer not heating? Independent LG appliance repair in Temple, TX. Same-day service available. Call (254) 555-0147. |
+| Meta description (158 chars) | LG fridge not cooling, washer error code or dryer not heating? Independent LG appliance repair in Temple, TX. Same-day service available. Call (254) 615-2088. |
 | URL slug | `/brands/lg-appliance-repair-temple-tx/` |
 | H1 (one only) | Independent LG Appliance Repair in Temple, TX |
 
@@ -45,7 +45,7 @@ Source: `src/content/brands.ts` (lg entry). Page copy below is exported from the
 
 LG refrigerator warming up, washer stopping with a code or dryer running cold? Appliance Repair Temple repairs LG refrigerators, washers, dryers, ranges, dishwashers and over-the-range microwaves in homes across Temple, TX. Same-day service is available, subject to technician availability, location, and current demand.
 
-Call (254) 555-0147 Request Service
+Call (254) 615-2088 Request Service
 
 - Licensed & Insured
 - Same-Day Service
@@ -104,7 +104,7 @@ A minute of prep helps the technician bring the right parts and often saves a se
 - For refrigerators: the purchase date, so you can check LG’s compressor coverage.
 - Gas or electric, for dryers and ranges.
 - Whether the appliance is still under any LG warranty.
-Call (254) 555-0147
+Call (254) 615-2088
 
 | Appliance | Usually found |
 |---|---|
@@ -174,7 +174,7 @@ Trademark notice: LG is a trademark of its respective owner. Appliance Repair Te
 
 Call and talk to a real person, or send a quick request and we will call you back.
 
-Call (254) 555-0147
+Call (254) 615-2088
 
 Phones answered Monday to Saturday, 8:00 AM to 8:00 PM.
 
@@ -211,7 +211,7 @@ Do not use LG logos or official product photography.
 
 ## 7. CTA copy
 
-Call (254) 555-0147 · Request Service · Speak with our team about your appliance issue · Call to discuss your repair needs
+Call (254) 615-2088 · Request Service · Speak with our team about your appliance issue · Call to discuss your repair needs
 
 ## 8. Verification checklist
 

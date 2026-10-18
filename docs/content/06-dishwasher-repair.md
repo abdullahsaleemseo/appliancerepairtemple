@@ -37,7 +37,7 @@ Source: `src/content/services.ts` (dishwasher entry and its `blocks`). Page copy
 | Field | Value |
 |---|---|
 | Title tag (50 chars) | Dishwasher Repair Temple TX \| Built-In Dishwashers |
-| Meta description (148 chars) | Dishwasher not draining, leaking or leaving dishes dirty? Built-in dishwasher repair in Temple, TX. Same-day service available. Call (254) 555-0147. |
+| Meta description (148 chars) | Dishwasher not draining, leaking or leaving dishes dirty? Built-in dishwasher repair in Temple, TX. Same-day service available. Call (254) 615-2088. |
 | URL slug | `/dishwasher-repair-temple-tx/` |
 | H1 (one only) | Built-In Dishwasher Repair in Temple, TX |
 
@@ -49,7 +49,7 @@ Source: `src/content/services.ts` (dishwasher entry and its `blocks`). Page copy
 
 Standing water in the bottom, gritty dishes or a puddle under the door? Appliance Repair Temple repairs built-in dishwashers in homes across Temple, TX, from basic models to third-rack machines with front or hidden top controls. Same-day service is available, subject to technician availability, location, and current demand.
 
-Call (254) 555-0147 Request Service
+Call (254) 615-2088 Request Service
 
 - Licensed & Insured
 - Same-Day Service
@@ -185,7 +185,7 @@ Safety
 - The door will not latch but the dishwasher still tries to run.
 Shut off the dishwasher breaker and the hot water valve under the sink before touching anything wet.
 
-Call (254) 555-0147
+Call (254) 615-2088
 
 ## How a dishwasher repair visit works
 
@@ -274,13 +274,13 @@ Open the door and look along the top or side edge of the door, or on the tub fra
 
 Flexible Payment Options Available
 
-Call for service details: (254) 555-0147
+Call for service details: (254) 615-2088
 
 ## Dishwasher acting up? Let’s take a look.
 
 Speak with our team about your appliance issue, or send a quick request and we will call you back.
 
-Call (254) 555-0147
+Call (254) 615-2088
 
 Phones answered Monday to Saturday, 8:00 AM to 8:00 PM.
 
@@ -319,7 +319,7 @@ Service (Dishwasher repair), BreadcrumbList, FAQPage (7 visible FAQs). LocalBusi
 
 ## 7. CTA copy
 
-Call (254) 555-0147 · Request Service · Request dishwasher repair · Speak with our team about your appliance issue · Call to discuss your repair needs · Call for service details
+Call (254) 615-2088 · Request Service · Request dishwasher repair · Speak with our team about your appliance issue · Call to discuss your repair needs · Call for service details
 
 ## 8. Verification checklist
 

@@ -137,7 +137,7 @@ This article is general guidance. Appliances differ by model; check your ownerâ€
 
 Call and talk to a real person, or send a quick request and we will call you back.
 
-Call (254) 555-0147
+Call (254) 615-2088
 
 Phones answered Monday to Saturday, 8:00 AM to 8:00 PM.
 

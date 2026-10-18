@@ -107,7 +107,7 @@ If we change this policy, we will update the date at the top of this page.
 
 ## Contact
 
-Questions about this policy: call (254) 555-0147 or email service@appliancerepairtemple.com .
+Questions about this policy: call (254) 615-2088 or email service@appliancerepairtemple.com .
 
 
 ---
@@ -158,7 +158,7 @@ These terms are governed by the laws of the State of Texas.
 
 ## Contact
 
-Questions about these terms: (254) 555-0147 .
+Questions about these terms: (254) 615-2088 .
 
 
 ---
@@ -181,7 +181,7 @@ We want everyone to be able to use this website and request a repair, including 
 - Motion is reduced when your device asks for it.
 ## Need help or found a problem?
 
-If something on the site does not work for you, call (254) 555-0147 and we will take your request by phone. Please also tell us what went wrong so we can fix it.
+If something on the site does not work for you, call (254) 615-2088 and we will take your request by phone. Please also tell us what went wrong so we can fix it.
 
 ## Known limits
 

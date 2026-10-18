@@ -49,7 +49,7 @@ Need appliance repair in Belton? Appliance Repair Temple fixes refrigerators, fr
 
 Belton visits are usually scheduled alongside our south and west Temple routes, so availability tends to track Temple’s. Call to confirm the earliest open time for your address.
 
-Call (254) 555-0147 Request Service
+Call (254) 615-2088 Request Service
 
 - Licensed & Insured
 - Same-Day Service
@@ -176,7 +176,7 @@ Appliance repair in Temple Morgan's Point Resort Appliance repair in Harker Heig
 
 Call and talk to a real person, or send a quick request and we will call you back.
 
-Call (254) 555-0147
+Call (254) 615-2088
 
 Phones answered Monday to Saturday, 8:00 AM to 8:00 PM.
 
@@ -212,7 +212,7 @@ Service (Appliance repair, Belton), BreadcrumbList, FAQPage (9 visible FAQs). No
 
 ## 7. CTA copy
 
-Call (254) 555-0147 · Request Service · Call to confirm the earliest open time for your address · Call to discuss your repair needs
+Call (254) 615-2088 · Request Service · Call to confirm the earliest open time for your address · Call to discuss your repair needs
 
 ## 8. Verification checklist
 

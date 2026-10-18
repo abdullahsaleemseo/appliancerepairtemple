@@ -35,7 +35,7 @@ The fastest way onto the schedule is a phone call. You reach a person, describe 
 
 ## Call
 
-(254) 555-0147 [REPLACE PHONE BEFORE LAUNCH]
+(254) 615-2088 [REPLACE PHONE BEFORE LAUNCH]
 
 Same-day service is available, subject to technician availability, location, and current demand. Typical response: about 60 minutes.
 
@@ -153,7 +153,7 @@ None needed. The phone number and form are the focus. A real photo of the techni
 
 ## 7. CTA copy
 
-Call (254) 555-0147 · Send us a request · Request a Callback · More questions and answers
+Call (254) 615-2088 · Send us a request · Request a Callback · More questions and answers
 
 ## 8. Verification checklist
 

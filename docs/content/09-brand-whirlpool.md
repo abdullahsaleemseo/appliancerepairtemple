@@ -30,7 +30,7 @@ Source: `src/content/brands.ts` (whirlpool entry). Template: `src/app/brands/[br
 | Field | Value |
 |---|---|
 | Title tag (52 chars) | Whirlpool Appliance Repair Temple TX \| Local Service |
-| Meta description (160 chars) | Whirlpool washer, dryer, fridge, dishwasher or range acting up? Local Whirlpool appliance repair in Temple, TX. Same-day service available. Call (254) 555-0147. |
+| Meta description (160 chars) | Whirlpool washer, dryer, fridge, dishwasher or range acting up? Local Whirlpool appliance repair in Temple, TX. Same-day service available. Call (254) 615-2088. |
 | URL slug | `/brands/whirlpool-appliance-repair-temple-tx/` |
 | H1 (one only) | Local Whirlpool Appliance Repair in Temple, TX |
 
@@ -42,7 +42,7 @@ Source: `src/content/brands.ts` (whirlpool entry). Template: `src/app/brands/[br
 
 Whirlpool washer stuck mid-cycle, dryer blowing cold or refrigerator warming up? Appliance Repair Temple repairs Whirlpool washers, dryers, refrigerators, dishwashers, ranges and over-the-range microwaves in homes across Temple, TX. Same-day service is available, subject to technician availability, location, and current demand.
 
-Call (254) 555-0147 Request Service
+Call (254) 615-2088 Request Service
 
 - Licensed & Insured
 - Same-Day Service
@@ -101,7 +101,7 @@ A minute of prep helps the technician bring the right parts and often saves a se
 - What it is doing, and any error code or flashing light pattern.
 - Roughly how old it is, and whether it is still under the manufacturer’s warranty.
 - Your ZIP code and a good time for a visit.
-Call (254) 555-0147
+Call (254) 615-2088
 
 | Appliance | Usually found |
 |---|---|
@@ -172,7 +172,7 @@ Trademark notice: Whirlpool is a trademark of its respective owner. Appliance Re
 
 Call and talk to a real person, or send a quick request and we will call you back.
 
-Call (254) 555-0147
+Call (254) 615-2088
 
 Phones answered Monday to Saturday, 8:00 AM to 8:00 PM.
 
@@ -209,7 +209,7 @@ Do not use Whirlpool logos or official product photography.
 
 ## 7. CTA copy
 
-Call (254) 555-0147 · Request Service · Speak with our team about your appliance issue · Call to discuss your repair needs
+Call (254) 615-2088 · Request Service · Speak with our team about your appliance issue · Call to discuss your repair needs
 
 ## 8. Verification checklist
 

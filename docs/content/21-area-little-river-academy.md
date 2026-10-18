@@ -44,7 +44,7 @@ Appliance Repair Temple repairs refrigerators, freezers, washers, dryers, dishwa
 
 Little River-Academy visits are usually grouped with our south and east Temple routes along Highway 95. Call to confirm the earliest open time for your address. [CONFIRM SCHEDULING]
 
-Call (254) 555-0147 Request Service
+Call (254) 615-2088 Request Service
 
 - Licensed & Insured
 - Same-Day Service
@@ -175,7 +175,7 @@ Appliance repair in Temple Holland Rogers Appliance repair in Troy Appliance rep
 
 Call and talk to a real person, or send a quick request and we will call you back.
 
-Call (254) 555-0147
+Call (254) 615-2088
 
 Phones answered Monday to Saturday, 8:00 AM to 8:00 PM.
 
@@ -211,7 +211,7 @@ Service (Appliance repair, Little River-Academy), BreadcrumbList, FAQPage (8 vis
 
 ## 7. CTA copy
 
-Call (254) 555-0147 · Request Service · Call to confirm the earliest open time for your address · Call to discuss your repair needs
+Call (254) 615-2088 · Request Service · Call to confirm the earliest open time for your address · Call to discuss your repair needs
 
 ## 8. Verification checklist
 

@@ -43,7 +43,7 @@ Source: `src/content/brands.ts` (bosch entry). Page copy below is exported from 
 
 Bosch dishwasher showing an error code, leaving water in the tub or not drying? Appliance Repair Temple repairs Bosch dishwashers, refrigerators and ranges in homes across Temple, TX. Same-day service is available, subject to technician availability, location, and current demand.
 
-Call (254) 555-0147 Request Service
+Call (254) 615-2088 Request Service
 
 - Licensed & Insured
 - Same-Day Service
@@ -99,7 +99,7 @@ A minute of prep helps the technician bring the right parts and often saves a se
 - Whether water is leaking onto the floor or only standing in the tub.
 - For ranges: gas, electric or induction.
 - Whether the appliance is still under Bosch’s warranty.
-Call (254) 555-0147
+Call (254) 615-2088
 
 | Appliance | Usually found |
 |---|---|
@@ -167,7 +167,7 @@ Trademark notice: Bosch is a trademark of its respective owner. Appliance Repair
 
 Call and talk to a real person, or send a quick request and we will call you back.
 
-Call (254) 555-0147
+Call (254) 615-2088
 
 Phones answered Monday to Saturday, 8:00 AM to 8:00 PM.
 
@@ -195,7 +195,7 @@ Service (Bosch appliance repair), BreadcrumbList, FAQPage (6 visible FAQs). No r
 
 ## 7. CTA copy
 
-Call (254) 555-0147 · Request Service · Call to discuss your repair needs
+Call (254) 615-2088 · Request Service · Call to discuss your repair needs
 
 ## 8. Verification checklist
 

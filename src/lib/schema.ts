@@ -10,6 +10,19 @@ export function websiteSchema() {
     '@id': `${site.url}/#website`,
     name: site.brandName,
     url: site.url,
+    publisher: {
+      '@type': 'Organization',
+      name: site.brandName,
+      url: site.url,
+      logo: `${site.url}/brand/logo-on-light.svg`,
+      contactPoint: {
+        '@type': 'ContactPoint',
+        telephone: site.phone.value.e164,
+        contactType: 'appliance repair referrals',
+        areaServed: 'US-TX',
+        availableLanguage: 'English',
+      },
+    },
   };
 }
 
@@ -49,7 +62,13 @@ export function articleSchema(opts: { title: string; description: string; path: 
     dateModified: opts.updated,
     ...(opts.image ? { image: absoluteUrl(opts.image) } : {}),
     author: { '@type': 'Organization', name: site.brandName, url: site.url },
-    publisher: { '@type': 'Organization', name: site.brandName, url: site.url, logo: `${site.url}/brand/logo-on-light.svg` },
+    publisher: {
+      '@type': 'Organization',
+      name: site.brandName,
+      url: site.url,
+      logo: `${site.url}/brand/logo-on-light.svg`,
+      contactPoint: { '@type': 'ContactPoint', telephone: site.phone.value.e164, contactType: 'appliance repair referrals' },
+    },
   };
 }
 

@@ -37,7 +37,7 @@ Source: `src/content/services.ts` (washer entry and its `blocks`). Page copy bel
 | Field | Value |
 |---|---|
 | Title tag (47 chars) | Washer Repair Temple TX \| Top-Load & Front-Load |
-| Meta description (156 chars) | Washer won't drain, spin or stop leaking? Washer repair in Temple, TX for top-load and front-load machines. Same-day service available. Call (254) 555-0147. |
+| Meta description (156 chars) | Washer won't drain, spin or stop leaking? Washer repair in Temple, TX for top-load and front-load machines. Same-day service available. Call (254) 615-2088. |
 | URL slug | `/washer-repair-temple-tx/` |
 | H1 (one only) | Top-Load & Front-Load Washer Repair in Temple, TX |
 
@@ -49,7 +49,7 @@ Source: `src/content/services.ts` (washer entry and its `blocks`). Page copy bel
 
 Washer stuck full of water, refusing to spin or leaking across the laundry room floor? Appliance Repair Temple repairs top-load and front-load washing machines in homes across Temple, TX, including stacked laundry centers and high-efficiency models. Same-day service is available, subject to technician availability, location, and current demand.
 
-Call (254) 555-0147 Request Service
+Call (254) 615-2088 Request Service
 
 - Licensed & Insured
 - Same-Day Service
@@ -157,7 +157,7 @@ Safety
 - The breaker trips when the washer starts or switches to spin.
 If water reached the outlet or wiring, switch off the breaker before you touch the washer or the cord.
 
-Call (254) 555-0147
+Call (254) 615-2088
 
 ## Keep your washer out of trouble
 
@@ -254,13 +254,13 @@ On top-loaders, look under the lid or on the back of the control panel. On front
 
 Flexible Payment Options Available
 
-Call for service details: (254) 555-0147
+Call for service details: (254) 615-2088
 
 ## Washer acting up? Let’s take a look.
 
 Speak with our team about your appliance issue, or send a quick request and we will call you back.
 
-Call (254) 555-0147
+Call (254) 615-2088
 
 Phones answered Monday to Saturday, 8:00 AM to 8:00 PM.
 
@@ -299,7 +299,7 @@ Service (Washer repair), BreadcrumbList, FAQPage (7 visible FAQs). LocalBusiness
 
 ## 7. CTA copy
 
-Call (254) 555-0147 · Request Service · Request washer repair · Speak with our team about your appliance issue · Call to discuss your repair needs · Call for service details
+Call (254) 615-2088 · Request Service · Request washer repair · Speak with our team about your appliance issue · Call to discuss your repair needs · Call for service details
 
 ## 8. Verification checklist
 

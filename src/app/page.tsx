@@ -18,7 +18,6 @@ import { FindUsOnline } from '@/components/FindUsOnline';
 import { Section, SectionHeading } from '@/components/Section';
 import { ServicesGrid } from '@/components/ServicesGrid';
 import { TrustBadges } from '@/components/TrustBadges';
-import { websiteSchema } from '@/lib/schema';
 import { pageMetadata } from '@/lib/seo';
 
 export const metadata = pageMetadata({
@@ -148,7 +147,6 @@ const pickerItems = services.map((s) => ({
 export default function HomePage() {
   return (
     <>
-      <JsonLd data={websiteSchema()} />
 
       {/* Hero */}
       <section className="grain relative overflow-hidden bg-ink">

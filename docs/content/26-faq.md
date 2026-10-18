@@ -39,7 +39,7 @@ Source: `src/app/faq/page.tsx` (layout) and `src/content/faqs.ts` (`faqGroups`).
 
 These are the questions people in Temple and the nearby towns ask us most, from booking a visit to deciding whether an old appliance is worth fixing. If yours is not here, call and ask.
 
-Call (254) 555-0147 Request Service
+Call (254) 615-2088 Request Service
 
 ## Booking and scheduling
 
@@ -157,7 +157,7 @@ It can be. Lint buildup is a leading cause of dryer fires. Stop the dryer, clean
 
 Call and talk to a real person, or send a quick request and we will call you back.
 
-Call (254) 555-0147
+Call (254) 615-2088
 
 Phones answered Monday to Saturday, 8:00 AM to 8:00 PM.
 
@@ -187,7 +187,7 @@ None needed. The page is text-first; a photo would push answers down.
 
 ## 7. CTA copy
 
-Call (254) 555-0147 · Request Service · If yours is not here, call and ask · Call to discuss your repair needs
+Call (254) 615-2088 · Request Service · If yours is not here, call and ask · Call to discuss your repair needs
 
 ## 8. Verification checklist
 

@@ -39,7 +39,7 @@ Source: `src/content/services.ts` (refrigerator entry, including its `blocks` or
 | Field | Value |
 |---|---|
 | Title tag (48 chars) | Refrigerator Repair Temple TX \| Same-Day Service |
-| Meta description (154 chars) | Refrigerator not cooling, leaking or icing up? Same-day refrigerator repair in Temple, TX, subject to availability. All major brands. Call (254) 555-0147. |
+| Meta description (154 chars) | Refrigerator not cooling, leaking or icing up? Same-day refrigerator repair in Temple, TX, subject to availability. All major brands. Call (254) 615-2088. |
 | URL slug | `/refrigerator-repair-temple-tx/` |
 | H1 (one only) | Same-Day Refrigerator Repair in Temple, TX |
 | Keyword placement | Title, H1, meta description, first sentence, symptom checker heading, brands heading, FAQ heading |
@@ -218,7 +218,7 @@ Flexible Payment Options Available · Call for service details
 
 ## 9. CTA copy
 
-- Call (254) 555-0147
+- Call (254) 615-2088
 - Request Service / Request refrigerator repair
 - Speak with our team about your appliance issue
 - Call to discuss your repair needs

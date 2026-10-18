@@ -42,7 +42,7 @@ Source: `src/content/brands.ts` (electrolux entry). Page copy below is exported 
 
 Electrolux washer stopping with a code, dryer taking too long or refrigerator warming up? Appliance Repair Temple repairs Electrolux front-load washers, dryers, refrigerators, freezers, ranges and dishwashers in homes across Temple, TX. Same-day service is available, subject to technician availability, location, and current demand.
 
-Call (254) 555-0147 Request Service
+Call (254) 615-2088 Request Service
 
 - Licensed & Insured
 - Same-Day Service
@@ -101,7 +101,7 @@ A minute of prep helps the technician bring the right parts and often saves a se
 - For washers: whether you have cleaned the pump filter, and which detergent you use.
 - Gas or electric, for dryers and ranges.
 - Whether the appliance is still under Electrolux’s warranty.
-Call (254) 555-0147
+Call (254) 615-2088
 
 | Appliance | Usually found |
 |---|---|
@@ -171,7 +171,7 @@ Trademark notice: Electrolux is a trademark of its respective owner. Appliance R
 
 Call and talk to a real person, or send a quick request and we will call you back.
 
-Call (254) 555-0147
+Call (254) 615-2088
 
 Phones answered Monday to Saturday, 8:00 AM to 8:00 PM.
 
@@ -199,7 +199,7 @@ Service (Electrolux appliance repair), BreadcrumbList, FAQPage (6 visible FAQs).
 
 ## 7. CTA copy
 
-Call (254) 555-0147 · Request Service · Call to discuss your repair needs
+Call (254) 615-2088 · Request Service · Call to discuss your repair needs
 
 ## 8. Verification checklist
 

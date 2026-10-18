@@ -37,7 +37,7 @@ Source: `src/content/services.ts` (oven entry and its `blocks`). Page copy below
 | Field | Value |
 |---|---|
 | Title tag (50 chars) | Oven & Stove Repair Temple TX \| Ranges & Cooktops |
-| Meta description (151 chars) | Oven not heating or a burner won't light? Electric and gas oven, stove and range repair in Temple, TX. Same-day service available. Call (254) 555-0147. |
+| Meta description (151 chars) | Oven not heating or a burner won't light? Electric and gas oven, stove and range repair in Temple, TX. Same-day service available. Call (254) 615-2088. |
 | URL slug | `/oven-stove-repair-temple-tx/` |
 | H1 (one only) | Oven, Stove & Range Repair in Temple, TX |
 
@@ -49,7 +49,7 @@ Source: `src/content/services.ts` (oven entry and its `blocks`). Page copy below
 
 Oven will not heat, bakes unevenly or a burner will not light? Appliance Repair Temple repairs ovens, stoves, ranges, wall ovens and cooktops in homes across Temple, TX, electric and gas. Same-day service is available, subject to technician availability, location, and current demand.
 
-Call (254) 555-0147 Request Service
+Call (254) 615-2088 Request Service
 
 - Licensed & Insured
 - Same-Day Service
@@ -70,7 +70,7 @@ Most oven and stove problems are an inconvenience. These are not.
 - The breaker trips when the oven or a burner turns on.
 Gas valves, regulators and gas line connections are not do-it-yourself jobs.
 
-Call (254) 555-0147
+Call (254) 615-2088
 
 ## Oven problems and cooktop problems come from different parts
 
@@ -224,7 +224,7 @@ Appliance Repair Temple is an independent repair service and is not affiliated w
 
 Flexible Payment Options Available
 
-Call for service details: (254) 555-0147
+Call for service details: (254) 615-2088
 
 ## Oven & Stove repair questions
 
@@ -260,7 +260,7 @@ Pull out the storage drawer or open the oven door and look along the frame. On w
 
 Speak with our team about your appliance issue, or send a quick request and we will call you back.
 
-Call (254) 555-0147
+Call (254) 615-2088
 
 Phones answered Monday to Saturday, 8:00 AM to 8:00 PM.
 
@@ -299,7 +299,7 @@ Service (Oven & stove repair), BreadcrumbList, FAQPage (7 visible FAQs). LocalBu
 
 ## 7. CTA copy
 
-Call (254) 555-0147 · Request Service · Request oven & stove repair · Speak with our team about your appliance issue · Call to discuss your repair needs · Call for service details
+Call (254) 615-2088 · Request Service · Request oven & stove repair · Speak with our team about your appliance issue · Call to discuss your repair needs · Call for service details
 
 ## 8. Verification checklist
 

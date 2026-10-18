@@ -44,7 +44,7 @@ Appliance Repair Temple repairs refrigerators, freezers, washers, dryers, dishwa
 
 Nolanville sits on I-14 between Belton and Harker Heights, so visits are usually grouped with those routes. Call to confirm the earliest open time for your address. [CONFIRM SCHEDULING]
 
-Call (254) 555-0147 Request Service
+Call (254) 615-2088 Request Service
 
 - Licensed & Insured
 - Same-Day Service
@@ -177,7 +177,7 @@ Appliance repair in Temple Appliance repair in Harker Heights Appliance repair i
 
 Call and talk to a real person, or send a quick request and we will call you back.
 
-Call (254) 555-0147
+Call (254) 615-2088
 
 Phones answered Monday to Saturday, 8:00 AM to 8:00 PM.
 
@@ -215,7 +215,7 @@ Service (Appliance repair, Nolanville), BreadcrumbList, FAQPage (8 visible FAQs)
 
 ## 7. CTA copy
 
-Call (254) 555-0147 · Request Service · Call to confirm the earliest open time for your address · Call to discuss your repair needs
+Call (254) 615-2088 · Request Service · Call to confirm the earliest open time for your address · Call to discuss your repair needs
 
 ## 8. Verification checklist
 

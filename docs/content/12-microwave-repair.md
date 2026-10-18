@@ -33,7 +33,7 @@ Source: `src/content/services.ts` (microwave entry and its `blocks`). Page copy 
 | Field | Value |
 |---|---|
 | Title tag (54 chars) | Microwave Repair Temple TX \| Over-the-Range & Built-In |
-| Meta description (148 chars) | Over-the-range or built-in microwave not heating, sparking or dead? Microwave repair in Temple, TX. Same-day service available. Call (254) 555-0147. |
+| Meta description (148 chars) | Over-the-range or built-in microwave not heating, sparking or dead? Microwave repair in Temple, TX. Same-day service available. Call (254) 615-2088. |
 | URL slug | `/microwave-repair-temple-tx/` |
 | H1 (one only) | Over-the-Range & Built-In Microwave Repair in Temple, TX |
 
@@ -45,7 +45,7 @@ Source: `src/content/services.ts` (microwave entry and its `blocks`). Page copy 
 
 Microwave running but not heating, sparking inside or completely dead? Appliance Repair Temple repairs over-the-range and built-in microwaves in homes across Temple, TX, including the vent fan and light on over-the-range models. Same-day service is available, subject to technician availability, location, and current demand.
 
-Call (254) 555-0147 Request Service
+Call (254) 615-2088 Request Service
 
 - Licensed & Insured
 - Same-Day Service
@@ -80,7 +80,7 @@ Safety
 - The breaker trips when it starts heating.
 Do not try to repair it yourself. A microwave’s high-voltage capacitor can hold a dangerous charge after the unit is unplugged.
 
-Call (254) 555-0147
+Call (254) 615-2088
 
 ## Why microwave repair is not a do-it-yourself job
 
@@ -253,13 +253,13 @@ Open the door and look on the frame around the opening or on the inside of the d
 
 Flexible Payment Options Available
 
-Call for service details: (254) 555-0147
+Call for service details: (254) 615-2088
 
 ## Microwave acting up? Let’s take a look.
 
 Speak with our team about your appliance issue, or send a quick request and we will call you back.
 
-Call (254) 555-0147
+Call (254) 615-2088
 
 Phones answered Monday to Saturday, 8:00 AM to 8:00 PM.
 
@@ -296,7 +296,7 @@ Service (Microwave repair), BreadcrumbList, FAQPage (8 visible FAQs). LocalBusin
 
 ## 7. CTA copy
 
-Call (254) 555-0147 · Request Service · Request microwave repair · Speak with our team about your appliance issue · Call to discuss your repair needs
+Call (254) 615-2088 · Request Service · Request microwave repair · Speak with our team about your appliance issue · Call to discuss your repair needs
 
 ## 8. Verification checklist
 

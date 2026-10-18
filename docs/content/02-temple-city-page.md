@@ -53,7 +53,7 @@ Source file: `src/app/appliance-repair-temple-tx/page.tsx` (FAQs in `src/content
 
 Appliance Repair Temple sends a technician to homes across Temple, Texas to fix refrigerators, freezers, washers, dryers, dishwashers, ovens and ranges. We cover every Temple ZIP code, from the Historic District and Western Hills to the newer neighborhoods along West Adams Avenue, Monday to Saturday, 8:00 AM to 8:00 PM. Same-day appointments are available, subject to technician availability, location, and current demand.
 
-Buttons: Call (254) 555-0147 · Request Service
+Buttons: Call (254) 615-2088 · Request Service
 Trust strip: Licensed & Insured · Same-Day Service · 4+ Years of Experience · 4.9 Average Rating
 
 ### H2: A broken appliance, handled locally.
@@ -191,7 +191,7 @@ Speak with our team about your appliance issue, or send a quick request and we w
 
 ## 8. CTA copy used
 
-- Call (254) 555-0147
+- Call (254) 615-2088
 - Request Service
 - Speak with our team about your appliance issue
 - Call for service details

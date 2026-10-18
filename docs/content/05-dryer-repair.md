@@ -37,7 +37,7 @@ Source: `src/content/services.ts` (dryer entry and its `blocks`). Page copy belo
 | Field | Value |
 |---|---|
 | Title tag (46 chars) | Dryer Repair Temple TX \| Electric & Gas Dryers |
-| Meta description (156 chars) | Dryer not heating, taking forever or squealing? Electric and gas dryer repair in Temple, TX. Same-day service, subject to availability. Call (254) 555-0147. |
+| Meta description (156 chars) | Dryer not heating, taking forever or squealing? Electric and gas dryer repair in Temple, TX. Same-day service, subject to availability. Call (254) 615-2088. |
 | URL slug | `/dryer-repair-temple-tx/` |
 | H1 (one only) | Electric & Gas Dryer Repair in Temple, TX |
 
@@ -49,7 +49,7 @@ Source: `src/content/services.ts` (dryer entry and its `blocks`). Page copy belo
 
 Dryer running but the clothes come out damp? Taking two or three cycles to dry a load? Appliance Repair Temple repairs electric and gas dryers in homes across Temple, TX, including stacked laundry centers. Same-day service is available, subject to technician availability, location, and current demand.
 
-Call (254) 555-0147 Request Service
+Call (254) 615-2088 Request Service
 
 - Licensed & Insured
 - Same-Day Service
@@ -165,7 +165,7 @@ Safety
 - You smell gas near a gas dryer. Leave the house first and call your gas utility from outside.
 Never run a dryer without the lint screen in place, and never vent a gas dryer indoors.
 
-Call (254) 555-0147
+Call (254) 615-2088
 
 ## Dryer vents: the hidden cause behind many dryer calls
 
@@ -231,7 +231,7 @@ Appliance Repair Temple is an independent repair service and is not affiliated w
 
 Flexible Payment Options Available
 
-Call for service details: (254) 555-0147
+Call for service details: (254) 615-2088
 
 ## Dryer repair questions
 
@@ -263,7 +263,7 @@ It depends on the dryer and the part that failed, so we do not list prices onlin
 
 Speak with our team about your appliance issue, or send a quick request and we will call you back.
 
-Call (254) 555-0147
+Call (254) 615-2088
 
 Phones answered Monday to Saturday, 8:00 AM to 8:00 PM.
 
@@ -302,7 +302,7 @@ Service (Dryer repair), BreadcrumbList, FAQPage (6 visible FAQs). LocalBusiness 
 
 ## 7. CTA copy
 
-Call (254) 555-0147 · Request Service · Request dryer repair · Speak with our team about your appliance issue · Call to discuss your repair needs · Call for service details
+Call (254) 615-2088 · Request Service · Request dryer repair · Speak with our team about your appliance issue · Call to discuss your repair needs · Call for service details
 
 ## 8. Verification checklist
 

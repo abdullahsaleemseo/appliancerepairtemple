@@ -46,7 +46,7 @@ Source: `src/content/brands.ts` (speed-queen entry). Page copy below is exported
 
 Speed Queen washer not draining, stuck on spin or dryer running cold? Appliance Repair Temple repairs Speed Queen top-load and front-load washers and electric and gas dryers in homes across Temple, TX. Same-day service is available, subject to technician availability, location, and current demand.
 
-Call (254) 555-0147 Request Service
+Call (254) 615-2088 Request Service
 
 - Licensed & Insured
 - Same-Day Service
@@ -101,7 +101,7 @@ A minute of prep helps the technician bring the right parts and often saves a se
 - Top-load or front-load, and gas or electric for the dryer.
 - What the machine was doing when it stopped, and any code or flashing light.
 - Whether the machine is in a home or used commercially, such as in a rental property’s shared laundry.
-Call (254) 555-0147
+Call (254) 615-2088
 
 | Appliance | Usually found |
 |---|---|
@@ -169,7 +169,7 @@ Trademark notice: Speed Queen is a trademark of its respective owner. Appliance 
 
 Call and talk to a real person, or send a quick request and we will call you back.
 
-Call (254) 555-0147
+Call (254) 615-2088
 
 Phones answered Monday to Saturday, 8:00 AM to 8:00 PM.
 
@@ -197,7 +197,7 @@ Service (Speed Queen repair), BreadcrumbList, FAQPage (6 visible FAQs). No ratin
 
 ## 7. CTA copy
 
-Call (254) 555-0147 · Request Service · Call to discuss your repair needs
+Call (254) 615-2088 · Request Service · Call to discuss your repair needs
 
 ## 8. Verification checklist
 

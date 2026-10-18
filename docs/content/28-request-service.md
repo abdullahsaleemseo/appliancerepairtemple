@@ -43,7 +43,7 @@ Sending this form requests a callback. It does not guarantee an appointment.
 
 Talk to a person and settle on a time in the same call.
 
-(254) 555-0147
+(254) 615-2088
 
 Monday to Saturday, 8:00 AM to 8:00 PM
 
@@ -121,7 +121,7 @@ None. Nothing should push the form down.
 
 ## 7. CTA copy
 
-Form steps (unchanged) · Faster by phone · Rather talk? (254) 555-0147 · More questions and answers
+Form steps (unchanged) · Faster by phone · Rather talk? (254) 615-2088 · More questions and answers
 
 ## 8. Verification checklist
 

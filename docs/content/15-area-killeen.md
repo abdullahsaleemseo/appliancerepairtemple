@@ -45,7 +45,7 @@ Appliance Repair Temple fixes refrigerators, freezers, washers, dryers, dishwash
 
 Killeen visits are grouped with our west routes along the I-14 and US 190 corridor. Call early in the day and we will give you the earliest open time for your address. [CONFIRM SCHEDULING]
 
-Call (254) 555-0147 Request Service
+Call (254) 615-2088 Request Service
 
 - Licensed & Insured
 - Same-Day Service
@@ -181,7 +181,7 @@ Appliance repair in Temple Appliance repair in Harker Heights Nolanville Applian
 
 Call and talk to a real person, or send a quick request and we will call you back.
 
-Call (254) 555-0147
+Call (254) 615-2088
 
 Phones answered Monday to Saturday, 8:00 AM to 8:00 PM.
 
@@ -217,7 +217,7 @@ Service (Appliance repair, Killeen), BreadcrumbList, FAQPage (8 visible FAQs). N
 
 ## 7. CTA copy
 
-Call (254) 555-0147 · Request Service · Call early in the day and we will give you the earliest open time · Call to discuss your repair needs
+Call (254) 615-2088 · Request Service · Call early in the day and we will give you the earliest open time · Call to discuss your repair needs
 
 ## 8. Verification checklist
 

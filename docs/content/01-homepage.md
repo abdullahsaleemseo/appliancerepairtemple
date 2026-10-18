@@ -44,7 +44,7 @@ Source file: `src/app/page.tsx` (FAQs in `src/content/faqs.ts`, `homeFaqs`)
 | Field | Value |
 |---|---|
 | Title tag (45 chars) | Appliance Repair Temple TX \| Same-Day Service |
-| Meta description (157 chars) | Appliance repair in Temple, TX for fridges, washers, dryers, dishwashers, ovens and freezers. Same-day service, subject to availability. Call (254) 555-0147. |
+| Meta description (157 chars) | Appliance repair in Temple, TX for fridges, washers, dryers, dishwashers, ovens and freezers. Same-day service, subject to availability. Call (254) 615-2088. |
 | URL slug | `/` |
 | H1 (one only) | Same-Day Appliance Repair in Temple, TX |
 | Primary keyword placement | Title, H1, meta description, first paragraph, H2 "Common appliance problems we fix in Temple", H2 "Temple and nearby service areas" |
@@ -63,7 +63,7 @@ The phone number in the meta description updates automatically from `site.ts` wh
 
 Appliance Repair Temple fixes refrigerators, washers, dryers, dishwashers, ovens and freezers in homes across Temple, TX and nearby Bell County towns. A technician comes to you, tests the parts most likely to have failed, and explains the repair before any work starts. Same-day service is available, subject to technician availability, location, and current demand.
 
-Buttons: **Call (254) 555-0147** · **Request Service**
+Buttons: **Call (254) 615-2088** · **Request Service**
 
 Trust strip: Licensed & Insured · Same-Day Service · 4+ Years of Experience · 4.9 Average Rating
 
@@ -107,7 +107,7 @@ Stats: **100+** repairs completed · **4+** years of experience · **4.9★** av
 - **4.9 Average Rating.** Customers have given Appliance Repair Temple a 4.9 average rating.
 - **Open six days a week.** Monday to Saturday, 8:00 AM to 8:00 PM. Send a request any time and we reply when we are open.
 
-Flexible Payment Options Available · Call for service details: (254) 555-0147
+Flexible Payment Options Available · Call for service details: (254) 615-2088
 
 ### H2: How scheduling and repair service works.
 
@@ -148,7 +148,7 @@ See section 5. Followed by: "Still not sure? Call and speak with our team about 
 
 **Appliance broken? Let's get it running.**
 Call to discuss your repair needs, or send a request and we will call you back. We are open Monday to Saturday, 8:00 AM to 8:00 PM.
-Button: Call (254) 555-0147 · Form: Request a callback (name, phone, ZIP, appliance, consent)
+Button: Call (254) 615-2088 · Form: Request a callback (name, phone, ZIP, appliance, consent)
 
 **Measured length:** about 1,700 words of visible copy in production mode.
 
@@ -212,7 +212,7 @@ Format: WebP or AVIF, under 200 KB each, descriptive file names such as `technic
 
 ## 8. CTA copy used
 
-- Call (254) 555-0147
+- Call (254) 615-2088
 - Request Service
 - Call to discuss your repair needs
 - Speak with our team about your appliance issue

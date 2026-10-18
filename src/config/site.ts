@@ -26,7 +26,8 @@ export const site = {
   county: 'Bell County',
   region: 'Central Texas',
 
-  phone: v({ display: '(254) 555-0147', e164: '+12545550147' }),
+  // Ringba call tracking number (Oct 2026). Calls route to independent local providers.
+  phone: v({ display: '(254) 615-2088', e164: '+12546152088' }, true),
   email: v('service@appliancerepairtemple.com'),
 
   // Service-area business: no street address is published or marked up.

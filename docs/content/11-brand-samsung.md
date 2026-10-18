@@ -30,7 +30,7 @@ Source: `src/content/brands.ts` (samsung entry). Page copy below is exported fro
 | Field | Value |
 |---|---|
 | Title tag (53 chars) | Samsung Appliance Repair Temple TX \| Fridges & Laundry |
-| Meta description (158 chars) | Samsung ice maker frozen, washer showing a code or dryer not heating? Samsung appliance repair in Temple, TX. Same-day service available. Call (254) 555-0147. |
+| Meta description (158 chars) | Samsung ice maker frozen, washer showing a code or dryer not heating? Samsung appliance repair in Temple, TX. Same-day service available. Call (254) 615-2088. |
 | URL slug | `/brands/samsung-appliance-repair-temple-tx/` |
 | H1 (one only) | Samsung Appliance Repair in Temple, TX: Fridges, Laundry & Ranges |
 
@@ -42,7 +42,7 @@ Source: `src/content/brands.ts` (samsung entry). Page copy below is exported fro
 
 Samsung ice maker frozen solid, washer stopping with a code or dryer blowing cold? Appliance Repair Temple repairs Samsung refrigerators, washers, dryers, ranges, dishwashers and over-the-range microwaves in homes across Temple, TX. Same-day service is available, subject to technician availability, location, and current demand.
 
-Call (254) 555-0147 Request Service
+Call (254) 615-2088 Request Service
 
 - Licensed & Insured
 - Same-Day Service
@@ -101,7 +101,7 @@ A minute of prep helps the technician bring the right parts and often saves a se
 - For refrigerators: whether the ice maker is in the door or the freezer, and whether there is ice buildup.
 - Gas or electric, for dryers and ranges.
 - Whether the appliance is still under Samsung’s warranty.
-Call (254) 555-0147
+Call (254) 615-2088
 
 | Appliance | Usually found |
 |---|---|
@@ -171,7 +171,7 @@ Trademark notice: Samsung is a trademark of its respective owner. Appliance Repa
 
 Call and talk to a real person, or send a quick request and we will call you back.
 
-Call (254) 555-0147
+Call (254) 615-2088
 
 Phones answered Monday to Saturday, 8:00 AM to 8:00 PM.
 
@@ -206,7 +206,7 @@ Do not use Samsung logos or official product photography.
 
 ## 7. CTA copy
 
-Call (254) 555-0147 · Request Service · Speak with our team about your appliance issue · Call to discuss your repair needs
+Call (254) 615-2088 · Request Service · Speak with our team about your appliance issue · Call to discuss your repair needs
 
 ## 8. Verification checklist
 

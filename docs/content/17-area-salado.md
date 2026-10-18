@@ -45,7 +45,7 @@ Appliance Repair Temple repairs refrigerators, freezers, washers, dryers, dishwa
 
 Salado is at the south end of our area, south of Belton along I-35, so visits are planned around our south routes. Call early and we will give you the earliest open time for your address. [CONFIRM SCHEDULING]
 
-Call (254) 555-0147 Request Service
+Call (254) 615-2088 Request Service
 
 - Licensed & Insured
 - Same-Day Service
@@ -178,7 +178,7 @@ Appliance repair in Temple Appliance repair in Belton Morgan's Point Resort Appl
 
 Call and talk to a real person, or send a quick request and we will call you back.
 
-Call (254) 555-0147
+Call (254) 615-2088
 
 Phones answered Monday to Saturday, 8:00 AM to 8:00 PM.
 
@@ -214,7 +214,7 @@ Service (Appliance repair, Salado), BreadcrumbList, FAQPage (8 visible FAQs). No
 
 ## 7. CTA copy
 
-Call (254) 555-0147 · Request Service · Call early and we will give you the earliest open time · Call to discuss your repair needs
+Call (254) 615-2088 · Request Service · Call early and we will give you the earliest open time · Call to discuss your repair needs
 
 ## 8. Verification checklist
 

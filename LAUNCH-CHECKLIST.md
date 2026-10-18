@@ -13,10 +13,10 @@ with independent local providers. The network's review asked for the changes bel
 - [x] Referral disclaimer in the footer of every page and on `/disclaimer/`
 - [x] Schema limited to WebSite, BreadcrumbList, FAQPage and Article
 - [ ] Network re-review passed
-- [ ] Ringba tracking number in `site.phone` after approval
+- [x] Ringba tracking number (254) 615-2088 in `site.phone`, tel links and WebSite/Article ContactPoint schema (Oct 2026)
 
 ## Business facts (`src/config/site.ts`)
-- [ ] `site.phone`: the Ringba tracking number after approval. Replace the 555 number.
+- [x] `site.phone`: (254) 615-2088, +12546152088 (verified)
 - [ ] `site.social`: real profiles only
 
 ## Content
@@ -32,7 +32,7 @@ with independent local providers. The network's review asked for the changes bel
 - [x] Live on appliancerepairtemple.com via Vercel, production mode, noindex (Oct 16, 2026). Switches now in `src/config/launch.ts`
 - [ ] Launch day only: set `allowIndexing: true` in `src/config/launch.ts` and push, then check robots.txt allows crawling on the real domain
 - [x] Call-only site: no contact, quote or feedback forms; footer disclaimer on every page; no prices; no "free quote/estimate/inspection" wording, enforced by `npm run check:copy` (Oct 16, 2026)
-- [ ] Real phone number in `src/config/site.ts`, then a test call from a phone on several pages
+- [ ] Test call to (254) 615-2088 from a phone on several pages
 - [ ] GA4 ID set in `src/config/launch.ts` (`gaId`); check `click_to_call` (with `data-call-location`) in GA4 DebugView
 - [ ] Mark `click_to_call` as a key event in GA4 and import it into Google Ads if running ads
 - [ ] Remove `LEAD_WEBHOOK_URL` and any Turnstile keys from Vercel; the site no longer uses them

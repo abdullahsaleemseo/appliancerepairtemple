@@ -35,7 +35,7 @@ Source: `src/app/about/page.tsx`. Page copy below is exported from the rendered 
 
 Appliance Repair Temple is an in-home appliance repair service based in Temple, TX. We fix the appliances a household runs on every day: refrigerators, freezers, washers, dryers, dishwashers, ovens, ranges and microwaves, in Temple and the Central Texas towns around it.
 
-Call (254) 555-0147 Request Service
+Call (254) 615-2088 Request Service
 
 How we think
 
@@ -190,7 +190,7 @@ The cost depends on the appliance, the model and the part that failed, so a numb
 
 Call and talk to a real person, or send a quick request and we will call you back.
 
-Call (254) 555-0147
+Call (254) 615-2088
 
 Phones answered Monday to Saturday, 8:00 AM to 8:00 PM.
 
@@ -224,7 +224,7 @@ BreadcrumbList and FAQPage (6 visible FAQs). Organization schema comes from the 
 
 ## 7. CTA copy
 
-Call (254) 555-0147 · Request Service · Call to discuss your repair needs
+Call (254) 615-2088 · Request Service · Call to discuss your repair needs
 
 ## 8. Verification checklist
 

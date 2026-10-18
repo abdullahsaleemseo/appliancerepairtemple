@@ -30,7 +30,7 @@ Source: `src/content/brands.ts` (ge entry). Page copy below is exported from the
 | Field | Value |
 |---|---|
 | Title tag (47 chars) | GE Appliance Repair Temple TX \| GE & GE Profile |
-| Meta description (157 chars) | GE range, fridge, dishwasher, washer or dryer not working? GE and GE Profile appliance repair in Temple, TX. Same-day service available. Call (254) 555-0147. |
+| Meta description (157 chars) | GE range, fridge, dishwasher, washer or dryer not working? GE and GE Profile appliance repair in Temple, TX. Same-day service available. Call (254) 615-2088. |
 | URL slug | `/brands/ge-appliance-repair-temple-tx/` |
 | H1 (one only) | GE & GE Profile Appliance Repair in Temple, TX |
 
@@ -42,7 +42,7 @@ Source: `src/content/brands.ts` (ge entry). Page copy below is exported from the
 
 GE oven slow to heat, refrigerator warming up or dishwasher leaving water behind? Appliance Repair Temple repairs GE and GE Profile ranges, wall ovens, cooktops, refrigerators, dishwashers, washers, dryers and over-the-range microwaves in homes across Temple, TX. Same-day service is available, subject to technician availability, location, and current demand.
 
-Call (254) 555-0147 Request Service
+Call (254) 615-2088 Request Service
 
 - Licensed & Insured
 - Same-Day Service
@@ -101,7 +101,7 @@ A minute of prep helps the technician bring the right parts and often saves a se
 - Gas or electric, for ranges, cooktops and dryers.
 - What the appliance is doing, and any error code or F code on the display.
 - Whether it is still under the manufacturer’s warranty.
-Call (254) 555-0147
+Call (254) 615-2088
 
 | Appliance | Usually found |
 |---|---|
@@ -171,7 +171,7 @@ Trademark notice: GE is a trademark of its respective owner. Appliance Repair Te
 
 Call and talk to a real person, or send a quick request and we will call you back.
 
-Call (254) 555-0147
+Call (254) 615-2088
 
 Phones answered Monday to Saturday, 8:00 AM to 8:00 PM.
 
@@ -206,7 +206,7 @@ Do not use GE logos or official product photography.
 
 ## 7. CTA copy
 
-Call (254) 555-0147 · Request Service · Speak with our team about your appliance issue · Call to discuss your repair needs
+Call (254) 615-2088 · Request Service · Speak with our team about your appliance issue · Call to discuss your repair needs
 
 ## 8. Verification checklist
 

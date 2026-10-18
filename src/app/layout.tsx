@@ -7,6 +7,8 @@ import { Header } from '@/components/Header';
 import { MobileCallBar } from '@/components/MobileCallBar';
 import { SiteClient } from '@/components/SiteClient';
 import { UtilityBar } from '@/components/UtilityBar';
+import { JsonLd } from '@/components/JsonLd';
+import { websiteSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
@@ -32,6 +34,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         >
           Skip to content
         </a>
+        <JsonLd data={websiteSchema()} />
         <UtilityBar />
         <Header />
         <main id="main" tabIndex={-1} className="focus:outline-none">

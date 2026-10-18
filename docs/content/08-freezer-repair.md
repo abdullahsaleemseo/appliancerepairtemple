@@ -30,7 +30,7 @@ Source: `src/content/services.ts` (freezer entry and its `blocks`). Page copy be
 | Field | Value |
 |---|---|
 | Title tag (51 chars) | Freezer Repair Temple TX \| Chest & Upright Freezers |
-| Meta description (150 chars) | Freezer not freezing, frosting up or running nonstop? Chest and upright freezer repair in Temple, TX. Same-day service available. Call (254) 555-0147. |
+| Meta description (150 chars) | Freezer not freezing, frosting up or running nonstop? Chest and upright freezer repair in Temple, TX. Same-day service available. Call (254) 615-2088. |
 | URL slug | `/freezer-repair-temple-tx/` |
 | H1 (one only) | Chest & Upright Freezer Repair in Temple, TX |
 
@@ -42,7 +42,7 @@ Source: `src/content/services.ts` (freezer entry and its `blocks`). Page copy be
 
 Freezer warming up, frosting over or running and never shutting off? Appliance Repair Temple repairs standalone chest and upright freezers in homes, garages and shops across Temple, TX. Same-day service is available, subject to technician availability, location, and current demand.
 
-Call (254) 555-0147 Request Service
+Call (254) 615-2088 Request Service
 
 - Licensed & Insured
 - Same-Day Service
@@ -159,7 +159,7 @@ Safety
 - You see oily residue on the tubing, which can point to a refrigerant leak.
 Refrigerant work requires EPA Section 608 certification. Never cut or puncture freezer tubing.
 
-Call (254) 555-0147
+Call (254) 615-2088
 
 ## How a freezer repair visit works
 
@@ -251,13 +251,13 @@ It depends on the freezer and the part, so we do not list prices online. Call to
 
 Flexible Payment Options Available
 
-Call for service details: (254) 555-0147
+Call for service details: (254) 615-2088
 
 ## Freezer acting up? Let’s take a look.
 
 Speak with our team about your appliance issue, or send a quick request and we will call you back.
 
-Call (254) 555-0147
+Call (254) 615-2088
 
 Phones answered Monday to Saturday, 8:00 AM to 8:00 PM.
 
@@ -296,7 +296,7 @@ Service (Freezer repair), BreadcrumbList, FAQPage (8 visible FAQs). LocalBusines
 
 ## 7. CTA copy
 
-Call (254) 555-0147 · Request Service · Request freezer repair · Speak with our team about your appliance issue · Call to discuss your repair needs · Call for service details
+Call (254) 615-2088 · Request Service · Request freezer repair · Speak with our team about your appliance issue · Call to discuss your repair needs · Call for service details
 
 ## 8. Verification checklist
 
