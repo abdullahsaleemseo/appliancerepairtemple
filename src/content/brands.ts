@@ -11,7 +11,7 @@ export const brands: Brand[] = [
     h1: 'Local Whirlpool Appliance Repair in Temple, TX',
     metaTitle: 'Whirlpool Appliance Repair Temple TX | Local Pros',
     metaDescription:
-      'Whirlpool washer, dryer, fridge, dishwasher or range acting up? Whirlpool appliance repair in Temple, TX from local pros. Call to get connected with a local pro.',
+      'Whirlpool washer, dryer, fridge, dishwasher or range acting up? Whirlpool appliance repair in Temple, TX from local pros. Call to get connected with one.',
     intro: [
       'Whirlpool washer stuck mid-cycle, dryer blowing cold or refrigerator warming up? Independent local appliance repair pros fix Whirlpool washers, dryers, refrigerators, dishwashers, ranges and over-the-range microwaves in homes across Temple, TX. Appliance Repair Temple is a free referral service: one call connects you with an independent local technician who works on Whirlpool appliances.',
       'Whirlpool is one of the most common names in Temple kitchens and laundry rooms, from builder-grade appliances in rentals to newer laundry pairs and French door refrigerators. Whirlpool Corporation also owns Maytag, KitchenAid, JennAir and Amana, and many parts are shared across those brands. That usually makes Whirlpool-family parts easier to find.',
@@ -340,7 +340,7 @@ export const brands: Brand[] = [
     h1: 'Frigidaire Appliance Repair in Temple, TX, for Every Room',
     metaTitle: 'Frigidaire Appliance Repair Temple TX | Fridges & Ranges',
     metaDescription:
-      'Frigidaire fridge, freezer, range, dishwasher or laundry acting up? Independent Frigidaire appliance repair in Temple, TX. Call to get connected with a local pro.',
+      'Frigidaire fridge, freezer, range, dishwasher or laundry acting up? Independent Frigidaire appliance repair in Temple, TX. Call to get connected with a pro.',
     intro: [
       'Frigidaire freezer warming up, range not heating or dishwasher leaving water behind? Independent local appliance repair pros fix Frigidaire refrigerators, freezers, ranges, dishwashers, washers, dryers and microwaves in homes across Temple, TX. Appliance Repair Temple is a free referral service: one call connects you with an independent local technician who works on Frigidaire appliances.',
       'Frigidaire, part of the Electrolux group, is one of the most common brands in Temple homes. It shows up in rentals, in starter homes and in garages, where a Frigidaire chest or upright freezer often holds the extra food. Models range from basic units to the Gallery and Professional lines, and many share parts and designs across the family.',
@@ -830,7 +830,7 @@ export const brands: Brand[] = [
     h1: 'Amana Appliance Repair in Temple, TX, for Homes and Rentals',
     metaTitle: 'Amana Appliance Repair Temple TX | Washers, Dryers, Fridges',
     metaDescription:
-      'Amana washer, dryer, fridge or range not working? Independent Amana appliance repair in Temple, TX, for homes and rentals. Call to get connected with a local pro.',
+      'Amana washer, dryer, fridge or range not working? Independent Amana appliance repair in Temple, TX, for homes and rentals. Call to get connected with a pro.',
     intro: [
       'Amana washer not agitating, dryer running cold or refrigerator warming up? Independent local appliance repair pros fix Amana washers, dryers, refrigerators, ranges, dishwashers and microwaves in homes across Temple, TX. Appliance Repair Temple is a free referral service: one call connects you with an independent local technician who works on Amana appliances.',
       'Amana is a Whirlpool Corporation brand built around straightforward, value-priced appliances: top-load agitator washers, top-freezer refrigerators, coil and smoothtop ranges. That makes it a common sight in rental homes, apartments and starter houses around Temple, often bought as a set by a landlord or builder.',
@@ -912,7 +912,7 @@ export const brands: Brand[] = [
     h1: 'Speed Queen Washer & Dryer Repair in Temple, TX',
     metaTitle: 'Speed Queen Washer & Dryer Repair Temple TX | Local Pros',
     metaDescription:
-      'Speed Queen washer not draining or dryer not heating? Independent Speed Queen washer and dryer repair in Temple, TX. Check your warranty first, then call to get connected.',
+      'Speed Queen washer not draining or dryer not heating? Independent Speed Queen washer and dryer repair in Temple, TX. Check your warranty, then call to connect.',
     intro: [
       'Speed Queen washer not draining, stuck on spin or dryer running cold? Independent local appliance repair pros fix Speed Queen top-load and front-load washers and electric and gas dryers in homes across Temple, TX. Appliance Repair Temple is a free referral service: one call connects you with an independent local technician who works on Speed Queen appliances.',
       'Speed Queen makes laundry and nothing else. It is built by Alliance Laundry Systems in Ripon, Wisconsin, the same company behind a lot of commercial laundromat equipment, and the home machines borrow from that heavy-duty design. Many owners bought one to keep for a long time, and with that build, repair is usually the sensible choice when something wears out.',

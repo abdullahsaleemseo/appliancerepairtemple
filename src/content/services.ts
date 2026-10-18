@@ -548,15 +548,15 @@ export const services: Service[] = [
     navLabel: 'Dryer Repair',
     icon: 'dryer',
     card: 'No heat, long dry times, squealing or won’t turn.',
-    metaTitle: 'Dryer Repair Temple TX | Same-Day & Emergency',
+    metaTitle: 'Dryer Repair Temple TX | Connect With Local Pros',
     metaDescription:
-      'Dryer not heating, taking forever or squealing? Same-day and emergency dryer repair in Temple, TX for electric and gas dryers, subject to availability.',
+      'Dryer repair in Temple, TX for electric and gas dryers that are not heating, take too long or squeal. Call to get connected with a local appliance repair pro.',
     h1: 'Electric & Gas Dryer Repair in Temple, TX',
     intro: [
-      'Dryer running but the clothes come out damp? Taking two or three cycles to dry a load? Appliance Repair Temple repairs electric and gas dryers in homes across Temple, TX, including stacked laundry centers. Same-day service is available, subject to technician availability, location, and current demand.',
-      'Most dryer calls come down to heat or airflow. On the heat side it is a heating element, a thermal fuse, a thermostat or a gas igniter. On the airflow side it is lint: in the screen housing, the transition hose or the vent run to the outside. A clogged vent also makes the dryer overheat and burn out heating parts, so the technician checks both and explains the repair before starting.',
-      'Whether your dryer is not heating, will not tumble, shuts off early or squeals through every load, the dryer repair starts with a test run, a look at the airflow and a meter on the heat circuit. That way you pay for the part that failed, not a guess.',
-      'A dryer that smells like burning, runs far too hot or trips the breaker should not be used again until it is checked. Those calls get priority as emergency dryer repair during business hours, because heat and lint together are a fire risk.',
+      'Dryer running but the clothes come out damp? Taking two or three cycles to dry a load? Appliance Repair Temple connects homeowners across Temple, TX with independent local pros who repair electric and gas dryers, including stacked laundry centers. Call and describe the problem to get connected with a local provider.',
+      'Most dryer calls come down to heat or airflow. On the heat side it is a heating element, a thermal fuse, a thermostat or a gas igniter. On the airflow side it is lint: in the screen housing, the transition hose or the vent run to the outside. A clogged vent also makes the dryer overheat and burn out heating parts, so a good technician checks both and explains the repair before starting. Ask for that.',
+      'Whether your dryer is not heating, will not tumble, shuts off early or squeals through every load, a good dryer repair starts with a test run, a look at the airflow and a meter on the heat circuit. Ask for that, so you pay for the part that failed, not a guess.',
+      'A dryer that smells like burning, runs far too hot or trips the breaker should not be used again until it is checked. Heat and lint together are a fire risk, so treat it as an emergency dryer repair. Emergency help may be available from local providers. Say it is urgent when you call.',
     ],
     symptomsHeading: 'Dryer problems and what usually causes them',
     symptoms: [
@@ -622,11 +622,11 @@ export const services: Service[] = [
     faqs: [
       {
         q: 'Why does my dryer keep blowing thermal fuses?',
-        a: 'A thermal fuse blows when the dryer runs too hot, and the most common reason is a restricted vent. Replacing the fuse without fixing the airflow means it will blow again, so we check the vent on every no-heat call.',
+        a: 'A thermal fuse blows when the dryer runs too hot, and the most common reason is a restricted vent. Replacing the fuse without fixing the airflow means it will blow again, so ask the technician to check the vent on any no-heat call.',
       },
       {
-        q: 'Do you repair gas dryers?',
-        a: 'Yes. The technician checks the igniter, flame sensor and gas valve coils. If you ever smell gas, leave the house and call your gas utility from outside before anything else.',
+        q: 'Can gas dryers be repaired in Temple?',
+        a: 'Yes. Local pros repair gas dryers, and a technician will usually check the igniter, flame sensor and gas valve coils. If you ever smell gas, leave the house and call your gas utility from outside before anything else.',
       },
       {
         q: 'How often should a dryer vent be cleaned?',
@@ -637,12 +637,12 @@ export const services: Service[] = [
         a: 'Usually it means worn drum rollers or an idler pulley. It will not fail right away, but the noise gets worse, and a worn idler can eventually break the belt.',
       },
       {
-        q: 'Can my dryer be fixed the same day?',
-        a: 'Same-day service is available, subject to technician availability, location, and current demand. Many dryer parts are common enough to replace on the first visit. Some model-specific parts have to be ordered.',
+        q: 'Can a dryer be fixed on the first visit?',
+        a: 'Often, yes. Many dryer parts are common enough to replace on the first visit. Some model-specific parts have to be ordered, so ask the technician whether the part is on hand. Giving the brand and model number when you call helps.',
       },
       {
-        q: 'Do you offer emergency dryer repair?',
-        a: 'Yes. A dryer that smells like burning, runs far too hot, trips the breaker or has a gas smell nearby gets priority scheduling during business hours, Monday to Saturday, 8:00 AM to 8:00 PM. Same-day emergency service is subject to technician availability, location, and current demand. Ask about emergency visit details when you call. If you smell gas, leave the house and call your gas utility from outside first.',
+        q: 'Can I get emergency dryer repair in Temple?',
+        a: 'Emergency help may be available from local providers. A dryer that smells like burning, runs far too hot, trips the breaker or has a gas smell nearby is worth treating as urgent, so say it is urgent when you call. Stop using the dryer and unplug it or switch off its breaker. If you smell gas, leave the house and call your gas utility from outside first.',
       },
       {
         q: 'Why is my dryer not heating?',
@@ -650,19 +650,19 @@ export const services: Service[] = [
       },
       {
         q: 'My dryer smells like burning. What should I do?',
-        a: 'Stop the dryer, unplug it or switch off its breaker, and let it cool. Do not run another load. A burning smell usually means lint has built up near the heating element or burner, or a part is overheating. Call to have it checked before you use it again.',
+        a: 'Stop the dryer, unplug it or switch off its breaker, and let it cool. Do not run another load. A burning smell usually means lint has built up near the heating element or burner, or a part is overheating. Call to get connected with a local pro and have it checked before you use it again.',
       },
       {
         q: 'Why does my dryer take so long to dry clothes?',
         a: 'Most of the time the air cannot get out: a packed lint screen housing, a crushed hose behind the dryer or a vent full of lint. Overloading the drum and wet loads from a washer that is not spinning fully also add time. If the airflow is strong outside and the clothes still come out damp, a heating part is the likely cause.',
       },
       {
-        q: 'Do you offer dryer repair outside Temple?',
-        a: 'Yes. Along with Temple, we repair dryers in Belton, Killeen, Harker Heights, Nolanville, Morgan’s Point Resort, Salado, Troy, Little River-Academy, Rogers, Holland and Moody.',
+        q: 'Is dryer repair available outside Temple?',
+        a: 'Yes. Along with Temple, local pros repair dryers in Belton, Killeen, Harker Heights, Nolanville, Morgan’s Point Resort, Salado, Troy, Little River-Academy, Rogers, Holland and Moody.',
       },
       {
         q: 'How much does dryer repair cost?',
-        a: 'It depends on the dryer and the part that failed, so we do not list prices online. Call to discuss your repair needs. Have the brand, the model number and whether it is gas or electric ready.',
+        a: 'It depends on the dryer and the part that failed, so this site does not list prices. Call to get connected with a local pro, and ask about pricing and any warranty before work starts. Have the brand, the model number and whether it is gas or electric ready.',
       },
     ],
     related: ['washer', 'oven', 'dishwasher'],
@@ -671,7 +671,7 @@ export const services: Service[] = [
       {
         type: 'compare',
         heading: 'No heat? Electric and gas dryers fail differently',
-        intro: 'Tell us which one you have when you call. The heating parts are completely different.',
+        intro: 'Say which one you have when you call. The heating parts are completely different.',
         columns: [
           {
             title: 'Electric dryers',
@@ -710,19 +710,19 @@ export const services: Service[] = [
           'Look behind the dryer. The hose should be smooth and short, not crushed, kinked or full of sags.',
           'Run the dryer on high heat and go outside to the vent hood. You should feel strong, warm air and the flap should open fully.',
           'Weak or no airflow outside means a clogged vent. Strong airflow but no heat means a heating part.',
-          'Call us with what you found, the brand, the model number and whether it is gas or electric.',
+          'Call to get connected with a local pro, and describe what you found, the brand, the model number and whether it is gas or electric.',
         ],
         note: 'Do not run a dryer that smells hot or burning while you test. Check the airflow with a load of wet towels only if it has been running normally.',
       },
       {
         type: 'emergency',
         heading: 'Emergency dryer repair in Temple',
-        intro: 'Heat and lint together are a fire risk, so a dryer that smells like burning or runs far too hot should not wait. These situations get priority scheduling during business hours. Same-day emergency dryer repair is available, subject to technician availability, location, and current demand.',
+        intro: 'Heat and lint together are a fire risk, so a dryer that smells like burning or runs far too hot should not wait. Emergency help may be available from local providers. Say it is urgent when you call, and stop using the dryer until it is checked.',
         signs: [
           { title: 'Burning smell or smoke', text: 'A hot, singed smell during a cycle, or smoke from the drum, the vent or the cabinet. If you see flames, leave and call 911.' },
           { title: 'Too hot to touch', text: 'The top or sides of the dryer get very hot, or clothes come out scorched.' },
           { title: 'Breaker trips', text: 'The breaker trips when the dryer starts or when the heat comes on.' },
-          { title: 'Gas smell near a gas dryer', text: 'Leave the house first and call your gas utility from outside. Call us once it is safe.' },
+          { title: 'Gas smell near a gas dryer', text: 'Leave the house first and call your gas utility from outside. Call for dryer repair once it is safe.' },
         ],
         steps: [
           'Stop the dryer and unplug it, or switch off its breaker.',
@@ -735,7 +735,7 @@ export const services: Service[] = [
       { type: 'callCard' },
       {
         type: 'partsTable',
-        heading: 'The dryer parts we test most',
+        heading: 'The dryer parts technicians test most',
         rows: [
           { part: 'Heating element (electric)', job: 'Heats the air pulled into the drum', signs: 'Runs with no heat; often burned open by overheating' },
           { part: 'Igniter and flame sensor (gas)', job: 'Light the burner and confirm the flame', signs: 'No heat, or an igniter that glows and never lights the burner' },
@@ -769,12 +769,12 @@ export const services: Service[] = [
       },
       {
         type: 'process',
-        heading: 'How a dryer repair visit works',
+        heading: 'What to expect on a dryer repair visit',
         steps: [
-          { title: 'Airflow first', text: 'The technician checks airflow at the vent hood and the hose behind the dryer before blaming a part.' },
-          { title: 'Test the heat circuit', text: 'Element, fuse and thermostats on electric models, or igniter, sensor and valve coils on gas models, are tested with a meter.' },
-          { title: 'Explain and approve', text: 'You hear what failed, whether the vent played a part, and what the repair involves. Work starts after your OK.' },
-          { title: 'Repair and run', text: 'The part is replaced and the dryer is run to confirm it heats and the drum turns quietly.' },
+          { title: 'Airflow first', text: 'A good technician checks airflow at the vent hood and the hose behind the dryer before blaming a part.' },
+          { title: 'Test the heat circuit', text: 'Element, fuse and thermostats on electric models, or igniter, sensor and valve coils on gas models, are usually tested with a meter.' },
+          { title: 'Explain and approve', text: 'Ask what failed, whether the vent played a part, and what the repair involves. Work should start only after you say yes.' },
+          { title: 'Repair and run', text: 'After a part is replaced, ask for a test run to confirm the dryer heats and the drum turns quietly.' },
         ],
       },
       {
@@ -791,16 +791,15 @@ export const services: Service[] = [
       },
       {
         type: 'prose',
-        heading: 'Dryer types and features we repair',
+        heading: 'Dryer types and features local pros repair',
         paragraphs: [
           'Electric dryers run on a 240-volt circuit and heat with an element. Gas dryers use a burner, an igniter and a gas valve, with a standard outlet for the motor and controls. The motor, belt, rollers and drum are much the same in both, so a drum that will not turn is the same dryer repair either way.',
           'Newer dryers add sensor dry, steam and wrinkle care cycles, and electronic controls that store error codes. Sensor dry problems are often fixed by cleaning the moisture bars inside the drum, and steam features need a working water supply and fill valve.',
-          'Stacked laundry centers and stacked front-load pairs need more access work, because the dryer sits on top or sits in a closet. Mention it when you book so the technician can plan for it.',
+          'Stacked laundry centers and stacked front-load pairs need more access work, because the dryer sits on top or sits in a closet. Mention it when you call so the technician can plan for it.',
         ],
       },
       { type: 'repairOrReplace' },
-      { type: 'brands', heading: 'Dryer brands and types we repair', intro: 'We repair the major dryer brands found in Temple laundry rooms. Tell us the brand, model number and whether it is gas or electric when you book.', styles: ['Electric', 'Gas', 'Stacked laundry centers'] },
-      { type: 'payment' },
+      { type: 'brands', heading: 'Dryer brands and types local pros repair', intro: 'Local pros repair the major dryer brands found in Temple laundry rooms. Give the brand, model number and whether it is gas or electric when you call.', styles: ['Electric', 'Gas', 'Stacked laundry centers'] },
       { type: 'faq' },
     ],
   },
@@ -811,17 +810,17 @@ export const services: Service[] = [
     navLabel: 'Dishwasher Repair',
     icon: 'dishwasher',
     card: 'Not draining, not cleaning, leaking or won’t start.',
-    metaTitle: 'Dishwasher Repair Temple TX | Same-Day & Emergency',
+    metaTitle: 'Dishwasher Repair Temple TX | Connect With Local Pros',
     metaDescription:
-      'Dishwasher not draining, leaking or leaving dishes dirty? Same-day and emergency dishwasher repair in Temple, TX, subject to availability. All major brands.',
+      'Dishwasher repair in Temple, TX for dishwashers that are not draining, leaking or leaving dishes dirty. All major brands. Call to get connected with a local pro.',
     h1: 'Built-In Dishwasher Repair in Temple, TX',
     intro: [
-      'Standing water in the bottom, gritty dishes or a puddle under the door? Appliance Repair Temple repairs built-in dishwashers in homes across Temple, TX, from basic models to third-rack machines with front or hidden top controls. Same-day service is available, subject to technician availability, location, and current demand.',
-      'Most dishwasher calls come back to a clogged filter, a drain pump, a water inlet valve, a door seal or the heating element. Hard water is common in Central Texas, and mineral scale makes several of these worse over time, so the technician checks for it on every visit. You hear what failed and what the repair involves before anything is replaced.',
-      'A dishwasher not draining, a dishwasher not cleaning, a door that will not latch or a control panel that flashes an error code all start the same way: a short test cycle, a look at the filter, spray arms and drain hose, then a meter on the parts that could be at fault.',
-      'Because a dishwasher sits inside your cabinets, a leak can soak the subfloor and the cabinet base before you see much water. A dishwasher leaking onto the floor, or one that trips the breaker or smells like burning, gets priority as emergency dishwasher repair during business hours.',
+      'Standing water in the bottom, gritty dishes or a puddle under the door? Appliance Repair Temple connects homeowners across Temple, TX with independent local pros who repair built-in dishwashers, from basic models to third-rack machines with front or hidden top controls. Call and describe the problem to get connected with a local provider.',
+      'Most dishwasher calls come back to a clogged filter, a drain pump, a water inlet valve, a door seal or the heating element. Hard water is common in Central Texas, and mineral scale makes several of these worse over time, so ask the technician to check for it. A good technician explains what failed and what the repair involves before anything is replaced.',
+      'A dishwasher not draining, a dishwasher not cleaning, a door that will not latch or a control panel that flashes an error code should all start the same way: a short test cycle, a look at the filter, spray arms and drain hose, then a meter on the parts that could be at fault.',
+      'Because a dishwasher sits inside your cabinets, a leak can soak the subfloor and the cabinet base before you see much water. A dishwasher leaking onto the floor, or one that trips the breaker or smells like burning, is a reason to look for emergency dishwasher repair. Emergency help may be available from local providers. Say it is urgent when you call.',
     ],
-    symptomsHeading: 'Dishwasher problems we repair',
+    symptomsHeading: 'Common dishwasher problems in Temple homes',
     symptoms: [
       {
         title: 'Water left in the bottom',
@@ -845,7 +844,7 @@ export const services: Service[] = [
         title: 'Won’t start or won’t fill',
         cause:
           'A door latch that does not register, a blown thermal fuse, a bad water inlet valve or a control board fault. Many models also have a float switch that stops the fill if it senses water in the base.',
-        fixable: 'The technician tests each part before replacing anything.',
+        fixable: 'A good technician tests each part before replacing anything.',
       },
       {
         title: 'Dishes come out wet',
@@ -886,20 +885,20 @@ export const services: Service[] = [
         a: 'Over time, yes. Mineral scale builds up on spray arms, the inlet valve screen and the heating element. Rinse aid and a dishwasher cleaner every month or two help keep it under control.',
       },
       {
-        q: 'My dishwasher only leaks sometimes. Can you find the cause?',
-        a: 'Yes. Intermittent leaks are often a door gasket, suds from the wrong detergent, or a pump seal that leaks only during part of the cycle. The technician runs it and watches where the water appears.',
+        q: 'My dishwasher only leaks sometimes. Can the cause be found?',
+        a: 'Yes. Intermittent leaks are often a door gasket, suds from the wrong detergent, or a pump seal that leaks only during part of the cycle. A technician will usually run it and watch where the water appears.',
       },
       {
         q: 'Do I need to empty the dishwasher before the technician arrives?',
-        a: 'Please do, and clear out the cabinet under the sink. It lets the technician reach the filter, spray arms and drain connections right away.',
+        a: 'Yes, and clear out the cabinet under the sink too. It lets the technician reach the filter, spray arms and drain connections right away.',
       },
       {
         q: 'Can I use drain cleaner in my dishwasher?',
         a: 'No. Chemical drain cleaners can damage the pump seals and plastic parts. If the dishwasher will not drain, clean the filter and check the hose and disposal, then call.',
       },
       {
-        q: 'Do you offer emergency dishwasher repair?',
-        a: 'Yes. A dishwasher leaking onto the floor, tripping the breaker or smelling like burning gets priority scheduling during business hours, Monday to Saturday, 8:00 AM to 8:00 PM. Same-day emergency service is subject to technician availability, location, and current demand. Ask about emergency visit details when you call.',
+        q: 'Can I get emergency dishwasher repair in Temple?',
+        a: 'Emergency help may be available from local providers. A dishwasher leaking onto the floor, tripping the breaker or smelling like burning is worth treating as urgent, so say it is urgent when you call. In the meantime, switch off the dishwasher breaker, close the hot water valve under the sink and dry the floor.',
       },
       {
         q: 'Why is my dishwasher leaking onto the floor?',
@@ -914,12 +913,12 @@ export const services: Service[] = [
         a: 'Check the breaker and make sure the door is fully latched. Many models also have a control lock or delay start that looks like a dead machine. If those are fine, a door latch switch, a thermal fuse, a float switch or the control board is the likely cause.',
       },
       {
-        q: 'Do you offer dishwasher repair outside Temple?',
-        a: 'Yes. Along with Temple, we repair dishwashers in Belton, Killeen, Harker Heights, Nolanville, Morgan’s Point Resort, Salado, Troy, Little River-Academy, Rogers, Holland and Moody.',
+        q: 'Is dishwasher repair available outside Temple?',
+        a: 'Yes. Along with Temple, local pros repair dishwashers in Belton, Killeen, Harker Heights, Nolanville, Morgan’s Point Resort, Salado, Troy, Little River-Academy, Rogers, Holland and Moody.',
       },
       {
         q: 'How much does dishwasher repair cost?',
-        a: 'It depends on the model and the part, so we do not list prices online. Call to discuss your repair needs, with the brand and model number ready.',
+        a: 'It depends on the model and the part, so this site does not list prices. Call to get connected with a local pro, with the brand and model number ready, and ask about pricing and any warranty before work starts.',
       },
       {
         q: 'Where is the model number on my dishwasher?',
@@ -959,7 +958,7 @@ export const services: Service[] = [
       {
         type: 'emergency',
         heading: 'Emergency dishwasher repair in Temple',
-        intro: 'A dishwasher leak runs under the cabinets, where it can soak the subfloor long before the puddle looks serious. These situations get priority scheduling during business hours. Same-day emergency dishwasher repair is available, subject to technician availability, location, and current demand.',
+        intro: 'A dishwasher leak runs under the cabinets, where it can soak the subfloor long before the puddle looks serious. Emergency help may be available from local providers. Say it is urgent when you call, and shut off the power and water first.',
         signs: [
           { title: 'Water on the floor', text: 'Water coming from under the door, the toe kick or the sink cabinet during or after a cycle.' },
           { title: 'Water near the wiring', text: 'Water has reached the wiring box behind the toe kick or the outlet under the sink.' },
@@ -978,7 +977,7 @@ export const services: Service[] = [
         heading: 'The drain hose, the high loop and the air gap',
         paragraphs: [
           'A dishwasher drain hose has to rise above the sink drain before it connects, so dirty sink water cannot flow back into the dishwasher. That is done with a high loop, where the hose is fastened up under the countertop, or with an air gap fitting on the sink deck.',
-          'Which one your home needs depends on the plumbing code your city has adopted and the dishwasher maker’s instructions. Installation manuals usually set a minimum height for the loop, often around 18 to 20 inches above the floor depending on the brand. When a dishwasher keeps backing up or smells, a hose that has slipped down from that loop is one of the first things we check.',
+          'Which one your home needs depends on the plumbing code your city has adopted and the dishwasher maker’s instructions. Installation manuals usually set a minimum height for the loop, often around 18 to 20 inches above the floor depending on the brand. When a dishwasher keeps backing up or smells, a hose that has slipped down from that loop is one of the first things to check.',
         ],
       },
       {
@@ -1002,12 +1001,12 @@ export const services: Service[] = [
       },
       {
         type: 'process',
-        heading: 'How a dishwasher repair visit works',
+        heading: 'What to expect on a dishwasher repair visit',
         steps: [
-          { title: 'Run and watch', text: 'The technician runs a short cycle and checks fill level, spray and drain.' },
-          { title: 'Filter, arms and hose', text: 'The filter, spray arms, drain hose loop and disposal connection are checked first.' },
-          { title: 'Test the parts', text: 'Inlet valve, pump, heating element and latch are tested. You hear what failed and what the repair involves.' },
-          { title: 'Repair and run', text: 'After your OK, the repair is made and a cycle confirms it fills, washes and drains.' },
+          { title: 'Run and watch', text: 'A technician will usually run a short cycle and check fill level, spray and drain.' },
+          { title: 'Filter, arms and hose', text: 'The filter, spray arms, drain hose loop and disposal connection are usually checked first.' },
+          { title: 'Test the parts', text: 'Ask that the inlet valve, pump, heating element and latch be tested, and that the technician explains what failed and what the repair involves.' },
+          { title: 'Repair and run', text: 'Once you approve, the repair is made. Ask for a cycle to confirm it fills, washes and drains.' },
         ],
       },
       {
@@ -1018,17 +1017,17 @@ export const services: Service[] = [
         rows: [
           { see: 'A drain code', means: 'Water did not leave the tub in time. A clogged filter, a kinked hose, a clogged disposal or a failed drain pump.', fix: 'Clean the filter and check the hose and disposal; the pump gets tested next.' },
           { see: 'A fill or water supply code', means: 'Not enough water came in. A partly closed valve, a kinked supply line or a failed inlet valve.', fix: 'Open the hot water valve fully; inlet valves are a routine repair.' },
-          { see: 'A leak or float code', means: 'Water has collected in the base pan and tripped the float switch, so the dishwasher stops filling.', fix: 'Turn it off and call; the source of the water has to be found, not just the code cleared.' },
+          { see: 'A leak or float code', means: 'Water has collected in the base pan and tripped the float switch, so the dishwasher stops filling.', fix: 'Turn it off and call for repair; the source of the water has to be found, not just the code cleared.' },
           { see: 'A heating or temperature code', means: 'The water is not heating, or the temperature sensor is reading wrong.', fix: 'The heating element and sensor are tested; both are replaceable parts.' },
         ],
       },
       {
         type: 'prose',
-        heading: 'Dishwasher types and features we repair',
+        heading: 'Dishwasher types and features local pros repair',
         paragraphs: [
           'Most Temple kitchens have a standard built-in dishwasher, with the controls on the front of the door or hidden along the top edge. Hidden controls look cleaner, but they also mean the door latch and the control panel work together, so a latch fault can look like a dead dishwasher.',
           'Third-rack and tall-tub models add longer spray arms and more racks to wear. Quiet stainless tub models often dry by condensation and lean on rinse aid. Many newer dishwashers also use a manual filter that needs regular cleaning, which is why so many dishwasher repair calls start with the filter.',
-          'Whatever the model, the dishwasher repair follows the same steps: run it, check the filter, spray arms and drain path, test the likely parts and explain the fix before any work starts.',
+          'Whatever the model, a good dishwasher repair follows the same steps: run it, check the filter, spray arms and drain path, test the likely parts and explain the fix before any work starts.',
         ],
       },
       {
@@ -1041,9 +1040,8 @@ export const services: Service[] = [
         ],
       },
       { type: 'repairOrReplace' },
-      { type: 'brands', heading: 'Dishwasher brands we repair', intro: 'We repair the major dishwasher brands found in Temple kitchens. Tell us the brand and model number when you book so the technician can check parts ahead of time.', styles: ['Built-in', 'Front control', 'Top control', 'Third rack'] },
+      { type: 'brands', heading: 'Dishwasher brands local pros repair', intro: 'Local pros repair the major dishwasher brands found in Temple kitchens. Give the brand and model number when you call so the technician can check parts ahead of time.', styles: ['Built-in', 'Front control', 'Top control', 'Third rack'] },
       { type: 'faq' },
-      { type: 'payment' },
     ],
   },
   {

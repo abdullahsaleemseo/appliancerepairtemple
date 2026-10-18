@@ -55,7 +55,7 @@ export const faqGroups: { id: string; title: string; accent: string; faqs: Faq[]
         a: 'Many technicians carry common parts that can be replaced on the first visit. Model-specific parts sometimes have to be ordered. Ask the technician whether that applies and what happens next.',
       },
       {
-        q: 'How do I check that an appliance repair pro is licensed and insured?',
+        q: 'How do I check an appliance repair pro’s license and insurance?',
         a: 'It is your responsibility as the homeowner to verify this. Ask the provider what license they hold for the work, check what the State of Texas and your city require for that type of repair, and ask for a certificate of liability insurance before any work starts.',
       },
     ],
@@ -183,7 +183,7 @@ export const homeFaqs: Faq[] = [
     a: 'Payment is arranged between you and the independent provider. Ask which payment methods they accept, when payment is due and whether you will get an itemized invoice.',
   },
   {
-    q: 'How do I check that an appliance repair pro is licensed and insured?',
+    q: 'How do I check an appliance repair pro’s license and insurance?',
     a: 'Verifying this is the homeowner’s responsibility. Ask the provider what license they hold for the work, check what the State of Texas and the City of Temple require for that type of repair, and ask for a certificate of liability insurance before the technician starts.',
   },
   {

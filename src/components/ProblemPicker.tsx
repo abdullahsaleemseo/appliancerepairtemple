@@ -11,7 +11,7 @@ export type PickerItem = { key: ApplianceKey; name: string; icon: IconName; href
 
 /**
  * Hero widget: pick the appliance, tap the symptom, then call about it.
- * Lets a visitor confirm in two taps that this is the right place for their exact problem.
+ * Lets a visitor confirm in two taps that local pros handle their exact problem before calling to get connected.
  */
 export function ProblemPicker({ items }: { items: PickerItem[] }) {
   const [active, setActive] = useState(0);
@@ -95,6 +95,7 @@ export function ProblemPicker({ items }: { items: PickerItem[] }) {
             <Icon name="phone" className="h-5 w-5" strokeWidth={2.2} />
             {symptom ? 'Call Now about this' : 'Call Now'} <span className="font-normal text-white/85">{phoneDisplay}</span>
           </a>
+          <p className="mt-3 text-center text-[13px] text-ink-muted">Free call. Connects you with an independent local appliance repair pro.</p>
           <div className="mt-4 text-[14px]">
             <Link href={item.href} className="link-arrow text-[14px]">
               {item.name} repair details

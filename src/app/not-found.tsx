@@ -17,10 +17,10 @@ export default function NotFound() {
         <p className="font-serif text-[120px] italic leading-none text-flame-glow md:text-[180px]">404</p>
         <h1 className="h-display mt-4 text-4xl text-white md:text-6xl">This page isn’t here.</h1>
         <p className="mx-auto mt-5 max-w-xl text-lg text-white/65">
-          The link may be old or mistyped. If your appliance needs fixing, we can still help. Pick it below or give us a call.
+          The link may be old or mistyped. If your appliance needs fixing, you can still get help. Pick it below, or call to be connected with a local appliance repair pro.
         </p>
         <div className="mt-9 flex justify-center">
-          <CallButton location="404" label="Call us" />
+          <CallButton location="404" label="Call to get connected" />
         </div>
         <ul className="mt-14 grid gap-3 text-left sm:grid-cols-2">
           {services.map((s) => (

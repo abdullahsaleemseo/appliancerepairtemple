@@ -12,7 +12,7 @@ import { pageMetadata } from '@/lib/seo';
 
 export const metadata = pageMetadata({
   title: `Appliance Repair FAQ | ${site.city}, ${site.stateAbbr} Answers Before You Call`,
-  description: `Appliance repair FAQ for ${site.city}, ${site.stateAbbr}: how the free call works, checking a license and insurance, repair or replace, brands, areas and safety.`,
+  description: `Appliance repair FAQ for ${site.city}, ${site.stateAbbr}: how the free call works, checking a license and insurance, repair or replace, brands and safety. Call to get connected.`,
   path: routes.faq,
 });
 
