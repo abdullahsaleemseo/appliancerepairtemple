@@ -241,3 +241,7 @@ Call (254) 615-2088 · Request Service · Call to confirm the earliest open time
   - "Appliance problems in Belton, season by season": summer fridges and freezers, spring storms and outages, fall ovens and dryers, winter freezes.
   - "Landlords, tenants and property managers": rentals near downtown and UMHB, who approves the repair.
   - Three new FAQs: emergency appliance repair in Belton, same-day refrigerator repair, washer and dryer repair.
+
+## Brand problems section (October 2026)
+
+- Added after the call network's tip to target brand and model searches with the town name: six cards, each a common brand problem (for example "Samsung refrigerator not cooling in Killeen"), what it usually means, what to check first, and links to the brand page and the service page. Written in referral voice.

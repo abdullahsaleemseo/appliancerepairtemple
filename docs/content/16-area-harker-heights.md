@@ -242,3 +242,7 @@ Call (254) 615-2088 · Request Service · Call to confirm the earliest open time
   - "Smart and Wi-Fi appliances in Harker Heights homes": app alerts as clues; app connection problems go to the router and manufacturer.
   - "Keeping newer appliances out of trouble": fridge water filters, coils, front-load seals, dishwasher filters, dryer vents.
   - Three new FAQs: emergency appliance repair in Harker Heights, same-day refrigerator repair, smart appliances.
+
+## Brand problems section (October 2026)
+
+- Added after the call network's tip to target brand and model searches with the town name: six cards, each a common brand problem (for example "Samsung refrigerator not cooling in Killeen"), what it usually means, what to check first, and links to the brand page and the service page. Written in referral voice.

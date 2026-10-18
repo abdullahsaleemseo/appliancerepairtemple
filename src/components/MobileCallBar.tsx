@@ -1,4 +1,4 @@
-import { phoneDisplay, tel } from '@/config/site';
+import { callHint, phoneDisplay, tel } from '@/config/site';
 import { Icon } from './Icon';
 
 /** Sticky bottom bar on phones. The page body reserves space for it so it never covers content. */
@@ -7,8 +7,9 @@ export function MobileCallBar() {
     <div
       className="fixed inset-x-0 bottom-0 z-40 border-t border-white/10 bg-ink/95 p-2 pb-[max(0.5rem,env(safe-area-inset-bottom))] backdrop-blur-xl md:hidden"
       role="region"
-      aria-label="Call us"
+      aria-label="Call to get connected"
     >
+      <p className="pb-1.5 text-center text-[11.5px] leading-tight text-white/70">{callHint}</p>
       <a
         href={tel}
         data-call-location="mobile_bar"

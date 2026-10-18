@@ -1,4 +1,4 @@
-import { phoneDisplay, tel } from '@/config/site';
+import { callHint, phoneDisplay, tel } from '@/config/site';
 import { btn } from './Buttons';
 import { Icon } from './Icon';
 
@@ -39,6 +39,7 @@ export function CallCard({
         </span>
         <span className="whitespace-nowrap">{phoneDisplay}</span>
       </a>
+      <p className={`mt-2 text-[14px] font-medium ${dark ? 'text-white/75' : 'text-ink-body'}`}>{callHint}</p>
       <ul className="mt-6 space-y-3">
         {points.map((p) => (
           <li key={p} className={`flex items-start gap-3 text-[15px] ${dark ? 'text-white/80' : 'text-ink-body'}`}>

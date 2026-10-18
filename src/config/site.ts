@@ -72,6 +72,9 @@ export const site = {
  * providers by phone. It makes no claims about credentials, experience, ratings, speed, prices or payment.
  * This disclaimer appears in the footer of every page and on the Disclaimer page.
  */
+/** Shown next to the number: callers who pick the appliance and enter a ZIP in the phone menu reach a provider. */
+export const callHint = 'Call, choose the appliance, and enter your ZIP code.';
+
 export const referralDisclaimer =
   'This site is a free service to assist homeowners in connecting with local appliance repair providers. All providers are independent and this site does not warrant or guarantee any work performed. It is the responsibility of the homeowner to verify that the hired provider furnishes the necessary license and insurance required for the work being performed. All persons depicted in a photo or video are actors or models and not providers listed on this site.';
 

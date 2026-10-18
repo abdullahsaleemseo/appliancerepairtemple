@@ -27,7 +27,7 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en-US">
-      <body className="pb-[76px] md:pb-0">
+      <body className="pb-[96px] md:pb-0">
         <a
           href="#main"
           className="sr-only z-50 rounded bg-ink px-4 py-3 font-bold text-white focus:not-sr-only focus:fixed focus:left-3 focus:top-3"

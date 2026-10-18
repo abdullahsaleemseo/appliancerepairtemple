@@ -21,7 +21,7 @@ import { TrustBadges } from '@/components/TrustBadges';
 import { pageMetadata } from '@/lib/seo';
 
 export const metadata = pageMetadata({
-  title: `Appliance Repair Temple TX | Connect With Local Pros`,
+  title: `Appliance Repair Temple TX | Emergency Help & Local Pros`,
   description: `Appliance repair in Temple, TX for refrigerators, washers, dryers, dishwashers, ovens and freezers. Call to get connected with an independent local pro.`,
   path: '/',
 });

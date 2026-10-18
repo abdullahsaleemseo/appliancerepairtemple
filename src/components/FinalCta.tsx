@@ -1,3 +1,4 @@
+import { callHint } from '@/config/site';
 import { CallButton } from './Buttons';
 import { CallCard } from './CallCard';
 import { TrustBadges } from './TrustBadges';
@@ -29,6 +30,7 @@ export function FinalCta({
             <p className="mt-6 max-w-md text-lg text-white/65">{text}</p>
             <div className="mt-9">
               <CallButton location={`${formId}_band`} label="Call Now" className="text-[17px]" />
+              <p className="mt-3 text-[14px] text-white/60">{callHint}</p>
             </div>
             <div className="mt-10 border-t border-white/10 pt-6">
               <TrustBadges dark />

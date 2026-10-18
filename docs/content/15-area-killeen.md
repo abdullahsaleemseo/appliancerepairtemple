@@ -246,3 +246,7 @@ Call (254) 615-2088 · Request Service · Call early in the day and we will give
   - "Moving in or out of Killeen? An appliance checklist": defrosting and draining before a move, shipping bolts, gas disconnects by a qualified person, letting a fridge stand upright, checking hoses, vents and the range anti-tip bracket.
   - "Newer Killeen homes: check the warranty first": manufacturer and builder warranties.
   - Three new FAQs: emergency appliance repair in Killeen, same-day refrigerator repair, washer and dryer repair.
+
+## Brand problems section (October 2026)
+
+- Added after the call network's tip to target brand and model searches with the town name: six cards, each a common brand problem (for example "Samsung refrigerator not cooling in Killeen"), what it usually means, what to check first, and links to the brand page and the service page. Written in referral voice.

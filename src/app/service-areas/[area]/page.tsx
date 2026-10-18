@@ -2,6 +2,8 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { routes, site } from '@/config/site';
 import { areas, areaHref } from '@/content/areas';
+import { brandHref, brands } from '@/content/brands';
+import { serviceByKey, serviceHref } from '@/content/services';
 import { PageHero } from '@/components/PageHero';
 import { TrustBadges } from '@/components/TrustBadges';
 import { CtaRow } from '@/components/Buttons';
@@ -130,6 +132,39 @@ export default async function AreaPage({ params }: Params) {
           </div>
         </Section>
       ))}
+
+      {a.brandProblems?.length ? (
+        <Section tone="white" labelledBy="brand-problems-heading">
+          <SectionHeading
+            id="brand-problems-heading"
+            eyebrow="By brand and model"
+            title="Brand problems searched in"
+            accent={`${a.name}.`}
+            intro={`Looking for your exact brand and problem? These come up often in ${a.name} homes. Here is what each one usually means and what to check before you call to get connected with a local pro.`}
+          />
+          <ul className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+            {a.brandProblems.map((bp) => {
+              const brand = brands.find((b) => b.key === bp.brand);
+              return (
+                <li key={bp.title} className="card flex flex-col p-7">
+                  <h3 className="font-display text-[20px] font-bold tracking-[-0.025em] text-ink">{bp.title}</h3>
+                  <p className="mt-2 flex-1 text-[15px] text-ink-body">{bp.text}</p>
+                  <div className="mt-5 flex flex-wrap gap-x-5 gap-y-2 text-[14px]">
+                    {brand?.hasPage ? (
+                      <Link href={brandHref(brand)} className="link-arrow text-[14px]">
+                        {brand.name} repair
+                      </Link>
+                    ) : null}
+                    <Link href={serviceHref(bp.appliance)} className="link-arrow text-[14px]">
+                      {serviceByKey[bp.appliance].name} repair
+                    </Link>
+                  </div>
+                </li>
+              );
+            })}
+          </ul>
+        </Section>
+      ) : null}
 
       <Section labelledBy="svc-heading">
         <SectionHeading id="svc-heading" eyebrow="Repairs" title="Appliances repaired in" accent={`${a.name}.`} />

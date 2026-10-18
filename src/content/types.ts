@@ -124,6 +124,8 @@ export type Area = {
   zipsVerified?: boolean;
   /** Extra page sections, rendered after the local notes. */
   sections?: { heading: string; accent?: string; paragraphs: string[] }[];
+  /** Brand and model problems people search for with the town name. `brand` is a key in content/brands.ts. */
+  brandProblems?: { brand: string; appliance: ApplianceKey; title: string; text: string }[];
   /** Town-specific paragraph for the emergency section; a shared paragraph is used when absent. */
   emergencyNote?: string;
   /** Nearby towns to link from this page (names from site.nearbyTowns or Temple). */

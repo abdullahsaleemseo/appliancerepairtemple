@@ -95,7 +95,7 @@ export function ProblemPicker({ items }: { items: PickerItem[] }) {
             <Icon name="phone" className="h-5 w-5" strokeWidth={2.2} />
             {symptom ? 'Call Now about this' : 'Call Now'} <span className="font-normal text-white/85">{phoneDisplay}</span>
           </a>
-          <p className="mt-3 text-center text-[13px] text-ink-muted">Free call. Connects you with an independent local appliance repair pro.</p>
+          <p className="mt-3 text-center text-[13px] text-ink-muted">Free call. Choose the appliance, then enter your ZIP code.</p>
           <div className="mt-4 text-[14px]">
             <Link href={item.href} className="link-arrow text-[14px]">
               {item.name} repair details
