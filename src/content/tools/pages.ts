@@ -1,6 +1,6 @@
 import { site } from '@/config/site';
 import { toolRoutes, type ToolKey } from '@/config/tools';
-import type { Faq } from '../types';
+import type { Faq, IconName } from '../types';
 
 /**
  * Page copy for the four tool pages. Local references come from src/config/site.ts so the
@@ -13,6 +13,8 @@ export type ToolPage = {
   /** Short name used in breadcrumbs and links between tools. */
   name: string;
   linkText: string;
+  /** Homepage card. */
+  card: { title: string; text: string; cta: string; icon: IconName };
   metaTitle: string;
   metaDescription: string;
   title: string;
@@ -32,6 +34,12 @@ const { city, stateAbbr, county } = site;
 export const toolPages: Record<ToolKey, ToolPage> = {
   maintenance: {
     key: 'maintenance',
+    card: {
+      title: 'Maintenance checklist',
+      text: 'A printable plan for every appliance in the house, with shorter intervals for hard water, humidity and pets.',
+      cta: 'Build my checklist',
+      icon: 'calendar',
+    },
     path: toolRoutes.maintenance,
     name: 'Maintenance Checklist Generator',
     linkText: 'Build a maintenance checklist for your appliances',
@@ -81,6 +89,12 @@ export const toolPages: Record<ToolKey, ToolPage> = {
   },
   errorCodes: {
     key: 'errorCodes',
+    card: {
+      title: 'Error code decoder',
+      text: 'Type the code on the display and see what it usually means, what to check first and when to stop using it.',
+      cta: 'Decode an error',
+      icon: 'tool',
+    },
     path: toolRoutes.errorCodes,
     name: 'Error Code Decoder',
     linkText: 'Look up what an appliance error code means',
@@ -130,6 +144,12 @@ export const toolPages: Record<ToolKey, ToolPage> = {
   },
   cost: {
     key: 'cost',
+    card: {
+      title: 'Repair cost estimator',
+      text: 'See how big a repair usually is, from parts to labour, and whether repairing still beats replacing.',
+      cta: 'Check repair or replace',
+      icon: 'tag',
+    },
     path: toolRoutes.cost,
     name: 'Repair Cost Estimator',
     linkText: 'See what a repair usually involves and whether to replace',
@@ -178,6 +198,12 @@ export const toolPages: Record<ToolKey, ToolPage> = {
   },
   symptoms: {
     key: 'symptoms',
+    card: {
+      title: 'Symptom checker',
+      text: 'No code on the screen? Describe what the appliance is doing and see the likely causes, ranked.',
+      cta: 'Find the likely cause',
+      icon: 'wrench',
+    },
     path: toolRoutes.symptoms,
     name: 'Symptom Diagnostic Tool',
     linkText: 'Find the likely cause when there is no error code',

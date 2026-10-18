@@ -19,6 +19,8 @@ import { Section, SectionHeading } from '@/components/Section';
 import { ServicesGrid } from '@/components/ServicesGrid';
 import { TrustBadges } from '@/components/TrustBadges';
 import { pageMetadata } from '@/lib/seo';
+import { toolPageList } from '@/content/tools/pages';
+import { toolRoutes } from '@/config/tools';
 
 export const metadata = pageMetadata({
   title: `Appliance Repair Temple TX | Emergency Fridge & Washer Help`,
@@ -287,6 +289,35 @@ export default function HomePage() {
         </ul>
       </Section>
 
+      {/* Free tools */}
+      <Section tone="ink" labelledBy="tools-heading">
+        <SectionHeading
+          id="tools-heading"
+          eyebrow="Free tools"
+          title="Figure out the problem"
+          accent="before you call."
+          intro="Four free tools for Temple homeowners: no sign-up, no email, and your answers stay in your browser. Use them to understand an error code or a symptom, plan upkeep, or weigh repair against replacement."
+          dark
+        />
+        <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {toolPageList.map((t) => (
+            <li key={t.key}>
+              <Link href={t.path} data-cta={`home_tool_${t.key}`} className="card-dark group flex h-full flex-col p-6 transition hover:-translate-y-1 hover:border-flame/40 hover:bg-white/[0.07]">
+                <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-flame/15 text-flame-glow transition group-hover:bg-flame group-hover:text-white">
+                  <Icon name={t.card.icon} className="h-6 w-6" />
+                </span>
+                <h3 className="mt-5 font-display text-[20px] font-bold tracking-[-0.02em] text-white">{t.card.title}</h3>
+                <p className="mt-2 flex-1 text-[15px] text-white/65">{t.card.text}</p>
+                <span className="mt-5 inline-flex items-center gap-1.5 text-[14.5px] font-semibold text-flame-glow">
+                  {t.card.cta}
+                  <Icon name="arrow" className="h-4 w-4 transition group-hover:translate-x-1" />
+                </span>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </Section>
+
       {/* Emergency */}
       <Section tone="white" id="emergency" labelledBy="emergency-heading">
         <SectionHeading
@@ -434,7 +465,12 @@ export default function HomePage() {
           <Link href={routes.blog} className="font-semibold text-ink underline decoration-flame underline-offset-4">
             appliance repair tips
           </Link>
-          , including how often to clean a dryer vent and what to check when a refrigerator stops cooling.
+          , including how often to clean a dryer vent and what to check when a refrigerator stops cooling. For a plan built around your own
+          appliances, try the{' '}
+          <Link href={toolRoutes.maintenance} className="font-semibold text-ink underline decoration-flame underline-offset-4">
+            maintenance checklist generator
+          </Link>
+          .
         </p>
       </Section>
 
