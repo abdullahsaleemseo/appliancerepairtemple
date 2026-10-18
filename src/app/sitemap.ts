@@ -5,6 +5,7 @@ import { brands, brandHref } from '@/content/brands';
 import { posts, postHref } from '@/content/blog';
 import { serviceHref, services } from '@/content/services';
 import { absoluteUrl } from '@/lib/seo';
+import { toolRoutes } from '@/config/tools';
 
 export const dynamic = 'force-static';
 
@@ -25,6 +26,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...areas.map((a) => entry(areaHref(a), 0.7)),
     entry(routes.about, 0.5),
     entry(routes.request, 0.7),
+    ...Object.values(toolRoutes).map((path) => entry(path, 0.6)),
     entry(routes.faq, 0.5),
     entry(routes.blog, 0.4),
     ...posts.map((p) => entry(postHref(p), 0.4, new Date(`${p.updated}T12:00:00`))),

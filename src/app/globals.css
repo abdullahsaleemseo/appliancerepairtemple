@@ -141,3 +141,19 @@
     animation: none;
   }
 }
+
+/* Tool pages print only the tool result (the maintenance checklist uses this for Print / Save as PDF). */
+@media print {
+  body:has(.print-keep) {
+    padding: 0 !important;
+    background: #fff;
+  }
+  body:has(.print-keep) > :not(main),
+  body:has(.print-keep) main > :not(.print-keep) {
+    display: none !important;
+  }
+  .print-keep {
+    padding: 0 !important;
+    background: #fff !important;
+  }
+}

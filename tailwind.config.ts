@@ -29,10 +29,12 @@ const config: Config = {
       keyframes: {
         marquee: { from: { transform: 'translateX(0)' }, to: { transform: 'translateX(-50%)' } },
         pulseDot: { '0%,100%': { opacity: '1' }, '50%': { opacity: '.35' } },
+        stepIn: { from: { opacity: '0', transform: 'translateY(8px)' }, to: { opacity: '1', transform: 'none' } },
       },
       animation: {
         marquee: 'marquee 40s linear infinite',
         pulseDot: 'pulseDot 2s ease-in-out infinite',
+        stepIn: 'stepIn .28s ease-out both',
       },
     },
   },

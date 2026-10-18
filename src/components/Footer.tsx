@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { canShow, referralDisclaimer, routes, site } from '@/config/site';
 import { areas, areaHref } from '@/content/areas';
+import { toolPageList } from '@/content/tools/pages';
 import { serviceLinks } from './nav';
 import { Logo } from './Logo';
 import { PhoneLink } from './PhoneLink';
@@ -97,6 +98,12 @@ export function Footer() {
               <li><Link href={routes.faq} className={link}>FAQs</Link></li>
               <li><Link href={routes.blog} className={link}>Repair tips</Link></li>
               <li><Link href={routes.request} className={link}>Call to Get Connected</Link></li>
+            </ul>
+            <h2 className={`${col} mt-10`}>Free tools</h2>
+            <ul className="mt-5 space-y-2.5">
+              {toolPageList.map((t) => (
+                <li key={t.key}><Link href={t.path} className={link}>{t.name}</Link></li>
+              ))}
             </ul>
           </div>
         </div>
