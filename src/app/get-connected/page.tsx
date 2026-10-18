@@ -54,9 +54,9 @@ export default function RequestPage() {
       <PageHero crumbs={[{ name: 'Get Connected', path: routes.request }]} title={`Appliance Repair in ${site.city},`} accent="one free call away.">
         <div className="prose-copy prose-dark">
           <p>
-            Refrigerator warm? Washer full of water? {site.brandName} is {site.city}’s line for appliance repair. Call the number
-            below, choose the appliance, enter your ZIP code, and you are talking with a technician who works in {site.city} and
-            nearby {site.county} towns.
+            Have the model number handy, pick the appliance from the phone menu, enter your ZIP code and describe what it is doing.
+            That is the whole process for reaching an appliance repair technician in {site.city} and nearby {site.county} towns
+            through {site.brandName}, and it takes a few minutes.
           </p>
         </div>
         <div className="mt-8">

@@ -124,10 +124,10 @@ export default function CityPage() {
 
       <PageHero crumbs={[{ name: `Appliance Repair ${site.city}`, path }]} title={`Appliance Repair in ${site.city}, ${site.state}`}>
         <p className="text-lg leading-relaxed text-white/75 md:text-xl">
-          Refrigerator warm? Washer won&apos;t drain? Appliance Repair Temple is Temple&apos;s line for appliance repair. One call
-          puts you in touch with a technician who works on Whirlpool, GE, Samsung, LG, Frigidaire and Maytag refrigerators,
-          freezers, washers, dryers, dishwashers and ovens in 76501, 76502 and 76504, from the Historic District and Western
-          Hills to the newer streets off West Adams Avenue.
+          Temple runs from the Historic District&apos;s older kitchens to new builds out toward Lake Belton, and the appliances in
+          those homes fail in different ways. Appliance repair in Temple, Texas covers Whirlpool, GE, Samsung, LG, Frigidaire and
+          Maytag refrigerators, freezers, washers, dryers, dishwashers and ovens in 76501, 76502 and 76504, from Western Hills to
+          the newer streets off West Adams Avenue.
         </p>
         <div className="mt-8">
           <CtaRow location="city_hero" dark />

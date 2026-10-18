@@ -115,9 +115,9 @@ export default function AboutPage() {
       >
         <div className="prose-copy prose-dark">
           <p>
-            Refrigerator warm? Washer won’t drain? {site.brandName} is {site.city}’s line for appliance repair. One call puts you in
-            touch with a technician who works on refrigerators, freezers, washers, dryers, dishwashers, ovens, ranges and microwaves in{' '}
-            {site.city} and the {site.region} towns around it.
+            This page explains what {site.brandName} is, how a call to its line works, and what to ask before a technician starts on
+            your refrigerator, freezer, washer, dryer, dishwasher, oven or microwave. In short: one phone number for appliance repair
+            in {site.city} and the {site.region} towns around it, with the details below.
           </p>
         </div>
         <div className="mt-8">

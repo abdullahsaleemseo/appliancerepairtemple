@@ -13,7 +13,7 @@ export const brands: Brand[] = [
     metaDescription:
       'Whirlpool washer stuck on F9 E1, dryer blowing cold or ice maker quit? Whirlpool appliance repair in Temple, TX for 76501, 76502, 76504. Call (254) 615-2088.',
     intro: [
-      'Whirlpool washer stuck mid-cycle, dryer blowing cold or refrigerator warming up? Appliance Repair Temple’s line puts you in touch with a technician who works on Whirlpool washers, dryers, refrigerators, dishwashers, ranges and over-the-range microwaves in homes across Temple, TX.',
+      'Whirlpool’s factories build more of Temple’s appliances than the name on the front suggests. Maytag, KitchenAid, Amana and many Kenmore models come from the same company, so Whirlpool appliance repair in Temple, TX often draws on the same pumps, lid locks, igniters and control boards across washers, dryers, refrigerators, dishwashers, ranges and microwaves.',
       'Whirlpool is one of the most common names in Temple kitchens and laundry rooms, from builder-grade sets in rentals near downtown to Cabrio top-loaders and French door refrigerators in West Temple. Whirlpool Corporation also owns Maytag, KitchenAid, JennAir and Amana, so many parts are shared and easy to find.',
       'Whirlpool model numbers read like a short description of the appliance. Most start with W, and the next letters name the product: WTW is a top-load washer, WFW a front-load washer, WED and WGD an electric or gas dryer, WRF a French door refrigerator, WRS a side-by-side, WRT a top-freezer, WDT or WDF a dishwasher, WFE or WFG a freestanding electric or gas range, and WMH an over-the-range microwave. The suffix marks the model year and color.',
     ],
@@ -100,7 +100,7 @@ export const brands: Brand[] = [
     metaDescription:
       'GE oven showing F3 or F7, fridge warming up or dishwasher not draining? GE, GE Profile and Café appliance repair in Temple, TX homes. Call (254) 615-2088.',
     intro: [
-      'GE oven slow to heat, refrigerator warming up or dishwasher leaving water behind? One call to Appliance Repair Temple puts you in touch with a technician who works on GE and GE Profile ranges, wall ovens, cooktops, refrigerators, dishwashers, washers, dryers and over-the-range microwaves in Temple, TX.',
+      'GE appliances in Temple wear three badges, GE, GE Profile and Café, and older Hotpoint units still run in plenty of rentals. GE appliance repair in Temple, TX most often means an oven slow to heat or showing an F-code, a refrigerator warming on the fresh-food side, or a dishwasher leaving water in the tub.',
       'GE appliances are everywhere in Temple, especially the ranges, refrigerators and dishwashers that came with the house. GE Appliances has been owned by Haier since 2016 and sells several lines: GE, GE Profile, Café and Monogram, plus Hotpoint, which shares many GE parts. Mention which line you have, because parts and features vary between them.',
       'The first letters of a GE model number usually tell you the line and the product. A leading P means GE Profile, C means Café and Z means Monogram. JB is an electric freestanding range and JGB a gas one, JS and JGS are slide-ins, GTS and GTE are top-freezer refrigerators, GSS a side-by-side, GNE and GFE French door, GDT or GDF a dishwasher, GTW and GTD a top-load washer and dryer, and JVM an over-the-range microwave.',
     ],
@@ -186,7 +186,7 @@ export const brands: Brand[] = [
     metaDescription:
       'Samsung ice maker frozen, washer flashing 5C or dC, or dryer not heating? Samsung appliance repair in Temple, TX for fridges, laundry and ranges. Call now.',
     intro: [
-      'Samsung ice maker frozen solid, washer stopping with a code or dryer blowing cold? Call Appliance Repair Temple’s line to reach a technician who works on Samsung refrigerators, washers, dryers, ranges, dishwashers and over-the-range microwaves in homes across Temple, TX.',
+      'Samsung appliances lean on electronics: sensors, inverter compressors and displays that report trouble as a code. Samsung appliance repair in Temple, TX often starts with that code, whether it is a washer flashing 4C, a dryer showing HE or a French door refrigerator whose ice maker has frozen solid.',
       'Samsung refrigerators and laundry pairs are common in newer West Temple subdivisions along West Adams Avenue and Highway 317. Most report faults as short codes on the display. A code narrows the search but rarely names the part, so testing still confirms the cause.',
       'Samsung model numbers start with two letters for the product: RF is a French door refrigerator, RS a side-by-side, RB a bottom-freezer, WF a front-load washer, WA a top-load washer, DV a dryer (DVE electric, DVG gas), NE an electric range, NX a gas range, DW a dishwasher and ME an over-the-range microwave. The part after the slash, such as /AA or /A5, is the version code. Parts can change between versions, so include it.',
     ],
@@ -272,7 +272,7 @@ export const brands: Brand[] = [
     metaDescription:
       'LG fridge not cooling, washer flashing OE or IE, or dryer showing D90? LG appliance repair in Temple, TX for refrigerators, laundry and ranges. Call now.',
     intro: [
-      'LG refrigerator warming up, washer stopping with a code or dryer running cold? Call (254) 615-2088 to reach a technician who works on LG refrigerators, washers, dryers, ranges, dishwashers and over-the-range microwaves in Temple, TX homes.',
+      'LG made its name with direct-drive washers and linear-compressor refrigerators, and both are common in Temple homes. LG appliance repair in Temple, TX usually starts with what the display says: OE or IE on a washer, D80 to D95 on a dryer, or a refrigerator that runs but no longer gets cold.',
       'LG appliances are common in newer Temple homes, especially French door refrigerators, front-load laundry pairs and smart ranges. Most LG models report faults as two-letter codes on the display, and many support Smart Diagnosis through the LG ThinQ app. A code points to the right system; testing confirms which part failed.',
       'LG model numbers start with the product: LF, LRF and LRMV are French door and InstaView-style refrigerators, LS a side-by-side, WM a front-load washer, WT a top-load washer, DLE and DLG an electric or gas dryer, LRE and LRG an electric or gas range, LDF, LDT and LDP dishwashers, and LMV an over-the-range microwave. Kenmore models with a 795 or 796 prefix were built by LG and use many of the same parts.',
       'If your LG refrigerator has stopped cooling, check the purchase date first: LG covers the linear or inverter compressor on many models longer than its standard warranty.',
@@ -359,7 +359,7 @@ export const brands: Brand[] = [
     metaDescription:
       'Frigidaire garage freezer warming up, range showing F10 or ice maker quit? Frigidaire and Gallery appliance repair in Temple, TX. Call (254) 615-2088.',
     intro: [
-      'Frigidaire freezer warming up, range not heating or dishwasher leaving water behind? A call to (254) 615-2088 reaches a technician who works on Frigidaire refrigerators, freezers, ranges, dishwashers, washers, dryers and microwaves across Temple, TX.',
+      'Frigidaire is the name on a lot of Temple garage freezers, rental ranges and builder-grade refrigerators. Frigidaire appliance repair in Temple, TX covers those and the Gallery line, from upright and chest freezers that warm up in summer to ranges that show an F10 code or will not bake.',
       'Frigidaire, part of the Electrolux group, is one of the most common brands in Temple homes. It shows up in rentals, in starter homes on the east side and in garages, where a Frigidaire chest or upright freezer often holds the deer season meat or the extra groceries. Garage units work hard in a Temple August, and that is when their relays, fans and thermostats tend to quit.',
       'The second letter of most current Frigidaire model numbers shows the line: FF for standard Frigidaire, FG for Gallery and FP for Professional. The next letters name the product, so FFEF is a standard electric freestanding range, FGGF a Gallery gas range, FFFC a chest freezer, FFFU an upright freezer and FFTR a top-freezer refrigerator. Kenmore models starting with 253 or 790 were built by Frigidaire and share many parts.',
     ],
@@ -447,7 +447,7 @@ export const brands: Brand[] = [
     metaDescription:
       'Maytag Bravos washer showing Ld or LF, dryer not heating or fridge running warm? Maytag appliance repair in Temple, TX homes and rentals. Call (254) 615-2088.',
     intro: [
-      'Maytag washer stuck mid-cycle, dryer running cold or refrigerator warming up? Call and describe the problem: the line connects you with a technician who works on Maytag washers, dryers, refrigerators, dishwashers, ranges and microwaves across Temple, TX.',
+      'Maytag laundry pairs are a fixture in Temple utility rooms, from older top-loaders to Bravos models that report Ld and LF codes. Maytag appliance repair in Temple, TX covers those washers and dryers along with Maytag refrigerators, dishwashers, ranges and microwaves, many of which share parts with Whirlpool.',
       'Laundry is where Maytag shows up most in Temple homes, from Centennial and Bravos top-loaders that have run for years to newer high-efficiency pairs and the Commercial Technology line. Some older houses still have a Neptune front-loader. Maytag is part of Whirlpool Corporation, and most current Maytag models share platforms and parts with Whirlpool, which keeps common parts easy to find.',
       'Maytag model numbers follow the Whirlpool pattern. MVW is a top-load washer, MHW a front-load washer, MED and MGD an electric or gas dryer, MFI a French door refrigerator with an in-door ice maker, MRT a top-freezer, MDB a dishwasher, MER and MGR an electric or gas range, and MMV an over-the-range microwave.',
       'Check the warranty before any repair. Maytag offers a 10-year limited parts warranty on certain parts of many newer appliances, such as the washer drive motor and wash basket and some refrigerator compressors. Labor is often not included in the later years, so a covered part can still mean a paid visit.',
@@ -535,7 +535,7 @@ export const brands: Brand[] = [
     metaDescription:
       'KitchenAid dishwasher leaving film, French door fridge running warm or slide-in range slow to heat? KitchenAid appliance repair in Temple, TX. Call today.',
     intro: [
-      'KitchenAid dishwasher leaving a film, refrigerator warming up or range slow to heat? One call puts you in touch with a technician who works on KitchenAid dishwashers, refrigerators, ranges and over-the-range microwaves in homes across Temple, TX.',
+      'KitchenAid turns up in the kitchens built to impress: panel-ready dishwashers, French door refrigerators and slide-in ranges. KitchenAid appliance repair in Temple, TX has to work around cabinetry and trim, so the model number from the door frame or the tub edge matters more than usual.',
       'KitchenAid major appliances are a Whirlpool Corporation brand, built for the kitchen. In Temple they show up most as quiet third-rack dishwashers, counter-depth French door refrigerators and slide-in ranges in remodeled kitchens and in newer homes out toward Lake Belton. Many share core parts with Whirlpool and Maytag models, while trim, panels and some controls are KitchenAid-only.',
       'KitchenAid model numbers start with K plus letters for the product. KDTE, KDTM and KDPM dishwashers have hidden top controls, KDFE models have front controls, KRFF and KRFC are French door refrigerators (C for counter-depth), KRMF is a five-door model, KSEG and KSGG are electric and gas slide-in ranges, KFEG and KFGG freestanding ranges, and KMHS an over-the-range microwave. This page covers major appliances; for a stand mixer, contact KitchenAid.',
     ],
@@ -619,7 +619,7 @@ export const brands: Brand[] = [
     metaDescription:
       'Bosch dishwasher showing E15 or E24, not draining or not drying? Bosch appliance repair in Temple, TX for dishwashers, fridges and ranges. Call (254) 615-2088.',
     intro: [
-      'Bosch dishwasher showing an error code, leaving water in the tub or not drying? Call Appliance Repair Temple’s line to reach a technician who works on Bosch dishwashers, refrigerators and ranges in Temple, TX homes.',
+      'Bosch dishwashers run quietly because they are sealed tight, and the same design hides most of their problems under the tub. Bosch appliance repair in Temple, TX is mostly dishwasher work, with error codes like E15, E24 and E25, plus Bosch refrigerators and ranges in newer homes.',
       'Dishwashers are by far the most common Bosch appliance in Temple. They run quietly, often with only a red InfoLight on the floor to show they are on, and they protect themselves: when something goes wrong they stop and show a code instead of carrying on. A Bosch that has quit is usually telling you which system needs attention. Bosch belongs to BSH, the same group behind Thermador and Gaggenau.',
       'Bosch identifies its appliances with an E-Nr and an FD number. The E-Nr is the model number, and on dishwashers it starts with SH, for example SHE, SHX, SHP or SHV for panel-ready models, followed by a code for the series. The FD is a four-digit production code that dates the unit, and parts can change between FD runs. Ranges start with HGI (gas), HEI (electric) or HII (induction), and refrigerators with B36 or B30.',
     ],
@@ -700,8 +700,8 @@ export const brands: Brand[] = [
     metaDescription:
       'Kenmore washer, dryer or fridge acting up? The 110, 106, 253 or 795 prefix shows who built it. Kenmore appliance repair in Temple, TX. Call (254) 615-2088.',
     intro: [
-      'Kenmore washer that will not spin, dryer running cold or refrigerator warming up? The Appliance Repair Temple line connects you with a technician who works on Kenmore washers, dryers, refrigerators, freezers, dishwashers, ranges and microwaves in homes across Temple, TX.',
-      'Kenmore is a little different from other brands. For decades Kenmore appliances were sold through Sears but built by other manufacturers, including Whirlpool, LG, Frigidaire and others. Two Kenmore refrigerators can have completely different parts inside, depending on who made them. Temple has a lot of them, often an older 70 or 80 Series laundry pair that still runs, or a Kenmore Elite fridge that came with the house.',
+      'Kenmore never built its own appliances, and the first three digits of the model number tell you who did. Kenmore appliance repair in Temple, TX starts there, because a 110 washer takes Whirlpool parts and a 253 freezer takes Frigidaire parts, on newer models and on the older ones still running in Temple homes.',
+      'For decades Kenmore appliances were sold through Sears, so two Kenmore refrigerators can have completely different parts inside depending on who made them. Temple has a lot of them, often an older 70 or 80 Series laundry pair that still runs, or a Kenmore Elite fridge that came with the house.',
       'The model number tells a technician who built it. The three digits before the dot point to the manufacturer: 110 (laundry), 106 (refrigerators) and 665 (dishwashers) are Whirlpool, 253 (refrigerators), 790 (ranges) and 417 (front-load laundry) are Frigidaire, and 795 (refrigerators) and 796 (laundry) are LG. The digits after the dot identify the exact model, which decides which parts fit.',
     ],
     appliances: [
@@ -788,8 +788,8 @@ export const brands: Brand[] = [
     metaDescription:
       'Electrolux front-load washer not draining, dryer taking too long or fridge warming up? Electrolux appliance repair in Temple, TX homes. Call (254) 615-2088.',
     intro: [
-      'Electrolux washer stopping with a code, dryer taking too long or refrigerator warming up? Call the line to reach a technician who works on Electrolux front-load washers, dryers, refrigerators, freezers, ranges and dishwashers in homes across Temple, TX.',
-      'Electrolux is the parent company of Frigidaire and sells its own Electrolux-branded line, usually higher up the range: front-load laundry with steam cycles, counter-depth refrigerators and ranges with convection and air fry. In Temple it turns up most in remodeled kitchens and in laundry rooms with stacked front-load pairs. Underneath, many Electrolux appliances share platforms and parts with Frigidaire models.',
+      'Electrolux sells front-load laundry and kitchen appliances a step above its Frigidaire line, which the same company owns. Electrolux appliance repair in Temple, TX most often means a front-loader stopping with a drain or door lock code, a dryer taking too long or a refrigerator warming up.',
+      'The Electrolux line usually sits higher up the range: front-load laundry with steam cycles, counter-depth refrigerators and ranges with convection and air fry. In Temple it turns up most in remodeled kitchens and in laundry rooms with stacked front-load pairs, and underneath, many models share platforms and parts with Frigidaire.',
       'Electrolux model numbers start with E. Current front-load washers start with ELFW and dryers with ELFE (electric) or ELFG (gas); older laundry starts with EFLS or EIFLS. Kitchen appliances from the earlier Electrolux ICON and Wave-Touch lines start with EI or EW. Labels often carry three numbers: the model, a product number code (PNC) used for parts on some models, and the serial. A photo of the full label avoids ordering the wrong part.',
     ],
     appliances: [
@@ -874,8 +874,8 @@ export const brands: Brand[] = [
     metaDescription:
       'Amana washer not agitating, dryer running cold or top-freezer fridge warm? Amana appliance repair in Temple, TX homes and rentals. Call (254) 615-2088 today.',
     intro: [
-      'Amana washer not agitating, dryer running cold or refrigerator warming up? Call Appliance Repair Temple’s line to reach a technician who works on Amana washers, dryers, refrigerators, ranges, dishwashers and microwaves in Temple, TX.',
-      'Amana started in the Amana Colonies of Iowa and is now a Whirlpool Corporation brand built around straightforward, value-priced appliances: top-load agitator washers, top-freezer refrigerators, coil and smoothtop ranges. That makes it a common sight in rental homes, duplexes and apartments around Temple, near the college and the medical center, often bought as a set by a landlord or builder.',
+      'Amana appliances are built for value, which is why they turn up in so many Temple rentals and starter homes. Amana appliance repair in Temple, TX covers top-load washers that will not agitate, dryers running cold and top-freezer refrigerators that click without cooling, with many parts shared with Whirlpool designs.',
+      'The brand started in the Amana Colonies of Iowa and is now part of Whirlpool Corporation. Its lineup sticks to top-load agitator washers, top-freezer refrigerators and coil and smoothtop ranges, often bought as a set by a landlord or builder for duplexes and apartments near the college and the medical center.',
       'Amana model numbers are short and readable. NTW is a top-load washer, NED and NGD an electric or gas dryer, ART a top-freezer refrigerator, ABB a bottom-freezer, ASI a side-by-side, ADB a dishwasher, AER and AGR an electric or gas range, and AMV an over-the-range microwave. Many share parts with Whirlpool and Maytag models, so common parts are easy to find and repairs tend to be practical.',
       'If you rent, check with your landlord before arranging a repair, since they may be responsible for the appliances they supply.',
     ],
@@ -961,7 +961,7 @@ export const brands: Brand[] = [
     metaDescription:
       'Speed Queen TC5 or TR washer not draining, loud on spin, or dryer not heating? Speed Queen washer and dryer repair in Temple, TX. Call (254) 615-2088.',
     intro: [
-      'Speed Queen washer not draining, stuck on spin or dryer running cold? One call reaches a technician who works on Speed Queen top-load and front-load washers and electric and gas dryers in homes across Temple, TX.',
+      'Speed Queen washers and dryers are built for decades of heavy use, with commercial-style parts and, on the TC5, very little electronics. Speed Queen repair in Temple, TX is mostly about one worn part on a machine worth keeping: a drain pump, a lid switch, a belt or a dryer heating part.',
       'Speed Queen makes laundry and nothing else. It is built by Alliance Laundry Systems in Ripon, Wisconsin, the same company behind a lot of commercial laundromat equipment, and the home machines borrow from that heavy-duty design. Many Temple owners bought one to keep for a long time, and with that build, repair is usually the sensible choice when something wears out.',
       'Speed Queen model numbers name the series. TC5 is the classic top-load washer with mechanical dials and a transmission-driven agitator. TR3, TR5 and TR7 are electronic top-loaders, FF7 a front-load washer, and DR3, DR5, DR7 and DC5 dryers, with E or G near the end for electric or gas. Older machines carry longer codes starting with AWN for washers or ADE and ADG for dryers.',
       'Check the warranty before anything else. Many recent Speed Queen washers and dryers come with long coverage, often five years or more, and the exact terms depend on the model and serial number.',
