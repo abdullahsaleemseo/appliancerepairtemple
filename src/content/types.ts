@@ -48,7 +48,6 @@ export type ServiceBlock =
   | { type: 'repairOrReplace' }
   | { type: 'brands'; heading?: string; intro?: string; styles?: string[] }
   | { type: 'prose'; heading: string; paragraphs: string[] }
-  | { type: 'payment' }
   | { type: 'diagnostic' }
   | { type: 'resultsGrid'; heading: string; eyebrow?: string; intro?: string; rows: { see: string; means: string; fix: string }[] }
   | { type: 'emergency'; heading: string; intro: string; signs: { title: string; text: string }[]; steps: string[] }

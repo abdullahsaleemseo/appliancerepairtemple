@@ -11,9 +11,7 @@ import { FaqList } from '@/components/FaqList';
 import { FinalCta } from '@/components/FinalCta';
 import { HowItWorks } from '@/components/HowItWorks';
 import { Icon } from '@/components/Icon';
-import { JsonLd } from '@/components/JsonLd';
 import { Section, SectionHeading } from '@/components/Section';
-import { VerifyTag } from '@/components/Verify';
 import { pageMetadata } from '@/lib/seo';
 
 export const dynamicParams = false;
@@ -67,7 +65,7 @@ export default async function BrandPage({ params }: Params) {
       ) : null}
 
       <Section labelledBy="types-heading">
-        <SectionHeading id="types-heading" eyebrow="Appliances" title={`${b.name} appliances`} accent="we repair." />
+        <SectionHeading id="types-heading" eyebrow="Appliances" title={`${b.name} appliances`} accent="local pros repair." />
         <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {b.appliances.map((a) => {
             const s = serviceByKey[a.key];
@@ -93,10 +91,10 @@ export default async function BrandPage({ params }: Params) {
       <Section tone="ink" labelledBy="issues-heading">
         <SectionHeading
           id="issues-heading"
-          eyebrow="What we see"
+          eyebrow="Common problems"
           title={`Common ${b.name} problems`}
           accent="and what they usually mean."
-          intro="General patterns, not model-specific defects. The technician confirms the cause on your appliance before replacing anything."
+          intro="General patterns, not model-specific defects. A good technician confirms the cause on your appliance before replacing anything."
           dark
         />
         <ul className="grid gap-4 md:grid-cols-2">
@@ -168,7 +166,7 @@ export default async function BrandPage({ params }: Params) {
       ) : null}
 
       <Section tone="white" labelledBy="process-heading">
-        <SectionHeading id="process-heading" eyebrow="Process" title="How service" accent="works." center />
+        <SectionHeading id="process-heading" eyebrow="Process" title="How getting connected" accent="works." center />
         <HowItWorks />
       </Section>
 
@@ -181,7 +179,7 @@ export default async function BrandPage({ params }: Params) {
                 Appliance repair in {site.city}
               </Link>
               <Link href={routes.brands} className="link-arrow">
-                All brands we service
+                All appliance brands
               </Link>
             </div>
           </div>
@@ -189,12 +187,13 @@ export default async function BrandPage({ params }: Params) {
         </div>
         <aside className="mt-12 rounded-2xl border border-sand bg-white p-6 text-[14px] leading-relaxed text-ink-body">
           <strong className="font-semibold text-ink">Trademark notice:</strong> {b.name} is a trademark of its respective owner.{' '}
-          {site.brandName} is an independent repair service and is not affiliated with, authorized by or endorsed by {b.name}.
-          Brand names are used only to describe the appliances we repair.
+          {site.brandName} is a free referral service that connects homeowners with independent local repair providers. It is
+          not affiliated with, authorized by or endorsed by {b.name}. Brand names are used only to describe the appliances local
+          pros repair.
         </aside>
       </Section>
 
-      <FinalCta formId={`brand_${b.key}_final`} title={`${b.name} acting up?`} accent="We can help." />
+      <FinalCta formId={`brand_${b.key}_final`} title={`${b.name} acting up?`} accent="Get connected." />
     </>
   );
 }

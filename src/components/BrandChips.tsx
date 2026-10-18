@@ -29,7 +29,7 @@ export function BrandMarquee({ names }: { names: string[] }) {
   const row = [...names, ...names];
   return (
     <div className="relative overflow-hidden [mask-image:linear-gradient(90deg,transparent,black_12%,black_88%,transparent)]">
-      <ul className="flex w-max animate-marquee gap-14 hover:[animation-play-state:paused]" aria-label="Brands we service">
+      <ul className="flex w-max animate-marquee gap-14 hover:[animation-play-state:paused]" aria-label="Appliance brands local pros repair">
         {row.map((n, i) => (
           <li
             key={`${n}-${i}`}

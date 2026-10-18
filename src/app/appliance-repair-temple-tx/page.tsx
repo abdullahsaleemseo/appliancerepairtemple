@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { canShow, claims, routes, site } from '@/config/site';
+import { routes, site } from '@/config/site';
 import { areas, areaHref } from '@/content/areas';
 import { brands, otherBrands } from '@/content/brands';
 import { cityFaqs } from '@/content/faqs';
@@ -12,11 +12,8 @@ import { FaqList } from '@/components/FaqList';
 import { FinalCta } from '@/components/FinalCta';
 import { HowItWorks } from '@/components/HowItWorks';
 import { Icon } from '@/components/Icon';
-import { JsonLd } from '@/components/JsonLd';
 import { PageHero } from '@/components/PageHero';
-import { PaymentNote } from '@/components/PaymentNote';
 import { PhoneLink } from '@/components/PhoneLink';
-import { ShareExperience } from '@/components/ShareExperience';
 import { Section, SectionHeading } from '@/components/Section';
 import { ServicesGrid } from '@/components/ServicesGrid';
 import { ServicesTable } from '@/components/ServicesTable';
@@ -26,8 +23,8 @@ import { pageMetadata } from '@/lib/seo';
 const path = routes.cityPage;
 
 export const metadata = pageMetadata({
-  title: `Appliance Repair Temple, Texas | In-Home & Emergency`,
-  description: `In-home and emergency appliance repair in Temple, Texas for fridges, washers, dryers, dishwashers, ovens and freezers. Every Temple ZIP code, Mon-Sat.`,
+  title: `Appliance Repair Temple, Texas | Connect With Local Pros`,
+  description: `Appliance repair in Temple, Texas for fridges, washers, dryers, dishwashers, ovens and freezers, including emergency help. Call to get connected with a pro.`,
   path,
 });
 
@@ -46,7 +43,7 @@ const localNeeds: { title: string; text: string; key: ApplianceKey; link: string
   },
   {
     title: 'Dryer vents in older Temple homes',
-    text: 'Older houses around the Historic District, Midway and Western Hills often have long vent runs or tight laundry closets. Lint builds up, the dryer runs hot, and the thermal fuse or element fails. We check airflow on every dryer call, because a new part behind a clogged vent fails again.',
+    text: 'Older houses around the Historic District, Midway and Western Hills often have long vent runs or tight laundry closets. Lint builds up, the dryer runs hot, and the thermal fuse or element fails. Ask the technician to check airflow on any dryer call, because a new part behind a clogged vent fails again.',
     key: 'dryer',
     link: 'dryer repair in Temple',
   },
@@ -58,23 +55,23 @@ const localNeeds: { title: string; text: string; key: ApplianceKey; link: string
   },
   {
     title: 'Ovens and ranges that run hot, cold or not at all',
-    text: 'Bake elements burn out, gas igniters weaken and temperature sensors drift. You notice when dinner takes twice as long. We test the element, igniter and sensor before replacing anything.',
+    text: 'Bake elements burn out, gas igniters weaken and temperature sensors drift. You notice when dinner takes twice as long. A good technician tests the element, igniter and sensor before replacing anything.',
     key: 'oven',
     link: 'oven and stove repair in Temple',
   },
   {
     title: 'Rental homes and move-ins',
-    text: 'Appliances that sat empty between tenants often come back with stuck pumps, dried-out seals or a fridge that will not restart. Tenants should tell the landlord first. Landlords and property managers can book directly.',
+    text: 'Appliances that sat empty between tenants often come back with stuck pumps, dried-out seals or a fridge that will not restart. Tenants should tell the landlord first. Landlords and property managers can call directly to get connected.',
     key: 'refrigerator',
     link: 'refrigerator repair in Temple',
   },
 ];
 
 const expectSteps = [
-  { title: 'Book by phone', text: 'Call with the appliance, brand, model number and the problem. Any error code on the display helps.' },
-  { title: 'We confirm a visit window', text: `We call to confirm the details and set a time. We are open ${site.hours.value.long}.` },
-  { title: 'Diagnosis in your home', text: 'The technician tests the likely parts, explains what failed and what the repair involves, and waits for your OK.' },
-  { title: 'Repair and a test run', text: 'Once you approve, the repair is made and the appliance is run to confirm it works. Model-specific parts may need to be ordered.' },
+  { title: 'Call the number on this site', text: 'Describe the appliance, brand, model number and the problem. Any error code on the display helps. The call is free.' },
+  { title: 'Get connected with a local pro', text: 'Your call is connected with an independent appliance repair provider serving Temple. Ask about availability, pricing and licensing on the call.' },
+  { title: 'Diagnosis in your home', text: 'A good technician tests the likely parts, explains what failed and what the repair involves, and waits for your OK.' },
+  { title: 'Repair and a test run', text: 'Once you approve, the repair is made and the appliance should be run to confirm it works. Model-specific parts may need to be ordered.' },
 ];
 
 const weather = [
@@ -92,7 +89,7 @@ const weather = [
   },
   {
     title: 'Dust, pollen and pet hair',
-    text: 'Dry, windy days and shedding pets load condenser coils, dryer lint traps and range hood filters. Clogged coils make a refrigerator run hot and long; a packed lint trap makes a dryer overheat. A vacuum and a few minutes every few months prevent a lot of calls.',
+    text: 'Dry, windy days and shedding pets load condenser coils, dryer lint traps and range hood filters. Clogged coils make a refrigerator run hot and long; a packed lint trap makes a dryer overheat. A vacuum and a few minutes every few months prevent a lot of repairs.',
   },
 ];
 
@@ -112,10 +109,10 @@ export default function CityPage() {
 
       <PageHero crumbs={[{ name: `Appliance Repair ${site.city}`, path }]} title={`In-Home Appliance Repair in ${site.city}, ${site.state}`}>
         <p className="text-lg leading-relaxed text-white/75 md:text-xl">
-          Appliance Repair Temple sends a technician to homes across Temple, Texas to fix refrigerators, freezers, washers, dryers,
-          dishwashers, ovens and ranges. We cover every Temple ZIP code, from the Historic District and Western Hills to the newer
-          neighborhoods along West Adams Avenue, {site.hours.value.long}. Same-day appointments and emergency appliance repair are
-          available, {claims.availabilityQualifier}.
+          Appliance Repair Temple connects homeowners across Temple, Texas with independent local appliance repair pros who fix
+          refrigerators, freezers, washers, dryers, dishwashers, ovens and ranges in your home. Local pros serve every Temple ZIP
+          code, from the Historic District and Western Hills to the newer neighborhoods along West Adams Avenue. Emergency appliance
+          repair help may be available from local providers; say it is urgent when you call.
         </p>
         <div className="mt-8">
           <CtaRow location="city_hero" dark />
@@ -131,21 +128,22 @@ export default function CityPage() {
           <div className="prose-copy">
             <p>
               When a refrigerator stops cooling or a washer will not drain, you want someone nearby who can come out, find the
-              problem and fix it. Our technicians work in Temple homes, so the common failures are familiar ones.
+              problem and fix it. One free call connects you with an independent technician who works in Temple homes, where the
+              common failures are familiar ones.
             </p>
             <p>
               Most appliance breakdowns come down to one part: a fan motor, a drain pump, a heating element, an igniter, a switch
-              or a water valve. The technician tests the likely suspects with a meter, shows you what failed, and explains the
-              repair before any work starts. If the appliance is not worth fixing, we will say so.
+              or a water valve. A good technician tests the likely suspects with a meter, shows you what failed, and explains the
+              repair before any work starts. Ask for that, and ask plainly whether the appliance is worth fixing at all.
             </p>
             <p>
-              If you have been searching for appliance repair near me in Temple, TX, this is a local team, not a national call
-              center. We handle refrigerator repair, freezer repair, washer and dryer repair, dishwasher repair, oven, stove and range
+              If you have been searching for appliance repair near me in Temple, TX, this site is a local referral resource, not a
+              national repair chain. Local pros handle refrigerator repair, freezer repair, washer and dryer repair, dishwasher repair, oven, stove and range
               repair, and microwave repair, for gas and electric appliances and the major brands found in Temple homes.
             </p>
             <p>
-              Appliance Repair Temple is licensed and insured, with 4+ years of experience and 100+ repairs completed. Customers
-              have given us a 4.9 average rating.
+              Appliance Repair Temple does not do repairs itself. The providers are independent businesses, so ask about pricing
+              and availability on the call, and confirm the provider carries the license and insurance the work requires.
             </p>
           </div>
         </div>
@@ -155,9 +153,9 @@ export default function CityPage() {
         <SectionHeading
           id="help-heading"
           eyebrow="Appliance types"
-          title="Appliances we repair"
+          title="Appliances local pros repair"
           accent="in Temple."
-          intro="Kitchen and laundry appliances, electric and gas, built-in and freestanding. Each page explains the symptoms we see most and what the repair involves."
+          intro="Kitchen and laundry appliances, electric and gas, built-in and freestanding. Each page explains the most common symptoms and what the repair involves."
         />
         <ServicesGrid keys={services.map((s) => s.key)} showOther />
       </Section>
@@ -168,7 +166,7 @@ export default function CityPage() {
           eyebrow="Common repair needs"
           title="What breaks most often"
           accent="in Temple homes."
-          intro="Patterns we see across Temple, and what they usually mean for your appliance."
+          intro="Patterns common across Temple homes, and what they usually mean for your appliance."
           dark
         />
         <ul className="grid gap-4 md:grid-cols-2">
@@ -198,8 +196,8 @@ export default function CityPage() {
             <div className="prose-copy">
               <p>
                 A refrigerator warming up with a week of groceries inside, a washer leaking toward the hallway, a dryer that smells
-                hot: those are emergencies, and we treat them that way. During business hours, {site.hours.value.long}, urgent calls
-                from Temple homes get priority scheduling. Same-day emergency service is available, {claims.availabilityQualifier}.
+                hot: those are emergencies. Emergency help may be available from local providers in Temple. Say it is urgent when you
+                call, and describe what the appliance is doing so the provider knows what to expect before the visit.
               </p>
               <p>Before you call, take the steps that stop the damage:</p>
               <ul>
@@ -208,7 +206,7 @@ export default function CityPage() {
                 <li>Warm refrigerator or freezer: keep the doors closed. A closed fridge holds food safely for about four hours.</li>
                 <li>Gas smell: leave the house and call your gas provider or 911 from outside first.</li>
               </ul>
-              <p>Then call and tell us it is urgent. Ask about emergency visit details on the call.</p>
+              <p>Then call and say it is urgent. Ask the provider about availability and what an emergency visit involves.</p>
             </div>
             <div className="mt-6">
               <CtaRow location="city_emergency" />
@@ -238,9 +236,9 @@ export default function CityPage() {
       <Section tone="white" labelledBy="expect-heading">
         <SectionHeading
           id="expect-heading"
-          eyebrow="Booking service"
+          eyebrow="Getting connected"
           title="What to expect when"
-          accent="you book a repair."
+          accent="you call for a repair."
           center
         />
         <HowItWorks steps={expectSteps} />
@@ -254,7 +252,13 @@ export default function CityPage() {
           </div>
         </div>
         <div className="mx-auto mt-4 max-w-4xl">
-          <PaymentNote />
+          <div className="card p-7">
+            <h3 className="font-display text-xl font-bold tracking-[-0.02em] text-ink">Questions to ask the provider</h3>
+            <p className="mt-2 text-[15px] text-ink-body">
+              Before the repair starts, ask about pricing, any trip or diagnostic charge, how long parts take to arrive and any
+              warranty on the work. It is up to you to confirm the provider carries the license and insurance the work requires.
+            </p>
+          </div>
         </div>
       </Section>
 
@@ -264,30 +268,28 @@ export default function CityPage() {
           eyebrow="Services at a glance"
           title="Appliance repair services"
           accent="in Temple, TX."
-          intro="Every appliance below is repaired in your home. Pick one for the full list of problems, causes and what to check first."
+          intro="Local pros repair every appliance below in your home. Pick one for the full list of problems, causes and what to check first."
         />
         <ServicesTable place={site.city} />
       </Section>
 
-      {canShow(claims.brandsServiced) ? (
-        <Section tone="white" labelledBy="brands-heading">
-          <SectionHeading
-            id="brands-heading"
-            eyebrow="Brands"
-            title="Appliance brands"
-            accent="we support."
-            intro="We service the major household brands found in Temple kitchens and laundry rooms. Give us the model number when you book so the technician can check parts ahead of time."
-          />
-          <BrandChips names={[...brands.map((b) => b.name), ...otherBrands]} />
-          <p className="mt-8 max-w-3xl text-sm text-ink-muted">
-            Appliance Repair Temple is an independent repair service and is not affiliated with or authorized by any appliance
-            manufacturer.{' '}
-            <Link href={routes.brands} className="font-semibold text-ink underline decoration-flame underline-offset-4">
-              Appliance brands we service in {site.city}
-            </Link>
-          </p>
-        </Section>
-      ) : null}
+      <Section tone="white" labelledBy="brands-heading">
+        <SectionHeading
+          id="brands-heading"
+          eyebrow="Brands"
+          title="Appliance brands"
+          accent="local pros repair."
+          intro="Independent local pros work on the major household brands found in Temple kitchens and laundry rooms. Have the model number ready when you call so the technician can check parts ahead of time."
+        />
+        <BrandChips names={[...brands.map((b) => b.name), ...otherBrands]} />
+        <p className="mt-8 max-w-3xl text-sm text-ink-muted">
+          Appliance Repair Temple is a free referral service and is not affiliated with or authorized by any appliance
+          manufacturer. The providers it connects you with are independent businesses.{' '}
+          <Link href={routes.brands} className="font-semibold text-ink underline decoration-flame underline-offset-4">
+            Appliance brands repaired in {site.city}
+          </Link>
+        </p>
+      </Section>
 
       <Section labelledBy="ror-heading">
         <SectionHeading
@@ -333,12 +335,12 @@ export default function CityPage() {
         <SectionHeading
           id="coverage-heading"
           eyebrow="Service area"
-          title="Where we work in Temple"
+          title="Appliance repair across Temple"
           accent="and nearby."
-          intro="Repairs happen in your home; the technician comes to you anywhere in Temple and the towns around it."
+          intro="Repairs happen in your home; local technicians come to you anywhere in Temple and the towns around it."
         />
         <div className="grid items-start gap-10 lg:grid-cols-[1.1fr_1fr]">
-          <MapEmbed place={site.city} note="All of Temple is in range: 76501, 76502 and 76504." />
+          <MapEmbed place={site.city} note="Local pros serve all of Temple: 76501, 76502 and 76504." />
           <div>
             <h3 className="text-[13px] font-semibold uppercase tracking-[0.14em] text-ink-muted">All of Temple</h3>
             <ul className="mt-4 flex flex-wrap gap-2">
@@ -372,15 +374,38 @@ export default function CityPage() {
               })}
             </ul>
             <p className="mt-6 text-[15px] text-ink-body">
-              Not sure if you are in range?{' '}
+              Not sure if your address is covered?{' '}
               <PhoneLink location="city_coverage" label="Call" className="font-semibold text-ink underline decoration-flame underline-offset-4" /> with
-              your address and we will confirm.
+              your address and ask whether a local provider serves it.
             </p>
           </div>
         </div>
       </Section>
 
-      <ShareExperience place={site.city} />
+      <Section tone="white" labelledBy="choose-heading">
+        <div className="grid gap-12 lg:grid-cols-[1fr_1.3fr]">
+          <SectionHeading
+            id="choose-heading"
+            eyebrow="Choosing a provider"
+            title="How to choose an appliance repair pro"
+            accent="in Temple."
+            className="!mb-0"
+          />
+          <div className="prose-copy">
+            <p>
+              Every provider this site connects you with is an independent business. A few questions on the call help you decide
+              whether the provider is the right fit for your appliance and your home.
+            </p>
+            <ul>
+              <li>Ask what happens on the first visit, and whether there is a trip or diagnostic charge and how it applies to the repair.</li>
+              <li>Ask for proof of insurance, and check the state&apos;s requirements for the work, such as gas line connections.</li>
+              <li>Ask the technician to explain the cause in plain words and show you the part that failed.</li>
+              <li>Ask about any warranty on parts and labor before the repair starts, and get it in writing.</li>
+              <li>For built-in, gas or high-end appliances, ask whether the technician regularly works on your brand and model.</li>
+            </ul>
+          </div>
+        </div>
+      </Section>
 
       <Section labelledBy="faq-heading">
         <div className="grid gap-12 lg:grid-cols-[1fr_1.5fr]">
@@ -400,7 +425,7 @@ export default function CityPage() {
       <FinalCta
         title="Need an appliance technician"
         accent="in Temple?"
-        text="Speak with our team about your appliance issue and set a visit window on the same call. Urgent calls get priority during business hours."
+        text="Call to be connected with an independent local appliance repair pro in Temple. Emergency help may be available from local providers; say it is urgent when you call."
         formId="city_final"
       />
     </>

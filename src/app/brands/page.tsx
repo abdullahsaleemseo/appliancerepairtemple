@@ -8,22 +8,22 @@ import { FinalCta } from '@/components/FinalCta';
 import { Icon } from '@/components/Icon';
 import { PageHero } from '@/components/PageHero';
 import { Section, SectionHeading } from '@/components/Section';
-import { VerifyTag } from '@/components/Verify';
 import { pageMetadata } from '@/lib/seo';
 
 export const metadata = pageMetadata({
-  title: `Appliance Brands We Repair in ${site.city}, ${site.stateAbbr} | 12 Brands`,
-  description: `Whirlpool, GE, Samsung, LG, Frigidaire, Maytag, KitchenAid, Bosch, Kenmore, Electrolux, Amana and Speed Queen appliance repair in ${site.city}, ${site.stateAbbr}. Pick your brand.`,
+  title: `Appliance Brands Repaired in ${site.city}, ${site.stateAbbr} | Local Pros`,
+  description: `Whirlpool, GE, Samsung, LG, Frigidaire, Maytag, KitchenAid, Bosch, Kenmore, Electrolux, Amana and Speed Queen appliance repair in ${site.city}, ${site.stateAbbr}. Call a local pro.`,
   path: routes.brands,
 });
 
 export default function BrandsPage() {
   return (
     <>
-      <PageHero crumbs={[{ name: 'Brands', path: routes.brands }]} title={`Appliance Brands We Service in ${site.city}`}>
+      <PageHero crumbs={[{ name: 'Brands', path: routes.brands }]} title={`Appliance Brands Repaired in ${site.city}`}>
         <p className="text-lg leading-relaxed text-white/70">
-          Most homes in {site.city} have a mix of brands, often whatever came with the house plus a newer washer or fridge. We
-          repair the common household brands below. The model number helps us confirm parts before the visit.
+          Most homes in {site.city} have a mix of brands, often whatever came with the house plus a newer washer or fridge.
+          Independent local repair pros work on the common household brands below, and one call connects you with one. Have the
+          model number ready so the technician can confirm parts before the visit.
         </p>
         <div className="mt-8">
           <CtaRow location="brands_hero" dark />
@@ -60,7 +60,7 @@ export default function BrandsPage() {
       <Section tone="white" labelledBy="other-heading">
         {otherBrands.length ? (
           <>
-            <SectionHeading id="other-heading" eyebrow="Also" title="Other brands" accent="we work on." intro="No dedicated page yet, but we see these regularly." />
+            <SectionHeading id="other-heading" eyebrow="Also" title="Other brands" accent="local pros work on." intro="No dedicated page yet, but these are common in Temple homes." />
             <BrandChips names={otherBrands} />
           </>
         ) : (
@@ -69,12 +69,13 @@ export default function BrandsPage() {
             eyebrow="Not listed?"
             title="Your brand"
             accent="is not here?"
-            intro="We work on most major household brands. If yours is not on this page, call with the brand and model number and we will tell you whether we can help."
+            intro="Local pros work on most major household brands. If yours is not on this page, call with the brand and model number and ask whether the provider can help."
           />
         )}
         <p className="mt-12 max-w-3xl text-sm text-ink-muted">
-          All brand names are trademarks of their respective owners. {site.brandName} is an independent repair service. We are not
-          affiliated with, authorized by or endorsed by any manufacturer listed here. If your appliance is still under a
+          All brand names are trademarks of their respective owners. {site.brandName} is a free referral service that connects
+          homeowners with independent local repair providers. It is not affiliated with, authorized by or endorsed by any
+          manufacturer listed here. If your appliance is still under a
           manufacturer’s warranty, contact the manufacturer first.
         </p>
       </Section>

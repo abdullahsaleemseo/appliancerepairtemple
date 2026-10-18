@@ -812,7 +812,7 @@ export const services: Service[] = [
     card: 'Not draining, not cleaning, leaking or won’t start.',
     metaTitle: 'Dishwasher Repair Temple TX | Connect With Local Pros',
     metaDescription:
-      'Dishwasher repair in Temple, TX for dishwashers that are not draining, leaking or leaving dishes dirty. All major brands. Call to get connected with a local pro.',
+      'Dishwasher repair in Temple, TX for dishwashers not draining, leaking or leaving dishes dirty. All major brands. Call to get connected with a local pro.',
     h1: 'Built-In Dishwasher Repair in Temple, TX',
     intro: [
       'Standing water in the bottom, gritty dishes or a puddle under the door? Appliance Repair Temple connects homeowners across Temple, TX with independent local pros who repair built-in dishwashers, from basic models to third-rack machines with front or hidden top controls. Call and describe the problem to get connected with a local provider.',
@@ -1312,15 +1312,15 @@ export const services: Service[] = [
     navLabel: 'Freezer Repair',
     icon: 'freezer',
     card: 'Upright or chest freezer not freezing or frosting up.',
-    metaTitle: 'Freezer Repair Temple TX | Same-Day & Emergency',
+    metaTitle: 'Freezer Repair Temple TX | Connect With Local Pros',
     metaDescription:
-      'Freezer not freezing, frosting up or running nonstop? Same-day and emergency chest and upright freezer repair in Temple, TX, subject to availability.',
+      'Freezer repair in Temple, TX for chest and upright freezers not freezing, leaking, frosting up or running nonstop. Call to get connected with a local pro.',
     h1: 'Chest & Upright Freezer Repair in Temple, TX',
     intro: [
-      'Freezer warming up, frosting over or running and never shutting off? Appliance Repair Temple repairs standalone chest and upright freezers in homes, garages and shops across Temple, TX. Same-day service is available, subject to technician availability, location, and current demand.',
-      'A full freezer can hold a lot of meat, game and meals, so speed matters. Most freezer failures come down to a start relay, a thermostat, a fan, a defrost part on frost-free uprights or a worn lid or door seal. The technician tests those first, explains what failed and what the repair involves, and starts only after your OK. If a small or older chest freezer is not worth fixing, we will tell you.',
-      'Whether you call it a deep freezer, a garage freezer or a standalone freezer, the freezer repair starts the same way: check the temperature inside, listen to the compressor and fans, look at the coils and the seal, then test the parts that could be at fault.',
-      'A freezer full of food that is warming up is an emergency for your grocery budget. Freezer repair calls like that get priority as emergency appliance repair during business hours, so the food has a better chance of staying frozen.',
+      'Freezer warming up, frosting over or running and never shutting off? Appliance Repair Temple connects homeowners across Temple, TX with independent local pros who repair standalone chest and upright freezers in homes, garages and shops. Call and describe the problem to get connected with a local provider.',
+      'A full freezer can hold a lot of meat, game and meals, so it pays to act early. Most freezer failures come down to a start relay, a thermostat, a fan, a defrost part on frost-free uprights or a worn lid or door seal. A good technician tests those first, explains what failed and what the repair involves, and starts only after you say yes. If a small or older chest freezer is not worth fixing, a good technician will tell you so. Ask.',
+      'Whether you call it a deep freezer, a garage freezer or a standalone freezer, a good freezer repair starts the same way: check the temperature inside, listen to the compressor and fans, look at the coils and the seal, then test the parts that could be at fault.',
+      'A freezer full of food that is warming up is an emergency for your grocery budget. Emergency help may be available from local providers. Say it is urgent when you call, and keep the lid or door closed so the food has a better chance of staying frozen.',
     ],
     symptomsHeading: 'Freezer problems and their usual causes',
     symptoms: [
@@ -1358,7 +1358,7 @@ export const services: Service[] = [
         title: 'Temperature alarm going off',
         cause:
           'Many freezers alarm when the inside temperature climbs or the door is left ajar. The cause is either a cooling problem or a seal problem.',
-        fixable: 'The technician traces why the temperature climbed.',
+        fixable: 'A technician can trace why the temperature climbed.',
       },
       {
         title: 'Loud buzzing or rattling',
@@ -1372,7 +1372,7 @@ export const services: Service[] = [
       heading: 'Is your freezer worth repairing?',
       paragraphs: [
         'Freezers often last 10 to 20 years, longer than most appliances. Relays, thermostats, fans, defrost parts and seals are worth fixing at almost any age.',
-        'A sealed system failure (compressor or refrigerant leak) is different. On a small or older chest freezer, replacement usually makes more sense. On a large upright or a built-in freezer column, repair often still wins. The technician will give you an honest read.',
+        'A sealed system failure (compressor or refrigerant leak) is different. On a small or older chest freezer, replacement usually makes more sense. On a large upright or a built-in freezer column, repair often still wins. Ask the technician for a plain read on which side of that line your freezer is on.',
       ],
       points: [
         'Relay, fan, thermostat, defrost part or seal: repair',
@@ -1393,48 +1393,48 @@ export const services: Service[] = [
         a: 'If the food still has ice crystals or has stayed at 40°F or below, it can generally be refrozen, though quality may drop. Throw out partly thawed ice cream, and anything that sat above 40°F for more than two hours.',
       },
       {
-        q: 'Do you repair chest freezers?',
-        a: 'Yes, along with upright freezers. Tell us which type and brand you have when you call.',
+        q: 'Can chest freezers be repaired?',
+        a: 'Yes, along with upright freezers. Say which type and brand you have when you call.',
       },
       {
         q: 'Why is my freezer covered in frost?',
         a: 'On a frost-free upright, heavy frost means a defrost part failed. On a chest or manual-defrost freezer, it usually points to a worn seal letting humid air in, or the lid being opened often.',
       },
       {
-        q: 'Do you come out to freezers in garages and shops?',
-        a: 'Yes. Garage and shop freezers are a common call in Temple. Make sure there is room around the unit for the technician to reach the back and the coils.',
+        q: 'Can a technician come out to a freezer in a garage or shop?',
+        a: 'Yes. Local pros work on garage and shop freezers, which are common in Temple. Make sure there is room around the unit for the technician to reach the back and the coils.',
       },
       {
         q: 'Should I defrost my chest freezer before the technician comes?',
-        a: 'No. Leave it as it is unless we ask. The frost pattern and the temperature help the technician see what is going on. Just clear a path to the freezer and make room around it.',
+        a: 'No. Leave it as it is unless the technician asks you to. The frost pattern and the temperature help the technician see what is going on. Just clear a path to the freezer and make room around it.',
       },
       {
         q: 'Where is the model number on my freezer?',
         a: 'On chest freezers, look on the back or the side near the bottom, or under the lid. On uprights, check the inside wall near the top or the door frame. A photo of the label works.',
       },
       {
-        q: 'Do you offer emergency freezer repair?',
-        a: 'Yes. A freezer warming up with food inside, one that clicks and will not run, or one that trips the breaker gets priority scheduling during business hours, Monday to Saturday, 8:00 AM to 8:00 PM. Same-day emergency service is subject to technician availability, location, and current demand. Ask about emergency visit details when you call.',
+        q: 'Can I get emergency freezer repair in Temple?',
+        a: 'Emergency help may be available from local providers. A freezer warming up with food inside, one that clicks and will not run, or one that trips the breaker is worth treating as urgent, so say it is urgent when you call. In the meantime, keep the lid or door shut and move the most valuable food to a cooler with ice.',
       },
       {
         q: 'Why is my freezer running but not freezing?',
-        a: 'If you can hear it running, the usual causes are dirty condenser coils, a condenser fan that has stopped, an evaporator fan that has failed or frozen in ice, or a defrost failure on a frost-free upright. A compressor that runs but does not cool can also point to a sealed system problem, which the technician will explain plainly.',
+        a: 'If you can hear it running, the usual causes are dirty condenser coils, a condenser fan that has stopped, an evaporator fan that has failed or frozen in ice, or a defrost failure on a frost-free upright. A compressor that runs but does not cool can also point to a sealed system problem, which a good technician will explain plainly.',
       },
       {
         q: 'My freezer stopped working after a storm or power outage. What should I check?',
-        a: 'Check the breaker, and in a garage check the GFCI outlet, since those often trip during storms. If the freezer has power but still does not run, or it clicks and stops, call us. Keep the lid or door closed in the meantime.',
+        a: 'Check the breaker, and in a garage check the GFCI outlet, since those often trip during storms. If the freezer has power but still does not run, or it clicks and stops, call to get connected with a local pro. Keep the lid or door closed in the meantime.',
       },
       {
         q: 'Is it worth repairing a deep freezer?',
-        a: 'Usually yes, if the problem is a relay, thermostat, fan, defrost part or seal. If the compressor or the sealed system has failed on a small or older chest freezer, replacement often makes more sense, and the technician will tell you so.',
+        a: 'Usually yes, if the problem is a relay, thermostat, fan, defrost part or seal. If the compressor or the sealed system has failed on a small or older chest freezer, replacement often makes more sense. Ask the technician to tell you plainly.',
       },
       {
-        q: 'Do you offer freezer repair outside Temple?',
-        a: 'Yes. Along with Temple, we repair freezers in Belton, Killeen, Harker Heights, Nolanville, Morgan’s Point Resort, Salado, Troy, Little River-Academy, Rogers, Holland and Moody.',
+        q: 'Is freezer repair available outside Temple?',
+        a: 'Yes. Along with Temple, local pros repair freezers in Belton, Killeen, Harker Heights, Nolanville, Morgan’s Point Resort, Salado, Troy, Little River-Academy, Rogers, Holland and Moody.',
       },
       {
         q: 'How much does freezer repair cost?',
-        a: 'It depends on the freezer and the part, so we do not list prices online. Call to discuss your repair needs, with the brand, model number and type of freezer ready.',
+        a: 'It depends on the freezer and the part, so this site does not list prices. Call to get connected with a local pro, with the brand, model number and type of freezer ready, and ask about pricing and any warranty before work starts.',
       },
     ],
     related: ['refrigerator', 'washer', 'dryer'],
@@ -1448,14 +1448,14 @@ export const services: Service[] = [
           'Put an appliance thermometer inside. A working freezer should read 0°F.',
           'If it is climbing fast, move the most valuable items to a cooler with ice or to another freezer.',
           'Check that the plug is in, the breaker is on and nothing is blocking the coils or vents.',
-          'Call us with the brand, the model number and whether it is a chest or an upright.',
+          'Call to get connected with a local pro, with the brand, the model number and whether it is a chest or an upright ready.',
         ],
         note: 'Do not try to speed up a defrost with a knife, ice pick or heat gun. Puncturing a cooling line ruins the freezer.',
       },
       {
         type: 'emergency',
         heading: 'Emergency freezer repair in Temple',
-        intro: 'A full freezer holds a safe temperature for about 48 hours with the lid closed, and less once it starts warming. These situations get priority scheduling during business hours. Same-day emergency freezer repair is available, subject to technician availability, location, and current demand.',
+        intro: 'A full freezer holds a safe temperature for about 48 hours with the lid closed, and less once it starts warming. Emergency help may be available from local providers. Say it is urgent when you call, and keep the lid closed while you wait.',
         signs: [
           { title: 'Warming up with food inside', text: 'The thermometer reads well above 0°F, food is getting soft, or the temperature alarm keeps going off.' },
           { title: 'Clicking but not running', text: 'The compressor tries to start every few minutes and fails. Unplug it to protect the compressor.' },
@@ -1467,6 +1467,16 @@ export const services: Service[] = [
           'Put a thermometer inside so you know how fast it is warming.',
           'Move the most valuable food to a cooler with ice or another freezer if it is climbing fast.',
           'Write down the brand, model number and whether it is a chest or upright, then call.',
+        ],
+      },
+      {
+        type: 'prose',
+        heading: 'Freezer leaking water? Where it comes from and how to stop it',
+        paragraphs: [
+          'A freezer that leaks is usually telling you it is not holding cold, and a puddle under a garage or utility room freezer can hide for days. On an upright frost-free freezer, the most common source is a clogged defrost drain. Meltwater from the defrost cycle backs up, freezes in the drain tube and then overflows inside the cabinet or onto the floor. A cracked or missing drain pan under the unit lets that same water run out. On a chest freezer, water usually comes from a worn lid gasket that lets humid air in, which builds frost that melts each time the compressor cycles off, or from a drain plug at the bottom front that was left loose after the last defrost.',
+          'Check first whether the freezer is still cold. Put a thermometer inside. If it reads near 0°F, the leak is probably a drain, pan or seal problem. If it is climbing, the leak may be frost melting because the freezer is failing, which makes the food the bigger worry. Look inside an upright for ice on the floor of the cabinet or a sheet of frost on the back wall. On a chest freezer, run a flashlight around the lid seal and look for gaps or cracks, especially at the corners.',
+          'To stop the damage, dry the floor, put towels around the base and slide a shallow pan under a chest freezer drain. Check that the drain plug is pushed in or capped. If water has reached the outlet, the cord or a GFCI outlet in the garage, switch off the breaker before you unplug the freezer. Keep the lid or door shut so the food stays frozen, and move the most valuable items to a cooler if the temperature is rising.',
+          'Call to get connected with a local pro if water keeps coming back after you dry it, if the freezer is warming up, or if you see heavy frost on the back wall of an upright, which points to a failed defrost part. Emergency help may be available from local providers. Say it is urgent when you call, and have the brand, the model number and whether it is a chest or an upright ready.',
         ],
       },
       {
@@ -1517,7 +1527,7 @@ export const services: Service[] = [
         paragraphs: [
           'Plenty of Temple households keep a second freezer in the garage. Every freezer is designed for a certain room temperature range, listed in the owner’s manual. Garage-ready models are built for wider swings. Some manufacturers rate them for rooms from 0°F to 110°F, while many standard freezers are made for indoor temperatures. A closed Central Texas garage in July can reach the top of that range.',
           'If yours lives in the garage, give it a few inches of space on every side, keep it out of direct afternoon sun, and vacuum the coils or vents a couple of times a year. A freezer that runs nonstop every summer is wearing out its compressor faster.',
-          'Before a visit, move anything stacked on top of or against the freezer, and make sure the technician can reach the outlet and the back of the unit. In a shop or barn, clear a dry spot to work.',
+          'Before a repair visit, move anything stacked on top of or against the freezer, and make sure the technician can reach the outlet and the back of the unit. In a shop or barn, clear a dry spot to work.',
         ],
       },
       {
@@ -1534,12 +1544,12 @@ export const services: Service[] = [
       },
       {
         type: 'process',
-        heading: 'How a freezer repair visit works',
+        heading: 'What to expect on a freezer repair visit',
         steps: [
-          { title: 'Temperature and sound', text: 'The technician checks the inside temperature and listens to the compressor and fans.' },
-          { title: 'Relay, fan and seal', text: 'The start relay, fans, thermostat and gasket are checked first, since they fail most.' },
-          { title: 'Explain and approve', text: 'You hear what failed and whether the repair makes sense for your freezer. Work starts after your OK.' },
-          { title: 'Repair and confirm', text: 'After the repair, the technician confirms it is cooling. A freezer can take several hours to get back down to 0°F.' },
+          { title: 'Temperature and sound', text: 'A technician will usually check the inside temperature and listen to the compressor and fans.' },
+          { title: 'Relay, fan and seal', text: 'The start relay, fans, thermostat and gasket are usually checked first, since they fail most.' },
+          { title: 'Explain and approve', text: 'Ask what failed and whether the repair makes sense for your freezer. Work should start only after you say yes.' },
+          { title: 'Repair and confirm', text: 'After the repair, ask the technician to confirm it is cooling. A freezer can take several hours to get back down to 0°F.' },
         ],
       },
       {
@@ -1565,17 +1575,16 @@ export const services: Service[] = [
       },
       {
         type: 'prose',
-        heading: 'Freezer types we repair',
+        heading: 'Freezer types local pros repair',
         paragraphs: [
           'Chest freezers, often called deep freezers, are the most common second freezer in Temple homes. They are simple, efficient and usually manual defrost, which makes them practical to repair for many years.',
           'Upright freezers take less floor space and are easier to organize. Many are frost-free, with a defrost heater, a defrost thermostat and a fan, which gives them a few more parts to fail. Manual defrost uprights work more like a chest freezer standing on end.',
-          'Garage-ready freezers are built to handle wider temperature swings. If you are not sure whether yours is rated for a garage, the technician can check the model during the visit.',
+          'Garage-ready freezers are built to handle wider temperature swings. If you are not sure whether yours is rated for a garage, ask the technician to check the model during the visit.',
         ],
       },
       { type: 'repairOrReplace' },
-      { type: 'brands', heading: 'Freezer brands and types we repair', intro: 'We repair the major freezer brands found in Temple homes and garages. Tell us the brand, model number and type when you book.', styles: ['Chest freezers', 'Upright freezers', 'Frost-free', 'Manual defrost'] },
+      { type: 'brands', heading: 'Freezer brands and types local pros repair', intro: 'Local pros repair the major freezer brands found in Temple homes and garages. Give the brand, model number and type when you call.', styles: ['Chest freezers', 'Upright freezers', 'Frost-free', 'Manual defrost'] },
       { type: 'faq' },
-      { type: 'payment' },
     ],
   },
   {
@@ -1585,17 +1594,17 @@ export const services: Service[] = [
     navLabel: 'Microwave Repair',
     icon: 'microwave',
     card: 'Over-the-range and built-in microwaves not heating.',
-    metaTitle: 'Microwave Repair Temple TX | Same-Day & Emergency',
+    metaTitle: 'Microwave Repair Temple TX | Connect With Local Pros',
     metaDescription:
-      'Over-the-range or built-in microwave not heating, sparking or dead? Same-day and emergency microwave repair in Temple, TX, subject to availability.',
+      'Microwave repair in Temple, TX for over-the-range and built-in microwaves that are not heating, sparking or dead. Call to get connected with a local pro.',
     h1: 'Over-the-Range & Built-In Microwave Repair in Temple, TX',
     intro: [
-      'Microwave running but not heating, sparking inside or completely dead? Appliance Repair Temple repairs over-the-range and built-in microwaves in homes across Temple, TX, including the vent fan and light on over-the-range models. Same-day service is available, subject to technician availability, location, and current demand.',
-      'Microwaves look simple, but inside they run on high voltage. A failed door switch, a blown fuse, a diode, a capacitor or the magnetron is behind most no-heat calls, and those parts can hold a dangerous charge even after the unit is unplugged. The technician discharges the circuit safely, tests the parts, explains what failed and what the repair involves, and starts only after your OK.',
+      'Microwave running but not heating, sparking inside or completely dead? Appliance Repair Temple connects homeowners across Temple, TX with independent local pros who repair over-the-range and built-in microwaves, including the vent fan and light on over-the-range models. Call and describe the problem to get connected with a local provider.',
+      'Microwaves look simple, but inside they run on high voltage. A failed door switch, a blown fuse, a diode, a capacitor or the magnetron is behind most no-heat calls, and those parts can hold a dangerous charge even after the unit is unplugged. A qualified technician discharges the circuit safely, tests the parts, explains what failed and what the repair involves, and starts only after you say yes. Ask for that.',
       'Over-the-range microwave repair also covers the parts that make it a range hood: the vent fan, the cooktop light and their switches. Built-in microwave repair and wall oven combination units follow the same high-voltage rules, with more care taken to remove the unit from the cabinet.',
-      'A microwave that sparks, smokes, smells like burning or keeps running with the door open should not be used again until it is checked. Those calls get priority as emergency microwave repair during business hours.',
+      'A microwave that sparks, smokes, smells like burning or keeps running with the door open should not be used again until it is checked. That is a case for emergency microwave repair. Emergency help may be available from local providers. Say it is urgent when you call.',
     ],
-    symptomsHeading: 'Microwave problems we repair',
+    symptomsHeading: 'Common microwave problems in Temple homes',
     symptoms: [
       {
         title: 'Runs but does not heat',
@@ -1631,7 +1640,7 @@ export const services: Service[] = [
       {
         title: 'Loud hum or buzzing while heating',
         cause: 'Some hum is normal. A loud or changing buzz can come from a failing magnetron, a high-voltage diode or a cooling fan rubbing.',
-        fixable: 'The technician finds the source before replacing anything.',
+        fixable: 'A good technician finds the source before replacing anything.',
       },
     ],
     diagnostic: { heading: 'What the visit covers', paragraphs: [], covers: [] },
@@ -1639,7 +1648,7 @@ export const services: Service[] = [
       heading: 'Repair or replace your microwave?',
       paragraphs: [
         'For countertop microwaves, replacing usually makes more sense than a service visit. For over-the-range and built-in units, the math changes: a replacement means removing the old unit, mounting the new one and sometimes matching the cabinet opening, so repairing a door switch, fuse, turntable or fan is usually worth it.',
-        'A magnetron failure on an older over-the-range unit is the closer call. It depends on the age of the microwave and whether the part is still available. The technician will tell you plainly.',
+        'A magnetron failure on an older over-the-range unit is the closer call. It depends on the age of the microwave and whether the part is still available. Ask the technician to tell you plainly.',
       ],
       points: [
         'Countertop microwave: replacement usually makes more sense',
@@ -1664,20 +1673,20 @@ export const services: Service[] = [
         a: 'No. If the door, hinges, latch or seal are damaged, or the door does not close properly, stop using it until it has been checked.',
       },
       {
-        q: 'Can you replace the light or vent fan in my over-the-range microwave?',
+        q: 'Can the light or vent fan in an over-the-range microwave be replaced?',
         a: 'Yes. Fan motors, bulbs, sockets and switches are standard parts on most over-the-range models.',
       },
       {
-        q: 'Do you install over-the-range microwaves?',
-        a: 'Repair is our main service. Call and ask about installation for your situation.',
+        q: 'Can I get an over-the-range microwave installed?',
+        a: 'This site connects homeowners with local repair pros. Some providers also install over-the-range microwaves, so call and ask about installation for your situation.',
       },
       {
         q: 'Why is my over-the-range microwave fan so loud?',
         a: 'Grease-clogged filters make the fan work harder. Clean the filters first. If it still rattles, squeals or grinds, the fan motor or a blade may be failing, and both can be replaced.',
       },
       {
-        q: 'Do you offer emergency microwave repair?',
-        a: 'Yes. A microwave that sparks with nothing metal inside, smokes, smells like burning, keeps running with the door open or trips the breaker gets priority scheduling during business hours, Monday to Saturday, 8:00 AM to 8:00 PM. Same-day emergency service is subject to technician availability, location, and current demand. Ask about emergency visit details when you call.',
+        q: 'Can I get emergency microwave repair in Temple?',
+        a: 'Emergency help may be available from local providers. A microwave that sparks with nothing metal inside, smokes, smells like burning, keeps running with the door open or trips the breaker is worth treating as urgent, so say it is urgent when you call. In the meantime, turn it off, keep the door closed and unplug it or switch off its breaker if you can do it safely.',
       },
       {
         q: 'What should I do if there is a fire inside my microwave?',
@@ -1692,12 +1701,12 @@ export const services: Service[] = [
         a: 'Many microwaves have a thermal cutout that shuts them down when they run too hot. A blocked vent, a cooling fan that has failed or grease-clogged filters on an over-the-range model can trip it. A loose door switch or a control fault can also stop a cycle.',
       },
       {
-        q: 'Do you offer microwave repair outside Temple?',
-        a: 'Yes. Along with Temple, we repair over-the-range and built-in microwaves in Belton, Killeen, Harker Heights, Nolanville, Morgan’s Point Resort, Salado, Troy, Little River-Academy, Rogers, Holland and Moody.',
+        q: 'Is microwave repair available outside Temple?',
+        a: 'Yes. Along with Temple, local pros repair over-the-range and built-in microwaves in Belton, Killeen, Harker Heights, Nolanville, Morgan’s Point Resort, Salado, Troy, Little River-Academy, Rogers, Holland and Moody.',
       },
       {
         q: 'How much does microwave repair cost?',
-        a: 'It depends on the model and the part, so we do not list prices online. Call to discuss your repair needs with the brand and model number ready.',
+        a: 'It depends on the model and the part, so this site does not list prices. Call to get connected with a local pro, with the brand and model number ready, and ask about pricing and any warranty before work starts.',
       },
       {
         q: 'Where is the model number on my microwave?',
@@ -1768,7 +1777,7 @@ export const services: Service[] = [
       {
         type: 'emergency',
         heading: 'Emergency microwave repair in Temple',
-        intro: 'A microwave that sparks, smokes or will not stop running is a fire and shock risk, and an over-the-range unit sits right above your cooktop. These situations get priority scheduling during business hours. Same-day emergency microwave repair is available, subject to technician availability, location, and current demand.',
+        intro: 'A microwave that sparks, smokes or will not stop running is a fire and shock risk, and an over-the-range unit sits right above your cooktop. Emergency help may be available from local providers. Say it is urgent when you call, and stop using the microwave until it is checked.',
         signs: [
           { title: 'Sparking with nothing metal inside', text: 'Flashes or arcing in the cavity, often from a burned waveguide cover or chipped interior paint.' },
           { title: 'Smoke or burning smell', text: 'Smoke from the vents or cabinet, or an electrical smell that is not food. Keep the door closed and turn it off.' },
@@ -1784,7 +1793,7 @@ export const services: Service[] = [
       },
       {
         type: 'partsTable',
-        heading: 'The microwave parts we test',
+        heading: 'The microwave parts a technician tests',
         rows: [
           { part: 'Door switches', job: 'Stop the microwave from heating when the door opens', signs: 'Dead unit, blown fuse, or a microwave that will not start' },
           { part: 'Main fuse', job: 'Protects the circuit from a short', signs: 'Completely dead, often after a door switch fails' },
@@ -1800,17 +1809,17 @@ export const services: Service[] = [
         heading: 'Over-the-range extras: the vent fan, light and filters',
         paragraphs: [
           'An over-the-range microwave doubles as the range hood. Its grease filters sit under the unit and should be cleaned regularly, more often if you fry or sear a lot. Models that recirculate air instead of venting outside also use a charcoal filter that needs replacing from time to time. A clogged filter makes the fan work harder and can make it noisy.',
-          'Before a visit, clear the cooktop below the microwave and the cabinet shelf above it. Many over-the-range repairs mean taking the unit off its mounting plate, and the technician needs room to support it safely.',
+          'Before a repair visit, clear the cooktop below the microwave and the cabinet shelf above it. Many over-the-range repairs mean taking the unit off its mounting plate, and the technician needs room to support it safely.',
         ],
       },
       {
         type: 'process',
-        heading: 'How a microwave repair visit works',
+        heading: 'What to expect on a microwave repair visit',
         steps: [
-          { title: 'Safe discharge', text: 'The technician unplugs the unit and safely discharges the high-voltage circuit before opening it.' },
-          { title: 'Test the parts', text: 'Door switches, fuse, magnetron circuit, controls, fan and light are tested.' },
-          { title: 'Explain and approve', text: 'You hear what failed and whether the repair makes sense for your microwave. Work starts after your OK.' },
-          { title: 'Repair and test', text: 'After the repair, the microwave is run to confirm it heats, and the door is checked.' },
+          { title: 'Safe discharge', text: 'A qualified technician unplugs the unit and safely discharges the high-voltage circuit before opening it.' },
+          { title: 'Test the parts', text: 'Door switches, fuse, magnetron circuit, controls, fan and light are usually tested.' },
+          { title: 'Explain and approve', text: 'Ask what failed and whether the repair makes sense for your microwave. Work should start only after you say yes.' },
+          { title: 'Repair and test', text: 'After the repair, ask for the microwave to be run to confirm it heats, and for the door to be checked.' },
         ],
       },
       {
@@ -1827,17 +1836,16 @@ export const services: Service[] = [
       },
       {
         type: 'prose',
-        heading: 'Microwaves we repair',
+        heading: 'Microwaves local pros repair',
         paragraphs: [
           'Over-the-range microwaves are the most common setup in Temple kitchens. They mount to a wall plate and the cabinet above, and they double as the range hood, with a vent fan, a cooktop light and grease filters. That extra hardware is why over-the-range microwave repair usually makes more sense than replacement.',
-          'Built-in microwaves sit in a cabinet opening, often with a trim kit, and wall oven combinations pair a microwave above a wall oven in one unit. Both take more care to pull out, so give us the model number when you book.',
-          'Countertop microwaves are usually cheaper to replace than to repair. If yours is a countertop model, ask about it on the phone before booking a visit.',
+          'Built-in microwaves sit in a cabinet opening, often with a trim kit, and wall oven combinations pair a microwave above a wall oven in one unit. Both take more care to pull out, so give the model number when you call.',
+          'Countertop microwaves are usually cheaper to replace than to repair. If yours is a countertop model, ask about it on the phone before anyone comes out.',
         ],
       },
       { type: 'repairOrReplace' },
-      { type: 'brands', heading: 'Microwave brands we repair', intro: 'We repair the major microwave brands found in Temple kitchens. Tell us the brand and model number when you book.', styles: ['Over-the-range', 'Built-in', 'Wall oven combination'] },
+      { type: 'brands', heading: 'Microwave brands local pros repair', intro: 'Local pros repair the major microwave brands found in Temple kitchens. Give the brand and model number when you call.', styles: ['Over-the-range', 'Built-in', 'Wall oven combination'] },
       { type: 'faq' },
-      { type: 'payment' },
     ],
   },
 ];
