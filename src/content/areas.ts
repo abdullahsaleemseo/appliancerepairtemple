@@ -12,7 +12,7 @@ export const areas: Area[] = [
     name: 'Belton',
     metaTitle: 'Appliance Repair Belton TX | Connect With Local Pros',
     metaDescription:
-      'Appliance repair in Belton, TX for fridges, washers, dryers, dishwashers and ovens. A free referral service next to Temple. Call to get connected with a local pro.',
+      'Appliance repair in Belton, TX for fridges, washers, dryers, dishwashers and ovens. Free referral service near Temple. Call to get connected with a local pro.',
     h1: 'Appliance Repair in Belton, TX, Right Next Door to Temple',
     intro: [
       'Need appliance repair in Belton? Appliance Repair Temple is a free referral service that connects Belton, TX homeowners with independent local appliance repair pros for refrigerators, freezers, washers, dryers, dishwashers, ovens and ranges, in the older streets north of Nolan Creek and the newer subdivisions on the edge of town. Call, describe the problem, and you are connected with a local pro.',
@@ -794,7 +794,7 @@ export const areas: Area[] = [
     name: 'Troy',
     metaTitle: 'Appliance Repair Troy TX | Connect With Local Pros',
     metaDescription:
-      'Appliance repair in Troy, TX for fridges, freezers, washers, dryers and ovens, in town and on rural roads north of Temple. Call to get connected with a local pro.',
+      'Appliance repair in Troy, TX for fridges, freezers, washers, dryers and ovens, in town and on rural roads near I-35. Call to get connected with a local pro.',
     h1: 'Appliance Repair in Troy, TX, Just Up I-35 from Temple',
     intro: [
       'Appliance Repair Temple connects homeowners in and around Troy, TX with independent local appliance repair pros for refrigerators, freezers, washers, dryers, dishwashers, ovens and ranges. Call, describe the problem, and you are connected with a local pro who serves the area.',
@@ -923,7 +923,7 @@ export const areas: Area[] = [
     name: 'Little River-Academy',
     metaTitle: 'Appliance Repair Little River-Academy TX | Local Pros',
     metaDescription:
-      'Appliance repair in Little River-Academy, TX for fridges, washers, dryers, dishwashers and ovens. A free referral service. Call to get connected with a local pro.',
+      'Appliance repair in Little River-Academy, TX for fridges, washers, dryers, dishwashers and ovens. Free referral service. Call to get connected with a local pro.',
     h1: 'Home Appliance Repair in Little River-Academy, TX',
     intro: [
       'Appliance Repair Temple connects Little River-Academy, TX homeowners with independent local appliance repair pros for refrigerators, freezers, washers, dryers, dishwashers, ovens and ranges. Call, describe the problem, and you are connected with a local pro who serves the area.',
@@ -1177,7 +1177,7 @@ export const areas: Area[] = [
     name: 'Holland',
     metaTitle: 'Appliance Repair Holland TX | Connect With Local Pros',
     metaDescription:
-      'Appliance repair in Holland, TX for fridges, freezers, washers, dryers and ovens, in town and on country roads off Highway 95. Call to get connected with a local pro.',
+      'Appliance repair in Holland, TX for fridges, freezers, washers, dryers and ovens, in town and on country roads. Call to get connected with a local repair pro.',
     h1: 'Small-Town Appliance Repair in Holland, TX',
     intro: [
       'Appliance Repair Temple connects homeowners in and around Holland, TX with independent local appliance repair pros for refrigerators, freezers, washers, dryers, dishwashers, ovens and ranges. Call, describe the problem, and you are connected with a local pro who serves the area.',
@@ -1305,7 +1305,7 @@ export const areas: Area[] = [
     name: 'Moody',
     metaTitle: 'Appliance Repair Moody TX | Connect With Local Pros',
     metaDescription:
-      'Appliance repair in Moody, TX for fridges, freezers, washers, dryers and ovens, in town and on rural roads off Highway 317. Call to get connected with a local pro.',
+      'Appliance repair in Moody, TX for fridges, freezers, washers, dryers and ovens, in town and on rural roads. Call to get connected with a local repair pro.',
     h1: 'Appliance Repair in Moody, TX, Up Highway 317 from Temple',
     intro: [
       'Appliance Repair Temple connects homeowners in and around Moody, TX with independent local appliance repair pros for refrigerators, freezers, washers, dryers, dishwashers, ovens and ranges. Call, describe the problem, and you are connected with a local pro who serves the area.',
