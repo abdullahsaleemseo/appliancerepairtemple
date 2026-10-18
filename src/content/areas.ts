@@ -352,7 +352,7 @@ export const areas: Area[] = [
       'Newer Harker Heights kitchens and laundry rooms mean error codes: LG LE and ice maker freeze-ups, Samsung HE, Bosch E15. Here is what each code or symptom usually points to on these models.',
     emergencyHeading: { title: 'Front-loader leaking on a new floor', accent: 'or a smart fridge warming?' },
     emergencyNote:
-      'Harker Heights emergencies tend to involve newer equipment: a front-load washer leaking across fresh vinyl plank, a Bosch dishwasher that tripped its leak sensor with water still under it, or a French door fridge whose display says one thing while the milk says another. Emergency help for these may be available from local providers who work in Harker Heights, between Belton and Killeen on I-14; say it is urgent when you call.',
+      'Harker Heights emergencies tend to involve newer equipment: a front-load washer leaking across fresh vinyl plank, a Bosch dishwasher that tripped its leak sensor with water still under it, or a French door fridge whose display says one thing while the milk says another. Emergency help for a Harker Heights leak or warm fridge may be available from local providers along I-14 between Belton and Killeen; read out the code and say it is urgent.',
     emergencyStepsIntro: 'In a newer Harker Heights home, start with these:',
     emergencySteps: [
       'Front-loader or dishwasher leak: switch it off, close the supply valve and dry under the unit. Do not keep resetting a leak code until the source is found.',
@@ -664,7 +664,7 @@ export const areas: Area[] = [
       'Builder appliance packages and busy family laundry rooms set the pattern in Nolanville: Samsung ice makers, Bosch drains, worn Whirlpool lid locks and noisy GE dryers. Here is what each usually comes down to.',
     emergencyHeading: { title: 'Water across new laminate', accent: 'in Nolanville?' },
     emergencyNote:
-      'New Nolanville floors do not forgive leaks. A dishwasher drain connection that slipped, a washer fill hose that was never fully tightened on move-in day or an ice maker line nicked behind the fridge can put water under laminate fast, and a fridge losing its cold with a week of family groceries inside cannot wait either. Emergency help for these may be available from local providers who work in Nolanville, on I-14 between Belton and Harker Heights; say it is urgent when you call.',
+      'New Nolanville floors do not forgive leaks. A dishwasher drain connection that slipped, a washer fill hose that was never fully tightened on move-in day or an ice maker line nicked behind the fridge can put water under laminate fast, and a fridge losing its cold with a week of family groceries inside cannot wait either. Emergency help with a Nolanville leak may be available from local providers who cover the stretch of I-14 between Belton and Harker Heights; tell the line it is urgent and that the floor is getting wet.',
     emergencyStepsIntro: 'In a Nolanville home, do these first:',
     emergencySteps: [
       'Dishwasher or washer leak: close the valve under the sink or behind the washer and pull up any wet rug. Photos help if the builder’s warranty may cover a bad hookup.',
@@ -822,7 +822,7 @@ export const areas: Area[] = [
       "Garage freezers and second fridges set the pattern in Morgan's Point Resort, along with front-loaders in homes that sit closed for weeks. These are the brand problems lake households look up, and what each usually means.",
     emergencyHeading: { title: 'Fish freezer warming', accent: 'in a lake garage?' },
     emergencyNote:
-      "Around Belton Lake, the calls that cannot wait are a chest freezer full of fish and game warming in a July garage, a kitchen fridge that quit with a weekend's food inside, or a burst fill hose in a lake house nobody was in. Emergency help for these may be available from local providers who work in Morgan's Point Resort and Belton; flag it as urgent at the start of the call.",
+      "Around Belton Lake, the calls that cannot wait are a chest freezer full of fish and game warming in a July garage, a kitchen fridge that quit with a weekend's food inside, or a burst fill hose in a lake house nobody was in. Emergency help around the lake may be available from local providers who serve Morgan's Point Resort and Belton; flag it as urgent at the start of the call.",
     emergencyStepsIntro: "For a lake home in Morgan's Point Resort:",
     emergencySteps: [
       'Freezer warming: keep the lid closed, check the garage GFCI and breaker, and pack the most valuable fish and game into ice chests if the unit is above 10°F.',
@@ -904,7 +904,7 @@ export const areas: Area[] = [
     faqs: [
       {
         q: "What counts as emergency appliance repair in Morgan's Point Resort?",
-        a: 'A garage freezer or kitchen fridge warming with food inside, a washer or dishwasher leaking, especially in a house that sat empty, or anything that smells like burning. Say it is urgent when you call. Keep the freezer lid down, close the water at the main if the leak is big, and switch off the breaker for anything hot.',
+        a: 'A garage freezer or kitchen fridge warming with food inside, a washer or dishwasher leaking, especially in a house that sat empty, or anything that smells like burning. Mention the urgency first thing. Keep the freezer lid down, close the water at the main if the leak is big, and switch off the breaker for anything hot.',
       },
       {
         q: 'My lake house sat empty and now the fridge smells or the ice maker quit. Is it broken?',
@@ -1060,7 +1060,7 @@ export const areas: Area[] = [
     faqs: [
       {
         q: 'What should I call about urgently in Troy?',
-        a: 'A refrigerator or shop freezer warming with food inside, a washer or dishwasher leaking, or an appliance that smells like burning. Say it is urgent when you call. Keep cold storage closed, shut the water valve on a leak and cut the breaker for anything that smells hot.',
+        a: 'A refrigerator or shop freezer warming with food inside, a washer or dishwasher leaking, or an appliance that smells like burning. Tell the line it cannot wait. Keep cold storage closed, shut the water valve on a leak and cut the breaker for anything that smells hot.',
       },
       {
         q: 'My washer sounds like it has gravel in it. What is wrong?',
@@ -1133,7 +1133,7 @@ export const areas: Area[] = [
       'Little River-Academy homes keep appliances a long time, so the searches here lean toward worn parts on dependable machines: Kenmore and Maytag laundry, Amana top-freezers and Whirlpool and GE ranges.',
     emergencyHeading: { title: 'Sparks, scorch marks or water', accent: 'near an outlet?' },
     emergencyNote:
-      'In Little River-Academy, the problems that should stop you in your tracks are electrical and gas ones on older equipment: a cord with scorch marks, a dryer hot to the touch, water pooling by an outlet, or a range that smells of gas. A fridge warming with groceries inside belongs on the urgent list too. Emergency help for these may be available from local providers who work in Little River-Academy and along Highway 95 south of Temple; say it is urgent when you call.',
+      'In Little River-Academy, the problems that should stop you in your tracks are electrical and gas ones on older equipment: a cord with scorch marks, a dryer hot to the touch, water pooling by an outlet, or a range that smells of gas. A fridge warming with groceries inside belongs on the urgent list too. Emergency help for any of these may be available from local providers working in Little River-Academy and along Highway 95 south of Temple; cut the power first, then call and say it cannot wait.',
     emergencyStepsIntro: 'With an older appliance in Little River-Academy, do this before anything else:',
     emergencySteps: [
       'Sparks, a burning plastic smell or a scorched cord: switch off the breaker, not just the appliance, and leave it off until it is checked.',
@@ -1287,7 +1287,7 @@ export const areas: Area[] = [
       'Storms and outages shape the brand problems in Rogers: Samsung and LG boards that do not come back, Frigidaire and Amana freezers stuck after a surge, and Whirlpool washers fed by sediment-heavy water.',
     emergencyHeading: { title: 'Freezer warm after the power', accent: 'came back in Rogers?' },
     emergencyNote:
-      'After a storm along US 190, the quiet emergency is a freezer or fridge that never restarted, sitting warm on a tripped breaker or a fried relay while everyone assumes it is fine. Add a washer leaking across an old floor or a dryer that smells hot, and you have most of the urgent Rogers calls. Emergency help for these may be available from local providers who work in Rogers and the farm roads around it; say it is urgent when you call.',
+      'After a storm along US 190, the quiet emergency is a freezer or fridge that never restarted, sitting warm on a tripped breaker or a fried relay while everyone assumes it is fine. Add a washer leaking across an old floor or a dryer that smells hot, and you have most of the urgent Rogers calls. Emergency help after a Rogers storm may be available from local providers who cover the town and the farm roads off US 190; describe the outage and say it is urgent.',
     emergencyStepsIntro: 'After a Rogers storm or outage, check these:',
     emergencySteps: [
       'Freezers and fridges: open each one briefly and feel for cold, then check every breaker and garage or shop GFCI. A full freezer stays frozen for about 48 hours with the lid shut.',
@@ -1441,7 +1441,7 @@ export const areas: Area[] = [
       'Holland’s searches follow its older homes and outbuildings: Speed Queen and GE leaks, Kenmore dryers that will not start, and Whirlpool and Maytag freezers in shops that run cold or hot with the weather.',
     emergencyHeading: { title: 'Water spreading on an old wood floor', accent: 'in Holland?' },
     emergencyNote:
-      'Older Holland homes often have wood floors, and a washer, dishwasher or ice maker leak can cup the boards in a day. A fridge warming with groceries inside, a shop freezer that quit or a range smelling of gas cannot wait either. Emergency help for these may be available from local providers who work in Holland and the country roads along Highway 95; say it is urgent when you call.',
+      'Older Holland homes often have wood floors, and a washer, dishwasher or ice maker leak can cup the boards in a day. A fridge warming with groceries inside, a shop freezer that quit or a range smelling of gas cannot wait either. Emergency help in Holland may be available from local providers who work the country roads along Highway 95; say up front that water is on the floor or food is at risk.',
     emergencyStepsIntro: 'In a Holland house or shop, do this right away:',
     emergencySteps: [
       'Leak on a wood floor: close the valve behind the appliance, then mop and fan the boards dry; water that sits under a machine is what damages them.',
@@ -1596,7 +1596,7 @@ export const areas: Area[] = [
       'Moody households search for a mix of kitchen and laundry fixes: Whirlpool fridges warming, LG flow sense codes, older Amana washers and GE uprights in the barn. Each card gives the usual cause and a first check.',
     emergencyHeading: { title: 'Pipes froze or the barn freezer quit', accent: 'near Moody?' },
     emergencyNote:
-      'Around Moody, a hard freeze is when the surprise leaks happen: a washer fill hose or ice maker line that split in an unheated room and lets go once it thaws. In summer it is a barn freezer or kitchen fridge losing its cold. Emergency help for these may be available from local providers who work in Moody and the farm roads along Highway 317; say it is urgent when you call.',
+      'Around Moody, a hard freeze is when the surprise leaks happen: a washer fill hose or ice maker line that split in an unheated room and lets go once it thaws. In summer it is a barn freezer or kitchen fridge losing its cold. Emergency help in Moody may be available from local providers who cover the Highway 317 farm roads; say it is urgent and mention the freeze if there was one.',
     emergencyStepsIntro: 'For a Moody home after a freeze or a breakdown:',
     emergencySteps: [
       'Split hose after a freeze: close the valves behind the washer and fridge before the line thaws fully, and check again once it does.',
