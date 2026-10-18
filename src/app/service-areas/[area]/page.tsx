@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation';
 import { routes, site } from '@/config/site';
 import { areas, areaHref } from '@/content/areas';
 import { brandHref, brands } from '@/content/brands';
-import { serviceByKey, serviceHref } from '@/content/services';
+import { serviceByKey, serviceHref, services } from '@/content/services';
 import { PageHero } from '@/components/PageHero';
 import { TrustBadges } from '@/components/TrustBadges';
 import { CtaRow } from '@/components/Buttons';
@@ -13,7 +13,6 @@ import { MapEmbed } from '@/components/AreaList';
 import { Icon } from '@/components/Icon';
 import { Section, SectionHeading } from '@/components/Section';
 import { ServicesGrid } from '@/components/ServicesGrid';
-import { ServicesTable } from '@/components/ServicesTable';
 import { VerifyTag } from '@/components/Verify';
 import { pageMetadata } from '@/lib/seo';
 
@@ -175,7 +174,18 @@ export default async function AreaPage({ params }: Params) {
         <p className="mb-6 mt-2 max-w-2xl text-ink-body">
           {a.servicesNote ?? `Pick an appliance for its common problems in ${a.name} homes and what to check first.`}
         </p>
-        <ServicesTable place={a.name} />
+        <ul className="flex flex-wrap gap-2">
+          {services.map((svc) => (
+            <li key={svc.key}>
+              <Link
+                href={serviceHref(svc.key)}
+                className="inline-flex min-h-[40px] items-center rounded-full border border-sand bg-white px-4 text-[14.5px] font-medium text-ink transition hover:border-ink hover:bg-ink hover:text-white"
+              >
+                {svc.name} repair
+              </Link>
+            </li>
+          ))}
+        </ul>
       </Section>
 
       <Section labelledBy="faq-heading">

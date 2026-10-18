@@ -114,7 +114,7 @@ export default async function BrandPage({ params }: Params) {
             eyebrow="Before you call"
             title="What to have ready"
             accent="when you call."
-            intro="The right details help the right parts arrive on the first visit."
+            intro={`With the ${b.name} model number and the symptom in hand, the right parts are more likely to arrive on the first visit.`}
           />
           <div className="grid gap-6 lg:grid-cols-[1fr_1.2fr]">
             {b.haveReady ? (
@@ -169,9 +169,9 @@ export default async function BrandPage({ params }: Params) {
         <SectionHeading id="process-heading" eyebrow="How it works" title="From call" accent={`to ${b.name} repair.`} center />
         <HowItWorks
           steps={[
-            { title: 'Call the line', text: 'Choose the appliance and enter your ZIP code.' },
-            { title: `Describe the ${b.name}`, text: 'Give the model number, the symptom and any code.' },
-            { title: 'Diagnosis first', text: 'The cause is found and explained before you approve a repair.' },
+            { title: 'Call the line', text: `Pick the appliance type for your ${b.name}, then enter your ZIP code.` },
+            { title: `Describe the ${b.name}`, text: `Read out the ${b.name} model number, what it is doing and any code on the display.` },
+            { title: 'Diagnosis first', text: `Ask the technician to confirm what failed on the ${b.name} before you approve a repair.` },
           ]}
         />
       </Section>

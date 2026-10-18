@@ -21,7 +21,7 @@ import { TrustBadges } from '@/components/TrustBadges';
 import { pageMetadata } from '@/lib/seo';
 
 export const metadata = pageMetadata({
-  title: `Appliance Repair Temple TX | Fridge Warm? Washer Leaking?`,
+  title: `Appliance Repair Temple TX | Emergency Fridge & Washer Help`,
   description: `Fridge not cooling, washer won't drain or dryer not heating? Whirlpool, GE, Samsung and LG appliance repair in Temple, TX and Bell County. Call ${phoneDisplay}.`,
   path: '/',
 });
@@ -294,7 +294,7 @@ export default function HomePage() {
           eyebrow="Emergency appliance repair"
           title="Urgent appliance problem?"
           accent="Stop the damage first."
-          intro="Some breakdowns cannot wait for next week. Emergency help for a flooded laundry room or a warming freezer may be available from local providers. Protect your home with the steps below first."
+          intro="Some breakdowns are true emergencies and cannot wait for next week. Emergency help for a flooded laundry room or a warming freezer may be available from local providers. Protect your home with the steps below first."
         />
         <div className="grid gap-8 lg:grid-cols-[1.5fr_1fr]">
           <div>

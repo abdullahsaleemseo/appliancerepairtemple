@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { routes, site } from '@/config/site';
+import { phoneDisplay, routes, site } from '@/config/site';
 import { areas, areaHref } from '@/content/areas';
 import { AreaBlock } from '@/components/AreaList';
 import { CtaRow } from '@/components/Buttons';
@@ -10,8 +10,8 @@ import { Section, SectionHeading } from '@/components/Section';
 import { pageMetadata } from '@/lib/seo';
 
 export const metadata = pageMetadata({
-  title: `Appliance Repair Service Areas Near ${site.city}, ${site.stateAbbr}`,
-  description: `Appliance repair in ${site.city} and ${areas.length} nearby towns, including Belton, Killeen, Harker Heights and Salado. See ZIP codes and how to get connected with a local pro.`,
+  title: `Appliance Repair Near ${site.city} ${site.stateAbbr} | Belton, Killeen, Salado`,
+  description: `Fridge, washer or dryer trouble in Belton, Killeen, Harker Heights, Salado or another town near ${site.city}? See ZIP codes for ${areas.length + 1} towns. Call ${phoneDisplay}.`,
   path: routes.areas,
 });
 
@@ -21,12 +21,14 @@ export default function AreasPage() {
       <PageHero crumbs={[{ name: 'Service Areas', path: routes.areas }]} title={`Appliance Repair Service Areas Near ${site.city}`}>
         <div className="prose-copy prose-dark">
           <p>
-            {site.brandName} is a free referral service that connects homeowners in {site.city}, most of {site.county} and a
-            few towns just outside it with independent local appliance repair pros. Repairs happen in your home; the technician comes to you.
+            A warm fridge in Belton, a leaking washer in Killeen, a barn freezer that quit outside Salado: {site.brandName} is
+            the appliance repair line for {site.city}, most of {site.county} and a few towns just past it. Repairs happen at
+            your home, so the technician comes to you.
           </p>
           <p>
-            When you call, describe the problem and give your address and ZIP code, and you are connected with a local pro who
-            serves your town. Each provider sets their own schedule and prices, so ask about availability, pricing and licensing on that call.
+            Each town below has its own page with ZIP codes, housing notes and the brand problems people there look up. When
+            you call, give your street address and ZIP so the call reaches a technician who covers your town, and ask about
+            timing, pricing and licensing then, since each provider sets their own.
           </p>
         </div>
         <div className="mt-8">
@@ -62,12 +64,17 @@ export default function AreasPage() {
           eyebrow="Coverage"
           title="The full"
           accent="service area."
-          intro="Local pros serve other nearby towns too. They don’t have their own page yet, but you can still call to get connected."
+          intro="Plenty of towns around Temple are covered without a page of their own. Call with your address to check yours."
         />
         <AreaBlock />
       </Section>
 
-      <FinalCta formId="areas_final" />
+      <FinalCta
+        formId="areas_final"
+        title="Somewhere near Temple?"
+        accent="Call with your address."
+        text="From Belton and Killeen to Holland and Moody, one call puts you in touch with a technician who works in your town."
+      />
     </>
   );
 }

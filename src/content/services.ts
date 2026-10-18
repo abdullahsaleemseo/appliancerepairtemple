@@ -115,7 +115,11 @@ export const services: Service[] = [
       },
       {
         q: 'Can I get emergency refrigerator repair in Temple?',
-        a: 'Call and say it is urgent. A refrigerator or freezer warming up with food inside, or a fridge leaking across the floor, should not sit until next week. In the meantime, keep the doors closed, move the most perishable food to a cooler with ice and close the water supply valve if there is a leak.',
+        a: 'Emergency refrigerator repair in Temple starts with one call: say it is urgent. A refrigerator or freezer warming up with food inside, or a fridge leaking across the floor, should not sit until next week. In the meantime, keep the doors closed, move the most perishable food to a cooler with ice and close the water supply valve if there is a leak.',
+      },
+      {
+        q: 'Is a refrigerator that stopped cooling an emergency?',
+        a: 'Usually, yes. A closed refrigerator keeps food safe for about four hours, so a fridge that has stopped cooling is an emergency for the groceries inside. Check the plug and breaker, keep the doors shut and call before the milk and meat pass 40°F.',
       },
       {
         q: 'Why is my freezer cold but my refrigerator warm?',
@@ -371,7 +375,11 @@ export const services: Service[] = [
       },
       {
         q: 'Can I get emergency freezer repair in Temple?',
-        a: 'Say it is urgent when you call. A freezer warming up with food inside, one that clicks and will not run, or one that trips the breaker should not wait for a convenient week. In the meantime, keep the lid or door shut and move the most valuable food to a cooler with ice.',
+        a: 'For emergency freezer repair in Temple, say it is urgent when you call. A freezer warming up with food inside, one that clicks and will not run, or one that trips the breaker should not wait for a convenient week. In the meantime, keep the lid or door shut and move the most valuable food to a cooler with ice.',
+      },
+      {
+        q: 'When does a freezer problem become an emergency?',
+        a: 'When the inside temperature is climbing and the freezer is full. A full freezer holds for about 48 hours with the lid closed, a half-full one about 24. A freezer that clicks every few minutes and never runs is also an emergency for the compressor, so unplug it and call.',
       },
       {
         q: 'Why is my freezer running but not freezing?',
@@ -649,7 +657,11 @@ export const services: Service[] = [
       },
       {
         q: 'Can I get emergency washer repair in Temple?',
-        a: 'Treat it as urgent, and say so when you call, if the washer is leaking across the floor, stuck full of water or tripping the breaker. In the meantime, close both water valves, unplug the washer or switch off its breaker, and keep a front-load door shut while the drum is full.',
+        a: 'Treat it as an emergency washer repair, and say so when you call, if the washer is leaking across the floor, stuck full of water or tripping the breaker. In the meantime, close both water valves, unplug the washer or switch off its breaker, and keep a front-load door shut while the drum is full.',
+      },
+      {
+        q: 'Is a washer leak an emergency?',
+        a: 'A leak that keeps spreading is an emergency, because water under a washer soaks subfloors, baseboards and the room below a second-floor laundry. A small drip at a hose fitting is not, but it is the warning before a burst hose. Close both valves either way.',
       },
       {
         q: 'Why is my washer leaking water on the floor?',
@@ -924,7 +936,11 @@ export const services: Service[] = [
       },
       {
         q: 'Can I get emergency dryer repair in Temple?',
-        a: 'Say it is urgent at the start of the call. A dryer that smells like burning, runs far too hot, trips the breaker or has a gas smell nearby should not run another load. Stop using the dryer and unplug it or switch off its breaker. If you smell gas, leave the house and call your gas utility from outside first.',
+        a: 'A dryer emergency is about fire risk, so say it is urgent at the start of the call. A dryer that smells like burning, runs far too hot, trips the breaker or has a gas smell nearby should not run another load. Stop using the dryer and unplug it or switch off its breaker. If you smell gas, leave the house and call your gas utility from outside first.',
+      },
+      {
+        q: 'When is a dryer problem an emergency?',
+        a: 'Heat and lint make a burning smell, a dryer that is too hot to touch, or scorched clothes an emergency. A dryer that simply blows cold air is not; it can wait for a normal call, as long as you stop running cycle after cycle.',
       },
       {
         q: 'Why is my dryer not heating?',
@@ -1180,7 +1196,11 @@ export const services: Service[] = [
       },
       {
         q: 'Can I get emergency dishwasher repair in Temple?',
-        a: 'Call and say it is urgent if the dishwasher is leaking onto the floor, tripping the breaker or smelling like burning. In the meantime, switch off the dishwasher breaker, close the hot water valve under the sink and dry the floor.',
+        a: 'For emergency dishwasher repair in Temple, call and say it is urgent if the dishwasher is leaking onto the floor, tripping the breaker or smelling like burning. In the meantime, switch off the dishwasher breaker, close the hot water valve under the sink and dry the floor.',
+      },
+      {
+        q: 'Is a leaking dishwasher an emergency?',
+        a: 'It can be. A dishwasher leak runs under the cabinets, where it soaks the subfloor before the puddle looks serious. Water reaching the wiring box behind the toe kick makes it an emergency. Switch off the breaker and close the hot water valve under the sink.',
       },
       {
         q: 'Why is my dishwasher leaking onto the floor?',
@@ -1427,7 +1447,11 @@ export const services: Service[] = [
       },
       {
         q: 'Can I get emergency oven and stove repair in Temple?',
-        a: 'Call and say it is urgent if the oven will not turn off, a burner is stuck on high, or you see sparks or smell burning wiring. Switch off the breaker for the range first. If you smell gas, leave the house and call your gas utility from outside before anything else.',
+        a: 'Emergency oven and stove repair calls are about heat and gas. Call and say it is urgent if the oven will not turn off, a burner is stuck on high, or you see sparks or smell burning wiring. Switch off the breaker for the range first. If you smell gas, leave the house and call your gas utility from outside before anything else.',
+      },
+      {
+        q: 'When is an oven or stove problem an emergency?',
+        a: 'An oven that will not turn off, a burner stuck on high, sparks or a burning wiring smell are emergencies. So is any gas smell, but that call goes to 911 or the gas company first, from outside. An oven that simply will not heat is not an emergency.',
       },
       {
         q: 'My oven will not turn off. What should I do?',
@@ -1686,7 +1710,11 @@ export const services: Service[] = [
       },
       {
         q: 'Can I get emergency microwave repair in Temple?',
-        a: 'Say it is urgent when you call if the microwave sparks with nothing metal inside, smokes, smells like burning, keeps running with the door open or trips the breaker. In the meantime, turn it off, keep the door closed and unplug it or switch off its breaker if you can do it safely.',
+        a: 'For emergency microwave repair in Temple, say it is urgent when you call if the microwave sparks with nothing metal inside, smokes, smells like burning, keeps running with the door open or trips the breaker. In the meantime, turn it off, keep the door closed and unplug it or switch off its breaker if you can do it safely.',
+      },
+      {
+        q: 'Is a sparking microwave an emergency?',
+        a: 'Sparking with nothing metal inside, smoke, or a microwave that keeps running with the door open is an emergency. Keep the door closed, turn it off and unplug it or switch off its breaker if you can do it safely. Do not open the cabinet.',
       },
       {
         q: 'What should I do if there is a fire inside my microwave?',

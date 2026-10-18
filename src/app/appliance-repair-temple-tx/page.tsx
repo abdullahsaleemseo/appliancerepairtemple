@@ -253,7 +253,11 @@ export default function CityPage() {
                 hot: those are emergencies. Emergency help in Temple may be available from local providers. Say it is urgent when you
                 call, and describe what the appliance is doing.
               </p>
-              <p>Before you call, take the steps that stop the damage:</p>
+              <p>
+                In Temple, most emergency appliance repair calls are refrigerators and garage freezers in the summer heat and
+                washer or dishwasher leaks the rest of the year.
+              </p>
+              <p>Before you call about an emergency, take the steps that stop the damage:</p>
               <ul>
                 <li>Leak: close the water valve behind the appliance and put towels down.</li>
                 <li>Burning smell, smoke or sparks: switch off the breaker for that appliance.</li>
