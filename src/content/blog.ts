@@ -1,3 +1,4 @@
+import { phoneDisplay } from '@/config/site';
 import type { Post } from './types';
 
 export const posts: Post[] = [
@@ -5,9 +6,8 @@ export const posts: Post[] = [
     slug: 'refrigerator-not-cooling',
     image: '/images/blog/refrigerator-not-cooling.webp',
     title: 'Refrigerator Not Cooling? What to Check First and When to Call',
-    metaTitle: 'Refrigerator Not Cooling? What to Check First | Temple, TX',
-    metaDescription:
-      'Refrigerator not cooling? How to protect your food, safe checks to try first, what the symptoms point to, and when to call a technician in Temple, TX.',
+    metaTitle: 'Refrigerator Not Cooling? 7 Checks to Try First | Temple TX',
+    metaDescription: `Fridge warm but freezer cold, or both sections warm? Protect the food, try 7 safe checks and see which parts usually fail. Stuck? Call ${phoneDisplay}.`,
     excerpt:
       'A warm refrigerator is usually a fan, a defrost problem or dusty coils, not a dead compressor. Here is how to protect your food, what to check first and what the symptoms tell you.',
     published: '2026-10-14',
@@ -16,7 +16,7 @@ export const posts: Post[] = [
     sections: [
       {
         id: 'short-version',
-        heading: 'The short version',
+        heading: 'Warm fridge: the quick answer',
         list: [
           'Keep the doors closed. A closed refrigerator keeps food safe for about 4 hours without cooling.',
           'Check the temperature setting, the power and whether the doors are sealing.',
@@ -74,13 +74,13 @@ export const posts: Post[] = [
       },
       {
         id: 'when-to-call',
-        heading: 'When to call a technician',
+        heading: 'When a warm refrigerator needs a technician',
         paragraphs: [
           'Call if the refrigerator is still warm after the checks above, if there is heavy frost on the back wall of the freezer, if it clicks but does not run, or if you see water collecting inside. These repairs need parts testing with a meter, and some need panels removed that are best left to a technician.',
           'Most of the parts behind these problems, such as fans, relays, defrost heaters, sensors and thermostats, are common and reasonable to replace. A failed compressor or a refrigerant leak is a bigger repair. On a refrigerator past about 10 to 15 years old, a good technician should help you weigh repair against replacement. Ask for that before you approve the work.',
         ],
         after: [
-          'When you call to get connected with a local pro, have the brand, the model number from the label inside the fresh-food section, and a short description of what you have already tried. It saves time on the visit.',
+          'Before you pick up the phone, note the brand, the model number from the label inside the fresh-food section, and which pattern you see: freezer cold and fridge warm, clicking, or heavy frost. Telling the technician that up front points the diagnosis at the right part from the start.',
         ],
       },
     ],
@@ -118,9 +118,8 @@ export const posts: Post[] = [
     slug: 'washer-not-draining',
     image: '/images/blog/washer-not-draining.webp',
     title: 'Washer Not Draining? Safe Checks Before You Call for Repair',
-    metaTitle: 'Washer Not Draining? Safe Checks First | Temple, TX',
-    metaDescription:
-      'Washer full of water and won’t drain? Safe checks for top-load and front-load washers, what the sounds and codes mean, and when to call a technician.',
+    metaTitle: 'Washer Not Draining? 6 Safe Checks Before You Call | Temple',
+    metaDescription: `Washer full of water? Check the hose, pump filter, suds and lid lock in order, learn what F21, OE and 5E codes mean, and call ${phoneDisplay} if it hums.`,
     excerpt:
       'A drum full of water is usually a clog, a kinked hose, too many suds or a worn pump. Here is how to check each one safely, in the right order, without making a bigger mess.',
     published: '2026-10-14',
@@ -129,7 +128,7 @@ export const posts: Post[] = [
     sections: [
       {
         id: 'short-version',
-        heading: 'The short version',
+        heading: 'Washer full of water: the quick answer',
         list: [
           'Unplug the washer and get towels, a shallow pan and a bucket ready before you open anything.',
           'Check the drain hose for kinks and the drain or laundry sink for a backup.',
@@ -140,7 +139,7 @@ export const posts: Post[] = [
       },
       {
         id: 'before-you-start',
-        heading: 'Before you start',
+        heading: 'Before you open anything',
         paragraphs: [
           'Turn the washer off and unplug it. If you will be moving it or touching hoses, close the hot and cold water valves behind it too.',
           'Expect water. On a front-loader, a drum full of water drains out through the small access door at the bottom front, often a gallon or more, so put down towels and a shallow pan. On a top-loader, you can bail water out of the tub with a cup and a bucket before you start looking at the drain.',
@@ -149,7 +148,7 @@ export const posts: Post[] = [
       },
       {
         id: 'checks',
-        heading: 'Checks, in order',
+        heading: 'Washer drain checks, in order',
         list: [
           'Drain hose. Pull the washer out a few inches and look behind it. A hose that is kinked, crushed against the wall or clogged will stop drainage. Straighten it and check that water can flow through it.',
           'How the hose sits in the drain. The hose should hook into the standpipe or laundry sink without being pushed too far in or taped tight. Whirlpool’s guidance, for example, calls for an air gap around the hose and limits on how deep it goes into the standpipe. Your installation manual gives the numbers for your model.',
@@ -171,13 +170,13 @@ export const posts: Post[] = [
       },
       {
         id: 'when-to-call',
-        heading: 'When to call a technician',
+        heading: 'When a washer that won’t drain needs a technician',
         paragraphs: [
           'Call if the hose, the house drain and the filter are all clear and the washer still will not drain, if it hums or stays silent at the drain step, or if the lid or door will not lock. Those point to the pump, the lock, the control or the wiring, and they need testing with a meter.',
           'A washer that will not drain is usually worth repairing. Drain pumps, lid locks and lid switches are common parts, and replacing one is a much smaller job than replacing the washer. On an older machine, a failed transmission or worn tub bearings are the main cases where replacement starts to make more sense.',
         ],
         after: [
-          'When you call to get connected with a local pro, have the brand, the model number, whether it is a top-load or front-load washer, and any code on the display.',
+          'Calling about the washer? Mention the brand, the model number from the label around the door or under the lid, top-load or front-load, any code on the display, and whether it hums or stays silent at the drain step.',
         ],
       },
     ],
@@ -215,9 +214,8 @@ export const posts: Post[] = [
     slug: 'dryer-not-heating',
     image: '/images/blog/dryer-not-heating.webp',
     title: 'Dryer Not Heating? Safe Checks and When to Call a Technician',
-    metaTitle: 'Dryer Not Heating? Safe Checks and Causes | Temple, TX',
-    metaDescription:
-      'Dryer runs but no heat? Safe checks for electric and gas dryers, why the vent matters, the parts that usually fail, and when to call a technician.',
+    metaTitle: 'Dryer Not Heating? Gas and Electric Dryer Checks | Temple TX',
+    metaDescription: `Dryer spins but blows cold air? Check the double breaker, gas valve and vent first, then see which part failed: element, fuse or igniter. Call ${phoneDisplay}.`,
     excerpt:
       'Most no-heat dryers come down to power, airflow or one failed heating part. Here is how to tell which, what is safe to check yourself, and when to stop and call.',
     published: '2026-10-14',
@@ -226,7 +224,7 @@ export const posts: Post[] = [
     sections: [
       {
         id: 'short-version',
-        heading: 'The short version',
+        heading: 'No heat: the quick answer',
         list: [
           'Electric dryer: check both halves of the double breaker. One can trip and leave the drum turning with no heat.',
           'Gas dryer: make sure the gas shutoff valve behind the dryer is open.',
@@ -274,13 +272,13 @@ export const posts: Post[] = [
       },
       {
         id: 'when-to-call',
-        heading: 'When to call',
+        heading: 'When a cold dryer needs a technician',
         paragraphs: [
           'Call when the breakers, gas supply and airflow are fine and there is still no heat, or when it heats for a while and then goes cold.',
           'Stop using the dryer and call right away if it smells like burning, the top or sides feel very hot, or you see scorch marks on clothes. If you smell gas, do not switch anything on or off. Leave the house and call your gas provider or 911 from outside.',
         ],
         after: [
-          'When you call to get connected with a local pro, have the brand, the model number, whether it is gas or electric, and what you have already checked.',
+          'On the call, give the brand, the model number from the door frame or back panel, gas or electric, and what you have ruled out: breaker, gas valve, lint screen and outside vent. If it heats and then goes cold, say so, because that pattern narrows the parts to test.',
         ],
       },
     ],
@@ -319,9 +317,8 @@ export const posts: Post[] = [
     slug: 'repair-or-replace-appliance',
     image: '/images/blog/repair-or-replace-appliance.webp',
     title: 'Repair or Replace an Appliance? A Practical Way to Decide',
-    metaTitle: 'Repair or Replace an Appliance? How to Decide | Temple, TX',
-    metaDescription:
-      'Repair or replace? A practical way to decide using age, what failed and the repair cost, with typical lifespans and the repairs usually worth doing.',
+    metaTitle: 'Repair or Replace an Appliance? Use the 50% Rule | Temple TX',
+    metaDescription: `Is a broken fridge, washer or dryer worth fixing? Weigh age and what failed with the 50 percent rule and typical lifespans. Want a diagnosis? Call ${phoneDisplay}.`,
     excerpt:
       'Two questions settle most repair-or-replace decisions: how old is the appliance, and what exactly failed? Here is how to weigh them, appliance by appliance.',
     published: '2026-10-14',
@@ -330,7 +327,7 @@ export const posts: Post[] = [
     sections: [
       {
         id: 'short-version',
-        heading: 'The short version',
+        heading: 'Repair or replace: the quick answer',
         list: [
           'Find out exactly what failed before deciding anything. A diagnosis turns a guess into a real choice.',
           'Compare the appliance’s age with its typical lifespan.',
@@ -435,9 +432,8 @@ export const posts: Post[] = [
     slug: 'how-often-clean-dryer-vent',
     image: '/images/blog/how-often-clean-dryer-vent.webp',
     title: 'How Often Should You Clean a Dryer Vent? Signs, Steps and Safety',
-    metaTitle: 'How Often Should You Clean a Dryer Vent? | Temple, TX',
-    metaDescription:
-      'How often to clean a dryer vent, the signs it is clogged, what you can safely do yourself and what to leave to a pro. Practical advice for Temple homes.',
+    metaTitle: 'How Often to Clean a Dryer Vent: 7 Clog Signs | Temple TX',
+    metaDescription: `Clothes taking two cycles to dry? How often to clean a dryer vent, 7 signs it is clogged, safe DIY steps and when to get help in Temple. Call ${phoneDisplay}.`,
     excerpt:
       'At least once a year for most homes, sooner if drying is slowing down. Here are the warning signs, the safe steps you can take yourself and when to get help.',
     published: '2026-10-14',
@@ -446,7 +442,7 @@ export const posts: Post[] = [
     sections: [
       {
         id: 'short-version',
-        heading: 'The short version',
+        heading: 'Dryer vents: the quick answer',
         list: [
           'Clean the lint screen before or after every load.',
           'Clean the vent at least once a year, or sooner if clothes are taking longer to dry.',
@@ -545,9 +541,8 @@ export const posts: Post[] = [
     slug: 'dishwasher-drainage-problems',
     image: '/images/blog/dishwasher-drainage-problems.webp',
     title: 'Dishwasher Not Draining? Common Causes and Safe Checks',
-    metaTitle: 'Dishwasher Not Draining? Causes and Safe Checks | Temple, TX',
-    metaDescription:
-      'Standing water in your dishwasher? The common causes, safe checks in the right order, what drain codes mean and when the drain pump needs a technician.',
+    metaTitle: 'Dishwasher Not Draining? Filter, Hose and Pump Checks | Temple',
+    metaDescription: `Standing water in the dishwasher? Clean the filter, check the disposal plug, high loop and air gap, decode E24 and E25, and call ${phoneDisplay} if it hums.`,
     excerpt:
       'Standing water usually comes down to the filter, the drain hose, the garbage disposal or the pump. Here is how to check them in order, and what to leave to a technician.',
     published: '2026-10-14',
@@ -556,7 +551,7 @@ export const posts: Post[] = [
     sections: [
       {
         id: 'short-version',
-        heading: 'The short version',
+        heading: 'Standing water: the quick answer',
         list: [
           'A little water under the filter is normal. A pool covering the tub floor is not.',
           'Clean the filter first. It fixes a lot of drainage complaints.',
@@ -575,7 +570,7 @@ export const posts: Post[] = [
       },
       {
         id: 'before-you-start',
-        heading: 'Before you start',
+        heading: 'Before you reach into the tub',
         paragraphs: [
           'Turn off the dishwasher’s power at the breaker or unplug it under the sink. Lay towels on the floor in front of it.',
           'Bail out standing water with a cup and a small bowl, then soak up the rest with a sponge or towel. Watch for broken glass in the bottom of the tub and in the filter.',
@@ -583,12 +578,12 @@ export const posts: Post[] = [
       },
       {
         id: 'checks',
-        heading: 'Checks, in order',
+        heading: 'Dishwasher drain checks, easiest first',
         list: [
           'Filter. Twist out the filter assembly under the lower spray arm and rinse it under the tap. Scrub mesh screens gently with a soft brush. Food, labels, seeds and glass collect here. Cleaning it about once a month is a good habit.',
           'Garbage disposal. If the dishwasher drains into a disposal, run the disposal for a few seconds to clear it. On a newly installed disposal, the knockout plug inside the dishwasher inlet may still be in place. Whirlpool suggests pushing a pencil into the inlet: if it goes in about three inches, the plug is gone.',
           'Sink drain. If the kitchen sink is slow or backs up, the clog is in the house plumbing, and the dishwasher cannot drain into it. Clear the sink drain first.',
-          'Drain hose. Look under the sink for a hose that is kinked, crushed by stored items or sagging below the drain connection. Most installations call for a high loop, with the hose secured up under the counter so sink water cannot flow back into the dishwasher.',
+          'The drain hose. Look under the sink for a hose that is kinked, crushed by stored items or sagging below the drain connection. Most installations call for a high loop, with the hose secured up under the counter so sink water cannot flow back into the dishwasher.',
           'Air gap. Some kitchens have a small cylinder on the sink deck next to the faucet. Pull or twist off the cap and clear any debris inside. Air gaps are required in some areas and optional in others.',
         ],
       },
@@ -641,7 +636,7 @@ export const posts: Post[] = [
       },
       {
         q: 'Is a dishwasher that won’t drain worth repairing?',
-        a: 'Usually, yes. Drain pumps are common parts. Replacement makes more sense mainly when an older dishwasher has several problems at once.',
+        a: 'Most of the time. A drain pump is a common part. Replacement makes more sense mainly when an older dishwasher has several problems at once.',
       },
     ],
     sources: [

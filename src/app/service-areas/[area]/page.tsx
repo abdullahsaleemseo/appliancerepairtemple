@@ -92,26 +92,26 @@ export default async function AreaPage({ params }: Params) {
           <SectionHeading
             id="emergency-heading"
             eyebrow={`Emergency appliance repair in ${a.name}`}
-            title="When it cannot"
-            accent="wait until next week."
+            title={a.emergencyHeading?.title ?? 'Urgent appliance problem'}
+            accent={a.emergencyHeading?.accent ?? `in ${a.name}?`}
             className="!mb-0"
           />
           <div>
             <div className="prose-copy">
               <p>
                 {a.emergencyNote ??
-                  `A refrigerator warming up with food inside, a washer leaking across the floor or a dryer that smells hot cannot wait. Emergency help may be available from local providers who serve ${a.name} homes. Say it is urgent when you call.`}{' '}
-                Emergency appliance repair in {a.name} is handled by independent local providers, so ask about their availability
-                and pricing when you are connected.
+                  `Emergency help may be available from local providers who work in ${a.name}. Say it is urgent when you call.`}
               </p>
-              <p>Before you call, take the steps that stop the damage:</p>
-              <ul>
-                <li>Leak: close the water valve behind the appliance and put towels down.</li>
-                <li>Burning smell, smoke or sparks: switch off the breaker for that appliance.</li>
-                <li>Warm refrigerator or freezer: keep the doors closed. A closed fridge holds food safely for about four hours.</li>
-                <li>Gas smell: leave the house and call your gas provider or 911 from outside first.</li>
-              </ul>
-              <p>Then call and say it is urgent. You are connected with an independent local appliance repair pro; ask about availability, pricing and licensing on that call.</p>
+              {a.emergencySteps?.length ? (
+                <>
+                  {a.emergencyStepsIntro ? <p>{a.emergencyStepsIntro}</p> : null}
+                  <ul>
+                    {a.emergencySteps.map((step) => (
+                      <li key={step.slice(0, 32)}>{step}</li>
+                    ))}
+                  </ul>
+                </>
+              ) : null}
             </div>
             <div className="mt-6">
               <CtaRow location={`area_${a.slug}_emergency`} />
@@ -140,7 +140,7 @@ export default async function AreaPage({ params }: Params) {
             eyebrow="By brand and model"
             title="Brand problems searched in"
             accent={`${a.name}.`}
-            intro={`Looking for your exact brand and problem? These come up often in ${a.name} homes. Here is what each one usually means and what to check before you call to get connected with a local pro.`}
+            intro={a.brandProblemsIntro}
           />
           <ul className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             {a.brandProblems.map((bp) => {
@@ -173,7 +173,7 @@ export default async function AreaPage({ params }: Params) {
           All appliance repair services in {a.name}, {site.stateAbbr}
         </h3>
         <p className="mb-6 mt-2 max-w-2xl text-ink-body">
-          Local pros repair every appliance below in {a.name} homes. Pick one for the full list of problems, causes and what to check first.
+          {a.servicesNote ?? `Pick an appliance for its common problems in ${a.name} homes and what to check first.`}
         </p>
         <ServicesTable place={a.name} />
       </Section>
@@ -190,8 +190,9 @@ export default async function AreaPage({ params }: Params) {
           <MapEmbed place={a.name} zoom={a.slug === 'killeen-tx' ? 12 : 13} />
           <div>
             <h2 id="zip-heading" className="font-display text-2xl font-bold tracking-[-0.02em] text-ink">
-              {a.name} ZIP codes covered by local pros
+              {a.name} ZIP {a.zips.length > 1 ? 'codes' : 'code'}
             </h2>
+            {a.zipNote ? <p className="mt-3 text-ink-body">{a.zipNote}</p> : null}
             <ul className="mt-5 flex flex-wrap gap-2">
               {a.zips.map((z) => (
                 <li key={z} className="rounded-full bg-ink px-4 py-2 font-display font-semibold tracking-wide text-white">
@@ -221,14 +222,19 @@ export default async function AreaPage({ params }: Params) {
                 );
               })}
               <Link href={routes.request} className="link-arrow">
-                Call to get connected
+                How a call works
               </Link>
             </div>
           </div>
         </div>
       </Section>
 
-      <FinalCta formId={`area_${a.slug}_final`} title={`Need a repair in ${a.name}?`} accent="Get connected with a local pro." />
+      <FinalCta
+        formId={`area_${a.slug}_final`}
+        title={a.finalCta?.title ?? `Appliance trouble in ${a.name}?`}
+        accent={a.finalCta?.accent ?? 'Call and describe it.'}
+        {...(a.finalCta ? { text: a.finalCta.text } : {})}
+      />
     </>
   );
 }

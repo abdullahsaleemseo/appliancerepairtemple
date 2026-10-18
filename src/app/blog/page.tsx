@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { routes, site } from '@/config/site';
+import { phoneDisplay, routes, site } from '@/config/site';
 import { PhoneLink } from '@/components/PhoneLink';
 import { posts, postHref } from '@/content/blog';
 import { serviceByKey } from '@/content/services';
@@ -10,8 +10,8 @@ import { Icon } from '@/components/Icon';
 import { pageMetadata } from '@/lib/seo';
 
 export const metadata = pageMetadata({
-  title: `Appliance Repair Tips for ${site.city}, ${site.stateAbbr} Homes | Safe Checks`,
-  description: `Appliance repair tips for ${site.city}, ${site.stateAbbr}: safe checks for refrigerators, washers, dryers and dishwashers, and repair or replace advice for homeowners.`,
+  title: `Appliance Repair Tips ${site.city} ${site.stateAbbr} | Fridge, Washer, Dryer Checks`,
+  description: `Fridge not cooling, washer full of water or dryer blowing cold? Safe checks, error codes and repair or replace advice for ${site.city}, ${site.stateAbbr} homes. Call ${phoneDisplay}.`,
   path: routes.blog,
 });
 
@@ -23,9 +23,9 @@ export default function BlogIndex() {
       <PageHero crumbs={[{ name: 'Repair Tips', path: routes.blog }]} title="Appliance Repair Tips" accent={`for ${site.city} homes.`}>
         <div className="prose-copy prose-dark">
           <p>
-            Plain-language guides for the appliance problems {site.city} homeowners run into most often: a warm refrigerator, a washer full of water, a
-            dryer running cold, a dishwasher that will not drain. Each one starts with the safe checks you can do yourself and
-            ends with how to tell when it is time to call a technician.
+            Appliance Repair Temple’s guides to the problems {site.city} homeowners run into most often: a warm refrigerator, a washer full of
+            water, a dryer running cold, a dishwasher that will not drain. Each one starts with the safe checks you can do yourself and
+            ends with the signs that a part needs testing by a technician.
           </p>
         </div>
       </PageHero>
@@ -43,7 +43,7 @@ export default function BlogIndex() {
               </Link>{' '}
               or{' '}
               <PhoneLink location="blog_index_tips" label="call" className="font-semibold text-ink underline decoration-flame/50 underline-offset-4 hover:decoration-flame" />{' '}
-              to be connected with an independent local appliance repair pro.
+              and describe what the appliance is doing.
             </li>
           </ul>
         </div>
@@ -89,7 +89,12 @@ export default function BlogIndex() {
           })}
         </ul>
       </div>
-      <FinalCta formId="blog_index_final" />
+      <FinalCta
+        formId="blog_index_final"
+        title="Checks done,"
+        accent="still broken?"
+        text="Call Appliance Repair Temple’s line and say which guide you followed and what you found. A technician can pick up where the checks left off."
+      />
     </>
   );
 }

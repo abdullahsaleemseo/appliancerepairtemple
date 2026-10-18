@@ -126,8 +126,22 @@ export type Area = {
   sections?: { heading: string; accent?: string; paragraphs: string[] }[];
   /** Brand and model problems people search for with the town name. `brand` is a key in content/brands.ts. */
   brandProblems?: { brand: string; appliance: ApplianceKey; title: string; text: string }[];
-  /** Town-specific paragraph for the emergency section; a shared paragraph is used when absent. */
+  /** Town-specific paragraph for the emergency section; a short fallback is used when absent. */
   emergencyNote?: string;
+  /** Emergency section heading, split into the plain part and the accent. */
+  emergencyHeading?: { title: string; accent: string };
+  /** One line that leads into `emergencySteps`. */
+  emergencyStepsIntro?: string;
+  /** Damage-limiting steps written for this town's homes. */
+  emergencySteps?: string[];
+  /** Intro line above the brand problem cards. */
+  brandProblemsIntro?: string;
+  /** Line above the full services table. */
+  servicesNote?: string;
+  /** Short note under the ZIP code list. */
+  zipNote?: string;
+  /** Final call band wording for this town. */
+  finalCta?: { title: string; accent: string; text: string };
   /** Nearby towns to link from this page (names from site.nearbyTowns or Temple). */
   nearby?: string[];
 };

@@ -27,6 +27,92 @@ export async function generateMetadata({ params }: Params) {
   return pageMetadata({ title: p.metaTitle ?? `${p.title} | ${site.shortName}`, description: p.metaDescription, path: postHref(p), type: 'article', image: p.image });
 }
 
+type PostCta = {
+  title: string;
+  accent: string;
+  text: string;
+  call: string;
+  note: string;
+  finalTitle: string;
+  finalAccent: string;
+  finalText: string;
+};
+
+/** Closing copy for each guide, so every post ends with its own call to action. */
+const postCta: Record<string, PostCta> = {
+  'refrigerator-not-cooling': {
+    title: 'Still warm after',
+    accent: '24 hours?',
+    text: 'A fridge that stays above 40°F once the coils are clean and the vents are clear usually has a fan, defrost or relay fault that needs a meter. Describe the pattern you noticed and ask for a diagnosis before any part is ordered.',
+    call: 'Call',
+    note: 'Refrigerator designs differ by brand and model. Check your owner’s manual before cleaning coils or removing a panel, and stop if anything feels unsafe.',
+    finalTitle: 'Fridge still warm?',
+    finalAccent: 'Save the food first.',
+    finalText: 'Keep the doors shut and call Appliance Repair Temple’s line. One call puts you in touch with a technician who works on refrigerators and freezers in Temple.',
+  },
+  'washer-not-draining': {
+    title: 'Drum still',
+    accent: 'full of water?',
+    text: 'If the hose, the pump filter and the house drain are clear and the washer still hums or sits silent at the drain step, the pump, lid lock or control needs testing. Stop running cycles and',
+    call: 'call',
+    note: 'Washer drain layouts vary between top-load and front-load models. Follow your installation manual for hose height and filter access, and unplug the washer first.',
+    finalTitle: 'Washer won’t drain?',
+    finalAccent: 'Leave it unplugged.',
+    finalText: 'Say whether it is a top-loader or front-loader and what it does at the drain step. A repair tech can take it from there.',
+  },
+  'dryer-not-heating': {
+    title: 'Breaker, gas and vent',
+    accent: 'all fine?',
+    text: 'Then a heating part has likely failed: an element, a thermal fuse, an igniter or the gas valve coils. Each one can be tested before it is replaced, so ask for that.',
+    call: 'Call',
+    note: 'Gas and electric dryers are built differently. Unplug the dryer before opening any panel, close the gas valve before moving a gas model, and stop if you smell gas or burning.',
+    finalTitle: 'Dryer blowing cold?',
+    finalAccent: 'Clear the vent, then call.',
+    finalText: 'Tell the technician whether it is gas or electric and what you already ruled out. It shortens the search for the failed part.',
+  },
+  'repair-or-replace-appliance': {
+    title: 'Not sure it is',
+    accent: 'worth fixing?',
+    text: 'The decision gets easier once you know exactly which part failed. A technician can diagnose the fridge, washer, dryer, dishwasher or range and tell you plainly whether the repair makes sense for its age.',
+    call: 'Call',
+    note: 'Lifespans and repair costs vary with brand, model, use and installation. Treat the numbers here as a starting point, and check the manufacturer’s warranty before paying for a repair.',
+    finalTitle: 'Fix it or replace it?',
+    finalAccent: 'Start with a diagnosis.',
+    finalText: 'Appliance Repair Temple is Temple’s line for appliance repair. Call and ask a technician what failed before you shop for a new one.',
+  },
+  'how-often-clean-dryer-vent': {
+    title: 'Vent clear, dryer',
+    accent: 'still hot?',
+    text: 'If clothes still take two cycles or the cabinet runs hot after the vent is cleaned, the problem is inside the dryer: a thermostat, a fuse, a belt or lint packed near the heater.',
+    call: 'Call',
+    note: 'Vent runs differ from house to house. Unplug the dryer before moving it, and leave roof and attic vent runs to a vent cleaning service.',
+    finalTitle: 'Vent clean,',
+    finalAccent: 'still slow to dry?',
+    finalText: 'Call and describe how long a load takes and how hot the dryer gets. A technician can check the parts inside the cabinet.',
+  },
+  'dishwasher-drainage-problems': {
+    title: 'Filter clean, water',
+    accent: 'still standing?',
+    text: 'Once the filter, disposal, high loop and air gap are clear, a humming or silent drain step points to the drain pump. That job means panels off near wiring and water, so',
+    call: 'call',
+    note: 'Dishwasher filters, sumps and drain codes differ by brand. Check your manual for your model, turn the power off at the breaker first, and watch for broken glass.',
+    finalTitle: 'Dishwasher holding water?',
+    finalAccent: 'Towels down, then call.',
+    finalText: 'Mention the brand, any drain code such as E24, and whether it hums at the end of the cycle. A technician who works on dishwashers can test the pump.',
+  },
+};
+
+const fallbackCta: PostCta = {
+  title: 'Need a',
+  accent: 'technician?',
+  text: 'Describe the appliance and what it is doing.',
+  call: 'Call',
+  note: 'This guide is general advice. Appliances differ by model; check your owner’s manual and stop if anything feels unsafe.',
+  finalTitle: 'Broken appliance?',
+  finalAccent: 'Make one call.',
+  finalText: 'Appliance Repair Temple is Temple’s line for appliance repair.',
+};
+
 const fmt = (d: string) => new Date(`${d}T12:00:00`).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
 
 export default async function PostPage({ params }: Params) {
@@ -34,6 +120,7 @@ export default async function PostPage({ params }: Params) {
   if (!p) notFound();
   const path = postHref(p);
   const svc = p.service === 'general' ? null : serviceByKey[p.service];
+  const cta = postCta[p.slug] ?? fallbackCta;
 
   return (
     <>
@@ -105,28 +192,31 @@ export default async function PostPage({ params }: Params) {
             <aside aria-labelledby="related-heading" className="grain relative mt-14 overflow-hidden rounded-card bg-ink p-8 md:p-10">
               <div aria-hidden="true" className="pointer-events-none absolute -right-16 -top-16 h-56 w-56 rounded-full bg-flame/30 blur-[80px]" />
               <h2 id="related-heading" className="relative font-display text-3xl font-bold tracking-[-0.03em] text-white">
-                Need a <span className="accent text-flame-glow">technician?</span>
+                {cta.title} <span className="accent text-flame-glow">{cta.accent}</span>
               </h2>
+              <p className="relative mt-3 text-white/65">
+                {cta.text}{' '}
+                <PhoneLink location={`blog_${p.slug}_aside`} label={cta.call} className="font-semibold text-white underline decoration-flame underline-offset-4" />
+                .
+              </p>
               <p className="relative mt-3 text-white/65">
                 {svc ? (
                   <>
-                    Local pros offer{' '}
+                    More on{' '}
                     <Link href={serviceHref(svc.key)} className="font-semibold text-white underline decoration-flame underline-offset-4">
                       {svc.name.toLowerCase()} repair in {site.city}
-                    </Link>{' '}
-                    and the surrounding area.
+                    </Link>
+                    .
                   </>
                 ) : (
                   <>
-                    Read about{' '}
+                    More on{' '}
                     <Link href={routes.cityPage} className="font-semibold text-white underline decoration-flame underline-offset-4">
                       appliance repair in {site.city}
                     </Link>
                     .
                   </>
-                )}{' '}
-                <PhoneLink location={`blog_${p.slug}_aside`} label="Call" className="font-semibold text-white underline decoration-flame underline-offset-4" /> to
-                be connected with an independent local appliance repair pro. Verify the provider’s license and insurance before work starts.
+                )}
               </p>
             </aside>
 
@@ -157,12 +247,12 @@ export default async function PostPage({ params }: Params) {
             ) : null}
 
             <p className="mt-10 text-sm text-ink-muted">
-              This article is general guidance. Appliances differ by model; check your owner’s manual and stop if anything feels unsafe.
+              {cta.note}
             </p>
           </div>
         </div>
       </article>
-      <FinalCta formId={`blog_${p.slug}_final`} appliance={svc?.name.toLowerCase()} />
+      <FinalCta formId={`blog_${p.slug}_final`} appliance={svc?.name.toLowerCase()} title={cta.finalTitle} accent={cta.finalAccent} text={cta.finalText} />
     </>
   );
 }
