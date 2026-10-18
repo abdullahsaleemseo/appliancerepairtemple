@@ -32,7 +32,7 @@ export const site = {
 
   // Service-area business: no street address is published or marked up.
   serviceAreaSummary: 'Temple, Belton, Killeen, Harker Heights, Salado, and nearby Central Texas communities',
-  footerAreaLine: 'Helping Temple, TX homeowners connect with local appliance repair pros.',
+  footerAreaLine: 'Temple’s line for appliance repair, serving homes across Bell County, TX.',
 
 
   // Temple ZIP codes supplied in the design brief as verified.

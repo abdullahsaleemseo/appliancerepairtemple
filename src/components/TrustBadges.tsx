@@ -1,10 +1,10 @@
 import { site } from '@/config/site';
 import { Icon } from './Icon';
 
-/** Plain facts about how the referral service works. No credentials, ratings or speed claims. */
+/** Plain facts about the service. No credentials, ratings or speed claims (call network rules). */
 const items = [
   { text: 'Free to call', icon: 'phone' as const },
-  { text: 'Independent local pros', icon: 'wrench' as const },
+  { text: 'Technicians across Bell County', icon: 'wrench' as const },
   { text: 'All major appliance brands', icon: 'tag' as const },
   { text: `${site.city} & ${site.county}`, icon: 'pin' as const },
 ];

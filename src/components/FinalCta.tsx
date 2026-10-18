@@ -6,7 +6,7 @@ import { TrustBadges } from './TrustBadges';
 export function FinalCta({
   title = 'Broken appliance?',
   accent = 'Let’s fix it.',
-  text = 'Call to be connected with an independent local appliance repair pro. Emergency help may be available from local providers.',
+  text = 'One call puts you in touch with a technician who works on refrigerators, washers, dryers, dishwashers and ovens across Temple and Bell County.',
   appliance,
   formId = 'final_cta',
 }: {

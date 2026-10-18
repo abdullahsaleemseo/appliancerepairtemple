@@ -5,7 +5,7 @@ import { Icon } from './Icon';
 /** The phone-first card that connects a caller with a local provider. Every link in it is a tracked call. */
 export function CallCard({
   location,
-  title = 'Call to get connected',
+  title = 'Call Appliance Repair Temple',
   appliance,
   dark = false,
   className = '',
@@ -17,9 +17,9 @@ export function CallCard({
   className?: string;
 }) {
   const points = [
-    appliance ? `Describe the problem with your ${appliance} and the brand.` : 'Describe the appliance, the brand and what it is doing.',
-    'You are connected with an independent local appliance repair pro.',
-    'Ask the pro about availability, pricing and licensing before any work starts.',
+    appliance ? `Say what your ${appliance} is doing and the brand.` : 'Say which appliance it is, the brand and what it is doing.',
+    'Your call goes to a technician who works in your area.',
+    'Settle the timing and the price before any work starts.',
   ];
   const muted = dark ? 'text-white/60' : 'text-ink-muted';
   return (
@@ -54,7 +54,7 @@ export function CallCard({
         <Icon name="phone" className="h-5 w-5" strokeWidth={2.2} />
         Call Now
       </a>
-      <p className={`mt-3 text-center text-[13px] ${muted}`}>Emergency help may be available from local providers. Say it is urgent when you call.</p>
+      <p className={`mt-3 text-center text-[13px] ${muted}`}>Urgent leak or no cooling? Say so when you call.</p>
     </div>
   );
 }
