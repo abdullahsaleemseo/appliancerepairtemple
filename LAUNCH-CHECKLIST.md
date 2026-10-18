@@ -33,7 +33,7 @@ with independent local providers. The network's review asked for the changes bel
 - [x] (Oct 18, 2026) Launch day only: set `allowIndexing: true` in `src/config/launch.ts` and push, then check robots.txt allows crawling on the real domain
 - [x] Call-only site: no contact, quote or feedback forms; footer disclaimer on every page; no prices; no "free quote/estimate/inspection" wording, enforced by `npm run check:copy` (Oct 16, 2026)
 - [ ] Test call to (254) 615-2088 from a phone on several pages
-- [ ] GA4 ID set in `src/config/launch.ts` (`gaId`); check `click_to_call` (with `data-call-location`) in GA4 DebugView
+- [x] (Oct 18, 2026: G-NME9DJ8LRG) GA4 ID set in `src/config/launch.ts` (`gaId`); check `click_to_call` (with `data-call-location`) in GA4 DebugView
 - [ ] Mark `click_to_call` as a key event in GA4 and import it into Google Ads if running ads
 - [ ] Remove `LEAD_WEBHOOK_URL` and any Turnstile keys from Vercel; the site no longer uses them
 - [ ] Search Console verified (meta tag added Oct 18, 2026; press Verify in GSC) (DNS record, or the meta tag value in `launch.googleVerification`); sitemap submitted; URL inspection run on the home page, the city page and one service page

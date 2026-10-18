@@ -13,7 +13,7 @@ export const launch = {
   siteMode: 'production' as 'production' | 'draft',
   allowIndexing: true,
   siteUrl: 'https://appliancerepairtemple.com',
-  gaId: '',
+  gaId: 'G-NME9DJ8LRG',
   googleVerification: 'RwkxEOVXQbmWsYSSTFEyMZqxZW3O9lZGAp0PaSfnfdM',
   bingVerification: '',
 };
