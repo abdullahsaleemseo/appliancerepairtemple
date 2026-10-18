@@ -11,15 +11,15 @@ export const services: Service[] = [
     navLabel: 'Refrigerator Repair',
     icon: 'refrigerator',
     card: 'Not cooling, leaking, noisy, or the ice maker quit.',
-    metaTitle: 'Refrigerator Repair Temple TX | Same-Day & Emergency',
+    metaTitle: 'Refrigerator Repair Temple TX | Connect With Local Pros',
     metaDescription:
-      'Refrigerator not cooling, leaking or icing up? Same-day and emergency refrigerator repair in Temple, TX, subject to availability. All major brands.',
-    h1: 'Same-Day Refrigerator Repair in Temple, TX',
+      'Refrigerator repair in Temple, TX for fridges that are not cooling, leaking or icing up, on all major brands. Call to get connected with a local pro.',
+    h1: 'Refrigerator Repair in Temple, TX',
     intro: [
-      'Refrigerator not cooling, leaking or making a racket? Appliance Repair Temple repairs top-freezer, bottom-freezer, side-by-side and French door refrigerators in homes across Temple, TX. Same-day service is available, subject to technician availability, location, and current demand.',
-      'Most refrigerator failures come down to a short list of parts: a fan motor, a defrost component, a start relay, a water valve, a sensor or a control board. The technician tests those parts in your kitchen, shows you which one failed and explains the repair before any work starts. You get a straight answer about whether the fix makes sense for your fridge.',
+      'Refrigerator not cooling, leaking or making a racket? Appliance Repair Temple connects homeowners across Temple, TX with independent local appliance repair pros who work on top-freezer, bottom-freezer, side-by-side and French door refrigerators. Describe the problem when you call to be connected with a local provider.',
+      'Most refrigerator failures come down to a short list of parts: a fan motor, a defrost component, a start relay, a water valve, a sensor or a control board. A local technician will usually test those parts in your kitchen to find the one that failed. A good technician shows you the failed part and explains the repair before any work starts. Ask for that, along with a straight answer about whether the fix makes sense for your fridge.',
       'Long Temple summers keep a refrigerator running hard, so a small problem in May can turn into a warm fridge full of groceries by July.',
-      'A refrigerator that stops cooling is one of the few appliance problems that cannot wait, because the food inside is on a clock. That is why fridge repair calls get priority as emergency appliance repair during business hours, along with leaks that are spreading across the floor.',
+      'A refrigerator that stops cooling is one of the few appliance problems that cannot wait, because the food inside is on a clock. Emergency help may be available from local providers for a warm fridge or a leak that is spreading across the floor. Say it is urgent when you call.',
     ],
     symptomsHeading: 'Refrigerator symptoms and what they usually mean',
     symptoms: [
@@ -27,13 +27,13 @@ export const services: Service[] = [
         title: 'Not cooling at all',
         cause:
           'Light on but nothing running? Look at the start relay, overload, control board or compressor. Compressor running but both sides warm? The condenser coils may be packed with dust or the condenser fan may have stopped.',
-        fixable: 'Relays, fans and coil cleaning are routine. Compressor work is a bigger decision we talk through with you.',
+        fixable: 'Relays, fans and coil cleaning are routine. Compressor work is a bigger decision to talk through with the technician.',
       },
       {
         title: 'Fridge warm, freezer still cold',
         cause:
           'Cold air is made in the freezer and pushed into the fridge. A frosted evaporator coil, a stopped evaporator fan or a stuck air damper keeps the freezer cold while the fridge warms up.',
-        fixable: 'One of the most common refrigerator repairs we do.',
+        fixable: 'One of the most common refrigerator repairs, and usually fixable without replacing the fridge.',
       },
       {
         title: 'Freezer warm or frosting up',
@@ -68,7 +68,7 @@ export const services: Service[] = [
       {
         title: 'Error code or blinking display',
         cause:
-          'A code narrows the search to a system, such as a sensor or fan circuit, but rarely names the exact part. The technician confirms it with a meter before ordering anything.',
+          'A code narrows the search to a system, such as a sensor or fan circuit, but rarely names the exact part. A good technician confirms it with a meter before ordering anything.',
         fixable: 'Sensor and control faults are common and fixable on most models.',
       },
     ],
@@ -81,7 +81,7 @@ export const services: Service[] = [
       heading: 'Is your refrigerator worth repairing?',
       paragraphs: [
         'Most refrigerators last 10 to 15 years. A useful rule of thumb: if the repair would cost more than half of what a comparable new refrigerator costs, and your unit is near the end of that range, replacement starts to make sense.',
-        'Fans, defrost parts, relays, valves and gaskets are almost always worth repairing. Compressor or refrigerant work on an older fridge deserves a harder look. The technician gives you an honest read; the decision stays yours.',
+        'Fans, defrost parts, relays, valves and gaskets are almost always worth repairing. Compressor or refrigerant work on an older fridge deserves a harder look. Ask the technician for a plain read on the repair; the decision stays yours.',
       ],
       points: [
         'Under about 8 years old: repair is usually the right call',
@@ -98,12 +98,12 @@ export const services: Service[] = [
         a: 'Keep the doors closed. A closed refrigerator keeps food safe for about 4 hours. A full freezer holds for about 48 hours and a half-full one for about 24. Throw out perishables such as milk, meat and leftovers that sat above 40°F for more than two hours.',
       },
       {
-        q: 'Can my refrigerator be repaired the same day?',
-        a: 'Same-day service is available, subject to technician availability, location, and current demand. Many common refrigerator parts can be replaced on the first visit. Some model-specific parts have to be ordered, and the technician will tell you if that is the case.',
+        q: 'Can a refrigerator be repaired on the first visit?',
+        a: 'Often, yes. Many common refrigerator parts can be replaced on the first visit. Some model-specific parts have to be ordered, so ask the technician whether the part is on hand. Giving the brand and model number when you call helps the provider plan for the right parts.',
       },
       {
-        q: 'Do you repair refrigerator compressors and refrigerant leaks?',
-        a: 'Sealed system repairs are possible on many models, but they are bigger jobs and refrigerant must be handled by an EPA-certified technician. The technician confirms the diagnosis and talks through whether the repair makes sense for your refrigerator before anything is done.',
+        q: 'Can refrigerator compressors and refrigerant leaks be repaired?',
+        a: 'Sealed system repairs are possible on many models, but they are bigger jobs and refrigerant must be handled by an EPA-certified technician. Ask the technician to confirm the diagnosis and talk through whether the repair makes sense for your refrigerator before anything is done.',
       },
       {
         q: 'Is it OK to keep a refrigerator in a Temple garage?',
@@ -111,11 +111,11 @@ export const services: Service[] = [
       },
       {
         q: 'How much does refrigerator repair cost?',
-        a: 'It depends on the model and the part that failed, so we do not list prices online. Call to discuss your repair needs. Have the brand, the model number and a short description of the problem ready.',
+        a: 'It depends on the model and the part that failed, so this site does not list prices. Call to get connected with a local pro, and ask about pricing and any warranty before work starts. Have the brand, the model number and a short description of the problem ready.',
       },
       {
-        q: 'Do you offer emergency refrigerator repair?',
-        a: 'Yes. A refrigerator or freezer warming up with food inside, or a fridge leaking across the floor, gets priority scheduling during business hours, Monday to Saturday, 8:00 AM to 8:00 PM. Same-day emergency service is subject to technician availability, location, and current demand. Ask about emergency visit details when you call.',
+        q: 'Can I get emergency refrigerator repair in Temple?',
+        a: 'Emergency help may be available from local providers. A refrigerator or freezer warming up with food inside, or a fridge leaking across the floor, is worth treating as urgent, so say it is urgent when you call. In the meantime, keep the doors closed, move the most perishable food to a cooler with ice and close the water supply valve if there is a leak.',
       },
       {
         q: 'Why is my freezer cold but my refrigerator warm?',
@@ -123,15 +123,15 @@ export const services: Service[] = [
       },
       {
         q: 'Why is my refrigerator leaking water on the floor?',
-        a: 'The usual causes are a clogged defrost drain, a cracked or loose water line to the ice maker, a failing water inlet valve or a drain pan that has shifted. Turn off the water supply to the fridge if you can, dry the area and call.',
+        a: 'The usual causes are a clogged defrost drain, a cracked or loose water line to the ice maker, a failing water inlet valve or a drain pan that has shifted. Turn off the water supply to the fridge if you can, dry the area and call to get connected with a local pro.',
       },
       {
         q: 'Why is my refrigerator making a loud noise?',
         a: 'A squeal or chirp that changes when you open the freezer door often points to the evaporator fan. A rattle or buzz near the bottom back is often the condenser fan or a loose drain pan. Clicking every few minutes with no cooling often means the start relay or compressor.',
       },
       {
-        q: 'Do you offer fridge repair outside Temple?',
-        a: 'Yes. Along with Temple, we repair refrigerators in Belton, Killeen, Harker Heights, Nolanville, Morgan’s Point Resort, Salado, Troy, Little River-Academy, Rogers, Holland and Moody.',
+        q: 'Is fridge repair available outside Temple?',
+        a: 'Yes. Along with Temple, local pros repair refrigerators in Belton, Killeen, Harker Heights, Nolanville, Morgan’s Point Resort, Salado, Troy, Little River-Academy, Rogers, Holland and Moody.',
       },
       {
         q: 'Where do I find my refrigerator’s model number?',
@@ -149,14 +149,14 @@ export const services: Service[] = [
           'Check the basics: the plug, the breaker and the temperature setting. Dials get bumped during cleaning more often than you would think.',
           'Put an appliance thermometer on a middle shelf. The fresh-food side should read 40°F or below and the freezer 0°F.',
           'Listen. Is the compressor humming? Does a fan run inside the freezer when you hold the door switch in?',
-          'Call us with the brand, the model number and what you noticed.',
+          'Call to get connected with a local pro, with the brand, the model number and what you noticed ready.',
         ],
         note: 'Throw out perishables such as milk, meat and leftovers that sat above 40°F for more than two hours. When in doubt, throw it out.',
       },
       {
         type: 'emergency',
         heading: 'Emergency refrigerator repair in Temple',
-        intro: 'When the fridge stops cooling, the food inside is on a clock. These situations get priority scheduling during business hours. Same-day emergency refrigerator repair is available, subject to technician availability, location, and current demand.',
+        intro: 'When the fridge stops cooling, the food inside is on a clock. Emergency help may be available from local providers. Say it is urgent when you call, and use the steps here to protect your food and your floor in the meantime.',
         signs: [
           { title: 'Warming up with food inside', text: 'The fresh-food side is above 40°F, or the freezer is soft, and the fridge is full.' },
           { title: 'Water spreading on the floor', text: 'A leak from the ice maker line, the water valve or a blocked defrost drain that keeps coming back.' },
@@ -168,6 +168,16 @@ export const services: Service[] = [
           'Move the most perishable food to a cooler with ice.',
           'For a leak, close the water supply valve to the fridge and dry the floor.',
           'Write down the brand, model number and any error code, then call.',
+        ],
+      },
+      {
+        type: 'prose',
+        heading: 'Refrigerator leaking water? Where it comes from and what to do',
+        paragraphs: [
+          'A refrigerator leak is one of the most urgent appliance problems in a Temple kitchen, because water can soak into the flooring, the subfloor and the base of the cabinets before anyone notices. Most leaks come from one of four places. A clogged defrost drain sends meltwater into the fresh-food section, where it pools under the crisper drawers or freezes on the freezer floor and then spills out the front. A cracked or loose plastic supply line behind the fridge leaks every time the ice maker fills. A failing water inlet valve can drip at the back of the unit even when nothing is running. A drain pan that has shifted or cracked lets defrost water run onto the floor under the fridge.',
+          'Check first where the water is. Water inside the fridge points to the defrost drain. Water at the back points to the supply line or the inlet valve. Pull off the bottom kick plate and use a flashlight to look for a full or tilted drain pan. If you recently changed the water filter, make sure it is seated and locked, because a loose filter housing often drips inside the door or from the ceiling of the fresh-food section.',
+          'To stop the damage, close the shutoff valve that feeds the refrigerator. It is often under the kitchen sink or behind the fridge, and in some homes it is a small saddle valve on a copper line. Turn the ice maker off, dry the floor and set towels along the base. If water has reached the outlet or the cord, switch off the breaker before you unplug the refrigerator. Keep the doors closed so the food stays cold while the water is off.',
+          'Call to get connected with a local pro if the leak comes back after you dry it, if water is showing up inside the cabinet or the wall, or if the supply valve will not close. A leak that keeps returning usually means a frozen drain line, a cracked valve or a split tube that needs a part. Emergency help may be available from local providers. Say it is urgent when you call, and mention the brand, the model number and where the water collects.',
         ],
       },
       { type: 'symptoms' },
@@ -201,7 +211,7 @@ export const services: Service[] = [
       },
       {
         type: 'diyVsPro',
-        heading: 'What you can check, and what to leave to us',
+        heading: 'What you can check, and what to leave to a technician',
         diy: [
           'Clean the condenser coils with a coil brush or vacuum, with the fridge unplugged.',
           'Check that the doors close fully and the gaskets are clean.',
@@ -217,19 +227,19 @@ export const services: Service[] = [
       },
       {
         type: 'prose',
-        heading: 'Refrigerator types and features we repair',
+        heading: 'Refrigerator types and features local pros repair',
         paragraphs: [
-          'French door refrigerators are the most common style in newer Temple kitchens. They add more to go wrong: a second evaporator fan on some models, a flipper mullion on the left door that seals the gap, an ice maker in the door or the freezer drawer, and an electronic control that reports error codes. We repair all of it.',
+          'French door refrigerators are the most common style in newer Temple kitchens. They add more to go wrong: a second evaporator fan on some models, a flipper mullion on the left door that seals the gap, an ice maker in the door or the freezer drawer, and an electronic control that reports error codes. A local technician can usually work on all of it.',
           'Side-by-side refrigerators put the freezer on the left and usually feed the ice maker and water dispenser through the freezer door. Top-freezer and bottom-freezer refrigerators are simpler and very common in rentals and starter homes, which makes them practical to repair for years.',
           'Counter-depth and smart refrigerators use the same core parts as standard models, with tighter spaces around the coils and more electronics. Garage refrigerators and second fridges are a regular call in the summer, because heat pushes them past what they were built for.',
-          'Whatever the style, the diagnosis is the same: check temperatures and airflow, test the likely parts and explain the refrigerator repair before any work starts.',
+          'Whatever the style, a good diagnosis follows the same pattern: check temperatures and airflow, test the likely parts and explain the refrigerator repair before any work starts.',
         ],
       },
       {
         type: 'resultsGrid',
         eyebrow: 'Ice makers and dispensers',
         heading: 'Ice maker and water dispenser problems',
-        intro: 'Ice makers cause more refrigerator service calls than almost any other single part. Here is what the common symptoms usually mean.',
+        intro: 'Ice makers are one of the most common reasons for a refrigerator service call. Here is what the common symptoms usually mean.',
         rows: [
           { see: 'No ice at all', means: 'The ice maker is switched off, the freezer is too warm, the fill tube is frozen or the water inlet valve has failed.', fix: 'Check the switch and freezer temperature first; the valve and fill tube are common repairs.' },
           { see: 'Small, hollow or cloudy cubes', means: 'Low water pressure, a clogged water filter or a valve that is not opening fully.', fix: 'Replace an old filter first; if it does not help, the valve gets tested.' },
@@ -237,19 +247,18 @@ export const services: Service[] = [
           { see: 'Ice clumped or jammed in the bin', means: 'The freezer is cycling warm and refreezing, or the auger motor is not turning.', fix: 'Empty the bin; if it returns, the defrost system or auger motor is checked.' },
         ],
       },
-      { type: 'brands', heading: 'Refrigerator brands and styles we repair', intro: 'We work on the major refrigerator brands found in Temple kitchens, in every common style. Tell us the brand and model number when you book so the technician can check parts ahead of time.', styles: ['Top-freezer', 'Bottom-freezer', 'Side-by-side', 'French door', 'Counter-depth'] },
+      { type: 'brands', heading: 'Refrigerator brands and styles local pros repair', intro: 'Local pros work on the major refrigerator brands found in Temple kitchens, in every common style. Give the brand and model number when you call so the technician can check parts ahead of time.', styles: ['Top-freezer', 'Bottom-freezer', 'Side-by-side', 'French door', 'Counter-depth'] },
       {
         type: 'process',
-        heading: 'How a refrigerator repair visit works',
+        heading: 'What to expect on a refrigerator repair visit',
         steps: [
-          { title: 'Temperatures and a listen', text: 'The technician checks the temperature in both sections and listens to the compressor and fans.' },
+          { title: 'Temperatures and a listen', text: 'A technician will usually check the temperature in both sections and listen to the compressor and fans.' },
           { title: 'Look behind the panels', text: 'When needed, the freezer back panel comes off so the coil, fan and defrost parts can be checked for frost and wear.' },
-          { title: 'Test, do not guess', text: 'Suspect parts are tested with a meter before anything is replaced. You hear what failed and what the repair involves.' },
-          { title: 'Repair and confirm', text: 'After your OK, the part is replaced and cooling is confirmed. A fridge can take several hours to get fully back to temperature.' },
+          { title: 'Test, do not guess', text: 'Ask that suspect parts be tested with a meter before anything is replaced, and that the technician explains what failed and what the repair involves.' },
+          { title: 'Repair and confirm', text: 'Once you approve, the part is replaced and cooling is checked. A fridge can take several hours to get fully back to temperature.' },
         ],
       },
       { type: 'repairOrReplace' },
-      { type: 'payment' },
       { type: 'faq' },
     ],
   },
@@ -260,17 +269,17 @@ export const services: Service[] = [
     navLabel: 'Washer Repair',
     icon: 'washer',
     card: 'Won’t drain, won’t spin, leaking or shaking hard.',
-    metaTitle: 'Washer Repair Temple TX | Same-Day & Emergency',
+    metaTitle: 'Washer Repair Temple TX | Connect With Local Pros',
     metaDescription:
-      'Washer won’t drain, spin or stop leaking? Same-day and emergency washer repair in Temple, TX for top-load and front-load washing machines. All major brands.',
+      'Washer repair in Temple, TX for top-load and front-load washing machines that won’t drain, spin or stop leaking. Call to get connected with a local pro.',
     h1: 'Top-Load & Front-Load Washer Repair in Temple, TX',
     intro: [
-      'Washer stuck full of water, refusing to spin or leaking across the laundry room floor? Appliance Repair Temple repairs top-load and front-load washing machines in homes across Temple, TX, including stacked laundry centers and high-efficiency models. Same-day service is available, subject to technician availability, location, and current demand.',
-      'Most washer breakdowns trace back to a handful of parts: the lid or door lock, the drain pump, a water inlet valve, the drive belt or coupler, or the suspension. Where the cycle stops tells you a lot about which one failed, so that is where the technician starts. You hear what failed and what the repair involves before any work begins.',
-      'Washing machine repair covers more than the machine itself. A slow house drain, a worn fill hose or an outlet on a tripped circuit can look like a washer problem, so the technician checks the hookups too and tells you if the fault is outside the washer.',
-      'Some washer problems cannot wait until the weekend. A washer leaking across the floor, a drum stuck full of water or a machine that trips the breaker gets priority as emergency washer repair during business hours, so you are not left with wet laundry and a wet floor.',
+      'Washer stuck full of water, refusing to spin or leaking across the laundry room floor? Appliance Repair Temple connects homeowners across Temple, TX with independent local pros who repair top-load and front-load washing machines, including stacked laundry centers and high-efficiency models. Call and describe the problem to get connected with a local provider.',
+      'Most washer breakdowns trace back to a handful of parts: the lid or door lock, the drain pump, a water inlet valve, the drive belt or coupler, or the suspension. Where the cycle stops tells you a lot about which one failed, so that is where a technician will usually start. A good technician explains what failed and what the repair involves before any work begins. Ask for that.',
+      'Washing machine repair covers more than the machine itself. A slow house drain, a worn fill hose or an outlet on a tripped circuit can look like a washer problem, so a good technician checks the hookups too and tells you if the fault is outside the washer.',
+      'Some washer problems cannot wait until the weekend. A washer leaking across the floor, a drum stuck full of water or a machine that trips the breaker is a reason to look for emergency washer repair. Emergency help may be available from local providers. Say it is urgent when you call.',
     ],
-    symptomsHeading: 'Washer problems we fix most',
+    symptomsHeading: 'Common washer problems in Temple homes',
     symptoms: [
       {
         title: 'Won’t drain',
@@ -300,7 +309,7 @@ export const services: Service[] = [
         title: 'Won’t start or stops mid-cycle',
         cause:
           'Check the outlet and the breaker first. Past that, a door lock that will not engage, a lid switch, the water level sensor or the control board can stop a cycle cold.',
-        fixable: 'The technician tests each part in order and replaces only what failed.',
+        fixable: 'A good technician tests each part in order and replaces only what failed.',
       },
       {
         title: 'Won’t fill or fills slowly',
@@ -312,7 +321,7 @@ export const services: Service[] = [
         title: 'Bad smell or residue on clothes',
         cause:
           'Front-load washers trap moisture in the door seal and the pump filter. Too much detergent, non-HE detergent and a slow drain make it worse.',
-        fixable: 'Usually a cleaning issue. We will show you what to clean and how often.',
+        fixable: 'Usually a cleaning issue. Ask the technician to show you what to clean and how often.',
       },
     ],
     diagnostic: { heading: 'What the visit covers', paragraphs: [], covers: [] },
@@ -320,7 +329,7 @@ export const services: Service[] = [
       heading: 'Repair or replace your washer?',
       paragraphs: [
         'Most washers last 10 to 13 years. Locks, pumps, valves, belts and suspension parts are almost always worth fixing, even on an older machine. A failed transmission or worn tub bearings on a 10-year-old top-loader is a closer call, because those jobs take far more labor.',
-        'High-efficiency front-loaders are usually worth repairing unless the bearings or the drum have failed. The technician will tell you plainly which side of that line your washer is on.',
+        'High-efficiency front-loaders are usually worth repairing unless the bearings or the drum have failed. Ask the technician to tell you plainly which side of that line your washer is on.',
       ],
       points: [
         'Lock, pump, valve, belt or suspension: repair',
@@ -346,19 +355,19 @@ export const services: Service[] = [
       },
       {
         q: 'What does the error code on my washer mean?',
-        a: 'Codes point to a system, such as draining, the door lock or water level, and the exact meaning varies by brand and model. Write the code down and tell us when you call. It helps the technician bring the likely parts.',
+        a: 'Codes point to a system, such as draining, the door lock or water level, and the exact meaning varies by brand and model. Write the code down and mention it when you call. It helps the technician bring the likely parts.',
       },
       {
-        q: 'Do you repair stacked washer and dryer units?',
-        a: 'Yes. Stacked laundry centers take more access work, so mention it when you book and the technician can plan for it.',
+        q: 'Can stacked washer and dryer units be repaired?',
+        a: 'Yes. Stacked laundry centers take more access work, so mention it when you call and the technician can plan for it.',
       },
       {
         q: 'How much does washer repair cost?',
-        a: 'It depends on the machine and the failed part, so we do not list prices online. Call to discuss your repair needs. Have the brand, model number and a short description of what the washer is doing ready.',
+        a: 'It depends on the machine and the failed part, so this site does not list prices. Call to get connected with a local pro, and ask about pricing and any warranty before work starts. Have the brand, model number and a short description of what the washer is doing ready.',
       },
       {
-        q: 'Do you offer emergency washer repair?',
-        a: 'Yes. A washer leaking across the floor, stuck full of water or tripping the breaker gets priority scheduling during business hours, Monday to Saturday, 8:00 AM to 8:00 PM. Same-day emergency service is subject to technician availability, location, and current demand. Ask about emergency visit details when you call.',
+        q: 'Can I get emergency washer repair in Temple?',
+        a: 'Emergency help may be available from local providers. A washer leaking across the floor, stuck full of water or tripping the breaker is worth treating as urgent, so say it is urgent when you call. In the meantime, close both water valves, unplug the washer or switch off its breaker, and keep a front-load door shut while the drum is full.',
       },
       {
         q: 'Why is my washer leaking water on the floor?',
@@ -373,8 +382,8 @@ export const services: Service[] = [
         a: 'The washer cannot drain. A clogged pump filter, a kinked drain hose, a failed drain pump or a clogged house drain are the usual reasons. On some models a faulty lid lock or water level sensor stops the cycle at the same point.',
       },
       {
-        q: 'Do you offer washer repair outside Temple?',
-        a: 'Yes. Along with Temple, we repair washers in Belton, Killeen, Harker Heights, Nolanville, Morgan’s Point Resort, Salado, Troy, Little River-Academy, Rogers, Holland and Moody.',
+        q: 'Is washer repair available outside Temple?',
+        a: 'Yes. Along with Temple, local pros repair washers in Belton, Killeen, Harker Heights, Nolanville, Morgan’s Point Resort, Salado, Troy, Little River-Academy, Rogers, Holland and Moody.',
       },
       {
         q: 'Where is the model number on my washer?',
@@ -402,7 +411,7 @@ export const services: Service[] = [
       {
         type: 'compare',
         heading: 'Top-load and front-load washers fail differently',
-        intro: 'Both wash clothes. They wear out in different places, which is why the brand and style matter when you book.',
+        intro: 'Both wash clothes. They wear out in different places, which is why the brand and style matter when you call.',
         columns: [
           {
             title: 'Top-load washers',
@@ -434,14 +443,14 @@ export const services: Service[] = [
           'Front-load: open the small panel at the bottom front, lay down towels and a shallow pan, drain through the little hose if there is one, then unscrew the filter slowly.',
           'Top-load: bail the water out with a container, or lower the drain hose into a bucket below the level of the tub.',
           'Check the pump filter and drain hose for socks, coins, hair ties and kinks.',
-          'Plug it back in and run a drain and spin. If it hums and nothing moves, stop and call us. Running a jammed pump can burn out its motor.',
+          'Plug it back in and run a drain and spin. If it hums and nothing moves, stop and call to get connected with a local pro. Running a jammed pump can burn out its motor.',
         ],
         note: 'Never open a front-load door while the drum is full. The water will pour straight onto the floor.',
       },
       {
         type: 'emergency',
         heading: 'Emergency washer repair in Temple',
-        intro: 'A washer that is leaking or stuck full of water can damage floors and cabinets within hours. These situations get priority scheduling during business hours. Same-day emergency washer repair is available, subject to technician availability, location, and current demand.',
+        intro: 'A washer that is leaking or stuck full of water can damage floors and cabinets within hours. Emergency help may be available from local providers. Say it is urgent when you call, and take the steps here to limit the water damage first.',
         signs: [
           { title: 'Water spreading across the floor', text: 'A burst or cracked fill hose, a torn door boot or a pump leak that keeps coming back every cycle.' },
           { title: 'Drum stuck full of water', text: 'The washer stops mid-cycle and will not drain, often with a full load of wet clothes locked inside.' },
@@ -453,6 +462,16 @@ export const services: Service[] = [
           'Close both water valves behind the washer.',
           'Lay towels down and keep the front-load door shut while the drum is full.',
           'Write down the brand, model number and any error code, then call.',
+        ],
+      },
+      {
+        type: 'prose',
+        heading: 'Washer leaking on the floor? Find the source and stop the damage',
+        paragraphs: [
+          'A leaking washing machine can put gallons of water on the floor in a single cycle, and in many Temple homes the laundry room sits next to carpet, a hallway or a garage wall that soaks it up. Most washer leaks come from a few places. Fill hoses crack or bulge with age and can split under pressure. On front-loaders, a torn or folded door boot seal lets water run out the front during the wash. The drain pump and its filter cap can drip under the machine, and a drain hose that has slipped out of the standpipe sends water behind the washer every time it drains. Less often, a worn tub seal leaks from underneath.',
+          'Check first when the leak happens. Water during the fill points to the hoses or the inlet valve. Water during the drain or spin points to the pump, the drain hose or the standpipe. Water at the front of a front-loader points to the door boot or to too many suds from non-HE detergent. Use a flashlight to look at both hose connections behind the machine, and make sure the drain hose is secured in the standpipe.',
+          'To stop the damage, turn the washer off and close both water valves behind it. If water is near the outlet or the cord, switch off the breaker before you touch anything. Leave a front-load door closed while the drum is full, mop up standing water and pull wet items away from walls and baseboards. A wet-dry vacuum makes quick work of a large puddle.',
+          'Call to get connected with a local pro if the leak returns on the next cycle, if a hose or valve is damaged, or if the water is coming from under the tub. Do not keep running loads on a leaking washer, because water that reaches the motor or the controls can turn a hose or seal repair into a bigger one. Emergency help may be available from local providers. Say it is urgent when you call, and have the brand and model number ready.',
         ],
       },
       {
@@ -478,23 +497,23 @@ export const services: Service[] = [
       },
       {
         type: 'process',
-        heading: 'What happens on a washer repair visit',
+        heading: 'What to expect on a washer repair visit',
         steps: [
-          { title: 'Run a test cycle', text: 'The technician runs the washer to see exactly where it stops: fill, wash, drain or spin.' },
-          { title: 'Read the codes', text: 'On electronic models, stored error codes are pulled to narrow the search.' },
-          { title: 'Test the parts', text: 'The lock, pump, valve or drive parts are tested before anything is replaced. You hear what failed and what the fix involves.' },
-          { title: 'Repair and spin', text: 'After your OK, the repair is made and a full drain and spin confirms it works.' },
+          { title: 'Run a test cycle', text: 'A technician will usually run the washer to see exactly where it stops: fill, wash, drain or spin.' },
+          { title: 'Read the codes', text: 'On electronic models, stored error codes are usually pulled to narrow the search.' },
+          { title: 'Test the parts', text: 'Ask that the lock, pump, valve or drive parts be tested before anything is replaced, and that the technician explains what failed and what the fix involves.' },
+          { title: 'Repair and spin', text: 'Once you approve, the repair is made. Ask for a full drain and spin to confirm it works.' },
         ],
       },
       { type: 'repairOrReplace' },
       {
         type: 'prose',
-        heading: 'Washing machine types and features we repair',
+        heading: 'Washing machine types and features local pros repair',
         paragraphs: [
           'Top-load washers with an agitator are still common in Temple homes and rentals. They are simple to work on, and most of their failures come from the lid lock, the coupler, the belt or the shift actuator. High-efficiency top-loaders swap the agitator for a low-profile impeller and add electronic controls, sensors and error codes.',
           'Front-load washers use less water and spin faster, which puts more load on the door lock, the door boot seal, the shock absorbers and the tub bearings. They also hold water in the pump filter and the seal, which is behind most odor complaints.',
-          'Stacked laundry centers and stacked front-load pairs need more access work, because the dryer sits on top or the washer has to come out of a closet. Mention it when you book so the technician can plan for it.',
-          'Whatever the type, the washer repair starts the same way: run a cycle, read any stored codes, test the likely parts and explain the fix before any work starts.',
+          'Stacked laundry centers and stacked front-load pairs need more access work, because the dryer sits on top or the washer has to come out of a closet. Mention it when you call so the technician can plan for it.',
+          'Whatever the type, a good washer repair starts the same way: run a cycle, read any stored codes, test the likely parts and explain the fix before any work starts.',
         ],
       },
       {
@@ -518,9 +537,8 @@ export const services: Service[] = [
           'A washer that is dead with no lights may be on a tripped breaker or a tripped outlet in the laundry room or garage. Check those first. If the power is good and the washer still does nothing, that is a washer repair.',
         ],
       },
-      { type: 'brands', heading: 'Washer brands and types we repair', intro: 'We repair the major washer brands found in Temple laundry rooms. Tell us the brand and model number when you book so the technician can check parts ahead of time.', styles: ['Top-load', 'Front-load', 'High-efficiency (HE)', 'Stacked laundry centers'] },
+      { type: 'brands', heading: 'Washer brands and types local pros repair', intro: 'Local pros repair the major washer brands found in Temple laundry rooms. Give the brand and model number when you call so the technician can check parts ahead of time.', styles: ['Top-load', 'Front-load', 'High-efficiency (HE)', 'Stacked laundry centers'] },
       { type: 'faq' },
-      { type: 'payment' },
     ],
   },
   {

@@ -9,13 +9,13 @@ export const brands: Brand[] = [
     slug: `whirlpool-appliance-repair-${loc}`,
     name: 'Whirlpool',
     h1: 'Local Whirlpool Appliance Repair in Temple, TX',
-    metaTitle: 'Whirlpool Appliance Repair Temple TX | Local Service',
+    metaTitle: 'Whirlpool Appliance Repair Temple TX | Local Pros',
     metaDescription:
-      'Whirlpool washer, dryer, fridge, dishwasher or range acting up? Local Whirlpool appliance repair in Temple, TX. Same-day service available. Call (254) 555-0147.',
+      'Whirlpool washer, dryer, fridge, dishwasher or range acting up? Whirlpool appliance repair in Temple, TX from local pros. Call to get connected with a local pro.',
     intro: [
-      'Whirlpool washer stuck mid-cycle, dryer blowing cold or refrigerator warming up? Appliance Repair Temple repairs Whirlpool washers, dryers, refrigerators, dishwashers, ranges and over-the-range microwaves in homes across Temple, TX. Same-day service is available, subject to technician availability, location, and current demand.',
+      'Whirlpool washer stuck mid-cycle, dryer blowing cold or refrigerator warming up? Independent local appliance repair pros fix Whirlpool washers, dryers, refrigerators, dishwashers, ranges and over-the-range microwaves in homes across Temple, TX. Appliance Repair Temple is a free referral service: one call connects you with an independent local technician who works on Whirlpool appliances.',
       'Whirlpool is one of the most common names in Temple kitchens and laundry rooms, from builder-grade appliances in rentals to newer laundry pairs and French door refrigerators. Whirlpool Corporation also owns Maytag, KitchenAid, JennAir and Amana, and many parts are shared across those brands. That usually makes Whirlpool-family parts easier to find.',
-      'The technician diagnoses the problem on site, explains what failed in plain terms, and starts the repair only after your OK.',
+      'A good technician diagnoses the problem on site, explains what failed in plain terms, and starts the repair only after your OK. Ask for that before any work begins.',
     ],
     appliances: [
       { key: 'washer', note: 'Top-load and front-load, including agitator and high-efficiency models' },
@@ -32,11 +32,11 @@ export const brands: Brand[] = [
       },
       {
         title: 'Dryer runs but no heat',
-        text: 'Dryers protect themselves with a thermal fuse that opens when the dryer overheats, usually because the vent is restricted. We replace the failed part and check the vent so it does not happen again.',
+        text: 'Dryers protect themselves with a thermal fuse that opens when the dryer overheats, usually because the vent is restricted. A technician will usually replace the failed part and check the vent so it does not happen again.',
       },
       {
         title: 'Refrigerator ice maker stopped',
-        text: 'The usual causes are a water inlet valve, a frozen fill tube, an old filter or the ice maker itself. The technician tests each before ordering anything.',
+        text: 'The usual causes are a water inlet valve, a frozen fill tube, an old filter or the ice maker itself. A technician will usually test each before ordering anything.',
       },
       {
         title: 'Dishwasher leaving water behind',
@@ -48,7 +48,7 @@ export const brands: Brand[] = [
       'Which appliance it is and whether it is gas or electric, if that applies.',
       'What it is doing, and any error code or flashing light pattern.',
       'Roughly how old it is, and whether it is still under the manufacturer’s warranty.',
-      'Your ZIP code and a good time for a visit.',
+      'Your ZIP code, so you are connected with a provider who serves your area.',
     ],
     modelLocations: [
       { appliance: 'Top-load washer', where: 'Under the lid, on the tub rim, or on the back of the control panel' },
@@ -61,28 +61,28 @@ export const brands: Brand[] = [
     modelSource: { name: 'Whirlpool product help: where is my model and serial number located?', url: 'https://producthelp.whirlpool.com/FAQ/Where_is_my_Model_and_Serial_Number_Located%3F' },
     faqs: [
       {
-        q: 'Do you also repair Maytag, KitchenAid and Amana?',
-        a: 'Yes. Maytag, KitchenAid, JennAir and Amana are Whirlpool Corporation brands, and many of their parts are shared. Tell us the brand and model number when you book.',
+        q: 'Can local pros also repair Maytag, KitchenAid and Amana?',
+        a: 'Yes. Maytag, KitchenAid, JennAir and Amana are Whirlpool Corporation brands, and many of their parts are shared. Mention the brand and model number when you call so the technician can check parts.',
       },
       {
-        q: 'Are you an authorized Whirlpool service center?',
-        a: 'No. Appliance Repair Temple is an independent repair service. We are not affiliated with or authorized by Whirlpool. We repair Whirlpool appliances that are out of warranty or where you prefer a local independent technician.',
+        q: 'Is Appliance Repair Temple an authorized Whirlpool service center?',
+        a: 'No. Appliance Repair Temple is a free referral service that connects homeowners with independent local repair pros. It is not affiliated with or authorized by Whirlpool. Local pros repair Whirlpool appliances that are out of warranty, or for homeowners who prefer a local independent technician.',
       },
       {
-        q: 'My Whirlpool is still under warranty. Should I call you?',
-        a: 'Contact Whirlpool first. Independent repair may not be covered by the manufacturer’s warranty. If the warranty has expired, call us.',
+        q: 'My Whirlpool is still under warranty. Who should I call?',
+        a: 'Contact Whirlpool first. Independent repair may not be covered by the manufacturer’s warranty. If the warranty has expired, call to be connected with a local pro.',
       },
       {
         q: 'What does the error code on my Whirlpool mean?',
-        a: 'Codes point to a system, such as draining, the door lock or a sensor, and their meaning varies by model. Write the code down, or take a photo, and give it to us when you call.',
+        a: 'Codes point to a system, such as draining, the door lock or a sensor, and their meaning varies by model. Write the code down, or take a photo, and have it ready when you call.',
       },
       {
-        q: 'Can you repair my Whirlpool the same day?',
-        a: 'Same-day service is available, subject to technician availability, location, and current demand. Many common Whirlpool parts can be replaced on the first visit. Some model-specific parts need to be ordered.',
+        q: 'How soon can a local pro repair my Whirlpool?',
+        a: 'Timing depends on the provider, your location and the parts, so ask about availability when you are connected. Many common Whirlpool parts can be replaced on the first visit. Some model-specific parts need to be ordered.',
       },
       {
         q: 'How much does Whirlpool appliance repair cost?',
-        a: 'It depends on the appliance and the part, so we do not list prices online. Call to discuss your repair needs with the model number ready.',
+        a: 'It depends on the appliance and the part, so this site does not list prices. Ask the provider about pricing and any warranty on the work before the repair starts. Call with the model number ready.',
       },
     ],
     hasPage: true,
@@ -94,11 +94,11 @@ export const brands: Brand[] = [
     h1: 'GE & GE Profile Appliance Repair in Temple, TX',
     metaTitle: 'GE Appliance Repair Temple TX | GE & GE Profile',
     metaDescription:
-      'GE range, fridge, dishwasher, washer or dryer not working? GE and GE Profile appliance repair in Temple, TX. Same-day service available. Call (254) 555-0147.',
+      'GE range, fridge, dishwasher, washer or dryer not working? GE and GE Profile appliance repair in Temple, TX from local pros. Call to get connected with one.',
     intro: [
-      'GE oven slow to heat, refrigerator warming up or dishwasher leaving water behind? Appliance Repair Temple repairs GE and GE Profile ranges, wall ovens, cooktops, refrigerators, dishwashers, washers, dryers and over-the-range microwaves in homes across Temple, TX. Same-day service is available, subject to technician availability, location, and current demand.',
-      'GE appliances are everywhere in Temple, especially ranges, refrigerators and dishwashers that came with the house. GE Appliances has been owned by Haier since 2016 and sells several lines under the GE name, including GE, GE Profile, Café and Monogram. Tell us which line you have, because parts and features vary between them.',
-      'On every visit, the technician tests the suspect parts, explains what failed and what the repair involves, and starts work only after your OK.',
+      'GE oven slow to heat, refrigerator warming up or dishwasher leaving water behind? Independent local appliance repair pros fix GE and GE Profile ranges, wall ovens, cooktops, refrigerators, dishwashers, washers, dryers and over-the-range microwaves in homes across Temple, TX. Appliance Repair Temple is a free referral service: one call connects you with an independent local technician who works on GE appliances.',
+      'GE appliances are everywhere in Temple, especially ranges, refrigerators and dishwashers that came with the house. GE Appliances has been owned by Haier since 2016 and sells several lines under the GE name, including GE, GE Profile, Café and Monogram. Mention which line you have when you call, because parts and features vary between them.',
+      'A good technician tests the suspect parts, explains what failed and what the repair involves, and starts work only after your OK. Ask for that when the technician arrives.',
     ],
     appliances: [
       { key: 'oven', note: 'Electric and gas ranges, wall ovens and cooktops' },
@@ -111,7 +111,7 @@ export const brands: Brand[] = [
     issues: [
       {
         title: 'Gas oven slow to heat or not lighting',
-        text: 'On gas ranges, a weak hot surface igniter is the most common cause. It can glow and still fail to open the gas valve. The technician tests it with a meter before looking at the valve or the board.',
+        text: 'On gas ranges, a weak hot surface igniter is the most common cause. It can glow and still fail to open the gas valve. A technician will usually test it with a meter before looking at the valve or the board.',
       },
       {
         title: 'Refrigerator warm, freezer still cold',
@@ -143,28 +143,28 @@ export const brands: Brand[] = [
     modelSource: { name: 'GE Appliances: find your range model and serial numbers', url: 'https://www.geappliances.com/ge/find-model-serial-number/ranges.htm' },
     faqs: [
       {
-        q: 'Do you work on GE Profile and Café appliances?',
-        a: 'Yes. Tell us the exact model when you book, since GE Profile, Café and Monogram models can use different parts. The technician checks parts availability before the visit.',
+        q: 'Can local pros work on GE Profile and Café appliances?',
+        a: 'Yes. Mention the exact model when you call, since GE Profile, Café and Monogram models can use different parts. Ask the technician to check parts availability before the visit.',
       },
       {
-        q: 'Are you an authorized GE service provider?',
-        a: 'No. Appliance Repair Temple is an independent repair service and is not affiliated with or authorized by GE Appliances. If your appliance is under the GE warranty, contact GE Appliances first.',
+        q: 'Is Appliance Repair Temple an authorized GE service provider?',
+        a: 'No. Appliance Repair Temple is a free referral service that connects homeowners with independent local repair pros. It is not affiliated with or authorized by GE Appliances. If your appliance is under the GE warranty, contact GE Appliances first.',
       },
       {
         q: 'My GE oven shows an F code. What does that mean?',
-        a: 'GE ovens use F codes to flag faults, often in a sensor, the door lock or the control. The exact meaning varies by model. Write the code down and give it to us when you call.',
+        a: 'GE ovens use F codes to flag faults, often in a sensor, the door lock or the control. The exact meaning varies by model. Write the code down and have it ready when you call.',
       },
       {
         q: 'Where is the model number on my GE range?',
         a: 'Open the oven door and check the front frame, or pull out the storage drawer and look on the frame. On some models it is under the cooktop. GE model numbers start with a letter.',
       },
       {
-        q: 'Can you repair my GE appliance the same day?',
-        a: 'Same-day service is available, subject to technician availability, location, and current demand. Common GE parts can often be replaced on the first visit, while some need to be ordered.',
+        q: 'How soon can a local pro repair my GE appliance?',
+        a: 'Timing depends on the provider, your location and the parts, so ask about availability when you are connected. Common GE parts can often be replaced on the first visit, while some need to be ordered.',
       },
       {
         q: 'How much does GE appliance repair cost?',
-        a: 'It depends on the appliance and the part, so we do not list prices online. Call to discuss your repair needs with the model number ready.',
+        a: 'It depends on the appliance and the part, so this site does not list prices. Ask the provider about pricing and any warranty on the work before the repair starts. Call with the model number ready.',
       },
     ],
     hasPage: true,
@@ -176,11 +176,11 @@ export const brands: Brand[] = [
     h1: 'Samsung Appliance Repair in Temple, TX: Fridges, Laundry & Ranges',
     metaTitle: 'Samsung Appliance Repair Temple TX | Fridges & Laundry',
     metaDescription:
-      'Samsung ice maker frozen, washer showing a code or dryer not heating? Samsung appliance repair in Temple, TX. Same-day service available. Call (254) 555-0147.',
+      'Samsung ice maker frozen, washer showing a code or dryer not heating? Samsung appliance repair in Temple, TX from local pros. Call to get connected with one.',
     intro: [
-      'Samsung ice maker frozen solid, washer stopping with a code or dryer blowing cold? Appliance Repair Temple repairs Samsung refrigerators, washers, dryers, ranges, dishwashers and over-the-range microwaves in homes across Temple, TX. Same-day service is available, subject to technician availability, location, and current demand.',
-      'Samsung refrigerators and laundry pairs are common in newer Temple homes, especially in the subdivisions on the west side of town. They are feature-heavy machines, and most of them report faults as error codes on the display. A code narrows the search, but it rarely names the exact part, so the technician confirms the cause with testing before ordering anything.',
-      'You hear what failed and what the repair involves, and the work starts only after your OK.',
+      'Samsung ice maker frozen solid, washer stopping with a code or dryer blowing cold? Independent local appliance repair pros fix Samsung refrigerators, washers, dryers, ranges, dishwashers and over-the-range microwaves in homes across Temple, TX. Appliance Repair Temple is a free referral service: one call connects you with an independent local technician who works on Samsung appliances.',
+      'Samsung refrigerators and laundry pairs are common in newer Temple homes, especially in the subdivisions on the west side of town. They are feature-heavy machines, and most of them report faults as error codes on the display. A code narrows the search, but it rarely names the exact part, so a technician will usually confirm the cause with testing before ordering anything.',
+      'Ask the technician to explain what failed and what the repair involves, and to start work only after your OK.',
     ],
     appliances: [
       { key: 'refrigerator', note: 'French door, side-by-side and bottom-freezer, including models with door ice makers' },
@@ -193,15 +193,15 @@ export const brands: Brand[] = [
     issues: [
       {
         title: 'Ice maker frozen up or not making ice',
-        text: 'Ice building up around the ice maker is a frequent complaint from owners of some Samsung French door models. Depending on the model, the cause can be the ice maker, a fan, a heater or a door seal. The technician checks each before deciding on the repair.',
+        text: 'Ice building up around the ice maker is a frequent complaint from owners of some Samsung French door models. Depending on the model, the cause can be the ice maker, a fan, a heater or a door seal. A technician will usually check each before deciding on the repair.',
       },
       {
         title: 'Washer stops and shows a code',
-        text: 'Most codes point to draining, the door lock or an unbalanced load. The technician tests the pump, lock and suspension before replacing anything.',
+        text: 'Most codes point to draining, the door lock or an unbalanced load. A technician will usually test the pump, lock and suspension before replacing anything.',
       },
       {
         title: 'Dryer runs but no heat',
-        text: 'A heating element or thermal fuse on electric models, an igniter or gas valve on gas models. Airflow is checked too, since a clogged vent is a common root cause.',
+        text: 'A heating element or thermal fuse on electric models, an igniter or gas valve on gas models. Airflow should be checked too, since a clogged vent is a common root cause.',
       },
       {
         title: 'Fridge warm, freezer cold',
@@ -225,28 +225,28 @@ export const brands: Brand[] = [
     modelSource: { name: 'Samsung support: finding the model and serial numbers', url: 'https://www.samsung.com/ca/support/home-appliances/finding-the-model-and-serial-numbers-of-your-samsung-washer-or-dryer/' },
     faqs: [
       {
-        q: 'Can you fix a Samsung ice maker that keeps freezing up?',
-        a: 'Usually, yes. The repair depends on the model and may involve the ice maker, a fan, a heater or the seal around the ice compartment. The technician finds the cause before recommending a fix.',
+        q: 'Can a Samsung ice maker that keeps freezing up be fixed?',
+        a: 'Usually, yes. The repair depends on the model and may involve the ice maker, a fan, a heater or the seal around the ice compartment. A technician will usually find the cause before recommending a fix.',
       },
       {
-        q: 'Are you a Samsung authorized service center?',
-        a: 'No. Appliance Repair Temple is an independent repair service and is not affiliated with or authorized by Samsung. If your appliance is still under Samsung’s warranty, contact Samsung first.',
+        q: 'Is Appliance Repair Temple a Samsung authorized service center?',
+        a: 'No. Appliance Repair Temple is a free referral service that connects homeowners with independent local repair pros. It is not affiliated with or authorized by Samsung. If your appliance is still under Samsung’s warranty, contact Samsung first.',
       },
       {
-        q: 'Do I need to tell you the error code?',
-        a: 'Please do. A code points to the system that failed and helps the technician bring the likely parts on the first visit.',
+        q: 'Should I mention the error code when I call?',
+        a: 'Yes. A code points to the system that failed and helps the technician bring the likely parts on the first visit.',
       },
       {
         q: 'Where is the model number on my Samsung refrigerator?',
         a: 'Check the side wall inside the fresh-food section, just above the top shelf. Many models also have a label on the lower outside of the cabinet near the front.',
       },
       {
-        q: 'Can you repair my Samsung the same day?',
-        a: 'Same-day service is available, subject to technician availability, location, and current demand. Some Samsung parts are model-specific and may need to be ordered.',
+        q: 'How soon can a local pro repair my Samsung?',
+        a: 'Timing depends on the provider, your location and the parts, so ask about availability when you are connected. Some Samsung parts are model-specific and may need to be ordered.',
       },
       {
         q: 'How much does Samsung appliance repair cost?',
-        a: 'It depends on the appliance and the part, so we do not list prices online. Call to discuss your repair needs with the model number and error code ready.',
+        a: 'It depends on the appliance and the part, so this site does not list prices. Ask the provider about pricing and any warranty on the work before the repair starts. Call with the model number and error code ready.',
       },
     ],
     hasPage: true,
@@ -258,11 +258,11 @@ export const brands: Brand[] = [
     h1: 'Independent LG Appliance Repair in Temple, TX',
     metaTitle: 'LG Appliance Repair Temple TX | Fridges, Washers, Dryers',
     metaDescription:
-      'LG fridge not cooling, washer error code or dryer not heating? Independent LG appliance repair in Temple, TX. Same-day service available. Call (254) 555-0147.',
+      'LG fridge not cooling, washer error code or dryer not heating? Independent LG appliance repair in Temple, TX from local pros. Call to get connected with one.',
     intro: [
-      'LG refrigerator warming up, washer stopping with a code or dryer running cold? Appliance Repair Temple repairs LG refrigerators, washers, dryers, ranges, dishwashers and over-the-range microwaves in homes across Temple, TX. Same-day service is available, subject to technician availability, location, and current demand.',
+      'LG refrigerator warming up, washer stopping with a code or dryer running cold? Independent local appliance repair pros fix LG refrigerators, washers, dryers, ranges, dishwashers and over-the-range microwaves in homes across Temple, TX. Appliance Repair Temple is a free referral service: one call connects you with an independent local technician who works on LG appliances.',
       'LG appliances are common in newer Temple homes, especially French door refrigerators, front-load laundry pairs and smart ranges. Most LG models report faults as codes on the display or through the LG app. A code points the technician to the right system, then testing confirms which part actually failed.',
-      'If your LG refrigerator has stopped cooling, check the purchase date and your paperwork before you decide anything. LG offers longer compressor coverage on many refrigerator models than its standard warranty, so a compressor problem may be a warranty matter first. If it is not covered, or the problem is something else, call us.',
+      'If your LG refrigerator has stopped cooling, check the purchase date and your paperwork before you decide anything. LG offers longer compressor coverage on many refrigerator models than its standard warranty, so a compressor problem may be a warranty matter first. If it is not covered, or the problem is something else, call to be connected with a local pro.',
     ],
     appliances: [
       { key: 'refrigerator', note: 'French door, side-by-side, bottom-freezer and InstaView-style models' },
@@ -275,19 +275,19 @@ export const brands: Brand[] = [
     issues: [
       {
         title: 'Refrigerator not cooling',
-        text: 'Many LG refrigerators use inverter or linear compressors. Before blaming the compressor, the technician checks the fans, defrost system, sensors and control board, which fail more simply. If it is the compressor, we tell you so you can check the warranty.',
+        text: 'Many LG refrigerators use inverter or linear compressors. Before blaming the compressor, a technician will usually check the fans, defrost system, sensors and control board, which fail more simply. If it is the compressor, ask the technician to note it so you can check the warranty.',
       },
       {
         title: 'Ice maker slow or frozen',
-        text: 'Often a fill tube that has frozen, a water inlet valve, an old filter or the ice maker module. The technician checks each before ordering a part.',
+        text: 'Often a fill tube that has frozen, a water inlet valve, an old filter or the ice maker module. A technician will usually check each before ordering a part.',
       },
       {
         title: 'Front-load washer stops with a code',
-        text: 'Drain, door lock and unbalanced-load codes are the most common. The pump filter, the lock and the suspension are tested before anything is replaced.',
+        text: 'Drain, door lock and unbalanced-load codes are the most common. The pump filter, the lock and the suspension should be tested before anything is replaced.',
       },
       {
         title: 'Dryer runs but no heat',
-        text: 'A heating element or thermal fuse on electric models, an igniter or gas valve on gas models. A clogged vent is a common root cause, so airflow is checked too.',
+        text: 'A heating element or thermal fuse on electric models, an igniter or gas valve on gas models. A clogged vent is a common root cause, so airflow should be checked too.',
       },
     ],
     haveReady: [
@@ -307,28 +307,28 @@ export const brands: Brand[] = [
     modelSource: { name: 'LG support: how to find my LG model and serial number', url: 'https://www.lg.com/us/support/help-library/how-to-find-my-lg-model-and-serial-number--20152254906058' },
     faqs: [
       {
-        q: 'Are you an authorized LG service provider?',
-        a: 'No. Appliance Repair Temple is an independent repair service and is not affiliated with or authorized by LG. If your appliance is under LG’s warranty, contact LG first.',
+        q: 'Is Appliance Repair Temple an authorized LG service provider?',
+        a: 'No. Appliance Repair Temple is a free referral service that connects homeowners with independent local repair pros. It is not affiliated with or authorized by LG. If your appliance is under LG’s warranty, contact LG first.',
       },
       {
         q: 'My LG refrigerator stopped cooling. Is it the compressor?',
-        a: 'Not always. Fans, the defrost system, sensors and the control board can all stop a refrigerator from cooling. The technician tests those first. If the compressor has failed, check whether LG’s compressor coverage applies to your model before paying for that repair.',
+        a: 'Not always. Fans, the defrost system, sensors and the control board can all stop a refrigerator from cooling. A technician will usually test those first. If the compressor has failed, check whether LG’s compressor coverage applies to your model before paying for that repair.',
       },
       {
-        q: 'Do you repair Kenmore appliances made by LG?',
-        a: 'Yes. Some Kenmore models were built by LG. Give us the full Kenmore model number and we will check the parts.',
+        q: 'Can local pros repair Kenmore appliances made by LG?',
+        a: 'Yes. Some Kenmore models were built by LG. Have the full Kenmore model number ready when you call so the technician can check the parts.',
       },
       {
         q: 'What does the error code on my LG washer mean?',
-        a: 'Codes point to a system, such as draining, the door lock or an unbalanced load. Their meaning varies by model. Note the code and give it to us when you call.',
+        a: 'Codes point to a system, such as draining, the door lock or an unbalanced load. Their meaning varies by model. Note the code and have it ready when you call.',
       },
       {
-        q: 'Can you repair my LG the same day?',
-        a: 'Same-day service is available, subject to technician availability, location, and current demand. Some LG parts are model-specific and may need to be ordered.',
+        q: 'How soon can a local pro repair my LG?',
+        a: 'Timing depends on the provider, your location and the parts, so ask about availability when you are connected. Some LG parts are model-specific and may need to be ordered.',
       },
       {
         q: 'How much does LG appliance repair cost?',
-        a: 'It depends on the appliance and the part, so we do not list prices online. Call to discuss your repair needs with the model number and any error code ready.',
+        a: 'It depends on the appliance and the part, so this site does not list prices. Ask the provider about pricing and any warranty on the work before the repair starts. Call with the model number and any error code ready.',
       },
     ],
     hasPage: true,
@@ -340,11 +340,11 @@ export const brands: Brand[] = [
     h1: 'Frigidaire Appliance Repair in Temple, TX, for Every Room',
     metaTitle: 'Frigidaire Appliance Repair Temple TX | Fridges & Ranges',
     metaDescription:
-      'Frigidaire fridge, freezer, range, dishwasher or laundry acting up? Independent Frigidaire appliance repair in Temple, TX. Same-day service available.',
+      'Frigidaire fridge, freezer, range, dishwasher or laundry acting up? Independent Frigidaire appliance repair in Temple, TX. Call to get connected with a local pro.',
     intro: [
-      'Frigidaire freezer warming up, range not heating or dishwasher leaving water behind? Appliance Repair Temple repairs Frigidaire refrigerators, freezers, ranges, dishwashers, washers, dryers and microwaves in homes across Temple, TX. Same-day service is available, subject to technician availability, location, and current demand.',
-      'Frigidaire, part of the Electrolux group, is one of the most common brands we see in Temple. It shows up in rentals, in starter homes and in garages, where a Frigidaire chest or upright freezer often holds the extra food. Models range from basic units to the Gallery and Professional lines, and many share parts and designs across the family.',
-      'The approach is the same for all of them. The technician tests the appliance, finds the part that failed and explains what the repair involves before any work starts.',
+      'Frigidaire freezer warming up, range not heating or dishwasher leaving water behind? Independent local appliance repair pros fix Frigidaire refrigerators, freezers, ranges, dishwashers, washers, dryers and microwaves in homes across Temple, TX. Appliance Repair Temple is a free referral service: one call connects you with an independent local technician who works on Frigidaire appliances.',
+      'Frigidaire, part of the Electrolux group, is one of the most common brands in Temple homes. It shows up in rentals, in starter homes and in garages, where a Frigidaire chest or upright freezer often holds the extra food. Models range from basic units to the Gallery and Professional lines, and many share parts and designs across the family.',
+      'The approach should be the same for all of them. A good technician tests the appliance, finds the part that failed and explains what the repair involves before any work starts.',
     ],
     appliances: [
       { key: 'refrigerator', note: 'Top-freezer, side-by-side and French door, including Gallery and Professional models' },
@@ -358,7 +358,7 @@ export const brands: Brand[] = [
     issues: [
       {
         title: 'Freezer or fridge running warm',
-        text: 'Frost buildup from a defrost problem, a failed evaporator or condenser fan, or a start relay are common causes. On garage freezers, heat and dusty coils make it worse. The technician checks airflow and the defrost system before looking at the sealed system.',
+        text: 'Frost buildup from a defrost problem, a failed evaporator or condenser fan, or a start relay are common causes. On garage freezers, heat and dusty coils make it worse. A technician will usually check airflow and the defrost system before looking at the sealed system.',
       },
       {
         title: 'Ice maker not making ice',
@@ -370,7 +370,7 @@ export const brands: Brand[] = [
       },
       {
         title: 'Dishwasher not draining or cleaning',
-        text: 'A clogged filter, a blocked drain hose, a worn drain pump or a weak wash motor. The filter is checked first, since it causes many of these calls.',
+        text: 'A clogged filter, a blocked drain hose, a worn drain pump or a weak wash motor. The filter should be checked first, since it causes many of these problems.',
       },
     ],
     haveReady: [
@@ -391,28 +391,28 @@ export const brands: Brand[] = [
     modelSource: { name: 'Frigidaire support: where can I find my model and serial number?', url: 'https://owner.frigidaire.com/support-articles/article/1858491-where-can-i-find-my-model-and-serial-number-' },
     faqs: [
       {
-        q: 'Are you an authorized Frigidaire service provider?',
-        a: 'No. Appliance Repair Temple is an independent repair service and is not affiliated with or authorized by Frigidaire or Electrolux. If your appliance is under the manufacturer’s warranty, contact Frigidaire first.',
+        q: 'Is Appliance Repair Temple an authorized Frigidaire service provider?',
+        a: 'No. Appliance Repair Temple is a free referral service that connects homeowners with independent local repair pros. It is not affiliated with or authorized by Frigidaire or Electrolux. If your appliance is under the manufacturer’s warranty, contact Frigidaire first.',
       },
       {
         q: 'Has my Frigidaire been recalled?',
         a: 'Some Frigidaire refrigerators, ice makers and ranges have been part of safety recalls. Look up your model and serial number at cpsc.gov or with Frigidaire before paying for a repair, since a recall remedy is handled by the manufacturer.',
       },
       {
-        q: 'Do you repair Frigidaire chest and upright freezers?',
-        a: 'Yes, including freezers in garages and shops. Make sure the technician can reach the back of the unit and the outlet.',
+        q: 'Can I get Frigidaire chest and upright freezer repair in Temple?',
+        a: 'Yes. Local pros repair them, including freezers in garages and shops. Make sure the technician can reach the back of the unit and the outlet.',
       },
       {
-        q: 'Do you work on Frigidaire Gallery and Professional models?',
-        a: 'Yes. Give us the full model number so we can check parts, since some Gallery and Professional parts are model-specific.',
+        q: 'Can local pros work on Frigidaire Gallery and Professional models?',
+        a: 'Yes. Have the full model number ready so the technician can check parts, since some Gallery and Professional parts are model-specific.',
       },
       {
-        q: 'Do you repair Kenmore appliances made by Frigidaire?',
-        a: 'Yes. Many Kenmore models were built by Frigidaire. Give us the full Kenmore model number and we will check the parts.',
+        q: 'Can local pros repair Kenmore appliances made by Frigidaire?',
+        a: 'Yes. Many Kenmore models were built by Frigidaire. Have the full Kenmore model number ready so the technician can check the parts.',
       },
       {
         q: 'How much does Frigidaire appliance repair cost?',
-        a: 'It depends on the appliance and the part, so we do not list prices online. Call to discuss your repair needs with the model number ready.',
+        a: 'It depends on the appliance and the part, so this site does not list prices. Ask the provider about pricing and any warranty on the work before the repair starts. Call with the model number ready.',
       },
     ],
     hasPage: true,
@@ -424,11 +424,11 @@ export const brands: Brand[] = [
     h1: 'Maytag Washer, Dryer & Appliance Repair in Temple, TX',
     metaTitle: 'Maytag Appliance Repair Temple TX | Washers, Dryers & More',
     metaDescription:
-      'Maytag washer not spinning, dryer not heating or fridge running warm? Independent Maytag appliance repair in Temple, TX. Same-day service available.',
+      'Maytag washer not spinning, dryer not heating or fridge running warm? Independent Maytag appliance repair in Temple, TX. Call to get connected with a local pro.',
     intro: [
-      'Maytag washer stuck mid-cycle, dryer running cold or refrigerator warming up? Appliance Repair Temple repairs Maytag washers, dryers, refrigerators, dishwashers, ranges and microwaves in homes across Temple, TX. Same-day service is available, subject to technician availability, location, and current demand.',
-      'Laundry is where we see Maytag most, from older top-loaders that have run for years to newer high-efficiency pairs. Maytag is part of Whirlpool Corporation, and many current Maytag models share designs and parts with Whirlpool appliances. That helps when a part is needed, because common parts are widely available.',
-      'Before any repair, check the warranty. Maytag offers a 10-year limited parts warranty on certain parts of many newer appliances, such as the washer drive motor and wash basket and some refrigerator compressors. Labor is often not included in the later years, so a covered part can still mean a repair visit. Check your model’s warranty paperwork or contact Maytag, then call us for the rest.',
+      'Maytag washer stuck mid-cycle, dryer running cold or refrigerator warming up? Independent local appliance repair pros fix Maytag washers, dryers, refrigerators, dishwashers, ranges and microwaves in homes across Temple, TX. Appliance Repair Temple is a free referral service: one call connects you with an independent local technician who works on Maytag appliances.',
+      'Laundry is where Maytag shows up most in Temple homes, from older top-loaders that have run for years to newer high-efficiency pairs. Maytag is part of Whirlpool Corporation, and many current Maytag models share designs and parts with Whirlpool appliances. That helps when a part is needed, because common parts are widely available.',
+      'Before any repair, check the warranty. Maytag offers a 10-year limited parts warranty on certain parts of many newer appliances, such as the washer drive motor and wash basket and some refrigerator compressors. Labor is often not included in the later years, so a covered part can still mean a repair visit. Check your model’s warranty paperwork or contact Maytag, then call to be connected with a local pro for the rest.',
     ],
     appliances: [
       { key: 'washer', note: 'Top-load and front-load washers, including high-efficiency and agitator models' },
@@ -441,11 +441,11 @@ export const brands: Brand[] = [
     issues: [
       {
         title: 'Washer will not spin or drain',
-        text: 'A clogged drain pump, a worn lid lock or door latch, a broken drive belt or a failed shifter on top-loaders are common causes. The technician checks the drain path and lock before looking at the motor or transmission.',
+        text: 'A clogged drain pump, a worn lid lock or door latch, a broken drive belt or a failed shifter on top-loaders are common causes. A technician will usually check the drain path and lock before looking at the motor or transmission.',
       },
       {
         title: 'Dryer runs but no heat',
-        text: 'A failed heating element, thermal fuse or high-limit thermostat on electric models, or an igniter or gas valve coils on gas models. A restricted vent is often the root cause, so airflow is checked on every dryer call.',
+        text: 'A failed heating element, thermal fuse or high-limit thermostat on electric models, or an igniter or gas valve coils on gas models. A restricted vent is often the root cause, so airflow should be checked on every dryer call.',
       },
       {
         title: 'Refrigerator not cooling',
@@ -474,8 +474,8 @@ export const brands: Brand[] = [
     modelSource: { name: 'Maytag Product Help: where is my model and serial number located?', url: 'https://producthelp.maytag.com/FAQ/Where_is_my_Model_and_Serial_Number_Located%3F' },
     faqs: [
       {
-        q: 'Are you an authorized Maytag service provider?',
-        a: 'No. Appliance Repair Temple is an independent repair service and is not affiliated with or authorized by Maytag or Whirlpool Corporation. If your appliance is under Maytag’s warranty, contact Maytag first.',
+        q: 'Is Appliance Repair Temple an authorized Maytag service provider?',
+        a: 'No. Appliance Repair Temple is a free referral service that connects homeowners with independent local repair pros. It is not affiliated with or authorized by Maytag or Whirlpool Corporation. If your appliance is under Maytag’s warranty, contact Maytag first.',
       },
       {
         q: 'Does the Maytag 10-year warranty cover my repair?',
@@ -487,15 +487,15 @@ export const brands: Brand[] = [
       },
       {
         q: 'Do Maytag and Whirlpool use the same parts?',
-        a: 'Many current models share designs and parts, since both brands belong to Whirlpool Corporation. The full model number tells us exactly which parts fit.',
+        a: 'Many current models share designs and parts, since both brands belong to Whirlpool Corporation. The full model number shows exactly which parts fit.',
       },
       {
-        q: 'Can you repair my Maytag the same day?',
-        a: 'Same-day service is available, subject to technician availability, location, and current demand. Some parts are model-specific and may need to be ordered.',
+        q: 'How soon can a local pro repair my Maytag?',
+        a: 'Timing depends on the provider, your location and the parts, so ask about availability when you are connected. Some parts are model-specific and may need to be ordered.',
       },
       {
         q: 'How much does Maytag appliance repair cost?',
-        a: 'It depends on the appliance and the part, so we do not list prices online. Call to discuss your repair needs with the model number ready.',
+        a: 'It depends on the appliance and the part, so this site does not list prices. Ask the provider about pricing and any warranty on the work before the repair starts. Call with the model number ready.',
       },
     ],
     hasPage: true,
@@ -507,11 +507,11 @@ export const brands: Brand[] = [
     h1: 'KitchenAid Kitchen Appliance Repair in Temple, TX',
     metaTitle: 'KitchenAid Appliance Repair Temple TX | Dishwasher & Fridge',
     metaDescription:
-      'KitchenAid dishwasher not cleaning, fridge running warm or range not heating? Independent KitchenAid appliance repair in Temple, TX. Same-day service available.',
+      'KitchenAid dishwasher not cleaning, fridge running warm or range not heating? Independent KitchenAid appliance repair in Temple, TX. Call to get connected.',
     intro: [
-      'KitchenAid dishwasher leaving a film, refrigerator warming up or range slow to heat? Appliance Repair Temple repairs KitchenAid dishwashers, refrigerators, ranges and over-the-range microwaves in homes across Temple, TX. Same-day service is available, subject to technician availability, location, and current demand.',
-      'KitchenAid major appliances are a Whirlpool Corporation brand, built mostly for the kitchen. In Temple homes we see them most as quiet third-rack dishwashers, counter-depth French door refrigerators and slide-in ranges in remodeled or higher-end kitchens. Many share core parts with Whirlpool and Maytag models, while trim, panels and some controls are specific to KitchenAid.',
-      'The process is the same as for any brand. The technician tests the appliance, finds the part that failed and explains the repair before any work starts. This page covers major appliances. For a stand mixer or countertop appliance, contact KitchenAid.',
+      'KitchenAid dishwasher leaving a film, refrigerator warming up or range slow to heat? Independent local appliance repair pros fix KitchenAid dishwashers, refrigerators, ranges and over-the-range microwaves in homes across Temple, TX. Appliance Repair Temple is a free referral service: one call connects you with an independent local technician who works on KitchenAid appliances.',
+      'KitchenAid major appliances are a Whirlpool Corporation brand, built mostly for the kitchen. In Temple homes they show up most as quiet third-rack dishwashers, counter-depth French door refrigerators and slide-in ranges in remodeled or higher-end kitchens. Many share core parts with Whirlpool and Maytag models, while trim, panels and some controls are specific to KitchenAid.',
+      'The process should be the same as for any brand. A good technician tests the appliance, finds the part that failed and explains the repair before any work starts. This page covers major appliances. For a stand mixer or countertop appliance, contact KitchenAid.',
     ],
     appliances: [
       { key: 'dishwasher', note: 'Built-in dishwashers, including third-rack and top-control models' },
@@ -522,11 +522,11 @@ export const brands: Brand[] = [
     issues: [
       {
         title: 'Dishwasher not cleaning or drying',
-        text: 'A clogged filter, mineral scale in the spray arms or third-rack jets, a weak wash pump or a failed heating element. Hard water makes scale worse, so the technician checks the filter and spray arms first.',
+        text: 'A clogged filter, mineral scale in the spray arms or third-rack jets, a weak wash pump or a failed heating element. Hard water makes scale worse, so a technician will usually check the filter and spray arms first.',
       },
       {
         title: 'Dishwasher not draining',
-        text: 'Usually a blocked filter, a kinked or clogged drain hose, a garbage disposal knockout plug that was never removed, or a failed drain pump. Each is checked before a part is ordered.',
+        text: 'Usually a blocked filter, a kinked or clogged drain hose, a garbage disposal knockout plug that was never removed, or a failed drain pump. Each should be checked before a part is ordered.',
       },
       {
         title: 'Refrigerator warm, freezer cold',
@@ -534,7 +534,7 @@ export const brands: Brand[] = [
       },
       {
         title: 'Range slow to heat or uneven',
-        text: 'A bake element or igniter on its way out, a temperature sensor that has drifted, or a convection fan that is not running. The technician checks each against the model’s specifications.',
+        text: 'A bake element or igniter on its way out, a temperature sensor that has drifted, or a convection fan that is not running. A technician will usually check each against the model’s specifications.',
       },
     ],
     haveReady: [
@@ -554,8 +554,8 @@ export const brands: Brand[] = [
     modelSource: { name: 'KitchenAid: how to find your model number', url: 'https://www.kitchenaid.com/resources/locate-model-number.html' },
     faqs: [
       {
-        q: 'Are you an authorized KitchenAid service provider?',
-        a: 'No. Appliance Repair Temple is an independent repair service and is not affiliated with or authorized by KitchenAid or Whirlpool Corporation. If your appliance is under KitchenAid’s warranty, contact KitchenAid first.',
+        q: 'Is Appliance Repair Temple an authorized KitchenAid service provider?',
+        a: 'No. Appliance Repair Temple is a free referral service that connects homeowners with independent local repair pros. It is not affiliated with or authorized by KitchenAid or Whirlpool Corporation. If your appliance is under KitchenAid’s warranty, contact KitchenAid first.',
       },
       {
         q: 'Why does my KitchenAid dishwasher leave a white film?',
@@ -563,19 +563,19 @@ export const brands: Brand[] = [
       },
       {
         q: 'Do KitchenAid and Whirlpool use the same parts?',
-        a: 'Many core parts are shared, since both brands belong to Whirlpool Corporation. Panels, trim and some controls are KitchenAid-specific. The full model number tells us exactly which parts fit.',
+        a: 'Many core parts are shared, since both brands belong to Whirlpool Corporation. Panels, trim and some controls are KitchenAid-specific. The full model number shows exactly which parts fit.',
       },
       {
-        q: 'Do you repair KitchenAid stand mixers?',
-        a: 'No. We repair major home appliances. For a stand mixer or other countertop appliance, contact KitchenAid.',
+        q: 'Can I get a KitchenAid stand mixer repaired this way?',
+        a: 'No. The local pros this site connects you with repair major home appliances. For a stand mixer or other countertop appliance, contact KitchenAid.',
       },
       {
-        q: 'Can you repair my KitchenAid the same day?',
-        a: 'Same-day service is available, subject to technician availability, location, and current demand. Some KitchenAid parts are model-specific and may need to be ordered.',
+        q: 'How soon can a local pro repair my KitchenAid?',
+        a: 'Timing depends on the provider, your location and the parts, so ask about availability when you are connected. Some KitchenAid parts are model-specific and may need to be ordered.',
       },
       {
         q: 'How much does KitchenAid appliance repair cost?',
-        a: 'It depends on the appliance and the part, so we do not list prices online. Call to discuss your repair needs with the model number ready.',
+        a: 'It depends on the appliance and the part, so this site does not list prices. Ask the provider about pricing and any warranty on the work before the repair starts. Call with the model number ready.',
       },
     ],
     hasPage: true,
@@ -589,8 +589,8 @@ export const brands: Brand[] = [
     metaDescription:
       'Bosch dishwasher showing E15 or E24, not draining or not drying? Independent Bosch appliance repair in Temple, TX, for dishwashers, fridges and ranges.',
     intro: [
-      'Bosch dishwasher showing an error code, leaving water in the tub or not drying? Appliance Repair Temple repairs Bosch dishwashers, refrigerators and ranges in homes across Temple, TX. Same-day service is available, subject to technician availability, location, and current demand.',
-      'Dishwashers are by far the Bosch appliance we see most. They run quietly, often with no lights on the front at all, and they protect themselves: when something goes wrong they stop and show a code instead of carrying on. That is good for your floor, but it means a Bosch that has quit is usually telling you exactly which system needs attention.',
+      'Bosch dishwasher showing an error code, leaving water in the tub or not drying? Independent local appliance repair pros fix Bosch dishwashers, refrigerators and ranges in homes across Temple, TX. Appliance Repair Temple is a free referral service: one call connects you with an independent local technician who works on Bosch appliances.',
+      'Dishwashers are by far the most common Bosch appliance in Temple homes. They run quietly, often with no lights on the front at all, and they protect themselves: when something goes wrong they stop and show a code instead of carrying on. That is good for your floor, but it means a Bosch that has quit is usually telling you exactly which system needs attention.',
       'Bosch identifies its appliances with an E-Nr (the model number) and an FD number (the production number), both printed on the rating label. Having both ready makes it much easier to find the right part the first time.',
     ],
     appliances: [
@@ -609,11 +609,11 @@ export const brands: Brand[] = [
       },
       {
         title: 'Dishes come out wet',
-        text: 'Most Bosch dishwashers dry by condensation rather than with a heated element, so rinse aid matters. If dishes stay wet with rinse aid filled, the technician checks the settings, the rinse aid dispenser and the water heating.',
+        text: 'Most Bosch dishwashers dry by condensation rather than with a heated element, so rinse aid matters. If dishes stay wet with rinse aid filled, a technician will usually check the settings, the rinse aid dispenser and the water heating.',
       },
       {
         title: 'Refrigerator or range problems',
-        text: 'Refrigerators that run warm usually have a fan, defrost or sensor problem. Ranges that will not heat often have a failed element, igniter or control. On induction ranges, the cookware is checked too, since a pan that is not magnetic will not heat.',
+        text: 'Refrigerators that run warm usually have a fan, defrost or sensor problem. Ranges that will not heat often have a failed element, igniter or control. On induction ranges, the cookware should be checked too, since a pan that is not magnetic will not heat.',
       },
     ],
     haveReady: [
@@ -631,12 +631,12 @@ export const brands: Brand[] = [
     modelSource: { name: 'Bosch: how to find your model number', url: 'https://www.bosch-home.com/us/owner-support/how-to-find-your-model-number' },
     faqs: [
       {
-        q: 'Are you an authorized Bosch service provider?',
-        a: 'No. Appliance Repair Temple is an independent repair service and is not affiliated with or authorized by Bosch. If your appliance is under Bosch’s warranty, contact Bosch first.',
+        q: 'Is Appliance Repair Temple an authorized Bosch service provider?',
+        a: 'No. Appliance Repair Temple is a free referral service that connects homeowners with independent local repair pros. It is not affiliated with or authorized by Bosch. If your appliance is under Bosch’s warranty, contact Bosch first.',
       },
       {
         q: 'What does E15 mean on my Bosch dishwasher?',
-        a: 'According to Bosch, E15 means water has been detected in the base and the leak protection system has turned on. Turn off the water supply, switch the dishwasher off and call us. The source of the leak has to be found and fixed.',
+        a: 'According to Bosch, E15 means water has been detected in the base and the leak protection system has turned on. Turn off the water supply, switch the dishwasher off and call to be connected with a local pro. The source of the leak has to be found and fixed.',
       },
       {
         q: 'My Bosch dishwasher shows E24. What can I check?',
@@ -647,12 +647,12 @@ export const brands: Brand[] = [
         a: 'The E-Nr is Bosch’s model number and the FD is the production number. Both are on the rating label. Bosch parts often depend on both, so have them ready when you call.',
       },
       {
-        q: 'Can you repair my Bosch the same day?',
-        a: 'Same-day service is available, subject to technician availability, location, and current demand. Some Bosch parts are model-specific and may need to be ordered.',
+        q: 'How soon can a local pro repair my Bosch?',
+        a: 'Timing depends on the provider, your location and the parts, so ask about availability when you are connected. Some Bosch parts are model-specific and may need to be ordered.',
       },
       {
         q: 'How much does Bosch appliance repair cost?',
-        a: 'It depends on the appliance and the part, so we do not list prices online. Call to discuss your repair needs with the E-Nr and FD numbers ready.',
+        a: 'It depends on the appliance and the part, so this site does not list prices. Ask the provider about pricing and any warranty on the work before the repair starts. Call with the E-Nr and FD numbers ready.',
       },
     ],
     hasPage: true,
@@ -664,11 +664,11 @@ export const brands: Brand[] = [
     h1: 'Kenmore Appliance Repair in Temple, TX, for New and Older Models',
     metaTitle: 'Kenmore Appliance Repair Temple TX | Washers, Fridges & More',
     metaDescription:
-      'Kenmore washer, dryer, fridge or range acting up? Independent Kenmore appliance repair in Temple, TX, for newer and older models. Same-day service available.',
+      'Kenmore washer, dryer, fridge or range acting up? Independent Kenmore appliance repair in Temple, TX, for newer and older models. Call to get connected.',
     intro: [
-      'Kenmore washer that will not spin, dryer running cold or refrigerator warming up? Appliance Repair Temple repairs Kenmore washers, dryers, refrigerators, freezers, dishwashers, ranges and microwaves in homes across Temple, TX. Same-day service is available, subject to technician availability, location, and current demand.',
+      'Kenmore washer that will not spin, dryer running cold or refrigerator warming up? Independent local appliance repair pros fix Kenmore washers, dryers, refrigerators, freezers, dishwashers, ranges and microwaves in homes across Temple, TX. Appliance Repair Temple is a free referral service: one call connects you with an independent local technician who works on Kenmore appliances.',
       'Kenmore is a little different from other brands. For decades Kenmore appliances were sold through Sears but built by other manufacturers, including Whirlpool, LG, Frigidaire and others. That means two Kenmore refrigerators can have completely different parts inside, depending on who made them.',
-      'The good news is that the model number tells us who built it. The digits before the dot point to the manufacturer, and the full number tells us exactly which parts fit. Many Kenmore appliances in Temple homes are older units that still run well, and a lot of them are worth repairing.',
+      'The good news is that the model number tells a technician who built it. The digits before the dot point to the manufacturer, and the full number shows exactly which parts fit. Many Kenmore appliances in Temple homes are older units that still run well, and a lot of them are worth repairing.',
     ],
     appliances: [
       { key: 'washer', note: 'Top-load and front-load washers, including older Elite models' },
@@ -682,11 +682,11 @@ export const brands: Brand[] = [
     issues: [
       {
         title: 'Washer will not spin or drain',
-        text: 'On Whirlpool-built Kenmore top-loaders, a worn lid switch or lid lock, a broken belt, a failed drive coupler or a clogged pump are common. On LG-built front-loaders, the drain filter and door lock come first. The model number tells us which design you have.',
+        text: 'On Whirlpool-built Kenmore top-loaders, a worn lid switch or lid lock, a broken belt, a failed drive coupler or a clogged pump are common. On LG-built front-loaders, the drain filter and door lock come first. The model number shows which design you have.',
       },
       {
         title: 'Dryer runs but no heat',
-        text: 'A heating element, thermal fuse or thermostat on electric dryers, an igniter or gas valve coils on gas dryers. Older dryers often have long vent runs packed with lint, so airflow is checked on every call.',
+        text: 'A heating element, thermal fuse or thermostat on electric dryers, an igniter or gas valve coils on gas dryers. Older dryers often have long vent runs packed with lint, so airflow should be checked on every call.',
       },
       {
         title: 'Refrigerator or freezer running warm',
@@ -694,7 +694,7 @@ export const brands: Brand[] = [
       },
       {
         title: 'Parts for older models',
-        text: 'Some older Kenmore parts have been discontinued. Because Kenmore shared designs with its manufacturers, a compatible part can often be found through the original builder. The technician will tell you plainly if a part is no longer available.',
+        text: 'Some older Kenmore parts have been discontinued. Because Kenmore shared designs with its manufacturers, a compatible part can often be found through the original builder. A good technician will tell you plainly if a part is no longer available.',
       },
     ],
     haveReady: [
@@ -715,28 +715,28 @@ export const brands: Brand[] = [
     modelSource: { name: 'Sears PartsDirect: Kenmore model and serial plate locations', url: 'https://www.searspartsdirect.com/model/1k3ridit8b-000582/kenmore-25379252703-top-mount-refrigerator-parts' },
     faqs: [
       {
-        q: 'Are you affiliated with Kenmore or Sears?',
-        a: 'No. Appliance Repair Temple is an independent repair service and is not affiliated with or authorized by Kenmore, Sears or any manufacturer that built Kenmore appliances.',
+        q: 'Is Appliance Repair Temple affiliated with Kenmore or Sears?',
+        a: 'No. Appliance Repair Temple is a free referral service that connects homeowners with independent local repair pros. It is not affiliated with or authorized by Kenmore, Sears or any manufacturer that built Kenmore appliances.',
       },
       {
         q: 'Who made my Kenmore appliance?',
-        a: 'The digits before the dot in the model number identify the manufacturer. For example, 110 and 106 point to Whirlpool and 795 points to LG. Give us the full model number and we will look it up.',
+        a: 'The digits before the dot in the model number identify the manufacturer. For example, 110 and 106 point to Whirlpool and 795 points to LG. Have the full model number ready when you call so the technician can look it up.',
       },
       {
         q: 'Is my old Kenmore worth repairing?',
-        a: 'Often, yes. Many older Kenmore washers, dryers and refrigerators use simple, durable parts. If a key part has been discontinued or the repair is major on a very old unit, the technician will tell you.',
+        a: 'Often, yes. Many older Kenmore washers, dryers and refrigerators use simple, durable parts. If a key part has been discontinued or the repair is major on a very old unit, a good technician will tell you.',
       },
       {
-        q: 'Can you still get parts for older Kenmore models?',
-        a: 'Many are still available, sometimes under the original manufacturer’s part number. Some have been discontinued. We check before ordering and tell you what we find.',
+        q: 'Are parts still available for older Kenmore models?',
+        a: 'Many are still available, sometimes under the original manufacturer’s part number. Some have been discontinued. Ask the technician to check availability before ordering and to tell you what they find.',
       },
       {
-        q: 'Can you repair my Kenmore the same day?',
-        a: 'Same-day service is available, subject to technician availability, location, and current demand. Some parts are model-specific and may need to be ordered.',
+        q: 'How soon can a local pro repair my Kenmore?',
+        a: 'Timing depends on the provider, your location and the parts, so ask about availability when you are connected. Some parts are model-specific and may need to be ordered.',
       },
       {
         q: 'How much does Kenmore appliance repair cost?',
-        a: 'It depends on the appliance and the part, so we do not list prices online. Call to discuss your repair needs with the full model number ready.',
+        a: 'It depends on the appliance and the part, so this site does not list prices. Ask the provider about pricing and any warranty on the work before the repair starts. Call with the full model number ready.',
       },
     ],
     hasPage: true,
@@ -748,11 +748,11 @@ export const brands: Brand[] = [
     h1: 'Electrolux Laundry & Kitchen Appliance Repair in Temple, TX',
     metaTitle: 'Electrolux Appliance Repair Temple TX | Laundry & Kitchen',
     metaDescription:
-      'Electrolux front-load washer, dryer, fridge or range acting up? Independent Electrolux appliance repair in Temple, TX. Same-day service available. Call us.',
+      'Electrolux front-load washer, dryer, fridge or range acting up? Independent Electrolux appliance repair in Temple, TX. Call to get connected with a local pro.',
     intro: [
-      'Electrolux washer stopping with a code, dryer taking too long or refrigerator warming up? Appliance Repair Temple repairs Electrolux front-load washers, dryers, refrigerators, freezers, ranges and dishwashers in homes across Temple, TX. Same-day service is available, subject to technician availability, location, and current demand.',
+      'Electrolux washer stopping with a code, dryer taking too long or refrigerator warming up? Independent local appliance repair pros fix Electrolux front-load washers, dryers, refrigerators, freezers, ranges and dishwashers in homes across Temple, TX. Appliance Repair Temple is a free referral service: one call connects you with an independent local technician who works on Electrolux appliances.',
       'Electrolux is the parent company of Frigidaire and sells its own Electrolux-branded line, usually higher up the range: front-load laundry with steam cycles, counter-depth refrigerators and ranges with convection and air fry. Underneath, many Electrolux appliances share platforms and parts with Frigidaire models, which helps when a part is needed.',
-      'Electrolux labels often show three numbers: the model number, a product number code (PNC) used for parts on some models, and the serial number. A photo of the full label is the easiest way to make sure we order the right part.',
+      'Electrolux labels often show three numbers: the model number, a product number code (PNC) used for parts on some models, and the serial number. A photo of the full label is the easiest way to make sure the technician orders the right part.',
     ],
     appliances: [
       { key: 'washer', note: 'Front-load washers, including steam and stacked laundry models' },
@@ -765,7 +765,7 @@ export const brands: Brand[] = [
     issues: [
       {
         title: 'Front-load washer will not drain or unlock',
-        text: 'A clogged pump filter behind the small front access door is the most common cause, followed by a failed drain pump or door lock. Clean the filter first; if the washer still will not drain or release the door, call us.',
+        text: 'A clogged pump filter behind the small front access door is the most common cause, followed by a failed drain pump or door lock. Clean the filter first; if the washer still will not drain or release the door, call to be connected with a local pro.',
       },
       {
         title: 'Washer smells or leaves residue',
@@ -797,12 +797,12 @@ export const brands: Brand[] = [
     modelSource: { name: 'Electrolux support: where can I find my model and serial number?', url: 'https://owner.electrolux.com/support-articles/article/1858491-where-can-i-find-my-model-and-serial-number-' },
     faqs: [
       {
-        q: 'Are you an authorized Electrolux service provider?',
-        a: 'No. Appliance Repair Temple is an independent repair service and is not affiliated with or authorized by Electrolux or Frigidaire. If your appliance is under Electrolux’s warranty, contact Electrolux first.',
+        q: 'Is Appliance Repair Temple an authorized Electrolux service provider?',
+        a: 'No. Appliance Repair Temple is a free referral service that connects homeowners with independent local repair pros. It is not affiliated with or authorized by Electrolux or Frigidaire. If your appliance is under Electrolux’s warranty, contact Electrolux first.',
       },
       {
         q: 'Are Electrolux and Frigidaire parts the same?',
-        a: 'Many are, since Electrolux owns Frigidaire and the two share platforms. Some trim, controls and features are Electrolux-specific. The full model number tells us exactly which parts fit.',
+        a: 'Many are, since Electrolux owns Frigidaire and the two share platforms. Some trim, controls and features are Electrolux-specific. The full model number shows exactly which parts fit.',
       },
       {
         q: 'My Electrolux front-load washer will not drain. What can I check?',
@@ -813,12 +813,12 @@ export const brands: Brand[] = [
         a: 'The product number code is an identifier Electrolux uses for some models and their parts. If your label has one, include it with the model and serial number when you call.',
       },
       {
-        q: 'Can you repair my Electrolux the same day?',
-        a: 'Same-day service is available, subject to technician availability, location, and current demand. Some Electrolux parts are model-specific and may need to be ordered.',
+        q: 'How soon can a local pro repair my Electrolux?',
+        a: 'Timing depends on the provider, your location and the parts, so ask about availability when you are connected. Some Electrolux parts are model-specific and may need to be ordered.',
       },
       {
         q: 'How much does Electrolux appliance repair cost?',
-        a: 'It depends on the appliance and the part, so we do not list prices online. Call to discuss your repair needs with the model number ready.',
+        a: 'It depends on the appliance and the part, so this site does not list prices. Ask the provider about pricing and any warranty on the work before the repair starts. Call with the model number ready.',
       },
     ],
     hasPage: true,
@@ -830,11 +830,11 @@ export const brands: Brand[] = [
     h1: 'Amana Appliance Repair in Temple, TX, for Homes and Rentals',
     metaTitle: 'Amana Appliance Repair Temple TX | Washers, Dryers, Fridges',
     metaDescription:
-      'Amana washer, dryer, fridge or range not working? Independent Amana appliance repair in Temple, TX, for homes and rentals. Same-day service available.',
+      'Amana washer, dryer, fridge or range not working? Independent Amana appliance repair in Temple, TX, for homes and rentals. Call to get connected with a local pro.',
     intro: [
-      'Amana washer not agitating, dryer running cold or refrigerator warming up? Appliance Repair Temple repairs Amana washers, dryers, refrigerators, ranges, dishwashers and microwaves in homes across Temple, TX. Same-day service is available, subject to technician availability, location, and current demand.',
+      'Amana washer not agitating, dryer running cold or refrigerator warming up? Independent local appliance repair pros fix Amana washers, dryers, refrigerators, ranges, dishwashers and microwaves in homes across Temple, TX. Appliance Repair Temple is a free referral service: one call connects you with an independent local technician who works on Amana appliances.',
       'Amana is a Whirlpool Corporation brand built around straightforward, value-priced appliances: top-load agitator washers, top-freezer refrigerators, coil and smoothtop ranges. That makes it a common sight in rental homes, apartments and starter houses around Temple, often bought as a set by a landlord or builder.',
-      'Simple designs are usually good news for repair. Many Amana appliances share parts with Whirlpool and Maytag models, so common parts are easy to find and repairs tend to be practical. If you rent, check with your landlord before booking, since they may be responsible for the appliances they supply.',
+      'Simple designs are usually good news for repair. Many Amana appliances share parts with Whirlpool and Maytag models, so common parts are easy to find and repairs tend to be practical. If you rent, check with your landlord before you call for a repair, since they may be responsible for the appliances they supply.',
     ],
     appliances: [
       { key: 'washer', note: 'Top-load agitator and high-efficiency washers' },
@@ -855,7 +855,7 @@ export const brands: Brand[] = [
       },
       {
         title: 'Top-freezer refrigerator warm',
-        text: 'If the freezer is cold but the fresh-food section is warm, the evaporator fan or the defrost system is the usual suspect. If both are warm, the technician checks the condenser fan, the coils and the start relay.',
+        text: 'If the freezer is cold but the fresh-food section is warm, the evaporator fan or the defrost system is the usual suspect. If both are warm, a technician will usually check the condenser fan, the coils and the start relay.',
       },
       {
         title: 'Range burner or oven not heating',
@@ -879,28 +879,28 @@ export const brands: Brand[] = [
     modelSource: { name: 'Amana Product Help: where is my model and serial number located?', url: 'https://producthelp.amana.com/FAQ/Where_is_my_Model_and_Serial_Number_Located%3F' },
     faqs: [
       {
-        q: 'Are you an authorized Amana service provider?',
-        a: 'No. Appliance Repair Temple is an independent repair service and is not affiliated with or authorized by Amana or Whirlpool Corporation. If your appliance is under Amana’s warranty, contact Amana first.',
+        q: 'Is Appliance Repair Temple an authorized Amana service provider?',
+        a: 'No. Appliance Repair Temple is a free referral service that connects homeowners with independent local repair pros. It is not affiliated with or authorized by Amana or Whirlpool Corporation. If your appliance is under Amana’s warranty, contact Amana first.',
       },
       {
-        q: 'Do you repair Amana air conditioners or furnaces?',
-        a: 'No. Amana heating and air conditioning equipment is a separate business from Amana home appliances, and we do not work on HVAC. We repair Amana washers, dryers, refrigerators, ranges, dishwashers and microwaves.',
+        q: 'Does this site cover Amana air conditioners or furnaces?',
+        a: 'No. Amana heating and air conditioning equipment is a separate business from Amana home appliances, and this site covers home appliance repair only, not HVAC. Local pros repair Amana washers, dryers, refrigerators, ranges, dishwashers and microwaves.',
       },
       {
         q: 'Is my Amana washer worth repairing?',
         a: 'Usually, yes. Lid switches, couplers, belts and pumps are common, reasonable repairs. A failed transmission on an older washer is the main case where replacing it makes more sense.',
       },
       {
-        q: 'I rent. Can I book the repair myself?',
-        a: 'Check your lease first. Many leases make the landlord responsible for the appliances they supply. If your landlord asks you to arrange the visit, let us know who is approving the work.',
+        q: 'I rent. Can I arrange the repair myself?',
+        a: 'Check your lease first. Many leases make the landlord responsible for the appliances they supply. If your landlord asks you to arrange the visit, tell the provider who is approving the work.',
       },
       {
-        q: 'Can you repair my Amana the same day?',
-        a: 'Same-day service is available, subject to technician availability, location, and current demand. Common Amana parts are often available quickly; some may need to be ordered.',
+        q: 'How soon can a local pro repair my Amana?',
+        a: 'Timing depends on the provider, your location and the parts, so ask about availability when you are connected. Common Amana parts are often available quickly; some may need to be ordered.',
       },
       {
         q: 'How much does Amana appliance repair cost?',
-        a: 'It depends on the appliance and the part, so we do not list prices online. Call to discuss your repair needs with the model number ready.',
+        a: 'It depends on the appliance and the part, so this site does not list prices. Ask the provider about pricing and any warranty on the work before the repair starts. Call with the model number ready.',
       },
     ],
     hasPage: true,
@@ -910,13 +910,13 @@ export const brands: Brand[] = [
     slug: `speed-queen-repair-${loc}`,
     name: 'Speed Queen',
     h1: 'Speed Queen Washer & Dryer Repair in Temple, TX',
-    metaTitle: 'Speed Queen Washer & Dryer Repair Temple TX | Local Service',
+    metaTitle: 'Speed Queen Washer & Dryer Repair Temple TX | Local Pros',
     metaDescription:
-      'Speed Queen washer not draining or dryer not heating? Independent Speed Queen washer and dryer repair in Temple, TX. Check your warranty first, then call us.',
+      'Speed Queen washer not draining or dryer not heating? Independent Speed Queen washer and dryer repair in Temple, TX. Check your warranty first, then call to get connected.',
     intro: [
-      'Speed Queen washer not draining, stuck on spin or dryer running cold? Appliance Repair Temple repairs Speed Queen top-load and front-load washers and electric and gas dryers in homes across Temple, TX. Same-day service is available, subject to technician availability, location, and current demand.',
+      'Speed Queen washer not draining, stuck on spin or dryer running cold? Independent local appliance repair pros fix Speed Queen top-load and front-load washers and electric and gas dryers in homes across Temple, TX. Appliance Repair Temple is a free referral service: one call connects you with an independent local technician who works on Speed Queen appliances.',
       'Speed Queen makes laundry and nothing else. It is built by Alliance Laundry Systems in Ripon, Wisconsin, the same company behind a lot of commercial laundromat equipment, and the home machines borrow from that heavy-duty design. Many owners bought one to keep for a long time, and with that build, repair is usually the sensible choice when something wears out.',
-      'Check the warranty before anything else. Many recent Speed Queen washers and dryers come with long coverage, often five years or more, and the exact terms depend on the model and serial number. If your machine is still covered, contact Speed Queen first. If coverage has ended, call us.',
+      'Check the warranty before anything else. Many recent Speed Queen washers and dryers come with long coverage, often five years or more, and the exact terms depend on the model and serial number. If your machine is still covered, contact Speed Queen first. If coverage has ended, call to be connected with a local pro.',
     ],
     appliances: [
       { key: 'washer', note: 'Top-load washers, including TC5 and TR series, and front-load washers' },
@@ -925,7 +925,7 @@ export const brands: Brand[] = [
     issues: [
       {
         title: 'Top-load washer will not drain or spin',
-        text: 'A clogged drain pump or hose, a worn lid lock or lid switch, or a worn belt are the common causes. Something small like a sock in the pump can stop a cycle. The technician checks the drain path and lock before looking at the motor or transmission.',
+        text: 'A clogged drain pump or hose, a worn lid lock or lid switch, or a worn belt are the common causes. Something small like a sock in the pump can stop a cycle. A technician will usually check the drain path and lock before looking at the motor or transmission.',
       },
       {
         title: 'Front-load washer stops or will not unlock',
@@ -937,7 +937,7 @@ export const brands: Brand[] = [
       },
       {
         title: 'Dryer runs but no heat',
-        text: 'A heating element, thermal fuse or high-limit thermostat on electric models, or an igniter or gas valve coils on gas models. A clogged vent is often the root cause, so airflow is checked on every dryer call.',
+        text: 'A heating element, thermal fuse or high-limit thermostat on electric models, or an igniter or gas valve coils on gas models. A clogged vent is often the root cause, so airflow should be checked on every dryer call.',
       },
     ],
     haveReady: [
@@ -955,35 +955,35 @@ export const brands: Brand[] = [
     modelSource: { name: 'Speed Queen: manuals and downloads', url: 'https://speedqueen.com/support/manuals-downloads/' },
     faqs: [
       {
-        q: 'Are you an authorized Speed Queen service provider?',
-        a: 'No. Appliance Repair Temple is an independent repair service and is not affiliated with or authorized by Speed Queen or Alliance Laundry Systems. If your machine is under Speed Queen’s warranty, contact Speed Queen first.',
+        q: 'Is Appliance Repair Temple an authorized Speed Queen service provider?',
+        a: 'No. Appliance Repair Temple is a free referral service that connects homeowners with independent local repair pros. It is not affiliated with or authorized by Speed Queen or Alliance Laundry Systems. If your machine is under Speed Queen’s warranty, contact Speed Queen first.',
       },
       {
         q: 'Is my Speed Queen still under warranty?',
-        a: 'Possibly. Many recent Speed Queen washers and dryers carry long warranties, and the exact coverage depends on the model and serial number. Check your paperwork or contact Speed Queen before booking a paid repair.',
+        a: 'Possibly. Many recent Speed Queen washers and dryers carry long warranties, and the exact coverage depends on the model and serial number. Check your paperwork or contact Speed Queen before paying for a repair.',
       },
       {
         q: 'Is an older Speed Queen worth repairing?',
         a: 'Usually, yes. These machines are built to last, and pumps, lid locks, belts, switches and heating parts are reasonable repairs. Tub bearings or a transmission on a very old unit are the main cases where it gets closer.',
       },
       {
-        q: 'Do you repair commercial or coin-operated Speed Queen machines?',
-        a: 'Our work is residential. If your machine is in a shared laundry room or used commercially, tell us when you call and we will let you know whether we can help.',
+        q: 'Can I get commercial or coin-operated Speed Queen machines repaired?',
+        a: 'This site covers residential appliance repair. If your machine is in a shared laundry room or used commercially, mention it when you call and ask the provider whether they can help.',
       },
       {
-        q: 'Can you repair my Speed Queen the same day?',
-        a: 'Same-day service is available, subject to technician availability, location, and current demand. Some Speed Queen parts may need to be ordered.',
+        q: 'How soon can a local pro repair my Speed Queen?',
+        a: 'Timing depends on the provider, your location and the parts, so ask about availability when you are connected. Some Speed Queen parts may need to be ordered.',
       },
       {
         q: 'How much does Speed Queen repair cost?',
-        a: 'It depends on the machine and the part, so we do not list prices online. Call to discuss your repair needs with the model and serial number ready.',
+        a: 'It depends on the machine and the part, so this site does not list prices. Ask the provider about pricing and any warranty on the work before the repair starts. Call with the model and serial number ready.',
       },
     ],
     hasPage: true,
   },
 ];
 
-/** Other brands commonly serviced. Listed on the hub, no dedicated page yet. */
+/** Other brands local pros commonly work on. Listed on the hub, no dedicated page yet. */
 export const otherBrands: string[] = [];
 
 export const brandHref = (b: Brand) => `/brands/${b.slug}/`;

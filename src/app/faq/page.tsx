@@ -12,7 +12,7 @@ import { pageMetadata } from '@/lib/seo';
 
 export const metadata = pageMetadata({
   title: `Appliance Repair FAQ | ${site.city}, ${site.stateAbbr} Answers Before You Call`,
-  description: `Answers about appliance repair in ${site.city}, ${site.stateAbbr}: scheduling, same-day visits, the diagnosis, repair or replace, brands, areas, payment and safety questions.`,
+  description: `Appliance repair FAQ for ${site.city}, ${site.stateAbbr}: how the free call works, checking a license and insurance, repair or replace, brands, areas and safety.`,
   path: routes.faq,
 });
 
@@ -23,8 +23,9 @@ export default function FaqPage() {
       <PageHero crumbs={[{ name: 'FAQs', path: routes.faq }]} title={`${site.city} Appliance Repair FAQ,`} accent="answered plainly.">
         <div className="prose-copy prose-dark">
           <p>
-            These are the questions people in {site.city} and the nearby towns ask us most, from booking a visit to deciding
-            whether an old appliance is worth fixing. If yours is not here, call and ask.
+            These are the questions homeowners in {site.city} and the nearby towns ask most, from how the free call works and how to
+            check a provider&rsquo;s license and insurance to deciding whether an old appliance is worth fixing. {site.brandName}
+            connects you with independent local appliance repair pros. If your question is not here, call and ask.
           </p>
         </div>
         <div className="mt-8">
