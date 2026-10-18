@@ -300,7 +300,7 @@ export const services: Service[] = [
         fixable: 'Many causes are fixed by cleaning, better airflow or a new seal.',
       },
       {
-        title: 'Clicking but not running',
+        title: 'Clicks but the compressor will not run',
         cause:
           'The compressor is trying to start and failing. Often it is the start relay or overload, and sometimes the compressor itself.',
         fixable: 'Relay replacement is quick.',
