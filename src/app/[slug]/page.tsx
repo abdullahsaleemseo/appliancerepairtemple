@@ -115,7 +115,7 @@ const pageCopy: Record<ApplianceKey, PageCopy> = {
     noun: 'oven or stove',
     sidebarTitle: 'Oven not heating or burner out?',
     inlineTitle: 'Call about your oven or stove',
-    emergencyNote: 'Emergency help for an oven that will not shut off or a burner stuck on high may be available from local providers; cut the power first.',
+    emergencyNote: 'Emergency help for an oven that will not shut off or a burner stuck on high may be available from local providers; say so as soon as the call connects.',
     beforeHeading: 'Shut it down safely',
     askQuestion: 'Is the anti-tip bracket engaged, and can it be checked before the range goes back in place?',
     finalTitle: 'Oven cold at dinner time?',

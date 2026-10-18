@@ -271,7 +271,7 @@ export const services: Service[] = [
     card: 'Upright or chest freezer not freezing or frosting up.',
     metaTitle: 'Emergency Freezer Repair Temple TX | Food Starting to Thaw?',
     metaDescription:
-      'Chest or upright freezer not freezing, frosted over or running nonstop? Help for garage and deep freezers across Temple, TX and Bell County. Call (254) 615-2088.',
+      'Chest or upright freezer not freezing, frosted over or running nonstop? Help for garage and deep freezers in Temple, TX and Bell County. Call (254) 615-2088.',
     h1: 'Chest & Upright Freezer Repair in Temple, TX',
     intro: [
       'Freezer warming up, frosting over or running and never shutting off? Appliance Repair Temple is the Temple number for chest and upright freezer repair, whether the unit sits in a kitchen, a garage, a shop or a barn. One call puts you in touch with a technician who works on deep freezers and frost-free uprights. Say which kind you have and what the thermometer reads.',
@@ -553,7 +553,7 @@ export const services: Service[] = [
     card: 'Won’t drain, won’t spin, leaking or shaking hard.',
     metaTitle: 'Emergency Washer Repair Temple TX | Leaking or Won’t Drain?',
     metaDescription:
-      'Washer stuck full of water, leaking or not spinning? Top-load, front-load and stacked washers in Temple, TX, including Whirlpool, LG and Samsung. Call (254) 615-2088.',
+      'Washer stuck full of water, leaking or not spinning? Top-load, front-load and stacked washers in Temple, TX: Whirlpool, LG, Samsung. Call (254) 615-2088.',
     h1: 'Top-Load & Front-Load Washer Repair in Temple, TX',
     intro: [
       'Washer stuck full of water, refusing to spin or leaking across the laundry room floor? Appliance Repair Temple is Temple’s line for washer repair. One call puts you in touch with a technician who works on top-load and front-load washing machines, stacked laundry centers and high-efficiency models. Say where in the cycle it stops and whether water is still on the floor.',
@@ -832,7 +832,7 @@ export const services: Service[] = [
     card: 'No heat, long dry times, squealing or won’t turn.',
     metaTitle: 'Dryer Repair Temple TX | No Heat, Squealing or Slow Drying',
     metaDescription:
-      'Dryer running cold, squealing or taking three cycles to dry? Gas and electric dryer repair in Temple, TX. Find out if it is the vent or a heat part. Call (254) 615-2088.',
+      'Dryer running cold, squealing or taking three cycles to dry? Gas and electric dryer repair in Temple, TX. Is it the vent or a heat part? Call (254) 615-2088.',
     h1: 'Electric & Gas Dryer Repair in Temple, TX',
     intro: [
       'Dryer running but the clothes come out damp? Taking two or three cycles to dry a load? Appliance Repair Temple is Temple’s line for dryer repair, electric or gas. One call puts you in touch with a technician who works on standalone dryers and stacked laundry centers. Say whether yours runs on gas or a 240-volt outlet.',
@@ -1094,7 +1094,7 @@ export const services: Service[] = [
     card: 'Not draining, not cleaning, leaking or won’t start.',
     metaTitle: 'Dishwasher Repair Temple TX | Not Draining or Cleaning?',
     metaDescription:
-      'Dishwasher not draining, leaving gritty dishes or leaking under the door? Bosch, Whirlpool, GE and KitchenAid dishwasher repair in Temple, TX. Call (254) 615-2088.',
+      'Dishwasher not draining, leaving gritty dishes or leaking under the door? Bosch, Whirlpool, GE and KitchenAid repair in Temple, TX. Call (254) 615-2088.',
     h1: 'Built-In Dishwasher Repair in Temple, TX',
     intro: [
       'Standing water in the bottom, gritty dishes or a puddle under the door? Appliance Repair Temple is Temple’s line for dishwasher repair. One call puts you in touch with a technician who works on built-in dishwashers, from basic models to third-rack machines with front or hidden top controls. Mention what the last load looked like.',
