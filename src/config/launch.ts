@@ -11,7 +11,7 @@
  */
 export const launch = {
   siteMode: 'production' as 'production' | 'draft',
-  allowIndexing: false,
+  allowIndexing: true,
   siteUrl: 'https://appliancerepairtemple.com',
   gaId: '',
   googleVerification: '',

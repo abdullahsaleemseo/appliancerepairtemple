@@ -30,7 +30,7 @@ with independent local providers. The network's review asked for the changes bel
 
 ## Technical
 - [x] Live on appliancerepairtemple.com via Vercel, production mode, noindex (Oct 16, 2026). Switches now in `src/config/launch.ts`
-- [ ] Launch day only: set `allowIndexing: true` in `src/config/launch.ts` and push, then check robots.txt allows crawling on the real domain
+- [x] (Oct 18, 2026) Launch day only: set `allowIndexing: true` in `src/config/launch.ts` and push, then check robots.txt allows crawling on the real domain
 - [x] Call-only site: no contact, quote or feedback forms; footer disclaimer on every page; no prices; no "free quote/estimate/inspection" wording, enforced by `npm run check:copy` (Oct 16, 2026)
 - [ ] Test call to (254) 615-2088 from a phone on several pages
 - [ ] GA4 ID set in `src/config/launch.ts` (`gaId`); check `click_to_call` (with `data-call-location`) in GA4 DebugView
