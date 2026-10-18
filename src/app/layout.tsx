@@ -1,6 +1,8 @@
 import type { Metadata, Viewport } from 'next';
 import './globals.css';
-import { indexingAllowed, site } from '@/config/site';
+import { indexingAllowed, routes, site } from '@/config/site';
+import { areas, areaHref } from '@/content/areas';
+import { brands, brandHref } from '@/content/brands';
 import { Analytics } from '@/components/Analytics';
 import { Footer } from '@/components/Footer';
 import { Header } from '@/components/Header';
@@ -36,7 +38,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </a>
         <JsonLd data={websiteSchema()} />
         <UtilityBar />
-        <Header />
+        <Header
+          brandLinks={brands.filter((b) => b.hasPage).map((b) => ({ href: brandHref(b), label: b.name }))}
+          areaLinks={[{ href: routes.cityPage, label: site.city }, ...areas.map((a) => ({ href: areaHref(a), label: a.name }))]}
+        />
         <main id="main" tabIndex={-1} className="focus:outline-none">
           {children}
         </main>
