@@ -11,7 +11,7 @@ import { pageMetadata } from '@/lib/seo';
 
 export const metadata = pageMetadata({
   title: `Appliance Repair Service Areas Near ${site.city}, ${site.stateAbbr}`,
-  description: `Appliance repair in ${site.city} and ${areas.length} nearby towns, including Belton, Killeen, Harker Heights and Salado. See each town’s ZIP codes and how scheduling works.`,
+  description: `Appliance repair in ${site.city} and ${areas.length} nearby towns, including Belton, Killeen, Harker Heights and Salado. See ZIP codes and how to get connected with a local pro.`,
   path: routes.areas,
 });
 
@@ -21,12 +21,12 @@ export default function AreasPage() {
       <PageHero crumbs={[{ name: 'Service Areas', path: routes.areas }]} title={`Appliance Repair Service Areas Near ${site.city}`}>
         <div className="prose-copy prose-dark">
           <p>
-            {site.city} is the center of our route. From there we cover most of {site.county} and a few towns just outside it.
-            Repairs happen in your home; the technician comes to you.
+            {site.brandName} is a free referral service that connects homeowners in {site.city}, most of {site.county} and a
+            few towns just outside it with independent local appliance repair pros. Repairs happen in your home; the technician comes to you.
           </p>
           <p>
-            When you call, we check the schedule for your ZIP code and give you the earliest open visit window.
-            Towns closer to {site.city} usually have more openings. Towns at the edge of the area are scheduled on set days.
+            When you call, describe the problem and give your address and ZIP code, and you are connected with a local pro who
+            serves your town. Each provider sets their own schedule and prices, so ask about availability, pricing and licensing on that call.
           </p>
         </div>
         <div className="mt-8">
@@ -41,7 +41,7 @@ export default function AreasPage() {
             <Link href={routes.cityPage} className="grain group flex h-full min-h-[180px] flex-col rounded-card bg-ink p-6 text-white transition hover:-translate-y-1 hover:shadow-lift">
               <Icon name="pin" className="h-6 w-6 text-flame-glow" />
               <span className="mt-auto font-display text-2xl font-bold tracking-[-0.03em]">{site.city}</span>
-              <span className="text-sm text-white/55">Home base</span>
+              <span className="text-sm text-white/55">ZIP {site.templeZips.join(', ')}</span>
             </Link>
           </li>
           {areas.map((a) => (
@@ -62,7 +62,7 @@ export default function AreasPage() {
           eyebrow="Coverage"
           title="The full"
           accent="service area."
-          intro="Other nearby towns are covered too. They don’t have their own page yet, but you can still book."
+          intro="Local pros serve other nearby towns too. They don’t have their own page yet, but you can still call to get connected."
         />
         <AreaBlock />
       </Section>

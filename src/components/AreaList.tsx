@@ -45,7 +45,7 @@ export function MapEmbed({ place, zoom = 12, note }: { place: string; zoom?: num
 export function AreaBlock() {
   return (
     <div className="grid items-start gap-10 lg:grid-cols-[1.1fr_1fr]">
-      <MapEmbed place={site.city} note={`Based in ${site.city}. The technician comes to your home.`} />
+      <MapEmbed place={site.city} note={`Local appliance repair pros serve homes in and around ${site.city}. Repairs happen at your home.`} />
       <div>
         <h3 className="text-[13px] font-semibold uppercase tracking-[0.14em] text-ink-muted">{site.city} ZIP codes</h3>
         <ul className="mt-4 flex flex-wrap gap-2">
@@ -74,7 +74,7 @@ export function AreaBlock() {
           })}
         </ul>
         <div className="mt-10 rounded-2xl border border-sand bg-white p-5 text-ink-body">
-          Don’t see your town? <PhoneLink location="area_block" className="font-semibold text-ink underline decoration-flame underline-offset-4" label="Call" /> or{' '}
+          Don’t see your town? <PhoneLink location="area_block" className="font-semibold text-ink underline decoration-flame underline-offset-4" label="Call" /> to get connected with a local pro, or{' '}
           <Link href={routes.areas} className="font-semibold text-ink underline decoration-flame underline-offset-4">
             see the full area
           </Link>

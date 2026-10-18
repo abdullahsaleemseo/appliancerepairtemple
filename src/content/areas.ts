@@ -75,7 +75,7 @@ export const areas: Area[] = [
         accent: 'in Belton.',
         paragraphs: [
           'Call the number on this page with your address, the appliance, the brand and what it is doing. Appliance Repair Temple is a free referral service, and the call connects you with an independent local appliance repair pro who serves Belton.',
-          'Each provider sets their own schedule and prices, so ask on that call when they can come out, how they charge for the visit and the repair, and whether they are licensed and insured. Ask about any warranty on parts and labor before work starts, and write the answers down.',
+          'Each provider sets their own schedule and prices, so ask on that call when they can come out, how they charge for the visit and the repair, and whether they carry insurance and any license the work requires. Ask about any warranty on parts and labor before work starts, and write the answers down.',
         ],
       },
       {
@@ -216,7 +216,7 @@ export const areas: Area[] = [
         accent: 'in Killeen.',
         paragraphs: [
           'Call the number on this page with your address, the appliance, the brand and what it is doing. Appliance Repair Temple is a free referral service, and the call connects you with an independent local appliance repair pro who serves Killeen.',
-          'Each provider sets their own schedule and prices, so ask on that call when they can come out, how they charge for the visit and the repair, and whether they are licensed and insured. Ask about any warranty on parts and labor before work starts.',
+          'Each provider sets their own schedule and prices, so ask on that call when they can come out, how they charge for the visit and the repair, and whether they carry insurance and any license the work requires. Ask about any warranty on parts and labor before work starts.',
           'Before the visit, find the model number, usually on a label inside the door, under the lid or on the frame, and note any error code. Clear a path to the appliance and, if you can, empty the washer or dishwasher.',
         ],
       },
@@ -347,7 +347,7 @@ export const areas: Area[] = [
         accent: 'in Harker Heights.',
         paragraphs: [
           'Call the number on this page with your address, the appliance, the brand and what it is doing. Appliance Repair Temple is a free referral service, and the call connects you with an independent local appliance repair pro who serves Harker Heights.',
-          'Each provider sets their own schedule and prices, so ask on that call when they can come out, how they charge for the visit and the repair, and whether they are licensed and insured. Ask about any warranty on parts and labor before work starts.',
+          'Each provider sets their own schedule and prices, so ask on that call when they can come out, how they charge for the visit and the repair, and whether they carry insurance and any license the work requires. Ask about any warranty on parts and labor before work starts.',
           'Before the visit, find the model number on the appliance, usually on a label inside the door, under the lid or on the frame. Clear a path to the appliance and, if you can, empty the washer or dishwasher.',
         ],
       },
@@ -478,7 +478,7 @@ export const areas: Area[] = [
         accent: 'in Salado.',
         paragraphs: [
           'Call the number on this page with your address, the appliance, the brand and what it is doing. Appliance Repair Temple is a free referral service, and the call connects you with an independent local appliance repair pro who serves the 76571 area.',
-          'Each provider sets their own schedule and prices, and homes on acreage can mean a longer drive, so ask on that call when they can come out, how they charge for the visit and the repair, and whether they are licensed and insured. Ask about any warranty on parts and labor before work starts.',
+          'Each provider sets their own schedule and prices, and homes on acreage can mean a longer drive, so ask on that call when they can come out, how they charge for the visit and the repair, and whether they carry insurance and any license the work requires. Ask about any warranty on parts and labor before work starts.',
           'Before the visit, find the model number, usually on a label inside the door, under the lid or on the frame, and write down any error code.',
         ],
       },
@@ -605,7 +605,7 @@ export const areas: Area[] = [
         accent: 'in Nolanville.',
         paragraphs: [
           'Call the number on this page with your address, the appliance, the brand and what it is doing. Appliance Repair Temple is a free referral service, and the call connects you with an independent local appliance repair pro who serves Nolanville.',
-          'Each provider sets their own schedule and prices, so ask on that call when they can come out, how they charge for the visit and the repair, and whether they are licensed and insured. Ask about any warranty on parts and labor before work starts.',
+          'Each provider sets their own schedule and prices, so ask on that call when they can come out, how they charge for the visit and the repair, and whether they carry insurance and any license the work requires. Ask about any warranty on parts and labor before work starts.',
           'Before the visit, find the model number, usually on a label inside the door, under the lid or on the frame, and write down any error code. Clear a path to the appliance and, if you can, empty the washer or dishwasher.',
         ],
       },
@@ -737,7 +737,7 @@ export const areas: Area[] = [
         accent: "in Morgan's Point.",
         paragraphs: [
           "Call the number on this page with your address, the appliance, the brand and what it is doing. Appliance Repair Temple is a free referral service, and the call connects you with an independent local appliance repair pro who serves Morgan's Point Resort.",
-          'Each provider sets their own schedule and prices, so ask on that call when they can come out, how they charge for the visit and the repair, and whether they are licensed and insured. Ask about any warranty on parts and labor before work starts.',
+          'Each provider sets their own schedule and prices, so ask on that call when they can come out, how they charge for the visit and the repair, and whether they carry insurance and any license the work requires. Ask about any warranty on parts and labor before work starts.',
           'Before the visit, find the model number, usually on a label inside the door, under the lid or on the frame, and write down any error code. If the appliance is in a garage or shop, make sure the technician can reach it and the outlet behind it.',
         ],
       },
@@ -866,7 +866,7 @@ export const areas: Area[] = [
         accent: 'in Troy.',
         paragraphs: [
           'Call the number on this page with your address, the appliance, the brand and what it is doing. Appliance Repair Temple is a free referral service, and the call connects you with an independent local appliance repair pro who serves Troy.',
-          'Each provider sets their own schedule and prices, so ask on that call when they can come out, how they charge for the visit and the repair, and whether they are licensed and insured. Ask about any warranty on parts and labor before work starts.',
+          'Each provider sets their own schedule and prices, so ask on that call when they can come out, how they charge for the visit and the repair, and whether they carry insurance and any license the work requires. Ask about any warranty on parts and labor before work starts.',
           'Before the visit, find the model number, usually on a label inside the door, under the lid or on the frame, and write down any error code. If the appliance is in a shop or barn, make sure the technician can reach it and the outlet behind it.',
         ],
       },
@@ -993,7 +993,7 @@ export const areas: Area[] = [
         accent: 'in Little River-Academy.',
         paragraphs: [
           'Call the number on this page with your address, the appliance, the brand and what it is doing. Appliance Repair Temple is a free referral service, and the call connects you with an independent local appliance repair pro who serves Little River-Academy.',
-          'Each provider sets their own schedule and prices, so ask on that call when they can come out, how they charge for the visit and the repair, and whether they are licensed and insured. Ask about any warranty on parts and labor before work starts.',
+          'Each provider sets their own schedule and prices, so ask on that call when they can come out, how they charge for the visit and the repair, and whether they carry insurance and any license the work requires. Ask about any warranty on parts and labor before work starts.',
           'The most common appliance problems here are refrigerators and freezers that stop cooling, washers that will not drain or spin, dryers that run without heat, dishwashers that leave dishes dirty and ovens that will not heat. On any dryer repair, ask for the vent to be checked as well.',
         ],
       },
@@ -1120,7 +1120,7 @@ export const areas: Area[] = [
         accent: 'in Rogers.',
         paragraphs: [
           'Call the number on this page with your address, the appliance, the brand and what it is doing. Appliance Repair Temple is a free referral service, and the call connects you with an independent local appliance repair pro who serves Rogers and the 76569 area.',
-          'Each provider sets their own schedule and prices, and Rogers can be a longer drive, so ask on that call when they can come out, how they charge for the visit and the repair, and whether they are licensed and insured. Ask about any warranty on parts and labor before work starts.',
+          'Each provider sets their own schedule and prices, and Rogers can be a longer drive, so ask on that call when they can come out, how they charge for the visit and the repair, and whether they carry insurance and any license the work requires. Ask about any warranty on parts and labor before work starts.',
           'The most common appliance problems here are refrigerators and freezers that stop cooling, washers that will not drain or spin, dryers that run without heat, dishwashers that leave dishes dirty and ovens that will not heat.',
         ],
       },
@@ -1248,7 +1248,7 @@ export const areas: Area[] = [
         accent: 'in Holland.',
         paragraphs: [
           'Call the number on this page with your address, the appliance, the brand and what it is doing. Appliance Repair Temple is a free referral service, and the call connects you with an independent local appliance repair pro who serves Holland and the 76534 area.',
-          'Each provider sets their own schedule and prices, and Holland can be a longer drive, so ask on that call when they can come out, how they charge for the visit and the repair, and whether they are licensed and insured. Ask about any warranty on parts and labor before work starts.',
+          'Each provider sets their own schedule and prices, and Holland can be a longer drive, so ask on that call when they can come out, how they charge for the visit and the repair, and whether they carry insurance and any license the work requires. Ask about any warranty on parts and labor before work starts.',
           'Before the visit, find the model number, usually on a label inside the door, under the lid or on the frame, and write down any error code.',
         ],
       },
@@ -1375,7 +1375,7 @@ export const areas: Area[] = [
         accent: 'in Moody.',
         paragraphs: [
           'Call the number on this page with your address, the appliance, the brand and what it is doing. Appliance Repair Temple is a free referral service, and the call connects you with an independent local appliance repair pro who serves Moody and the 76557 area.',
-          'Each provider sets their own schedule and prices, and Moody can be a longer drive, so ask on that call when they can come out, how they charge for the visit and the repair, and whether they are licensed and insured. Ask about any warranty on parts and labor before work starts.',
+          'Each provider sets their own schedule and prices, and Moody can be a longer drive, so ask on that call when they can come out, how they charge for the visit and the repair, and whether they carry insurance and any license the work requires. Ask about any warranty on parts and labor before work starts.',
           'The most common appliance problems here are refrigerators and freezers that stop cooling, washers that will not drain or spin, dryers that run without heat, dishwashers that leave dishes dirty and ovens that will not heat. On any dryer repair, ask for the vent to be checked too.',
         ],
       },

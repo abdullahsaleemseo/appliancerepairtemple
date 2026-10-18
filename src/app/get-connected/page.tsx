@@ -39,7 +39,7 @@ const requestFaqs: Faq[] = [
     a: 'Emergency help may be available from local providers. Say it is urgent when you call, and take the safety steps first: close the water valve for a leak, switch off the breaker for a burning smell, and leave the house and call 911 or the gas company from outside if you smell gas.',
   },
   {
-    q: 'How do I know the provider is licensed and insured?',
+    q: 'How do I check that the provider has a license and insurance?',
     a: 'Ask. It is the homeowner’s responsibility to verify that the provider holds any license and insurance the work requires. Ask for proof of insurance and any license number before work starts.',
   },
   {
