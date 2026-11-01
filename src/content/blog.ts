@@ -3,6 +3,122 @@ import type { Post } from './types';
 
 export const posts: Post[] = [
   {
+    slug: 'ice-maker-not-working',
+    image: '/images/blog/ice-maker-not-working.webp',
+    title: 'Refrigerator Ice Maker Not Working? 9 Fixes to Try First',
+    metaTitle: 'Ice Maker Not Working? 9 Fixes to Try First | Temple TX',
+    metaDescription: `Ice maker not making ice, making small cubes or leaking? 9 safe checks in the right order, what each symptom means and when to call. ${phoneDisplay}.`,
+    excerpt:
+      'Most ice makers that stop working have a simple cause: the shutoff arm is up, the freezer is too warm, the filter is clogged or the fill tube has frozen. Here is the order to check them, what each symptom points to and when the fix needs a technician.',
+    published: '2026-11-01',
+    updated: '2026-11-01',
+    service: 'refrigerator',
+    sections: [
+      {
+        id: 'short-version',
+        heading: 'Why is my ice maker not making ice? The quick answer',
+        paragraphs: [
+          'An ice maker needs three things to work: power and the "on" setting, a freezer cold enough to freeze the water, and a steady supply of water. When one of those is missing, ice stops. Check them in this order, because the first checks are free and take seconds:',
+        ],
+        list: [
+          'Make sure the ice maker is switched on and the shutoff arm or bail wire is down.',
+          'Check the freezer temperature. It should read about 0°F.',
+          'Look for a full or jammed ice bin, or cubes frozen together into one block.',
+          'Replace the water filter if it is more than six months old.',
+          'Check that the water supply valve behind the refrigerator is fully open and the line is not kinked.',
+          'Look for ice blocking the fill tube at the back of the ice maker.',
+        ],
+        after: [
+          'If the ice maker is new or was just reconnected, give it up to 24 hours before deciding anything is wrong. GE notes a new icemaker can take that long to get cold enough to make its first batch.',
+        ],
+      },
+      {
+        id: 'nine-fixes',
+        heading: '9 fixes to try before you call',
+        paragraphs: ['Unplug the refrigerator or switch it off before you touch anything behind the bin or near the ice maker head.'],
+        list: [
+          'Turn it on. Many models have an Ice Off button or a switch on the ice maker itself, and it is easy to bump while cleaning. On older styles, a wire arm (bail) that is raised tells the ice maker the bin is full, so it stops.',
+          'Lower the freezer temperature. GE recommends 0°F for the freezer, and its icemaker has to reach about 15°F before a cycle begins. Samsung says the freezer must be 0°F or colder to make ice. A freezer at 10°F can still keep food frozen while the ice maker sits idle.',
+          'Empty and reseat the bin. Remove the bin, break up any clump of cubes and put it back until it clicks into place. A bin that is not seated can stop the ice maker on many door-mounted designs.',
+          'Replace the water filter. Whirlpool recommends a new filter about every six months, sooner with heavy use or poor water. A clogged filter cuts the flow to the ice maker before it slows the water dispenser much.',
+          'Open the supply valve and check the line. The small valve behind the refrigerator or under the sink should be fully open. Look for a kink in the line where the refrigerator was pushed back.',
+          'Thaw a frozen fill tube. Ice in the tube that feeds the mold blocks all water. With the power off, warm the tube gently with a hair dryer on low, keeping it away from wiring and plastic. Do not use a knife or a heat gun.',
+          'Run the test cycle. Samsung ice makers have a Test button: hold it until you hear a chime, which can take up to 10 seconds, and listen for the ice maker to move. Other brands have their own test or reset steps in the owner’s manual.',
+          'Check the water pressure. Samsung lists 20 to 125 psi for its ice makers. If the water dispenser is slow and the cubes come out small or hollow, low pressure or a clogged filter is the usual cause.',
+          'Reset it with the power. Unplug the refrigerator for a couple of minutes and plug it back in. If the control simply locked up, ice should start again within a few hours.',
+        ],
+        after: [
+          'After any change, give it a full day. The freezer has to come back down to temperature, and each batch takes time to freeze. Throw out the first few batches after a filter change or a new install so the line clears.',
+        ],
+      },
+      {
+        id: 'what-symptoms-mean',
+        heading: 'What each ice maker symptom usually means',
+        paragraphs: [
+          'No ice at all, and the water dispenser works. The water reaches the door but not the ice maker, so look at the ice maker itself: it is switched off, the freezer is too warm, the fill tube is frozen, or the ice maker’s own water valve or motor has failed.',
+          'No ice and no water from the dispenser. The problem is upstream: the house supply valve, a kinked line, a clogged filter or a failed water inlet valve on the back of the refrigerator.',
+          'Small, hollow or misshapen cubes. Not enough water reaches the mold. A clogged filter or low pressure is the usual cause, and a partly frozen fill tube can do the same.',
+          'Ice frozen into a solid block. The bin sat too long without being used, the freezer warmed up and refroze (often after a power outage), or water is dripping into the bin from a leaking valve.',
+          'Ice maker makes ice but will not drop it. The cubes freeze but stay in the mold. On many designs, a small heater or a motor releases the cubes, and a failure there needs a part.',
+          'Water leaking or ice forming under the ice maker. A cracked fill tube, an overfilling valve or a refrigerator that is not level can send water where it should not go.',
+          'An error code on the display. Samsung’s 39E and 39C and LG’s Er IF point at the ice maker or its fan. The error code decoder on this site explains the common ones.',
+        ],
+      },
+      {
+        id: 'temple-water',
+        heading: 'Hard water, hot garages and outages in Central Texas',
+        paragraphs: [
+          'Central Texas water often carries minerals, and those minerals build up in filters, inlet valves and the screen where the water line enters the refrigerator. In Temple, Belton and Killeen homes that skip filter changes, a slow ice maker is often the first sign. Changing the filter on schedule protects the valve as well as the taste of the ice.',
+          'Refrigerators in a garage have a harder time. On the hottest summer days the freezer may not get cold enough to make ice, and on a cold winter night the water line can freeze. If the ice maker only stops in July or after a freeze, tell the technician; it narrows the search.',
+          'After a power outage, check the bin. Cubes that melted and refroze into a block should be thrown out, and the ice maker may need a reset before it starts again.',
+        ],
+      },
+      {
+        id: 'when-to-call',
+        heading: 'When an ice maker needs a technician',
+        paragraphs: [
+          'Call when the freezer is at 0°F, the filter is new, the water is on and the ice maker still does nothing after 24 hours. At that point the usual suspects are the water inlet valve, the ice maker module or motor, the fan that cools the ice compartment on door-mounted designs, or a wiring fault in the door hinge. Each one needs testing with a meter, and the inlet valve sits on the back of the refrigerator near live connections.',
+          'Call sooner if water is leaking onto the floor, if the freezer itself is warming up, or if you see frost building inside the ice compartment. Those point to a valve, a defrost or a seal problem that will get worse.',
+        ],
+        after: [
+          'Before you call, write down the brand and model number from the label inside the fresh-food section, whether the water dispenser still works, and any code on the display. Ask the technician whether the fix is a single part or a whole ice maker assembly, and what it will cost before work starts.',
+        ],
+      },
+    ],
+    safety:
+      'Unplug the refrigerator before working near the ice maker or the bin. Keep heat away from wiring and plastic, never chip ice out with a knife or screwdriver, and turn off the water supply before disconnecting any line.',
+    faqs: [
+      {
+        q: 'How long does it take an ice maker to make ice?',
+        a: 'A new or reset ice maker can take up to 24 hours to make its first batch. After that, most make a tray of cubes every few hours, slower when the door is opened often.',
+      },
+      {
+        q: 'Why is my ice maker not making ice but the water works?',
+        a: 'Water reaches the dispenser but not the ice maker, so the cause is at the ice maker: it is switched off, the freezer is too warm, the fill tube is frozen, or its own valve or motor has failed.',
+      },
+      {
+        q: 'Can a clogged water filter stop an ice maker?',
+        a: 'Yes. A clogged filter cuts the flow, which leads to small, hollow cubes or no ice at all. Replace it about every six months, sooner if your water is hard.',
+      },
+      {
+        q: 'How do I reset my refrigerator ice maker?',
+        a: 'It depends on the brand. Many reset by unplugging the refrigerator for a few minutes. Samsung models use a Test button held until a chime. Check the owner’s manual for your model.',
+      },
+      {
+        q: 'Is it worth repairing an ice maker?',
+        a: 'Usually, yes. A valve, a fill tube heater or a replacement ice maker assembly costs far less than a new refrigerator. If the refrigerator is old and also cooling poorly, compare repair against replacement.',
+      },
+    ],
+    sources: [
+      { name: 'GE Appliances: Icemaker not producing ice', url: 'https://products.geappliances.com/appliance/gea-support-search-content?contentId=39364' },
+      { name: 'GE Appliances: New icemaker not producing ice', url: 'https://products.geappliances.com/appliance/gea-support-search-content?contentId=39365' },
+      { name: 'Whirlpool: Ice maker not working troubleshooting', url: 'https://producthelp.whirlpool.com/Refrigeration/Full-Size_Refrigerators/Product_Info/Product_Assistance/Ice_Maker_Not_Working_-_Troubleshooting' },
+      { name: 'Whirlpool: Water dispensing slowly', url: 'https://producthelp.whirlpool.com/Refrigeration/Full-Size_Refrigerators/Ice_and_Water_Concerns/Water_and_Dispenser_Concerns/Water_Dispensing_Slowly' },
+      { name: 'Samsung US: Ice maker not making ice (test button)', url: 'https://www.samsung.com/us/support/troubleshoot/TSG10002387/' },
+      { name: 'Samsung: Water pressure required for the water line', url: 'https://www.samsung.com/hk_en/support/home-appliances/what-is-the-water-pressure-required-for-installing-water-line' },
+    ],
+  },
+  {
     slug: 'refrigerator-not-cooling',
     image: '/images/blog/refrigerator-not-cooling.webp',
     title: 'Refrigerator Not Cooling? What to Check First and When to Call',

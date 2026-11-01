@@ -33,6 +33,7 @@ export async function generateMetadata({ params }: Params) {
 const postTools: Record<string, ToolKey[]> = {
   'repair-or-replace-appliance': ['cost', 'symptoms'],
   'how-often-clean-dryer-vent': ['maintenance', 'symptoms'],
+  'ice-maker-not-working': ['errorCodes', 'symptoms'],
 };
 
 type PostCta = {
@@ -107,6 +108,16 @@ const postCta: Record<string, PostCta> = {
     finalTitle: 'Dishwasher holding water?',
     finalAccent: 'Towels down, then call.',
     finalText: 'Mention the brand, any drain code such as E24, and whether it hums at the end of the cycle. A technician who works on dishwashers can test the pump.',
+  },
+  'ice-maker-not-working': {
+    title: 'Freezer at 0°F, still',
+    accent: 'no ice?',
+    text: 'With the filter new, the water on and a full day gone by, the inlet valve, the ice maker module or its fan is the likely fault. Each can be tested before anything is replaced, so',
+    call: 'call',
+    note: 'Ice maker designs differ between freezer-mounted and door-mounted models. Check your owner’s manual for the reset and test steps, and unplug the refrigerator before reaching near the ice maker.',
+    finalTitle: 'Ice maker quit?',
+    finalAccent: 'Call with the model number.',
+    finalText: 'Say whether the water dispenser still works and whether the cubes are small, missing or stuck. That points a technician straight at the right part.',
   },
 };
 

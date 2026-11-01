@@ -19,6 +19,7 @@ import { VerifyTag } from '@/components/Verify';
 import { CallCard } from '@/components/CallCard';
 import { pageMetadata } from '@/lib/seo';
 import { toolPageList } from '@/content/tools/pages';
+import { posts, postHref } from '@/content/blog';
 
 export const dynamicParams = false;
 
@@ -655,6 +656,13 @@ export default async function ServicePage({ params }: Params) {
               <Link href={routes.cityPage} className="link-arrow">
                 appliance repair in {site.city}
               </Link>
+              {posts
+                .filter((p) => p.service === s.key)
+                .map((p) => (
+                  <Link key={p.slug} href={postHref(p)} className="link-arrow">
+                    {p.title}
+                  </Link>
+                ))}
               {relatedBrands.map((b) => (
                 <Link key={b.key} href={brandHref(b)} className="link-arrow">
                   {b.name} {s.name.toLowerCase()} repair
