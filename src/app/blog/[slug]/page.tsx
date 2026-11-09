@@ -34,6 +34,7 @@ const postTools: Record<string, ToolKey[]> = {
   'repair-or-replace-appliance': ['cost', 'symptoms'],
   'how-often-clean-dryer-vent': ['maintenance', 'symptoms'],
   'ice-maker-not-working': ['errorCodes', 'symptoms'],
+  'stove-burner-not-working': ['symptoms', 'cost'],
 };
 
 type PostCta = {
@@ -119,6 +120,16 @@ const postCta: Record<string, PostCta> = {
     finalAccent: 'Call with the model number.',
     finalText: 'Say whether the water dispenser still works and whether the cubes are small, missing or stuck. That points a technician straight at the right part.',
   },
+  'stove-burner-not-working': {
+    title: 'Cap seated, burner dry,',
+    accent: 'still no flame?',
+    text: 'Then the igniter, spark module, valve or switch needs testing, and those sit near gas or live wiring. Have the chart row that matches your stove ready and',
+    call: 'call',
+    note: 'Gas, propane and electric ranges are built differently. Check your owner’s manual before removing burner parts, and stop if you smell gas or see sparking.',
+    finalTitle: 'Burner still dead?',
+    finalAccent: 'One call, the right part.',
+    finalText: 'Say whether the stove is gas, propane or electric and which row of the chart matches. A technician can test the part before replacing anything.',
+  },
 };
 
 const fallbackCta: PostCta = {
@@ -188,7 +199,7 @@ export default async function PostPage({ params }: Params) {
             </div>
           </nav>
 
-          <div className="max-w-3xl">
+          <div className="min-w-0 max-w-3xl">
             <aside className="flex gap-4 rounded-2xl border border-flame/20 bg-flame-soft p-5">
               <Icon name="shield" className="h-6 w-6 shrink-0 text-flame" />
               <p className="text-[15px] text-ink">
@@ -201,7 +212,83 @@ export default async function PostPage({ params }: Params) {
                 <h2 id={s.id} className="mb-5 font-display text-[30px] font-bold leading-tight tracking-[-0.03em] text-ink">
                   {s.heading}
                 </h2>
+                {s.answer ? (
+                  <div className="not-prose mb-6 rounded-2xl border-l-4 border-flame bg-white p-5 shadow-card">
+                    <p className="text-[12px] font-semibold uppercase tracking-[0.14em] text-flame">Short answer</p>
+                    <p className="mt-1.5 text-[17px] font-medium leading-relaxed text-ink">{s.answer}</p>
+                  </div>
+                ) : null}
+                {s.alert ? (
+                  <div role="note" className="not-prose mb-6 flex gap-3 rounded-2xl border border-[#F4C7C3] bg-[#FDF1F0] p-5 text-[#7A1A12]">
+                    <Icon name="shield" className="mt-0.5 h-5 w-5 shrink-0" strokeWidth={2} />
+                    <p className="text-[15.5px] leading-relaxed">
+                      <strong className="font-semibold">{s.alert.title}</strong> {s.alert.text}
+                    </p>
+                  </div>
+                ) : null}
                 {s.paragraphs?.map((t) => <p key={t.slice(0, 24)}>{t}</p>)}
+                {s.table ? (
+                  <div className="mt-6 overflow-x-auto rounded-2xl border border-sand bg-white">
+                    <table className="w-full min-w-[560px] text-left text-[15px]">
+                      <caption className="sr-only">{s.table.caption}</caption>
+                      <thead className="bg-canvas text-[12px] uppercase tracking-[0.12em] text-ink-muted">
+                        <tr>
+                          {s.table.head.map((h) => (
+                            <th key={h} scope="col" className="px-4 py-3 font-semibold">
+                              {h}
+                            </th>
+                          ))}
+                        </tr>
+                      </thead>
+                      <tbody className="divide-y divide-sand/70">
+                        {s.table.rows.map((r) => (
+                          <tr key={r[0]} className="align-top">
+                            {r.map((c, ci) =>
+                              ci === 0 ? (
+                                <th key={ci} scope="row" className="px-4 py-3 font-semibold text-ink">
+                                  {c}
+                                </th>
+                              ) : (
+                                <td key={ci} className="px-4 py-3 text-ink-body">
+                                  {c}
+                                </td>
+                              ),
+                            )}
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                ) : null}
+                {s.steps ? (
+                  <ol className="not-prose mt-6 grid gap-3">
+                    {s.steps.map((st, i) => (
+                      <li key={st.title} className="flex gap-4 rounded-2xl border border-sand bg-white p-5">
+                        <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-ink font-display text-[15px] font-bold text-white">{i + 1}</span>
+                        <span>
+                          <span className="block font-display text-[18px] font-semibold text-ink">{st.title}</span>
+                          <span className="mt-1 block text-[15.5px] leading-relaxed text-ink-body">{st.text}</span>
+                        </span>
+                      </li>
+                    ))}
+                  </ol>
+                ) : null}
+                {s.compare ? (
+                  <div className="not-prose mt-6 grid gap-3">
+                    {s.compare.map((c) => (
+                      <div key={c.myth} className="grid overflow-hidden rounded-2xl border border-sand bg-white sm:grid-cols-2">
+                        <p className="border-b border-sand p-5 text-[15px] text-ink-body sm:border-b-0 sm:border-r">
+                          <span className="mb-1 block text-[12px] font-semibold uppercase tracking-[0.14em] text-ink-muted">Myth</span>
+                          {c.myth}
+                        </p>
+                        <p className="bg-mint-soft/60 p-5 text-[15px] text-ink">
+                          <span className="mb-1 block text-[12px] font-semibold uppercase tracking-[0.14em] text-mint">Fact</span>
+                          {c.fact}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                ) : null}
                 {s.list ? (
                   <ul>
                     {s.list.map((t) => (

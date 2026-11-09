@@ -3,6 +3,181 @@ import type { Post } from './types';
 
 export const posts: Post[] = [
   {
+    slug: 'stove-burner-not-working',
+    image: '/images/blog/stove-burner-not-working.webp',
+    title: 'Stove Burner Not Working? A Diagnosis Chart for Gas and Electric Stoves',
+    metaTitle: 'Stove Burner Not Working? Gas & Electric Fixes | Temple TX',
+    metaDescription: `Gas burner clicking but not lighting, a weak yellow flame, or an electric coil that stays cold? Find the cause in one chart, then the safe fix. ${phoneDisplay}.`,
+    excerpt:
+      'Start with the chart: find your stove type and what the burner is doing, and it points to the likely cause and whether the fix is yours or a technician’s. Step-by-step checks for gas and electric burners follow.',
+    published: '2026-11-09',
+    updated: '2026-11-09',
+    service: 'oven',
+    sections: [
+      {
+        id: 'diagnosis-chart',
+        heading: 'Why is my stove burner not working?',
+        answer:
+          'On a gas stove, a burner that clicks but will not light is usually a burner cap that is out of place, a wet or dirty igniter, or clogged burner ports. On an electric stove, a cold burner is usually a burned-out element or a loose connection, which a simple swap test can tell apart.',
+        paragraphs: ['Find the row that matches what you see. The last column tells you whether the fix is a homeowner check or a technician job.'],
+        table: {
+          caption: 'Stove burner symptoms, likely causes and who fixes them',
+          head: ['What you see', 'Stove type', 'Most likely cause', 'Who fixes it'],
+          rows: [
+            ['Clicks, no flame', 'Gas', 'Burner cap out of place, water under the cap, or a dirty igniter', 'You, usually'],
+            ['Keeps clicking after it lights', 'Gas', 'Moisture after cleaning, or a knob not turned fully', 'You, usually'],
+            ['No click on any burner', 'Gas', 'No power to the range, cooktop lock on, or a failed spark module', 'Check power first, then a technician'],
+            ['Yellow, orange or uneven flame', 'Gas', 'Clogged burner ports or a misaligned cap; on propane, wrong orifices', 'Ports: you. Orifices: a technician'],
+            ['Weak or lifting flame', 'Gas', 'Low gas pressure, or a range never converted for propane', 'A technician'],
+            ['One coil stays cold', 'Electric coil', 'Burned-out element or a worn receptacle', 'Element: you. Receptacle: a technician'],
+            ['Coil stuck on high', 'Electric coil', 'Failed burner switch', 'A technician'],
+            ['Glass-top zone will not heat', 'Electric smooth top', 'Failed radiant element, limiter or switch', 'A technician'],
+            ['Cracked glass top', 'Electric smooth top', 'Damaged glass', 'Stop using it; a technician'],
+          ],
+        },
+      },
+      {
+        id: 'gas-clicking',
+        heading: 'Gas burner clicking but not lighting: 5 checks in order',
+        alert: {
+          title: 'Smell gas?',
+          text: 'Stop here. Do not light anything or flip switches. Leave the house and call 911 or your gas company from outside.',
+        },
+        paragraphs: ['Turn every knob off and let the burner cool before each check.'],
+        steps: [
+          {
+            title: 'Reseat the burner cap',
+            text: 'Lift the cap off and set it back so it sits flat and level on the burner base. Whirlpool notes the cap has to sit on the base for the burner to light. On many models, small pins on the base line up with notches in the cap.',
+          },
+          {
+            title: 'Dry it out',
+            text: 'A boil-over or a fresh cleaning can leave water under the cap or on the igniter. Remove the cap, pat the parts dry and let them air-dry for a few hours before trying again.',
+          },
+          {
+            title: 'Clean the igniter tip',
+            text: 'Food and grease on the small ceramic igniter weaken the spark. Wipe it gently with a dry toothbrush. Do not wet it or bend it.',
+          },
+          {
+            title: 'Clear the burner ports',
+            text: 'With the burner off and cool, open clogged ports with a straight pin or small-gauge wire, as Amana and Haier advise. Do not use a toothpick; it can break off inside a port.',
+          },
+          {
+            title: 'Check the cooktop lock and the gas line',
+            text: 'Many ranges have a cooktop lock: with it on, the igniter clicks but the burner will not light. If the gas was just turned back on after service, light one burner first so the air clears from the line.',
+          },
+        ],
+        after: [
+          'If one burner sparks well and lights while another sparks weakly or not at all, the problem is that burner’s igniter or wire. If none of the burners click, check that the range is plugged in and the breaker is on before anything else.',
+        ],
+      },
+      {
+        id: 'gas-flame',
+        heading: 'What a yellow or weak gas flame means',
+        paragraphs: [
+          'A healthy burner flame is mostly blue with even little cones all the way around the burner. Yellow or orange tips, a ragged ring or a flame that lifts off the burner tell you the gas is not burning cleanly.',
+          'Clean ports and a properly seated cap fix most uneven flames. A flame that stays yellow after cleaning should not be ignored: incomplete burning wastes gas and can produce carbon monoxide.',
+          'Many homes outside Temple, in Salado, Troy and rural Bell County, run on propane. A range set up for natural gas burns propane with tall yellow flames, and a range set up for propane runs natural gas with small, weak flames. If the flame changed after a move or a new range was installed, ask whether it was converted. Conversion means changing orifices and settings, which is a job for a technician.',
+        ],
+      },
+      {
+        id: 'electric-coil',
+        heading: 'Electric coil burner not heating: the swap test',
+        paragraphs: ['This test tells you in two minutes whether the coil itself failed or the problem is behind it.'],
+        steps: [
+          {
+            title: 'Turn everything off and let it cool',
+            text: 'Make sure every knob is off and the coils are cool to the touch.',
+          },
+          {
+            title: 'Swap the coils',
+            text: 'Unplug the cold coil from its socket and a working coil of the same size from another position, then trade places. Push each one straight in until it seats firmly.',
+          },
+          {
+            title: 'Read the result',
+            text: 'If the cold coil stays cold in the new spot, the coil is burned out, and a matching replacement fixes it. If the working coil goes cold in the old spot, the socket (receptacle) or the switch is the problem.',
+          },
+        ],
+        after: [
+          'Look closely at the coil too. Blisters, a bulge or a break in the metal mean it is done. Newer coil elements have a small sensor in the center; Frigidaire advises checking that it springs back up when pressed, because a stuck sensor keeps the coil from heating fully. A burned, black socket or a coil stuck on high both point to parts that sit next to live wiring, so leave those to a technician.',
+        ],
+      },
+      {
+        id: 'glass-top',
+        heading: 'Smooth glass cooktop zone not heating',
+        paragraphs: [
+          'Radiant elements sit under the glass, so there is no swap test. First confirm the cooktop lock is off and try the zone with a pan that sits flat. If the hot surface light comes on but the zone stays cold, or a zone glows but barely heats, the element, its temperature limiter or the control switch has likely failed.',
+          'If the glass is cracked, stop using that cooktop. Spills can reach the wiring through a crack, and the glass can break further when heated.',
+        ],
+      },
+      {
+        id: 'myths',
+        heading: 'Stove burner myths to skip',
+        compare: [
+          {
+            myth: 'Spraying cleaner on the igniter clears it faster.',
+            fact: 'Liquid on the igniter is a common reason it stops sparking. Clean it dry and let it air-dry after any spill.',
+          },
+          {
+            myth: 'A toothpick is the safe way to clear burner ports.',
+            fact: 'Wood can snap off inside a port. A straight pin or small-gauge wire is the usual advice.',
+          },
+          {
+            myth: 'A yellow flame is normal on an older stove.',
+            fact: 'Age is not the cause. Dirty ports, a misaligned cap or the wrong orifices are, and a flame that stays yellow should be checked.',
+          },
+          {
+            myth: 'A dead coil means a new stove.',
+            fact: 'A coil element is one of the simplest parts to replace. Do the swap test before you shop for a range.',
+          },
+        ],
+      },
+      {
+        id: 'when-to-call',
+        heading: 'When a stove burner needs a technician',
+        paragraphs: [
+          'Call when the cap is seated, the burner is dry and clean and it still will not light; when no burner clicks even with power on; when a gas flame stays yellow or lifts after cleaning; or when an electric position stays cold with a known-good coil. Spark modules, igniter wires, gas valves, receptacles and switches all sit inside the range near gas or live wiring.',
+          'Many stove repairs come down to one inexpensive part, and gas and electric ranges often last 13 years or more, so a burner problem alone is rarely a reason to replace the whole range.',
+        ],
+        after: [
+          'Before you call, note whether the stove is gas, propane or electric, the brand and model number (usually on a tag inside the oven door frame or behind the storage drawer), which burner is affected and what you see from the chart above.',
+        ],
+      },
+    ],
+    safety:
+      'Turn every knob off and let the cooktop cool before any check. Unplug the range or switch off its breaker before touching a coil socket. If you smell gas, leave the house and call 911 or your gas company from outside.',
+    faqs: [
+      {
+        q: 'Why is my gas stove clicking but not lighting?',
+        a: 'Most often the burner cap is out of place, water got under the cap or onto the igniter, or the burner ports are clogged. Reseat the cap, dry the parts and clear the ports before calling.',
+      },
+      {
+        q: 'Why does my stove keep clicking after the burner lights?',
+        a: 'Usually moisture from cooking or cleaning, or a knob that is not turned fully past the light setting. Let the burner dry for a few hours. Constant clicking with everything dry points to a switch.',
+      },
+      {
+        q: 'How do I know if a coil burner is bad?',
+        a: 'Swap it with a working coil of the same size. If the problem moves with the coil, the coil failed. If it stays in the same spot, the socket or switch is at fault.',
+      },
+      {
+        q: 'Is a yellow flame on a gas stove dangerous?',
+        a: 'It means the gas is not burning cleanly. Clean the ports and reseat the cap. If it stays yellow, have it checked, because incomplete burning can produce carbon monoxide.',
+      },
+      {
+        q: 'Can I still use the other burners if one is not working?',
+        a: 'Usually yes, as long as there is no gas smell, no sparking and no cracked glass. If there is, stop using the stove until it is checked.',
+      },
+    ],
+    sources: [
+      { name: 'Whirlpool: Gas burners are clicking but not lighting', url: 'https://producthelp.whirlpool.com/Cooking/Cooktops/Product_Info/Cooktop_Product_Assistance/Gas_Burners_are_Clicking_but_Not_Lighting' },
+      { name: 'Whirlpool: Clicking or ticking, gas and dual fuel range', url: 'https://producthelp.whirlpool.com/Cooking/Wall_Ovens_and_Ranges/Gas_and_Dual_Fuel_Range/Noise/Gas_Cooktop/Clicking_or_Ticking_-_Gas_and_Dual_Fuel_Range' },
+      { name: 'KitchenAid: Clicking or ticking, gas range', url: 'https://producthelp.kitchenaid.com/Cooking/Wall_Ovens_and_Ranges/Ranges/Noise/Cooktop/Gas_Cooktop/Clicking_or_Ticking_-_Gas_Range' },
+      { name: 'Amana: Surface burner flames too high, too low, uneven or yellow', url: 'https://producthelp.amana.com/Cooking/Wall_Ovens_and_Ranges/Gas_and_Dual_Fuel_Range/Burner_Concerns/Flames_Concerns/Surface_burner_flames_too_high%2C_too_low%2C_uneven%2C_yellow_and%2F%2For_noisy_-_Gas_and_Dual_Fuel_Range' },
+      { name: 'Haier Appliances: Yellow or uneven gas burner flame', url: 'https://www.haierappliances.com/support/support-content/34835' },
+      { name: 'Frigidaire: Ranges, no heating', url: 'https://owner.frigidaire.com/support-articles/article/1819544-ranges-no-heating' },
+      { name: 'Atmos Energy: Recognizing a natural gas leak', url: 'https://atmosenergy.com/safety/recognizing-leak' },
+    ],
+  },
+  {
     slug: 'ice-maker-not-working',
     image: '/images/blog/ice-maker-not-working.webp',
     title: 'Refrigerator Ice Maker Not Working? 9 Fixes to Try First',

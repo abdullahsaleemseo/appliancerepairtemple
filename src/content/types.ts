@@ -81,10 +81,21 @@ export type Service = {
   blocks?: ServiceBlock[];
 };
 
+/**
+ * A blog section. Every field but id and heading is optional, so a post can mix formats:
+ * plain paragraphs and lists, a short-answer box, a table, numbered steps, myth and fact pairs,
+ * or a safety alert. Blocks render in the order listed here.
+ */
 export type Section = {
   id: string;
   heading: string;
+  /** One- or two-sentence direct answer shown in a box above the section body. */
+  answer?: string;
+  alert?: { title: string; text: string };
   paragraphs?: string[];
+  table?: { caption: string; head: string[]; rows: string[][] };
+  steps?: { title: string; text: string }[];
+  compare?: { myth: string; fact: string }[];
   list?: string[];
   after?: string[];
 };

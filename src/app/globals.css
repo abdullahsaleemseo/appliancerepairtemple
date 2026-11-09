@@ -91,19 +91,20 @@
     background-image: radial-gradient(rgba(255, 255, 255, 0.09) 1px, transparent 1px);
     background-size: 22px 22px;
   }
-  .prose-copy p {
+  /* Prose styles skip anything inside .not-prose, for blocks with their own styles (answer boxes, steps, myth and fact). */
+  .prose-copy p:not(.not-prose *) {
     @apply mt-4 text-[17px] leading-[1.75] text-ink-body;
   }
-  .prose-copy p:first-child {
+  .prose-copy p:first-child:not(.not-prose *) {
     @apply mt-0;
   }
-  .prose-copy ul {
+  .prose-copy ul:not(.not-prose *) {
     @apply mt-4 space-y-2.5;
   }
-  .prose-copy li {
+  .prose-copy li:not(.not-prose *) {
     @apply relative pl-7 text-[17px] text-ink-body;
   }
-  .prose-copy li::before {
+  .prose-copy li:not(.not-prose *)::before {
     content: '';
     @apply absolute left-1 top-[0.62em] h-2 w-2 rotate-45 rounded-[2px] bg-flame;
   }
