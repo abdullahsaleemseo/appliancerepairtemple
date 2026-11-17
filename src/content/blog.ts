@@ -3,6 +3,150 @@ import type { Post } from './types';
 
 export const posts: Post[] = [
   {
+    slug: 'microwave-not-heating',
+    image: '/images/blog/microwave-not-heating.webp',
+    title: 'Microwave Running but Not Heating? The 1-Minute Water Test and What It Tells You',
+    metaTitle: 'Microwave Not Heating? The 1-Minute Water Test | Temple TX',
+    metaDescription: `Microwave runs, light on, turntable spinning, food still cold? Do the 1-minute water test, rule out 5 simple causes, then see which part failed. ${phoneDisplay}.`,
+    excerpt:
+      'A microwave that runs but stays cold has either a setting problem you can fix in a minute or a failed high-voltage part that needs a technician. One cup of water tells you which, and this guide explains what to do after.',
+    published: '2026-11-17',
+    updated: '2026-11-17',
+    service: 'microwave',
+    sections: [
+      {
+        id: 'quick-answer',
+        heading: 'Why is my microwave running but not heating?',
+        answer:
+          'If the light, fan and turntable work but food stays cold, the part that makes heat is not getting power or has failed. Rule out demo mode, a low power setting and a generator first. If those are fine, a door switch, a thermal fuse, the high-voltage diode or the magnetron is the usual cause.',
+        paragraphs: [
+          'The light, fan and turntable run on ordinary household power. The heat comes from the magnetron, which runs on a separate high-voltage circuit. That is why a microwave can look completely normal and still not warm anything. The question is whether something is switching that circuit off or a part in it has failed.',
+        ],
+      },
+      {
+        id: 'water-test',
+        heading: 'The 1-minute water test',
+        paragraphs: ['Whirlpool’s troubleshooting uses this test, and it works on any brand. It takes two minutes and gives you a clear yes or no.'],
+        steps: [
+          {
+            title: 'Fill a microwave-safe cup',
+            text: 'Pour about 1 cup (250 mL) of tap water into a glass or ceramic cup with no metal trim. Feel the water so you know how cold it starts.',
+          },
+          {
+            title: 'Heat it on full power for 1 minute',
+            text: 'Set the cup on the turntable, choose High or 100% power and run it for one minute. Make sure no lower power level is left from the last use.',
+          },
+          {
+            title: 'Check the result',
+            text: 'Warm water means the microwave is heating, and the problem is the setting, the food or the container. Water exactly as cold as it started means the microwave is not producing heat.',
+          },
+        ],
+        after: [
+          'Warm but weaker than it used to be? That often points to a magnetron that is wearing out, especially on a microwave more than 8 years old.',
+        ],
+      },
+      {
+        id: 'simple-causes',
+        heading: 'Five simple causes to rule out first',
+        list: [
+          'Demo mode. Many microwaves have a showroom mode that runs the timer, light and turntable without heating. Check the display for "DEMO" or "D" and look up how to turn it off in the owner’s manual.',
+          'Power level. A microwave left at 10% or 30% power warms very slowly. Press Power or Power Level and set it back to High.',
+          'Control lock. A padlock icon, "LOC" or "L" on the display means the child lock is on. Most models unlock by holding Cancel or Start for a few seconds.',
+          'Generator or inverter power. Whirlpool notes that a generator or inverter may run the lights and controls but not the heating circuit. After a storm, test it again on normal power.',
+          'A quick power reset. Switch the breaker off for a minute, then back on. It clears a confused control without affecting anything else.',
+        ],
+      },
+      {
+        id: 'symptom-table',
+        heading: 'Still cold? What the symptoms point to',
+        table: {
+          caption: 'Microwave symptoms and the part that usually causes them',
+          head: ['What you notice', 'Likely cause', 'Worth repairing?'],
+          rows: [
+            ['Runs normally, water stays cold, sounds normal', 'Failed high-voltage diode, magnetron or capacitor', 'Often on built-in and over-the-range models'],
+            ['Runs, no heat, loud hum or buzz', 'Shorted diode or a failing magnetron', 'Depends on age and type'],
+            ['Heats weakly, takes twice as long', 'Magnetron wearing out', 'Compare with the price of a new unit'],
+            ['Nothing happens when you press Start', 'Door switch or door latch not closing fully', 'Usually yes, a small part'],
+            ['Display works, no light or fan', 'Thermal fuse or a blown internal fuse', 'Usually yes'],
+            ['Stops partway through heating', 'Overheating from a blocked vent, or a thermal cutoff', 'Clear the vents first'],
+            ['Sparks or arcing inside', 'Metal in the cavity, burned food, or a damaged waveguide cover', 'Stop using it until checked'],
+          ],
+        },
+        paragraphs: [
+          'On over-the-range microwaves, check the vent grille at the top too. A clogged grease filter and blocked vents make the unit run hot and shut off, which can look like a heating problem.',
+        ],
+      },
+      {
+        id: 'do-not-open',
+        heading: 'Why the cover stays on',
+        alert: {
+          title: 'High voltage inside.',
+          text: 'Parts inside a microwave can hold a dangerous electric charge even after it is unplugged. Do not remove the outer cover or reach inside the cabinet.',
+        },
+        paragraphs: [
+          'Everything in the table above, from door switches to the magnetron, sits behind the cover next to the high-voltage capacitor. Testing those parts safely takes the right tools and a known discharge procedure, so this is one appliance where every repair past the settings belongs to a technician.',
+          'Look at the door as well. The FDA advises against using a microwave whose door does not close firmly or is bent, warped or damaged, and to stop using one at once if it keeps running with the door open.',
+        ],
+      },
+      {
+        id: 'repair-or-replace',
+        heading: 'Repair or replace a microwave?',
+        paragraphs: [
+          'Most microwaves last about 8 to 10 years. The type of microwave usually decides the answer:',
+        ],
+        list: [
+          'Small countertop microwave: a magnetron or control board repair can cost close to a new unit. If it is more than a few years old, replacement usually makes more sense. A door switch or fuse is still worth fixing.',
+          'Over-the-range microwave: it also works as the range hood fan and light, and replacing it means removing it from the wall and cabinet. Repair is often the better value.',
+          'Built-in or drawer microwave: built into the cabinets and usually higher-end, so repair is almost always worth pricing first.',
+        ],
+        after: [
+          'Ask the technician to confirm which part failed before you decide, and to tell you the price of the repair before any work starts.',
+        ],
+      },
+      {
+        id: 'when-to-call',
+        heading: 'When to call a technician',
+        paragraphs: [
+          'Call when the water test comes back cold with demo mode, power level, control lock and power source ruled out; when it heats only weakly; when it buzzes loudly or sparks; or when the door does not latch properly. In Temple and across Bell County, over-the-range and built-in models make up most microwave repair calls, because those are the ones worth fixing.',
+        ],
+        after: [
+          'Before you call, note the brand, the model number (usually on a label inside the door frame or on the back), whether it is countertop, over-the-range or built-in, and what the water test showed.',
+        ],
+      },
+    ],
+    safety:
+      'Never run a microwave empty, and never remove its outer cover: parts inside can hold a dangerous charge after it is unplugged. Stop using it if it sparks, smells burnt, or runs with the door open.',
+    faqs: [
+      {
+        q: 'Why is my microwave running but not heating?',
+        a: 'Check for demo mode, a low power level, the control lock or generator power first. If the water test still comes back cold, a door switch, thermal fuse, high-voltage diode or the magnetron has usually failed.',
+      },
+      {
+        q: 'How do I test if my microwave is heating?',
+        a: 'Heat about 1 cup of water on full power for one minute. Warm water means it is heating. Water as cold as it started means it is not producing heat.',
+      },
+      {
+        q: 'Can I fix a microwave that is not heating myself?',
+        a: 'You can fix setting problems such as demo mode, power level and the control lock. Anything inside the cabinet should be left to a technician, because parts can hold a dangerous charge after unplugging.',
+      },
+      {
+        q: 'Is it worth fixing a microwave that will not heat?',
+        a: 'Usually yes for over-the-range and built-in models. For a small countertop microwave more than a few years old, a magnetron repair often costs close to a new one.',
+      },
+      {
+        q: 'Why did my microwave stop heating after a storm?',
+        a: 'If it runs on a generator or inverter, the lights and controls may work while the heating circuit does not. Test it again on normal power, and reset the breaker if needed.',
+      },
+    ],
+    sources: [
+      { name: 'Whirlpool: Microwave is not heating, countertop microwave', url: 'https://producthelp.whirlpool.com/Cooking/Microwaves/Countertop_Microwave/Operation/Not_Heating/Microwave_is_Not_Heating_-_Countertop_Microwave' },
+      { name: 'Whirlpool: Not heating, has power, over-the-range microwave', url: 'https://producthelp.whirlpool.com/Cooking/Microwaves/Over-the-Range_Microwave/Operation/Not_Heating_or_Operating/Not_Heating_-_Has_Power_-_Over-the-Range_Microwave' },
+      { name: 'Whirlpool: Not heating, built-in microwave', url: 'https://producthelp.whirlpool.com/Cooking/Microwaves/Built-In_Microwave/Operation/Not_Heating/Not_Heating_-_Built-In_Microwave' },
+      { name: 'FDA: Microwave oven radiation (archived)', url: 'https://public4.pagefreezer.com:443/content/FDA/02-11-2021T10:11/https://www.fda.gov/node/361839' },
+      { name: 'Health Physics Society: Microwave ovens', url: 'https://hps.org/hpspublications/articles/microwaveovens.html' },
+    ],
+  },
+  {
     slug: 'stove-burner-not-working',
     image: '/images/blog/stove-burner-not-working.webp',
     title: 'Stove Burner Not Working? A Diagnosis Chart for Gas and Electric Stoves',

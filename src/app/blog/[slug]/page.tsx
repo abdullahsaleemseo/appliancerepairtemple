@@ -35,6 +35,7 @@ const postTools: Record<string, ToolKey[]> = {
   'how-often-clean-dryer-vent': ['maintenance', 'symptoms'],
   'ice-maker-not-working': ['errorCodes', 'symptoms'],
   'stove-burner-not-working': ['symptoms', 'cost'],
+  'microwave-not-heating': ['cost', 'symptoms'],
 };
 
 type PostCta = {
@@ -129,6 +130,16 @@ const postCta: Record<string, PostCta> = {
     finalTitle: 'Burner still dead?',
     finalAccent: 'One call, the right part.',
     finalText: 'Say whether the stove is gas, propane or electric and which row of the chart matches. A technician can test the part before replacing anything.',
+  },
+  'microwave-not-heating': {
+    title: 'Water test',
+    accent: 'came back cold?',
+    text: 'With demo mode, power level and the lock ruled out, the fault is behind the cover, where only a technician should work. Say what the water test showed and',
+    call: 'call',
+    note: 'Microwave controls differ by brand. Check your owner’s manual for demo mode and the control lock, and never remove the outer cover.',
+    finalTitle: 'Microwave still cold?',
+    finalAccent: 'Leave the cover on.',
+    finalText: 'Mention whether it is countertop, over-the-range or built-in and what the water test showed. A technician can tell you if the repair is worth it.',
   },
 };
 
