@@ -3,6 +3,236 @@ import type { Post } from './types';
 
 export const posts: Post[] = [
   {
+    slug: 'washer-not-spinning',
+    image: '/images/blog/washer-not-spinning.webp',
+    title: 'Washer Not Spinning? Why It Happens, What to Check First and When to Call',
+    metaTitle: 'Washer Not Spinning? 8 Causes and What to Check | Temple TX',
+    metaDescription: `Washer stops before spin, spins slowly or leaves clothes soaking? Match the pattern, fix an unbalanced load in 3 minutes and read your error code. ${phoneDisplay}.`,
+    excerpt:
+      'A washer that will not spin is protecting itself more often than it is broken. Water left in the drum, an unbalanced load, a lid or door that will not lock, or too many suds all stop the spin on purpose. This guide shows how to tell those apart from a worn belt, coupler or motor.',
+    published: '2026-11-20',
+    updated: '2026-11-20',
+    service: 'washer',
+    sections: [
+      {
+        id: 'quick-answer',
+        heading: 'Why is my washer not spinning?',
+        answer:
+          'Most washers stop the spin on purpose when something is not right: water is still in the drum, the load is off balance, the lid or door has not locked, or there are too many suds. If none of those apply, a worn drive belt, a broken motor coupler, the lid switch or door lock, or the motor itself is the usual cause.',
+        paragraphs: [
+          'Before a washer spins, it runs through a short checklist. The drum has to be drained, the lid or door has to be locked, the load has to be balanced closely enough that the tub will not bang into the cabinet, and the control has to see the motor reach speed. If any check fails, the control slows the spin, tries again or stops and shows a code.',
+          'That is why a washer that will not spin is often working exactly as designed. The useful question is which check failed. The water level, the noises it makes and any code on the display tell you, and most of the answers take a few minutes to confirm without tools.',
+        ],
+      },
+      {
+        id: 'water-in-drum',
+        heading: 'First question: is there still water in the drum?',
+        paragraphs: [
+          'A washer will not spin a drum full of water. The pump has to empty it first, so a drain problem shows up as a spin problem. If you open the lid or door at the end of a cycle and see standing water, start with the drain, not the spin.',
+        ],
+        list: [
+          'Check the drain hose behind the washer for a kink, especially if the washer was pushed back recently.',
+          'Look for a sock or small item caught in the pump filter. On most front-load washers the filter sits behind a small door at the bottom front. Put towels down first; water will come out.',
+          'Make sure the house drain or standpipe is not backing up. If the standpipe overflows when the washer pumps, the clog is in the house drain, not the washer.',
+          'Watch for drain codes: 5C or 5E on Samsung, OE on LG, F9 E1 or Ld on Whirlpool and Maytag, E21 on Frigidaire and Electrolux.',
+        ],
+        after: [
+          'If the drum is empty at the end of the cycle and the clothes are still soaking, the drain is fine and the problem is in the spin itself. Keep reading.',
+        ],
+      },
+      {
+        id: 'match-the-pattern',
+        heading: 'Match what your washer is doing',
+        paragraphs: ['The way a washer fails to spin narrows the cause quickly. Find the row closest to what you see.'],
+        table: {
+          caption: 'Washer spin problems: what you see, the likely cause and who fixes it',
+          head: ['What you see', 'Likely cause', 'Who fixes it'],
+          rows: [
+            ['Water left in the drum, no spin', 'Clogged pump filter, kinked hose or failed drain pump', 'Filter and hose: you. Pump: a technician'],
+            ['Starts to spin, slows, tries again, then stops', 'Unbalanced load, or the washer is not level', 'You, usually'],
+            ['Spins slowly, clothes come out dripping', 'Overloaded drum, too many suds, or a slipping belt', 'Load and detergent: you. Belt: a technician'],
+            ['Drum empty, motor hums, drum does not turn', 'Broken motor coupler, worn belt or seized pulley', 'A technician'],
+            ['Lid lock clicks over and over, no spin', 'Lid not fully closed, or a failing lid lock or switch', 'Check the lid, then a technician'],
+            ['Front-load door will not lock, no spin', 'Door latch, door lock or something caught in the door', 'Check the door, then a technician'],
+            ['Grinding or roaring before it quits', 'Worn tub bearings or a damaged drive part', 'A technician'],
+            ['Nothing happens at the spin step, no code', 'Control board, motor control or wiring', 'A technician'],
+          ],
+        },
+      },
+      {
+        id: 'unbalanced-fix',
+        heading: 'Unbalanced load: the 3-minute fix',
+        paragraphs: [
+          'An off-balance load is the single most common reason a washer will not finish spinning. Samsung’s UB and UE codes and LG’s UE code mean exactly this: the control sensed the drum wobbling and stopped the spin for safety. Whirlpool, Maytag, Amana and Kenmore top-loaders often show uL.',
+        ],
+        steps: [
+          {
+            title: 'Pause and wait for the drum to stop',
+            text: 'Press Pause or Cancel and wait until the drum stops completely. The lid or door stays locked until it does; do not force it.',
+          },
+          {
+            title: 'Spread the load out',
+            text: 'Untangle sheets and pull apart anything wrapped around itself. On a top-loader, push clothes evenly around the drum instead of piling them on one side.',
+          },
+          {
+            title: 'Fix the load size',
+            text: 'Take a few items out of an overloaded drum. For a very small load, such as one pair of jeans or a single bathrobe, add two or three towels so the weight spreads evenly. LG suggests the same.',
+          },
+          {
+            title: 'Run Drain and Spin',
+            text: 'Select Drain and Spin or Spin Only and run it. If it spins up normally now, the load was the problem, not the washer.',
+          },
+        ],
+        after: [
+          'Wash bulky items like comforters, rugs and dog beds on their own, on the Bulky or Bedding cycle. A waterproof mattress cover or a single heavy rug is almost guaranteed to throw a drum off balance.',
+        ],
+      },
+      {
+        id: 'level-and-bolts',
+        heading: 'Level the washer and check for shipping bolts',
+        paragraphs: [
+          'An unlevel washer reads as an unbalanced load on every cycle. Put a level on the top of the washer, front to back and side to side, and press on each corner. If it rocks, adjust the front feet until all four sit firmly on the floor, then tighten the lock nuts against the cabinet so the feet cannot creep. Samsung also advises against setting a washer on a stand or trolley it was not designed for.',
+          'If the washer was just installed or moved, check the back for shipping bolts. Front-load washers ship with long bolts that lock the tub in place for transport. Left in, they make the washer shake violently and refuse to spin. The owner’s manual shows where they are; they come out with a wrench and the holes take plastic caps.',
+          'Moves are common across Bell County, especially between Killeen, Harker Heights and Temple, and a washer that worked fine before a move and shakes or stops spinning after it usually has a bolt still in, a foot out of level or a hose kinked behind it.',
+        ],
+      },
+      {
+        id: 'lid-and-door',
+        heading: 'Lid locks, door locks and switches',
+        alert: {
+          title: 'Never bypass a lid switch or door lock.',
+          text: 'Taping down a switch or wedging a latch lets the drum spin with the lid open, which can injure hands and arms. If the lock does not work, the fix is the part, not a workaround.',
+        },
+        paragraphs: [
+          'Every washer refuses to spin unless it knows the lid or door is shut and locked. On top-loaders, a lid switch or lid lock does this job; on front-loaders, a door lock with a small motor or solenoid. When the lock does not engage, the washer may fill and wash normally and then stop before the spin.',
+          'Check the simple things first. Make sure nothing is caught in the lid or door, such as a sleeve or a towel corner. On front-loaders, look for clothing pressed against the door seal. Close the lid or door firmly, unplug the washer for about five minutes, as Whirlpool suggests, and then try a spin cycle again.',
+          'Codes that point here include dC, dE or dE1 on Samsung, dE on LG, F5 E2 on Whirlpool and Maytag front-loaders and E41 on Frigidaire and Electrolux. Repeated clicking from the lid lock with no spin is another sign. A lock or switch that still will not engage after a reset needs testing with a meter, and that means taking off panels near wiring.',
+        ],
+      },
+      {
+        id: 'brand-codes',
+        heading: 'Spin-related error codes by brand',
+        paragraphs: ['Codes vary by model and year, so check the owner’s manual too. These are the common ones that stop a spin.'],
+        table: {
+          caption: 'Washer error codes that stop the spin cycle, by brand',
+          head: ['Brand', 'Unbalanced', 'Door or lid', 'Drain', 'Suds', 'Motor'],
+          rows: [
+            ['Samsung', 'UB, UE', 'dC, dE, dE1', '5C, 5E, nd', 'Sd, SUd', '3C, 3E'],
+            ['LG', 'UE', 'dE', 'OE', 'SUD', 'LE, CE'],
+            ['Whirlpool, Maytag (front-load)', 'See manual', 'F5 E2', 'F9 E1', 'See manual', 'F7 E1'],
+            ['Whirlpool, Maytag, Amana, Kenmore (top-load)', 'uL', 'See manual', 'Ld', 'Sd', 'See manual'],
+            ['Frigidaire, Electrolux', 'See manual', 'E41', 'E21', 'See manual', 'See manual'],
+          ],
+        },
+        after: [
+          'The free error code decoder on this site explains each of these, with safe first checks and when to stop using the washer.',
+        ],
+      },
+      {
+        id: 'suds',
+        heading: 'Too many suds can stop the spin',
+        paragraphs: [
+          'High-efficiency washers use very little water. Regular detergent, or too much HE detergent, makes foam that the washer cannot spin through. The control senses the suds, adds rinses or slows the spin, and you get a long cycle that ends with wet clothes. Samsung shows Sd or SUd, LG shows SUD, and Whirlpool-built top-loaders show Sd.',
+          'Use only HE detergent in an HE washer and measure it; most loads need far less than the cap holds. Detergent pods count as a full dose, so do not add liquid on top. If a load is already foaming, run a Rinse and Spin cycle with no detergent, and run a cleaning cycle with a washer cleaner afterward to clear the residue.',
+          'Hard water in much of Central Texas makes people reach for more detergent, which makes the suds problem worse. A water softener, or a measured dose of a detergent made for hard water, works better than adding more.',
+        ],
+      },
+      {
+        id: 'top-vs-front',
+        heading: 'Top-load and front-load washers fail differently',
+        list: [
+          'Top-loaders with an agitator: the classic no-spin cause is a broken motor coupler, a small rubber and plastic part that links the motor to the transmission. It is designed to break if the drum is overloaded, which protects the more expensive parts. A worn drive belt or a lid switch is next.',
+          'High-efficiency top-loaders without an agitator: these lock the lid during the spin. Lid lock faults, unbalanced loads and suds are the common causes. Many sense the load weight and will refuse to spin a single heavy item.',
+          'Front-loaders: door locks, drain pump filters full of socks and coins, and worn tub bearings are the usual suspects. A roaring or grinding sound that gets louder over weeks before the spin stops points to bearings.',
+        ],
+      },
+      {
+        id: 'myths',
+        heading: 'Washer spin myths',
+        compare: [
+          {
+            myth: 'Adding more clothes will help the washer balance.',
+            fact: 'Overloading is a leading cause of spin problems. Fill the drum loosely, and only add towels when the load is very small.',
+          },
+          {
+            myth: 'A washer that shakes is about to break.',
+            fact: 'Most shaking comes from an unbalanced load, an unlevel washer or shipping bolts left in. All three are free to fix.',
+          },
+          {
+            myth: 'More detergent means cleaner clothes.',
+            fact: 'In an HE washer, extra detergent makes suds that stop the spin and leave residue in the clothes.',
+          },
+          {
+            myth: 'If it does not spin, the motor is dead.',
+            fact: 'Motors are rarely the first suspect. Drain clogs, the load, the lid lock, a coupler or a belt are far more common.',
+          },
+        ],
+      },
+      {
+        id: 'repair-or-replace',
+        heading: 'Is a washer that will not spin worth repairing?',
+        paragraphs: [
+          'Most washers last about 10 to 13 years. The part that failed usually decides the answer more than the age does.',
+        ],
+        list: [
+          'Usually worth fixing: a lid switch or lid lock, a door lock, a drive belt, a motor coupler, a drain pump or a clogged filter. These are common, relatively inexpensive parts.',
+          'Worth pricing carefully: a control board or a motor on a washer more than 8 years old.',
+          'Often a reason to replace: worn tub bearings on a front-load washer, because the repair takes the whole tub apart and the labor adds up.',
+        ],
+        after: [
+          'The repair cost estimator on this site compares the likely repair against a new washer based on its age and type. Ask the technician to confirm which part failed and the price before any work starts.',
+        ],
+      },
+      {
+        id: 'when-to-call',
+        heading: 'When to call a technician',
+        paragraphs: [
+          'Call when the drum is empty and the load is balanced but it still will not spin; when the motor hums and the drum does not turn; when the lid or door lock will not engage after a reset; when you hear grinding or roaring; or when a drain or motor code keeps coming back after the filter and hose are clear. Belts, couplers, locks, pumps and motor controls all sit behind panels near water and wiring.',
+          'In Temple, Belton, Killeen and the rest of Bell County, a washer that stops mid-week often means a pile of wet laundry and a trip to the laundromat, so it is worth a call as soon as the simple checks are done.',
+        ],
+        after: [
+          'Before you call, note the brand, whether it is top-load or front-load, the model number (usually under the lid, on the door frame or on the back), any code on the display and which row of the table above matches what the washer is doing.',
+        ],
+      },
+    ],
+    safety:
+      'Unplug the washer before checking the pump filter, hoses or leveling feet, and put towels down before opening a drain filter. Never bypass a lid switch or door lock, and never reach into a drum that is still moving.',
+    faqs: [
+      {
+        q: 'Why does my washer fill and wash but not spin?',
+        a: 'Usually the drum has not drained, the load is unbalanced, or the lid or door lock has not engaged. On older top-loaders, a broken motor coupler or a worn belt is also common.',
+      },
+      {
+        q: 'How do I reset a washer that will not spin?',
+        a: 'Cancel the cycle, wait for the drum to stop, and unplug the washer for about five minutes. Then plug it back in and run Drain and Spin. If a code returns, look it up before running more cycles.',
+      },
+      {
+        q: 'What does UE or UB mean on my washer?',
+        a: 'On Samsung and LG washers, UE or UB means an unbalanced load. Spread the clothes out, remove some items or add towels to a small load, check that the washer is level, then run Spin again.',
+      },
+      {
+        q: 'Why are my clothes still soaking wet after the cycle?',
+        a: 'Water left in the drum points to a drain problem. If the drum is empty but clothes are dripping, the spin was slowed by an unbalanced load, too many suds, an overloaded drum or a slipping belt.',
+      },
+      {
+        q: 'Can a washer be too full to spin?',
+        a: 'Yes. An overloaded drum cannot balance, and many washers will not spin at full speed when they sense too much weight. Fill the drum loosely and wash bulky items on their own.',
+      },
+      {
+        q: 'How long should a washer spin cycle take?',
+        a: 'Usually 8 to 15 minutes, depending on the cycle and spin speed. A spin that keeps restarting or runs much longer usually means the washer is trying to balance the load or clear suds.',
+      },
+    ],
+    sources: [
+      { name: 'Whirlpool: Not spinning, washer', url: 'https://producthelp.whirlpool.com/Laundry/Washers/Top_Load_Washer/Cycle_Concerns/Not_Spinning_-_Washer' },
+      { name: 'Whirlpool: Washer not draining or spinning? Troubleshooting guide', url: 'https://producthelp.whirlpool.com/Laundry/Washers/Product_Info/Washer_Product_Assistance/Washer_Not_Draining_or_Spinning%3F_Troubleshooting_Guide' },
+      { name: 'Whirlpool: Lid locking on a top load high efficiency washer', url: 'https://producthelp.whirlpool.com/Laundry/Washers/Product_Info/Washer_Product_Assistance/Lid_Locking_on_a_Top_Load_High_Efficiency_Washer' },
+      { name: 'Samsung: How to fix a UE or UB error on a washing machine', url: 'https://www.samsung.com/in/support/home-appliances/how-to-fix-ue-ub-error-in-samsung-washing-machine' },
+      { name: 'Samsung: Washing machine showing a UE code during a spin cycle', url: 'https://www.samsung.com/ie/support/home-appliances/my-samsung-washing-machine-is-showing-a-ue-code-during-a-spin-cycle-what-can-i-do/' },
+      { name: 'Sears PartsDirect: LG front-load washer UE error code', url: 'https://www.searspartsdirect.com/diy/article/lg-front-load-washer-ue-error-code' },
+    ],
+  },
+  {
     slug: 'microwave-not-heating',
     image: '/images/blog/microwave-not-heating.webp',
     title: 'Microwave Running but Not Heating? The 1-Minute Water Test and What It Tells You',

@@ -36,6 +36,7 @@ const postTools: Record<string, ToolKey[]> = {
   'ice-maker-not-working': ['errorCodes', 'symptoms'],
   'stove-burner-not-working': ['symptoms', 'cost'],
   'microwave-not-heating': ['cost', 'symptoms'],
+  'washer-not-spinning': ['errorCodes', 'cost'],
 };
 
 type PostCta = {
@@ -140,6 +141,16 @@ const postCta: Record<string, PostCta> = {
     finalTitle: 'Microwave still cold?',
     finalAccent: 'Leave the cover on.',
     finalText: 'Mention whether it is countertop, over-the-range or built-in and what the water test showed. A technician can tell you if the repair is worth it.',
+  },
+  'washer-not-spinning': {
+    title: 'Load balanced, drum empty,',
+    accent: 'still no spin?',
+    text: 'Then a belt, coupler, lock or motor part needs testing behind the panels. Have the brand, any code and the matching row of the table ready and',
+    call: 'call',
+    note: 'Top-load and front-load washers are built differently. Check your owner’s manual for the pump filter and leveling feet, unplug the washer first, and never bypass a lid switch or door lock.',
+    finalTitle: 'Washer stuck before spin?',
+    finalAccent: 'Call with the code.',
+    finalText: 'Say whether it is top-load or front-load, any code on the display and whether water is left in the drum. A technician can go straight to the right part.',
   },
 };
 
