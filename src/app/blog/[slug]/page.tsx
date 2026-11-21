@@ -37,6 +37,7 @@ const postTools: Record<string, ToolKey[]> = {
   'stove-burner-not-working': ['symptoms', 'cost'],
   'microwave-not-heating': ['cost', 'symptoms'],
   'washer-not-spinning': ['errorCodes', 'cost'],
+  'refrigerator-leaking-water': ['symptoms', 'cost'],
 };
 
 type PostCta = {
@@ -151,6 +152,16 @@ const postCta: Record<string, PostCta> = {
     finalTitle: 'Washer stuck before spin?',
     finalAccent: 'Call with the code.',
     finalText: 'Say whether it is top-load or front-load, any code on the display and whether water is left in the drum. A technician can go straight to the right part.',
+  },
+  'refrigerator-leaking-water': {
+    title: 'Drain clear, still',
+    accent: 'a puddle?',
+    text: 'A drain that refreezes, a leaking inlet valve or a cracked drain pan needs a technician, and water damage only gets worse. Tell them where the water shows up and',
+    call: 'call',
+    note: 'Defrost drain locations differ by model. Check your owner’s manual before removing panels, unplug the refrigerator first, and switch off the breaker if water is near the outlet.',
+    finalTitle: 'Fridge still leaking?',
+    finalAccent: 'Towels down, then call.',
+    finalText: 'Say where the water shows up and whether the refrigerator is still cooling. A technician can go straight to the drain, the pan or the water valve.',
   },
 };
 

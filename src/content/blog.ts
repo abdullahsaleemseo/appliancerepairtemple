@@ -3,6 +3,200 @@ import type { Post } from './types';
 
 export const posts: Post[] = [
   {
+    slug: 'refrigerator-leaking-water',
+    image: '/images/blog/refrigerator-leaking-water.webp',
+    title: 'Refrigerator Leaking Water? Find Where the Water Is, and You Have the Cause',
+    metaTitle: 'Refrigerator Leaking Water? Find the Source Fast | Temple TX',
+    metaDescription: `Water under the fridge, under the crisper drawers or ice in the freezer bottom? Each spot points to a different cause. Find yours and fix it safely. ${phoneDisplay}.`,
+    excerpt:
+      'Where the water shows up tells you most of what you need to know. Inside under the crisper drawers is almost always a clogged defrost drain; at the back it is usually the water line or drain pan; at the front it is often the door seal or the dispenser. Start with the map, then follow the fix.',
+    published: '2026-11-21',
+    updated: '2026-11-21',
+    service: 'refrigerator',
+    sections: [
+      {
+        id: 'quick-answer',
+        heading: 'Why is my refrigerator leaking water?',
+        answer:
+          'The most common cause is a clogged or frozen defrost drain, which sends melt water into the fridge or onto the floor instead of the drain pan. Next come a leaking water supply line or inlet valve, a loose or wrong water filter, a cracked drain pan and a refrigerator that is not tilted back enough to drain.',
+        paragraphs: [
+          'Every frost-free refrigerator melts the frost off its cooling coil a few times a day. That water runs down a small drain at the back of the freezer into a shallow pan under the refrigerator, where it evaporates. Refrigerators with an ice maker or water dispenser also have a water line running to them under pressure. A leak almost always comes from one of those two systems.',
+          'The good news is that the location of the water separates them. Melt water from the defrost system shows up inside the refrigerator or freezer, or under the front. Supply water leaks at the back or from the door. Find where the water is first, and most of the diagnosis is done.',
+        ],
+      },
+      {
+        id: 'find-the-source',
+        heading: 'Step one: find exactly where the water comes from',
+        steps: [
+          {
+            title: 'Dry everything',
+            text: 'Wipe up the puddle and dry the floor around the refrigerator, the bottom of the fresh-food section and the freezer floor.',
+          },
+          {
+            title: 'Lay down paper towels',
+            text: 'Put dry paper towels on the floor in front of the refrigerator, along both sides and as far under the back as you can reach. Put another under the crisper drawers.',
+          },
+          {
+            title: 'Wait a few hours',
+            text: 'Leave it alone for a few hours, or overnight. Then check which towels are wet. The wettest towel sits closest to the source.',
+          },
+          {
+            title: 'Note when it happens',
+            text: 'A leak right after you use the dispenser points to the water system. A slow puddle that appears every day on its own points to the defrost drain or drain pan.',
+          },
+        ],
+      },
+      {
+        id: 'leak-map',
+        heading: 'The leak map: where the water is and what it means',
+        table: {
+          caption: 'Refrigerator leak locations and their usual causes',
+          head: ['Where the water is', 'Most likely cause', 'Who fixes it'],
+          rows: [
+            ['Under the crisper drawers, inside the fridge', 'Clogged defrost drain', 'You, often'],
+            ['Ice sheet on the freezer floor, under the bottom basket', 'Frozen defrost drain', 'You, then a technician if it returns'],
+            ['Floor at the front, slow daily puddle', 'Drain pan overflowing or cracked, or the fridge tilted forward', 'Leveling: you. Pan: a technician'],
+            ['Floor at the back, behind the fridge', 'Water supply line, its fitting or the inlet valve', 'Line fitting: you. Valve: a technician'],
+            ['Drips from the dispenser or the filter housing', 'Filter not seated, wrong filter, or cracked housing', 'You, usually'],
+            ['Water under the ice bin or on the freezer floor near the ice maker', 'Ice maker fill tube or water valve', 'A technician'],
+            ['Beads of water on the outside of the doors', 'Condensation from humid air or a worn gasket', 'You, usually'],
+          ],
+        },
+      },
+      {
+        id: 'defrost-drain',
+        heading: 'Clearing a clogged defrost drain',
+        alert: {
+          title: 'Water near the outlet?',
+          text: 'If water has reached the outlet or the power cord, do not touch it. Switch off the refrigerator’s breaker from a dry spot first, then clean up.',
+        },
+        paragraphs: [
+          'A clogged defrost drain is the leak most homeowners can fix. Food crumbs, a bit of debris or ice block the small drain hole, and the melt water backs up. It then freezes into a sheet on the freezer floor, drips into the fresh-food section under the crisper drawers or runs out under the front. GE describes the giveaway as ice under the bottom freezer basket together with a puddle on the floor.',
+          'Where the drain is depends on the model. Whirlpool notes it is usually at the bottom back of the freezer, sometimes behind a removable panel; on many top-freezer models it is a small hole on the floor of the fresh-food section, under the crisper drawers. Check the owner’s manual for yours before you start.',
+        ],
+        list: [
+          'Unplug the refrigerator and move perishable food to a cooler.',
+          'Remove the bins or shelves in the way and find the drain opening.',
+          'If ice blocks it, let the freezer warm with the door open and towels down, or melt the ice with warm water from a turkey baster. Do not chip at it with a knife or screwdriver; the coil and tubing behind it are easy to puncture.',
+          'Flush the drain with warm water from the baster until it runs freely into the pan below. A long, flexible pipe cleaner can clear a soft clog.',
+          'Dry everything, put the shelves back and plug the refrigerator in.',
+        ],
+        after: [
+          'If the drain freezes again within a few days or weeks, the clog was a symptom, not the cause. A failed defrost heater, a defrost thermostat or a missing drain heater can let the drain refreeze, and those parts need a technician.',
+        ],
+      },
+      {
+        id: 'level',
+        heading: 'Tilt it back: why leveling stops leaks',
+        paragraphs: [
+          'A refrigerator should not be perfectly level. Samsung explains that the front should sit slightly higher than the back, so melt water flows to the drain and the doors swing closed on their own. A refrigerator tilted forward can let water run out under the front and keep the doors from sealing.',
+          'Remove the bottom front grille and turn the leveling legs or rollers until the front rises slightly. A quick test: the doors should close by themselves from halfway open. Samsung adds that if the moving wheels still touch the floor, the front is not raised enough.',
+          'Refrigerators often get tipped forward when they are pulled out for cleaning or moved for a kitchen remodel. If the leak started after one of those, check the tilt first.',
+        ],
+      },
+      {
+        id: 'water-supply',
+        heading: 'Leaks from the water line, filter and dispenser',
+        paragraphs: [
+          'If the towels behind the refrigerator got wet, turn off the water supply valve that feeds it, usually behind the refrigerator or under the kitchen sink. If the leak stops, it is on the water side.',
+        ],
+        list: [
+          'Check the line itself. Thin plastic supply lines crack with age and get pinched when the refrigerator is pushed back. A braided stainless-steel line is a sturdier replacement.',
+          'Check the fitting at the back of the refrigerator. A compression fitting that has worked loose drips steadily. Snug it gently; overtightening cracks plastic fittings.',
+          'Reseat the water filter. A filter that is not locked fully into place, or a cheap filter that does not fit the housing exactly, can leak inside the fresh-food section. Remove it and reinstall it until it clicks, or try the filter made for your model.',
+          'Watch the dispenser. Drips right after dispensing can be trapped water, which is normal in small amounts. A steady drip with the dispenser idle points to the water valve.',
+          'Look at the ice maker. Water under the ice bin or a frozen mass on the freezer floor near it usually comes from the ice maker fill tube or water valve. The ice maker troubleshooting guide on this site covers it in detail.',
+        ],
+      },
+      {
+        id: 'condensation',
+        heading: 'Leak or condensation? Central Texas humidity matters',
+        paragraphs: [
+          'Not every wet spot is a leak. On humid days, warm air meeting the cold door edges leaves beads of water, and in summer in Temple and across Bell County that happens more often. A little moisture that dries quickly is normal.',
+          'Heavy sweating that runs down the doors points to two things. First, a door gasket that no longer seals: close the door on a strip of paper and pull; it should drag at every point around the door. Second, some models have an energy-saver setting that turns off small heaters around the doors, which can let condensation form in humid weather. Check the owner’s manual and switch it off during the muggy months if your model has it.',
+          'Inside the refrigerator, water droplets on the walls and shelves usually come from warm, uncovered food, a door that was left open or a gasket that leaks, rather than a plumbing problem.',
+        ],
+      },
+      {
+        id: 'myths',
+        heading: 'Refrigerator leak myths',
+        compare: [
+          {
+            myth: 'A leaking refrigerator means the compressor is failing.',
+            fact: 'Compressors do not leak water. Nearly every water leak comes from the defrost drain, the drain pan or the water supply.',
+          },
+          {
+            myth: 'A towel under the refrigerator is a fine long-term fix.',
+            fact: 'Hidden water ruins flooring and subfloors and grows mold. Find the source within a day or two.',
+          },
+          {
+            myth: 'Chipping the ice out of the freezer is the fastest fix.',
+            fact: 'A knife or screwdriver can puncture the cooling coil, which turns a cheap fix into a sealed system repair. Melt it instead.',
+          },
+          {
+            myth: 'Any water filter that fits will do.',
+            fact: 'A filter that does not seal exactly can leak inside the refrigerator. Use the one made for your model.',
+          },
+        ],
+      },
+      {
+        id: 'repair-or-replace',
+        heading: 'Is a leaking refrigerator worth fixing?',
+        paragraphs: [
+          'Almost always. Defrost drains, drain pans, water lines, filters, inlet valves and gaskets are among the least expensive refrigerator repairs. The answer changes only when the leak comes with a cooling problem on an old refrigerator, for example a failed defrost system on a unit past about 12 to 15 years old that is also running warm. Then compare the repair with a new refrigerator.',
+          'The repair cost estimator on this site compares a likely repair against a new unit based on age and type.',
+        ],
+      },
+      {
+        id: 'when-to-call',
+        heading: 'When to call a technician',
+        paragraphs: [
+          'Call when the defrost drain keeps freezing after you clear it; when water keeps coming after the supply valve is off; when the leak comes from the inlet valve, the ice maker or inside the door; when the drain pan is cracked; or when the refrigerator is also warming up. Defrost heaters, thermostats, valves and pans all sit behind panels near wiring.',
+          'Call right away if water is spreading toward outlets or under cabinets, or if the floor is starting to swell. Water damage gets more expensive by the hour.',
+        ],
+        after: [
+          'Before you call, note the brand, the model number from the label inside the fresh-food section, where the water shows up from the leak map above, and whether the refrigerator is cooling normally.',
+        ],
+      },
+    ],
+    safety:
+      'If water has reached an outlet or cord, switch off the refrigerator’s breaker from a dry spot before touching anything. Unplug the refrigerator before clearing a drain or removing panels, never chip ice with a sharp tool, and turn off the water supply before loosening any fitting.',
+    faqs: [
+      {
+        q: 'Why is there water under my refrigerator?',
+        a: 'Most often the defrost drain is clogged or the drain pan is overflowing or cracked. If the water is at the back, check the water supply line and its fitting. A refrigerator tilted forward can also send water out the front.',
+      },
+      {
+        q: 'Why is water collecting under the crisper drawers?',
+        a: 'That is the classic sign of a clogged defrost drain. Melt water that should flow to the pan under the refrigerator backs up into the fresh-food section. Clearing the drain with warm water usually fixes it.',
+      },
+      {
+        q: 'Is a leaking refrigerator dangerous?',
+        a: 'The water is not dangerous in itself, but it can reach outlets and damage floors. If water is near the outlet or cord, switch off the breaker from a dry spot before cleaning up.',
+      },
+      {
+        q: 'Can a water filter cause a refrigerator to leak?',
+        a: 'Yes. A filter that is not locked in place, a cracked housing or a filter that does not fit the model exactly can leak inside the refrigerator. Reinstall it until it clicks or use the filter made for your model.',
+      },
+      {
+        q: 'Why does my freezer have ice on the bottom?',
+        a: 'Melt water is not draining. The defrost drain is clogged or frozen, so the water refreezes on the freezer floor. Melt the ice, flush the drain, and call if it comes back.',
+      },
+      {
+        q: 'How do I stop my refrigerator from leaking at the front?',
+        a: 'Raise the front slightly with the leveling legs so water flows back to the drain, then check that the drain pan underneath is not cracked or overflowing.',
+      },
+    ],
+    sources: [
+      { name: 'GE Appliances: Refrigerator, water on floor', url: 'https://products.geappliances.com/appliance/gea-support-search-content?contentId=19366' },
+      { name: 'GE Appliances: Side-by-side refrigerator, repairing a clogged defrost drain', url: 'https://products.geappliances.com/appliance/gea-support-search-content?contentId=21865' },
+      { name: 'Whirlpool: Why is my refrigerator leaking water?', url: 'https://www.whirlpool.com/blog/kitchen/refrigerator-leaking-water.html' },
+      { name: 'Samsung US: Water leaks in a Samsung refrigerator', url: 'https://www.samsung.com/us/support/troubleshooting/TSG01001852' },
+      { name: 'Samsung US: Refrigerator leaking water troubleshooting', url: 'https://www.samsung.com/us/support/troubleshoot/TSG10003766/' },
+      { name: 'Samsung UK: Fridge freezer leaking water', url: 'https://www.samsung.com/uk/support/home-appliances/what-should-i-do-if-i-suspect-my-samsung-fridge-freezer-is-leaking-water/' },
+    ],
+  },
+  {
     slug: 'washer-not-spinning',
     image: '/images/blog/washer-not-spinning.webp',
     title: 'Washer Not Spinning? Why It Happens, What to Check First and When to Call',
