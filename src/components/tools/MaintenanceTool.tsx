@@ -176,7 +176,7 @@ export function MaintenanceTool() {
           location="tool_maintenance"
           text={
             plan.pro.length
-              ? 'The professional-only tasks on this list are a good reason to call. Pick the appliance, enter your ZIP code and say which service you need.'
+              ? 'The professional-only tasks on this list are a good reason to call. Tell us the appliance and which service you need.'
               : undefined
           }
         />

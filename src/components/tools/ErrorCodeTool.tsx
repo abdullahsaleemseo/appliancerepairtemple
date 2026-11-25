@@ -134,7 +134,7 @@ export function ErrorCodeTool() {
             text={
               result.found
                 ? undefined
-                : `Call, pick the appliance and enter your ZIP code. Read out the code ${code} and the model number so a technician can look it up.`
+                : `Call us and read out the code ${code} and the model number so our technician can look it up.`
             }
           />
         )}

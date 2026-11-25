@@ -90,8 +90,8 @@ export function ToolPage({ page, children }: { page: ToolPageData; children: Rea
       <FinalCta
         formId={`tool_${page.key}_final`}
         title="Rather talk it through?"
-        accent="Call the line."
-        text={`Pick the appliance, enter your ZIP code and describe what you found. Calls connect with technicians serving ${toolConfig.defaultCity} and ${toolConfig.region}.`}
+        accent="Call our team."
+        text={`Describe what you found and we will schedule a visit. Our technicians work across ${toolConfig.defaultCity} and ${toolConfig.region}.`}
       />
     </>
   );

@@ -178,10 +178,10 @@ export function UrgencyBadge({ urgency }: { urgency: Urgency }) {
 /** Call prompt after a result, worded for the urgency. */
 export function ResultCta({ urgency, location, text }: { urgency: Urgency; location: string; text?: string }) {
   const copy: Record<Urgency, { title: string; body: string }> = {
-    monitor: { title: 'Want a second opinion?', body: 'Call, pick the appliance and enter your ZIP code to describe what you are seeing to a technician.' },
-    soon: { title: 'Plan the repair', body: 'Call, pick the appliance and enter your ZIP code. Have the model number and these results in front of you.' },
-    today: { title: 'Do not let this wait', body: 'Call now, pick the appliance and enter your ZIP code. Say it is urgent and describe what you found.' },
-    stop: { title: 'Keep it off, then call', body: 'Leave the appliance switched off. Call, pick the appliance and enter your ZIP code, and say it is urgent.' },
+    monitor: { title: 'Want a second opinion?', body: 'Call us and describe what you are seeing. Our technician can tell you whether it needs a visit.' },
+    soon: { title: 'Plan the repair', body: 'Call us with the model number and these results in front of you, and we will schedule a visit.' },
+    today: { title: 'Do not let this wait', body: 'Call us now, say it is urgent and describe what you found.' },
+    stop: { title: 'Keep it off, then call', body: 'Leave the appliance switched off, then call us and say it is urgent.' },
   };
   const c = copy[urgency];
   return (

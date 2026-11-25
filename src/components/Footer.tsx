@@ -31,7 +31,7 @@ export function Footer() {
                   {!site.email.verified ? <VerifyTag label="REPLACE EMAIL" /> : null}
                 </p>
               ) : null}
-              <p>Choose the appliance and enter your ZIP code when you call.</p>
+              <p>Tell us the appliance, the brand and what it is doing.</p>
             </div>
             {site.social.length ? (
               <ul aria-label={`${site.brandName} on social media`} className="mt-7 flex flex-wrap gap-2">
