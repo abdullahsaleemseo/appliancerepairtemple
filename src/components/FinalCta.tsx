@@ -10,6 +10,7 @@ export function FinalCta({
   appliance,
   formId = 'final_cta',
   cardHeadingLevel,
+  cardTitle,
 }: {
   title?: string;
   accent?: string;
@@ -17,6 +18,7 @@ export function FinalCta({
   appliance?: string;
   formId?: string;
   cardHeadingLevel?: 2 | 3 | 'p';
+  cardTitle?: string;
 }) {
   return (
     <section aria-labelledby={`${formId}-heading`} className="bg-canvas px-3 pb-3 pt-16 sm:px-4 md:pt-24">
@@ -38,7 +40,7 @@ export function FinalCta({
               <TrustBadges dark />
             </div>
           </div>
-          <CallCard location={`${formId}_card`} appliance={appliance} dark headingLevel={cardHeadingLevel} />
+          <CallCard location={`${formId}_card`} appliance={appliance} dark headingLevel={cardHeadingLevel} title={cardTitle} />
         </div>
       </div>
     </section>

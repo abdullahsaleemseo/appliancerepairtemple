@@ -42,13 +42,13 @@ export default function HomePage() {
               Appliance Repair in {site.city}, {site.stateAbbr}
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/75 md:text-xl lg:text-lg xl:text-xl">
-              Appliance Repair Temple handles appliance repair in Temple, TX for homeowners, renters and landlords across Bell County.
-              Our technicians fix refrigerators, freezers, washers, dryers, dishwashers, ovens, stoves, ranges, cooktops and microwaves,
-              and we work on all the major brands you are likely to have in your kitchen or laundry room. We cover every part of Temple,
-              from older homes near downtown to newer builds on the west side, plus Belton, Killeen, Harker Heights, Salado and the
-              smaller towns nearby. Call us at{' '}
+              Experienced technicians handle appliance repair in Temple, TX for homeowners, renters and landlords across Bell County.
+              They fix refrigerators, freezers, washers, dryers, dishwashers, ovens, stoves, ranges, cooktops and microwaves, covering
+              all the major brands you are likely to have in your kitchen or laundry room. Service reaches every part of Temple, from
+              older homes near downtown to newer builds on the west side, plus Belton, Killeen, Harker Heights, Salado and the smaller
+              towns nearby. Call us at{' '}
               <PhoneLink location="hero_text" className="font-semibold text-white underline decoration-flame underline-offset-4" /> and
-              tell us what your appliance is doing. If it truly cannot wait, see our page on{' '}
+              describe what your appliance is doing. If it truly cannot wait, see the page on{' '}
               <Link href={routes.cityPage} className="font-semibold text-white underline decoration-flame underline-offset-4 hover:text-flame-glow">
                 emergency and same-day appliance repair
               </Link>
@@ -96,24 +96,24 @@ export default function HomePage() {
           <SectionHeading id="who-heading" title="Who repairs appliances in Temple, TX?" />
           <div className="prose-copy">
             <p>
-              Appliance Repair Temple repairs refrigerators, washers, dryers, dishwashers, ovens and microwaves for homes across Temple and
-              Bell County. You call <PhoneLink location="who_repairs" />, describe the problem, and our team handles the visit, the
-              diagnosis and the repair.
+              Experienced appliance repair technicians who work across Temple and Bell County handle refrigerators, washers, dryers,
+              dishwashers, ovens and microwaves, and you can reach them at <PhoneLink location="who_repairs" />. You describe the problem on
+              the phone, and a technician takes care of the visit, the diagnosis and the repair.
             </p>
             <p>
-              Our work is home appliance repair in Temple and the towns around it, so the problems we see every week are the ones you are
-              dealing with now. That means our technicians know what a Whirlpool washer sounds like when the coupler breaks, why a Samsung
-              ice maker freezes up, and where a GE oven hides its temperature sensor.
+              Home appliance repair in Temple and the surrounding towns is the whole job, so the problems that come up every week are the
+              same ones you are likely dealing with now. A technician who sees them that often knows the sound of a Whirlpool washer with a
+              broken coupler, why a Samsung ice maker keeps freezing up, and where a GE oven tucks away its temperature sensor.
             </p>
             <p>
-              We also know the area, which matters for appliance repair in Temple, Texas more than people expect. The city has a little of
-              everything: older homes near Downtown Temple with original wiring and gas lines, ranch houses in Western Hills and Midway,
+              Knowing the area matters for appliance repair in Temple, Texas more than people expect. The city has a little of everything: older homes near Downtown Temple with original wiring and gas lines, ranch houses in Western Hills and Midway,
               newer construction in West Temple off West Adams Ave, and plenty of rentals near Temple College and the Baylor Scott &amp;
-              White medical center. Each brings its own kind of appliance trouble, and we plan for it before we arrive.
+              White medical center. Each type of house brings its own kind of appliance trouble, and a good technician plans for it before
+              pulling into the driveway.
             </p>
             <p>
-              Most of all, we explain what we find in plain language. You hear what failed, what the repair involves and whether it makes
-              sense for an appliance of that age before we touch a tool.
+              Most of all, you get a plain-language explanation. Before a single tool comes out, you hear what failed, what the repair
+              involves and whether it makes sense for an appliance of that age.
             </p>
           </div>
         </div>
@@ -154,8 +154,8 @@ export default function HomePage() {
               cost more or take longer to arrive.
             </p>
             <p>
-              You will always know the price and agree to it before the repair begins. If the repair does not make financial sense, we will
-              tell you that as well.
+              You will always know the price and agree to it before the repair begins. If the repair does not make financial sense, the
+              technician will tell you that as well.
             </p>
           </div>
         </div>
@@ -177,7 +177,7 @@ export default function HomePage() {
               belt or a blown thermal fuse is worth fixing, because those are some of the least expensive repairs in the house.
             </p>
             <p>
-              Our technicians will give you a straight answer for your appliance. For a deeper look at lifespans and the numbers behind the
+              A technician will give you a straight answer for your appliance. For a deeper look at lifespans and the numbers behind the
               decision, read our guide on{' '}
               <Link href="/blog/repair-or-replace-appliance/">whether to repair or replace an appliance</Link>.
             </p>
@@ -197,10 +197,10 @@ export default function HomePage() {
           <SectionHeading id="brands-heading" title="Appliance brands we repair" />
           <div className="prose-copy">
             <p>
-              We repair the brands found in most Temple kitchens and laundry rooms: Whirlpool, GE, Samsung, LG, Frigidaire, Maytag,
+              Repairs cover the brands found in most Temple kitchens and laundry rooms: Whirlpool, GE, Samsung, LG, Frigidaire, Maytag,
               KitchenAid, Bosch, Kenmore, Electrolux, Amana and Speed Queen. Each brand has its own quirks, error codes and model number
-              locations, and our <Link href={routes.brands}>appliance brands guide</Link> covers them one by one. Appliance Repair Temple is
-              an independent repair service and is not affiliated with or authorized by any of these manufacturers.
+              locations, and our <Link href={routes.brands}>appliance brands guide</Link> covers them one by one. This is an independent
+              repair service, not affiliated with or authorized by any of these manufacturers.
             </p>
           </div>
         </div>
@@ -213,12 +213,12 @@ export default function HomePage() {
             <SectionHeading id="areas-heading" title="Areas we serve around Temple" className="!mb-8" />
             <div className="prose-copy">
               <p>
-                Inside Temple, we work in every neighborhood, including Downtown Temple, Western Hills, Midway, West Temple off West Adams
+                Inside Temple, technicians work in every neighborhood, including Downtown Temple, Western Hills, Midway, West Temple off West Adams
                 Ave and the streets around Temple College and the Baylor Scott &amp; White medical center. That covers the 76501, 76502
                 and 76504 ZIP codes.
               </p>
               <p>
-                Our Bell County appliance repair area reaches south along I-35 to Belton and Salado, west along US-190 to Harker Heights
+                The Bell County appliance repair area reaches south along I-35 to Belton and Salado, west along US-190 to Harker Heights
                 and Killeen, and out to Nolanville, Morgan&apos;s Point Resort, Troy, Little River-Academy, Rogers, Holland and Moody. If
                 you searched for appliance repair near me in Temple or one of those towns, you are in the right place. See the full list
                 on our <Link href={routes.areas}>service areas page</Link>.
@@ -240,6 +240,7 @@ export default function HomePage() {
       <FinalCta
         formId="home_final"
         cardHeadingLevel="p"
+        cardTitle="Book a repair visit"
         title="Book your"
         accent="repair"
         text={
