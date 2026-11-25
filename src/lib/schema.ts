@@ -92,3 +92,21 @@ export function articleSchema(opts: { title: string; description: string; path: 
   };
 }
 
+
+/** Service entity for a single service page, tied to the business entity on the homepage. */
+export function serviceSchema(opts: { name: string; serviceType: string; description: string; path: string }) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    '@id': `${absoluteUrl(opts.path)}#service`,
+    name: opts.name,
+    serviceType: opts.serviceType,
+    description: opts.description,
+    url: absoluteUrl(opts.path),
+    provider: { '@type': 'HomeAndConstructionBusiness', '@id': `${site.url}/#business`, name: site.brandName, telephone: site.phone.value.e164 },
+    areaServed: [
+      { '@type': 'City', name: `${site.city}, ${site.stateAbbr}` },
+      { '@type': 'AdministrativeArea', name: `Bell County, ${site.stateAbbr}` },
+    ],
+  };
+}

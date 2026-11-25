@@ -44,7 +44,6 @@ const referralRules = [
 ];
 const referralLegacy = new Set([
   'src/app/about/page.tsx',
-  'src/app/appliance-repair-temple-tx/page.tsx',
   'src/app/brands/[brand]/page.tsx',
   'src/app/accessibility/page.tsx',
   'src/app/get-connected/page.tsx',

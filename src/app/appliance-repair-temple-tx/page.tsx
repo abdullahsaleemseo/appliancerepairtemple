@@ -1,462 +1,291 @@
 import Link from 'next/link';
 import { routes, site } from '@/config/site';
-import { areas, areaHref } from '@/content/areas';
-import { brands, brandHref, otherBrands } from '@/content/brands';
-import { cityFaqs } from '@/content/faqs';
-import { serviceByKey, serviceHref, services } from '@/content/services';
-import type { ApplianceKey } from '@/content/types';
-import { MapEmbed } from '@/components/AreaList';
-import { BrandChips } from '@/components/BrandChips';
+import type { Faq } from '@/content/types';
 import { CtaRow } from '@/components/Buttons';
 import { FaqList } from '@/components/FaqList';
 import { FinalCta } from '@/components/FinalCta';
-import { HowItWorks } from '@/components/HowItWorks';
 import { Icon } from '@/components/Icon';
+import { JsonLd } from '@/components/JsonLd';
 import { PageHero } from '@/components/PageHero';
 import { PhoneLink } from '@/components/PhoneLink';
 import { Section, SectionHeading } from '@/components/Section';
-import { ServicesGrid } from '@/components/ServicesGrid';
-import { ServicesTable } from '@/components/ServicesTable';
-import { TrustBadges } from '@/components/TrustBadges';
+import { serviceSchema } from '@/lib/schema';
 import { pageMetadata } from '@/lib/seo';
 
+/** Same-day and emergency appliance repair page (source: content/same-day-v1.md, Nov 2026). */
 const path = routes.cityPage;
+const description =
+  'Need same-day appliance repair in Temple, TX? See what counts as an emergency, protect food and floors, then call (254) 615-2088 to check today.';
 
 export const metadata = pageMetadata({
-  title: `Appliance Repair Temple TX | Fridge Warm? Washer Stuck?`,
-  description: `Fridge warm, washer stuck or oven not heating in Temple, TX? Repair for Whirlpool, GE, Samsung, LG and more in 76501, 76502 and 76504. Call (254) 615-2088.`,
+  title: 'Same-Day & Emergency Appliance Repair Temple TX',
+  description,
   path,
 });
 
-const localNeeds: { title: string; text: string; key: ApplianceKey; link: string }[] = [
+const triage: [string, string, string][] = [
+  ['Gas smell near the range, cooktop or dryer', 'Yes, immediately', 'Get everyone out, leave switches alone, then phone the gas company or 911 from outside'],
+  ['Burning smell, smoke or sparks', 'Yes', 'Cut power at the breaker panel and leave it off'],
+  ['Water spreading from the washer or dishwasher', 'Yes', 'Close the supply valve, cut power, soak up the water'],
+  ['Refrigerator warm with food inside', 'Yes, within hours', 'Keep the doors shut and check a thermometer'],
+  ['Freezer thawing', 'Yes, within a day', "Keep it closed; don't check it every hour"],
+  ['Oven or range dead on a big cooking day', 'Soon', 'Check the breaker, then call early in the day'],
+  ['Dryer tumbling but not heating', 'Can wait', 'Line-dry or use a laundromat for now'],
+  ['Ice maker stopped', 'No', 'Use trays and book a regular visit'],
+];
+
+const questions = [
+  'Is there a visit or diagnostic fee, and does it go toward the repair?',
+  'Is there an extra charge for evening, weekend or holiday visits?',
+  'Will the price be confirmed before the technician starts work?',
+  'What warranty comes with the part and the labor?',
+  'What arrival window can you give me, and will someone call if it changes?',
+  'Do you work on my brand and this type of appliance?',
+  'Is my town inside your usual service area?',
+];
+
+const faqs: Faq[] = [
   {
-    title: 'Refrigerators and garage freezers working through the summer',
-    text: 'Temple summers are long and hot. A fridge in a warm kitchen or a freezer in the garage runs harder, so a weak start relay, dusty coils or a tired fan motor tends to give out in July and August. Call when it feels warm and never stops running, not after the food spoils.',
-    key: 'freezer',
-    link: 'freezer repair in Temple',
+    q: 'Should I unplug the refrigerator while I wait for the technician?',
+    a: "Usually not. Leave it plugged in unless it smells burnt, sparks or keeps tripping the breaker. A running refrigerator shows the technician which parts work and which don't. Keep the doors closed and let a thermometer do the checking.",
   },
   {
-    title: 'Hard water buildup in dishwashers, washers and ice makers',
-    text: 'Many Central Texas homes have hard water. Minerals coat dishwasher spray arms, clog washer inlet screens and slow the water feeding an ice maker. It looks like a bad part: cloudy dishes, slow fills, no ice. Sometimes cleaning fixes it. Sometimes the valve has to be replaced.',
-    key: 'dishwasher',
-    link: 'dishwasher repair in Temple',
+    q: 'Is it safe to run the dishwasher again after it leaked once?',
+    a: 'Not until the cause is known. One leak can come from the wrong detergent or a flipped bowl blocking the spray arm, but a failing pump, hose or door seal will leak again, sometimes under the floor. If you must run it, use a short cycle and stay nearby with towels down.',
   },
   {
-    title: 'Dryer vents in older Temple homes',
-    text: 'Older houses around the Historic District, Midway and Western Hills often have long vent runs or tight laundry closets. Lint builds up, the dryer runs hot, and the thermal fuse or element fails. Ask the technician to check airflow on any dryer call, because a new part behind a clogged vent fails again.',
-    key: 'dryer',
-    link: 'dryer repair in Temple',
+    q: 'Can someone else let the technician in?',
+    a: 'Yes, as long as an adult can meet the technician and show where the appliance is. Leave them the model number and a note on what happened. Tell the scheduler who will be home so the arrival call goes to the right phone.',
   },
   {
-    title: 'Newer appliances in West Temple subdivisions',
-    text: 'Newer homes along West Adams Avenue and Highway 317 often have Samsung or LG French door refrigerators, front-load washers and smart ranges that report faults as error codes. Write the code down before you call, and check whether the manufacturer’s warranty still applies.',
-    key: 'washer',
-    link: 'washer repair in Temple',
-  },
-  {
-    title: 'Ovens and ranges that run hot, cold or not at all',
-    text: 'Bake elements burn out, gas igniters weaken and temperature sensors drift. You notice when dinner takes twice as long. A good technician tests the element, igniter and sensor before replacing anything.',
-    key: 'oven',
-    link: 'oven and stove repair in Temple',
-  },
-  {
-    title: 'Rental homes and move-ins',
-    text: 'Appliances that sat empty between tenants often come back with stuck pumps, dried-out seals or a fridge that will not restart. Tenants should tell the landlord first. Landlords and property managers near Temple College and the medical center can call the line directly.',
-    key: 'refrigerator',
-    link: 'refrigerator repair in Temple',
+    q: 'What should I do with food from a warm refrigerator?',
+    a: 'Throw out meat, poultry, seafood, milk, eggs and leftovers that sat above 40°F for more than 2 hours, per USDA guidance. Frozen food that still has ice crystals or reads 40°F or below can be refrozen. When in doubt, throw it out.',
   },
 ];
 
-const brandNotes: Record<string, string> = {
-  whirlpool: 'Cabrio top-loaders and builder-grade sets in rentals. Washer codes like F9 E1 and dryers that quit behind a clogged vent.',
-  ge: 'Ranges and dishwashers that came with the house. Oven F codes, weak gas igniters and warm fresh-food sections.',
-  samsung: 'French door fridges and laundry pairs in West Temple. Frozen ice makers and washer codes like 5C and dC.',
-  lg: 'Front-load pairs and French door fridges. OE drain codes, D90 vent warnings and compressor coverage questions.',
-  frigidaire: 'Garage chest and upright freezers that struggle in August, plus F10 range codes and worn dryer glides.',
-  maytag: 'Bravos and Centennial washers that have run for years. Ld and LF codes and dryers with no heat.',
-  kitchenaid: 'Third-rack dishwashers and counter-depth fridges in remodeled kitchens. Hard water film and warm fresh-food sides.',
-  bosch: 'Quiet dishwashers that stop with E15 or E24 when a leak or a clog shows up.',
-  kenmore: 'Older 70 and 80 Series laundry and Elite fridges. The model prefix shows whether Whirlpool, LG or Frigidaire built it.',
-  electrolux: 'Stacked front-load pairs and counter-depth fridges that share many parts with Frigidaire.',
-  amana: 'Value sets in rentals and duplexes. Couplers, lid switches and top-freezer defrost problems.',
-  'speed-queen': 'TC5 and TR washers bought to last. Pumps, belts, lid locks and tub bearings.',
-};
+const inline = 'font-semibold text-flame underline decoration-flame/40 underline-offset-4 hover:decoration-flame';
 
-const expectSteps = [
-  { title: 'Call the line', text: 'Choose the appliance, enter your ZIP code, then give the brand, model number and problem. Any code on the display helps.' },
-  { title: 'Talk to a Temple technician', text: 'Your call reaches an appliance repair provider serving your part of Temple. Ask about availability, pricing and licensing.' },
-  { title: 'Diagnosis in your home', text: 'A good technician tests the likely parts, explains what failed and what the repair involves, and waits for your OK.' },
-  { title: 'Repair and a test run', text: 'Once you approve, the repair is made and the appliance should be run to confirm it works. Model-specific parts may need to be ordered.' },
-];
-
-const weather = [
-  {
-    title: 'Long, hot summers',
-    text: 'Triple-digit days are normal here. Temple recorded 74 days at 100°F or above in 2011, its hottest summer on record. Heat makes refrigerators, freezers and especially garage units run almost nonstop, and dusty condenser coils or a weak fan motor finally fail. Clean coils before June and give units room to breathe.',
-  },
-  {
-    title: 'Storms and power blips',
-    text: 'Spring storms bring outages and flickers. An appliance that stops right after the power blinks may only need its breaker or GFCI outlet reset, or a minute unplugged. If it still will not run, a control board or power supply may have taken the hit.',
-  },
-  {
-    title: 'Hard freezes',
-    text: 'Freezes are rare but real, as the February 2021 winter storm showed. Water lines to ice makers and washer hoses in unheated garages can freeze and split. After a hard freeze, check behind the washer and refrigerator for drips before running them.',
-  },
-  {
-    title: 'Dust, pollen and pet hair',
-    text: 'Dry, windy days and shedding pets load condenser coils, dryer lint traps and range hood filters. Clogged coils make a refrigerator run hot and long; a packed lint trap makes a dryer overheat. A vacuum and a few minutes every few months prevent a lot of repairs.',
-  },
-];
-
-
-const lifespans = [
-  { name: 'Refrigerator', years: '10 to 15 years', repair: 'Fans, relays, defrost parts, valves', closer: 'Compressor or sealed system on an older unit' },
-  { name: 'Freezer', years: '10 to 20 years', repair: 'Relays, thermostats, seals, fans', closer: 'Compressor on a small or older chest freezer' },
-  { name: 'Washer', years: '10 to 13 years', repair: 'Pumps, lid locks, belts, suspension', closer: 'Transmission or tub bearings' },
-  { name: 'Dryer', years: '10 to 13 years', repair: 'Elements, igniters, belts, rollers', closer: 'Drum, motor and board all worn at once' },
-  { name: 'Dishwasher', years: '9 to 12 years', repair: 'Pumps, inlet valves, latches, seals', closer: 'Rusted tub or racks plus a failed board' },
-  { name: 'Range or oven', years: '13 to 15 years', repair: 'Elements, igniters, sensors, switches', closer: 'Cracked glass top or discontinued board' },
-];
-
-export default function CityPage() {
+export default function SameDayPage() {
   return (
     <>
+      <JsonLd
+        data={serviceSchema({
+          name: `Same-day appliance repair in ${site.city}, ${site.stateAbbr}`,
+          serviceType: 'Same-day and emergency appliance repair',
+          description,
+          path,
+        })}
+      />
 
-      <PageHero crumbs={[{ name: `Appliance Repair ${site.city}`, path }]} title={`Appliance Repair in ${site.city}, ${site.state}`}>
+      <PageHero crumbs={[{ name: 'Same-Day Appliance Repair', path }]} title={`Same-Day Appliance Repair in ${site.city}, ${site.stateAbbr}`}>
         <p className="text-lg leading-relaxed text-white/75 md:text-xl">
-          Temple runs from the Historic District&apos;s older kitchens to new builds out toward Lake Belton, and the appliances in
-          those homes fail in different ways. Appliance repair in Temple, Texas covers Whirlpool, GE, Samsung, LG, Frigidaire and
-          Maytag refrigerators, freezers, washers, dryers, dishwashers and ovens in 76501, 76502 and 76504, from Western Hills to
-          the newer streets off West Adams Avenue.
+          It&apos;s 9 at night and the milk is warm. Or your socks soak up a puddle in the laundry room that wasn&apos;t there an hour
+          ago. When that happens, the quickest route to same-day appliance repair in Temple, TX is a phone call: dial{' '}
+          <PhoneLink location="sameday_intro" className="font-semibold text-white underline decoration-white/40 underline-offset-4" />, ask
+          what&apos;s open today, and have the brand, the model number and a one-line description of the problem ready. First, take two
+          minutes with the table below: a few problems need action this minute, and plenty can wait until morning.
         </p>
         <div className="mt-8">
-          <CtaRow location="city_hero" dark />
-        </div>
-        <div className="mt-8 border-t border-white/10 pt-6">
-          <TrustBadges dark />
+          <CtaRow location="sameday_hero" dark />
         </div>
       </PageHero>
 
-      <Section labelledBy="intro-heading">
-        <div className="grid gap-12 lg:grid-cols-[1fr_1.3fr]">
-          <SectionHeading id="intro-heading" eyebrow="Appliance service in Temple" title="A broken appliance," accent="handled locally." />
-          <div className="prose-copy">
-            <p>
-              Temple started as a railroad town and grew into a medical one, and its housing shows it: older bungalows near
-              downtown and the Historic District, ranch homes around Western Hills and Midway, rentals and duplexes near Temple
-              College and the Baylor Scott &amp; White campus, and new subdivisions spreading west toward Lake Belton. Each brings
-              its own appliance problems, from tired garage freezers to error codes on a brand-new washer.
-            </p>
-            <p>
-              Most appliance breakdowns come down to one part: a fan motor, a drain pump, a heating element, an igniter, a switch
-              or a water valve. A good technician tests the likely suspects with a meter, shows you what failed, and explains the
-              repair before any work starts. Ask for that, and ask plainly whether the appliance is worth fixing at all.
-            </p>
-            <p>
-              Searching for appliance repair near me in Temple, TX? This page is the Temple hub: refrigerator repair, freezer
-              repair, washer and dryer repair, dishwasher repair, oven, stove and range repair, and microwave repair, gas and
-              electric, with a guide for each major brand found in Temple homes.
-            </p>
-            <p>
-              Appliance Repair Temple does not do repairs itself. The providers are independent businesses, so ask about pricing
-              and availability on the call, and confirm the provider carries the license and insurance the work requires.
-            </p>
-          </div>
-        </div>
-      </Section>
-
-      <Section tone="white" labelledBy="help-heading">
+      <Section labelledBy="triage-heading">
         <SectionHeading
-          id="help-heading"
-          eyebrow="Appliance types"
-          title="Appliance repair"
-          accent="for every room."
-          intro="Kitchen and laundry appliances, electric and gas, built-in and freestanding. Each page explains the most common symptoms and what the repair involves."
+          id="triage-heading"
+          eyebrow="Emergency check"
+          title="Is this an emergency,"
+          accent="or can it wait until morning?"
+          intro="What counts as an appliance emergency? Anything that puts people, the house or a load of food at risk. Most calls for emergency appliance repair in Temple, TX fit one of these rows."
         />
-        <ServicesGrid keys={services.map((s) => s.key)} showOther />
-      </Section>
-
-      <Section labelledBy="brands-heading">
-        <SectionHeading
-          id="brands-heading"
-          eyebrow="Brands in Temple homes"
-          title="Brand repair guides"
-          accent="for Temple."
-          intro="What each brand looks like in Temple kitchens and laundry rooms, and the problems it brings. Each guide covers model number formats, error codes and parts."
-        />
-        <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {brands
-            .filter((b) => b.hasPage)
-            .map((b) => (
-              <li key={b.key}>
-                <Link href={brandHref(b)} className="card group flex h-full flex-col p-6 transition hover:-translate-y-1 hover:shadow-lift">
-                  <span className="font-display text-xl font-bold tracking-[-0.02em] text-ink">{b.name} repair in {site.city}</span>
-                  <span className="mt-2 flex-1 text-[15px] text-ink-body">{brandNotes[b.key]}</span>
-                  <span className="mt-4 inline-flex items-center gap-1.5 text-[15px] font-semibold text-ink">
-                    {b.name} guide
-                    <Icon name="arrow" className="h-4 w-4 transition group-hover:translate-x-1" />
-                  </span>
-                </Link>
-              </li>
-            ))}
-        </ul>
-        {otherBrands.length ? (
-          <div className="mt-8">
-            <BrandChips names={otherBrands} />
-          </div>
-        ) : null}
-        <p className="mt-8 max-w-3xl text-sm text-ink-muted">
-          Brand names are trademarks of their owners; Appliance Repair Temple is not affiliated with or authorized by any
-          appliance manufacturer.{' '}
-          <Link href={routes.brands} className="font-semibold text-ink underline decoration-flame underline-offset-4">
-            All appliance brands repaired in {site.city}
-          </Link>
-        </p>
-      </Section>
-
-      <Section tone="ink" labelledBy="needs-heading">
-        <SectionHeading
-          id="needs-heading"
-          eyebrow="Common repair needs"
-          title="What breaks most often"
-          accent="in Temple homes."
-          intro="Patterns common across Temple homes, and what they usually mean for your appliance."
-          dark
-        />
-        <ul className="grid gap-4 md:grid-cols-2">
-          {localNeeds.map((n) => (
-            <li key={n.title} className="card-dark flex flex-col p-7">
-              <h3 className="font-display text-[21px] font-bold tracking-[-0.025em] text-white">{n.title}</h3>
-              <p className="mt-3 flex-1 text-[15px] leading-relaxed text-white/65">{n.text}</p>
-              <Link href={serviceHref(n.key)} className="mt-5 inline-flex items-center gap-1.5 text-[15px] font-semibold text-flame-glow hover:underline">
-                {n.link.charAt(0).toUpperCase() + n.link.slice(1)}
-                <Icon name="arrow" className="h-4 w-4" />
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </Section>
-
-      <Section tone="white" id="emergency" labelledBy="emergency-heading">
-        <div className="grid gap-12 lg:grid-cols-[1fr_1.3fr]">
-          <SectionHeading
-            id="emergency-heading"
-            eyebrow="Emergency appliance repair in Temple"
-            title="When it cannot"
-            accent="wait until next week."
-            className="!mb-0"
-          />
-          <div>
-            <div className="prose-copy">
-              <p>
-                A refrigerator warming up with a week of groceries inside, a washer leaking toward the hallway, a dryer that smells
-                hot: those are emergencies. Emergency help in Temple may be available from local providers. Say it is urgent when you
-                call, and describe what the appliance is doing.
-              </p>
-              <p>
-                In Temple, most emergency appliance repair calls are refrigerators and garage freezers in the summer heat and
-                washer or dishwasher leaks the rest of the year.
-              </p>
-              <p>Before you call about an emergency, take the steps that stop the damage:</p>
-              <ul>
-                <li>Leak: close the water valve behind the appliance and put towels down.</li>
-                <li>Burning smell, smoke or sparks: switch off the breaker for that appliance.</li>
-                <li>Warm refrigerator or freezer: keep the doors closed. A closed fridge holds food safely for about four hours.</li>
-                <li>Gas smell: leave the house and call your gas provider or 911 from outside first.</li>
-              </ul>
-            </div>
-            <div className="mt-6">
-              <CtaRow location="city_emergency" />
-            </div>
-          </div>
-        </div>
-      </Section>
-
-      <Section labelledBy="weather-heading">
-        <SectionHeading
-          id="weather-heading"
-          eyebrow="Local conditions"
-          title="How Temple weather"
-          accent="affects your appliances."
-          intro="Central Texas is hard on appliances in a few predictable ways."
-        />
-        <ul className="grid gap-4 md:grid-cols-2">
-          {weather.map((w) => (
-            <li key={w.title} className="card p-7">
-              <h3 className="font-display text-[20px] font-bold tracking-[-0.02em] text-ink">{w.title}</h3>
-              <p className="mt-2 text-[15px] text-ink-body">{w.text}</p>
-            </li>
-          ))}
-        </ul>
-      </Section>
-
-      <Section tone="white" labelledBy="expect-heading">
-        <SectionHeading
-          id="expect-heading"
-          eyebrow="From call to repair"
-          title="What to expect when"
-          accent="you call for a repair."
-          center
-        />
-        <HowItWorks steps={expectSteps} />
-        <div className="mx-auto mt-10 max-w-4xl">
-          <div className="card p-7">
-            <h3 className="font-display text-xl font-bold tracking-[-0.02em] text-ink">Before the visit</h3>
-            <p className="mt-2 text-[15px] text-ink-body">
-              Clear a path to the appliance, empty the washer or dishwasher if you can, and keep pets in another room. An adult
-              needs to be home to let the technician in and approve the repair.
-            </p>
-          </div>
-        </div>
-      </Section>
-
-      <Section labelledBy="glance-heading">
-        <SectionHeading
-          id="glance-heading"
-          eyebrow="Services at a glance"
-          title="Appliance repair services"
-          accent="in Temple, TX."
-          intro="Every appliance below is repaired in your home. Pick one for the full list of problems, causes and what to check first."
-        />
-        <ServicesTable place={site.city} />
-      </Section>
-
-      <Section labelledBy="ror-heading">
-        <SectionHeading
-          id="ror-heading"
-          eyebrow="Repair or replace"
-          title="Should you repair it"
-          accent="or replace it?"
-          intro="Age and the type of failure matter more than anything else. A newer appliance with one failed part is almost always worth fixing. An older one with a major failure deserves a closer look."
-        />
-        <div className="card overflow-hidden">
-          <table className="w-full text-left">
-            <caption className="sr-only">Typical appliance lifespans and when repair makes sense</caption>
-            <thead className="border-b border-sand text-[12px] uppercase tracking-[0.14em] text-ink-muted">
+        <div className="overflow-x-auto rounded-2xl border border-sand bg-white">
+          <table className="w-full min-w-[640px] text-left text-[15px]">
+            <caption className="sr-only">Which appliance problems need action now and what to do first</caption>
+            <thead className="bg-canvas text-[12px] uppercase tracking-[0.12em] text-ink-muted">
               <tr>
-                <th scope="col" className="px-5 py-4 font-semibold md:px-6">Appliance</th>
-                <th scope="col" className="hidden px-5 py-4 font-semibold sm:table-cell">Typical life</th>
-                <th scope="col" className="px-5 py-4 font-semibold">Usually worth repairing</th>
-                <th scope="col" className="hidden px-5 py-4 font-semibold md:table-cell">Take a closer look</th>
+                <th scope="col" className="px-4 py-3 font-semibold">Situation</th>
+                <th scope="col" className="px-4 py-3 font-semibold">Act now?</th>
+                <th scope="col" className="px-4 py-3 font-semibold">What to do first</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-sand/70 text-[15px]">
-              {lifespans.map((l) => (
-                <tr key={l.name}>
-                  <th scope="row" className="px-5 py-4 font-semibold text-ink md:px-6">{l.name}</th>
-                  <td className="hidden px-5 py-4 text-ink-body sm:table-cell">{l.years}</td>
-                  <td className="px-5 py-4 text-ink-body">{l.repair}</td>
-                  <td className="hidden px-5 py-4 text-ink-body md:table-cell">{l.closer}</td>
+            <tbody className="divide-y divide-sand/70">
+              {triage.map(([situation, act, first]) => (
+                <tr key={situation} className="align-top">
+                  <th scope="row" className="px-4 py-3 font-semibold text-ink">{situation}</th>
+                  <td className="px-4 py-3 font-medium text-ink">{act}</td>
+                  <td className="px-4 py-3 text-ink-body">{first}</td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
-        <div className="prose-copy mt-8 max-w-3xl">
-          <p>
-            Treat these as a guide. Ask three questions: How old is it? Is the rest
-            of it in good shape? Can you still get the part? Built-in refrigerators and wall ovens are usually worth repairing even
-            when older, because replacing them means cabinet and installation work too.
-          </p>
-        </div>
+        <p className="mt-8 max-w-3xl text-[17px] leading-relaxed text-ink-body">
+          One honest opinion from the repair side: a refrigerator that hums, rattles or clicks but still holds 40°F or below is not an
+          emergency. It needs a visit soon, not a midnight scramble.
+        </p>
       </Section>
 
-      <Section tone="white" labelledBy="coverage-heading">
-        <SectionHeading
-          id="coverage-heading"
-          eyebrow="Service area"
-          title="Appliance repair across Temple"
-          accent="and nearby."
-          intro="Repairs happen at your home, anywhere in Temple and the towns around it."
-        />
-        <div className="grid items-start gap-10 lg:grid-cols-[1.1fr_1fr]">
-          <MapEmbed place={site.city} note="Repairs in every residential Temple ZIP: 76501, 76502 and 76504." />
+      <Section tone="white" labelledBy="first-heading">
+        <div className="grid gap-12 lg:grid-cols-[1fr_1.4fr]">
+          <SectionHeading
+            id="first-heading"
+            eyebrow="Right now"
+            title="What to do in the"
+            accent="first 15 minutes"
+            intro="These steps buy time without opening a sealed system, bypassing a safety switch or touching a gas line."
+          />
           <div>
-            <h3 className="text-[13px] font-semibold uppercase tracking-[0.14em] text-ink-muted">All of Temple</h3>
-            <ul className="mt-4 flex flex-wrap gap-2">
-              {site.templeZips.map((z) => (
-                <li key={z} className="rounded-full bg-ink px-4 py-2 font-display font-semibold tracking-wide text-white">
-                  {z}
-                </li>
-              ))}
-            </ul>
-            <p className="mt-4 text-[15px] text-ink-body">
-              Central Temple and the Historic District, Midway, Western Hills, West Temple along West Adams Avenue and Highway
-              317, and the south side of town. Homes are in 76501, 76502 and 76504; 76503 is the downtown post office box ZIP and
-              76508 covers the Baylor Scott &amp; White medical campus.
-            </p>
-            <h3 className="mt-8 text-[13px] font-semibold uppercase tracking-[0.14em] text-ink-muted">Nearby towns</h3>
-            <ul className="mt-4 flex flex-wrap gap-2">
-              {site.nearbyTowns.map((t) => {
-                const a = areas.find((x) => x.name === t);
-                const cls = 'inline-flex min-h-[40px] items-center rounded-full border border-sand bg-white px-4 text-[14.5px] font-medium text-ink';
-                return (
-                  <li key={t}>
-                    {a ? (
-                      <Link href={areaHref(a)} className={`${cls} transition hover:border-ink hover:bg-ink hover:text-white`}>
-                        {t}
-                      </Link>
-                    ) : (
-                      <span className={cls}>{t}</span>
-                    )}
-                  </li>
-                );
-              })}
-            </ul>
-            <p className="mt-6 text-[15px] text-ink-body">
-              Not sure if your address is covered?{' '}
-              <PhoneLink location="city_coverage" label="Call" className="font-semibold text-ink underline decoration-flame underline-offset-4" /> with
-              your address and ask whether a local provider serves it.
+            <ol className="grid gap-3">
+              <Step n={1} title="Refrigerator or freezer warming.">
+                Keep the doors closed. Put an appliance thermometer on a middle shelf; the fresh-food side should read 40°F or lower, the
+                freezer 0°F.
+              </Step>
+              <Step n={2} title="Washer leaking.">
+                Turn the hot and cold valves on the wall behind the machine clockwise until they stop. Unplug it if the plug is dry and easy
+                to reach; otherwise switch off its breaker. Then towels or a wet-dry vac. The{' '}
+                <Link href="/washer-repair-temple-tx/" className={inline}>washer leak and flood repair</Link> page explains the usual causes.
+              </Step>
+              <Step n={3} title="Dishwasher leaking.">
+                Switch off its breaker, close the small valve under the sink and keep the door shut so the water inside stays put.
+              </Step>
+              <Step n={4} title="Oven or range dead.">
+                Look at the breaker panel first. An electric range runs on a double breaker, and when only half of it trips, the clock can
+                glow while the oven stays cold. On a gas range, a gas smell overrides everything else; get out and call from outside. More
+                on <Link href="/oven-stove-repair-temple-tx/" className={inline}>gas range and oven repair</Link>.
+              </Step>
+              <Step n={5} title="Anything smoking or sparking.">
+                Kill the power at the panel rather than at the appliance&apos;s own switch, and leave the cabinet closed.
+              </Step>
+            </ol>
+            <p className="mt-6 text-[17px] leading-relaxed text-ink-body">
+              A tripped breaker usually rests in the middle, between ON and OFF. Push it fully to OFF, then back to ON. If it snaps off
+              again right away, leave it off. Kitchen, laundry and garage outlets may also have a GFCI reset button that pops out.
             </p>
           </div>
         </div>
       </Section>
 
-      <Section tone="white" labelledBy="choose-heading">
-        <div className="grid gap-12 lg:grid-cols-[1fr_1.3fr]">
-          <SectionHeading
-            id="choose-heading"
-            eyebrow="Choosing a provider"
-            title="How to choose an appliance repair pro"
-            accent="in Temple."
-            className="!mb-0"
-          />
+      <Section labelledBy="today-heading">
+        <div className="grid gap-12 lg:grid-cols-[1fr_1.4fr]">
+          <SectionHeading id="today-heading" eyebrow="Today's schedule" title="Can I get appliance repair" accent="today in Temple?" />
           <div className="prose-copy">
             <p>
-              Each provider is a separate business. A few questions on the call help you decide
-              whether the provider is the right fit for your appliance and your home.
+              Sometimes, and calling <PhoneLink location="sameday_today" className={inline} /> is the only honest way to find out.
+              Whether a technician can come out the same day depends on when you call, where you are and whether the likely part is one
+              technicians usually carry.
             </p>
-            <ul>
-              <li>Ask what happens on the first visit, whether there is a trip or diagnostic charge, and how long parts take to arrive.</li>
-              <li>Ask for proof of insurance, and check the state&apos;s requirements for the work, such as gas line connections.</li>
-              <li>Ask about any warranty on parts and labor before the repair starts, and get it in writing.</li>
-              <li>For built-in, gas or high-end appliances, ask whether the technician regularly works on your brand and model.</li>
+            <p>
+              Time of day matters most. A call at 8 a.m. leaves a whole schedule to work with; a call at 4 p.m. leaves very little.
+              Location comes next. Homes in Temple&apos;s 76501, 76502 and 76504 ZIPs sit close together, while Belton and Salado are a
+              drive down I-35, where afternoon traffic can slow a short trip, so ask for a realistic window. Then the part: igniters, fans
+              and belts are common, while a control board for a newer model often has to be ordered. Reading the model number and any
+              error code off the appliance during the call helps match the part.
+            </p>
+            <p>
+              Heat changes the math too. In July and August, a kitchen in the 80s pushes a struggling refrigerator past 40°F much faster
+              than in March, and a garage freezer can lose the fight by mid-afternoon. Mention that on the call. Night or rotating shift
+              workers at the Baylor Scott &amp; White medical center should say so and ask for a window that doesn&apos;t cut into sleep.
+              Urgent appliance repair across Bell County goes smoother when the scheduler knows the whole picture. For visits that can
+              wait, the main <Link href={routes.home}>appliance repair in Temple</Link> page covers every appliance.
+            </p>
+            <h3>If it breaks on a weekend or a holiday</h3>
+            <p>
+              Searching for weekend appliance repair in Temple usually means the washer died on a Saturday with a week of laundry
+              waiting. Call and ask how weekend scheduling works, and whether any extra charge applies, before you book. Holidays bring
+              their own risk: an oven that sits idle most weeks may run six straight hours on Thanksgiving. Heat it to 350°F for twenty
+              minutes a few days ahead, while there&apos;s still time to get it looked at, and keep a grill or slow cooker in mind as a
+              backup.
+            </p>
+          </div>
+        </div>
+      </Section>
+
+      <Section tone="ink" labelledBy="ask-heading">
+        <div className="grid gap-12 lg:grid-cols-[1fr_1.3fr]">
+          <SectionHeading
+            id="ask-heading"
+            eyebrow="Keep by the phone"
+            title="Before you book same-day appliance repair,"
+            accent="ask these questions"
+            intro="Urgent calls move fast, which is exactly when details get skipped. Keep this list by the phone."
+            dark
+          />
+          <div>
+            <ul className="grid gap-3">
+              {questions.map((q) => (
+                <li key={q} className="flex gap-3 rounded-2xl border border-white/10 bg-white/[0.04] p-4 text-[16.5px] leading-relaxed text-white/85">
+                  <Icon name="check" className="mt-1 h-5 w-5 shrink-0 text-mint-bright" strokeWidth={2.4} />
+                  {q}
+                </li>
+              ))}
             </ul>
+            <p className="mt-6 text-[17px] leading-relaxed text-white/70">
+              Write the answers down, in case the repair needs a second visit for a part.
+            </p>
+          </div>
+        </div>
+      </Section>
+
+      <Section tone="white" labelledBy="night-heading">
+        <div className="grid gap-12 lg:grid-cols-[1fr_1.4fr]">
+          <SectionHeading id="night-heading" eyebrow="After hours" title="What should you do when the fridge" accent="stops working at night?" />
+          <div className="prose-copy">
+            <p>
+              If you&apos;re searching for 24 hour appliance repair in Temple because the refrigerator quit after dinner, the job tonight
+              is simple: keep the cold inside until a technician can look at it. According to the USDA, a refrigerator that stays closed
+              keeps food safe for about 4 hours without power or cooling. A full freezer holds its temperature for about 48 hours, and a
+              half-full one for about 24.
+            </p>
+            <p>
+              So stop opening the doors. If the freezer is still cold, move raw meat, milk and leftovers in there; an ice chest with
+              bagged ice handles the rest. Check the outlet and breaker once, then resist unplugging and replugging the refrigerator; a
+              fault that vanishes for an hour usually comes back.
+            </p>
+            <p>
+              In the morning, read the thermometer before opening anything. Perishables that sat above 40°F for more than 2 hours should
+              go, per USDA guidance. Then call and say how long the refrigerator has been warm; that tells the scheduler how urgent it is.
+              The <Link href="/refrigerator-repair-temple-tx/">refrigerator repair in Temple</Link> page covers the usual causes once the
+              immediate crisis is over.
+            </p>
           </div>
         </div>
       </Section>
 
       <Section labelledBy="faq-heading">
         <div className="grid gap-12 lg:grid-cols-[1fr_1.5fr]">
-          <div className="lg:sticky lg:top-32 lg:self-start">
-            <SectionHeading id="faq-heading" eyebrow="Local FAQ" title="Appliance repair in Temple:" accent="your questions." />
-            <div className="-mt-6 flex flex-col gap-3">
-              <Link href={routes.faq} className="link-arrow">
-                More appliance repair FAQs <Icon name="arrow" className="h-4 w-4" />
-              </Link>
-              <PhoneLink location="city_faq" label="Call" className="link-arrow" />
-            </div>
-          </div>
-          <FaqList faqs={cityFaqs} />
+          <SectionHeading id="faq-heading" eyebrow="FAQ" title="Questions while you" accent="wait." />
+          <FaqList faqs={faqs} />
         </div>
       </Section>
 
       <FinalCta
-        title="Need an appliance technician"
-        accent="in Temple?"
-        text="Whirlpool washer, Samsung fridge or GE oven, anywhere from 76501 to 76504: describe the problem and the line routes your call to a technician serving Temple."
-        formId="city_final"
+        formId="sameday_final"
+        title="When it"
+        accent="can't wait."
+        cardHeadingLevel="p"
+        cardTitle="Check today's schedule"
+        text={
+          <>
+            A breakdown at the worst possible moment is easier to handle with a plan and a phone number. Call Appliance Repair Temple at{' '}
+            <PhoneLink location="sameday_final_text" className="font-semibold text-white underline decoration-white/40 underline-offset-4" /> or{' '}
+            <Link href={routes.request} className="font-semibold text-white underline decoration-white/40 underline-offset-4">
+              schedule an urgent repair visit
+            </Link>
+            , and ask whether same-day appliance repair in Temple, TX is possible for your situation.
+          </>
+        }
       />
     </>
+  );
+}
+
+function Step({ n, title, children }: { n: number; title: string; children: React.ReactNode }) {
+  return (
+    <li className="flex gap-4 rounded-2xl border border-sand bg-canvas p-5">
+      <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-ink font-display text-[15px] font-bold text-white">{n}</span>
+      <p className="text-[16.5px] leading-relaxed text-ink-body">
+        <strong className="font-semibold text-ink">{title}</strong> {children}
+      </p>
+    </li>
   );
 }
