@@ -39,7 +39,7 @@ export function CtaRow({ location, dark = false }: { location: string; dark?: bo
     <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-5">
       <CallButton location={location} label="Call Now" className="text-[17px]" />
       <p className={`text-[14px] leading-snug ${dark ? 'text-white/60' : 'text-ink-muted'}`}>
-        <span className={`block font-semibold ${dark ? 'text-white' : 'text-ink'}`}>Talk to our team</span>
+        <span className={`block font-semibold ${dark ? 'text-white' : 'text-ink'}`}>Call to check today&apos;s schedule</span>
         {/* Phones already show the hint in the sticky call bar. */}
         <span className="hidden md:inline">{callHint}</span>
       </p>

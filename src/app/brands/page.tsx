@@ -93,8 +93,7 @@ export default function BrandsPage() {
         )}
         <p className="mt-12 max-w-3xl text-sm text-ink-muted">
           All brand names are trademarks of their respective owners. {site.brandName} is not affiliated with, authorized by or
-          endorsed by any manufacturer listed here. If your appliance is still under a manufacturer’s warranty, contact the
-          manufacturer first.
+          endorsed by any manufacturer listed here.
         </p>
       </Section>
 

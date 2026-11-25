@@ -7,7 +7,6 @@ import { PageHero } from '@/components/PageHero';
 import { PhoneLink } from '@/components/PhoneLink';
 import { Section, SectionHeading } from '@/components/Section';
 import { TrustBadges } from '@/components/TrustBadges';
-import { CtaRow } from '@/components/Buttons';
 import { CallCard } from '@/components/CallCard';
 import { areas, areaHref } from '@/content/areas';
 import type { Faq } from '@/content/types';
@@ -28,7 +27,7 @@ const nextSteps = [
 const requestFaqs: Faq[] = [
   {
     q: 'Who answers when I call?',
-    a: 'Appliance Repair Temple works as a free referral service: the line routes your call to an independent repair business that serves your ZIP code. You and that business settle the visit, the price and any warranty directly. Appliance Repair Temple does not perform repairs.',
+    a: 'Appliance Repair Temple works as a free referral service: the line routes your call to an independent repair business that serves your ZIP code. You and that business settle the visit, the price directly. Appliance Repair Temple does not perform repairs.',
   },
   {
     q: 'What if I do not know the brand or model?',
@@ -58,9 +57,6 @@ export default function RequestPage() {
             That is the whole process for reaching an appliance repair technician in {site.city} and nearby {site.county} towns
             through {site.brandName}, and it takes a few minutes.
           </p>
-        </div>
-        <div className="mt-8">
-          <CtaRow location="request_hero" dark />
         </div>
         <div className="mt-8 border-t border-white/10 pt-6">
           <TrustBadges dark />

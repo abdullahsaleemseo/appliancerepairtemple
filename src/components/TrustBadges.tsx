@@ -3,10 +3,9 @@ import { Icon } from './Icon';
 
 /** Plain facts about the service. No credentials, ratings or speed claims. */
 const items = [
-  { text: 'Upfront price before work', icon: 'phone' as const },
-  { text: 'Our technicians across Bell County', icon: 'wrench' as const },
+  { text: 'Ask for the price before work starts', icon: 'phone' as const },
+  { text: `Serving ${site.city} & ${site.county}`, icon: 'pin' as const },
   { text: 'All major appliance brands', icon: 'tag' as const },
-  { text: `${site.city} & ${site.county}`, icon: 'pin' as const },
 ];
 
 export function TrustBadges({ dark = false }: { dark?: boolean; tone?: string }) {

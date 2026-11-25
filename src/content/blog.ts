@@ -278,7 +278,7 @@ export const posts: Post[] = [
           },
         ],
         after: [
-          'Wash bulky items like comforters, rugs and dog beds on their own, on the Bulky or Bedding cycle. A waterproof mattress cover or a single heavy rug is almost guaranteed to throw a drum off balance.',
+          'Wash bulky items like comforters, rugs and dog beds on their own, on the Bulky or Bedding cycle. A waterproof mattress cover or a single heavy rug will very likely throw a drum off balance.',
         ],
       },
       {
@@ -1236,7 +1236,6 @@ export const posts: Post[] = [
         heading: 'Other things to weigh',
         list: [
           'Parts availability. For older or less common models, ask whether the part is still made. A discontinued part can decide the question for you.',
-          'Warranty. Check the manufacturer’s warranty and any extended plan first. Some brands cover certain parts, like compressors or washer motors, for much longer than the standard warranty.',
           'Recalls. Look up the model and serial number at cpsc.gov. A recall remedy is handled by the manufacturer.',
           'Energy use. Refrigerators and freezers run around the clock, so a very old unit can cost noticeably more to run than a newer one.',
           'Installation. Replacing a built-in dishwasher, an over-the-range microwave or a gas appliance adds installation and haul-away on top of the purchase.',
@@ -1254,7 +1253,7 @@ export const posts: Post[] = [
           'Would you repair this one if it were yours?',
         ],
         after: [
-          'A good technician should answer all five plainly, including telling you when a repair does not make sense. Also ask about pricing and any warranty on the work before the repair starts.',
+          'A good technician should answer all five plainly, including telling you when a repair does not make sense. Also ask about pricing before the repair starts.',
         ],
       },
     ],
@@ -1266,7 +1265,7 @@ export const posts: Post[] = [
       },
       {
         q: 'Is it worth repairing a refrigerator compressor?',
-        a: 'On a newer refrigerator, often yes, and check the warranty first since some brands cover compressors for many years. On a refrigerator past about 10 years old, replacement usually makes more sense.',
+        a: 'On a newer refrigerator, often yes. On a refrigerator past about 10 years old, replacement usually makes more sense.',
       },
       {
         q: 'Do new appliances last as long as old ones?',

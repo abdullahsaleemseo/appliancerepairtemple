@@ -51,7 +51,6 @@ export const brands: Brand[] = [
       'The full model and serial number. A clear photo of the tag is perfect for a Whirlpool.',
       'Whether a dryer or range is gas or electric (the model prefix often tells you).',
       'What it is doing, and any two-part code such as F9 E1 or a flashing light pattern.',
-      'Roughly how old it is, and whether it is still under the manufacturer’s warranty.',
       'Your ZIP code, so the call reaches a provider who works in your part of Temple.',
     ],
     modelLocations: [
@@ -73,10 +72,6 @@ export const brands: Brand[] = [
         a: 'No. Appliance Repair Temple is not affiliated with or authorized by Whirlpool. The technicians reached through this line are local and not part of Whirlpool’s service network.',
       },
       {
-        q: 'My Whirlpool is still under warranty. Who should I call?',
-        a: 'Contact Whirlpool first, since outside repair may not be covered by the manufacturer’s warranty. Once coverage has ended, call (254) 615-2088 and describe the problem.',
-      },
-      {
         q: 'What does F9 E1 or F8 E1 mean on my Whirlpool washer?',
         a: 'On many Whirlpool washers the F number names the system and the E number the fault. F9 E1 usually flags a long drain and F8 E1 a long or slow fill, but meanings vary by model.',
       },
@@ -86,7 +81,7 @@ export const brands: Brand[] = [
       },
       {
         q: 'How much does Whirlpool appliance repair cost?',
-        a: 'Whirlpool repair costs depend on the appliance and the part, so no prices are listed. Ask the provider about pricing and any warranty on the work before the repair starts.',
+        a: 'Whirlpool repair costs depend on the appliance and the part, so no prices are listed. Ask the provider about pricing before the repair starts.',
       },
     ],
     hasPage: true,
@@ -139,7 +134,6 @@ export const brands: Brand[] = [
       'Which GE line it is: GE, GE Profile, Café, Monogram or Hotpoint.',
       'Gas or electric, for ranges, cooktops and dryers.',
       'What the appliance is doing, and any F code on the display.',
-      'Whether it is still under the manufacturer’s warranty.',
     ],
     modelLocations: [
       { appliance: 'Range', where: 'Behind the oven door on the front frame, inside the storage drawer on the front frame, or under the cooktop' },
@@ -156,7 +150,7 @@ export const brands: Brand[] = [
       },
       {
         q: 'Is Appliance Repair Temple connected to GE Appliances?',
-        a: 'No. It is not affiliated with, authorized by or paid by GE Appliances or Haier. If your appliance is still under the GE warranty, contact GE Appliances first.',
+        a: 'No. It is not affiliated with, authorized by or paid by GE Appliances or Haier.',
       },
       {
         q: 'My GE oven shows F3. Is it safe to keep using?',
@@ -172,7 +166,7 @@ export const brands: Brand[] = [
       },
       {
         q: 'What does GE appliance repair cost in Temple?',
-        a: 'This site does not list prices, since it depends on the appliance and the part. Before the repair starts, ask the provider for the price and whether the work carries any warranty.',
+        a: 'This site does not list prices, since it depends on the appliance and the part. Before the repair starts, ask the provider for the price.',
       },
     ],
     hasPage: true,
@@ -225,7 +219,6 @@ export const brands: Brand[] = [
       'The exact error code on the display, and when it appears.',
       'For refrigerators: whether the ice maker is in the door or the freezer, and whether there is ice buildup.',
       'Gas or electric, for a Samsung dryer or range.',
-      'Whether the appliance is still under Samsung’s warranty.',
     ],
     modelLocations: [
       { appliance: 'Refrigerator', where: 'Inside the fresh-food section on a side wall above the top shelf, with a second label on the lower outside of the cabinet on many models' },
@@ -242,7 +235,7 @@ export const brands: Brand[] = [
       },
       {
         q: 'Will a Samsung authorized center pick up this call?',
-        a: 'No. Appliance Repair Temple is not affiliated with or authorized by Samsung. For a repair still under Samsung’s warranty, contact Samsung first.',
+        a: 'No. Appliance Repair Temple is not affiliated with or authorized by Samsung.',
       },
       {
         q: 'Should I read the code to the technician over the phone?',
@@ -258,7 +251,7 @@ export const brands: Brand[] = [
       },
       {
         q: 'How is a Samsung repair priced?',
-        a: 'Prices depend on the appliance, the part and the model version, so none are listed here. Ask the provider about the price and any warranty on the work before the repair begins.',
+        a: 'Prices depend on the appliance, the part and the model version, so none are listed here. Ask the provider about the price before the repair begins.',
       },
     ],
     hasPage: true,
@@ -275,7 +268,6 @@ export const brands: Brand[] = [
       'LG made its name with direct-drive washers and linear-compressor refrigerators, and both are common in Temple homes. LG appliance repair in Temple, TX usually starts with what the display says: OE or IE on a washer, D80 to D95 on a dryer, or a refrigerator that runs but no longer gets cold.',
       'LG appliances are common in newer Temple homes, especially French door refrigerators, front-load laundry pairs and smart ranges. Most LG models report faults as two-letter codes on the display, and many support Smart Diagnosis through the LG ThinQ app. A code points to the right system; testing confirms which part failed.',
       'LG model numbers start with the product: LF, LRF and LRMV are French door and InstaView-style refrigerators, LS a side-by-side, WM a front-load washer, WT a top-load washer, DLE and DLG an electric or gas dryer, LRE and LRG an electric or gas range, LDF, LDT and LDP dishwashers, and LMV an over-the-range microwave. Kenmore models with a 795 or 796 prefix were built by LG and use many of the same parts.',
-      'If your LG refrigerator has stopped cooling, check the purchase date first: LG covers the linear or inverter compressor on many models longer than its standard warranty.',
     ],
     appliances: [
       { key: 'refrigerator', note: 'French door, side-by-side, bottom-freezer and InstaView-style models' },
@@ -288,7 +280,7 @@ export const brands: Brand[] = [
     issues: [
       {
         title: 'Refrigerator not cooling',
-        text: 'Fans, the defrost system, sensors and the control board fail more often and are simpler to fix, so they get checked first. Display codes such as Er FF (freezer fan), Er CF (condenser fan) or Er dH (defrost heater) narrow it down. If it is the compressor, ask for that to be written down for the warranty claim.',
+        text: 'Fans, the defrost system, sensors and the control board fail more often and are simpler to fix, so they get checked first. Display codes such as Er FF (freezer fan), Er CF (condenser fan) or Er dH (defrost heater) narrow it down.',
       },
       {
         title: 'Ice maker slow or frozen',
@@ -310,9 +302,7 @@ export const brands: Brand[] = [
     haveReady: [
       'The model and serial number from the LG label, or a photo of it.',
       'The exact error code, and whether it shows on the display or in the ThinQ app.',
-      'For refrigerators: the purchase date, so you can check LG’s compressor coverage.',
       'Gas or electric, if it is an LG dryer or range.',
-      'Whether the appliance is still under any LG warranty.',
     ],
     modelLocations: [
       { appliance: 'Refrigerator', where: 'Inside the fresh-food section on the side liner, on the right on most models and on the left on newer ones' },
@@ -325,11 +315,11 @@ export const brands: Brand[] = [
     faqs: [
       {
         q: 'Does Appliance Repair Temple work for LG?',
-        a: 'No. It has no affiliation with LG and is not an LG authorized service provider. If your appliance is under LG’s warranty, start with LG.',
+        a: 'No. It has no affiliation with LG and is not an LG authorized service provider.',
       },
       {
         q: 'My LG refrigerator stopped cooling. Is it the compressor?',
-        a: 'Not always. Fans, the defrost heater, sensors and the control board are tested first. If the compressor has failed, check LG’s compressor coverage for your model before paying.',
+        a: 'Not always. Fans, the defrost heater, sensors and the control board are tested first.',
       },
       {
         q: 'Can a Kenmore built by LG be repaired the same way?',
@@ -345,7 +335,7 @@ export const brands: Brand[] = [
       },
       {
         q: 'What should I ask about price for an LG repair?',
-        a: 'Ask the provider what the repair will cost and whether there is any warranty on the work, before anything is replaced. This site does not list prices.',
+        a: 'Ask the provider what the repair will cost, before anything is replaced. This site does not list prices.',
       },
     ],
     hasPage: true,
@@ -413,7 +403,7 @@ export const brands: Brand[] = [
     faqs: [
       {
         q: 'Is this the Frigidaire service line?',
-        a: 'No. Appliance Repair Temple is not affiliated with or authorized by Frigidaire or Electrolux. For a repair still covered by the manufacturer’s warranty, contact Frigidaire first.',
+        a: 'No. Appliance Repair Temple is not affiliated with or authorized by Frigidaire or Electrolux.',
       },
       {
         q: 'Has my Frigidaire been recalled?',
@@ -433,7 +423,7 @@ export const brands: Brand[] = [
       },
       {
         q: 'Why are there no Frigidaire repair prices on this page?',
-        a: 'Costs depend on the appliance and the part, so none are listed. Ask the provider for the price and any warranty on the work before the repair starts.',
+        a: 'Costs depend on the appliance and the part, so none are listed. Ask the provider for the price before the repair starts.',
       },
     ],
     hasPage: true,
@@ -450,7 +440,6 @@ export const brands: Brand[] = [
       'Maytag laundry pairs are a fixture in Temple utility rooms, from older top-loaders to Bravos models that report Ld and LF codes. Maytag appliance repair in Temple, TX covers those washers and dryers along with Maytag refrigerators, dishwashers, ranges and microwaves, many of which share parts with Whirlpool.',
       'Laundry is where Maytag shows up most in Temple homes, from Centennial and Bravos top-loaders that have run for years to newer high-efficiency pairs and the Commercial Technology line. Some older houses still have a Neptune front-loader. Maytag is part of Whirlpool Corporation, and most current Maytag models share platforms and parts with Whirlpool, which keeps common parts easy to find.',
       'Maytag model numbers follow the Whirlpool pattern. MVW is a top-load washer, MHW a front-load washer, MED and MGD an electric or gas dryer, MFI a French door refrigerator with an in-door ice maker, MRT a top-freezer, MDB a dishwasher, MER and MGR an electric or gas range, and MMV an over-the-range microwave.',
-      'Check the warranty before any repair. Maytag offers a 10-year limited parts warranty on certain parts of many newer appliances, such as the washer drive motor and wash basket and some refrigerator compressors. Labor is often not included in the later years, so a covered part can still mean a paid visit.',
     ],
     appliances: [
       { key: 'washer', note: 'MVW top-load and MHW front-load washers, including Bravos, Centennial and agitator models' },
@@ -471,7 +460,7 @@ export const brands: Brand[] = [
       },
       {
         title: 'Refrigerator not cooling',
-        text: 'Dusty condenser coils, a failed condenser or evaporator fan, a defrost problem or a start relay come before the compressor. If the compressor has failed, check Maytag’s parts coverage for your model first.',
+        text: 'Dusty condenser coils, a failed condenser or evaporator fan, a defrost problem or a start relay come before the compressor.',
       },
       {
         title: 'Dishwasher leaves dishes dirty',
@@ -484,7 +473,6 @@ export const brands: Brand[] = [
     ],
     haveReady: [
       'The Maytag model and serial number, typed out or photographed.',
-      'The purchase date, so you can check which parts the Maytag warranty still covers.',
       'Top-load or front-load, and gas or electric for dryers and ranges.',
       'Any code on the display, such as Ld or LF, and what the washer or dryer was doing when it stopped.',
       'Whether the problem started after a move or a power outage.',
@@ -501,11 +489,7 @@ export const brands: Brand[] = [
     faqs: [
       {
         q: 'Is Appliance Repair Temple part of Maytag service?',
-        a: 'No. It is not affiliated with or authorized by Maytag or Whirlpool Corporation. If your appliance is under Maytag’s warranty, contact Maytag first.',
-      },
-      {
-        q: 'Does the Maytag 10-year warranty cover my repair?',
-        a: 'It depends on the model and the part. The 10-year limited coverage applies to specific parts, such as the washer drive motor and wash basket and some refrigerator compressors, and labor is often not included in the later years. Check your warranty paperwork or ask Maytag.',
+        a: 'No. It is not affiliated with or authorized by Maytag or Whirlpool Corporation.',
       },
       {
         q: 'Is my older Maytag washer worth repairing?',
@@ -521,7 +505,7 @@ export const brands: Brand[] = [
       },
       {
         q: 'How much should a Maytag repair cost?',
-        a: 'There is no price list here, since it depends on the appliance and the part. Ask the provider for the price and any warranty on the work, and check what Maytag’s parts warranty already covers.',
+        a: 'There is no price list here, since it depends on the appliance and the part. Ask the provider for the price.',
       },
     ],
     hasPage: true,
@@ -572,7 +556,6 @@ export const brands: Brand[] = [
       'Any error code or the number of flashes on the control panel.',
       'Gas or electric, for ranges.',
       'For dishwashers: when the filter was last cleaned and whether you have hard water.',
-      'Whether the appliance is still under KitchenAid’s warranty.',
     ],
     modelLocations: [
       { appliance: 'Dishwasher', where: 'On the left edge of the door or tub, visible when the door is open' },
@@ -585,7 +568,7 @@ export const brands: Brand[] = [
     faqs: [
       {
         q: 'Are these KitchenAid-authorized technicians?',
-        a: 'No. Appliance Repair Temple is not affiliated with or authorized by KitchenAid or Whirlpool Corporation. If your appliance is under KitchenAid’s warranty, contact KitchenAid first.',
+        a: 'No. Appliance Repair Temple is not affiliated with or authorized by KitchenAid or Whirlpool Corporation.',
       },
       {
         q: 'Why does my KitchenAid dishwasher leave a white film?',
@@ -605,7 +588,7 @@ export const brands: Brand[] = [
       },
       {
         q: 'What does KitchenAid appliance repair cost?',
-        a: 'It varies with the appliance and the part, so this site lists no prices. Ask the provider for the price and any warranty on the work before the repair.',
+        a: 'It varies with the appliance and the part, so this site lists no prices. Ask the provider for the price before the repair.',
       },
     ],
     hasPage: true,
@@ -655,7 +638,6 @@ export const brands: Brand[] = [
       'The exact error code, such as E15, E24 or E25.',
       'Whether water is leaking onto the floor or only standing in the tub.',
       'For ranges: gas, electric or induction.',
-      'Whether the appliance is still under Bosch’s warranty.',
     ],
     modelLocations: [
       { appliance: 'Dishwasher', where: 'On a label or engraved on the top or side edge of the door, visible when the door is open' },
@@ -666,7 +648,7 @@ export const brands: Brand[] = [
     faqs: [
       {
         q: 'Will Bosch service my dishwasher if I call this number?',
-        a: 'No. This number is not Bosch, and Appliance Repair Temple is not affiliated with or authorized by Bosch or BSH. If your appliance is under Bosch’s warranty, contact Bosch first.',
+        a: 'No. This number is not Bosch, and Appliance Repair Temple is not affiliated with or authorized by Bosch or BSH.',
       },
       {
         q: 'What does E15 mean on my Bosch dishwasher?',
@@ -686,7 +668,7 @@ export const brands: Brand[] = [
       },
       {
         q: 'Is a Bosch dishwasher worth repairing?',
-        a: 'Often. Pumps, hoses, door springs and the heater are standard repairs, and the tub is stainless. Ask the provider for the price and any warranty on the work before deciding; this site does not list prices.',
+        a: 'Often. Pumps, hoses, door springs and the heater are standard repairs, and the tub is stainless. Ask the provider for the price before deciding; this site does not list prices.',
       },
     ],
     hasPage: true,
@@ -774,7 +756,7 @@ export const brands: Brand[] = [
       },
       {
         q: 'How much does Kenmore appliance repair cost?',
-        a: 'That depends on the appliance, the builder and the part, so no prices are listed. Ask the provider about the price and any warranty on the work before the repair starts.',
+        a: 'That depends on the appliance, the builder and the part, so no prices are listed. Ask the provider about the price before the repair starts.',
       },
     ],
     hasPage: true,
@@ -827,7 +809,6 @@ export const brands: Brand[] = [
       'Any error code on the display.',
       'For washers: whether you have cleaned the pump filter, and which detergent you use.',
       'Gas or electric (ELFE or ELFG on dryers).',
-      'Whether the appliance is still under Electrolux’s warranty.',
     ],
     modelLocations: [
       { appliance: 'Refrigerator', where: 'Inside the fresh-food section on the wall, visible when the door is open' },
@@ -840,7 +821,7 @@ export const brands: Brand[] = [
     faqs: [
       {
         q: 'Is Appliance Repair Temple linked to Electrolux?',
-        a: 'No. It is not affiliated with or authorized by Electrolux or Frigidaire. Appliances still under Electrolux’s warranty should go to Electrolux first.',
+        a: 'No. It is not affiliated with or authorized by Electrolux or Frigidaire.',
       },
       {
         q: 'Are Electrolux and Frigidaire parts the same?',
@@ -860,7 +841,7 @@ export const brands: Brand[] = [
       },
       {
         q: 'What will an Electrolux repair cost?',
-        a: 'No prices are listed here, since the cost depends on the appliance and the part. Ask the provider about the price and any warranty on the work before agreeing to it.',
+        a: 'No prices are listed here, since the cost depends on the appliance and the part. Ask the provider about the price before agreeing to it.',
       },
     ],
     hasPage: true,
@@ -914,7 +895,6 @@ export const brands: Brand[] = [
       'Whether you own the home or rent it, and who approves repairs.',
       'Whether the dryer or range runs on gas or electric.',
       'What the appliance is doing, or not doing, and when it started.',
-      'Whether the appliance is still under Amana’s warranty.',
     ],
     modelLocations: [
       { appliance: 'Refrigerator', where: 'Inside the fresh-food section, usually on an upper side wall' },
@@ -927,7 +907,7 @@ export const brands: Brand[] = [
     faqs: [
       {
         q: 'Is this an Amana service center?',
-        a: 'No. Appliance Repair Temple is not affiliated with or authorized by Amana or Whirlpool Corporation. If your appliance is under Amana’s warranty, contact Amana first.',
+        a: 'No. Appliance Repair Temple is not affiliated with or authorized by Amana or Whirlpool Corporation.',
       },
       {
         q: 'Does this cover Amana air conditioners or furnaces?',
@@ -947,7 +927,7 @@ export const brands: Brand[] = [
       },
       {
         q: 'How much does Amana appliance repair cost?',
-        a: 'It depends on the appliance and the part, so this site does not list prices. Landlords and tenants alike should ask the provider for the price and any warranty on the work first.',
+        a: 'It depends on the appliance and the part, so this site does not list prices. Landlords and tenants alike should ask the provider for the price first.',
       },
     ],
     hasPage: true,
@@ -964,7 +944,6 @@ export const brands: Brand[] = [
       'Speed Queen washers and dryers are built for decades of heavy use, with commercial-style parts and, on the TC5, very little electronics. Speed Queen repair in Temple, TX is mostly about one worn part on a machine worth keeping: a drain pump, a lid switch, a belt or a dryer heating part.',
       'Speed Queen makes laundry and nothing else. It is built by Alliance Laundry Systems in Ripon, Wisconsin, the same company behind a lot of commercial laundromat equipment, and the home machines borrow from that heavy-duty design. Many Temple owners bought one to keep for a long time, and with that build, repair is usually the sensible choice when something wears out.',
       'Speed Queen model numbers name the series. TC5 is the classic top-load washer with mechanical dials and a transmission-driven agitator. TR3, TR5 and TR7 are electronic top-loaders, FF7 a front-load washer, and DR3, DR5, DR7 and DC5 dryers, with E or G near the end for electric or gas. Older machines carry longer codes starting with AWN for washers or ADE and ADG for dryers.',
-      'Check the warranty before anything else. Many recent Speed Queen washers and dryers come with long coverage, often five years or more, and the exact terms depend on the model and serial number.',
     ],
     appliances: [
       { key: 'washer', note: 'TC5 and TR series top-loaders, FF7 front-loaders and older AWN models' },
@@ -994,7 +973,6 @@ export const brands: Brand[] = [
     ],
     haveReady: [
       'The model and serial number from the serial plate; a phone photo is fine.',
-      'The purchase date and your warranty paperwork, since coverage depends on the serial number.',
       'Top-load or front-load, and gas or electric for the dryer.',
       'What the machine was doing when it stopped, and any code or flashing light.',
       'Whether the machine is in a home or used commercially, such as in a rental property’s shared laundry.',
@@ -1008,11 +986,7 @@ export const brands: Brand[] = [
     faqs: [
       {
         q: 'Is Appliance Repair Temple a Speed Queen dealer or service center?',
-        a: 'Neither. It is not affiliated with or authorized by Speed Queen or Alliance Laundry Systems. A machine still under Speed Queen’s warranty should go to Speed Queen first.',
-      },
-      {
-        q: 'Is my Speed Queen still under warranty?',
-        a: 'Possibly. Many recent Speed Queen washers and dryers carry long warranties, and the exact coverage depends on the model and serial number. Check your paperwork or contact Speed Queen before paying for a repair.',
+        a: 'Neither. It is not affiliated with or authorized by Speed Queen or Alliance Laundry Systems.',
       },
       {
         q: 'Is an older Speed Queen worth repairing?',
@@ -1028,7 +1002,7 @@ export const brands: Brand[] = [
       },
       {
         q: 'How much does Speed Queen repair cost?',
-        a: 'It depends on the machine and the part, so no prices appear here. Ask the provider about pricing and any warranty on the work before the repair starts, and check your own Speed Queen coverage first.',
+        a: 'It depends on the machine and the part, so no prices appear here. Ask the provider about pricing before the repair starts.',
       },
     ],
     hasPage: true,

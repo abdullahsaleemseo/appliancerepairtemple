@@ -12,7 +12,7 @@ import { pageMetadata } from '@/lib/seo';
 
 export const metadata = pageMetadata({
   title: `Appliance Repair FAQ ${site.city} ${site.stateAbbr} | Fix It or Replace It?`,
-  description: `Is an old washer worth fixing? How do you check a license? Answers on brands, gas appliances, warranties and safety in ${site.city}, ${site.stateAbbr}. Call ${phoneDisplay}.`,
+  description: `Is an old washer worth fixing? How do you check a license? Answers on brands, gas appliances and safety in ${site.city}, ${site.stateAbbr}. Call ${phoneDisplay}.`,
   path: routes.faq,
 });
 

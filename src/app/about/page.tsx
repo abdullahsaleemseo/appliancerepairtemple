@@ -31,7 +31,7 @@ const callSteps = [
   },
   {
     title: 'Ask your questions first',
-    text: 'Timing, pricing, licensing, insurance and any warranty on the work are all between you and that business. Decide only once you have answers.',
+    text: 'Timing, pricing, licensing and insurance are all between you and that business. Decide only once you have answers.',
   },
   {
     title: 'Diagnosis before repair',
@@ -51,7 +51,7 @@ const verifySteps = [
 const siteDoesNot = [
   'Send technicians or perform any repair work itself.',
   'Employ, train or supervise the technicians who take the calls.',
-  'Set prices, collect payment or give any warranty or guarantee on work performed.',
+  'Set prices or collect payment for work performed.',
   'Check a repair business’s license or insurance on your behalf.',
   'Represent, or speak for, any appliance manufacturer.',
 ];
@@ -59,7 +59,6 @@ const siteDoesNot = [
 const askBefore = [
   { icon: 'tag' as const, title: 'Pricing', text: 'How is the visit priced, what does a diagnosis cost, and will you hear the full repair price before any part is replaced?' },
   { icon: 'shield' as const, title: 'License and insurance', text: 'Is the business licensed for this work where required, and can it show current proof of insurance?' },
-  { icon: 'check' as const, title: 'Warranty on work', text: 'Does the technician stand behind the repair? Ask what is covered, for how long, and whether parts and labor are treated differently.' },
   { icon: 'wrench' as const, title: 'Parts', text: 'Are replacement parts new and made for your model? How long will a part take to arrive if it is not on the truck?' },
 ];
 
@@ -88,10 +87,6 @@ const aboutFaqs: Faq[] = [
   {
     q: 'How do I check that an appliance repair pro has a license and insurance?',
     a: 'That check is yours to make. Ask for a license number where the work requires one, compare it with the Texas rules for that kind of job, and ask to see a current certificate of insurance before anyone opens a panel.',
-  },
-  {
-    q: 'Who stands behind the repair?',
-    a: 'The business that does the work. Appliance Repair Temple does not warrant or guarantee repairs, so ask how parts and labor are covered before you approve anything.',
   },
   {
     q: 'Can I get emergency appliance repair?',
@@ -187,7 +182,7 @@ export default function AboutPage() {
           <div>
             <SectionHeading id="wont-heading" eyebrow="Straight answers" title="What this site" accent="does not do." />
             <p className="text-ink-body">
-              {site.brandName} points you to a technician and stops there. It does not warrant or guarantee any repair, and every
+              {site.brandName} points you to a technician and stops there. Every
               agreement about the work is between you and the business you hire.
             </p>
           </div>

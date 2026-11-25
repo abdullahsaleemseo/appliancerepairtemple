@@ -111,7 +111,7 @@ export const services: Service[] = [
       },
       {
         q: 'How much does refrigerator repair cost?',
-        a: 'A start relay and a sealed system repair are very different jobs, so this site does not list prices. Ask the technician about pricing and any warranty before the panels come off, and have the brand, the model number and a short description of the problem ready when you call.',
+        a: 'A start relay and a sealed system repair are very different jobs, so this site does not list prices. Ask the technician about pricing before the panels come off, and have the brand, the model number and a short description of the problem ready when you call.',
       },
       {
         q: 'Can I get emergency refrigerator repair in Temple?',
@@ -399,7 +399,7 @@ export const services: Service[] = [
       },
       {
         q: 'How much does freezer repair cost?',
-        a: 'A start relay on a chest freezer and a defrost repair on a frost-free upright are very different jobs, so this site does not list prices. Ask the technician about pricing and any warranty before a part is ordered, and have the brand, model number and freezer type ready when you call.',
+        a: 'A start relay on a chest freezer and a defrost repair on a frost-free upright are very different jobs, so this site does not list prices. Ask the technician about pricing before a part is ordered, and have the brand, model number and freezer type ready when you call.',
       },
     ],
     related: ['refrigerator', 'washer', 'dryer'],
@@ -653,7 +653,7 @@ export const services: Service[] = [
       },
       {
         q: 'How much does washer repair cost?',
-        a: 'Clearing a drain pump and replacing tub bearings are worlds apart in labor, so this site does not list prices. Get the price and any warranty terms before the machine is pulled out, and have the brand, model number and a short description of what the washer is doing ready.',
+        a: 'Clearing a drain pump and replacing tub bearings are worlds apart in labor, so this site does not list prices. Get the price before the machine is pulled out, and have the brand, model number and a short description of what the washer is doing ready.',
       },
       {
         q: 'Can I get emergency washer repair in Temple?',
@@ -960,7 +960,7 @@ export const services: Service[] = [
       },
       {
         q: 'How much does dryer repair cost?',
-        a: 'A blown thermal fuse and a new heating element plus a cleared vent are very different jobs, so this site does not list prices. Ask what the repair will cost, and about any warranty, before work starts, and have the brand, the model number and the fuel type ready.',
+        a: 'A blown thermal fuse and a new heating element plus a cleared vent are very different jobs, so this site does not list prices. Ask what the repair will cost before work starts, and have the brand, the model number and the fuel type ready.',
       },
     ],
     related: ['washer', 'oven', 'dishwasher'],
@@ -1220,7 +1220,7 @@ export const services: Service[] = [
       },
       {
         q: 'How much does dishwasher repair cost?',
-        a: 'A clogged filter and a failed control board sit at opposite ends of the bill, so this site does not list prices. Agree on the price and any warranty before the dishwasher comes out of the cabinet, and have the brand and model number ready when you call.',
+        a: 'A clogged filter and a failed control board sit at opposite ends of the bill, so this site does not list prices. Agree on the price before the dishwasher comes out of the cabinet, and have the brand and model number ready when you call.',
       },
       {
         q: 'Where is the model number on my dishwasher?',
@@ -1471,7 +1471,7 @@ export const services: Service[] = [
       },
       {
         q: 'How much does oven or stove repair cost?',
-        a: 'A new igniter and a replacement glass cooktop are very different jobs, so this site does not list prices. Ask about cost and any warranty on the part before the range is moved, and have the brand, the model number and whether it is gas or electric ready.',
+        a: 'A new igniter and a replacement glass cooktop are very different jobs, so this site does not list prices. Ask about cost before the range is moved, and have the brand, the model number and whether it is gas or electric ready.',
       },
       {
         q: 'Where is the model number on my range?',
@@ -1734,7 +1734,7 @@ export const services: Service[] = [
       },
       {
         q: 'How much does microwave repair cost?',
-        a: 'A door switch and a magnetron are very different repairs, so this site does not list prices. Ask about the price and any warranty before the unit comes off the wall, and have the brand and model number ready.',
+        a: 'A door switch and a magnetron are very different repairs, so this site does not list prices. Ask about the price before the unit comes off the wall, and have the brand and model number ready.',
       },
       {
         q: 'Where is the model number on my microwave?',

@@ -22,8 +22,8 @@ export function CallCard({
   const Heading = headingLevel === 2 ? 'h2' : headingLevel === 'p' ? 'p' : 'h3';
   const points = [
     appliance ? `Have the ${appliance} brand and model number ready.` : 'Have the model number and any error code ready.',
-    'We schedule a visit that fits your day.',
-    'You get the repair price before any work starts.',
+    'Ask for a visit window that fits your day.',
+    'Ask for the repair price before any work starts.',
   ];
   const muted = dark ? 'text-white/60' : 'text-ink-muted';
   return (

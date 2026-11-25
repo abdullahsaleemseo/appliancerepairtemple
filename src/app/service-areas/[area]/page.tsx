@@ -112,9 +112,6 @@ export default async function AreaPage({ params }: Params) {
                 </>
               ) : null}
             </div>
-            <div className="mt-6">
-              <CtaRow location={`area_${a.slug}_emergency`} />
-            </div>
           </div>
         </div>
       </Section>

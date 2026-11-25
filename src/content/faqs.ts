@@ -109,7 +109,7 @@ export const faqGroups: { id: string; title: string; accent: string; faqs: Faq[]
   {
     id: 'payment',
     title: 'Costs and',
-    accent: 'warranties',
+    accent: 'payment',
     faqs: [
       {
         q: 'Why are there no prices on the website?',
@@ -118,10 +118,6 @@ export const faqGroups: { id: string; title: string; accent: string; faqs: Faq[]
       {
         q: 'How is payment handled?',
         a: 'Directly with the repair business. Before the job starts, ask which methods it accepts and when payment is due, and ask for an itemized invoice at the end.',
-      },
-      {
-        q: 'What if my appliance is still under a factory or extended warranty?',
-        a: 'Call the manufacturer or the plan provider first. Many factory warranties require their own authorized service, so outside repair may not be reimbursed. When coverage is over or unclear, call with the model number and ask the repair business.',
       },
       {
         q: 'I rent my home. Who pays for the repair?',
@@ -208,7 +204,7 @@ export const homeFaqs: Faq[] = [
   },
 ];
 
-/** Main city page FAQs: local questions about coverage, timing, rentals, warranty and repair decisions in Temple. */
+/** Main city page FAQs: local questions about coverage, timing, rentals and repair decisions in Temple. */
 export const cityFaqs: Faq[] = [
   {
     q: 'Which Temple ZIP codes and neighborhoods are covered?',
@@ -241,10 +237,6 @@ export const cityFaqs: Faq[] = [
   {
     q: 'I rent in Temple. Can I arrange an appliance repair?',
     a: 'Read the lease first and let the landlord know, because the owner usually answers for appliances that came with the unit. Landlords and property managers with Temple rentals can call themselves. Tell the technician who signs off on the repair and who can open the door.',
-  },
-  {
-    q: 'My Temple appliance is still under warranty. Who should I call?',
-    a: 'Start with the manufacturer or the company behind your extended plan, because work done outside that plan may not be paid for under it. Once coverage has ended, or if you cannot tell, call with the model and serial number and ask the technician.',
   },
   {
     q: 'Can garage refrigerators and freezers in Temple be repaired?',

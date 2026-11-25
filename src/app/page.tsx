@@ -3,7 +3,6 @@ import { routes, site } from '@/config/site';
 import { homeFaqs, homeProblems, homeServices, homeSteps } from '@/content/home';
 import { serviceByKey, serviceHref } from '@/content/services';
 import { MapEmbed } from '@/components/AreaList';
-import { CtaRow } from '@/components/Buttons';
 import { CallCard } from '@/components/CallCard';
 import { FaqList } from '@/components/FaqList';
 import { FinalCta } from '@/components/FinalCta';
@@ -54,9 +53,6 @@ export default function HomePage() {
               </Link>
               .
             </p>
-            <div className="mt-8">
-              <CtaRow location="hero" dark />
-            </div>
           </div>
           <CallCard location="home_hero_card" headingLevel="p" />
         </div>

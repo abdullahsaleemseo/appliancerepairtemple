@@ -18,7 +18,7 @@ export const areas: Area[] = [
     intro: [
       'Belton sits right beside Temple, one of the shortest drives in the area, and its homes run from older streets north of Nolan Creek to new subdivisions toward the lake. Appliance repair in Belton, TX covers refrigerators, freezers, washers, dryers, dishwashers and ovens in all of them, across the 76513 ZIP code.',
       'Belton is also the Bell County seat, and many technicians who work Temple take Belton calls too. Give your street address when you call, since a house near downtown, a rental by the UMHB campus and a home out toward Belton Lake can fall to different providers.',
-      'In Belton, the age of the house often explains the failure. An older home north of Nolan Creek may have an original shutoff valve and a long dryer vent behind the problem, while a newer build may have a French door fridge still under factory coverage. A good technician looks at the hookups as well as the appliance, explains what failed and starts only after your OK.',
+      'In Belton, the age of the house often explains the failure. An older home north of Nolan Creek may have an original shutoff valve and a long dryer vent behind the problem, while a newer build may have a French door fridge with electronic controls. A good technician looks at the hookups as well as the appliance, explains what failed and starts only after your OK.',
       'Refrigerator and freezer repair, washer and dryer repair, dishwasher repair, oven, stove and range repair and over-the-range microwave repair are all part of appliance repair in Belton, on the major brands. The cards further down cover the Whirlpool, Maytag, Kenmore, GE, LG and Frigidaire problems Belton households search for.',
     ],
     brandProblems: [
@@ -26,7 +26,7 @@ export const areas: Area[] = [
       { brand: 'maytag', appliance: 'washer', title: 'Maytag washer not spinning in Belton', text: 'A Maytag top-loader that fills and agitates but will not spin often has a failed lid lock or lid switch, a worn drive belt or coupler, or water that never drained. Check the pump filter on front-load models and the drain hose on both. If the drum is still full, drain it into a bucket before anyone moves the washer.' },
       { brand: 'kenmore', appliance: 'dryer', title: 'Kenmore dryer not heating in Belton', text: 'Many Kenmore dryers were built on Whirlpool designs, so the same parts fail: a blown thermal fuse, a burned-out heating element, or a failed igniter on gas models. A thermal fuse usually blows because the vent is restricted, which is common with the long vent runs in older Belton laundry rooms. Clear the vent before replacing the fuse.' },
       { brand: 'ge', appliance: 'oven', title: 'GE oven not heating in Belton', text: 'A GE electric oven that will not bake usually has a burned-out bake element, and a gas oven usually has a weak igniter that glows but never opens the gas valve. An F-code on the display often points to a temperature sensor or control fault. Write the code down before you reset the breaker.' },
-      { brand: 'lg', appliance: 'refrigerator', title: 'LG refrigerator not cooling in Belton', text: 'Start with the condenser coils and the fan at the bottom back, since dust and pet hair block airflow in summer. If the fridge clicks, hums and stays warm, the compressor or its control may be at fault. Some LG compressors carry longer manufacturer coverage, so check the warranty paperwork before you pay for that repair.' },
+      { brand: 'lg', appliance: 'refrigerator', title: 'LG refrigerator not cooling in Belton', text: 'Start with the condenser coils and the fan at the bottom back, since dust and pet hair block airflow in summer. If the fridge clicks, hums and stays warm, the compressor or its control may be at fault.' },
       { brand: 'frigidaire', appliance: 'freezer', title: 'Frigidaire chest freezer not freezing in Belton', text: 'Chest freezers in Belton garages and lake-house shops work hard in July. If one runs but stays soft, clean the coils or the cabinet vents and give it room to breathe. If it clicks every few minutes and never runs, the start relay or the compressor is the likely cause. Keep the lid closed while you wait.' },
     ],
     brandProblemsIntro:
@@ -50,7 +50,7 @@ export const areas: Area[] = [
       },
       {
         heading: 'Newer subdivisions and newer appliances',
-        text: 'Newer master-planned neighborhoods often came with French door refrigerators, front-load laundry and electronic controls that report error codes. Write the code down before you call, and check whether the manufacturer’s warranty still applies.',
+        text: 'Newer master-planned neighborhoods often came with French door refrigerators, front-load laundry and electronic controls that report error codes. Write the code down before you call.',
       },
       {
         heading: 'Rentals near UMHB',
@@ -94,7 +94,7 @@ export const areas: Area[] = [
         accent: 'what to ask.',
         paragraphs: [
           'Lead with the address and the symptom, such as a Maytag that fills but will not spin or a GE oven showing an F-code. Belton calls range from campus duplexes to lake houses off FM 439, and the street address decides which technician covers it.',
-          'Belton technicians each set their own schedule and prices, so on that call ask when they can come out, how the visit and the repair are priced, and whether they hold insurance and any license the work needs. If parts or labor carry a warranty, get the terms first and write them down.',
+          'Belton technicians each set their own schedule and prices, so on that call ask when they can come out, how the visit and the repair are priced, and whether they hold insurance and any license the work needs.',
         ],
       },
       {
@@ -142,10 +142,6 @@ export const areas: Area[] = [
       {
         q: 'Which appliances can be repaired in Belton?',
         a: 'Kitchen refrigerators and garage freezers, top-load and front-load washers, gas and electric dryers, dishwashers, ovens, ranges, cooktops and over-the-range microwaves. That spans the older Kenmore and Maytag sets in established homes and the newer LG and Samsung models in the subdivisions.',
-      },
-      {
-        q: 'My Belton appliance is still under warranty. Who do I call?',
-        a: 'The manufacturer first, since a repair outside their network may not be covered. Appliances in Belton’s newer subdivisions often still have factory coverage. If it has run out or you cannot tell, call with the model number and the brand.',
       },
       {
         q: 'What if the part for my Belton repair has to be ordered?',
@@ -219,7 +215,7 @@ export const areas: Area[] = [
       },
       {
         heading: 'Newer homes south of I-14',
-        text: 'The area south of I-14 between Stan Schlueter Loop and Chaparral Road holds much of Killeen’s newest building. Those homes often came with French door refrigerators, front-load laundry and electronic controls that show error codes. Write the code down and check the factory warranty before you call.',
+        text: 'The area south of I-14 between Stan Schlueter Loop and Chaparral Road holds much of Killeen’s newest building. Those homes often came with French door refrigerators, front-load laundry and electronic controls that show error codes. Write the code down before you call.',
       },
     ],
     sections: [
@@ -251,10 +247,10 @@ export const areas: Area[] = [
       },
       {
         heading: 'Newer Killeen homes:',
-        accent: 'check the warranty first.',
+        accent: 'write the code down.',
         paragraphs: [
-          'A lot of Killeen’s housing is recent, and appliances that came with a newer home may still be under the manufacturer’s warranty or a builder’s warranty. A repair outside those programs may not be covered, so check the paperwork before you call anyone.',
-          'If the warranty has run out, or you are not sure, have the model number ready when you call. A good technician will tell you plainly whether the repair makes sense for that appliance. Ask for that answer before any work starts.',
+          'A lot of Killeen’s housing is recent, and the appliances that came with those homes tend to have electronic controls that report problems as codes on the display. Note the code and when it appears before you call anyone.',
+          'Have the model number ready when you call. A good technician will tell you plainly whether the repair makes sense for that appliance. Ask for that answer before any work starts.',
         ],
       },
       {
@@ -262,7 +258,7 @@ export const areas: Area[] = [
         accent: 'what to have ready.',
         paragraphs: [
           'Have four things in hand: the full address with ZIP, the brand and model, the error code or symptom, and who approves the repair if the home is a rental. A Samsung fridge on Trimmier Road and a Whirlpool dryer off Fort Hood Street may go to different technicians, and the address sorts that out.',
-          'Killeen providers set their own calendars and rates. Ask when they can come out, how the visit and the repair are priced, and whether they hold insurance and the license the work requires. If you are on orders with a move date coming, say so, and ask about any parts and labor warranty.',
+          'Killeen providers set their own calendars and rates. Ask when they can come out, how the visit and the repair are priced, and whether they hold insurance and the license the work requires. If you are on orders with a move date coming, say so.',
           'Before the visit, photograph the model tag, which is often inside the fridge door or on the washer frame. Clear a path through any moving boxes and run out the water left in a washer or dishwasher if you can.',
         ],
       },
@@ -336,7 +332,7 @@ export const areas: Area[] = [
     h1: 'Appliance Repair in Harker Heights, TX, Between Killeen and Belton',
     intro: [
       'Harker Heights roughly doubled in size between 2000 and 2020, so many of its kitchens and laundry rooms hold newer appliances with electronic controls. Appliance repair in Harker Heights, TX tends to start with an error code or an app alert rather than a worn-out part, from the homes along I-14 to the larger ones toward Stillhouse Hollow Lake.',
-      'Because so much of the town is newer, fewer appliances here are simply worn out. More of the questions are about electronic controls, sensors, smart-app alerts and whether a factory warranty still covers the part that failed.',
+      'Because so much of the town is newer, fewer appliances here are simply worn out. More of the questions are about electronic controls, sensors, smart-app alerts and whether the part that failed is still easy to get.',
       'On a newer appliance the code is the starting point, not the answer. A good technician reads the code, tests the part it points to, and tells you whether the fault is the part, the hookup or the vent before asking for your OK. If a repair on your model is not worth the money, a good technician will say so.',
       'Expect refrigerator repair on French door and side-by-side models, washer and dryer repair on front-load pairs, dishwasher repair, oven and range repair on touch-control models, and over-the-range microwave repair in Harker Heights, with LG, Samsung, Bosch, KitchenAid and GE problems covered below.',
     ],
@@ -366,10 +362,6 @@ export const areas: Area[] = [
       {
         heading: 'Newer homes, newer appliances',
         text: 'Many Harker Heights homes came with French door refrigerators, front-load laundry pairs and ranges with touch controls. These report problems as error codes. Write the code down, along with the model number, before you call. It helps the technician come prepared.',
-      },
-      {
-        heading: 'Warranty check first',
-        text: 'If your appliance is less than a year old, or you bought an extended plan, check that coverage before you call anyone. A repair outside the manufacturer’s network may not be covered by a factory warranty. If the warranty has run out or you are not sure, call with the model number.',
       },
       {
         heading: 'Larger homes toward the lake',
@@ -420,7 +412,7 @@ export const areas: Area[] = [
         accent: 'with a code in hand.',
         paragraphs: [
           'The more exact the call, the better prepared the technician. Give the 76548 street address, the brand and full model number, the code exactly as it shows (LE, HE, E15 or a string of digits) and whether it came back after a reset. On a smart model, mention any app alert.',
-          'Schedules and prices vary from one Harker Heights provider to the next. Find out when they can come, what the visit and the repair cost, and whether they are insured and hold any license the job needs. On a newer appliance, ask whether the part is usually stocked or ordered, and what warranty covers the repair.',
+          'Schedules and prices vary from one Harker Heights provider to the next. Find out when they can come, what the visit and the repair cost, and whether they are insured and hold any license the job needs. On a newer appliance, ask whether the part is usually stocked or ordered.',
           'Before the visit, clear a path to the appliance and drain what you safely can from a washer or dishwasher. On a range or fridge with a touch panel, leave it powered so the technician can read the code.',
         ],
       },
@@ -453,7 +445,7 @@ export const areas: Area[] = [
       },
       {
         q: 'My new washer shows an error code. What should I do?',
-        a: 'If the washer is still under factory warranty, contact the manufacturer first. If not, write down the code and the model number, try the reset in the manual once, and call if the code returns.',
+        a: 'Write down the code and the model number, try the reset in the manual once, and call if the code returns.',
       },
       {
         q: 'Can French door and side-by-side refrigerators be repaired?',
@@ -578,7 +570,7 @@ export const areas: Area[] = [
         accent: 'saves a second trip.',
         paragraphs: [
           'Acreage around Salado can mean a long drive, so the call matters. Give the 76571 address and how to reach the right building, the appliance and brand, the fuel type, whether the house is on a well, and what the unit is doing.',
-          'Salado providers set their own schedules and prices, and a longer drive can figure into both. Ask when they can come out, how the trip, the visit and the repair are priced, whether they carry insurance and the license the work requires, and what warranty, if any, covers parts and labor.',
+          'Salado providers set their own schedules and prices, and a longer drive can figure into both. Ask when they can come out, how the trip, the visit and the repair are priced, whether they carry insurance and the license the work requires.',
           'Have the model number from the tag inside the door, under the lid or on the frame, plus any error code. If the unit is in a barn, clear the path and the outlet.',
         ],
       },
@@ -658,7 +650,7 @@ export const areas: Area[] = [
       { brand: 'bosch', appliance: 'dishwasher', title: 'Bosch dishwasher not draining in Nolanville', text: 'Standing water in a Bosch dishwasher usually starts at the filter in the bottom of the tub. In newer homes, also check that the drain hose loops up high under the sink and that a new garbage disposal had its knockout plug removed. If it still will not drain, the drain pump or its check valve is next.' },
       { brand: 'ge', appliance: 'dryer', title: 'GE dryer squealing or thumping in Nolanville', text: 'A GE dryer that squeals or thumps as it tumbles usually has worn drum rollers, an idler pulley or drum glides. A dryer that runs every day in a family home wears these faster. The noise does not stop the dryer right away, but a failing idler can break the belt, so it is worth a look early.' },
       { brand: 'lg', appliance: 'washer', title: 'LG front-load washer smell in Nolanville', text: 'A musty LG front-loader usually has moisture and residue trapped in the door gasket and the pump filter. Wipe the gasket after the last load, leave the door open, clean the filter and run the tub clean cycle with HE detergent only. If the smell comes with slow draining, the pump may be partly blocked.' },
-      { brand: 'frigidaire', appliance: 'oven', title: 'Frigidaire range oven not heating in Nolanville', text: 'On a Frigidaire electric range, a broil element that works while bake does not points to a burned-out bake element. On gas ranges, a slow or failed preheat usually means a weak bake igniter. Ovens that came with a new home are often still under warranty, so check before you call.' },
+      { brand: 'frigidaire', appliance: 'oven', title: 'Frigidaire range oven not heating in Nolanville', text: 'On a Frigidaire electric range, a broil element that works while bake does not points to a burned-out bake element. On gas ranges, a slow or failed preheat usually means a weak bake igniter.' },
     ],
     brandProblemsIntro:
       'Builder appliance packages and busy family laundry rooms set the pattern in Nolanville: Samsung ice makers, Bosch drains, worn Whirlpool lid locks and noisy GE dryers. Here is what each usually comes down to.',
@@ -667,13 +659,13 @@ export const areas: Area[] = [
       'New Nolanville floors do not forgive leaks. A dishwasher drain connection that slipped, a washer fill hose that was never fully tightened on move-in day or an ice maker line nicked behind the fridge can put water under laminate fast, and a fridge losing its cold with a week of family groceries inside cannot wait either. Emergency help with a Nolanville leak may be available from local providers who cover the stretch of I-14 between Belton and Harker Heights; tell the line it is urgent and that the floor is getting wet.',
     emergencyStepsIntro: 'When a Nolanville appliance emergency starts, do these first:',
     emergencySteps: [
-      'Dishwasher or washer leak: close the valve under the sink or behind the washer and pull up any wet rug. Photos help if the builder’s warranty may cover a bad hookup.',
+      'Dishwasher or washer leak: close the valve under the sink or behind the washer and pull up any wet rug. Photos of the hookup help the technician.',
       'Ice maker line dripping: close the small valve feeding the fridge, often under the sink or in the garage, and turn the ice maker off.',
       'Dryer smells hot or squeals loudly: stop it, clean the lint screen and leave it off until it is checked; pet hair speeds up lint buildup.',
       'Gas smell at a range: leave with the kids and pets, then call your gas provider or 911 from outside.',
     ],
     travelNote:
-      'Calling from Nolanville? Have your 76559 address, the brand and model, and whether the appliance came with a new build, since that can mean a warranty or an installation issue.',
+      'Calling from Nolanville? Have your 76559 address, the brand and model, and whether the appliance came with a new build, since that can point to an installation issue.',
     localPoints: [
       {
         heading: 'Newer subdivisions on the east side',
@@ -698,7 +690,7 @@ export const areas: Area[] = [
         accent: 'new appliance problems.',
         paragraphs: [
           'Some of the most common problems in newly built homes are not broken parts at all. A dishwasher drain hose without a high loop can let dirty water flow back into the tub. A refrigerator water line pinched behind the unit can stop the ice maker. A washer that was never leveled will shake and walk across the floor on the spin cycle.',
-          'Before you call, check your paperwork. In many new homes, appliance coverage comes from the manufacturer’s warranty, not the builder’s. If the appliance is still covered, contact the manufacturer first, since an outside repair may not be covered. If coverage has run out, or the problem is in the hookup rather than the appliance, call and describe it.',
+          'In a new home, the problem is sometimes the hookup rather than the appliance: a kinked drain hose, a loose water line or a dryer vent that was never connected. Look behind the appliance if you can do it safely, then call and describe what you found.',
         ],
       },
       {
@@ -732,7 +724,7 @@ export const areas: Area[] = [
         accent: 'part or hookup?',
         paragraphs: [
           'Say how old the home and the appliance are. A two-year-old Bosch in a subdivision off I-14 that has drained badly since move-in day points somewhere different than a ten-year-old washer in town that just started leaking. Give the 76559 address, the brand, the model and what you have already checked, like the filter or the drain loop.',
-          'Every Nolanville provider keeps their own schedule and rates, so ask about timing, how a visit and a repair are priced, and whether they are insured and licensed for the work. If the problem turns out to be installation, ask the technician to note it in writing, which helps with a builder or warranty claim.',
+          'Every Nolanville provider keeps their own schedule and rates, so ask about timing, how a visit and a repair are priced, and whether they are insured and licensed for the work. If the problem turns out to be installation, ask the technician to note it in writing, which helps if you take it up with the builder.',
           'Before the technician comes, note the model number from its label and any code on the display. Put pets in another room and, if you can, empty the washer or dishwasher.',
         ],
       },
@@ -766,10 +758,6 @@ export const areas: Area[] = [
       {
         q: 'My new home’s dishwasher smells and leaves water behind. Is it broken?',
         a: 'Not always. Check the filter at the bottom of the tub first. If the drain hose was installed without a high loop, dirty water can flow back in. Ask the technician to check the hookup as well as the dishwasher.',
-      },
-      {
-        q: 'My builder-package appliance is still under warranty. Who should I call?',
-        a: 'The manufacturer first, since an outside repair may not be covered by a factory warranty. If the issue is the installation, the builder may be responsible. If coverage has run out or you are not sure, call with the model number.',
       },
       {
         q: 'I rent in Nolanville. Who arranges an appliance repair?',
@@ -891,7 +879,7 @@ export const areas: Area[] = [
         accent: 'about a lake home.',
         paragraphs: [
           "Tell the line how the house is used. A full-time home, a weekend place and a guest rental each change who needs to be there and when. Give the 76513 street address, say it is in Morgan's Point Resort, and describe the appliance, the brand and where it sits, whether that is the kitchen, a hot garage or a shop by the water.",
-          'Providers around the lake set their own schedules and prices. Ask when they can come out, how they price the visit and the repair, and whether they carry insurance and a license where the work needs one. For a guest rental, ask whether the visit can fall between stays, and what warranty applies to parts and labor.',
+          'Providers around the lake set their own schedules and prices. Ask when they can come out, how they price the visit and the repair, and whether they carry insurance and a license where the work needs one. For a guest rental, ask whether the visit can fall between stays.',
           'Find the model tag, often inside the door or on the back of a chest freezer, and jot down any code. If the appliance is in a garage or shop, clear room so the technician can reach it and the outlet behind it.',
         ],
       },
@@ -990,7 +978,7 @@ export const areas: Area[] = [
     localPoints: [
       {
         heading: 'Newer homes in town',
-        text: 'With the population growing, Troy has added newer houses with the appliance package that came with the build. If an appliance is less than a year or two old, check the manufacturer’s warranty before you call, since an outside repair may not be covered.',
+        text: 'With the population growing, Troy has added newer houses with the appliance package that came with the build. Those appliances tend to have electronic controls, so note any error code before you call.',
       },
       {
         heading: 'Farm and ranch properties',
@@ -1047,7 +1035,7 @@ export const areas: Area[] = [
         accent: 'or the county roads.',
         paragraphs: [
           'Tell the line where the appliance is and how it is used. A Speed Queen that washes muddy gear every day, a beef freezer in a shop off FM 935 and a dishwasher in a new house in town call for different prep. Give the 76579 address, the brand and model, and the symptom.',
-          'A farm address can add drive time, and each Troy provider prices and schedules their own work. On the call, ask when they can be there, what the trip and the repair will cost, and whether they are insured and properly licensed for the job. Ask about warranty terms on parts and labor too.',
+          'A farm address can add drive time, and each Troy provider prices and schedules their own work. On the call, ask when they can be there, what the trip and the repair will cost, and whether they are insured and properly licensed for the job.',
           'Copy down the model number and any error code before the visit. If the appliance is in a shop or barn, make sure the technician can reach it and the outlet behind it.',
         ],
       },
@@ -1081,10 +1069,6 @@ export const areas: Area[] = [
       {
         q: 'Can the beef freezer in my Troy shop be repaired?',
         a: 'Usually. Relays, thermostats, fans and gaskets are common fixes on shop freezers. Clear the area around the unit and its outlet, and mention any gate when you call.',
-      },
-      {
-        q: 'My new Troy home’s appliance is still under warranty. Who should I call?',
-        a: 'The manufacturer, since an outside repair may not be covered by a factory warranty. If the warranty has run out or you cannot find the paperwork, call with the model number.',
       },
       {
         q: 'Which appliances can be repaired in Troy?',
@@ -1201,7 +1185,7 @@ export const areas: Area[] = [
         accent: 'older machines welcome.',
         paragraphs: [
           'Say how old the appliance is, even roughly. A twenty-year-old Kenmore washer, an Amana top-freezer from a rental and a newer GE range need different parts, and the age tells the technician whether to check part availability before the trip down Highway 95. Give the 76554 address and the brand.',
-          'Timing and prices are up to each provider. Ask when they can come down Highway 95, how they charge for the visit and the repair, and whether they are insured and licensed for the work. On an older machine, ask whether parts are still made for it and what warranty comes with them.',
+          'Timing and prices are up to each provider. Ask when they can come down Highway 95, how they charge for the visit and the repair, and whether they are insured and licensed for the work. On an older machine, ask whether parts are still made for it.',
           'In family homes here, the usual Little River-Academy calls are fridges and freezers that stop cooling, washers that will not spin, squealing dryers, dishwashers that hold water and ovens that will not bake. Ask for the dryer vent to be looked at on any dryer repair.',
         ],
       },
@@ -1235,10 +1219,6 @@ export const areas: Area[] = [
       {
         q: 'Can the spare fridge in my shop be repaired?',
         a: 'Yes. Spare fridges and freezers in shops are common repairs. Clear the space behind the unit and around the outlet, and give directions to the shop when you call.',
-      },
-      {
-        q: 'My appliance is newer and still under warranty. Who should I call?',
-        a: 'Start with the manufacturer, since an outside repair may not be covered by a factory warranty. If the coverage has ended or you are unsure, call with the model number and brand.',
       },
       {
         q: 'Which appliances can be repaired in Little River-Academy?',
@@ -1355,7 +1335,7 @@ export const areas: Area[] = [
         accent: 'after a storm.',
         paragraphs: [
           'Say what happened and when. A Samsung fridge that went dark during Tuesday’s storm, a freezer that clicks since the power came back and a range with a blank display point a technician toward surge damage, which changes which parts to bring out US 190. Give the 76569 address and every appliance that is acting up.',
-          'Rogers is a longer drive, and providers set their own schedules and rates. Ask when they can make it out, how they price the trip, the visit and the repair, and whether they carry insurance and the license the work calls for. If the repair carries a warranty, ask what it covers.',
+          'Rogers is a longer drive, and providers set their own schedules and rates. Ask when they can make it out, how they price the trip, the visit and the repair, and whether they carry insurance and the license the work calls for.',
           'If you plan to file a homeowner’s insurance claim for storm damage, ask the technician to write down what failed and why. That note is useful to the adjuster.',
         ],
       },
@@ -1510,7 +1490,7 @@ export const areas: Area[] = [
         accent: 'describe it plainly.',
         paragraphs: [
           'You do not need the part name. Say what you see, hear and smell: water under the Speed Queen after the last freeze, a fridge that clicks and stays warm, a burning smell from the dryer. Give the 76534 address, the brand and model, and directions if the home is off a county road.',
-          'Holland is a longer drive from Temple, and each provider has their own schedule and prices. Ask about timing, about how the trip and the repair are charged, and about insurance and any license the work needs. Get any parts and labor warranty terms before work starts.',
+          'Holland is a longer drive from Temple, and each provider has their own schedule and prices. Ask about timing, about how the trip and the repair are charged, and about insurance and any license the work needs.',
           'Have the model number and any code written down. Leave the leak area as it is, once it is safe, so the technician can see where the water came from.',
         ],
       },
@@ -1664,7 +1644,7 @@ export const areas: Area[] = [
         accent: 'after the checks.',
         paragraphs: [
           'Tell the line which of the checks above you already tried. Knowing that the filter is seated, the coils are clean and the dial is right lets the technician skip ahead. Give the 76557 address, the county, the brand and model, and whether the unit is in the house, the garage or a barn.',
-          'Moody is a longer drive up Highway 317, and every provider sets their own timing and rates. Ask when they can come, how the trip and the repair are priced, whether they are insured and hold the license the work needs, and what warranty covers parts and labor.',
+          'Moody is a longer drive up Highway 317, and every provider sets their own timing and rates. Ask when they can come, how the trip and the repair are priced, whether they are insured and hold the license the work needs.',
           'On a dryer call, say whether an LG flow code or long drying times are involved, since that often means the vent needs attention along with the dryer.',
         ],
       },

@@ -16,7 +16,6 @@ import { PhoneLink } from '@/components/PhoneLink';
 import { ServicePageView } from '@/components/SiteClient';
 import { TrustBadges } from '@/components/TrustBadges';
 import { VerifyTag } from '@/components/Verify';
-import { CallCard } from '@/components/CallCard';
 import { pageMetadata } from '@/lib/seo';
 import { toolPageList } from '@/content/tools/pages';
 import { posts, postHref } from '@/content/blog';
@@ -67,7 +66,7 @@ const pageCopy: Record<ApplianceKey, PageCopy> = {
     askQuestion: 'While the fridge is pulled out, can you check the condenser coils and the door gaskets too?',
     finalTitle: 'Fridge still warm?',
     finalAccent: 'Call before the food turns.',
-    finalText: 'Have the brand, the model number and the fresh-food temperature handy. Settle the price and any warranty before the panels come off.',
+    finalText: 'Have the brand, the model number and the fresh-food temperature handy. Settle the price before the panels come off.',
   },
   freezer: {
     noun: 'freezer',
@@ -78,7 +77,7 @@ const pageCopy: Record<ApplianceKey, PageCopy> = {
     askQuestion: 'Is my garage within the room temperature range this freezer is rated for?',
     finalTitle: 'Freezer climbing past 0°F?',
     finalAccent: 'Keep the lid shut and call.',
-    finalText: 'Say whether it is a chest or an upright and what the thermometer reads. Ask about pricing and warranty coverage before any part is ordered.',
+    finalText: 'Say whether it is a chest or an upright and what the thermometer reads. Ask about pricing before any part is ordered.',
   },
   washer: {
     noun: 'washer',
@@ -89,7 +88,7 @@ const pageCopy: Record<ApplianceKey, PageCopy> = {
     askQuestion: 'Should the fill hoses be replaced while the washer is pulled away from the wall?',
     finalTitle: 'Washer stuck mid-cycle?',
     finalAccent: 'Call and say where it stopped.',
-    finalText: 'Mention top-load or front-load, the brand and any code on the display. Get the price and any warranty terms before the machine is moved.',
+    finalText: 'Mention top-load or front-load, the brand and any code on the display. Get the price before the machine is moved.',
   },
   dryer: {
     noun: 'dryer',
@@ -100,7 +99,7 @@ const pageCopy: Record<ApplianceKey, PageCopy> = {
     askQuestion: 'Did a restricted vent cause this failure, and what should be done about the vent run?',
     finalTitle: 'Clothes still damp after an hour?',
     finalAccent: 'Call about the dryer.',
-    finalText: 'Say whether it is gas or electric and what you felt at the vent hood outside. Ask what the repair will cost, and about any warranty, before work starts.',
+    finalText: 'Say whether it is gas or electric and what you felt at the vent hood outside. Ask what the repair will cost before work starts.',
   },
   dishwasher: {
     noun: 'dishwasher',
@@ -111,7 +110,7 @@ const pageCopy: Record<ApplianceKey, PageCopy> = {
     askQuestion: 'Is the drain hose high loop or air gap set up the way the installation manual asks?',
     finalTitle: 'Water sitting in the tub?',
     finalAccent: 'Call about the dishwasher.',
-    finalText: 'Have the model number from the door edge and a note on what the last load looked like. Agree on the price and any warranty before the dishwasher comes out.',
+    finalText: 'Have the model number from the door edge and a note on what the last load looked like. Agree on the price before the dishwasher comes out.',
   },
   oven: {
     noun: 'oven or stove',
@@ -122,7 +121,7 @@ const pageCopy: Record<ApplianceKey, PageCopy> = {
     askQuestion: 'Is the anti-tip bracket engaged, and can it be checked before the range goes back in place?',
     finalTitle: 'Oven cold at dinner time?',
     finalAccent: 'Call about the range.',
-    finalText: 'Say gas or electric, and whether the problem is in the oven or on the cooktop. Ask about cost and any warranty on the part before the range is moved.',
+    finalText: 'Say gas or electric, and whether the problem is in the oven or on the cooktop. Ask about cost before the range is moved.',
   },
   microwave: {
     noun: 'microwave',
@@ -133,7 +132,7 @@ const pageCopy: Record<ApplianceKey, PageCopy> = {
     askQuestion: 'Is this part still made for my model, and does repair make more sense than a new over-the-range unit?',
     finalTitle: 'Microwave humming but cold?',
     finalAccent: 'Call before you open anything.',
-    finalText: 'Say whether it is over-the-range, built-in or countertop, and the brand. Ask about the price and any warranty before the unit comes off the wall.',
+    finalText: 'Say whether it is over-the-range, built-in or countertop, and the brand. Ask about the price before the unit comes off the wall.',
   },
 };
 
@@ -222,11 +221,7 @@ function Block({ block, s, index }: { block: ServiceBlock; s: Service; index: nu
       );
 
     case 'callCard':
-      return (
-        <div className="lg:hidden">
-          <CallCard location={`service_${s.key}_inline`} title={copy.inlineTitle} appliance={copy.noun} />
-        </div>
-      );
+      return null;
 
     case 'partsTable':
       return (
@@ -319,9 +314,6 @@ function Block({ block, s, index }: { block: ServiceBlock; s: Service; index: nu
               </ol>
               <p className="relative mt-5 text-[13.5px] text-white/55">
                 {copy.emergencyNote}
-              </p>
-              <p className="relative mt-4">
-                <PhoneLink location={`service_${s.key}_emergency`} withIcon label="Call now" className="inline-flex items-center gap-2 font-semibold text-white underline decoration-flame underline-offset-4" />
               </p>
             </div>
           </div>
@@ -596,7 +588,7 @@ export default async function ServicePage({ params }: Params) {
         </div>
       </PageHero>
 
-      <div className="mx-auto grid max-w-site gap-14 px-4 py-20 lg:grid-cols-[1fr_380px] lg:px-6">
+      <div className="mx-auto grid max-w-site gap-14 px-4 py-20 lg:px-6">
         <div className="min-w-0 space-y-20">
           {rest.length ? (
             <div className="prose-copy max-w-3xl">
@@ -618,7 +610,6 @@ export default async function ServicePage({ params }: Params) {
               <li>Is there a charge to diagnose the {copy.noun}, and does it go toward the repair?</li>
               <li>Can you show me proof of license and insurance for this kind of work?</li>
               <li>What failed on the {copy.noun}, what will the repair involve, and what will it cost before you start?</li>
-              <li>Is there a warranty on the part and on the labor, and how long does it last?</li>
               <li>{copy.askQuestion}</li>
             </ul>
           </section>
@@ -676,11 +667,6 @@ export default async function ServicePage({ params }: Params) {
           </nav>
         </div>
 
-        <aside className="hidden lg:block" aria-label={`Call about ${copy.noun} repair`}>
-          <div className="sticky top-28">
-            <CallCard location={`service_${s.key}_sidebar`} title={copy.sidebarTitle} appliance={copy.noun} />
-          </div>
-        </aside>
       </div>
 
       <FinalCta

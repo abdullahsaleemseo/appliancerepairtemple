@@ -88,7 +88,7 @@ const postCta: Record<string, PostCta> = {
     accent: 'worth fixing?',
     text: 'The decision gets easier once you know exactly which part failed. A technician can diagnose the fridge, washer, dryer, dishwasher or range and tell you plainly whether the repair makes sense for its age.',
     call: 'Call',
-    note: 'Lifespans and repair costs vary with brand, model, use and installation. Treat the numbers here as a starting point, and check the manufacturer’s warranty before paying for a repair.',
+    note: 'Lifespans and repair costs vary with brand, model, use and installation. Treat the numbers here as a starting point.',
     finalTitle: 'Fix it or replace it?',
     finalAccent: 'Start with a diagnosis.',
     finalText: 'Appliance Repair Temple is Temple’s line for appliance repair. Call and ask a technician what failed before you shop for a new one.',
