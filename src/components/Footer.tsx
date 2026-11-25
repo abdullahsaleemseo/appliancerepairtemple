@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { canShow, routes, site } from '@/config/site';
+import { referralDisclaimer } from '@/config/legacyDisclaimer';
 import { areas, areaHref } from '@/content/areas';
 import { toolPageList } from '@/content/tools/pages';
 import { serviceLinks } from './nav';
@@ -133,6 +134,12 @@ export function Footer() {
       </div>
 
       <div className="relative border-t border-white/[0.08]">
+        {/* Ringba-period disclaimer, kept until the owner confirms the revamp is done (see src/config/legacyDisclaimer.ts). */}
+        <p className="mx-auto max-w-site px-4 pt-6 text-[12.5px] leading-relaxed text-white/45 lg:px-6">
+          <span className="font-semibold text-white/60">Disclaimer:</span> {referralDisclaimer} {site.brandName} is not affiliated with,
+          endorsed by or sponsored by any appliance manufacturer. Brand names are trademarks of their respective owners and are used only
+          to identify appliances.
+        </p>
         <div className="mx-auto flex max-w-site flex-col gap-3 px-4 py-6 text-[13px] sm:flex-row sm:items-center sm:justify-between lg:px-6">
           <p>© {year} {site.brandName}. All rights reserved.</p>
           <ul className="flex flex-wrap gap-x-5 gap-y-2">

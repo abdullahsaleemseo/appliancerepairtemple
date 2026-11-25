@@ -51,6 +51,7 @@ const referralLegacy = new Set([
   'src/app/privacy-policy/page.tsx',
   'src/app/terms-of-service/page.tsx',
   'src/components/ProblemPicker.tsx',
+  'src/config/legacyDisclaimer.ts',
   'src/components/tools/CostTool.tsx',
   'src/content/areas.ts',
   'src/content/blog.ts',
