@@ -32,10 +32,13 @@ export const aiCrawlers = [
   'CCBot',
 ];
 
-/** Staging and draft builds block all crawling. */
+/**
+ * With indexing off, crawling stays open so search engines can read the noindex tag and header on
+ * every page and drop pages that were already indexed. Blocking crawling would hide the noindex.
+ */
 export default function robots(): MetadataRoute.Robots {
   if (!indexingAllowed) {
-    return { rules: [{ userAgent: '*', disallow: '/' }] };
+    return { rules: [{ userAgent: '*', allow: '/' }] };
   }
   return {
     rules: [

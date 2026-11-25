@@ -11,7 +11,8 @@
  */
 export const launch = {
   siteMode: 'production' as 'production' | 'draft',
-  allowIndexing: true,
+  // Off during the Nov 2026 content revamp; switch back on when the rewritten pages are live.
+  allowIndexing: false,
   siteUrl: 'https://appliancerepairtemple.com',
   gaId: 'G-NME9DJ8LRG',
   googleVerification: 'RwkxEOVXQbmWsYSSTFEyMZqxZW3O9lZGAp0PaSfnfdM',
