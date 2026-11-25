@@ -65,6 +65,11 @@ export function Footer() {
                   </Link>
                 </li>
               ))}
+              <li>
+                <Link href={routes.cityPage} className={link}>
+                  Same-day repair
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -72,7 +77,7 @@ export function Footer() {
             <h2 className={col}>Areas</h2>
             <ul className="mt-5 space-y-2.5">
               <li>
-                <Link href={routes.cityPage} className={link}>
+                <Link href={routes.home} className={link}>
                   {site.city}, {site.stateAbbr}
                 </Link>
               </li>

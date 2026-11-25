@@ -582,7 +582,6 @@ export default async function ServicePage({ params }: Params) {
 
       <PageHero
         crumbs={[
-          { name: `Appliance Repair ${site.city}`, path: routes.cityPage },
           { name: s.navLabel, path },
         ]}
         title={s.h1}
@@ -653,7 +652,7 @@ export default async function ServicePage({ params }: Params) {
                   {serviceByKey[k].name.toLowerCase()} repair in {site.city}
                 </Link>
               ))}
-              <Link href={routes.cityPage} className="link-arrow">
+              <Link href={routes.home} className="link-arrow">
                 appliance repair in {site.city}
               </Link>
               {posts

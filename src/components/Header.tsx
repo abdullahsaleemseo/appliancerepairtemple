@@ -95,7 +95,7 @@ export function Header({ brandLinks, areaLinks }: { brandLinks: NavLink[]; areaL
                         ))}
                         <li>
                           <Link href={routes.cityPage} className="flex h-full items-center justify-between rounded-2xl bg-ink p-4 text-[15px] font-semibold text-white">
-                            All repairs in {site.city}
+                            Same-day and emergency repair
                             <Icon name="arrow" className="h-4 w-4" />
                           </Link>
                         </li>

@@ -40,7 +40,7 @@ export default function AreasPage() {
         <SectionHeading id="pages-heading" eyebrow="Local pages" title="Towns with their" accent="own page." />
         <ul className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           <li>
-            <Link href={routes.cityPage} className="grain group flex h-full min-h-[180px] flex-col rounded-card bg-ink p-6 text-white transition hover:-translate-y-1 hover:shadow-lift">
+            <Link href={routes.home} className="grain group flex h-full min-h-[180px] flex-col rounded-card bg-ink p-6 text-white transition hover:-translate-y-1 hover:shadow-lift">
               <Icon name="pin" className="h-6 w-6 text-flame-glow" />
               <span className="mt-auto font-display text-2xl font-bold tracking-[-0.03em]">{site.city}</span>
               <span className="text-sm text-white/55">ZIP {site.templeZips.join(', ')}</span>

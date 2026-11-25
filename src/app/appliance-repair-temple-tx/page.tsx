@@ -38,7 +38,6 @@ const questions = [
   'Is there a visit or diagnostic fee, and does it go toward the repair?',
   'Is there an extra charge for evening, weekend or holiday visits?',
   'Will the price be confirmed before the technician starts work?',
-  'What warranty comes with the part and the labor?',
   'What arrival window can you give me, and will someone call if it changes?',
   'Do you work on my brand and this type of appliance?',
   'Is my town inside your usual service area?',

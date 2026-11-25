@@ -355,7 +355,7 @@ export default async function PostPage({ params }: Params) {
                 ) : (
                   <>
                     More on{' '}
-                    <Link href={routes.cityPage} className="font-semibold text-white underline decoration-flame underline-offset-4">
+                    <Link href={routes.home} className="font-semibold text-white underline decoration-flame underline-offset-4">
                       appliance repair in {site.city}
                     </Link>
                     .
@@ -403,7 +403,7 @@ export default async function PostPage({ params }: Params) {
                   ...related.map((r) => ({ href: postHref(r), title: r.title, kind: 'Repair tip' })),
                   ...tools.map((t) => ({ href: t.path, title: t.card.title, kind: 'Free tool' })),
                   ...(svc ? [{ href: serviceHref(svc.key), title: `${svc.name} repair in ${site.city}`, kind: 'Repair guide' }] : []),
-                  { href: routes.cityPage, title: `Appliance repair in ${site.city}, ${site.stateAbbr}`, kind: 'Overview' },
+                  { href: routes.home, title: `Appliance repair in ${site.city}, ${site.stateAbbr}`, kind: 'Overview' },
                 ].map((l) => (
                   <li key={l.href}>
                     <Link href={l.href} className="card group flex h-full flex-col p-5 transition hover:-translate-y-0.5 hover:shadow-lift">

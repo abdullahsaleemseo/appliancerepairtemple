@@ -100,7 +100,7 @@ export default function RequestPage() {
             <div>
               <h2 className="font-display font-bold text-ink">Areas covered</h2>
               <p className="mt-1 text-[15px] text-ink-body">
-                <Link href={routes.cityPage} className="font-medium text-ink underline decoration-flame/50 underline-offset-4 hover:decoration-flame">
+                <Link href={routes.home} className="font-medium text-ink underline decoration-flame/50 underline-offset-4 hover:decoration-flame">
                   {site.city}
                 </Link>
                 {areas.map((a) => (

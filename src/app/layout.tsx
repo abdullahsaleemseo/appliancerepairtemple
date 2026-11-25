@@ -45,7 +45,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <UtilityBar />
         <Header
           brandLinks={brands.filter((b) => b.hasPage).map((b) => ({ href: brandHref(b), label: b.name }))}
-          areaLinks={[{ href: routes.cityPage, label: site.city }, ...areas.map((a) => ({ href: areaHref(a), label: a.name }))]}
+          areaLinks={[{ href: routes.home, label: site.city }, ...areas.map((a) => ({ href: areaHref(a), label: a.name }))]}
         />
         <main id="main" tabIndex={-1} className="focus:outline-none">
           {children}

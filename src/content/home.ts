@@ -1,8 +1,7 @@
 import type { ApplianceKey, Faq } from './types';
 
 /**
- * Homepage copy (source: content/homepage-v2.md, Nov 2026). Sentences with unconfirmed placeholders
- * ([DIAGNOSTIC FEE], [WARRANTY]) are left out until the owner supplies the values.
+ * Homepage copy (source: content/homepage-v2.md, Nov 2026). Fee and warranty are never stated on the site.
  */
 
 export const homeServices: { key: ApplianceKey; heading: string; text: string; lead: string; anchor: string; after: string }[] = [
@@ -100,15 +99,11 @@ export const homeSteps: { title: string; text: string }[] = [
   { title: 'The repair.', text: 'Once you approve, the technician makes the repair, tests the appliance and walks you through what was done.' },
 ];
 
-/** Six FAQs. Inline links use [text](/path/); the FAQPage schema gets the plain text. */
+/** FAQs. Inline links use [text](/path/); the FAQPage schema gets the plain text. */
 export const homeFaqs: Faq[] = [
   {
     q: 'Do you repair all major brands?',
     a: 'Yes. Repairs cover Whirlpool, GE, Samsung, LG, Frigidaire, Maytag, KitchenAid, Bosch, Kenmore, Electrolux, Amana and Speed Queen appliances. If your brand is not on that list, call with the brand and model, and you will find out right on the call whether a technician can work on it.',
-  },
-  {
-    q: 'Do you offer a warranty on repairs?',
-    a: 'Yes. The technician goes over what is covered before you approve the work, so there are no surprises later.',
   },
   {
     q: 'Do you repair appliances in rental homes and apartments?',

@@ -22,7 +22,7 @@ function summary() {
     '',
     `- Area: ${site.city} and nearby ${site.county} towns: ${site.nearbyTowns.join(', ')}.`,
     `- Appliances: ${services.map((s) => s.name.toLowerCase()).join(', ')}.`,
-    `- Phone: ${phoneDisplay} (${site.phone.value.e164}). The diagnostic visit, warranty and timing are explained on the call, and the repair price is given before any work starts.`,
+    `- Phone: ${phoneDisplay} (${site.phone.value.e164}). Timing and the visit are explained on the call, and the repair price is given before any work starts.`,
     `- ${manufacturerDisclaimer}`,
   ];
 }
@@ -32,7 +32,7 @@ export function llmsTxt() {
     ...summary(),
     '',
     '## Main pages',
-    link(`Appliance repair in ${site.city}, ${site.stateAbbr}`, routes.cityPage, 'overview of every appliance covered'),
+    link(`Same-day and emergency appliance repair in ${site.city}, ${site.stateAbbr}`, routes.cityPage, 'what counts as an emergency and what to do first'),
     link('About us', routes.about),
     link('Book a repair', routes.request, 'what happens when you call'),
     link('Appliance repair FAQs', routes.faq),

@@ -56,7 +56,7 @@ export default function FaqPage() {
                 </li>
               ))}
               <li>
-                <Link href={routes.cityPage} className="link-arrow">
+                <Link href={routes.home} className="link-arrow">
                   Appliance repair in {site.city}
                 </Link>
               </li>

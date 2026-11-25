@@ -182,7 +182,7 @@ export default async function BrandPage({ params }: Params) {
           <div className="lg:sticky lg:top-32 lg:self-start">
             <SectionHeading id="faq-heading" eyebrow="FAQ" title={`${b.name} repair`} accent="questions." />
             <div className="-mt-6 flex flex-col gap-3">
-              <Link href={routes.cityPage} className="link-arrow">
+              <Link href={routes.home} className="link-arrow">
                 Appliance repair in {site.city}
               </Link>
               <Link href={routes.brands} className="link-arrow">

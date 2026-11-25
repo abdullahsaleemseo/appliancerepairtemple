@@ -216,7 +216,7 @@ export default async function AreaPage({ params }: Params) {
               </p>
             )}
             <div className="mt-10 flex flex-wrap gap-x-8 gap-y-3">
-              <Link href={routes.cityPage} className="link-arrow">
+              <Link href={routes.home} className="link-arrow">
                 Appliance repair in {site.city}
               </Link>
               {(a.nearby ?? others.map((o) => o.name)).map((name) => {

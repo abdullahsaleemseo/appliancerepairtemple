@@ -38,7 +38,7 @@ export default function BlogIndex() {
             <li>Stop when a check needs panels removed, a meter, gas or refrigerant. That is technician work.</li>
             <li>
               Still stuck? Read about{' '}
-              <Link href={routes.cityPage} className="font-semibold text-ink underline decoration-flame/50 underline-offset-4 hover:decoration-flame">
+              <Link href={routes.home} className="font-semibold text-ink underline decoration-flame/50 underline-offset-4 hover:decoration-flame">
                 appliance repair in {site.city}
               </Link>{' '}
               or{' '}

@@ -278,7 +278,7 @@ export default function AboutPage() {
             </p>
             <ul className="mt-5 flex flex-wrap gap-2">
               <li>
-                <Link href={routes.cityPage} className="inline-flex rounded-full bg-ink px-4 py-2 text-[15px] font-medium text-white">
+                <Link href={routes.home} className="inline-flex rounded-full bg-ink px-4 py-2 text-[15px] font-medium text-white">
                   {site.city}
                 </Link>
               </li>
