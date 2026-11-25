@@ -6,7 +6,7 @@
 
 **URL:** https://appliancerepairtemple.com/
 
-> Fill these before publishing: [DIAGNOSTIC FEE] and [WARRANTY]. If you do not have one of them yet, delete that sentence rather than leaving it vague.
+> The diagnostic fee and any warranty are never stated on the site. Point the reader to a call instead.
 
 ---
 
@@ -89,7 +89,7 @@ A technician will give you a straight answer for your appliance. For a deeper lo
 1. **Call us.** Phone (254) 615-2088 and describe the appliance, the brand and what it is doing. It helps to have the model number ready (inside the fresh-food section on most refrigerators, under the lid or on the door frame on most washers and dryers) and any error code on the display. With that, the technician can often bring the right part on the first trip.
 2. **Pick a time.** The visit is set for a time that fits your day, and you know when to expect the technician.
 3. **Diagnosis and an upfront price.** The technician finds the cause, explains it in plain terms and gives you the repair price before starting.
-4. **The repair.** Once you approve, the technician makes the repair, tests the appliance and walks you through what was done. Repairs come with [WARRANTY].
+4. **The repair.** Once you approve, the technician makes the repair, tests the appliance and walks you through what was done.
 
 ## Appliance brands we repair
 
@@ -106,10 +106,6 @@ The Bell County appliance repair area reaches south along I-35 to Belton and Sal
 ### Do you repair all major brands?
 
 Yes. Repairs cover Whirlpool, GE, Samsung, LG, Frigidaire, Maytag, KitchenAid, Bosch, Kenmore, Electrolux, Amana and Speed Queen appliances. If your brand is not on that list, call with the brand and model, and you will find out right on the call whether a technician can work on it.
-
-### Do you offer a warranty on repairs?
-
-Yes. Repairs come with [WARRANTY]. The technician goes over what is covered before you approve the work, so there are no surprises later.
 
 ### Do you repair appliances in rental homes and apartments?
 
