@@ -1,6 +1,22 @@
+import Link from 'next/link';
 import type { Faq } from '@/content/types';
 import { faqSchema } from '@/lib/schema';
 import { JsonLd } from './JsonLd';
+
+/** Renders inline [text](/path/) links in an answer as real links. */
+function withLinks(text: string) {
+  const parts = text.split(/(\[[^\]]+\]\([^)]+\))/g);
+  return parts.map((part, i) => {
+    const m = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+    return m ? (
+      <Link key={i} href={m[2]} className="font-semibold text-ink underline decoration-flame underline-offset-4">
+        {m[1]}
+      </Link>
+    ) : (
+      part
+    );
+  });
+}
 
 /** Native details/summary accordion: keyboard accessible with no JavaScript. Emits FAQPage schema for the visible questions. */
 export function FaqList({ faqs, schema = true }: { faqs: Faq[]; schema?: boolean }) {
@@ -16,7 +32,7 @@ export function FaqList({ faqs, schema = true }: { faqs: Faq[]; schema?: boolean
                 <span className="absolute h-3.5 w-0.5 rounded bg-current" />
               </span>
             </summary>
-            <p className="-mt-1 px-6 pb-6 pr-16 text-ink-body">{f.a}</p>
+            <p className="-mt-1 px-6 pb-6 pr-16 text-ink-body">{withLinks(f.a)}</p>
           </details>
         ))}
       </div>

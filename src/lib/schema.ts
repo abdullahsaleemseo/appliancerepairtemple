@@ -2,7 +2,7 @@ import { site } from '@/config/site';
 import type { Faq } from '@/content/types';
 import { absoluteUrl } from './seo';
 
-/** Structured data is limited to WebSite, BreadcrumbList, FAQPage and Article. The site makes no business-type claims. */
+/** Structured data: WebSite (every page), HomeAndConstructionBusiness (homepage), BreadcrumbList, FAQPage and Article. */
 export function websiteSchema() {
   return {
     '@context': 'https://schema.org',
@@ -21,11 +21,31 @@ export function websiteSchema() {
       contactPoint: {
         '@type': 'ContactPoint',
         telephone: site.phone.value.e164,
-        contactType: 'appliance repair referrals',
+        contactType: 'customer service',
         areaServed: 'US-TX',
         availableLanguage: 'English',
       },
     },
+  };
+}
+
+/**
+ * Homepage business entity. Service-area business: no street address, and no hours or price range
+ * until the owner confirms them.
+ */
+export function businessSchema(opts: { knowsAbout: string[] }) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'HomeAndConstructionBusiness',
+    '@id': `${site.url}/#business`,
+    name: site.brandName,
+    url: `${site.url}/`,
+    telephone: site.phone.value.e164,
+    image: `${site.url}/og/default.png`,
+    logo: `${site.url}/icon-512.png`,
+    areaServed: [site.city, ...site.nearbyTowns].map((name) => ({ '@type': 'City', name: `${name}, ${site.stateAbbr}` })),
+    knowsAbout: opts.knowsAbout,
+    sameAs: site.social.map((s) => s.url),
   };
 }
 
@@ -42,6 +62,9 @@ export function breadcrumbSchema(items: { name: string; path: string }[]) {
   };
 }
 
+/** FAQ answers may contain inline links written as [text](/path/); schema gets the plain text the reader sees. */
+export const faqPlainText = (s: string) => s.replace(/\[([^\]]+)\]\([^)]+\)/g, '$1');
+
 export function faqSchema(faqs: Faq[]) {
   return {
     '@context': 'https://schema.org',
@@ -49,7 +72,7 @@ export function faqSchema(faqs: Faq[]) {
     mainEntity: faqs.map((f) => ({
       '@type': 'Question',
       name: f.q,
-      acceptedAnswer: { '@type': 'Answer', text: f.a },
+      acceptedAnswer: { '@type': 'Answer', text: faqPlainText(f.a) },
     })),
   };
 }

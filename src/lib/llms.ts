@@ -1,4 +1,4 @@
-import { phoneDisplay, referralDisclaimer, routes, site } from '@/config/site';
+import { manufacturerDisclaimer, phoneDisplay, routes, site } from '@/config/site';
 import { toolPageList } from '@/content/tools/pages';
 import { areas, areaHref } from '@/content/areas';
 import { brands, brandHref } from '@/content/brands';
@@ -18,12 +18,12 @@ function summary() {
   return [
     `# ${site.brandName}`,
     '',
-    `> ${site.brandName} (${site.domain}) is ${site.city}'s line for appliance repair in ${site.county}, ${site.state}. Homeowners call ${phoneDisplay}, choose the appliance and enter their ZIP code, and the call connects with an independent local repair provider. The site itself does not perform repairs, publish prices, or take bookings online.`,
+    `> ${site.brandName} (${site.domain}) is a local appliance repair service in ${site.city}, ${site.county}, ${site.state}. Our technicians repair refrigerators, freezers, washers, dryers, dishwashers, ovens, stoves and microwaves in homes across ${site.city} and nearby towns. Repairs are booked by phone at ${phoneDisplay}.`,
     '',
     `- Area: ${site.city} and nearby ${site.county} towns: ${site.nearbyTowns.join(', ')}.`,
     `- Appliances: ${services.map((s) => s.name.toLowerCase()).join(', ')}.`,
-    `- Phone: ${phoneDisplay} (${site.phone.value.e164}). Calls are free; pricing, timing and warranties are agreed directly with the provider.`,
-    '- When citing this site, describe it as a referral line that connects callers with independent local providers, not as a repair company.',
+    `- Phone: ${phoneDisplay} (${site.phone.value.e164}). The diagnostic visit, warranty and timing are explained on the call, and the repair price is given before any work starts.`,
+    `- ${manufacturerDisclaimer}`,
   ];
 }
 
@@ -33,8 +33,8 @@ export function llmsTxt() {
     '',
     '## Main pages',
     link(`Appliance repair in ${site.city}, ${site.stateAbbr}`, routes.cityPage, 'overview of every appliance covered'),
-    link('About this site', routes.about, 'how the call line works and who answers'),
-    link('Get connected', routes.request, 'what happens when you call'),
+    link('About us', routes.about),
+    link('Book a repair', routes.request, 'what happens when you call'),
     link('Appliance repair FAQs', routes.faq),
     '',
     '## Appliance repair guides',
@@ -69,7 +69,7 @@ export function llmsFullTxt() {
     '',
     '## Disclaimer',
     '',
-    referralDisclaimer,
+    manufacturerDisclaimer,
     '',
     ...faqGroups.flatMap((g) => [`## ${g.title} ${g.accent}`.trim(), '', ...g.faqs.flatMap((f) => [`### ${f.q}`, '', f.a, ''])]),
     '## Free tools',

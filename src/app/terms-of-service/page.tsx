@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { referralDisclaimer, routes, site } from '@/config/site';
+import { manufacturerDisclaimer, routes, site } from '@/config/site';
 import { LegalPage } from '@/components/LegalPage';
 import { pageMetadata } from '@/lib/seo';
 
@@ -7,6 +7,7 @@ export const metadata = pageMetadata({
   title: `Terms of Service | ${site.brandName}`,
   description: `The terms for using ${site.domain}, a free referral service that connects homeowners with independent local appliance repair providers by phone.`,
   path: routes.terms,
+  noindex: true,
 });
 
 export default function TermsPage() {
@@ -72,7 +73,7 @@ export default function TermsPage() {
       </p>
 
       <h2>Disclaimer</h2>
-      <p>{referralDisclaimer}</p>
+      <p>{manufacturerDisclaimer}</p>
 
       <h2>Changes to these terms</h2>
       <p>These terms may be updated from time to time. The date at the top of this page shows when they last changed.</p>

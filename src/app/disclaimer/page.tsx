@@ -1,37 +1,39 @@
 import Link from 'next/link';
-import { referralDisclaimer, routes, site } from '@/config/site';
+import { manufacturerDisclaimer, routes, site } from '@/config/site';
 import { LegalPage } from '@/components/LegalPage';
+import { PhoneLink } from '@/components/PhoneLink';
 import { pageMetadata } from '@/lib/seo';
 
 export const metadata = pageMetadata({
   title: `Disclaimer | ${site.brandName}`,
-  description: `Disclaimer for ${site.domain}: how the site connects homeowners with local contractors, license and insurance checks, photos and trademarks.`,
+  description: `Disclaimer for ${site.domain}: repair guides and tools are general information, and brand names are used only to identify appliances.`,
   path: routes.disclaimer,
+  noindex: true,
 });
 
 export default function DisclaimerPage() {
   return (
-    <LegalPage title="Disclaimer" path={routes.disclaimer} updated="October 18, 2026">
-      <p>{referralDisclaimer}</p>
+    <LegalPage title="Disclaimer" path={routes.disclaimer} updated="November 25, 2026">
+      <p>{manufacturerDisclaimer}</p>
 
-      <h2>How the service works</h2>
+      <h2>Guides and tools</h2>
       <p>
-        {site.brandName} publishes appliance repair information and a phone number. Calls are connected with independent appliance
-        repair providers serving {site.city} and nearby {site.county} towns. The site does not perform repairs and does not
-        schedule appointments. Any price, timing, payment or warranty is agreed directly between you and the provider. See the{' '}
-        <Link href={routes.terms}>Terms of Service</Link> for details.
+        The repair guides, error code meanings, cost levels and checklists on {site.domain} are general information. Appliances differ
+        by brand, model and installation, so check your owner&rsquo;s manual and stop if anything feels unsafe. For a diagnosis of your
+        appliance, call us at <PhoneLink location="disclaimer" className="font-semibold underline" />. Pricing, timing and warranty
+        terms are explained on the call and before any work starts.
       </p>
 
-      <h2>Availability</h2>
+      <h2>Safety</h2>
       <p>
-        Provider availability varies by location, time and demand, and no time frame is promised. Emergency help may be available
-        from local providers.
+        If you smell gas, leave the house and call the gas company or 911 from outside. For smoke, sparks or a burning smell, switch the
+        appliance off at the breaker and do not use it until it has been checked.
       </p>
 
       <h2>Trademarks</h2>
       <p>
-        {site.brandName} is not affiliated with, endorsed by or sponsored by any appliance manufacturer. Brand names are trademarks
-        of their respective owners and are used only to identify appliances.
+        Brand names are trademarks of their respective owners and are used only to identify the appliances we repair. See the{' '}
+        <Link href={routes.terms}>Terms of Service</Link> for more.
       </p>
     </LegalPage>
   );

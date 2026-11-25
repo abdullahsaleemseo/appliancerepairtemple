@@ -6,15 +6,17 @@ import { TrustBadges } from './TrustBadges';
 export function FinalCta({
   title = 'Broken appliance?',
   accent = 'Let’s fix it.',
-  text = 'One call puts you in touch with a technician who works on refrigerators, washers, dryers, dishwashers and ovens across Temple and Bell County.',
+  text = 'Our technicians repair refrigerators, washers, dryers, dishwashers and ovens across Temple and Bell County.',
   appliance,
   formId = 'final_cta',
+  cardHeadingLevel,
 }: {
   title?: string;
   accent?: string;
-  text?: string;
+  text?: React.ReactNode;
   appliance?: string;
   formId?: string;
+  cardHeadingLevel?: 2 | 3 | 'p';
 }) {
   return (
     <section aria-labelledby={`${formId}-heading`} className="bg-canvas px-3 pb-3 pt-16 sm:px-4 md:pt-24">
@@ -36,7 +38,7 @@ export function FinalCta({
               <TrustBadges dark />
             </div>
           </div>
-          <CallCard location={`${formId}_card`} appliance={appliance} dark />
+          <CallCard location={`${formId}_card`} appliance={appliance} dark headingLevel={cardHeadingLevel} />
         </div>
       </div>
     </section>

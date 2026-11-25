@@ -9,7 +9,7 @@ export function UtilityBar() {
         <div className="hidden items-center gap-6 md:flex">
           <span className="inline-flex items-center gap-2">
             <span className="h-1.5 w-1.5 animate-pulseDot rounded-full bg-mint-bright" />
-            {site.city}’s line for refrigerator, washer, dryer and oven repair
+            Refrigerator, washer, dryer and oven repair in {site.city}
           </span>
         </div>
         <span className="inline-flex items-center gap-2">

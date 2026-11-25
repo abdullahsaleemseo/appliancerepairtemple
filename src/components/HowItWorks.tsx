@@ -1,15 +1,15 @@
 const defaultSteps = [
   {
-    title: 'Call the Appliance Repair Temple line',
-    text: 'Choose the appliance, enter your ZIP code and describe what it is doing. The call is free.',
+    title: 'Call Appliance Repair Temple',
+    text: 'Tell us the appliance, the brand and what it is doing. The model number and any error code help.',
   },
   {
-    title: 'Talk to a technician near you',
-    text: 'Your call goes to an appliance repair provider that works in your part of Bell County. Ask about timing, pricing and licensing.',
+    title: 'We schedule a visit',
+    text: 'We set a time that fits your day and let you know when to expect our technician.',
   },
   {
-    title: 'Diagnosis before repair',
-    text: 'A good technician finds the problem and explains what the repair involves before any work starts.',
+    title: 'Diagnosis, then the repair',
+    text: 'Our technician finds the cause and gives you the price before any work starts.',
   },
 ];
 

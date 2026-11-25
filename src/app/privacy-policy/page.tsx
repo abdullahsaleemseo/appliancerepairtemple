@@ -6,6 +6,7 @@ export const metadata = pageMetadata({
   title: `Privacy Policy | ${site.brandName}`,
   description: `How ${site.brandName}, a free referral service, handles information from visits to ${site.domain} and calls to local repair providers.`,
   path: routes.privacy,
+  noindex: true,
 });
 
 const facebook = site.social.find((s) => s.key === 'facebook');

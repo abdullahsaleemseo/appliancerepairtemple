@@ -35,7 +35,8 @@ export function pageMetadata({ title, description, path, noindex, type = 'websit
     alternates: { canonical: url },
     robots: index
       ? { index: true, follow: true, googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1, 'max-video-preview': -1 } }
-      : { index: false, follow: false },
+      : // Pages marked noindex (legal pages) still pass link signals; staging builds block both.
+        { index: false, follow: Boolean(noindex) },
     openGraph: {
       title,
       description,

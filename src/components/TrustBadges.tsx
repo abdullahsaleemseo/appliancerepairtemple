@@ -1,10 +1,10 @@
 import { site } from '@/config/site';
 import { Icon } from './Icon';
 
-/** Plain facts about the service. No credentials, ratings or speed claims (call network rules). */
+/** Plain facts about the service. No credentials, ratings or speed claims. */
 const items = [
-  { text: 'Free to call', icon: 'phone' as const },
-  { text: 'Technicians across Bell County', icon: 'wrench' as const },
+  { text: 'Upfront price before work', icon: 'phone' as const },
+  { text: 'Our technicians across Bell County', icon: 'wrench' as const },
   { text: 'All major appliance brands', icon: 'tag' as const },
   { text: `${site.city} & ${site.county}`, icon: 'pin' as const },
 ];

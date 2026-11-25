@@ -7,6 +7,7 @@ export const metadata = pageMetadata({
   title: `Accessibility | ${site.brandName}`,
   description: `How ${site.brandName} works to make ${site.domain} usable for everyone, the standard we aim for, and how to get help or report a problem.`,
   path: routes.accessibility,
+  noindex: true,
 });
 
 export default function AccessibilityPage() {

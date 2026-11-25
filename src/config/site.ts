@@ -26,13 +26,13 @@ export const site = {
   county: 'Bell County',
   region: 'Central Texas',
 
-  // Ringba call tracking number (Oct 2026). Calls route to independent local providers.
+  // Main business number.
   phone: v({ display: '(254) 615-2088', e164: '+12546152088' }, true),
   email: v('service@appliancerepairtemple.com'),
 
   // Service-area business: no street address is published or marked up.
   serviceAreaSummary: 'Temple, Belton, Killeen, Harker Heights, Salado, and nearby Central Texas communities',
-  footerAreaLine: 'Temple’s line for appliance repair, serving homes across Bell County, TX.',
+  footerAreaLine: 'Appliance repair for homes in Temple and across Bell County, TX.',
 
 
   // Temple ZIP codes supplied in the design brief as verified.
@@ -67,16 +67,12 @@ export const site = {
   ] as { key: SocialKey; name: string; handle: string; url: string }[],
 } as const;
 
-/**
- * The site is a referral resource: it connects homeowners with independent local appliance repair
- * providers by phone. It makes no claims about credentials, experience, ratings, speed, prices or payment.
- * This disclaimer appears in the footer of every page and on the Disclaimer page.
- */
-/** Shown next to the number: callers who pick the appliance and enter a ZIP in the phone menu reach a provider. */
-export const callHint = 'Call, choose the appliance, and enter your ZIP code.';
+/** Short line shown next to the phone number in calls to action. */
+export const callHint = 'Tell us the appliance, the brand and what it is doing.';
 
-export const referralDisclaimer =
-  'This site is a free service to assist homeowners in connecting with local appliance repair providers. All providers are independent and this site does not warrant or guarantee any work performed. It is the responsibility of the homeowner to verify that the hired provider furnishes the necessary license and insurance required for the work being performed. All persons depicted in a photo or video are actors or models and not providers listed on this site.';
+/** Footer and Disclaimer page. Appliance Repair Temple is a local repair business (since Nov 2026). */
+export const manufacturerDisclaimer =
+  'Appliance Repair Temple is an independent appliance repair service and is not affiliated with or authorized by any appliance manufacturer.';
 
 export const isProduction = resolvedSiteMode === 'production';
 
