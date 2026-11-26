@@ -8,7 +8,7 @@ Searching "Electrolux appliance repair Temple TX" brings up Sears Home Services 
 
 **Title tag:** Electrolux Appliance Repair Temple TX | Laundry & Kitchen
 
-**Meta description:** Electrolux appliance repair in Temple, TX: front-load washers, steam dryers, fridges and wall ovens, plus what to photograph before you call (254) 615-2088.
+**Meta description:** Electrolux appliance repair in Temple, TX: front-load washers, steam dryers, fridges and wall ovens, and what to photograph before you call (254) 615-2088.
 
 **URL:** https://appliancerepairtemple.com/brands/electrolux-appliance-repair-temple-tx/
 
