@@ -37,7 +37,7 @@ A technician usually starts with the symptom and the fuel. On a gas oven that wo
 
 ### Gas stove won't light
 
-A burner that clicks but won't catch is the most common gas cooktop call, and it's often not a broken part. After a spill or a cleaning, the burner cap may sit crooked, or the burner head may still be wet. Lift the cap, dry everything, set the cap back so it sits flat and centered, and try again. Food packed into the small holes around the burner head blocks the flame too; a straight pin clears them.
+A burner that clicks but won't catch is a very common gas cooktop call, and it's often not a broken part. After a spill or a cleaning, the burner cap may sit crooked, or the burner head may still be wet. Lift the cap, dry everything, set the cap back so it sits flat and centered, and try again. Food packed into the small holes around the burner head blocks the flame too; a straight pin clears them.
 
 If the clicking never stops even with the knob off, the spark switch behind that knob is usually wet or worn. If one burner won't click at all while the others do, the spark electrode or its wire is the suspect. Gas stove repair in Temple is mostly these small parts, plus the occasional gas valve, and stove repair in Temple, TX on electric cooktops is just as often a single switch or element.
 
