@@ -19,7 +19,7 @@ export const dynamicParams = false;
 
 export function generateStaticParams() {
   // Brands rewritten as their own routes under src/app/brands/ are left out here.
-  const ownRoutes = ['whirlpool', 'ge', 'samsung', 'lg', 'frigidaire', 'maytag', 'kitchenaid', 'bosch', 'kenmore', 'electrolux', 'amana'];
+  const ownRoutes = ['whirlpool', 'ge', 'samsung', 'lg', 'frigidaire', 'maytag', 'kitchenaid', 'bosch', 'kenmore', 'electrolux', 'amana', 'speed-queen'];
   return brands.filter((b) => b.hasPage && !ownRoutes.includes(b.key)).map((b) => ({ brand: b.slug }));
 }
 
