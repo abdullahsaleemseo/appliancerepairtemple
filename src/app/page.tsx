@@ -41,7 +41,7 @@ export default function HomePage() {
               Appliance Repair in {site.city}, {site.stateAbbr}
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/75 md:text-xl lg:text-lg xl:text-xl">
-              Experienced technicians handle appliance repair in Temple, TX for homeowners, renters and landlords across Bell County.
+              Technicians handle appliance repair in Temple, TX for homeowners, renters and landlords across Bell County.
               They fix refrigerators, freezers, washers, dryers, dishwashers, ovens, stoves, ranges, cooktops and microwaves, covering
               all the major brands you are likely to have in your kitchen or laundry room. Service reaches every part of Temple, from
               older homes near downtown to newer builds on the west side, plus Belton, Killeen, Harker Heights, Salado and the smaller
@@ -92,7 +92,7 @@ export default function HomePage() {
           <SectionHeading id="who-heading" title="Who repairs appliances in Temple, TX?" />
           <div className="prose-copy">
             <p>
-              Experienced appliance repair technicians who work across Temple and Bell County handle refrigerators, washers, dryers,
+              Appliance repair technicians who work across Temple and Bell County handle refrigerators, washers, dryers,
               dishwashers, ovens and microwaves, and you can reach them at <PhoneLink location="who_repairs" />. You describe the problem on
               the phone, and a technician takes care of the visit, the diagnosis and the repair.
             </p>
@@ -108,8 +108,8 @@ export default function HomePage() {
               pulling into the driveway.
             </p>
             <p>
-              Most of all, you get a plain-language explanation. Before a single tool comes out, you hear what failed, what the repair
-              involves and whether it makes sense for an appliance of that age.
+              Most of all, ask for a plain-language explanation. Before a single tool comes out, ask what failed, what the repair involves
+              and whether it makes sense for an appliance of that age.
             </p>
           </div>
         </div>
@@ -150,8 +150,8 @@ export default function HomePage() {
               cost more or take longer to arrive.
             </p>
             <p>
-              You will always know the price and agree to it before the repair begins. If the repair does not make financial sense, the
-              technician will tell you that as well.
+              Ask for the price and agree to it before the repair begins. If you are unsure the repair makes financial sense, ask the
+              technician that too.
             </p>
           </div>
         </div>
@@ -173,7 +173,7 @@ export default function HomePage() {
               belt or a blown thermal fuse is worth fixing, because those are some of the least expensive repairs in the house.
             </p>
             <p>
-              A technician will give you a straight answer for your appliance. For a deeper look at lifespans and the numbers behind the
+              Ask the technician for a straight answer about your appliance. For a deeper look at lifespans and the numbers behind the
               decision, read our guide on{' '}
               <Link href="/blog/repair-or-replace-appliance/">whether to repair or replace an appliance</Link>.
             </p>
@@ -247,7 +247,7 @@ export default function HomePage() {
             <Link href={routes.request} className="font-semibold text-white underline decoration-flame underline-offset-4 hover:text-flame-glow">
               book your appliance repair
             </Link>
-            , and we will take it from there.
+            , and describe what the appliance is doing.
           </>
         }
       />

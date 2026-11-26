@@ -23,7 +23,8 @@ import { posts, postHref } from '@/content/blog';
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return services.map((s) => ({ slug: s.slug }));
+  // The refrigerator page has its own route (src/app/refrigerator-repair-temple-tx).
+  return services.filter((s) => s.key !== 'refrigerator').map((s) => ({ slug: s.slug }));
 }
 
 type Params = { params: Promise<{ slug: string }> };

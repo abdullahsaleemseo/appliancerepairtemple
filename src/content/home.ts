@@ -78,7 +78,7 @@ export const homeProblems: { title: string; text: string }[] = [
   },
   {
     title: 'Older wiring and gas connections.',
-    text: 'In older homes near downtown, a new range or dryer sometimes meets an outlet, cord or gas connection that was never meant for it. If the connection looks unsafe, we will tell you so you can have an electrician or plumber take care of it.',
+    text: 'In older homes near downtown, a new range or dryer sometimes meets an outlet, cord or gas connection that was never meant for it. If the connection looks unsafe, the technician can point it out so you can have an electrician or plumber take care of it.',
   },
   {
     title: 'Washers stuck before the spin.',
@@ -91,10 +91,10 @@ export const homeSteps: { title: string; text: string }[] = [
     title: 'Call us.',
     text: 'Phone (254) 615-2088 and describe the appliance, the brand and what it is doing. It helps to have the model number ready (inside the fresh-food section on most refrigerators, under the lid or on the door frame on most washers and dryers) and any error code on the display. With that, the technician can often bring the right part on the first trip.',
   },
-  { title: 'Pick a time.', text: 'The visit is set for a time that fits your day, and you know when to expect the technician.' },
+  { title: 'Pick a time.', text: 'Ask for a visit window that fits your day.' },
   {
-    title: 'Diagnosis and an upfront price.',
-    text: 'The technician finds the cause, explains it in plain terms and gives you the repair price before starting.',
+    title: 'Diagnosis and the price.',
+    text: 'The technician finds the cause and explains it in plain terms. Ask for the repair price before any work starts.',
   },
   { title: 'The repair.', text: 'Once you approve, the technician makes the repair, tests the appliance and walks you through what was done.' },
 ];
@@ -103,7 +103,7 @@ export const homeSteps: { title: string; text: string }[] = [
 export const homeFaqs: Faq[] = [
   {
     q: 'Do you repair all major brands?',
-    a: 'Yes. Repairs cover Whirlpool, GE, Samsung, LG, Frigidaire, Maytag, KitchenAid, Bosch, Kenmore, Electrolux, Amana and Speed Queen appliances. If your brand is not on that list, call with the brand and model, and you will find out right on the call whether a technician can work on it.',
+    a: 'Yes. Repairs cover Whirlpool, GE, Samsung, LG, Frigidaire, Maytag, KitchenAid, Bosch, Kenmore, Electrolux, Amana and Speed Queen appliances. If your brand is not on that list, call with the brand and model, and ask on the call whether a technician can work on it.',
   },
   {
     q: 'Do you repair appliances in rental homes and apartments?',
@@ -119,6 +119,6 @@ export const homeFaqs: Faq[] = [
   },
   {
     q: 'How soon can you get to my home?',
-    a: 'It depends on where you are and how full the schedule is that day. When you call, you get a realistic arrival window instead of a promise that cannot be kept, and you hear about it if anything changes.',
+    a: 'It depends on where you are and how full the schedule is that day. When you call, ask for a realistic arrival window and whether someone will let you know if it changes.',
   },
 ];
