@@ -126,7 +126,7 @@ Have the tag photo and a line about the problem ready, then call Appliance Repai
     "name": "Electrolux appliance repair in Temple, TX",
     "serviceType": "Electrolux appliance repair",
     "brand": { "@type": "Brand", "name": "Electrolux" },
-    "description": "Electrolux appliance repair in Temple, TX: front-load washers, steam dryers, fridges and wall ovens, plus what to photograph before you call (254) 615-2088.",
+    "description": "Electrolux appliance repair in Temple, TX: front-load washers, steam dryers, fridges and wall ovens, and what to photograph before you call (254) 615-2088.",
     "url": "https://appliancerepairtemple.com/brands/electrolux-appliance-repair-temple-tx/",
     "provider": { "@type": "HomeAndConstructionBusiness", "@id": "https://appliancerepairtemple.com/#business", "name": "Appliance Repair Temple", "telephone": "+12546152088" },
     "areaServed": [
