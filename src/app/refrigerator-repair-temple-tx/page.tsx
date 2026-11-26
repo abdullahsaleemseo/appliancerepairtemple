@@ -105,8 +105,8 @@ export default function RefrigeratorRepairPage() {
             </p>
             <p>
               Frost blockage has a tell: the fridge cools for a day or two after being unplugged, then warms up again. Mention that on a
-              refrigerator not cooling repair call in Temple. The{' '}
-              <Link href="/blog/refrigerator-not-cooling/">refrigerator not cooling guide</Link> covers the checks worth doing first.
+              refrigerator not cooling repair call in Temple. Before you call,{' '}
+              <Link href="/blog/refrigerator-not-cooling/">a few safe checks on coils, vents and settings</Link> can rule out the simple causes.
             </p>
             <p>
               When both sections are warming, look at heat instead. The condenser coils and condenser fan at the bottom back need a few
@@ -160,7 +160,7 @@ export default function RefrigeratorRepairPage() {
             </p>
             <p>
               To narrow it down, dry the floor, tuck a paper towel under the front edge and another at the back, and check them in an hour.
-              The <Link href="/blog/refrigerator-leaking-water/">refrigerator leaking water guide</Link> goes further.
+              Whichever towel gets wet tells you where to start, and <Link href="/blog/refrigerator-leaking-water/">how to trace a refrigerator leak</Link> picks up from there.
             </p>
           </div>
         </div>
@@ -192,8 +192,8 @@ export default function RefrigeratorRepairPage() {
             </p>
             <p>
               Before calling, check that the ice maker&apos;s switch or bail arm is on and the freezer is near 0°F; an ice maker won&apos;t
-              cycle in a warm freezer. The <Link href="/blog/ice-maker-not-working/">ice maker troubleshooting guide</Link> lists the checks
-              in order.
+              cycle in a warm freezer. If both are fine, there are <Link href="/blog/ice-maker-not-working/">a few more ice maker checks</Link>{' '}
+              you can do before calling.
             </p>
           </div>
         </div>
@@ -225,13 +225,14 @@ export default function RefrigeratorRepairPage() {
           <SectionHeading id="brand-heading" eyebrow="Brands" title="Does the brand" accent="change the repair?" />
           <div className="prose-copy">
             <p>
-              Somewhat. Samsung and LG models lean on sensors, inverter compressors and control boards; see the{' '}
-              <Link href="/brands/samsung-appliance-repair-temple-tx/">Samsung appliance repair page</Link> and the{' '}
-              <Link href="/brands/lg-appliance-repair-temple-tx/">LG appliance repair page</Link>. Whirlpool tends to use conventional defrost
-              systems with easy-to-find parts, covered under{' '}
-              <Link href="/brands/whirlpool-appliance-repair-temple-tx/">Whirlpool appliance repair in Temple</Link>. GE fridges, from basic
-              top freezers to Profile models, are on the <Link href="/brands/ge-appliance-repair-temple-tx/">GE appliance repair page</Link>.
-              For other brands, give the model when you call.
+              Somewhat. Samsung fridges lean on sensors and control boards, and{' '}
+              <Link href="/brands/samsung-appliance-repair-temple-tx/">Samsung&apos;s display codes</Link> often point a technician to the right
+              section. LG pairs inverter compressors with its own set of{' '}
+              <Link href="/brands/lg-appliance-repair-temple-tx/">LG fridge error codes worth writing down</Link>.{' '}
+              <Link href="/brands/whirlpool-appliance-repair-temple-tx/">Whirlpool refrigerators</Link> tend to use conventional defrost systems
+              with easy-to-find parts. GE fridges run from basic top freezers to Profile models, and{' '}
+              <Link href="/brands/ge-appliance-repair-temple-tx/">the letters in a GE model number</Link> tell you which line you have. For other
+              brands, give the model when you call.
             </p>
           </div>
         </div>
@@ -329,7 +330,7 @@ export default function RefrigeratorRepairPage() {
               Refrigerator calls come from all three Temple ZIP codes, 76501, 76502 and 76504: older kitchens Downtown, ranch homes in Western
               Hills and Midway, rentals near the Baylor Scott &amp; White area and Temple College, and homes along the I-35 corridor. Renting?
               Check with your landlord about who arranges and pays for the repair before you call. Fridge repair in Temple, TX doesn&apos;t stop
-              at the city limits either; the <Link href={routes.areas}>service areas page</Link> lists nearby towns.
+              at the city limits either; <Link href={routes.areas}>Belton, Killeen, Salado and the other nearby towns</Link> are covered too.
             </p>
           </div>
         </div>
@@ -356,11 +357,11 @@ export default function RefrigeratorRepairPage() {
             <Link href={routes.request} className="font-semibold text-white underline decoration-white/40 underline-offset-4">
               book a refrigerator repair visit
             </Link>
-            . If the fridge is warm with a full load of food inside, the{' '}
+            . If the fridge is warm with a full load of food inside, start with{' '}
             <Link href={routes.cityPage} className="font-semibold text-white underline decoration-white/40 underline-offset-4">
-              same-day and emergency repair page
-            </Link>{' '}
-            covers what to do first.
+              what to do while the food is still cold
+            </Link>
+            .
           </>
         }
       />

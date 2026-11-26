@@ -141,16 +141,16 @@ export default function SameDayPage() {
               </Step>
               <Step n={2} title="Washer leaking.">
                 Turn the hot and cold valves on the wall behind the machine clockwise until they stop. Unplug it if the plug is dry and easy
-                to reach; otherwise switch off its breaker. Then towels or a wet-dry vac. The{' '}
-                <Link href="/washer-repair-temple-tx/" className={inline}>washer leak and flood repair</Link> page explains the usual causes.
+                to reach; otherwise switch off its breaker. Then towels or a wet-dry vac. Once the floor is dry, the{' '}
+                <Link href="/washer-repair-temple-tx/" className={inline}>usual causes of a washer leak</Link> are worth a look.
               </Step>
               <Step n={3} title="Dishwasher leaking.">
                 Switch off its breaker, close the small valve under the sink and keep the door shut so the water inside stays put.
               </Step>
               <Step n={4} title="Oven or range dead.">
                 Look at the breaker panel first. An electric range runs on a double breaker, and when only half of it trips, the clock can
-                glow while the oven stays cold. On a gas range, a gas smell overrides everything else; get out and call from outside. More
-                on <Link href="/oven-stove-repair-temple-tx/" className={inline}>gas range and oven repair</Link>.
+                glow while the oven stays cold. On a gas range, a gas smell overrides everything else; get out and call from outside. With no gas smell and
+                no heat, the cause is usually <Link href="/oven-stove-repair-temple-tx/" className={inline}>a worn igniter or a failed bake element</Link>.
               </Step>
               <Step n={5} title="Anything smoking or sparking.">
                 Kill the power at the panel rather than at the appliance&apos;s own switch, and leave the cabinet closed.
@@ -184,8 +184,8 @@ export default function SameDayPage() {
               Heat changes the math too. In July and August, a kitchen in the 80s pushes a struggling refrigerator past 40°F much faster
               than in March, and a garage freezer can lose the fight by mid-afternoon. Mention that on the call. Night or rotating shift
               workers at the Baylor Scott &amp; White medical center should say so and ask for a window that doesn&apos;t cut into sleep.
-              Urgent appliance repair across Bell County goes smoother when the scheduler knows the whole picture. For visits that can
-              wait, the main <Link href={routes.home}>appliance repair in Temple</Link> page covers every appliance.
+              Urgent appliance repair across Bell County goes smoother when the scheduler knows the whole picture. If it can wait for a
+              regular visit, <Link href={routes.home}>appliance repair in Temple</Link> covers every major appliance and brand.
             </p>
             <h3>If it breaks on a weekend or a holiday</h3>
             <p>
@@ -243,8 +243,8 @@ export default function SameDayPage() {
             <p>
               In the morning, read the thermometer before opening anything. Perishables that sat above 40°F for more than 2 hours should
               go, per USDA guidance. Then call and say how long the refrigerator has been warm; that tells the scheduler how urgent it is.
-              The <Link href="/refrigerator-repair-temple-tx/">refrigerator repair in Temple</Link> page covers the usual causes once the
-              immediate crisis is over.
+              Once the crisis is over, it helps to know{' '}
+              <Link href="/refrigerator-repair-temple-tx/">why a refrigerator stops cooling</Link> so you can describe the symptoms clearly.
             </p>
           </div>
         </div>

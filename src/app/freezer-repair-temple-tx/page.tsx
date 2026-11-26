@@ -170,16 +170,17 @@ export default function FreezerRepairPage() {
         <div className="prose-copy mt-8 max-w-3xl">
           <p>
             Chest freezer repair in Temple tends to be simpler, with fewer moving parts and no automatic defrost. Upright freezer repair has
-            more possibilities, because the fan, the defrost heater and its controls can all quit while the compressor keeps running. Brand
-            pages cover <Link href="/brands/frigidaire-appliance-repair-temple-tx/">Frigidaire freezers</Link>,{' '}
-            <Link href="/brands/ge-appliance-repair-temple-tx/">GE appliances</Link>,{' '}
-            <Link href="/brands/whirlpool-appliance-repair-temple-tx/">Whirlpool uprights</Link> and the old{' '}
-            <Link href="/brands/kenmore-appliance-repair-temple-tx/">Kenmore chest freezers</Link> still running in plenty of garages.
+            more possibilities, because the fan, the defrost heater and its controls can all quit while the compressor keeps running. Frigidaire
+            is the name on a lot of garage freezers here, and a{' '}
+            <Link href="/brands/frigidaire-appliance-repair-temple-tx/">Frigidaire freezer that warms up in August</Link> often needs a relay,
+            fan or thermostat rather than a compressor. Old Kenmore chest freezers are just as common, and{' '}
+            <Link href="/brands/kenmore-appliance-repair-temple-tx/">the first three digits of a Kenmore model number</Link> show who built
+            yours.
           </p>
           <p>
-            The freezer section of a regular fridge shares airflow with the fresh-food side, so it&apos;s covered on the{' '}
-            <Link href="/refrigerator-repair-temple-tx/">refrigerator repair page</Link> and in the{' '}
-            <Link href="/blog/refrigerator-not-cooling/">guide to a refrigerator that isn&apos;t cooling</Link>.
+            The freezer section of a regular fridge shares airflow with the fresh-food side, so its problems behave like{' '}
+            <Link href="/refrigerator-repair-temple-tx/">a refrigerator that won&apos;t cool</Link>, and the{' '}
+            <Link href="/blog/refrigerator-not-cooling/">coil and vent checks for a warm fridge</Link> apply to it as well.
           </p>
         </div>
       </Section>
@@ -273,8 +274,8 @@ export default function FreezerRepairPage() {
             </p>
             <p>A pile of fresh, unfrozen meat added at once can overwhelm a freezer for a day or more, so freeze big loads in batches.</p>
             <p>
-              For deep freezer repair in Temple, TX, call while the food is still frozen. If it&apos;s already thawing, the{' '}
-              <Link href={routes.cityPage}>same-day and emergency repair page</Link> covers what to do right now.
+              For deep freezer repair in Temple, TX, call while the food is still frozen. If it&apos;s already thawing,{' '}
+              <Link href={routes.cityPage}>the steps for a freezer that&apos;s thawing</Link> come first.
             </p>
           </div>
         </div>
@@ -337,15 +338,12 @@ export default function FreezerRepairPage() {
         </div>
         <div className="mt-8 max-w-3xl space-y-4 text-[17px] leading-relaxed text-ink-body">
           <p>
-            The{' '}
-            <Link href="/blog/repair-or-replace-appliance/" className={flame}>
-              repair or replace guide
-            </Link>{' '}
-            covers lifespans and how to weigh the numbers.
-          </p>
-          <p>
             Cost comes down to the part, whether it&apos;s sealed system work, how hard the freezer is to reach and how easy parts are to find,
-            so no figure is honest before a look. Call <PhoneLink location="freezer_cost" className={flame} />, ask about the visit fee, and get
+            so no figure is honest before a look. Weigh any quote against{' '}
+            <Link href="/blog/repair-or-replace-appliance/" className={flame}>
+              typical appliance lifespans
+            </Link>
+            , then call <PhoneLink location="freezer_cost" className={flame} />, ask about the visit fee, and get
             the price before any work starts.
           </p>
         </div>
@@ -357,8 +355,8 @@ export default function FreezerRepairPage() {
           <div className="prose-copy">
             <p>
               All over 76501, 76502 and 76504: garages in Western Hills and Midway, chest freezers on back porches Downtown, and shops and
-              barns along the I-35 corridor. Belton, Killeen, Salado and the other nearby towns are on the{' '}
-              <Link href={routes.areas}>service areas page</Link>.
+              barns along the I-35 corridor. <Link href={routes.areas}>Belton, Killeen, Salado and the other nearby towns</Link> are covered
+              as well.
             </p>
           </div>
         </div>

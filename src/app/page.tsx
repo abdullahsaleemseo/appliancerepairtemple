@@ -47,11 +47,11 @@ export default function HomePage() {
               older homes near downtown to newer builds on the west side, plus Belton, Killeen, Harker Heights, Salado and the smaller
               towns nearby. Call us at{' '}
               <PhoneLink location="hero_text" className="font-semibold text-white underline decoration-flame underline-offset-4" /> and
-              describe what your appliance is doing. If it truly cannot wait, see the page on{' '}
+              describe what your appliance is doing. If water is spreading or something smells burnt,{' '}
               <Link href={routes.cityPage} className="font-semibold text-white underline decoration-flame underline-offset-4 hover:text-flame-glow">
-                emergency and same-day appliance repair
-              </Link>
-              .
+                the first steps in an appliance emergency
+              </Link>{' '}
+              matter more than anything else.
             </p>
           </div>
           <CallCard location="home_hero_card" headingLevel="p" />
@@ -173,9 +173,9 @@ export default function HomePage() {
               belt or a blown thermal fuse is worth fixing, because those are some of the least expensive repairs in the house.
             </p>
             <p>
-              Ask the technician for a straight answer about your appliance. For a deeper look at lifespans and the numbers behind the
-              decision, read our guide on{' '}
-              <Link href="/blog/repair-or-replace-appliance/">whether to repair or replace an appliance</Link>.
+              Ask the technician for a straight answer about your appliance, and compare it with{' '}
+              <Link href="/blog/repair-or-replace-appliance/">typical appliance lifespans and repair costs</Link> if you want to run the
+              numbers yourself.
             </p>
           </div>
         </div>
@@ -195,7 +195,7 @@ export default function HomePage() {
             <p>
               Repairs cover the brands found in most Temple kitchens and laundry rooms: Whirlpool, GE, Samsung, LG, Frigidaire, Maytag,
               KitchenAid, Bosch, Kenmore, Electrolux, Amana and Speed Queen. Each brand has its own quirks, error codes and model number
-              locations, and our <Link href={routes.brands}>appliance brands guide</Link> covers them one by one. This is an independent
+              locations, and knowing <Link href={routes.brands}>the usual trouble spots for your brand</Link> makes the call quicker. This is an independent
               repair service, not affiliated with or authorized by any of these manufacturers.
             </p>
           </div>
@@ -216,8 +216,8 @@ export default function HomePage() {
               <p>
                 The Bell County appliance repair area reaches south along I-35 to Belton and Salado, west along US-190 to Harker Heights
                 and Killeen, and out to Nolanville, Morgan&apos;s Point Resort, Troy, Little River-Academy, Rogers, Holland and Moody. If
-                you searched for appliance repair near me in Temple or one of those towns, you are in the right place. See the full list
-                on our <Link href={routes.areas}>service areas page</Link>.
+                you searched for appliance repair near me in Temple or one of those towns, you are in the right place, and the{' '}
+                <Link href={routes.areas}>full list of towns and ZIP codes</Link> shows exactly where technicians go.
               </p>
             </div>
           </div>
