@@ -33,7 +33,7 @@ If what you're seeing falls in the right-hand column, call (254) 615-2088 and gi
 
 ## Bosch error codes worth knowing: E24 and E25
 
-Two codes come up more than any others on Bosch dishwasher repair calls in Temple:
+Two drain codes come up often on Bosch dishwasher repair calls in Temple:
 
 - **E24:** water isn't draining as it should, usually because the drain hose is kinked, crushed behind the dishwasher or blocked, or the connection at the sink or garbage disposal is clogged.
 - **E25:** the drain pump itself is blocked, often by a bit of glass, a seed or a label caught under the pump cover in the sump.
