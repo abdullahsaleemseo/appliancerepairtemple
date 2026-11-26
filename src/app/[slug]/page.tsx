@@ -23,8 +23,9 @@ import { posts, postHref } from '@/content/blog';
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  // The refrigerator page has its own route (src/app/refrigerator-repair-temple-tx).
-  return services.filter((s) => s.key !== 'refrigerator').map((s) => ({ slug: s.slug }));
+  // Refrigerator and freezer pages have their own routes (src/app/refrigerator-repair-temple-tx, src/app/freezer-repair-temple-tx).
+  const ownRoutes = ['refrigerator', 'freezer'];
+  return services.filter((s) => !ownRoutes.includes(s.key)).map((s) => ({ slug: s.slug }));
 }
 
 type Params = { params: Promise<{ slug: string }> };
