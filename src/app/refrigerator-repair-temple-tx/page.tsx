@@ -185,7 +185,7 @@ export default function RefrigeratorRepairPage() {
           <SectionHeading id="ice-heading" eyebrow="Ice and water" title="Ice maker or dispenser quit?" accent="Hard water is often part of it" />
           <div className="prose-copy">
             <p>
-              Ice maker repair in Temple has a local twist: much of the area&apos;s water is hard. Minerals scale the water inlet
+              Ice makers here have a local twist: much of the area&apos;s water is hard. Minerals scale the water inlet
               valve&apos;s small screen and narrow opening, so the fill slows over months until cubes come out small, hollow or not at all. A
               scaled valve can also drip instead of closing cleanly, freezing the fill tube shut. Hard water also shortens filter life, so a
               slow dispenser may just need a new filter.

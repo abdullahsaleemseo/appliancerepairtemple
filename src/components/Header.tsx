@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { phoneDisplay, routes, site, tel } from '@/config/site';
+import { liveExtraServices } from '@/content/extraServices';
 import { serviceHref, services } from '@/content/services';
 import { Icon } from './Icon';
 import { Logo } from './Logo';
@@ -77,10 +78,10 @@ export function Header({ brandLinks, areaLinks }: { brandLinks: NavLink[]; areaL
                   >
                     {item.menu === 'services' ? (
                       <ul className="grid grid-cols-2 gap-1 rounded-[22px] border border-sand bg-white p-2 shadow-lift">
-                        {services.map((s) => (
+                        {[...services.map((s) => ({ ...s, href: serviceHref(s.key) })), ...liveExtraServices].map((s) => (
                           <li key={s.key}>
                             <Link
-                              href={serviceHref(s.key)}
+                              href={s.href}
                               className="group flex items-start gap-3 rounded-2xl p-3 transition hover:bg-canvas focus-visible:bg-canvas focus-visible:outline-none"
                             >
                               <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-canvas text-ink transition group-hover:bg-flame group-hover:text-white">
@@ -166,9 +167,9 @@ export function Header({ brandLinks, areaLinks }: { brandLinks: NavLink[]; areaL
       >
         <p className="px-1 pb-3 pt-4 text-[12px] font-semibold uppercase tracking-[0.18em] text-white/40">Repairs</p>
         <ul className="grid grid-cols-2 gap-2">
-          {services.map((s) => (
+          {[...services.map((s) => ({ ...s, href: serviceHref(s.key) })), ...liveExtraServices].map((s) => (
             <li key={s.key}>
-              <Link href={serviceHref(s.key)} className="flex items-center gap-2.5 rounded-2xl border border-white/[0.08] bg-white/[0.04] px-3 py-3 text-[15px] font-medium text-white">
+              <Link href={s.href} className="flex items-center gap-2.5 rounded-2xl border border-white/[0.08] bg-white/[0.04] px-3 py-3 text-[15px] font-medium text-white">
                 <Icon name={s.icon} className="h-5 w-5 shrink-0 text-flame-glow" />
                 {s.name}
               </Link>

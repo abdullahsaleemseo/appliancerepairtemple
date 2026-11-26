@@ -3,6 +3,7 @@ import { routes } from '@/config/site';
 import { areas, areaHref } from '@/content/areas';
 import { brands, brandHref } from '@/content/brands';
 import { posts, postHref } from '@/content/blog';
+import { liveExtraServices } from '@/content/extraServices';
 import { serviceHref, services } from '@/content/services';
 import { absoluteUrl } from '@/lib/seo';
 import { toolRoutes } from '@/config/tools';
@@ -25,6 +26,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     entry('/', 1, new Date('2026-11-25T12:00:00')),
     entry(routes.cityPage, 0.9),
     ...services.map((s) => entry(serviceHref(s.key), 0.8)),
+    ...liveExtraServices.map((s) => entry(s.href, 0.7)),
     entry(routes.brands, 0.6),
     ...brands.filter((b) => b.hasPage).map((b) => entry(brandHref(b), 0.6)),
     entry(routes.areas, 0.6),

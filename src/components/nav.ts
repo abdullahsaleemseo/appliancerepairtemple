@@ -1,7 +1,11 @@
 import { routes } from '@/config/site';
+import { liveExtraServices } from '@/content/extraServices';
 import { serviceHref, services } from '@/content/services';
 
-export const serviceLinks = services.map((s) => ({ href: serviceHref(s.key), label: s.navLabel }));
+export const serviceLinks = [
+  ...services.map((s) => ({ href: serviceHref(s.key), label: s.navLabel })),
+  ...liveExtraServices.map((s) => ({ href: s.href, label: s.navLabel })),
+];
 
 export type NavLink = { href: string; label: string };
 export type MenuKey = 'services' | 'brands' | 'areas';
