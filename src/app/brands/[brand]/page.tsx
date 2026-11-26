@@ -18,7 +18,9 @@ import { toolRoutes } from '@/config/tools';
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return brands.filter((b) => b.hasPage).map((b) => ({ brand: b.slug }));
+  // Brands rewritten as their own routes under src/app/brands/ are left out here.
+  const ownRoutes = ['whirlpool'];
+  return brands.filter((b) => b.hasPage && !ownRoutes.includes(b.key)).map((b) => ({ brand: b.slug }));
 }
 
 type Params = { params: Promise<{ brand: string }> };
