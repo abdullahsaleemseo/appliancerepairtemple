@@ -33,7 +33,7 @@ export const extraServices: ExtraService[] = [
     navLabel: 'Garbage Disposal Repair',
     card: 'Humming, jammed or leaking',
     icon: 'wrench',
-    live: false,
+    live: true,
   },
 ];
 

@@ -1208,7 +1208,7 @@ export const services: Service[] = [
       },
       {
         q: 'Why is my dishwasher not draining?',
-        a: 'Most often the filter under the lower spray arm is clogged. After that, look at the drain hose under the sink, a garbage disposal that is clogged or still has its knockout plug, a blocked air gap and the drain pump. A hum at the end of the cycle with no water moving usually means the pump is jammed or has failed.',
+        a: 'Most often the filter under the lower spray arm is clogged. After that, look at the drain hose under the sink, a [garbage disposal that is clogged or still has its knockout plug](/garbage-disposal-repair-temple-tx/), a blocked air gap and the drain pump. A hum at the end of the cycle with no water moving usually means the pump is jammed or has failed.',
       },
       {
         q: 'Why won’t my dishwasher start?',
