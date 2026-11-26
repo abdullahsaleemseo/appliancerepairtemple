@@ -19,7 +19,9 @@ import { pageMetadata } from '@/lib/seo';
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return areas.map((a) => ({ area: a.slug }));
+  // Towns rewritten as their own routes under src/app/service-areas/ are left out here.
+  const ownRoutes = ['belton-tx'];
+  return areas.filter((a) => !ownRoutes.includes(a.slug)).map((a) => ({ area: a.slug }));
 }
 
 type Params = { params: Promise<{ area: string }> };

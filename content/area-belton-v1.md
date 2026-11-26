@@ -72,7 +72,7 @@ Ask when you call. Lead with your Belton address; whatever applies, travel or vi
 
 ### I rent near UMHB. Can I book the repair myself?
 
-You can call, but check your lease first. Most Belton leases leave appliance repairs, and the bill, to the landlord or property manager. If they say go ahead, have their OK handy when you book.
+You can call, but check your lease first. Many leases leave appliance repairs, and the bill, to the landlord or property manager. If they say go ahead, have their OK handy when you book.
 
 ### My lake house freezer quit while nobody was there. What should I do first?
 

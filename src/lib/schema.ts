@@ -95,7 +95,7 @@ export function articleSchema(opts: { title: string; description: string; path: 
 
 /** Service entity for a single service page, tied to the business entity on the homepage. */
 /** `brand` names the appliance brand being repaired (brand pages only); the provider is always the local business. */
-export function serviceSchema(opts: { name: string; serviceType: string; description: string; path: string; brand?: string }) {
+export function serviceSchema(opts: { name: string; serviceType: string; description: string; path: string; brand?: string; areaServed?: object | object[] }) {
   return {
     '@context': 'https://schema.org',
     '@type': 'Service',
@@ -106,7 +106,7 @@ export function serviceSchema(opts: { name: string; serviceType: string; descrip
     ...(opts.brand ? { brand: { '@type': 'Brand', name: opts.brand } } : {}),
     url: absoluteUrl(opts.path),
     provider: { '@type': 'HomeAndConstructionBusiness', '@id': `${site.url}/#business`, name: site.brandName, telephone: site.phone.value.e164 },
-    areaServed: [
+    areaServed: opts.areaServed ?? [
       { '@type': 'City', name: `${site.city}, ${site.stateAbbr}` },
       { '@type': 'AdministrativeArea', name: `Bell County, ${site.stateAbbr}` },
     ],
