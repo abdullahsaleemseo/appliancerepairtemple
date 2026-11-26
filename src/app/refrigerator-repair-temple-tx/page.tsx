@@ -192,8 +192,9 @@ export default function RefrigeratorRepairPage() {
             </p>
             <p>
               Before calling, check that the ice maker&apos;s switch or bail arm is on and the freezer is near 0°F; an ice maker won&apos;t
-              cycle in a warm freezer. If both are fine, there are <Link href="/blog/ice-maker-not-working/">a few more ice maker checks</Link>{' '}
-              you can do before calling.
+              cycle in a warm freezer. If both are fine,{' '}
+              <Link href="/ice-maker-repair-temple-tx/">the full route an ice maker&apos;s water takes</Link> usually shows where it stopped,
+              and there are <Link href="/blog/ice-maker-not-working/">a few more ice maker checks</Link> you can do before calling.
             </p>
           </div>
         </div>

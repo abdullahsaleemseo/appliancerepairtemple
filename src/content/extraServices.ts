@@ -15,7 +15,7 @@ export const extraServices: ExtraService[] = [
     navLabel: 'Ice Maker Repair',
     card: 'Not making ice, frozen or leaking',
     icon: 'refrigerator',
-    live: false,
+    live: true,
   },
   {
     key: 'dryer-vent',
