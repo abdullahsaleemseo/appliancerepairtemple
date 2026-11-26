@@ -24,7 +24,7 @@ export const extraServices: ExtraService[] = [
     navLabel: 'Dryer Vent Cleaning',
     card: 'Slow drying, hot laundry room, lint at the hood',
     icon: 'dryer',
-    live: false,
+    live: true,
   },
   {
     key: 'disposal',

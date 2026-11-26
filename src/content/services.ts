@@ -924,7 +924,7 @@ export const services: Service[] = [
       },
       {
         q: 'How often should a dryer vent be cleaned?',
-        a: 'At least once a year for most homes, and more often for large households or long vent runs. If drying times are creeping up, the vent is the first thing to check.',
+        a: 'At least once a year for most homes, and more often for large households or long vent runs. If drying times are creeping up, the vent is the first thing to check, and [how a vent gets cleaned along its whole route](/dryer-vent-cleaning-temple-tx/) depends on where it runs.',
       },
       {
         q: 'My dryer is squeaking. Is it about to break?',
