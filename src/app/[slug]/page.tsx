@@ -23,8 +23,8 @@ import { posts, postHref } from '@/content/blog';
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  // These appliances have their own routes under src/app (refrigerator, freezer, washer, dryer, dishwasher and oven repair pages).
-  const ownRoutes = ['refrigerator', 'freezer', 'washer', 'dryer', 'dishwasher', 'oven'];
+  // These appliances have their own routes under src/app (every appliance in services.ts now has its own repair page).
+  const ownRoutes = ['refrigerator', 'freezer', 'washer', 'dryer', 'dishwasher', 'oven', 'microwave'];
   return services.filter((s) => !ownRoutes.includes(s.key)).map((s) => ({ slug: s.slug }));
 }
 
