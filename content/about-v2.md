@@ -52,11 +52,11 @@ The [answers to common repair questions](https://appliancerepairtemple.com/faq/)
 
 ## Where we work
 
-Temple first, then outward: Salado and Belton along I-35, Nolanville, Harker Heights and Killeen out US-190, Morgan's Point Resort on the lake, Troy and Moody to the north, and Little River-Academy, Rogers and Holland to the east. Each town has its own quirks, from lake houses that sit empty to farm freezers in the barn, and every one is listed on [the coverage map for all twelve towns](https://appliancerepairtemple.com/service-areas/).
+Temple first, then outward: Salado and Belton along I-35, Nolanville, Harker Heights and Killeen out US-190, Morgan's Point Resort on the lake, Troy and Moody to the north, and Little River-Academy, Rogers and Holland to the east and southeast. Each town has its own quirks, from lake houses that sit empty to farm freezers in the barn, and every one is listed on [the coverage map for all twelve towns](https://appliancerepairtemple.com/service-areas/).
 
 ## Call when it quits
 
-Jot down the brand, copy the model number off the tag, add a sentence about what's wrong, and call us at (254) 615-2088. If you'd rather start online, you can [send the details through the booking form](https://appliancerepairtemple.com/get-connected/) and someone will follow up.
+Jot down the brand, copy the model number off the tag, add a sentence about what's wrong, and call us at (254) 615-2088. Not ready to call yet? [What to have ready before you book](https://appliancerepairtemple.com/get-connected/) walks through the tag, the symptom and the access notes.
 
 ---
 
@@ -68,7 +68,7 @@ Jot down the brand, copy the model number off the tag, add a sentence about what
 | brands we work on, grouped by who builds them | /brands/ | The brands we work on, grouped by who builds them, shows those family ties. |
 | answers to common repair questions | /faq/ | The answers to common repair questions cover cost, the visit and what comes after it in more detail. |
 | the coverage map for all twelve towns | /service-areas/ | ...and every one is listed on the coverage map for all twelve towns. |
-| send the details through the booking form | /get-connected/ | If you'd rather start online, you can send the details through the booking form and someone will follow up. |
+| What to have ready before you book | /get-connected/ | Not ready to call yet? What to have ready before you book walks through the tag, the symptom and the access notes. |
 
 5 internal links, each URL once.
 
