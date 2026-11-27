@@ -33,7 +33,7 @@ Five minutes with this list shortens the call and gives the technician a head st
   A phone photo of the tag is better than copying it by hand.
 - **What it's doing.** One or two sentences: won't cool, won't drain, clicks but won't light, leaks from the front. Say when it started.
 - **Any error code.** Write it exactly as the display shows it. You can look it up first in [the error code decoder for major brands](https://appliancerepairtemple.com/appliance-error-code-decoder/); some codes point to a filter or a door you can sort out yourself.
-- **Your street and ZIP.** We cover Temple and the towns around it, and the street matters as much as the ZIP when a code like 76513 spans more than one town. Each one appears on [the list of towns we cover](https://appliancerepairtemple.com/service-areas/).
+- **Your street and ZIP.** We cover Temple and the towns around it, and the street matters as much as the ZIP when a code like 76513 spans more than one town. Each town appears on [the list of towns we cover](https://appliancerepairtemple.com/service-areas/).
 - **Access notes.** Gate codes, pets, the best door, where the appliance sits (garage, shop, upstairs) and who'll be there.
 
 ## What happens after you call
@@ -59,7 +59,7 @@ Grab the model number and call us at (254) 615-2088.
 | Anchor | URL | Sentence |
 |---|---|---|
 | the error code decoder for major brands | /appliance-error-code-decoder/ | You can look it up first in the error code decoder for major brands; some codes point to a filter or a door you can sort out yourself. |
-| the list of towns we cover | /service-areas/ | Each one appears on the list of towns we cover. |
+| the list of towns we cover | /service-areas/ | Each town appears on the list of towns we cover. |
 | the appliance repair FAQ | /faq/ | Other common questions, from cost to what to keep after the visit, are answered in the appliance repair FAQ... |
 | who we are and how we work | /about/ | ...and who we are and how we work covers the rest. |
 
