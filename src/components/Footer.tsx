@@ -143,8 +143,7 @@ export function Footer() {
           <span className="font-semibold text-white/60">Disclaimer:</span> {footerDisclaimer}
         </p>
         <p className="mx-auto mt-2 max-w-site px-4 text-[12.5px] leading-relaxed text-white/45 lg:px-6">
-          {site.brandName} is not affiliated with, endorsed by or sponsored by any appliance manufacturer. Brand names are trademarks of
-          their respective owners and are used only to identify appliances.
+          Brand names are trademarks of their respective owners and are used only to identify appliances.
         </p>
         <div className="mx-auto flex max-w-site flex-col gap-3 px-4 py-6 text-[13px] sm:flex-row sm:items-center sm:justify-between lg:px-6">
           <p>© {year} {site.brandName}. All rights reserved.</p>
