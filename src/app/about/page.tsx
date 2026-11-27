@@ -1,332 +1,219 @@
 import Link from 'next/link';
-import { phoneDisplay, routes, site } from '@/config/site';
-import { PageHero } from '@/components/PageHero';
+import { routes, site } from '@/config/site';
 import { CtaRow } from '@/components/Buttons';
 import { FinalCta } from '@/components/FinalCta';
-import { FaqList } from '@/components/FaqList';
-import { HowItWorks } from '@/components/HowItWorks';
-import { Icon } from '@/components/Icon';
+import { JsonLd } from '@/components/JsonLd';
+import { MidCta } from '@/components/MidCta';
+import { PageHero } from '@/components/PageHero';
+import { PhoneLink } from '@/components/PhoneLink';
 import { Section, SectionHeading } from '@/components/Section';
-import { services, serviceHref } from '@/content/services';
-import { brands, brandHref, otherBrands } from '@/content/brands';
-import { areas, areaHref } from '@/content/areas';
-import { posts, postHref } from '@/content/blog';
-import type { Faq } from '@/content/types';
-import { pageMetadata } from '@/lib/seo';
+import { absoluteUrl, pageMetadata } from '@/lib/seo';
+
+/** About page (source: content/about-v1.md, Nov 2026). Q&A format; schema: AboutPage + Organization + BreadcrumbList (breadcrumb from PageHero). */
+const description =
+  'About Appliance Repair Temple: who comes out, which credentials matter in Texas, what happens when you call and what to ask first. Call (254) 615-2088.';
 
 export const metadata = pageMetadata({
-  title: `About ${site.brandName} | How One Free Call Works`,
-  description: `Appliance broken in ${site.city}? See how one free call to ${site.brandName} reaches a technician, what to ask and how to check a license. Call ${phoneDisplay}.`,
+  title: 'About Appliance Repair Temple | Local Technicians in Temple, TX',
+  description,
   path: routes.about,
 });
 
-const callSteps = [
-  {
-    title: 'Dial the line and pick the appliance',
-    text: 'The call is free. Choose the appliance in the phone menu, enter your ZIP code, and have the brand and symptom ready.',
-  },
-  {
-    title: 'Reach a technician near you',
-    text: `The line routes you to a repair business that works in ${site.city} or the nearby town you live in.`,
-  },
-  {
-    title: 'Ask your questions first',
-    text: 'Timing, pricing, licensing and insurance are all between you and that business. Decide only once you have answers.',
-  },
-  {
-    title: 'Diagnosis before repair',
-    text: 'A good technician finds the failed part and explains what the repair involves before starting. Ask for that.',
-  },
+const credentials: [string, string][] = [
+  [
+    'No general state license.',
+    ' Texas doesn\'t issue a general license for household appliance repair. A company that says it\'s "state licensed" for fixing washers should be able to tell you exactly which license it means.',
+  ],
+  [
+    'Refrigerant work needs EPA certification.',
+    ' Federal rules require EPA Section 608 certification for anyone who opens a sealed refrigeration system, such as a refrigerator or freezer compressor repair. Ask to see it for that kind of job.',
+  ],
+  [
+    'Gas line work belongs to licensed trades.',
+    ' Connecting or altering gas piping is work for a licensed plumber, or for propane systems, a company licensed for LP gas work. Swapping the appliance end of a connector is different from running new gas line.',
+  ],
+  [
+    'Insurance is worth asking about.',
+    ' Liability insurance protects you if something goes wrong in your home. You can ask any technician for proof of current coverage before work starts, and you should.',
+  ],
 ];
 
-const verifySteps = [
-  'Ask for the full business name and a phone number you can call back.',
-  'Ask whether the work requires a license under Texas rules, and check the state requirements for that kind of work.',
-  'Ask for proof of liability insurance before anyone works in your home, and check that the policy is current.',
-  'For gas appliances, ask how gas line connections are handled and who is qualified to do that work.',
-  'For refrigerant repairs, ask whether the technician holds EPA Section 608 certification, which federal rules require.',
-  'Look up the business online and read what other homeowners in the area have said about it.',
+const askAny: [string, string][] = [
+  ['The visit fee.', ' What does it cost to come out and diagnose the problem?'],
+  ['The price before work.', ' Will parts and labor be quoted as one figure before anything is replaced?'],
+  ['Parts warranty.', ' Is the part covered, and for how long?'],
+  ['Labor warranty.', ' If the same problem comes back, is the return visit covered?'],
+  ['Timing.', ' When can someone come, and if a part has to be ordered, how long will it take?'],
 ];
 
-const siteDoesNot = [
-  'Send technicians or perform any repair work itself.',
-  'Employ, train or supervise the technicians who take the calls.',
-  'Set prices or collect payment for work performed.',
-  'Check a repair business’s license or insurance on your behalf.',
-  'Represent, or speak for, any appliance manufacturer.',
-];
+function aboutSchema() {
+  return [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'AboutPage',
+      '@id': `${absoluteUrl(routes.about)}#page`,
+      name: `About ${site.brandName}`,
+      description,
+      url: absoluteUrl(routes.about),
+      isPartOf: { '@id': `${site.url}/#website` },
+      about: { '@id': `${site.url}/#organization` },
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'Organization',
+      '@id': `${site.url}/#organization`,
+      name: site.brandName,
+      url: `${site.url}/`,
+      telephone: site.phone.value.e164,
+      areaServed: [
+        { '@type': 'City', name: `${site.city}, ${site.stateAbbr}` },
+        { '@type': 'AdministrativeArea', name: `Bell County, ${site.stateAbbr}` },
+      ],
+    },
+  ];
+}
 
-const askBefore = [
-  { icon: 'tag' as const, title: 'Pricing', text: 'How is the visit priced, what does a diagnosis cost, and will you hear the full repair price before any part is replaced?' },
-  { icon: 'shield' as const, title: 'License and insurance', text: 'Is the business licensed for this work where required, and can it show current proof of insurance?' },
-  { icon: 'wrench' as const, title: 'Parts', text: 'Are replacement parts new and made for your model? How long will a part take to arrive if it is not on the truck?' },
-];
+const white = 'font-semibold text-white underline decoration-white/40 underline-offset-4';
 
-const prepareSteps = [
-  'Find the model and serial number. On a refrigerator it is usually inside the fresh-food section; on a washer or dryer, around the door or on the back; on a dishwasher, on the edge of the door.',
-  'Write down what the appliance is doing, any error code on the display, and when the problem started.',
-  'Note what you have already tried, such as resetting the breaker, cleaning a filter or clearing a drain hose.',
-  'Clear a path to the appliance and some space around it so the technician can pull it out or open panels.',
-  'Keep kids and pets out of the area during the visit.',
-  'For a leaking washer or dishwasher, close the water valve. For a gas appliance with a gas smell, leave the house and call 911 or the gas company from outside.',
-];
-
-const aboutFaqs: Faq[] = [
-  {
-    q: `What is ${site.brandName}?`,
-    a: `Temple's phone line and guide for appliance repair. Calling the number routes you to a repair business that works in ${site.city} and ${site.county}. That business, not this site, diagnoses and fixes the appliance.`,
-  },
-  {
-    q: 'Does the call cost anything?',
-    a: 'No. Dialing the line costs nothing. Any charge for a visit or a repair comes from the business you speak with, so settle pricing on the phone before you agree to a visit.',
-  },
-  {
-    q: `Is ${site.brandName} affiliated with any appliance brand?`,
-    a: 'No. Appliance Repair Temple is not affiliated with or authorized by any manufacturer. Brand names appear only to describe the refrigerators, washers and ranges that technicians in the area commonly see.',
-  },
-  {
-    q: 'How do I check that an appliance repair pro has a license and insurance?',
-    a: 'That check is yours to make. Ask for a license number where the work requires one, compare it with the Texas rules for that kind of job, and ask to see a current certificate of insurance before anyone opens a panel.',
-  },
-  {
-    q: 'Can I get emergency appliance repair?',
-    a: 'Emergency help for a flooding washer or a fridge full of warming food may be available from local providers; say it is urgent when you call. Until then, close the water valve on a leak, switch off the breaker on an electrical problem, and keep a warm refrigerator shut.',
-  },
-  {
-    q: 'Why are there no prices on the site?',
-    a: 'Each repair business sets its own prices, and the cost turns on the appliance, the model and the part that failed. A figure on a web page would only be a guess, so ask on the call.',
-  },
-];
+function QA({ id, q, tone, children }: { id: string; q: string; tone?: 'white'; children: React.ReactNode }) {
+  return (
+    <Section tone={tone} labelledBy={id}>
+      <div className="grid gap-12 lg:grid-cols-[1fr_1.4fr]">
+        <SectionHeading id={id} eyebrow="Question" title={q} accent="" />
+        <div className="prose-copy">{children}</div>
+      </div>
+    </Section>
+  );
+}
 
 export default function AboutPage() {
-  const brandLinks = brands.filter((b) => b.hasPage);
-
   return (
     <>
-      <PageHero
-        crumbs={[{ name: 'About This Site', path: routes.about }]}
-        title={`About ${site.brandName}:`}
-        accent={`${site.city}'s line for appliance repair.`}
-      >
-        <div className="prose-copy prose-dark">
-          <p>
-            This page explains what {site.brandName} is, how a call to its line works, and what to ask before a technician starts on
-            your refrigerator, freezer, washer, dryer, dishwasher, oven or microwave. In short: one phone number for appliance repair
-            in {site.city} and the {site.region} towns around it, with the details below.
-          </p>
-        </div>
+      <JsonLd data={aboutSchema()} />
+
+      <PageHero crumbs={[{ name: 'About', path: routes.about }]} title={`About ${site.brandName}`}>
+        <p className="text-lg leading-relaxed text-white/75 md:text-xl">
+          {site.brandName} is a local appliance repair company working across Temple and nearby Bell County, fixing refrigerators, freezers, washers,
+          dryers, dishwashers, ranges and microwaves in people&apos;s homes. Before you let anyone into your kitchen or laundry room, you should know
+          who&apos;s coming, what they&apos;re qualified to do and what the visit will involve. This page answers those questions plainly. If you&apos;d
+          rather ask them out loud, call <PhoneLink location="about_intro" className={white} />.
+        </p>
         <div className="mt-8">
           <CtaRow location="about_hero" dark />
         </div>
       </PageHero>
 
-      <Section labelledBy="story-heading">
-        <div className="grid gap-12 lg:grid-cols-[1fr_1.3fr]">
-          <SectionHeading id="story-heading" eyebrow="About this site" title="What this site is," accent="and who it is for." />
-          <div>
-            <div className="prose-copy">
-              <p>
-                When an appliance quits, most people want two things: someone nearby who can look at it, and a straight answer about
-                what is wrong. {site.brandName} handles the first part. One free call reaches a repair business serving your part of{' '}
-                {site.county}, so you are not scrolling through listings while the fridge warms up or the washer sits full of water.
-              </p>
-              <p>
-                Here is how it works behind the scenes. {site.brandName} is a free referral service, not a repair company: it does not
-                employ technicians, send anyone to your home or perform any work. The businesses on the other end of the line are
-                independent and set their own prices, schedules and terms. You talk to them directly, ask your questions, and decide
-                whether to hire them.
-              </p>
-              <p>
-                Everything else on the site is there so you go into that call prepared. The repair guides walk through safe checks you
-                can do yourself, what a symptom usually points to, and how to judge whether an older appliance is worth fixing. The
-                service and town pages cover the problems that come up most with each appliance and in each community nearby.
-              </p>
-            </div>
-          </div>
-        </div>
-      </Section>
-
-      <Section tone="white" labelledBy="visit-heading">
-        <SectionHeading id="visit-heading" eyebrow="How the free call works" title="What happens" accent="when you call." />
-        <HowItWorks steps={callSteps} />
-        <p className="mt-6 max-w-3xl text-[15px] text-ink-body">
-          Water on the floor or food at risk? Stop the damage first: close the supply valve, or keep the refrigerator doors shut. Then
-          call and describe exactly what you see.
+      <QA id="who-heading" q="Who comes out?">
+        <p>
+          Appliance repair technicians whose routes run through Temple, Belton, Killeen and the smaller towns in between. They diagnose the problem at
+          your home, explain what failed and what the fix involves, and do the repair once you&apos;ve agreed to it.
         </p>
-      </Section>
+        <p>
+          What they know best is the houses here. Older homes near downtown with original shutoff valves and long dryer vents. Newer subdivisions with
+          app-connected appliances that report codes. Rentals that turn over every year. Rural properties with freezers in the shop and well water
+          feeding the washer. That local knowledge shapes the questions you&apos;ll be asked on the phone and what the technician checks first.
+        </p>
+      </QA>
 
-      <Section tone="ink" labelledBy="verify-heading">
-        <div className="grid gap-12 lg:grid-cols-[1fr_1.3fr]">
-          <div>
-            <SectionHeading id="verify-heading" eyebrow="Your checklist" title="Verify license" accent="and insurance." dark />
-            <p className="text-white/70">
-              Before anyone works on a gas range or opens a refrigerator’s sealed system, confirm the license and insurance that job
-              requires. Checking is the homeowner’s responsibility, and a few minutes of questions on the call usually covers it.
-            </p>
-          </div>
-          <ul className="space-y-3">
-            {verifySteps.map((v) => (
-              <li key={v} className="card-dark flex items-start gap-3 p-5">
-                <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-mint-bright/15 text-mint-bright">
-                  <Icon name="check" className="h-4 w-4" strokeWidth={2.5} />
-                </span>
-                <span className="text-white/85">{v}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </Section>
-
-      <Section labelledBy="wont-heading">
-        <div className="grid gap-12 lg:grid-cols-[1fr_1.3fr]">
-          <div>
-            <SectionHeading id="wont-heading" eyebrow="Straight answers" title="What this site" accent="does not do." />
-            <p className="text-ink-body">
-              {site.brandName} points you to a technician and stops there. Every
-              agreement about the work is between you and the business you hire.
-            </p>
-          </div>
-          <ul className="space-y-3">
-            {siteDoesNot.map((w) => (
-              <li key={w} className="flex items-start gap-3 rounded-2xl border border-sand bg-white px-5 py-4 text-ink-body">
-                <span aria-hidden="true" className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-ink text-white">
-                  <Icon name="close" className="h-3.5 w-3.5" strokeWidth={2.5} />
-                </span>
-                {w}
-              </li>
-            ))}
-          </ul>
-        </div>
-      </Section>
-
-      <Section tone="white" labelledBy="ask-heading">
-        <SectionHeading id="ask-heading" eyebrow="Before work starts" title="What to ask" accent="the technician." />
-        <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {askBefore.map((v) => (
-            <li key={v.title} className="card p-7">
-              <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-flame-soft text-flame">
-                <Icon name={v.icon} className="h-6 w-6" />
-              </span>
-              <h3 className="mt-6 font-display text-[21px] font-bold tracking-[-0.025em] text-ink">{v.title}</h3>
-              <p className="mt-2 text-[15px] text-ink-body">{v.text}</p>
+      <QA id="license-heading" q="Are you licensed? Are you insured?" tone="white">
+        <p>Here&apos;s how credentials work for appliance repair in Texas, so you can judge any technician, including ours:</p>
+        <ul>
+          {credentials.map(([lead, rest]) => (
+            <li key={lead}>
+              <strong className="font-semibold text-ink">{lead}</strong>
+              {rest}
             </li>
           ))}
         </ul>
-        <p className="mt-6 max-w-3xl text-[15px] text-ink-body">
-          You do not have to approve a repair on the spot. If the answer to any of these is unclear, ask again, or take time to think it
-          over before work starts.
+        <p>If any of this matters for your repair, ask on the call. A straight question deserves a straight answer.</p>
+      </QA>
+
+      <QA id="long-heading" q="How long have you served Temple?">
+        <p>
+          Rather than hand you a number to take on faith, here&apos;s what&apos;s more useful: the technicians who come out work these streets and these
+          towns, know the common failures in the homes here, and can talk through your appliance&apos;s symptom before anyone drives over. If how long
+          someone has been in business matters to you, ask on the phone, along with anything else you want to know. The{' '}
+          <Link href={routes.faq}>frequently asked questions</Link> cover the rest of the common ones.
+        </p>
+      </QA>
+
+      <Section tone="white" labelledBy="call-heading">
+        <SectionHeading id="call-heading" eyebrow="Question" title="What happens" accent="when you call?" intro="The call is short and practical. Have these ready:" />
+        <ol className="grid gap-3 md:grid-cols-3">
+          <li className="rounded-2xl border border-sand bg-canvas p-5 text-[16px] leading-relaxed text-ink-body">
+            <strong className="font-semibold text-ink">The appliance and its brand,</strong> plus the model number from the tag if you can reach it. A
+            phone photo works.
+          </li>
+          <li className="rounded-2xl border border-sand bg-canvas p-5 text-[16px] leading-relaxed text-ink-body">
+            <strong className="font-semibold text-ink">What it&apos;s doing,</strong> in a sentence: won&apos;t cool, won&apos;t drain, clicking, a code
+            on the display.
+          </li>
+          <li className="rounded-2xl border border-sand bg-canvas p-5 text-[16px] leading-relaxed text-ink-body">
+            <strong className="font-semibold text-ink">Your street and ZIP,</strong> so the scheduler knows which route your home falls on. The towns
+            covered are listed on{' '}
+            <Link href={routes.areas} className="font-semibold text-ink underline decoration-flame decoration-2 underline-offset-4">
+              the coverage map for Temple and Bell County
+            </Link>
+            .
+          </li>
+        </ol>
+        <MidCta
+          location="about_midpage"
+          before={<>Got those three? Call </>}
+          after={
+            <>
+              . You&apos;ll hear how the visit works, what it costs to come out and when the schedule has an opening. If the problem sounds like something
+              you can check yourself first, like a tripped breaker or a clogged filter, you&apos;ll hear that too.
+            </>
+          }
+        />
+        <p className="mt-6 text-[17px] leading-relaxed text-ink-body">
+          Prefer to start online? You can{' '}
+          <Link href={routes.request} className="font-semibold text-ink underline decoration-flame decoration-2 underline-offset-4">
+            request a repair visit
+          </Link>{' '}
+          and the details get picked up from there.
         </p>
       </Section>
 
-      <Section labelledBy="prepare-heading">
-        <div className="grid gap-12 lg:grid-cols-[1fr_1.3fr]">
-          <SectionHeading id="prepare-heading" eyebrow="Before the visit" title="How to prepare" accent="for the technician." />
-          <ol className="space-y-3">
-            {prepareSteps.map((t, i) => (
-              <li key={t} className="flex items-start gap-3 rounded-2xl border border-sand bg-white px-5 py-4 text-ink-body">
-                <span aria-hidden="true" className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-flame text-[13px] font-semibold text-white">
-                  {i + 1}
-                </span>
-                {t}
-              </li>
-            ))}
-          </ol>
-        </div>
-      </Section>
-
-      <Section tone="white" labelledBy="scope-heading">
-        <div className="grid gap-12 lg:grid-cols-2">
-          <div>
-            <SectionHeading id="scope-heading" eyebrow="Appliances covered" title="Appliances" accent="and brands." />
-            <ul className="flex flex-wrap gap-2">
-              {services.map((s) => (
-                <li key={s.key}>
-                  <Link href={serviceHref(s.key)} className="inline-flex rounded-full border border-sand bg-white px-4 py-2 text-[15px] font-medium text-ink transition hover:border-ink">
-                    {s.name} repair
-                  </Link>
-                </li>
-              ))}
-            </ul>
-            <p className="mt-6 text-ink-body">
-              Technicians in the area commonly work on the major brands, including{' '}
-              {[...brandLinks.map((b) => ({ name: b.name, href: brandHref(b) })), ...otherBrands.map((name) => ({ name, href: '' }))].map(
-                (b, i, all) => (
-                  <span key={b.name}>
-                    {i > 0 ? (i === all.length - 1 ? ' and ' : ', ') : null}
-                    {b.href ? (
-                      <Link href={b.href} className="font-semibold text-ink underline decoration-flame/50 underline-offset-4 hover:decoration-flame">
-                        {b.name}
-                      </Link>
-                    ) : (
-                      b.name
-                    )}
-                  </span>
-                ),
-              )}
-              . None of these manufacturers is affiliated with this site. On the call, ask whether the technician works on your brand and model.
-            </p>
-          </div>
-          <div>
-            <h2 className="font-display text-2xl font-bold tracking-[-0.02em] text-ink">Temple and nearby towns</h2>
-            <p className="mt-3 text-ink-body">
-              Each town below has its own page on the appliance problems that come up there, from older Temple homes to newer builds in the suburbs:
-            </p>
-            <ul className="mt-5 flex flex-wrap gap-2">
-              <li>
-                <Link href={routes.home} className="inline-flex rounded-full bg-ink px-4 py-2 text-[15px] font-medium text-white">
-                  {site.city}
-                </Link>
-              </li>
-              {areas.map((a) => (
-                <li key={a.slug}>
-                  <Link href={areaHref(a)} className="inline-flex rounded-full border border-sand bg-white px-4 py-2 text-[15px] font-medium text-ink transition hover:border-ink">
-                    {a.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </Section>
-
-      <Section labelledBy="guides-heading">
-        <SectionHeading id="guides-heading" eyebrow="Repair guides" title="Safe checks" accent="before you call." />
-        <p className="mb-6 max-w-3xl text-ink-body">
-          These guides cover the problems {site.city} homeowners run into most. Each starts with safety, walks through checks you can do
-          yourself, and explains when a problem needs a technician.
-        </p>
-        <ul className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-          {posts.map((p) => (
-            <li key={p.slug}>
-              <Link href={postHref(p)} className="card group flex h-full flex-col p-6 transition hover:-translate-y-0.5 hover:shadow-lift">
-                <span className="font-display text-[19px] font-bold leading-tight tracking-[-0.02em] text-ink">{p.title}</span>
-                <span className="mt-2 flex-1 text-[15px] text-ink-body">{p.excerpt}</span>
-                <span className="mt-4 inline-flex items-center gap-1.5 font-semibold text-ink">
-                  Read the guide <Icon name="arrow" className="h-4 w-4 text-flame transition group-hover:translate-x-1" />
-                </span>
-              </Link>
+      <QA id="ask-heading" q="What should I ask any technician before work starts?">
+        <p>Whoever you hire, these questions protect you:</p>
+        <ul>
+          {askAny.map(([lead, rest]) => (
+            <li key={lead}>
+              <strong className="font-semibold text-ink">{lead}</strong>
+              {rest}
             </li>
           ))}
         </ul>
-        <p className="mt-6">
-          <Link href={routes.blog} className="font-semibold text-ink underline decoration-flame/50 underline-offset-4 hover:decoration-flame">
-            See all appliance repair tips
-          </Link>
-        </p>
-      </Section>
+        <p>A good technician answers all five without hesitation. Write the answers down.</p>
+      </QA>
 
-      <Section tone="white" labelledBy="faq-heading">
-        <div className="grid gap-12 lg:grid-cols-[1fr_1.5fr]">
-          <SectionHeading id="faq-heading" eyebrow="FAQ" title="About this site:" accent="questions." />
-          <FaqList faqs={aboutFaqs} />
-        </div>
-      </Section>
+      <QA id="brand-heading" q="Are you tied to any appliance brand?" tone="white">
+        <p>
+          No. Repairs here are independent of every manufacturer. Whirlpool, GE, Samsung, LG, Frigidaire and the rest are named here only to describe the
+          appliances people own; you&apos;ll find which brands are covered, and who actually builds them, on{' '}
+          <Link href={routes.brands}>the appliance brands we work on</Link>. If your appliance is still under the maker&apos;s warranty, contact the
+          maker first.
+        </p>
+      </QA>
 
       <FinalCta
         formId="about_final"
-        title="Appliance acting up?"
-        accent="Make one call."
-        text={`Call ${site.brandName}’s line and describe the problem. A technician who works in ${site.city} and ${site.county} picks up from there.`}
+        title="Questions first,"
+        accent="then the repair"
+        cardHeadingLevel="p"
+        cardTitle="Call with your questions"
+        text={
+          <>
+            Have the brand, the symptom and your ZIP ready, and call <PhoneLink location="about_final_text" className={white} />. Ask whatever you want
+            before anyone comes out. For more about appliance repair in Temple, the{' '}
+            <Link href={routes.home} className={white}>
+              Temple appliance repair homepage
+            </Link>{' '}
+            is the place to start.
+          </>
+        }
       />
     </>
   );

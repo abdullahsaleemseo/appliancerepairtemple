@@ -43,7 +43,6 @@ const referralRules = [
   { re: /\bconnects? you with|\bconnecting (you|homeowners) with|\bfree call\b|a technician near you|\blocal pros?\b|\bour network\b|\bthis site\b|independent (local )?(appliance repair )?providers?|\bwe match you\b|free referral|referral service|enter (your|the) zip|phone menu|call the line\b/i, why: 'referral or directory wording' },
 ];
 const referralLegacy = new Set([
-  'src/app/about/page.tsx',
   'src/app/brands/[brand]/page.tsx',
   'src/app/accessibility/page.tsx',
   'src/app/get-connected/page.tsx',

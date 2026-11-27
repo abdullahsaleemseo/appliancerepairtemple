@@ -24,7 +24,7 @@ Appliance repair technicians whose routes run through Temple, Belton, Killeen an
 
 What they know best is the houses here. Older homes near downtown with original shutoff valves and long dryer vents. Newer subdivisions with app-connected appliances that report codes. Rentals that turn over every year. Rural properties with freezers in the shop and well water feeding the washer. That local knowledge shapes the questions you'll be asked on the phone and what the technician checks first.
 
-## Are you licensed and insured?
+## Are you licensed? Are you insured?
 
 Here's how credentials work for appliance repair in Texas, so you can judge any technician, including ours:
 
@@ -63,7 +63,7 @@ A good technician answers all five without hesitation. Write the answers down.
 
 ## Are you tied to any appliance brand?
 
-No. Repairs here are independent of every manufacturer. Whirlpool, GE, Samsung, LG, Frigidaire and the rest are named on this site only to describe the appliances people own; you'll find which brands are covered, and who actually builds them, on [the appliance brands we work on](https://appliancerepairtemple.com/brands/). If your appliance is still under the maker's warranty, contact the maker first.
+No. Repairs here are independent of every manufacturer. Whirlpool, GE, Samsung, LG, Frigidaire and the rest are named here only to describe the appliances people own; you'll find which brands are covered, and who actually builds them, on [the appliance brands we work on](https://appliancerepairtemple.com/brands/). If your appliance is still under the maker's warranty, contact the maker first.
 
 ## Questions first, then the repair
 
@@ -139,7 +139,7 @@ About 820 words (page body including headings and lists; markdown and the compet
   - Gas piping work by a licensed plumber; propane systems by an LP-gas licensed company: confident (Texas plumbing board and Railroad Commission).
 - CONVERSION CHECK: first two sentences say who the company is, what it fixes and where. Phone in the first 100 words and closing. Decision aid: the five questions to ask any technician. "What happens when you call?" doubles as the mid-page CTA with exactly what to have ready (appliance and brand, model photo, symptom, street and ZIP). Cost, trust and timing all covered in the questions list and the licensing section.
 - ORIGINALITY REPORT: Q&A headings answering the trust questions; no section reused from the old About page or any other page. 6-gram check: no overlap apart from URLs.
-- KEYWORDS: Appliance Repair Temple in title, H1, first sentence and meta. "local appliance repair company" in the first sentence; "appliance repair technicians" in "Who comes out?". Question keywords are headings: "Who comes out?", "Are you licensed and insured?", "How long have you served Temple?".
+- KEYWORDS: Appliance Repair Temple in title, H1, first sentence and meta. "local appliance repair company" in the first sentence; "appliance repair technicians" in "Who comes out?". Question keywords are headings: "Who comes out?", "Are you licensed? Are you insured?", "How long have you served Temple?".
 
 ## Publishing note
 
