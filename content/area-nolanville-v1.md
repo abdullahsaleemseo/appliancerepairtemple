@@ -70,7 +70,7 @@ Probably not. Check the garbage disposal knockout plug and the drain hose under 
 
 ### My new fridge never cooled properly from day one. Who fixes that?
 
-If the installation looks fine and the fridge has power, a fridge that never cooled is usually a manufacturer warranty matter in the first year. Call the maker with the model and serial number and the closing date.
+If the installation looks fine and the fridge has power, a fridge that never cooled is usually a matter for the maker while its coverage lasts. Call the maker with the model and serial number and the closing date.
 
 ### Is all of 76559 covered, including the newer subdivisions?
 
