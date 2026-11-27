@@ -204,8 +204,8 @@ export default function HollandAreaPage() {
         <p>
           Up TX-95 toward Temple, <Link href="/service-areas/little-river-academy-tx/">Little River-Academy</Link> is the nearest town covered, and to
           the northeast, <Link href="/service-areas/rogers-tx/">Rogers</Link> sits on US-190. Every town on the list is on{' '}
-          <Link href={routes.areas}>the service area page for Bell County</Link>, and Holland appliance repair service takes in every appliance named on{' '}
-          <Link href={routes.home}>the homepage for appliance repair in Temple</Link>.
+          <Link href={routes.areas}>the Bell County service area list</Link>, and Holland appliance repair service takes in every appliance named on{' '}
+          <Link href={routes.home}>Temple appliance repair</Link>.
         </p>
       </Block>
 

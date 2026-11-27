@@ -212,8 +212,8 @@ export default function SaladoAreaPage() {
           <div className="prose-copy">
             <p>
               North on I-35, <Link href="/service-areas/belton-tx/">Belton</Link> is the closest town on the list. Every covered town, with ZIP codes,
-              is on <Link href={routes.areas}>the service area map for Bell County</Link>, and the{' '}
-              <Link href={routes.home}>main appliance repair page for Temple</Link> covers the full set of appliances.
+              is on <Link href={routes.areas}>the service area map for Bell County</Link>, and{' '}
+              <Link href={routes.home}>appliance repair in Temple</Link> covers the full set of appliances.
             </p>
           </div>
         </div>

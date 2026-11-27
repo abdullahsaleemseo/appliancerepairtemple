@@ -52,7 +52,7 @@ Pin down the trip charge and the price of the fix before anyone starts, and ask 
 
 ## Nearby
 
-South of Moody toward Temple, [Troy](https://appliancerepairtemple.com/service-areas/troy-tx/) is the next town covered. Other covered towns appear on [the list of service areas around Temple](https://appliancerepairtemple.com/service-areas/), and Moody appliance repair service follows the same approach as [the main page for appliance repair in Temple](https://appliancerepairtemple.com/).
+South of Moody toward Temple, [Troy](https://appliancerepairtemple.com/service-areas/troy-tx/) is the next town covered. Other covered towns appear on [the list of service areas around Temple](https://appliancerepairtemple.com/service-areas/), and Moody appliance repair service follows the same approach as [appliance repair in Temple and nearby towns](https://appliancerepairtemple.com/).
 
 ## Moody FAQ
 

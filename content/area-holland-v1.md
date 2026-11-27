@@ -74,7 +74,7 @@ Before work starts, get the trip cost and the price of the fix in plain numbers.
 
 ## Neighboring towns
 
-Up TX-95 toward Temple, [Little River-Academy](https://appliancerepairtemple.com/service-areas/little-river-academy-tx/) is the nearest town covered, and to the northeast, [Rogers](https://appliancerepairtemple.com/service-areas/rogers-tx/) sits on US-190. Every town on the list is on [the service area page for Bell County](https://appliancerepairtemple.com/service-areas/), and Holland appliance repair service takes in every appliance named on [the homepage for appliance repair in Temple](https://appliancerepairtemple.com/).
+Up TX-95 toward Temple, [Little River-Academy](https://appliancerepairtemple.com/service-areas/little-river-academy-tx/) is the nearest town covered, and to the northeast, [Rogers](https://appliancerepairtemple.com/service-areas/rogers-tx/) sits on US-190. Every town on the list is on [the Bell County service area list](https://appliancerepairtemple.com/service-areas/), and Holland appliance repair service takes in every appliance named on [Temple appliance repair](https://appliancerepairtemple.com/).
 
 ## Holland FAQ
 

@@ -193,8 +193,8 @@ export default function TroyAreaPage() {
       <Ask id="who-heading" tone="white" q="Who else is out this way?">
         <p>
           To the northwest, <Link href="/service-areas/moody-tx/">Moody</Link> is the next covered town. The full set of towns is on{' '}
-          <Link href={routes.areas}>the list of towns around Temple</Link>; Troy appliance repair service covers the same appliances listed on{' '}
-          <Link href={routes.home}>the main Temple repair page</Link>.
+          <Link href={routes.areas}>the list of towns around Temple</Link>; Troy appliance repair service covers the same appliances as{' '}
+          <Link href={routes.home}>repairs in Temple proper</Link>.
         </p>
       </Ask>
 

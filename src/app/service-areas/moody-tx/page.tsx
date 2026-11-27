@@ -175,7 +175,7 @@ export default function MoodyAreaPage() {
         <p>
           South of Moody toward Temple, <Link href="/service-areas/troy-tx/">Troy</Link> is the next town covered. Other covered towns appear on{' '}
           <Link href={routes.areas}>the list of service areas around Temple</Link>, and Moody appliance repair service follows the same approach as{' '}
-          <Link href={routes.home}>the main page for appliance repair in Temple</Link>.
+          <Link href={routes.home}>appliance repair in Temple and nearby towns</Link>.
         </p>
       </Block>
 

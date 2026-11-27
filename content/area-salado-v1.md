@@ -60,7 +60,7 @@ Get both numbers, the trip and the fix, settled before a tool comes out, and fin
 
 ## Next door
 
-North on I-35, [Belton](https://appliancerepairtemple.com/service-areas/belton-tx/) is the closest town on the list. Every covered town, with ZIP codes, is on [the service area map for Bell County](https://appliancerepairtemple.com/service-areas/), and the [main appliance repair page for Temple](https://appliancerepairtemple.com/) covers the full set of appliances.
+North on I-35, [Belton](https://appliancerepairtemple.com/service-areas/belton-tx/) is the closest town on the list. Every covered town, with ZIP codes, is on [the service area map for Bell County](https://appliancerepairtemple.com/service-areas/), and [appliance repair in Temple](https://appliancerepairtemple.com/) covers the full set of appliances.
 
 ## Salado FAQ
 

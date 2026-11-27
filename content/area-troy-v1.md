@@ -61,7 +61,7 @@ Get the trip and repair numbers out loud before any work, and ask whether lookin
 
 ## "Who else is out this way?"
 
-To the northwest, [Moody](https://appliancerepairtemple.com/service-areas/moody-tx/) is the next covered town. The full set of towns is on [the list of towns around Temple](https://appliancerepairtemple.com/service-areas/); Troy appliance repair service covers the same appliances listed on [the main Temple repair page](https://appliancerepairtemple.com/).
+To the northwest, [Moody](https://appliancerepairtemple.com/service-areas/moody-tx/) is the next covered town. The full set of towns is on [the list of towns around Temple](https://appliancerepairtemple.com/service-areas/); Troy appliance repair service covers the same appliances as [repairs in Temple proper](https://appliancerepairtemple.com/).
 
 ## Troy FAQ
 

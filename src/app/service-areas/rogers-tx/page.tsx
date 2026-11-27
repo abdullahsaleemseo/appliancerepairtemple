@@ -201,7 +201,7 @@ export default function RogersAreaPage() {
         <p>
           West of Rogers, <Link href="/service-areas/little-river-academy-tx/">Little River-Academy</Link> is the nearest covered town, and{' '}
           <Link href="/service-areas/holland-tx/">Holland</Link> lies to the southwest. Every other covered town shows up on{' '}
-          <Link href={routes.areas}>the Bell County coverage page</Link>, and Rogers appliance repair service takes in every appliance handled through{' '}
+          <Link href={routes.areas}>the Bell County coverage map</Link>, and Rogers appliance repair service takes in every appliance handled through{' '}
           <Link href={routes.home}>appliance repair in Temple itself</Link>.
         </p>
       </Block>

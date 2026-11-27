@@ -39,6 +39,8 @@ Refrigerators, freezers, ice makers, washers, dryers, dishwashers, ranges, wall 
 3. **A technician comes out and finds the cause.** Then comes a plain explanation of the failed part, the fix and the cost.
 4. **You decide.** The repair starts once you've said yes. If the numbers don't make sense for the appliance's age, you'll hear that too.
 
+Ready to start with step one? Call (254) 615-2088 with the appliance, the brand, the model number and a sentence about what it's doing.
+
 ## Licenses, insurance and what to ask
 
 Texas doesn't issue a general state license for household appliance repair, so "state licensed" on its own doesn't tell you much. A few things do matter:

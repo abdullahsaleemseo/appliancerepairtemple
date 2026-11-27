@@ -62,7 +62,7 @@ Have the trip charge and the full repair cost named before a screw comes out. If
 
 ## Rogers' neighbors
 
-West of Rogers, [Little River-Academy](https://appliancerepairtemple.com/service-areas/little-river-academy-tx/) is the nearest covered town, and [Holland](https://appliancerepairtemple.com/service-areas/holland-tx/) lies to the southwest. Every other covered town shows up on [the Bell County coverage page](https://appliancerepairtemple.com/service-areas/), and Rogers appliance repair service takes in every appliance handled through [appliance repair in Temple itself](https://appliancerepairtemple.com/).
+West of Rogers, [Little River-Academy](https://appliancerepairtemple.com/service-areas/little-river-academy-tx/) is the nearest covered town, and [Holland](https://appliancerepairtemple.com/service-areas/holland-tx/) lies to the southwest. Every other covered town shows up on [the Bell County coverage map](https://appliancerepairtemple.com/service-areas/), and Rogers appliance repair service takes in every appliance handled through [appliance repair in Temple itself](https://appliancerepairtemple.com/).
 
 ## Rogers FAQ
 
