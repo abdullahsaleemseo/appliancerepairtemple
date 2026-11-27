@@ -59,7 +59,7 @@ Settle the trip charge and the repair figure before a panel comes off. If you wo
 
 ## Around the lake
 
-Just down the road, [Belton](https://appliancerepairtemple.com/service-areas/belton-tx/) lies a few minutes away and uses the same 76513 ZIP. All the covered towns and their ZIP codes sit on [the lakeside-to-Temple coverage list](https://appliancerepairtemple.com/service-areas/), and the [Temple appliance repair overview](https://appliancerepairtemple.com/) takes in the rest of the house's appliances.
+Just down the road, [Belton](https://appliancerepairtemple.com/service-areas/belton-tx/) uses the same 76513 ZIP. All the covered towns and their ZIP codes sit on [the lakeside-to-Temple coverage list](https://appliancerepairtemple.com/service-areas/), and the [Temple appliance repair overview](https://appliancerepairtemple.com/) takes in the rest of the house's appliances.
 
 ## Morgan's Point Resort FAQ
 
@@ -88,7 +88,7 @@ If something's already wrong, or you'd rather it get checked before the next wee
 | what to check when a refrigerator won't stay cold | /refrigerator-repair-temple-tx/ | A garage fridge in a Texas summer runs long and hard; dusty coils and a tired condenser fan show up there first, as covered in what to check when a refrigerator won't stay cold. |
 | chest and upright freezer repair | /freezer-repair-temple-tx/ | A chest freezer that frosts heavily or runs without stopping usually has a lid gasket problem or a failing part covered in chest and upright freezer repair. |
 | why an ice maker quits after sitting | /ice-maker-repair-temple-tx/ | Ice makers that sat dry for weeks can come back with a sticking inlet valve or an iced-over fill line, the trouble described in why an ice maker quits after sitting. |
-| Belton | /service-areas/belton-tx/ | Just down the road, Belton lies a few minutes away and uses the same 76513 ZIP. |
+| Belton | /service-areas/belton-tx/ | Just down the road, Belton uses the same 76513 ZIP. |
 | the lakeside-to-Temple coverage list | /service-areas/ | All the covered towns and their ZIP codes sit on the lakeside-to-Temple coverage list... |
 | Temple appliance repair overview | / | ...and the Temple appliance repair overview takes in the rest of the house's appliances. |
 
