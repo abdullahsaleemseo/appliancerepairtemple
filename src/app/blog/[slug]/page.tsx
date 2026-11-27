@@ -40,6 +40,20 @@ const postTools: Record<string, ToolKey[]> = {
   'refrigerator-leaking-water': ['symptoms', 'cost'],
 };
 
+/** Topic groups for the "Keep reading" box. */
+const topicOf: Record<string, 'cold' | 'laundry' | 'kitchen'> = {
+  'refrigerator-leaking-water': 'cold',
+  'refrigerator-not-cooling': 'cold',
+  'ice-maker-not-working': 'cold',
+  'washer-not-spinning': 'laundry',
+  'washer-not-draining': 'laundry',
+  'dryer-not-heating': 'laundry',
+  'how-often-clean-dryer-vent': 'laundry',
+  'stove-burner-not-working': 'kitchen',
+  'microwave-not-heating': 'kitchen',
+  'dishwasher-drainage-problems': 'kitchen',
+};
+
 type PostCta = {
   title: string;
   accent: string;
@@ -165,6 +179,21 @@ const postCta: Record<string, PostCta> = {
   },
 };
 
+/** One natural service link per post in the closing box (replaces the old "More on ..." line). */
+const asideLink: Record<string, { before: string; anchor: string; href: string; after: string }> = {
+  'refrigerator-leaking-water': { before: 'Leaks that come back after the drain is cleared are handled through ', anchor: 'refrigerator repair in Temple', href: '/refrigerator-repair-temple-tx/', after: '.' },
+  'refrigerator-not-cooling': { before: 'Fan, defrost and relay faults like these are part of ', anchor: 'refrigerator repair in Temple', href: '/refrigerator-repair-temple-tx/', after: '.' },
+  'ice-maker-not-working': { before: 'When the valve or the module has to be replaced, ', anchor: 'ice maker repair in Temple', href: '/ice-maker-repair-temple-tx/', after: ' covers freezer-mounted and door-mounted units alike.' },
+  'washer-not-spinning': { before: 'Belts, couplers, locks and motor parts are tested as part of ', anchor: 'washer repair in Temple', href: '/washer-repair-temple-tx/', after: '.' },
+  'washer-not-draining': { before: 'Pump, lid lock and control faults are tested as part of ', anchor: 'washer repair in Temple', href: '/washer-repair-temple-tx/', after: '.' },
+  'dryer-not-heating': { before: 'Elements, fuses, igniters and valve coils are all checked during ', anchor: 'dryer repair in Temple', href: '/dryer-repair-temple-tx/', after: '.' },
+  'how-often-clean-dryer-vent': { before: 'For runs through the roof, the attic or a long wall, ', anchor: 'dryer vent cleaning in Temple', href: '/dryer-vent-cleaning-temple-tx/', after: ' clears the whole line, not just the end you can reach.' },
+  'dishwasher-drainage-problems': { before: 'Drain pump testing and replacement are part of ', anchor: 'dishwasher repair in Temple', href: '/dishwasher-repair-temple-tx/', after: '.' },
+  'stove-burner-not-working': { before: 'Igniter, spark module, valve and switch repairs fall under ', anchor: 'oven and stove repair in Temple', href: '/oven-stove-repair-temple-tx/', after: '.' },
+  'microwave-not-heating': { before: 'Work behind the cover belongs to ', anchor: 'microwave repair in Temple', href: '/microwave-repair-temple-tx/', after: ', where the parts are tested safely.' },
+  'repair-or-replace-appliance': { before: 'A clear diagnosis through ', anchor: 'appliance repair in Temple', href: '/', after: ' tells you exactly which part failed before you decide.' },
+};
+
 const fallbackCta: PostCta = {
   title: 'Need a',
   accent: 'technician?',
@@ -176,6 +205,25 @@ const fallbackCta: PostCta = {
   finalText: 'Appliance Repair Temple is Temple’s line for appliance repair.',
 };
 
+/** Renders [anchor](/path/) links written inside post text as internal links; everything else stays plain text. */
+function inline(text: string) {
+  const parts: React.ReactNode[] = [];
+  const re = /\[([^\]]+)\]\((\/[^)\s]*)\)/g;
+  let last = 0;
+  let m: RegExpExecArray | null;
+  while ((m = re.exec(text))) {
+    if (m.index > last) parts.push(text.slice(last, m.index));
+    parts.push(
+      <Link key={m.index} href={m[2]}>
+        {m[1]}
+      </Link>,
+    );
+    last = m.index + m[0].length;
+  }
+  if (last < text.length) parts.push(text.slice(last));
+  return parts;
+}
+
 const fmt = (d: string) => new Date(`${d}T12:00:00`).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
 
 export default async function PostPage({ params }: Params) {
@@ -184,11 +232,11 @@ export default async function PostPage({ params }: Params) {
   const path = postHref(p);
   const svc = p.service === 'general' ? null : serviceByKey[p.service];
   const cta = postCta[p.slug] ?? fallbackCta;
-  // Related posts: same appliance first, then the newest others.
-  const related = [...posts.filter((o) => o.slug !== p.slug)]
-    .sort((x, y) => Number(y.service === p.service) - Number(x.service === p.service) || y.published.localeCompare(x.published))
-    .slice(0, 2);
-  const tools = toolPageList.filter((t) => (postTools[p.slug] ?? ['symptoms', 'errorCodes']).includes(t.key));
+  const link = asideLink[p.slug] ?? { before: 'For a diagnosis, start with ', anchor: `appliance repair in ${site.city}`, href: routes.home, after: '.' };
+  // Related posts by topic: refrigerator and ice, laundry, kitchen. Repair-or-replace gets the cost tool and the homepage instead.
+  const group = topicOf[p.slug];
+  const related = group ? posts.filter((o) => o.slug !== p.slug && topicOf[o.slug] === group) : [];
+  const tools = toolPageList.filter((t) => (p.slug === 'repair-or-replace-appliance' ? ['cost'] : postTools[p.slug] ?? ['symptoms', 'errorCodes']).includes(t.key));
 
   return (
     <>
@@ -255,11 +303,11 @@ export default async function PostPage({ params }: Params) {
                   <div role="note" className="not-prose mb-6 flex gap-3 rounded-2xl border border-[#F4C7C3] bg-[#FDF1F0] p-5 text-[#7A1A12]">
                     <Icon name="shield" className="mt-0.5 h-5 w-5 shrink-0" strokeWidth={2} />
                     <p className="text-[15.5px] leading-relaxed">
-                      <strong className="font-semibold">{s.alert.title}</strong> {s.alert.text}
+                      <strong className="font-semibold">{s.alert.title}</strong> {inline(s.alert.text)}
                     </p>
                   </div>
                 ) : null}
-                {s.paragraphs?.map((t) => <p key={t.slice(0, 24)}>{t}</p>)}
+                {s.paragraphs?.map((t) => <p key={t.slice(0, 24)}>{inline(t)}</p>)}
                 {s.table ? (
                   <div className="mt-6 overflow-x-auto rounded-2xl border border-sand bg-white">
                     <table className="w-full min-w-[560px] text-left text-[15px]">
@@ -300,7 +348,7 @@ export default async function PostPage({ params }: Params) {
                         <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-ink font-display text-[15px] font-bold text-white">{i + 1}</span>
                         <span>
                           <span className="block font-display text-[18px] font-semibold text-ink">{st.title}</span>
-                          <span className="mt-1 block text-[15.5px] leading-relaxed text-ink-body">{st.text}</span>
+                          <span className="mt-1 block text-[15.5px] leading-relaxed text-ink-body">{inline(st.text)}</span>
                         </span>
                       </li>
                     ))}
@@ -325,11 +373,11 @@ export default async function PostPage({ params }: Params) {
                 {s.list ? (
                   <ul>
                     {s.list.map((t) => (
-                      <li key={t.slice(0, 24)}>{t}</li>
+                      <li key={t.slice(0, 24)}>{inline(t)}</li>
                     ))}
                   </ul>
                 ) : null}
-                {s.after?.map((t) => <p key={t.slice(0, 24)}>{t}</p>)}
+                {s.after?.map((t) => <p key={t.slice(0, 24)}>{inline(t)}</p>)}
               </section>
             ))}
 
@@ -344,23 +392,11 @@ export default async function PostPage({ params }: Params) {
                 .
               </p>
               <p className="relative mt-3 text-white/65">
-                {svc ? (
-                  <>
-                    More on{' '}
-                    <Link href={serviceHref(svc.key)} className="font-semibold text-white underline decoration-flame underline-offset-4">
-                      {svc.name.toLowerCase()} repair in {site.city}
-                    </Link>
-                    .
-                  </>
-                ) : (
-                  <>
-                    More on{' '}
-                    <Link href={routes.home} className="font-semibold text-white underline decoration-flame underline-offset-4">
-                      appliance repair in {site.city}
-                    </Link>
-                    .
-                  </>
-                )}
+                {link.before}
+                <Link href={link.href} className="font-semibold text-white underline decoration-flame underline-offset-4">
+                  {link.anchor}
+                </Link>
+                {link.after}
               </p>
             </aside>
 

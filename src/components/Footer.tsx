@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { canShow, routes, site } from '@/config/site';
-import { referralDisclaimer } from '@/config/legacyDisclaimer';
+import { footerDisclaimer } from '@/config/legacyDisclaimer';
 import { areas, areaHref } from '@/content/areas';
 import { toolPageList } from '@/content/tools/pages';
 import { serviceLinks } from './nav';
@@ -32,7 +32,6 @@ export function Footer() {
                   {!site.email.verified ? <VerifyTag label="REPLACE EMAIL" /> : null}
                 </p>
               ) : null}
-              <p>Tell us the appliance, the brand and what it is doing.</p>
             </div>
             {site.social.length ? (
               <ul aria-label={`${site.brandName} on social media`} className="mt-7 flex flex-wrap gap-2">
@@ -139,11 +138,13 @@ export function Footer() {
       </div>
 
       <div className="relative border-t border-white/[0.08]">
-        {/* Ringba-period disclaimer, kept until the owner confirms the revamp is done (see src/config/legacyDisclaimer.ts). */}
-        <p className="mx-auto max-w-site px-4 pt-6 text-[12.5px] leading-relaxed text-white/45 lg:px-6">
-          <span className="font-semibold text-white/60">Disclaimer:</span> {referralDisclaimer} {site.brandName} is not affiliated with,
-          endorsed by or sponsored by any appliance manufacturer. Brand names are trademarks of their respective owners and are used only
-          to identify appliances.
+        {/* Owner-set disclaimer (Nov 27, 2026), word for word; see src/config/legacyDisclaimer.ts. */}
+        <p data-footer-disclaimer className="mx-auto max-w-site px-4 pt-6 text-[12.5px] leading-relaxed text-white/45 lg:px-6">
+          <span className="font-semibold text-white/60">Disclaimer:</span> {footerDisclaimer}
+        </p>
+        <p className="mx-auto mt-2 max-w-site px-4 text-[12.5px] leading-relaxed text-white/45 lg:px-6">
+          {site.brandName} is not affiliated with, endorsed by or sponsored by any appliance manufacturer. Brand names are trademarks of
+          their respective owners and are used only to identify appliances.
         </p>
         <div className="mx-auto flex max-w-site flex-col gap-3 px-4 py-6 text-[13px] sm:flex-row sm:items-center sm:justify-between lg:px-6">
           <p>© {year} {site.brandName}. All rights reserved.</p>

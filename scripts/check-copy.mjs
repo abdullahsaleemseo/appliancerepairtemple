@@ -45,6 +45,8 @@ const referralRules = [
 const referralLegacy = new Set([
   'src/app/brands/[brand]/page.tsx',
   'src/app/accessibility/page.tsx',
+  // Legal pages use the owner's service description (Nov 27, 2026): "a free service that helps homeowners connect with independent appliance repair providers".
+  'src/app/disclaimer/page.tsx',
   'src/app/get-connected/page.tsx',
   'src/app/privacy-policy/page.tsx',
   'src/app/terms-of-service/page.tsx',

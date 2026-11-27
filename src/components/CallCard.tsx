@@ -10,6 +10,7 @@ export function CallCard({
   dark = false,
   className = '',
   headingLevel = 3,
+  showHint = true,
 }: {
   location: string;
   title?: string;
@@ -18,6 +19,8 @@ export function CallCard({
   className?: string;
   /** 2 when the card sits directly under the page h1; 'p' when the page outline must not include it. */
   headingLevel?: 2 | 3 | 'p';
+  /** The call hint line appears once per page; pass false on a second card. */
+  showHint?: boolean;
 }) {
   const Heading = headingLevel === 2 ? 'h2' : headingLevel === 'p' ? 'p' : 'h3';
   const points = [
@@ -43,7 +46,7 @@ export function CallCard({
         </span>
         <span className="whitespace-nowrap">{phoneDisplay}</span>
       </a>
-      <p className={`mt-2 text-[14px] font-medium ${dark ? 'text-white/75' : 'text-ink-body'}`}>{callHint}</p>
+      {showHint ? <p className={`mt-2 text-[14px] font-medium ${dark ? 'text-white/75' : 'text-ink-body'}`}>{callHint}</p> : null}
       <ul className="mt-6 space-y-3">
         {points.map((p) => (
           <li key={p} className={`flex items-start gap-3 text-[15px] ${dark ? 'text-white/80' : 'text-ink-body'}`}>

@@ -14,12 +14,12 @@ import { pageMetadata } from '@/lib/seo';
 
 export const metadata = pageMetadata({
   title: `Call for Appliance Repair in ${site.city}, ${site.stateAbbr} | Talk to a Tech`,
-  description: `Fridge warm, washer flooded or oven dead? Call ${phoneDisplay}, pick the appliance, enter your ZIP and describe the problem to a technician near ${site.city}, ${site.stateAbbr}.`,
+  description: `Fridge warm, washer flooded or oven dead? Call ${phoneDisplay}, say which appliance it is, give your ZIP and describe the problem. ${site.city}, ${site.stateAbbr}.`,
   path: routes.request,
 });
 
 const nextSteps = [
-  { title: 'Pick the appliance, enter your ZIP', text: 'The phone menu asks which appliance is acting up and where you live, from 76501 in Temple to Belton, Killeen or Salado.' },
+  { title: 'Say the appliance and your ZIP', text: 'Tell whoever answers which appliance is acting up and where you live, from 76501 in Temple to Belton, Killeen or Salado.' },
   { title: 'Talk to a technician', text: 'Describe the brand, the symptom and any error code. Ask about timing, pricing and licensing before you agree to a visit.' },
   { title: 'Diagnosis, then your OK', text: 'A good technician finds what failed and explains the repair before starting. Agree on the price before any work begins.' },
 ];
@@ -53,7 +53,7 @@ export default function RequestPage() {
       <PageHero crumbs={[{ name: 'Get Connected', path: routes.request }]} title={`Appliance Repair in ${site.city},`} accent="one free call away.">
         <div className="prose-copy prose-dark">
           <p>
-            Have the model number handy, pick the appliance from the phone menu, enter your ZIP code and describe what it is doing.
+            Have the model number handy, say which appliance it is, give your ZIP code and describe what it is doing.
             That is the whole process for reaching an appliance repair technician in {site.city} and nearby {site.county} towns
             through {site.brandName}, and it takes a few minutes.
           </p>

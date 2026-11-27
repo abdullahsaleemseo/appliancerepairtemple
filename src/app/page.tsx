@@ -54,7 +54,7 @@ export default function HomePage() {
               matter more than anything else.
             </p>
           </div>
-          <CallCard location="home_hero_card" headingLevel="p" />
+          <CallCard location="home_hero_card" headingLevel="p" showHint={false} />
         </div>
       </section>
 

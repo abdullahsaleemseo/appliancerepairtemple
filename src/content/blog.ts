@@ -105,7 +105,7 @@ export const posts: Post[] = [
           'Check the fitting at the back of the refrigerator. A compression fitting that has worked loose drips steadily. Snug it gently; overtightening cracks plastic fittings.',
           'Reseat the water filter. A filter that is not locked fully into place, or a cheap filter that does not fit the housing exactly, can leak inside the fresh-food section. Remove it and reinstall it until it clicks, or try the filter made for your model.',
           'Watch the dispenser. Drips right after dispensing can be trapped water, which is normal in small amounts. A steady drip with the dispenser idle points to the water valve.',
-          'Look at the ice maker. Water under the ice bin or a frozen mass on the freezer floor near it usually comes from the ice maker fill tube or water valve. The ice maker troubleshooting guide on this site covers it in detail.',
+          'Look at the ice maker. Water under the ice bin or a frozen mass on the freezer floor near it usually comes from the ice maker fill tube or water valve. Those fill problems are a job for [ice maker repair](/ice-maker-repair-temple-tx/) if a new filter and a level fridge do not stop them.',
         ],
       },
       {
@@ -222,7 +222,7 @@ export const posts: Post[] = [
         id: 'water-in-drum',
         heading: 'First question: is there still water in the drum?',
         paragraphs: [
-          'A washer will not spin a drum full of water. The pump has to empty it first, so a drain problem shows up as a spin problem. If you open the lid or door at the end of a cycle and see standing water, start with the drain, not the spin.',
+          'A washer will not spin a drum full of water. The pump has to empty it first, so a drain problem shows up as a spin problem. If you open the lid or door at the end of a cycle and see standing water, start with the drain, not the spin, and work through [the checks for a washer that won\'t drain](/blog/washer-not-draining/) first.',
         ],
         list: [
           'Check the drain hose behind the washer for a kink, especially if the washer was pushed back recently.',
@@ -519,7 +519,7 @@ export const posts: Post[] = [
           'Most microwaves last about 8 to 10 years. The type of microwave usually decides the answer:',
         ],
         list: [
-          'Small countertop microwave: a magnetron or control board repair can cost close to a new unit. If it is more than a few years old, replacement usually makes more sense. A door switch or fuse is still worth fixing.',
+          'Small countertop microwave: a magnetron or control board repair can cost close to a new unit. If it is more than a few years old, replacement usually makes more sense. A door switch or fuse is still worth fixing, and the age-and-cost math in [deciding whether to repair or replace an appliance](/blog/repair-or-replace-appliance/) applies here too.',
           'Over-the-range microwave: it also works as the range hood fan and light, and replacing it means removing it from the wall and cabinet. Repair is often the better value.',
           'Built-in or drawer microwave: built into the cabinets and usually higher-end, so repair is almost always worth pricing first.',
         ],
@@ -609,7 +609,7 @@ export const posts: Post[] = [
         heading: 'Gas burner clicking but not lighting: 5 checks in order',
         alert: {
           title: 'Smell gas?',
-          text: 'Stop here. Do not light anything or flip switches. Leave the house and call 911 or your gas company from outside.',
+          text: 'Stop here. Do not light anything or flip switches. Leave the house and call 911 or your gas company from outside. Once they have made it safe, ask about [same-day appliance repair in Temple](/appliance-repair-temple-tx/) for the range itself.',
         },
         paragraphs: ['Turn every knob off and let the burner cool before each check.'],
         steps: [
@@ -1024,7 +1024,7 @@ export const posts: Post[] = [
           'Humming with no water moving usually means the drain pump is jammed or its motor has failed. Something caught in the pump, like a sock or a coin, is common. Stop the cycle; running a jammed pump can burn out the motor.',
           'Silence when it should be draining often means the pump is not getting power. That points to the lid lock, the control board or the wiring between them.',
           'A drain error code, such as F21, OE, 5E or a code with “drain” in its description, is the washer telling you it timed out waiting for the water to leave. The exact code depends on the brand and model, so check your manual or the manufacturer’s support site. A code narrows the search, and testing confirms which part failed.',
-          'Water drains but clothes are still soaking wet. The washer may not be reaching full spin. An unbalanced load, an unlevel washer, a worn belt or drive part, or a lid lock that will not stay engaged can all cause it.',
+          'Water drains but clothes are still soaking wet. The washer may not be reaching full spin. An unbalanced load, an unlevel washer, a worn belt or drive part, or a lid lock that will not stay engaged can all cause it, and the checks for [a washer that drains but won\'t spin](/blog/washer-not-spinning/) pick up from there.',
         ],
       },
       {
@@ -1108,7 +1108,7 @@ export const posts: Post[] = [
         heading: 'Why the vent matters so much',
         paragraphs: [
           'A dryer has safety devices that cut the heat when it gets too hot inside. A clogged vent traps hot air, so the dryer overheats and those devices shut the heat off. On many electric dryers, repeated overheating eventually blows a one-time thermal fuse, and the dryer stops heating altogether.',
-          'That is why a vent problem so often shows up as a no-heat problem. Replacing the fuse or heating part without clearing the vent usually means it fails again.',
+          'That is why a vent problem so often shows up as a no-heat problem. Replacing the fuse or heating part without clearing the vent usually means it fails again, so a long or neglected run is worth a [professional dryer vent cleaning](/dryer-vent-cleaning-temple-tx/) before any part is swapped.',
           'Long vent runs, crushed foil or plastic transition hoses behind the dryer, and bird nests or lint in the outside hood are the usual culprits. The U.S. Fire Administration recommends rigid or flexible metal venting and warns against plastic or foil vents, which can sag and trap lint.',
         ],
       },
@@ -1201,7 +1201,7 @@ export const posts: Post[] = [
         paragraphs: [
           'The rule is simple. If a repair costs more than half the price of a comparable new appliance, and the appliance is past the middle of its expected life, replacement is usually the better use of money. If either of those is not true, repair usually wins.',
           'It is a rule of thumb, not a law. A high-end refrigerator, a pro-style range or a matched laundry pair can cost so much to replace that repair makes sense well past the halfway mark. On the other hand, a basic appliance near the end of its life with a second major problem coming may not be worth even a moderate repair.',
-          'The most important input is the diagnosis. Until you know which part failed, any decision is a guess.',
+          'The most important input is the diagnosis. Until you know which part failed, any decision is a guess, though the [appliance repair cost estimator](/appliance-repair-cost-estimator/) can show the rough cost level for your symptom while you wait.',
         ],
       },
       {
@@ -1439,7 +1439,7 @@ export const posts: Post[] = [
         heading: 'Dishwasher drain checks, easiest first',
         list: [
           'Filter. Twist out the filter assembly under the lower spray arm and rinse it under the tap. Scrub mesh screens gently with a soft brush. Food, labels, seeds and glass collect here. Cleaning it about once a month is a good habit.',
-          'Garbage disposal. If the dishwasher drains into a disposal, run the disposal for a few seconds to clear it. On a newly installed disposal, the knockout plug inside the dishwasher inlet may still be in place. Whirlpool suggests pushing a pencil into the inlet: if it goes in about three inches, the plug is gone.',
+          'Garbage disposal. If the dishwasher drains into a disposal, run the disposal for a few seconds to clear it. If the disposal itself hums or jams, sort that out first; the usual fixes are part of [garbage disposal repair in Temple](/garbage-disposal-repair-temple-tx/). On a newly installed disposal, the knockout plug inside the dishwasher inlet may still be in place. Whirlpool suggests pushing a pencil into the inlet: if it goes in about three inches, the plug is gone.',
           'Sink drain. If the kitchen sink is slow or backs up, the clog is in the house plumbing, and the dishwasher cannot drain into it. Clear the sink drain first.',
           'The drain hose. Look under the sink for a hose that is kinked, crushed by stored items or sagging below the drain connection. Most installations call for a high loop, with the hose secured up under the counter so sink water cannot flow back into the dishwasher.',
           'Air gap. Some kitchens have a small cylinder on the sink deck next to the faucet. Pull or twist off the cap and clear any debris inside. Air gaps are required in some areas and optional in others.',

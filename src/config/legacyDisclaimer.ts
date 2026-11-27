@@ -1,7 +1,7 @@
 /**
- * Footer disclaimer from the Ringba period, restored on the owner's request (Nov 25, 2026).
- * Keep it in the footer, word for word, until the content revamp is complete and the owner confirms
- * it can go. This file is on the copy checker's legacy list because the text uses old referral wording.
+ * Site-wide footer disclaimer, set by the owner on Nov 27, 2026 (replaces the Ringba-period text).
+ * Keep it word for word. The footer renders the "Disclaimer:" label in bold, followed by this text.
+ * This file stays on the copy checker's legacy list because the owner's wording uses "connect with".
  */
-export const referralDisclaimer =
-  'This site is a free service to assist homeowners in connecting with local appliance repair providers. All providers are independent and this site does not warrant or guarantee any work performed. It is the responsibility of the homeowner to verify that the hired provider furnishes the necessary license and insurance required for the work being performed. All persons depicted in a photo or video are actors or models and not providers listed on this site.';
+export const footerDisclaimer =
+  "Appliance Repair Temple is a free service that helps homeowners connect with independent appliance repair providers. We don't warrant or guarantee any work performed. Before work begins, please confirm that the provider you hire holds any license and insurance the job requires.";

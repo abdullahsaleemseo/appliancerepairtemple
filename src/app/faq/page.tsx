@@ -76,7 +76,7 @@ export default function FaqPage() {
         </div>
       </div>
 
-      <FinalCta formId="faq_final" />
+      <FinalCta formId="faq_final" text="Technicians repair refrigerators, washers, dryers, dishwashers and ovens across Temple and Bell County." />
     </>
   );
 }

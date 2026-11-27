@@ -1,3 +1,4 @@
+import { PhoneLink } from '@/components/PhoneLink';
 import Link from 'next/link';
 import { toolConfig } from '@/config/tools';
 import { toolPageList, type ToolPage as ToolPageData } from '@/content/tools/pages';
@@ -89,9 +90,14 @@ export function ToolPage({ page, children }: { page: ToolPageData; children: Rea
 
       <FinalCta
         formId={`tool_${page.key}_final`}
-        title="Rather talk it through?"
-        accent="Call our team."
-        text={`Describe what you found and we will schedule a visit. Our technicians work across ${toolConfig.defaultCity} and ${toolConfig.region}.`}
+        title="Rather talk it"
+        accent="through?"
+        text={
+          <>
+            Call <PhoneLink location={`tool_${page.key}_final_text`} className="font-semibold text-white underline decoration-white/40 underline-offset-4" /> and
+            describe what you found to check today&apos;s schedule. Technicians work across {toolConfig.defaultCity} and {toolConfig.region}.
+          </>
+        }
       />
     </>
   );

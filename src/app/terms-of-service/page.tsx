@@ -1,85 +1,93 @@
 import Link from 'next/link';
-import { manufacturerDisclaimer, routes, site } from '@/config/site';
+import { routes, site } from '@/config/site';
 import { LegalPage } from '@/components/LegalPage';
+import { PhoneLink } from '@/components/PhoneLink';
 import { pageMetadata } from '@/lib/seo';
 
 export const metadata = pageMetadata({
   title: `Terms of Service | ${site.brandName}`,
-  description: `The terms for using ${site.domain}, a free referral service that connects homeowners with independent local appliance repair providers by phone.`,
+  description: `The terms for using ${site.domain}, a free service that helps homeowners connect with independent appliance repair providers.`,
   path: routes.terms,
   noindex: true,
 });
 
 export default function TermsPage() {
   return (
-    <LegalPage title="Terms of Service" path={routes.terms} updated="October 18, 2026">
+    <LegalPage title="Terms of Service" path={routes.terms} updated="November 27, 2026">
       <p>
-        By using {site.domain} you agree to these terms. If you do not agree, please do not use the site.
+        These terms apply when you use {site.domain} or call the number shown on it. By doing either, you accept them. If you don&rsquo;t
+        agree, please don&rsquo;t use the website or the number.
       </p>
 
-      <h2>What this site does</h2>
+      <h2>The service</h2>
       <p>
-        {site.brandName} is a free referral service. It publishes appliance repair information and a phone number. When you call
-        that number, your call is connected with an independent appliance repair provider that serves your area. The site does
-        not perform repairs, does not employ technicians and does not schedule appointments.
+        {site.brandName} is a free service for homeowners. It helps you connect with independent appliance repair providers who work in
+        Temple and Bell County, and it publishes repair guides and tools. {site.brandName} is not a party to any agreement you make with a
+        provider.
       </p>
 
-      <h2>Independent providers</h2>
+      <h2>Providers are independent</h2>
       <p>
-        Providers reached through this site are independent businesses. They are not employees, agents or partners of{' '}
-        {site.brandName}. Any agreement for repair work, including the price, the timing, the parts used, payment and any warranty,
-        is made directly between you and the provider you choose.
-      </p>
-      <p>
-        The site does not warrant or guarantee any work performed. It is your responsibility to verify that the provider you hire
-        holds any license and insurance required for the work. Ask for proof before work starts.
+        Providers are separate businesses. They set their own prices, schedules and warranties. Any agreement about a repair, any payment
+        and any disagreement about the work is between you and the provider you choose. Ask them about price, timing and warranty before
+        work begins.
       </p>
 
-      <h2>Availability</h2>
+      <h2>No guarantee</h2>
       <p>
-        Provider availability varies by location, time and demand. The site does not promise that a provider will be available,
-        or that a visit will happen within any time frame. Emergency help may be available from local providers.
+        {site.brandName} doesn&rsquo;t warrant or guarantee any provider&rsquo;s work, availability, response time or pricing. A provider
+        may not be available in every area or at every time.
       </p>
 
-      <h2>Calls</h2>
+      <h2>Your responsibilities</h2>
+      <ul>
+        <li>
+          Check that the provider you hire holds any license and insurance the job requires, such as EPA Section 608 certification for
+          refrigerant work or a licensed plumber for gas line work.
+        </li>
+        <li>Give accurate information about yourself, your address and the appliance when you call.</li>
+        <li>
+          Keep people, children and pets safe around appliances, especially during a repair, and follow the manufacturer&rsquo;s safety
+          instructions.
+        </li>
+      </ul>
+
+      <h2>Website content</h2>
       <p>
-        Calls to the number on this site are routed through a call tracking service to a provider. Calls may be recorded for
-        quality and routing purposes. See the <Link href={routes.privacy}>Privacy Policy</Link> for how call information is handled.
+        Everything on this website is general information. Appliances differ by model and installation, so use the guides at your own risk
+        and follow your owner&rsquo;s manual. The cost estimator, error code decoder, symptom checker and maintenance checklist give general
+        guidance; they are not quotes, diagnoses or promises. Don&rsquo;t attempt gas, refrigerant or high-voltage repairs yourself.
       </p>
 
-      <h2>Information on this site</h2>
+      <h2>Brand names</h2>
       <p>
-        Troubleshooting articles are general guidance and may not apply to your model. Always follow your owner’s manual, disconnect
-        power before inspecting an appliance and stop if anything seems unsafe. Do not attempt gas, refrigerant or high-voltage
-        repairs yourself. The site is not responsible for damage or injury that results from do-it-yourself repairs.
+        Appliance brand names belong to their owners. They appear here only to identify appliances and don&rsquo;t mean any manufacturer
+        endorses or is affiliated with {site.brandName}.
       </p>
 
-      <h2>Photos</h2>
-      <p>All persons depicted in a photo or video on this site are actors or models and not providers listed on this site.</p>
-
-      <h2>Trademarks</h2>
-      <p>
-        Appliance brand names mentioned on this site belong to their owners. Their use here only identifies appliances and does not
-        mean any manufacturer endorses or is affiliated with {site.brandName}.
-      </p>
-
-      <h2>Acceptable use</h2>
-      <p>Do not attempt to disrupt the site or use automated tools to scrape or overload it.</p>
+      <h2>Using the website fairly</h2>
+      <p>Please don&rsquo;t try to disrupt the website, copy it in bulk or overload it with automated tools.</p>
 
       <h2>Limitation of liability</h2>
       <p>
-        The site is provided as is. To the extent allowed by law, {site.brandName} is not liable for the acts or omissions of any
-        provider, or for indirect or consequential damages arising from use of the site or from any repair work.
+        The website is provided as it is. To the extent the law allows, {site.brandName} isn&rsquo;t liable for work performed by any
+        provider, or for any loss or damage that comes from using the website, its tools or its information.
       </p>
 
-      <h2>Disclaimer</h2>
-      <p>{manufacturerDisclaimer}</p>
-
       <h2>Changes to these terms</h2>
-      <p>These terms may be updated from time to time. The date at the top of this page shows when they last changed.</p>
+      <p>
+        These terms may change from time to time. The date at the top shows when they were last updated, and using the website after a
+        change means you accept the new version.
+      </p>
 
       <h2>Governing law</h2>
-      <p>These terms are governed by the laws of the State of {site.state}.</p>
+      <p>These terms are governed by the laws of the State of Texas.</p>
+
+      <h2>Contact</h2>
+      <p>
+        Questions about these terms? Call <PhoneLink location="terms" className="font-semibold underline" />. How information is handled is
+        explained in the <Link href={routes.privacy}>privacy policy</Link>.
+      </p>
     </LegalPage>
   );
 }

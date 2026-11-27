@@ -225,8 +225,8 @@ export default function KilleenAreaPage() {
             <p>
               Just east along US-190, <Link href="/service-areas/harker-heights-tx/">Harker Heights</Link> shares a lot of Killeen&apos;s rental and PCS
               traffic, and a little farther, <Link href="/service-areas/nolanville-tx/">Nolanville</Link> sits between Killeen and Temple. Every covered
-              town appears on <Link href={routes.areas}>the Temple and Bell County service map</Link>, and Temple&apos;s own repair details are on{' '}
-              <Link href={routes.home}>the main Temple appliance repair page</Link>.
+              town appears on <Link href={routes.areas}>the Temple and Bell County service map</Link>, while{' '}
+              <Link href={routes.home}>appliance repair throughout Temple</Link> covers every appliance in the house, from the fridge to the dryer.
             </p>
           </div>
         </div>

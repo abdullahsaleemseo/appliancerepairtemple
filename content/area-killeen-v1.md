@@ -68,7 +68,7 @@ A fridge that won't cool after a move usually needs time, not parts: it was plug
 
 ## Next door to Killeen
 
-Just east along US-190, [Harker Heights](https://appliancerepairtemple.com/service-areas/harker-heights-tx/) shares a lot of Killeen's rental and PCS traffic, and a little farther, [Nolanville](https://appliancerepairtemple.com/service-areas/nolanville-tx/) sits between Killeen and Temple. Every covered town appears on [the Temple and Bell County service map](https://appliancerepairtemple.com/service-areas/), and Temple's own repair details are on [the main Temple appliance repair page](https://appliancerepairtemple.com/).
+Just east along US-190, [Harker Heights](https://appliancerepairtemple.com/service-areas/harker-heights-tx/) shares a lot of Killeen's rental and PCS traffic, and a little farther, [Nolanville](https://appliancerepairtemple.com/service-areas/nolanville-tx/) sits between Killeen and Temple. Every covered town appears on [the Temple and Bell County service map](https://appliancerepairtemple.com/service-areas/), while [appliance repair throughout Temple](https://appliancerepairtemple.com/) covers every appliance in the house, from the fridge to the dryer.
 
 ## Killeen FAQ
 
