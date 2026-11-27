@@ -1,132 +1,154 @@
 import Link from 'next/link';
-import { phoneDisplay, routes, site } from '@/config/site';
-import { FaqList } from '@/components/FaqList';
-import { HowItWorks } from '@/components/HowItWorks';
-import { Icon } from '@/components/Icon';
+import { routes } from '@/config/site';
+import { CallButton } from '@/components/Buttons';
+import { CallCard } from '@/components/CallCard';
 import { PageHero } from '@/components/PageHero';
 import { PhoneLink } from '@/components/PhoneLink';
 import { Section, SectionHeading } from '@/components/Section';
-import { TrustBadges } from '@/components/TrustBadges';
-import { CallCard } from '@/components/CallCard';
-import { areas, areaHref } from '@/content/areas';
-import type { Faq } from '@/content/types';
 import { pageMetadata } from '@/lib/seo';
 
+/** Booking page (source: content/booking-v2.md, Nov 2026). Booking is by phone; this page lists what to have ready and what happens next. */
 export const metadata = pageMetadata({
-  title: `Call for Appliance Repair in ${site.city}, ${site.stateAbbr} | Talk to a Tech`,
-  description: `Fridge warm, washer flooded or oven dead? Call ${phoneDisplay}, say which appliance it is, give your ZIP and describe the problem. ${site.city}, ${site.stateAbbr}.`,
+  title: 'Book Appliance Repair in Temple, TX | Call (254) 615-2088',
+  description:
+    "Book an appliance repair in Temple or Bell County by phone. Here's what to have ready before you call (254) 615-2088, and what happens after that.",
   path: routes.request,
 });
 
-const nextSteps = [
-  { title: 'Say the appliance and your ZIP', text: 'Tell whoever answers which appliance is acting up and where you live, from 76501 in Temple to Belton, Killeen or Salado.' },
-  { title: 'Talk to a technician', text: 'Describe the brand, the symptom and any error code. Ask about timing, pricing and licensing before you agree to a visit.' },
-  { title: 'Diagnosis, then your OK', text: 'A good technician finds what failed and explains the repair before starting. Agree on the price before any work begins.' },
+const tags: [string, string][] = [
+  ['Refrigerator:', ' on an inner wall of the fresh-food side, often near the light housing.'],
+  ['Chest freezer:', ' on the outside back or side, or under the lid rim.'],
+  ['Top-load washer:', ' beneath the lid near the hinge, or on the rear of the console.'],
+  ['Front-load washer and dryer:', ' on the rim of the door opening.'],
+  ['Dishwasher:', ' on the edge of the door or the tub, visible with the door open.'],
+  ['Range or wall oven:', ' behind the bottom drawer, or on the frame with the oven door open.'],
+  ['Over-the-range microwave:', ' on the frame inside the door.'],
 ];
 
-const requestFaqs: Faq[] = [
-  {
-    q: 'Who answers when I call?',
-    a: 'Appliance Repair Temple works as a free referral service: the line routes your call to an independent repair business that serves your ZIP code. You and that business settle the visit, the price directly. Appliance Repair Temple does not perform repairs.',
-  },
-  {
-    q: 'What if I do not know the brand or model?',
-    a: 'Give your best guess. A plain description, such as “top-load washer, full of water, hums at the drain step,” is enough to start the conversation.',
-  },
-  {
-    q: 'Can I get emergency appliance repair?',
-    a: 'Take the safety steps first: close the water valve for a leak, switch off the breaker for a burning smell, and leave the house and call 911 or the gas company from outside if you smell gas. Then call the line and say the problem is urgent.',
-  },
-  {
-    q: 'How do I check the technician’s license and insurance?',
-    a: 'Ask on the call. Verifying any license and insurance the work requires is the homeowner’s responsibility, so request a license number and proof of insurance before work starts.',
-  },
-  {
-    q: 'Can I get a price before the visit?',
-    a: 'The cost depends on the appliance, the model and the part that failed, so no prices are listed here. Ask how the visit and diagnosis are priced while you are on the phone.',
-  },
+const after: [string, string][] = [
+  [
+    'You describe the problem.',
+    ' Which appliance, whose brand, the model number and the symptom. If a quick check at home might solve it, a reset breaker or a straightened hose, you\'ll hear that first.',
+  ],
+  [
+    'You ask what you want to know.',
+    ' What the trip costs, how the repair figure gets set and when someone can come are all fair questions before you commit.',
+  ],
+  ['A technician comes out.', ' They look at the appliance, find what failed and explain it in plain words.'],
+  [
+    'You get the price, then decide.',
+    " Nothing is replaced until you've agreed to the cost. When the fix would cost more than an old appliance deserves, that gets said plainly as well.",
+  ],
+  ['The repair, or the part.', " Some repairs are finished during the same visit. If a part has to be ordered, you'll know which one and how the return visit works."],
 ];
+
+const white = 'font-semibold text-white underline decoration-white/40 underline-offset-4';
+const link = 'font-semibold text-ink underline decoration-flame decoration-2 underline-offset-4';
 
 export default function RequestPage() {
   return (
     <>
-      <PageHero crumbs={[{ name: 'Get Connected', path: routes.request }]} title={`Appliance Repair in ${site.city},`} accent="one free call away.">
-        <div className="prose-copy prose-dark">
-          <p>
-            Have the model number handy, say which appliance it is, give your ZIP code and describe what it is doing.
-            That is the whole process for reaching an appliance repair technician in {site.city} and nearby {site.county} towns
-            through {site.brandName}, and it takes a few minutes.
-          </p>
+      <PageHero crumbs={[{ name: 'Book a Repair', path: routes.request }]} title="Book an Appliance Repair in Temple, TX">
+        <p className="text-lg leading-relaxed text-white/75 md:text-xl">
+          Booking takes one short phone call. Call us at <PhoneLink location="request_intro" className={white} />, tell us what&apos;s wrong, and
+          we&apos;ll work out the visit from there.
+        </p>
+        <div className="mt-8">
+          <CallButton location="request_hero" label="Call (254) 615-2088" className="text-[17px]" />
         </div>
-        <div className="mt-8 border-t border-white/10 pt-6">
-          <TrustBadges dark />
-        </div>
+        <p className="mt-6 max-w-2xl rounded-2xl border border-white/15 bg-white/[0.06] p-4 text-[15px] leading-relaxed text-white/75">
+          <strong className="font-semibold text-white">Leak or gas smell?</strong> Handle that before anything else: shut the water valve for a leak;
+          for gas, get everyone out and ring 911 or the gas utility from the yard. Then call and say it&apos;s urgent.
+        </p>
       </PageHero>
 
-      <div className="mx-auto -mt-8 grid max-w-site gap-8 px-4 pb-20 lg:grid-cols-[1.6fr_1fr] lg:px-6">
-        <div className="relative">
-          <CallCard location="request_main" title="Call and describe the problem" headingLevel={2} />
-        </div>
-        <aside aria-label="Before you call" className="space-y-4 lg:pt-8">
-          <div className="grain relative overflow-hidden rounded-card bg-ink p-7 text-white">
-            <div aria-hidden="true" className="pointer-events-none absolute -right-16 -top-16 h-56 w-56 rounded-full bg-flame/30 blur-[80px]" />
-            <h2 className="relative font-display text-xl font-bold text-white">Urgent problem?</h2>
-            <p className="relative mt-1 text-white/60">
-              A leak, a fridge warming up with food inside, or a burning smell: stop the damage first, then call. Emergency help may
-              be available from local providers, so lead with the word urgent.
-            </p>
-            <PhoneLink
-              location="request_urgent"
-              withIcon
-              className="relative mt-4 inline-flex items-center gap-2 font-display text-3xl font-bold tracking-[-0.03em] text-white hover:text-flame-glow"
+      <Section labelledBy="ready-heading">
+        <div className="grid gap-10 lg:grid-cols-[1.4fr_1fr]">
+          <div>
+            <SectionHeading
+              id="ready-heading"
+              eyebrow="Before you call"
+              title="Have this"
+              accent="ready"
+              intro="Five minutes with this list shortens the call and gives the technician a head start on parts."
             />
-          </div>
-          <div className="card flex gap-4 p-6">
-            <Icon name="chat" className="h-6 w-6 shrink-0 text-flame" />
-            <div>
-              <h2 className="font-display font-bold text-ink">Have this ready</h2>
-              <p className="mt-1 text-[15px] text-ink-body">
-                The model number, usually inside the door, under the lid or on the frame, and any error code on the display. It
-                lets the technician think about parts before the visit.
-              </p>
-            </div>
-          </div>
-          <div className="card flex gap-4 p-6">
-            <Icon name="pin" className="h-6 w-6 shrink-0 text-flame" />
-            <div>
-              <h2 className="font-display font-bold text-ink">Areas covered</h2>
-              <p className="mt-1 text-[15px] text-ink-body">
-                <Link href={routes.home} className="font-medium text-ink underline decoration-flame/50 underline-offset-4 hover:decoration-flame">
-                  {site.city}
+            <ul className="grid gap-3">
+              <li className="rounded-2xl border border-sand bg-white p-5 text-[16px] leading-relaxed text-ink-body">
+                <strong className="font-semibold text-ink">The appliance and its brand.</strong> &quot;Whirlpool top-load washer&quot; or &quot;Samsung
+                French door fridge&quot; is plenty.
+              </li>
+              <li className="rounded-2xl border border-sand bg-white p-5 text-[16px] leading-relaxed text-ink-body">
+                <strong className="font-semibold text-ink">The model number.</strong> It&apos;s on a sticker or metal plate, and each appliance hides it
+                somewhere different:
+                <ul className="mt-3 space-y-1.5 text-[15px]">
+                  {tags.map(([lead, rest]) => (
+                    <li key={lead}>
+                      <span className="font-semibold text-ink">{lead}</span>
+                      {rest}
+                    </li>
+                  ))}
+                </ul>
+                <span className="mt-3 block">A phone photo of the tag is better than copying it by hand.</span>
+              </li>
+              <li className="rounded-2xl border border-sand bg-white p-5 text-[16px] leading-relaxed text-ink-body">
+                <strong className="font-semibold text-ink">What it&apos;s doing.</strong> One or two sentences: won&apos;t cool, won&apos;t drain,
+                clicks but won&apos;t light, leaks from the front. Say when it started.
+              </li>
+              <li className="rounded-2xl border border-sand bg-white p-5 text-[16px] leading-relaxed text-ink-body">
+                <strong className="font-semibold text-ink">Any error code.</strong> Write it exactly as the display shows it. You can look it up first in{' '}
+                <Link href="/appliance-error-code-decoder/" className={link}>
+                  the error code decoder for major brands
                 </Link>
-                {areas.map((a) => (
-                  <span key={a.slug}>
-                    {', '}
-                    <Link href={areaHref(a)} className="font-medium text-ink underline decoration-flame/50 underline-offset-4 hover:decoration-flame">
-                      {a.name}
-                    </Link>
-                  </span>
-                ))}
+                ; some codes point to a filter or a door you can sort out yourself.
+              </li>
+              <li className="rounded-2xl border border-sand bg-white p-5 text-[16px] leading-relaxed text-ink-body">
+                <strong className="font-semibold text-ink">Your street and ZIP.</strong> We cover Temple and the towns around it, and the street matters as
+                much as the ZIP when a code like 76513 spans more than one town. Each town appears on{' '}
+                <Link href={routes.areas} className={link}>
+                  the list of towns we cover
+                </Link>
                 .
-              </p>
-            </div>
+              </li>
+              <li className="rounded-2xl border border-sand bg-white p-5 text-[16px] leading-relaxed text-ink-body">
+                <strong className="font-semibold text-ink">Access notes.</strong> Gate codes, pets, which door to use, where the appliance sits (garage, shop,
+                upstairs) and who&apos;ll be there.
+              </li>
+            </ul>
           </div>
-        </aside>
-      </div>
-
-      <Section tone="white" labelledBy="next-heading">
-        <SectionHeading id="next-heading" eyebrow="When you call" title="What happens" accent="next." />
-        <HowItWorks steps={nextSteps} />
+          <div className="lg:pt-16">
+            <CallCard location="request_main" title="Call and describe the problem" headingLevel={2} />
+          </div>
+        </div>
       </Section>
 
-      <Section labelledBy="faq-heading">
-        <div className="grid gap-12 lg:grid-cols-[1fr_1.5fr]">
-          <SectionHeading id="faq-heading" eyebrow="FAQ" title="Before you" accent="call." />
-          <div>
-            <FaqList faqs={requestFaqs} />
-            <Link href={routes.faq} className="link-arrow mt-6">
-              More questions and answers
-            </Link>
+      <Section tone="white" labelledBy="after-heading">
+        <SectionHeading id="after-heading" eyebrow="After you call" title="What happens" accent="after you call" />
+        <ol className="grid gap-3 md:grid-cols-2 lg:grid-cols-3">
+          {after.map(([lead, rest], i) => (
+            <li key={lead} className="flex gap-4 rounded-2xl border border-sand bg-canvas p-5 text-[16px] leading-relaxed text-ink-body">
+              <span className="font-display text-2xl font-bold text-flame">{i + 1}</span>
+              <span>
+                <strong className="font-semibold text-ink">{lead}</strong>
+                {rest}
+              </span>
+            </li>
+          ))}
+        </ol>
+      </Section>
+
+      <Section labelledBy="know-heading">
+        <div className="grid gap-12 lg:grid-cols-[1fr_1.4fr]">
+          <SectionHeading id="know-heading" eyebrow="Good to know" title="A few things" accent="worth knowing" />
+          <div className="prose-copy">
+            <p>
+              Renting? Check your lease or ask your landlord first, since they usually arrange appliance repairs. New build, under a year old? The
+              builder or the manufacturer may cover an installation fault. Other common questions, from cost to what to keep after the visit, are
+              answered in <Link href={routes.faq}>the appliance repair FAQ</Link>, and <Link href={routes.about}>who we are and how we work</Link>{' '}
+              covers the rest.
+            </p>
+            <p>
+              Ready when you are: grab the model number and call us at <PhoneLink location="request_close" className={link} />.
+            </p>
           </div>
         </div>
       </Section>
