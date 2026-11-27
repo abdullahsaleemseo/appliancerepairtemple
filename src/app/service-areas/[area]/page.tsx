@@ -20,7 +20,7 @@ export const dynamicParams = false;
 
 export function generateStaticParams() {
   // Towns rewritten as their own routes under src/app/service-areas/ are left out here.
-  const ownRoutes = ['belton-tx'];
+  const ownRoutes = ['belton-tx', 'killeen-tx'];
   return areas.filter((a) => !ownRoutes.includes(a.slug)).map((a) => ({ area: a.slug }));
 }
 
