@@ -1,33 +1,34 @@
 import Link from 'next/link';
-import { phoneDisplay, routes, site } from '@/config/site';
+import { routes, site } from '@/config/site';
 import { faqGroups, generalFaqs } from '@/content/faqs';
-import { serviceHref, services } from '@/content/services';
 import { CtaRow } from '@/components/Buttons';
 import { FaqList } from '@/components/FaqList';
 import { FinalCta } from '@/components/FinalCta';
 import { JsonLd } from '@/components/JsonLd';
 import { PageHero } from '@/components/PageHero';
 import { faqSchema } from '@/lib/schema';
+import { PhoneLink } from '@/components/PhoneLink';
 import { pageMetadata } from '@/lib/seo';
 
+/** FAQ page (source: content/faq-v2.md, Nov 2026). FAQPage schema comes from the same strings that render. */
 export const metadata = pageMetadata({
-  title: `Appliance Repair FAQ ${site.city} ${site.stateAbbr} | Fix It or Replace It?`,
-  description: `Is an old washer worth fixing? How do you check a license? Answers on brands, gas appliances and safety in ${site.city}, ${site.stateAbbr}. Call ${phoneDisplay}.`,
+  title: 'Appliance Repair FAQ Temple TX | Cost, Visits & Repairs',
+  description:
+    'Straight answers on appliance repair in Temple, TX: what to check before calling, how the price is worked out, the visit, and after the fix. (254) 615-2088.',
   path: routes.faq,
 });
+
+const white = 'font-semibold text-white underline decoration-white/40 underline-offset-4';
 
 export default function FaqPage() {
   return (
     <>
       <JsonLd data={faqSchema(generalFaqs)} />
-      <PageHero crumbs={[{ name: 'FAQs', path: routes.faq }]} title={`${site.city} Appliance Repair FAQ,`} accent="answered plainly.">
-        <div className="prose-copy prose-dark">
-          <p>
-            What {site.city}-area homeowners ask before and after they pick up the phone: whether a visit today is realistic, how
-            to check a license and insurance, when an aging refrigerator or washer is worth fixing and what to do about a gas
-            smell. If your question is not here, call and ask it.
-          </p>
-        </div>
+      <PageHero crumbs={[{ name: 'FAQs', path: routes.faq }]} title="Appliance Repair Questions," accent="Answered Plainly">
+        <p className="text-lg leading-relaxed text-white/75 md:text-xl">
+          These are the questions people in Temple ask before, during and after an appliance repair. If yours isn&apos;t here, or it depends on
+          your appliance, phone us at <PhoneLink location="faq_intro" className={white} /> and ask it out loud.
+        </p>
         <div className="mt-8">
           <CtaRow location="faq_hero" dark />
         </div>
@@ -46,21 +47,6 @@ export default function FaqPage() {
                 </li>
               ))}
             </ul>
-            <h2 className="mt-8 font-display text-xl font-bold tracking-[-0.02em] text-ink">By appliance</h2>
-            <ul className="mt-5 space-y-3">
-              {services.map((s) => (
-                <li key={s.key}>
-                  <Link href={`${serviceHref(s.key)}#faq-heading`} className="link-arrow">
-                    {s.name} repair FAQ
-                  </Link>
-                </li>
-              ))}
-              <li>
-                <Link href={routes.home} className="link-arrow">
-                  Appliance repair in {site.city}
-                </Link>
-              </li>
-            </ul>
           </nav>
         </aside>
 
@@ -76,7 +62,23 @@ export default function FaqPage() {
         </div>
       </div>
 
-      <FinalCta formId="faq_final" text="Technicians repair refrigerators, washers, dryers, dishwashers and ovens across Temple and Bell County." />
+      <FinalCta
+        formId="faq_final"
+        title="Still have"
+        accent="a question?"
+        cardHeadingLevel="p"
+        cardTitle="Ask it on the phone"
+        text={
+          <>
+            Ring us at <PhoneLink location="faq_final_text" className={white} /> with the appliance, its brand and the trouble in a sentence.
+            Every appliance we work on, from fridges to disposals, is laid out under{' '}
+            <Link href={routes.home} className={white}>
+              appliance repair in Temple
+            </Link>
+            .
+          </>
+        }
+      />
     </>
   );
 }

@@ -56,7 +56,6 @@ const referralLegacy = new Set([
   'src/content/areas.ts',
   'src/content/blog.ts',
   'src/content/brands.ts',
-  'src/content/faqs.ts',
   'src/content/services.ts',
   'src/content/tools/issues.ts',
   'src/content/tools/pages.ts',
