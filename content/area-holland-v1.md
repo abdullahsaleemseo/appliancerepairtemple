@@ -74,7 +74,7 @@ Before work starts, get the trip cost and the price of the fix in plain numbers.
 
 ## Neighboring towns
 
-Up TX-95 toward Temple, [Little River-Academy](https://appliancerepairtemple.com/service-areas/little-river-academy-tx/) is the nearest town covered, and to the northeast, [Rogers](https://appliancerepairtemple.com/service-areas/rogers-tx/) sits on US-190. Every town on the list is on [the service area page for Bell County](https://appliancerepairtemple.com/service-areas/), and Holland appliance repair service is run alongside [the homepage for appliance repair in Temple](https://appliancerepairtemple.com/).
+Up TX-95 toward Temple, [Little River-Academy](https://appliancerepairtemple.com/service-areas/little-river-academy-tx/) is the nearest town covered, and to the northeast, [Rogers](https://appliancerepairtemple.com/service-areas/rogers-tx/) sits on US-190. Every town on the list is on [the service area page for Bell County](https://appliancerepairtemple.com/service-areas/), and Holland appliance repair service takes in every appliance named on [the homepage for appliance repair in Temple](https://appliancerepairtemple.com/).
 
 ## Holland FAQ
 
@@ -106,7 +106,7 @@ Old house or new, appliance repair in Holland, TX starts with a call to (254) 61
 | Little River-Academy | /service-areas/little-river-academy-tx/ | Up TX-95 toward Temple, Little River-Academy is the nearest town covered, and to the northeast, Rogers sits on US-190. |
 | Rogers | /service-areas/rogers-tx/ | (same sentence as above) |
 | the service area page for Bell County | /service-areas/ | Every town on the list is on the service area page for Bell County... |
-| the homepage for appliance repair in Temple | / | ...and Holland appliance repair service is run alongside the homepage for appliance repair in Temple. |
+| the homepage for appliance repair in Temple | / | ...and Holland appliance repair service takes in every appliance named on the homepage for appliance repair in Temple. |
 
 7 internal links, each URL once.
 
