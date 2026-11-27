@@ -44,7 +44,7 @@ Refrigerators split into easy and hard. A fan, a defrost component or an ice mak
 
 ## When can a technician make it to Moody?
 
-Moody is near the edge of the area, so how fast a technician arrives depends more on the route than it would in Temple, and a same-day visit is less likely. Same-day appliance repair in Moody does happen when the route already heads north and the part is common, but plan on the next opening rather than counting on today. Calling early in the day gives the best chance. With anything urgent, such as water spreading across the floor, close the nearest valve or the main and mention it right away.
+Moody is near the edge of the area, so how fast a technician arrives depends more on the route than it would in Temple, and a same-day visit is less likely. Same-day appliance repair in Moody does happen when the route already heads north and the part is common, but plan on the next opening rather than counting on today. An early call improves the odds. With anything urgent, such as water spreading across the floor, close the nearest valve or the main and mention it right away.
 
 ## What to ask about cost
 
