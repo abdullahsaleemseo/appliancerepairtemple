@@ -52,7 +52,7 @@ The [answers to common repair questions](https://appliancerepairtemple.com/faq/)
 
 ## Where we work
 
-Temple first, then the towns around it: Belton and Salado down I-35, Nolanville, Harker Heights and Killeen out US-190, Morgan's Point Resort on the lake, Troy and Moody to the north, and Little River-Academy, Rogers and Holland to the east. Each town has its own quirks, from lake houses that sit empty to farm freezers in the barn, and every one is listed on [the coverage map for all twelve towns](https://appliancerepairtemple.com/service-areas/).
+Temple first, then outward: Salado and Belton along I-35, Nolanville, Harker Heights and Killeen out US-190, Morgan's Point Resort on the lake, Troy and Moody to the north, and Little River-Academy, Rogers and Holland to the east. Each town has its own quirks, from lake houses that sit empty to farm freezers in the barn, and every one is listed on [the coverage map for all twelve towns](https://appliancerepairtemple.com/service-areas/).
 
 ## Call when it quits
 
