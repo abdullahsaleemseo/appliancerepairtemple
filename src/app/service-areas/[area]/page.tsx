@@ -20,7 +20,7 @@ export const dynamicParams = false;
 
 export function generateStaticParams() {
   // Towns rewritten as their own routes under src/app/service-areas/ are left out here.
-  const ownRoutes = ['belton-tx', 'killeen-tx', 'harker-heights-tx', 'salado-tx', 'nolanville-tx', 'morgans-point-resort-tx', 'troy-tx', 'little-river-academy-tx'];
+  const ownRoutes = ['belton-tx', 'killeen-tx', 'harker-heights-tx', 'salado-tx', 'nolanville-tx', 'morgans-point-resort-tx', 'troy-tx', 'little-river-academy-tx', 'rogers-tx'];
   return areas.filter((a) => !ownRoutes.includes(a.slug)).map((a) => ({ area: a.slug }));
 }
 
