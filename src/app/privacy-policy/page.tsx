@@ -87,7 +87,6 @@ export default function PrivacyPage() {
         posted.
       </p>
 
-      <p>This website is owned and operated by Abdullah Saleem.</p>
     </LegalPage>
   );
 }
