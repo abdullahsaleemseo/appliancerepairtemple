@@ -20,7 +20,7 @@ Salado sits inside the service area, the village and the 76571 roads around it. 
 
 ## Built-ins and quieter luxury
 
-Salado has its share of larger homes and remodeled kitchens, from the houses off Main Street to the Mill Creek area and the acreage outside the village. Those kitchens often hide their appliances behind cabinetry: a built-in or column refrigerator, a double wall oven, a dishwasher wearing a wood panel that matches the drawers. They look better than the freestanding kind and are a little harder to service. A built-in can't simply be pulled out and tipped back, parts are often brand-specific, and not every brand is serviced by every technician.
+Salado has its share of larger homes and remodeled kitchens, from the houses off Main Street and along Salado Creek to the Mill Creek area and the acreage outside the village. Those kitchens often hide their appliances behind cabinetry: a built-in or column refrigerator, a double wall oven, a dishwasher wearing a wood panel that matches the drawers. They look better than the freestanding kind and are a little harder to service. A built-in can't simply be pulled out and tipped back, parts are often brand-specific, and not every brand is serviced by every technician.
 
 ## Questions to ask before booking a high-end appliance repair
 
@@ -139,7 +139,7 @@ About 1,050 words of reading text (page body including headings, numbered list a
   - ZIP 76571 for Salado: confident.
   - Main Street, Salado: confident.
   - Mill Creek area (Mill Creek golf community) in Salado: confident.
-  - Salado Creek runs through the village: confident; not named on the page beyond the brief to keep it uncluttered. (Left out on purpose; nothing claimed.)
+  - Salado Creek runs through the village: confident.
   - South of Belton on I-35: confident.
   - "Some Salado properties run on a private well, often with a water softener": general, per the brief; no figures.
   - Softener resin beads clogging inlet screens; very soft water plus full detergent etching glass: standard manufacturer guidance.
