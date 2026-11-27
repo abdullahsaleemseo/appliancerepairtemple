@@ -61,7 +61,7 @@ Get the trip and repair numbers out loud before any work, and ask whether lookin
 
 ## "Who else is out this way?"
 
-Farther up I-35, [Moody](https://appliancerepairtemple.com/service-areas/moody-tx/) is the next town covered to the north. The full set of towns is on [the list of towns around Temple](https://appliancerepairtemple.com/service-areas/); Troy appliance repair service covers the same appliances listed on [the main Temple repair page](https://appliancerepairtemple.com/).
+To the northwest, [Moody](https://appliancerepairtemple.com/service-areas/moody-tx/) is the next covered town. The full set of towns is on [the list of towns around Temple](https://appliancerepairtemple.com/service-areas/); Troy appliance repair service covers the same appliances listed on [the main Temple repair page](https://appliancerepairtemple.com/).
 
 ## Troy FAQ
 
@@ -90,7 +90,7 @@ Troy property, county road or right in town, dial (254) 615-2088 and bring up th
 | freezer repair for chest and upright models | /freezer-repair-temple-tx/ | If it's still warm after that, the problems listed in freezer repair for chest and upright models are the next suspects. |
 | diagnosing a washer by what it's doing | /washer-repair-temple-tx/ | If the fill is still slow, the valve itself may be failing, covered with other fill and drain problems in diagnosing a washer by what it's doing. |
 | ice makers that fill slowly or quit | /ice-maker-repair-temple-tx/ | Ice maker inlet valves sit behind the fridge and are harder to reach; a clogged one usually gets replaced, as explained in ice makers that fill slowly or quit. |
-| Moody | /service-areas/moody-tx/ | Farther up I-35, Moody is the next town covered to the north. |
+| Moody | /service-areas/moody-tx/ | To the northwest, Moody is the next covered town. |
 | the list of towns around Temple | /service-areas/ | The full set of towns is on the list of towns around Temple... |
 | the main Temple repair page | / | ...Troy appliance repair service covers the same appliances listed on the main Temple repair page. |
 
@@ -137,7 +137,7 @@ About 1,000 words of reading text (page body including headings, quick checks an
 - ACCURACY CHECK:
   - ZIP 76579 for Troy: confident.
   - North of Temple on I-35 toward Waco, in Bell County: confident.
-  - Moody farther up the interstate to the north: Moody is northwest, reached via TX-317 rather than I-35 itself. **Wording "Farther up I-35" is loose; flagged. I'd change it to "To the northwest" on publish if you agree.**
+  - Moody to the northwest (reached via TX-317): confident; wording fixed to "To the northwest" on publish, per the owner.
   - Washer inlet screens behind the fill hoses; well work stirring sediment: standard guidance.
   - "Garage ready" ratings on some freezers: confident.
 - CONVERSION CHECK: first two sentences confirm coverage and say to call with ZIP and road. Phone in first 100 words and closing. Decision aid: the shop freezer quick checks. Mid-page CTA right after the "both acting up" section (brand and model of each, what each does, which building, gate and directions). Cost (trip and repair, several appliances in one trip, return trip), trust (directions and access spelled out), timing ("How soon can somebody get up here?") handled.
