@@ -55,7 +55,7 @@ Both brands lean heavily on codes and on their phone apps, and both reuse short 
 
 ### Safety
 
-A code never outranks what you can see or smell. Gas, smoke, sparks, a shock or water near wiring override any code: switch the appliance off and deal with that first. With gas, get out first and ring 911 or the gas utility once you're clear of the house.
+A code never outranks what you can see or smell. Gas, smoke, sparks, a shock or water near wiring override any code: switch the appliance off and deal with that first. With gas, get out first and phone 911 or your gas company once you're clear of the house.
 
 ### Closing call to action
 
