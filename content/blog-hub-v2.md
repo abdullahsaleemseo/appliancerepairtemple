@@ -12,12 +12,12 @@
 
 # Appliance Repair Tips for Temple Homes
 
-These guides cover the problems that come up most in Temple kitchens and laundry rooms, starting with the checks you can safely do yourself. When a guide says a part needs testing, that's the point to call us at (254) 615-2088.
+These guides cover the problems Temple homes run into most, starting with the checks you can safely do yourself. When a guide says a part needs testing, that's the point to call us at (254) 615-2088.
 
 ## Refrigerator and ice
 
-- **Refrigerator Leaking Water?** Lay paper towels down, wait a few hours, and the wet one tells you whether it's the defrost drain, the water line or the door.
-- **Refrigerator Not Cooling?** The pattern matters most: a cold freezer with a warm fridge side points somewhere very different from both sections warming.
+- **Refrigerator Leaking Water?** Paper towels and a few hours tell you whether it's the defrost drain, the water line or the door.
+- **Refrigerator Not Cooling?** A cold freezer over a warm fridge side points somewhere very different from both sections warming.
 - **Ice Maker Not Working?** Start with the freezer temperature and the water filter, then work toward the inlet valve that hard water slowly clogs.
 
 ## Laundry
@@ -25,17 +25,17 @@ These guides cover the problems that come up most in Temple kitchens and laundry
 - **Washer Not Spinning?** A drum full of water, an off-balance load or a lid that won't lock stops the spin long before a belt or motor does.
 - **Washer Not Draining?** The hose, the pump filter and the standpipe come first, in that order, before anyone opens a panel.
 - **Dryer Not Heating?** Rule out the breaker, the gas supply and the vent, then the heat parts that can be tested one by one.
-- **How Often to Clean a Dryer Vent?** What a clogged vent costs in drying time and safety, and which part of the run you can clear yourself.
+- **How Often to Clean a Dryer Vent?** What a clogged vent costs, and which part of the run you can clear yourself.
 
 ## Kitchen
 
-- **Stove Burner Not Working?** A chart by stove type and symptom, from a burner cap sitting crooked to an igniter that sparks weakly.
+- **Stove Burner Not Working?** A chart by stove type and symptom, from a crooked burner cap to a weak igniter.
 - **Microwave Not Heating?** A one-cup water test sorts demo mode and settings from a fault behind the cover, where only a technician should work.
 - **Dishwasher Not Draining?** Filter, disposal, drain hose loop and air gap, checked in order, with the codes that point to the pump.
 
 ## Decisions
 
-- **Repair or Replace?** The 50 percent rule, typical lifespans and the cases where it bends, so a big repair bill isn't a guess.
+- **Repair or Replace?** The 50 percent rule, typical lifespans and when the rule bends.
 
 ---
 
@@ -55,7 +55,7 @@ BreadcrumbList (from the page hero), as now. No new schema.
 
 ## Word count
 
-About 290 words (intro, group headings and the 11 lines).
+About 280 words (intro, group headings and the 11 lines).
 
 ## Self-check
 
@@ -68,6 +68,6 @@ About 290 words (intro, group headings and the 11 lines).
 
 | Live page | This page |
 |---|---|
-| "To narrow it down, dry the floor, tuck a paper towel under the front edge and another at the back, and check them in an hour." (refrigerator) | "Lay paper towels down, wait a few hours, and the wet one tells you whether it's the defrost drain, the water line or the door." |
+| "To narrow it down, dry the floor, tuck a paper towel under the front edge and another at the back, and check them in an hour." (refrigerator) | "Paper towels and a few hours tell you whether it's the defrost drain, the water line or the door." |
 | "A washer will not spin a drum full of water." (washer-not-spinning post) | "A drum full of water, an off-balance load or a lid that won't lock stops the spin long before a belt or motor does." |
 | "Call us at (254) 615-2088 and describe what your appliance is doing." (homepage) | "When a guide says a part needs testing, that's the point to call us at (254) 615-2088." |
