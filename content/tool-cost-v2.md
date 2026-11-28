@@ -2,7 +2,7 @@
 
 Text only. The estimator's code, questions and result logic are untouched.
 
-**Title tag:** Appliance Repair Cost Estimator | Temple TX Repair or Replace
+**Title tag:** Appliance Repair Cost Estimator for Temple, TX Homes
 
 **Meta description:** See how big an appliance repair usually is, from parts and labor to an honest repair-or-replace read, before you call (254) 615-2088 in Temple, TX.
 
