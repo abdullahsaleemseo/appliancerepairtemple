@@ -10,7 +10,22 @@ import { PageHero } from '@/components/PageHero';
 import { Section, SectionHeading } from '@/components/Section';
 
 /** Shared layout for the tool pages: hero, the tool itself, supporting content, FAQs and links to the other tools. */
-export function ToolPage({ page, children }: { page: ToolPageData; children: React.ReactNode }) {
+export function ToolPage({
+  page,
+  children,
+  above,
+  below,
+  cta,
+}: {
+  page: ToolPageData;
+  children: React.ReactNode;
+  /** Page-specific text between the hero and the tool. */
+  above?: React.ReactNode;
+  /** Page-specific text below the tool; replaces the generic how-it-works, coverage and safety blocks. */
+  below?: React.ReactNode;
+  /** Page-specific closing call to action. */
+  cta?: { title: string; accent: string; text: React.ReactNode };
+}) {
   const others = toolPageList.filter((p) => p.key !== page.key);
   return (
     <>
@@ -28,6 +43,7 @@ export function ToolPage({ page, children }: { page: ToolPageData; children: Rea
 
       <section aria-label={page.name} className="print-keep bg-canvas px-4 pb-16 pt-10 md:pb-24 lg:px-6">
         <div className="mx-auto max-w-4xl">
+          {above}
           {children}
           <noscript>
             <p className="rounded-2xl border border-sand bg-white p-6 text-ink-body">{page.noscript}</p>
@@ -35,6 +51,8 @@ export function ToolPage({ page, children }: { page: ToolPageData; children: Rea
         </div>
       </section>
 
+      {below ?? (
+        <>
       <Section tone="white" labelledBy="how-heading">
         <SectionHeading id="how-heading" eyebrow="How it works" title="Three steps," accent="a few minutes." />
         <HowItWorks steps={page.steps} />
@@ -67,6 +85,9 @@ export function ToolPage({ page, children }: { page: ToolPageData; children: Rea
         </div>
       </Section>
 
+        </>
+      )}
+
       <Section labelledBy="faq-heading">
         <div className="grid gap-12 lg:grid-cols-[1fr_1.5fr]">
           <div>
@@ -90,13 +111,15 @@ export function ToolPage({ page, children }: { page: ToolPageData; children: Rea
 
       <FinalCta
         formId={`tool_${page.key}_final`}
-        title="Rather talk it"
-        accent="through?"
+        title={cta?.title ?? 'Rather talk it'}
+        accent={cta?.accent ?? 'through?'}
         text={
-          <>
-            Call <PhoneLink location={`tool_${page.key}_final_text`} className="font-semibold text-white underline decoration-white/40 underline-offset-4" /> and
-            describe what you found to check today&apos;s schedule. Technicians work across {toolConfig.defaultCity} and {toolConfig.region}.
-          </>
+          cta?.text ?? (
+            <>
+              Call <PhoneLink location={`tool_${page.key}_final_text`} className="font-semibold text-white underline decoration-white/40 underline-offset-4" /> and
+              describe what you found to check today&apos;s schedule. Technicians work across {toolConfig.defaultCity} and {toolConfig.region}.
+            </>
+          )
         }
       />
     </>

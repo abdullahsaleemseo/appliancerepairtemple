@@ -153,11 +153,11 @@ export const toolPages: Record<ToolKey, ToolPage> = {
     path: toolRoutes.cost,
     name: 'Repair Cost Estimator',
     linkText: 'See what a repair usually involves and whether to replace',
-    metaTitle: `Appliance Repair Cost Estimator: Repair or Replace? | ${city}, ${stateAbbr}`,
-    metaDescription: `Pick the appliance, problem, brand and age to see the parts and labour a repair usually takes, the overall repair level and an honest repair-or-replace guide.`,
+    metaTitle: 'Appliance Repair Cost Estimator for Temple, TX Homes',
+    metaDescription: 'See how big an appliance repair usually is, from parts and labor to an honest repair-or-replace read, before you call (254) 615-2088 in Temple, TX.',
     title: 'Appliance Repair Cost Estimator:',
-    accent: 'repair or replace?',
-    intro: `Before you call, get a sense of how big the job is. Choose the appliance and the problem, then the brand, age and model type, and see the parts and labour a repair like this usually involves, plus a repair-or-replace comparison based on the appliance's expected life.`,
+    accent: 'Repair or Replace?',
+    intro: "Before you call, get a feel for how big the job is. Pick the appliance and what it's doing, add the brand and its age, and the estimator shows the parts and labor a repair like that usually takes, plus a straight read on whether repairing still beats replacing. There are no dollar figures here: prices depend on the part, so the result comes back as a level you can ask about on the phone.",
     steps: [
       { title: 'Describe the problem', text: 'Appliance, symptom and brand, from a fridge that will not cool to a dryer with no heat.' },
       { title: 'Add age, ZIP and model type', text: `Older, premium and built-in units change the picture. ${city} area ZIPs are recognized.` },
@@ -175,24 +175,20 @@ export const toolPages: Record<ToolKey, ToolPage> = {
     noscript: 'The estimator needs JavaScript. You can also call, describe the problem and ask how the visit and diagnosis are priced.',
     faqs: [
       {
-        q: 'Why are there no dollar amounts?',
-        a: 'Prices depend on the provider, the model and the part that failed, so this site does not publish them. The estimator shows how large the repair usually is so you know what to ask about on the call.',
+        q: "Why doesn't the estimator show dollar amounts?",
+        a: "Because the price turns on the exact part and how long the job takes, and a figure on a web page would only be a guess. The level tells you how big the repair usually is, so you know what to ask about. A technician gives the real price after finding the problem, before any work begins.",
       },
       {
-        q: 'When is an appliance worth repairing?',
-        a: 'A common rule: if the repair costs less than about half of a comparable new unit and the appliance is not near the end of its typical life, repair usually makes sense. The estimator applies that rule and shows its reasons.',
+        q: "Why does a built-in or premium appliance push the level up?",
+        a: "Two reasons: parts for premium brands cost more, and built-in units take extra time to slide out and refit. The flip side is that they also cost more to replace, so a repair that looks large can still be the better choice for a high-end appliance.",
       },
       {
-        q: 'Do premium brands cost more to fix?',
-        a: 'Usually, yes. Parts for brands such as Sub-Zero, Miele, Viking and Thermador cost more, and built-in units take longer to remove and refit. They also cost more to replace, which often keeps repair the better choice.',
+        q: "Why does the estimator ask for my ZIP code?",
+        a: "To check that you're inside the area covered, Temple plus the nearby Bell County communities. A ZIP outside it is flagged and the result is treated as general guidance, since distance can change the visit. Ask about it when you call if you're near the edge.",
       },
       {
-        q: 'Why does the ZIP code matter?',
-        a: `ZIPs outside the listed ${county} towns may add travel, so the estimator flags them and treats the result as general guidance.`,
-      },
-      {
-        q: 'Is the estimate a quote?',
-        a: 'No. It is general guidance. A technician gives the actual price after diagnosing the appliance, and you agree to it before work begins.',
+        q: "Is the result a quote?",
+        a: "No. It's a guide to the size of the job, built from the parts and labor a repair like yours usually takes. The actual price comes after a technician has looked at the appliance, and no part goes in until you say yes.",
       },
     ],
   },
