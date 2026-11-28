@@ -199,11 +199,11 @@ export const toolPages: Record<ToolKey, ToolPage> = {
     path: toolRoutes.symptoms,
     name: 'Symptom Diagnostic Tool',
     linkText: 'Find the likely cause when there is no error code',
-    metaTitle: `Appliance Symptom Checker: Find the Likely Cause | ${city}, ${stateAbbr}`,
-    metaDescription: `No error code? Describe what your fridge, washer, dryer, dishwasher or oven is doing and see the likely causes, how urgent it is and what is safe to check.`,
+    metaTitle: 'Appliance Symptom Checker | No Error Code? Temple, TX',
+    metaDescription: 'No code on the display? Describe what your fridge, washer, dryer, dishwasher or oven is doing and see the likely causes, ranked. (254) 615-2088.',
     title: 'Appliance Symptom Checker:',
-    accent: 'no error code needed.',
-    intro: `A fridge that runs warm or a dryer that takes two cycles rarely shows a code. Describe the main symptom, anything else you noticed, the age and how it is running, and see up to three likely causes ranked from your answers, with the reasons for each.`,
+    accent: 'No Error Code Needed',
+    intro: "Most appliance trouble never shows a code. A fridge that runs warm, a dryer that takes two cycles, a dishwasher that leaves grit behind: the machine knows something's off, but it isn't saying what. Pick the appliance, the main symptom, anything else you've noticed, its age and how it's running right now, and the checker ranks up to three likely causes from your answers, with the reason behind each one.",
     steps: [
       { title: 'Appliance, brand, symptom', text: 'Symptom lists change with the appliance, from compressor clicking to a disposal that hums.' },
       { title: 'Extra signs and age', text: 'A second symptom or an older unit can move a different cause to the top.' },
@@ -221,24 +221,20 @@ export const toolPages: Record<ToolKey, ToolPage> = {
     noscript: 'The symptom checker needs JavaScript. You can also call and describe what the appliance is doing.',
     faqs: [
       {
-        q: 'Is this an exact diagnosis?',
-        a: 'No. It ranks the likely causes from what you report. Confirming the fault takes testing parts on site, which a technician does.',
+        q: "What if my symptom isn't in the list?",
+        a: "Pick the closest one and add the rest in the other-symptoms step. If nothing comes close, skip the checker and call with a one-line description: what it's doing, when it started, and anything that changed recently, like a move or a power outage. That description is usually enough to point a technician in the right direction.",
       },
       {
-        q: 'Why does the order change when I add symptoms?',
-        a: 'Some causes explain two symptoms at once. A frosted freezer wall plus a warm fresh-food section points more strongly to a defrost fault than a warm section alone.',
+        q: "Two things are wrong at once. Which do I pick first?",
+        a: "Pick the one that bothers you most as the main symptom and add the other as an extra sign. The checker gives more weight to causes that explain both, which is often how the real fault shows itself. A warm fridge plus water under the crisper drawers, for example, points straight at the defrost system.",
       },
       {
-        q: 'What does "Get help today" mean?',
-        a: 'Food safety, water damage or daily use is at stake. A fridge that stopped cooling or a washer leaking onto the floor should not wait for the weekend.',
+        q: "Why does the checker ask how it's running right now?",
+        a: "Because \"runs but poorly\" and \"won't start at all\" point to different parts. A fridge that hums and stays warm is a different job from one that's silent. It's also where you flag anything unsafe, which switches the result to safety steps instead of causes.",
       },
       {
-        q: 'Why does age matter?',
-        a: 'Parts such as door gaskets, belts, bearings and start relays wear with age, so they rise up the list on older units. Age also feeds the repair-or-replace note.',
-      },
-      {
-        q: 'What if I see smoke or smell gas?',
-        a: 'Choose "Unsafe signs present". The checker stops and shows safety steps: switch off at the breaker, and for gas, leave the house and call 911 or the gas company from outside.',
+        q: "Can the checker tell me whether it's worth fixing?",
+        a: "It adds a short repair-or-replace note based on the appliance's age, but it doesn't know the price of the part. For a fuller picture, run the same appliance and problem through the cost estimator, then ask a technician for the real figure once the fault is confirmed.",
       },
     ],
   },
