@@ -98,11 +98,11 @@ export const toolPages: Record<ToolKey, ToolPage> = {
     path: toolRoutes.errorCodes,
     name: 'Error Code Decoder',
     linkText: 'Look up what an appliance error code means',
-    metaTitle: `Appliance Error Code Decoder: Samsung, LG, Whirlpool, GE & More`,
-    metaDescription: `Type the code on your washer, dryer, dishwasher, fridge or oven display and see what it usually means, what to check first and when to stop using it.`,
+    metaTitle: 'Appliance Error Code Decoder | Samsung, LG, Whirlpool, GE',
+    metaDescription: 'Type the code on your washer, dryer, dishwasher, fridge or oven and see what it usually means, what to check first and when to call (254) 615-2088.',
     title: 'Appliance Error Code Decoder:',
-    accent: 'what the display is telling you.',
-    intro: `Choose the appliance and brand, type the code exactly as it shows, and get the usual meaning in plain English with safe first checks. It covers more than 100 common codes from Samsung, LG, Whirlpool, GE, Bosch, Frigidaire and other brands found in ${city} kitchens and laundry rooms.`,
+    accent: 'What the Display Means',
+    intro: "A code on the display is the appliance telling you where it thinks the problem is. Pick the appliance and the brand, type the code the way it shows, and the decoder gives you the usual meaning in plain words, the most likely cause, the checks that are safe to do yourself, and when to stop using it. It holds 116 common codes from Samsung, LG, Whirlpool, GE, Bosch, Frigidaire and the other names common around Temple.",
     steps: [
       { title: 'Choose appliance and brand', text: 'Codes are brand specific, so the same letters can mean different faults.' },
       { title: 'Type the code', text: 'Spaces and capitals do not matter. "f8e1" and "F8 E1" read the same.' },
@@ -121,24 +121,20 @@ export const toolPages: Record<ToolKey, ToolPage> = {
     noscript: 'The decoder needs JavaScript. You can also find the code in the owner manual, or call with the code and model number ready.',
     faqs: [
       {
-        q: 'Why does the decoder ask for the brand?',
-        a: 'Brands reuse the same letters for different faults. OE is a drain fault on LG and Samsung washers, while F codes on a GE oven and a Frigidaire oven mean different things. Matching brand and appliance avoids a wrong answer.',
+        q: "Why does the same code mean different things on different brands?",
+        a: "Because each manufacturer writes its own list. OE is a drain fault on an LG washer, while an F code on a GE oven and one on a Frigidaire oven point to different problems. That's why the decoder asks for the brand first. A Kenmore often uses its maker's codes, so the prefix on its model tag is worth checking.",
       },
       {
-        q: 'What if my code is not found?',
-        a: 'The decoder shows an honest "not in the database" result. Note the exact model number, check the owner manual, and if the code returns after a power reset, arrange a diagnosis.',
+        q: "My code isn't in the decoder. What now?",
+        a: "Write down the full model number and look the code up in the owner's manual, which usually lists the brand's codes near the back. Try one power reset at the breaker. If the code returns, call with the code and the model number, and say whether it shows at the start of a cycle or partway through.",
       },
       {
-        q: 'Can I clear an error code myself?',
-        a: 'Many codes clear after the cause is fixed and the power is cycled for a minute. Clearing a code without fixing the cause usually brings it back, sometimes after more damage.',
+        q: "Should I reset the appliance to clear a code?",
+        a: "Once, after you've done the safe checks. Cutting the power at the breaker for about a minute clears many codes once the cause is gone. If the code comes straight back, stop resetting it; clearing a code without fixing the cause can let a small fault turn into a bigger one.",
       },
       {
-        q: 'How accurate are the meanings?',
-        a: 'They are commonly published meanings for each brand. Model lines and years can differ, so each result notes that it has not been checked against every service manual.',
-      },
-      {
-        q: 'Why does a code show up only sometimes?',
-        a: 'Intermittent codes often point to a loose connector, a sensor near the edge of its range, or a restriction that only builds up on long cycles. Tick "It keeps coming back" for advice that reflects that.',
+        q: "The code comes and goes. Does that matter?",
+        a: "Yes, it's a clue. A code that shows up only now and then often points to a loose connector, a sensor near the edge of its range, or a restriction that only builds up on long cycles. Choose \"It keeps coming back\" in the decoder, and mention the pattern when you call.",
       },
     ],
   },
